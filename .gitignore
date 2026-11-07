@@ -1,0 +1,8 @@
+node_modules/
+web/node_modules/
+var/
+.venv/
+__pycache__/
+*.py[cod]
+secrets/*.env
+sp/

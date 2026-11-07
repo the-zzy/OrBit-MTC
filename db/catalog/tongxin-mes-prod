@@ -1,0 +1,8 @@
+ORDER=5
+STAGE=prod
+LABEL='通信 MES 正式'
+HOST=192.168.0.246
+MACHINE=CHS035
+DB=OrBitXICH
+TOOLS=tongxin-mes-prod-query
+CAUTION='正式生产库，没有测试库。不能看过程正文，不能执行过程。'

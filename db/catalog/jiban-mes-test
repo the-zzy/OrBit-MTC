@@ -1,0 +1,8 @@
+ORDER=1
+STAGE=test
+LABEL='基板 MES 测试'
+HOST=192.168.0.21
+MACHINE=MTCS0021
+DB=JIBAN
+TOOLS=jiban-mes-test-query,jiban-mes-test-procedure,jiban-mes-test-execute
+CAUTION='2TB 共享测试库。大表必须加 TOP 或条件。同服务器上的 GY-MES 不可访问。'

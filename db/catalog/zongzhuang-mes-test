@@ -1,0 +1,8 @@
+ORDER=3
+STAGE=test
+LABEL='总装 MES 测试'
+HOST=172.16.9.112
+MACHINE=MTCS112
+DB=TV
+TOOLS=zongzhuang-mes-test-query,zongzhuang-mes-test-procedure,zongzhuang-mes-test-execute
+CAUTION='共享测试库。大表必须加 TOP 或条件。'

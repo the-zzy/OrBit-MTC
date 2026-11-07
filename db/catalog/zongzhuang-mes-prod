@@ -1,0 +1,8 @@
+ORDER=4
+STAGE=prod
+LABEL='总装 MES 正式'
+HOST=172.16.8.31
+MACHINE=MTCS8030
+DB=OrBitXIZC
+TOOLS=zongzhuang-mes-prod-query,zongzhuang-mes-prod-procedure
+CAUTION='正式生产库，重负载。能看过程正文，不能执行过程。'

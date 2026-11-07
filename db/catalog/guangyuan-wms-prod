@@ -1,0 +1,8 @@
+ORDER=7
+STAGE=prod
+LABEL='光元 WMS 正式'
+HOST=172.16.9.244
+MACHINE=MTCS9241
+DB=OrBitXIZC
+TOOLS=guangyuan-wms-prod-query,guangyuan-wms-prod-procedure,guangyuan-wms-prod-execute
+CAUTION='正式生产库，没有测试库。不要和光元 MES 混用。'

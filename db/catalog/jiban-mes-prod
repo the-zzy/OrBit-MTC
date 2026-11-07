@@ -1,0 +1,8 @@
+ORDER=2
+STAGE=prod
+LABEL='基板 MES 正式'
+HOST=172.16.9.111
+MACHINE=MTCS036
+DB=OrBitXIZC
+TOOLS=jiban-mes-prod-query,jiban-mes-prod-procedure,jiban-mes-prod-execute
+CAUTION='正式生产库，重负载。'

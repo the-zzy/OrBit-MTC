@@ -1,0 +1,8 @@
+ORDER=6
+STAGE=prod
+LABEL='光元 MES 正式'
+HOST=172.16.8.244
+MACHINE=MTCS8241
+DB=OrBitXIZC
+TOOLS=guangyuan-mes-prod-query
+CAUTION='正式生产库，没有测试库。不能看过程正文，不能执行过程。不要和光元 WMS 混用。'
