@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PMBP",
+  "name": "料号绑定（半成品和原材料）",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "料号绑定（半成品和原材料）",
+  "metadata": "将半成品（531）和原料号（330）绑定",
+  "objects": [
+    {
+      "id": "MTD1000002EF",
+      "name": "ProMaterialMaster",
+      "text": "料号绑定（半成品和原材料）",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProMaterialMasterMainView",
+          "file": "ProMaterialMasterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProMaterialMasterTreeView",
+          "file": "ProMaterialMasterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProMaterialMasterSaveData",
+          "file": "ProMaterialMasterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProMaterialMasterDeleteData",
+          "file": "ProMaterialMasterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EG",
+      "name": "ProMaterialMasterItem",
+      "text": "原材料明细",
+      "parentId": "MTD1000002EF",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProMaterialMasterItemMainView",
+          "file": "ProMaterialMasterItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProMaterialMasterItemTreeView",
+          "file": "ProMaterialMasterItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProMaterialMasterItemSaveData",
+          "file": "ProMaterialMasterItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProMaterialMasterDeleteData",
+          "file": "ProMaterialMasterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

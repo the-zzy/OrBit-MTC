@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BJBB",
+  "name": "备件调仓库存报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "备件调仓库存报表",
+  "metadata": "BJBB",
+  "objects": [
+    {
+      "id": "MTD10000027N",
+      "name": "BJTCStockQuery",
+      "text": "备件调仓库存报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

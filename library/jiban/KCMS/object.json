@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KCMS",
+  "name": "散件物料属性维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件物料属性维护",
+  "metadata": "KCMS",
+  "objects": [
+    {
+      "id": "MTD1000002BK",
+      "name": "KDCraftMaterialSpec",
+      "text": "散件物料属性维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCraftMaterialSpecMainView",
+          "file": "KDCraftMaterialSpecMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCraftMaterialSpecTreeView",
+          "file": "KDCraftMaterialSpecTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCraftMaterialSpecSaveData",
+          "file": "KDCraftMaterialSpecSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCraftMaterialSpecDeleteData",
+          "file": "KDCraftMaterialSpecDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

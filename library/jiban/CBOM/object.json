@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CBOM",
+  "name": "客户BOM表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户BOM表",
+  "metadata": "CBOM",
+  "objects": [
+    {
+      "id": "MTD100000249",
+      "name": "CustBOM",
+      "text": "客户BOM表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustBOMMainView",
+          "file": "CustBOMMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustBOMTreeView",
+          "file": "CustBOMTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustBOMSaveData",
+          "file": "CustBOMSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustBOMDeleteData",
+          "file": "CustBOMDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000248",
+      "name": "CustBOMItem",
+      "text": "",
+      "parentId": "MTD100000249",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustBOMItemMainView",
+          "file": "CustBOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustBOMItemTreeView",
+          "file": "CustBOMItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustBOMItemSaveData",
+          "file": "CustBOMItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustBOMItemDeleteData",
+          "file": "CustBOMItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

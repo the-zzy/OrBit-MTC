@@ -1,0 +1,223 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "USRG",
+  "name": "用户组管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "用户组管理",
+  "metadata": "SysUserGroup",
+  "objects": [
+    {
+      "id": "MTD10000006W",
+      "name": "SysUserGroup",
+      "text": "用户组管理",
+      "parentId": "MTD10000006V",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysUserGroupMainView",
+          "file": "SysUserGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysUserGroupTreeView",
+          "file": "SysUserGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysUserGroupSaveData",
+          "file": "SysUserGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysUserGroupDeleteData",
+          "file": "SysUserGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000006X",
+      "name": "SysUser_UserGroup_UG",
+      "text": "用户组下的用户",
+      "parentId": "MTD10000006W",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysUser_UserGroup_UG_MainView",
+          "file": "SysUser_UserGroup_UG_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysUser_UserGroup_UG_TreeView",
+          "file": "SysUser_UserGroup_UG_TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysUser_UserGroup_UG_SaveData",
+          "file": "SysUser_UserGroup_UG_SaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysUser_UserGroup_DeleteData",
+          "file": "SysUser_UserGroup_DeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000006Y",
+      "name": "SysMenuGroup",
+      "text": "菜单组",
+      "parentId": "MTD10000006W",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysMenuGroupMainView",
+          "file": "SysMenuGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysMenuGroupTreeView",
+          "file": "SysMenuGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysMenuGroupSaveData",
+          "file": "SysMenuGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysMenuGroupDeleteData",
+          "file": "SysMenuGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023Y",
+      "name": "SysMenuOD",
+      "text": "OrDroid菜单项",
+      "parentId": "MTD10000006Y",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysMenuODMainView",
+          "file": "SysMenuODMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysMenuODTreeView",
+          "file": "SysMenuODTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysMenuODSaveData",
+          "file": "SysMenuODSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysMenuODDeleteData",
+          "file": "SysMenuODDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000072",
+      "name": "SysMenu",
+      "text": "菜单项",
+      "parentId": "MTD10000006Y",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysMenuMainView",
+          "file": "SysMenuMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysMenuTreeView",
+          "file": "SysMenuTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysMenuSaveData",
+          "file": "SysMenuSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysMenuDeleteData",
+          "file": "SysMenuDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000EC",
+      "name": "UserGroupAuthorize",
+      "text": "用户组可授权用户",
+      "parentId": "MTD10000006W",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserGroupAuthorizeMainView",
+          "file": "UserGroupAuthorizeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserGroupAuthorizeTreeView",
+          "file": "UserGroupAuthorizeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserGroupAuthorizeSaveData",
+          "file": "UserGroupAuthorizeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserGroupAuthorizeDeleteData",
+          "file": "UserGroupAuthorizeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

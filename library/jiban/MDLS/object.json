@@ -1,0 +1,168 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MDLS",
+  "name": "机型维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "机型维护",
+  "metadata": "MDLS",
+  "objects": [
+    {
+      "id": "MTD1000001OQ",
+      "name": "CommodityInspectionModel",
+      "text": "机型维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ModelMainView",
+          "file": "ModelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ModelTreeView",
+          "file": "ModelTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OR",
+      "name": "CommodityInspectionModelItem",
+      "text": "客户机型",
+      "parentId": "MTD1000001OQ",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionModelMainView",
+          "file": "CommodityInspectionModelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionModelTreeView",
+          "file": "CommodityInspectionModelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityInspectionModelSaveData",
+          "file": "CommodityInspectionModelSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CommodityInspectionModelDeleteData",
+          "file": "CommodityInspectionModelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027H",
+      "name": "CommodityInspectionModelDetail",
+      "text": "基板机型通配",
+      "parentId": "MTD1000001OR",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionModelDetailMainView",
+          "file": "CommodityInspectionModelDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionModelDetailTreeView",
+          "file": "CommodityInspectionModelDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityInspectionModelDetailSaveData",
+          "file": "CommodityInspectionModelDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CommodityInspectionModelDeleteData",
+          "file": "CommodityInspectionModelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PE",
+      "name": "Product_ModelDefined",
+      "text": "产品型号对应表",
+      "parentId": "MTD1000001OR",
+      "sequence": "6",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_ModelMainView",
+          "file": "Product_ModelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_ModelDefineTreeView",
+          "file": "Product_ModelDefineTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Product_ModelSaveData",
+          "file": "Product_ModelSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PD",
+      "name": "Product_Model",
+      "text": "产品型号定义",
+      "parentId": "MTD1000001OQ",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_ModelMainView",
+          "file": "Product_ModelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_ModelTreeView",
+          "file": "Product_ModelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Product_ModelSaveData",
+          "file": "Product_ModelSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

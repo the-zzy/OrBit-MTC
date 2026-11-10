@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "IFAE",
+  "name": "自动刷新列表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "自动刷新列表",
+  "metadata": "InterfaceAutoExec",
+  "objects": [
+    {
+      "id": "MTD1000000JK",
+      "name": "InterfaceAutoExec",
+      "text": "自动刷新列表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InterfaceAutoExecMainView",
+          "file": "InterfaceAutoExecMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InterfaceAutoExecTreeView",
+          "file": "InterfaceAutoExecTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InterfaceAutoExecSaveData",
+          "file": "InterfaceAutoExecSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InterfaceAutoExecDeleteData",
+          "file": "InterfaceAutoExecDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

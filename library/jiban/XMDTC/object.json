@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "XMDTC",
+  "name": "小米财务对账",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "小米财务对账",
+  "metadata": "XMDTC",
+  "objects": [
+    {
+      "id": "MTD10000023X",
+      "name": "XM108DataQuery",
+      "text": "小米财务对账",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,78 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ECN17",
+  "name": "小资产料号变更履历表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "小资产料号变更履历表",
+  "metadata": "ECN17",
+  "objects": [
+    {
+      "id": "MTD10000022Y",
+      "name": "ECN17",
+      "text": "小资产料号变更履历表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNMainView",
+          "file": "ECNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNTreeView",
+          "file": "ECNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNSaveData",
+          "file": "ECNSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022Z",
+      "name": "ECNItem17",
+      "text": "小资产料号变更履历表列表",
+      "parentId": "MTD10000022Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNItemMainView",
+          "file": "ECNItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNItemTreeView",
+          "file": "ECNItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNItemSaveData",
+          "file": "ECNItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ECNItemDeleteData",
+          "file": "ECNItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

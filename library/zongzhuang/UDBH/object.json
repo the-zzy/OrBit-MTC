@@ -1,0 +1,73 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "UDBH",
+  "name": "烘烤批次管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "烘烤批次管理",
+  "metadata": "UserDefinBatcht",
+  "objects": [
+    {
+      "id": "MTD1000001S7",
+      "name": "UserDefinBatch",
+      "text": "烘烤批次管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserDefinBatchMainView",
+          "file": "UserDefinBatchMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserDefinBatchTreeView",
+          "file": "UserDefinBatchTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserDefinBatchSaveData",
+          "file": "UserDefinBatchSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserDefinBatchDeleteData",
+          "file": "UserDefinBatchDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001S8",
+      "name": "OverDueLotSnBake",
+      "text": "原材料烘烤明细",
+      "parentId": "MTD1000001S7",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverDueLotSnBakeMainView",
+          "file": "OverDueLotSnBakeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverDueLotSnBakeTreeView",
+          "file": "OverDueLotSnBakeTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

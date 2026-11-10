@@ -1,0 +1,38 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BURN",
+  "name": "老化管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "老化管理",
+  "metadata": "burnlot",
+  "objects": [
+    {
+      "id": "MTD1000000UJ",
+      "name": "Burnlot",
+      "text": "老化管理",
+      "parentId": "",
+      "sequence": "9",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnlotMainView",
+          "file": "BurnlotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnlotTreeView",
+          "file": "BurnlotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

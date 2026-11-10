@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SHIP",
+  "name": "关务出货船期数据",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "关务出货船期数据",
+  "metadata": "SHIP",
+  "objects": [
+    {
+      "id": "MTD1000002CC",
+      "name": "ShipmentInfo",
+      "text": "关务出货船期数据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShipmentInfoMainView",
+          "file": "ShipmentInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShipmentInfoTreeView",
+          "file": "ShipmentInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShipmentInfoSaveData",
+          "file": "ShipmentInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShipmentInfoDeleteData",
+          "file": "ShipmentInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

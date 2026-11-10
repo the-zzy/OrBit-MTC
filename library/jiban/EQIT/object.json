@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EQIT",
+  "name": "设备盘点计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备盘点计划",
+  "metadata": "EquipmentInventory",
+  "objects": [
+    {
+      "id": "MTD1000000GX",
+      "name": "EquipmentInventory",
+      "text": "设备盘点计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentInventoryMainView",
+          "file": "EquipmentInventoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentInventoryTreeView",
+          "file": "EquipmentInventoryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentInventorySaveData",
+          "file": "EquipmentInventorySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentInventoryDeleteData",
+          "file": "EquipmentInventoryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GY",
+      "name": "EquipmentInventoryDetail",
+      "text": "盘点设备参考表",
+      "parentId": "MTD1000000GX",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentInventoryDetailMainView",
+          "file": "EquipmentInventoryDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentInventoryDetailTreeView",
+          "file": "EquipmentInventoryDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentInventoryDetailSaveData",
+          "file": "EquipmentInventoryDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentInventoryDetailDeleteData",
+          "file": "EquipmentInventoryDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GZ",
+      "name": "PanDianResult",
+      "text": "盘点结果",
+      "parentId": "MTD1000000GX",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PanDianResultMainView",
+          "file": "PanDianResultMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PanDianResultTreeView",
+          "file": "PanDianResultTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PanDianResultSaveData",
+          "file": "PanDianResultSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PanDianResultDeleteData",
+          "file": "PanDianResultDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

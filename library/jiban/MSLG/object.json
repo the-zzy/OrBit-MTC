@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MSLG",
+  "name": "湿敏等级维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "湿敏等级维护",
+  "metadata": "MSLG",
+  "objects": [
+    {
+      "id": "MTD1000000SV",
+      "name": "MSLGrade",
+      "text": "湿敏等级维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MSLGradeMainView",
+          "file": "MSLGradeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MSLGradeTreeView",
+          "file": "MSLGradeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MSLGradeSaveData",
+          "file": "MSLGradeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MSLGradeDeleteData",
+          "file": "MSLGradeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SW",
+      "name": "MSLGradeItem",
+      "text": "湿敏受控物料",
+      "parentId": "MTD1000000SV",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MSLGradeItemMainView",
+          "file": "MSLGradeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MSLGradeItemTreeView",
+          "file": "MSLGradeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MSLGradeItemSaveData",
+          "file": "MSLGradeItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MSLGradeItemDeleteData",
+          "file": "MSLGradeItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

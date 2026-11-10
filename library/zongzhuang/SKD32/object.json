@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD32",
+  "name": "IQC检验记录查询",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "IQC检验记录查询",
+  "metadata": "IQCOrderCP",
+  "objects": [
+    {
+      "id": "MTD10000026S",
+      "name": "IQCOrderCP",
+      "text": "IQC检验记录查询",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCOrderMainView",
+          "file": "IQCOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCOrderCPTreeView",
+          "file": "IQCOrderCPTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026U",
+      "name": "IQCOrderChkLotCJ",
+      "text": "IQC抽检明细",
+      "parentId": "MTD10000026S",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCOrderChkLotMainView",
+          "file": "IQCOrderChkLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCOrderChkLotCJTreeView",
+          "file": "IQCOrderChkLotCJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026T",
+      "name": "IQCOrderChkLotPD",
+      "text": "IQC判定明细",
+      "parentId": "MTD10000026S",
+      "sequence": "03",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCOrderChkLotMainView",
+          "file": "IQCOrderChkLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCOrderChkLotPDTreeView",
+          "file": "IQCOrderChkLotPDTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

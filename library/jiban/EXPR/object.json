@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EXPR",
+  "name": "运维异常登记",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "运维异常登记",
+  "metadata": "ExceptionRecord",
+  "objects": [
+    {
+      "id": "MTD10000029E",
+      "name": "ExceptionRecord",
+      "text": "运维异常登记",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ExceptionRecordMainView",
+          "file": "ExceptionRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ExceptionRecordTreeView",
+          "file": "ExceptionRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ExceptionRecordSaveData",
+          "file": "ExceptionRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ExceptionRecordDeleteData",
+          "file": "ExceptionRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

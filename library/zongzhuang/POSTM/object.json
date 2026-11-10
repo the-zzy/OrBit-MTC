@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "POSTM",
+  "name": "分级授权",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "分级授权",
+  "metadata": "PostManagement",
+  "objects": [
+    {
+      "id": "MTD1000000E8",
+      "name": "PostManagement",
+      "text": "分级授权",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PostManagementMainView",
+          "file": "PostManagementMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PostManagementTreeView",
+          "file": "PostManagementTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PostManagementSaveData",
+          "file": "PostManagementSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PostManagementDeleteData",
+          "file": "PostManagementDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000EB",
+      "name": "UserAuthorize",
+      "text": "所授权用户组",
+      "parentId": "MTD1000000E8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysUser_UserGroup_UR_MainView",
+          "file": "SysUser_UserGroup_UR_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysUser_UserGroup_UR_TreeView",
+          "file": "SysUser_UserGroup_UR_TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserAuthorizeSaveData",
+          "file": "UserAuthorizeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserAuthorizeDeleteData",
+          "file": "UserAuthorizeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

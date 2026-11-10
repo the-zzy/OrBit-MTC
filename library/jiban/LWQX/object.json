@@ -1,0 +1,78 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LWQX",
+  "name": "炉温曲线管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "炉温曲线管理",
+  "metadata": "LWQX",
+  "objects": [
+    {
+      "id": "MTD10000029V",
+      "name": "LwqxManage",
+      "text": "炉温曲线管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LwqxManageMainView",
+          "file": "LwqxManageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LwqxManageTreeView",
+          "file": "LwqxManageTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LwqxManageSaveData",
+          "file": "LwqxManageSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000029W",
+      "name": "LwqxManageItem",
+      "text": "炉温曲线图",
+      "parentId": "MTD10000029V",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LwqxManageItemMainView",
+          "file": "LwqxManageItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LwqxManageItemTreeView",
+          "file": "LwqxManageItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LwqxManageItemSaveData",
+          "file": "LwqxManageItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LwqxManageItemDeleteData",
+          "file": "LwqxManageItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,33 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SPWG",
+  "name": "出货预警",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "出货预警",
+  "metadata": "发出出货预警，记录预警编号、订单信息、产品型号、预警日期、预警内容、处理状态等数据，确保出货预警的及时性和可追溯性。这有助于提前发现潜在的出货风险，采取有效的应对措施，保障产品按时交付给客户，提高客户满意度。",
+  "objects": [
+    {
+      "id": "MTD10000028P",
+      "name": "ShipmentWarning",
+      "text": "出货预警",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ShipmentWarningTreeView",
+          "file": "ShipmentWarningTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

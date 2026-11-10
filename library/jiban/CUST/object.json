@@ -1,0 +1,514 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CUST",
+  "name": "客户",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户",
+  "metadata": "Customer",
+  "pulled": {
+    "MainView": "2026-11-07T18:16:50+08:00",
+    "meta": "2026-11-09T09:54:21+08:00"
+  },
+  "objects": [
+    {
+      "id": "MTD100000088",
+      "name": "Customer",
+      "text": "客户",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "Customer",
+        "columns": [
+          {
+            "name": "CustomerId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "客户Id"
+          },
+          {
+            "name": "CustomerName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户名称"
+          },
+          {
+            "name": "CustomerAbbr",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户简称"
+          },
+          {
+            "name": "CustomerDescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户描述"
+          },
+          {
+            "name": "FactoryId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工厂代码ID"
+          },
+          {
+            "name": "OrganID",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户PO"
+          },
+          {
+            "name": "ERPID",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "ERP 行ID"
+          },
+          {
+            "name": "ERPDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "ERP 修改日期"
+          },
+          {
+            "name": "DeleteFlag",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "删除标记  X 删除"
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "MaterialReturn",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "有客供料"
+          },
+          {
+            "name": "CheckRate",
+            "type": "char(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "抽检比例"
+          },
+          {
+            "name": "IsCheck",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否维修机抽检"
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerMainView",
+          "file": "CustomerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerTreeView",
+          "file": "CustomerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSaveData",
+          "file": "CustomerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerDeleteData",
+          "file": "CustomerDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T14:14:19+08:00",
+        "MainView": "2026-11-09T14:15:24+08:00",
+        "TreeView": "2026-11-09T09:54:21+08:00",
+        "SaveData": "2026-11-09T09:54:21+08:00",
+        "DeleteView": "2026-11-09T09:54:21+08:00",
+        "style": "2026-11-09T14:15:43+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "CustomerTreeView",
+          "columns": [
+            {
+              "name": "CustomerId",
+              "text": "客户"
+            },
+            {
+              "name": "CustomerName",
+              "text": "客户"
+            },
+            {
+              "name": "CustomerAbbr",
+              "text": "客户名称"
+            },
+            {
+              "name": "CustomerDescription",
+              "text": "客户"
+            },
+            {
+              "name": "DeleteFlag",
+              "text": "删除标识"
+            },
+            {
+              "name": "ERPDate",
+              "text": "ERP 修改日期"
+            }
+          ]
+        },
+        "main": {
+          "name": "Customer",
+          "groups": [
+            {
+              "id": "MFG10000005P",
+              "sequence": "1",
+              "name": "Customer Default Group",
+              "text": "客户默认组",
+              "columns": 3,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000009AA",
+                  "name": "CustomerId",
+                  "text": "客户",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000DI",
+                  "name": "CustomerName",
+                  "text": "客户",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003UO",
+                  "name": "CustomerAbbr",
+                  "text": "客户名称",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000DJ",
+                  "name": "CustomerDescription",
+                  "text": "客户",
+                  "type": "nvarchar(100)",
+                  "lines": 2,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003UP",
+                  "name": "DeleteFlag",
+                  "text": "删除标识",
+                  "type": "char(1)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003UQ",
+                  "name": "ERPDate",
+                  "text": "ERP 修改日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009AB",
+                  "name": "MaterialReturn",
+                  "text": "有客供料",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "MTD1000001PB",
+      "name": "CustomerRef",
+      "text": "客户产品对照",
+      "parentId": "MTD100000088",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "CustomerRef",
+        "columns": [
+          {
+            "name": "CustomerRefID",
+            "type": "nvarchar(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "Customerid",
+            "type": "nvarchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Customercode",
+            "type": "nvarchar(25)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerItem",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerItemNo",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CompanyModel",
+            "type": "nvarchar(20)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "color",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OC_PN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "O_C_Glass",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "O_Csize",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Remark",
+            "type": "nvarchar(80)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MainPN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LCMPN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SKU",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OriginalPN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SellCode",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SellID",
+            "type": "nvarchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IR_PN",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Createdate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerRefMainView",
+          "file": "CustomerRefMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerRefTreeView",
+          "file": "CustomerRefTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerRefSaveData",
+          "file": "CustomerRefSaveData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:21+08:00",
+        "MainView": "2026-11-09T09:54:21+08:00",
+        "TreeView": "2026-11-09T09:54:22+08:00",
+        "SaveData": "2026-11-09T09:54:22+08:00"
+      }
+    }
+  ]
+}

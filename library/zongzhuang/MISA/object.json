@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MISA",
+  "name": "物料借归查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "物料借归查询",
+  "metadata": "Materialransaction",
+  "objects": [
+    {
+      "id": "MTD1000002EV",
+      "name": "Materialransaction",
+      "text": "物料借归查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

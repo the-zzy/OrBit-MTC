@@ -1,0 +1,38 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OFSTV",
+  "name": "TV首件记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV首件记录",
+  "metadata": "OrderFieldSettingTVFirstCheck",
+  "objects": [
+    {
+      "id": "MTD100000265",
+      "name": "OrderFieldSettingTVFirstCheck",
+      "text": "TV首件记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingTVFirstCheckMainView",
+          "file": "OrderFieldSettingTVFirstCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingTVFirstCheckTreeView",
+          "file": "OrderFieldSettingTVFirstCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

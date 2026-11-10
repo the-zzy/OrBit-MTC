@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QPRB",
+  "name": "基板生产记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "基板生产记录查询",
+  "metadata": "ProdRecRptBaseQuery",
+  "objects": [
+    {
+      "id": "MTD1000000QS",
+      "name": "ProdRecRptBaseQuery",
+      "text": "基板生产记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QPRA",
+  "name": "AV生产记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "AV生产记录查询",
+  "metadata": "ProdRecRptAVQuery",
+  "objects": [
+    {
+      "id": "MTD1000000QQ",
+      "name": "ProdRecRptAVQuery",
+      "text": "AV生产记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

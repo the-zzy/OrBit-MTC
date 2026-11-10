@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OQC",
+  "name": "OQC送检单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "OQC送检单",
+  "metadata": "OQCOrder",
+  "objects": [
+    {
+      "id": "MTD1000000NA",
+      "name": "OQCOrder",
+      "text": "OQC送检单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCOrderMainView",
+          "file": "OQCOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCOrderTreeView",
+          "file": "OQCOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OQCOrderSaveData",
+          "file": "OQCOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OQCOrderDeleteData",
+          "file": "OQCOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NB",
+      "name": "OQCOrderItem",
+      "text": "抽检详细",
+      "parentId": "MTD1000000NA",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCOrderItemMainView",
+          "file": "OQCOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCOrderItemTreeView",
+          "file": "OQCOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OQCOrderItemSaveData",
+          "file": "OQCOrderItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OQCOrderItemDeleteData",
+          "file": "OQCOrderItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

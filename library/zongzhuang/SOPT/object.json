@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SOPT",
+  "name": "作业指导书",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "作业指导书",
+  "metadata": "管理作业指导书，记录作业指导书编号、产品型号、工艺步骤、操作要求、版本信息等数据，确保作业指导书的准确性和有效性。这有助于指导生产人员正确操作，提高生产效率和产品质量，保障生产过程的稳定性和一致性。",
+  "objects": [
+    {
+      "id": "MTD1000000L7",
+      "name": "SOPTable",
+      "text": "作业指导书",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPTableMainView",
+          "file": "SOPTableMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPTableTreeView",
+          "file": "SOPTableTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPTableSaveData",
+          "file": "SOPTableSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPTableDeleteData",
+          "file": "SOPTableDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000L6",
+      "name": "SOPItem",
+      "text": "型号尺寸",
+      "parentId": "MTD1000000L7",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPItemMainView",
+          "file": "SOPItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPItemTreeView",
+          "file": "SOPItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPItemSaveData",
+          "file": "SOPItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPItemDeleteData",
+          "file": "SOPItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000L8",
+      "name": "SOPUrl",
+      "text": "作业指导书列表",
+      "parentId": "MTD1000000L6",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPUrlMainView",
+          "file": "SOPUrlMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPUrlTreeView",
+          "file": "SOPUrlTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPUrlSaveData",
+          "file": "SOPUrlSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPUrlDeleteData",
+          "file": "SOPUrlDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

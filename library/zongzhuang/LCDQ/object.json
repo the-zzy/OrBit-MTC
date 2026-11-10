@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LCDQ",
+  "name": "屏库存查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "屏库存查询",
+  "metadata": "查询屏类产品的库存信息，包括屏的型号、规格、数量、库位、入库时间、质量状态等，为仓库管理人员提供屏库存的实时数据展示。这有助于优化屏库存管理策略，提高库存盘点效率，确保屏产品供应的及时性和准确性。",
+  "objects": [
+    {
+      "id": "MTD1000001Q6",
+      "name": "LCDStockQuery",
+      "text": "屏库存查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

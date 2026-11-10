@@ -1,0 +1,113 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BBRW",
+  "name": "借机管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "借机管理",
+  "metadata": "BorrowBill",
+  "objects": [
+    {
+      "id": "MTD1000001MU",
+      "name": "BorrowBill",
+      "text": "借机管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BorrowBillMainView",
+          "file": "BorrowBillMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BorrowBillTreeView",
+          "file": "BorrowBillTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001MV",
+      "name": "BorrowBillItem",
+      "text": "借机项目",
+      "parentId": "MTD1000001MU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BorrowBillItemMainView",
+          "file": "BorrowBillItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BorrowBillItemTreeView",
+          "file": "BorrowBillItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001MW",
+      "name": "BorrowBillLot",
+      "text": "借机SN明细",
+      "parentId": "MTD1000001MU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BorrowBillLotMainView",
+          "file": "BorrowBillLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BorrowBillLotTreeView",
+          "file": "BorrowBillLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001MX",
+      "name": "BorrowBillSubmit",
+      "text": "借机SAP确认",
+      "parentId": "MTD1000001MU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BorrowBillSubmitMainView",
+          "file": "BorrowBillSubmitMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BorrowBillSubmitTreeView",
+          "file": "BorrowBillSubmitTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

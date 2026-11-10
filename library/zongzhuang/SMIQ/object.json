@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SMIQ",
+  "name": "欠料信息录入查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "欠料信息录入查询",
+  "metadata": "SMIQ",
+  "objects": [
+    {
+      "id": "MTD1000002BP",
+      "name": "ShortageMaterialInfoQuery",
+      "text": "欠料信息录入查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

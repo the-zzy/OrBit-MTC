@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DLRS",
+  "name": "发货指令",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "发货指令",
+  "metadata": "DeliveryRelease",
+  "objects": [
+    {
+      "id": "MTD1000000RO",
+      "name": "DeliveryRelease",
+      "text": "发货指令",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryReleaseMainView",
+          "file": "DeliveryReleaseMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryReleaseTreeView",
+          "file": "DeliveryReleaseTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DeliveryReleaseSaveData",
+          "file": "DeliveryReleaseSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RP",
+      "name": "DeliveryReleaseItem",
+      "text": "发货指令明细",
+      "parentId": "MTD1000000RO",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryReleaseItemMainView",
+          "file": "DeliveryReleaseItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryReleaseItemTreeView",
+          "file": "DeliveryReleaseItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DeliveryReleaseItemSaveData",
+          "file": "DeliveryReleaseItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

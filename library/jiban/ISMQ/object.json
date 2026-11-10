@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ISMQ",
+  "name": "查询其他阶工单",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "查询其他阶工单",
+  "metadata": "ISMQ",
+  "objects": [
+    {
+      "id": "MTD10000021A",
+      "name": "ImprotSMOQuery",
+      "text": "查询其他阶工单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVET",
+  "name": "TV设备管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV设备管理",
+  "metadata": "TVEquipment",
+  "objects": [
+    {
+      "id": "MTD1000001N7",
+      "name": "TVEquipment",
+      "text": "TV设备管理",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVEquipmentMainView",
+          "file": "TVEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVEquipmentTreeView",
+          "file": "TVEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVEquipmentSaveData",
+          "file": "TVEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVEquipmentDeleteData",
+          "file": "TVEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001N8",
+      "name": "TVEquipmentItem",
+      "text": "TV设备编号明细",
+      "parentId": "MTD1000001N7",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVEquipmentItemMainView",
+          "file": "TVEquipmentItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVEquipmentItemTreeView",
+          "file": "TVEquipmentItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVEquipmentItemSaveData",
+          "file": "TVEquipmentItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVEquipmentItemDeleteData",
+          "file": "TVEquipmentItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001N9",
+      "name": "TVEquipmentCheckItem",
+      "text": "TV设备点检/保养项",
+      "parentId": "MTD1000001N7",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVEquipmentCheckItemMainView",
+          "file": "TVEquipmentCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVEquipmentCheckItemTreeView",
+          "file": "TVEquipmentCheckItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVEquipmentCheckItemSaveData",
+          "file": "TVEquipmentCheckItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVEquipmentCheckItemDeleteData",
+          "file": "TVEquipmentCheckItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

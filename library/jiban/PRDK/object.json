@@ -1,0 +1,153 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PRDK",
+  "name": "生产计划排产",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "生产计划排产",
+  "metadata": "ProductionSchedule",
+  "objects": [
+    {
+      "id": "MTD1000000LP",
+      "name": "ProductionScheduleDivision",
+      "text": "生产计划排产",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductionScheduleDivisionMainView",
+          "file": "ProductionScheduleDivisionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductionScheduleDivisionTreeView",
+          "file": "ProductionScheduleDivisionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductionScheduleDivisionSaveData",
+          "file": "ProductionScheduleDivisionSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductionScheduleDivisionDeleteData",
+          "file": "ProductionScheduleDivisionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LQ",
+      "name": "ProductionSchedule",
+      "text": "计划工单信息",
+      "parentId": "MTD1000000LP",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductionScheduleMainView",
+          "file": "ProductionScheduleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductionScheduleTreeView",
+          "file": "ProductionScheduleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductionScheduleSaveData",
+          "file": "ProductionScheduleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductionScheduleDeleteData",
+          "file": "ProductionScheduleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LF",
+      "name": "ProductionScheduleItem",
+      "text": "计划数量",
+      "parentId": "MTD1000000LQ",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductionScheduleItemMainView",
+          "file": "ProductionScheduleItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductionScheduleItemTreeView",
+          "file": "ProductionScheduleItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductionScheduleItemSaveData",
+          "file": "ProductionScheduleItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductionScheduleItemDeleteData",
+          "file": "ProductionScheduleItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LO",
+      "name": "ProductionScheduleItemDetail",
+      "text": "计划表明细",
+      "parentId": "MTD1000000LP",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductionScheduleItemTMainView",
+          "file": "ProductionScheduleItemTMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductionScheduleItemTTreeView",
+          "file": "ProductionScheduleItemTTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductionScheduleItemTSaveData",
+          "file": "ProductionScheduleItemTSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductionScheduleItemTDeleteData",
+          "file": "ProductionScheduleItemTDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

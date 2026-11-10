@@ -1,0 +1,133 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CKIS",
+  "name": "CKD预入库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "CKD预入库",
+  "metadata": "CKIS",
+  "objects": [
+    {
+      "id": "MTD1000001T1",
+      "name": "KDShipPalletScan",
+      "text": "CKD预入库",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDShipPalletScanMainView",
+          "file": "KDShipPalletScanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDShipPalletScanTreeView",
+          "file": "KDShipPalletScanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDShipPalletScanSaveData",
+          "file": "KDShipPalletScanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDShipPalletScanDeleteData",
+          "file": "KDShipPalletScanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001T0",
+      "name": "KDShipPalletScanItem",
+      "text": "栈板预入库明细",
+      "parentId": "MTD1000001T1",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDShipPalletScanItemMainView",
+          "file": "KDShipPalletScanItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDShipPalletScanItemTreeView",
+          "file": "KDShipPalletScanItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDShipPalletScanItemSaveData",
+          "file": "KDShipPalletScanItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDShipPalletScanItemDeleteData",
+          "file": "KDShipPalletScanItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001T2",
+      "name": "Interface_MOInStorageCKD",
+      "text": "SAP入库状态",
+      "parentId": "MTD1000001T1",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Interface_MOInStorageMainView",
+          "file": "Interface_MOInStorageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Interface_MOInStorageCKDTreeView",
+          "file": "Interface_MOInStorageCKDTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TW",
+      "name": "MOToSap_CovertCKD",
+      "text": "CKD入库更换MO",
+      "parentId": "MTD1000001T2",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOtosapTreeView",
+          "file": "MOtosapTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

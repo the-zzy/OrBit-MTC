@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "STAY",
+  "name": "呆滞物料退货管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "呆滞物料退货管理",
+  "metadata": "呆滞物料退货管理",
+  "objects": [
+    {
+      "id": "MTD1000001TJ",
+      "name": "Stay",
+      "text": "呆滞物料退货管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StayMainView",
+          "file": "StayMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StayTreeView",
+          "file": "StayTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TL",
+      "name": "StayItem",
+      "text": "呆滞物料扫描明细",
+      "parentId": "MTD1000001TJ",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StayItemMainView",
+          "file": "StayItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StayItemTreeView",
+          "file": "StayItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TN",
+      "name": "BackOrderSummary",
+      "text": "呆滞物料汇总明细",
+      "parentId": "MTD1000001TJ",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BackOrderSummaryMainView",
+          "file": "BackOrderSummaryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BackOrderSummaryTreeView",
+          "file": "BackOrderSummaryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

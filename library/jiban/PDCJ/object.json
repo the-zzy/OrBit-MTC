@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PDCJ",
+  "name": "拆解工单绑定绑定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "拆解工单绑定绑定",
+  "metadata": "PDCJ",
+  "objects": [
+    {
+      "id": "MTD1000001RX",
+      "name": "PreDisassemblyCJ",
+      "text": "拆解工单绑定绑定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PreDisassemblyCJMainView",
+          "file": "PreDisassemblyCJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PreDisassemblyCJTreeView",
+          "file": "PreDisassemblyCJTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PreDisassemblyCJSaveData",
+          "file": "PreDisassemblyCJSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PreDisassemblyCJDeleteData",
+          "file": "PreDisassemblyCJDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VNSP",
+  "name": "越南订单对照表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "越南订单对照表",
+  "metadata": "VNSP",
+  "objects": [
+    {
+      "id": "MTD1000002DY",
+      "name": "VNSOPOContrast",
+      "text": "越南订单对照表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VNSOPOContrastMainView",
+          "file": "VNSOPOContrastMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VNSOPOContrastTreeView",
+          "file": "VNSOPOContrastTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VNSOPOContrastSaveData",
+          "file": "VNSOPOContrastSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VNSOPOContrastDeleteData",
+          "file": "VNSOPOContrastDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

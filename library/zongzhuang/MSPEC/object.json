@@ -1,0 +1,188 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MSPEC",
+  "name": "协同规程",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "协同规程",
+  "metadata": "Cooperate Specification",
+  "objects": [
+    {
+      "id": "MTD10000008F",
+      "name": "Specification",
+      "text": "协同规程",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SpecificationMainView",
+          "file": "SpecificationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SpecificationRootTreeView",
+          "file": "SpecificationRootTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SpecificationSaveData",
+          "file": "SpecificationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SpecificationDeleteData",
+          "file": "SpecificationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000008M",
+      "name": "Specification_User",
+      "text": "规程下属用户",
+      "parentId": "MTD10000008F",
+      "sequence": "0",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Specification_UserMainView",
+          "file": "Specification_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Specification_UserTreeView",
+          "file": "Specification_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Specification_UserSaveData",
+          "file": "Specification_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Specification_UserDeleteData",
+          "file": "Specification_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000008O",
+      "name": "Specification_Resource",
+      "text": "规程下属资源",
+      "parentId": "MTD10000008F",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Specification_ResourceMainView",
+          "file": "Specification_ResourceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Specification_ResourceTreeView",
+          "file": "Specification_ResourceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Specification_ResourceSaveData",
+          "file": "Specification_ResourceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Specification_ResourceDeleteData",
+          "file": "Specification_ResourceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000009V",
+      "name": "Specification_MESTxnObject",
+      "text": "MES事务对象队列",
+      "parentId": "MTD10000008F",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Specification_MESTxnObjectMainView",
+          "file": "Specification_MESTxnObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Specification_MESTxnObjectTreeView",
+          "file": "Specification_MESTxnObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Specification_MESTxnObjectSaveData",
+          "file": "Specification_MESTxnObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Specification_MESTxnObjectDeleteData",
+          "file": "Specification_MESTxnObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000AW",
+      "name": "Specification_MESTxnObjectSelector",
+      "text": "MES事务触发条件",
+      "parentId": "MTD10000009V",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Specification_MESTxnObjectSelectorMainView",
+          "file": "Specification_MESTxnObjectSelectorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Specification_MESTxnObjectSelectorTreeView",
+          "file": "Specification_MESTxnObjectSelectorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Specification_MESTxnObjectSelectorSaveData",
+          "file": "Specification_MESTxnObjectSelectorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Specification_MESTxnObjectSelectorDeleteData",
+          "file": "Specification_MESTxnObjectSelectorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

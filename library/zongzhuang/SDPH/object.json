@@ -1,0 +1,223 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SDPH",
+  "name": "制程破屏处罚",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "制程破屏处罚",
+  "metadata": "管理制程破屏处罚流程，记录处罚单编号、发生时间、责任人、破屏原因、处罚金额等信息，确保制程破屏处罚的规范性和可追溯性。这有助于提高生产人员的质量意识和操作规范性，减少生产过程中的破屏问题，保障产品质量稳定性和生产效率。",
+  "objects": [
+    {
+      "id": "MTD1000002AY",
+      "name": "ScreenDamagedPunish",
+      "text": "制程破屏处罚",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ScreenDamagedPunishMainView",
+          "file": "ScreenDamagedPunishMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ScreenDamagedPunishTreeView",
+          "file": "ScreenDamagedPunishTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ScreenDamagedPunishSaveData",
+          "file": "ScreenDamagedPunishSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ScreenDamagedPunishDeleteData",
+          "file": "ScreenDamagedPunishDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002B0",
+      "name": "ScreenDamagedPunishItem",
+      "text": "制程破屏处罚汇总",
+      "parentId": "MTD1000002AY",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ScreenDamagedPunishItemMainView",
+          "file": "ScreenDamagedPunishItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ScreenDamagedPunishItemTreeView",
+          "file": "ScreenDamagedPunishItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ScreenDamagedPunishItemSaveData",
+          "file": "ScreenDamagedPunishItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ScreenDamagedPunishItemDeleteData",
+          "file": "ScreenDamagedPunishItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AZ",
+      "name": "ScreenDamagedPunishItemDetails",
+      "text": "制程破屏处罚明细",
+      "parentId": "MTD1000002B0",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ScreenDamagedPunishItemDetailsMainView",
+          "file": "ScreenDamagedPunishItemDetailsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ScreenDamagedPunishItemDetailsTreeView",
+          "file": "ScreenDamagedPunishItemDetailsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ScreenDamagedPunishItemDetailsSaveData",
+          "file": "ScreenDamagedPunishItemDetailsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ScreenDamagedPunishItemDetailsDeleteData",
+          "file": "ScreenDamagedPunishItemDetailsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027D",
+      "name": "LineMatReturnTotal",
+      "text": "制程破屏明细",
+      "parentId": "MTD1000002AY",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnTotalMainView",
+          "file": "LineMatReturnTotalMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnTotalTreeView",
+          "file": "LineMatReturnTotalTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatReturnTotalSaveData",
+          "file": "LineMatReturnTotalSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatReturnTotalDeleteData",
+          "file": "LineMatReturnTotalDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002B1",
+      "name": "ScreenDamagedPunishAmount",
+      "text": "制程破屏处罚金额设置",
+      "parentId": "MTD1000002AY",
+      "sequence": "05",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ScreenDamagedPunishAmountMainView",
+          "file": "ScreenDamagedPunishAmountMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ScreenDamagedPunishAmountTreeView",
+          "file": "ScreenDamagedPunishAmountTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ScreenDamagedPunishAmountSaveData",
+          "file": "ScreenDamagedPunishAmountSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ScreenDamagedPunishAmountDeleteData",
+          "file": "ScreenDamagedPunishAmountDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027F",
+      "name": "LineTotalOA",
+      "text": "统计员维护",
+      "parentId": "MTD1000002AY",
+      "sequence": "06",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineTotalOAMainView",
+          "file": "LineTotalOAMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineTotalOATreeView",
+          "file": "LineTotalOATreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineTotalOASaveData",
+          "file": "LineTotalOASaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineTotalOADeleteData",
+          "file": "LineTotalOADeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

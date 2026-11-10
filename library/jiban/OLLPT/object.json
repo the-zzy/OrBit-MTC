@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OLLPT",
+  "name": "批量离线打印管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "批量离线打印管理",
+  "metadata": "OffLinePrintManage",
+  "objects": [
+    {
+      "id": "MTD1000000L3",
+      "name": "OffLinePrintManage",
+      "text": "批量离线打印管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OffLinePrintManageMainView",
+          "file": "OffLinePrintManageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OffLinePrintManageTreeView",
+          "file": "OffLinePrintManageTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OffLinePrintManageSaveData",
+          "file": "OffLinePrintManageSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OffLinePrintManageDeleteData",
+          "file": "OffLinePrintManageDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

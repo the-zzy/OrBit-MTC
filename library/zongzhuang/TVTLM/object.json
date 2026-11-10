@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVTLM",
+  "name": "TV耗材管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV耗材管理",
+  "metadata": "TVTLM",
+  "objects": [
+    {
+      "id": "MTD1000001S9",
+      "name": "TVToolList",
+      "text": "TV耗材管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVToolListMainView",
+          "file": "TVToolListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVToolListTreeView",
+          "file": "TVToolListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVToolListSaveData",
+          "file": "TVToolListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVToolListDeleteData",
+          "file": "TVToolListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001SA",
+      "name": "TVToolListItem",
+      "text": "TV钢网刀模明细",
+      "parentId": "MTD1000001S9",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVToolListItemMainView",
+          "file": "TVToolListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVToolListItemTreeView",
+          "file": "TVToolListItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVToolListItemSaveData",
+          "file": "TVToolListItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVToolListItemDeleteData",
+          "file": "TVToolListItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TVTH",
+  "name": "TV试验履历表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV试验履历表",
+  "metadata": "TVTestHistory",
+  "objects": [
+    {
+      "id": "MTD1000000RJ",
+      "name": "TVTestHistory",
+      "text": "TV试验履历表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVTestHistoryMainView",
+          "file": "TVTestHistoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVTestHistoryTreeView",
+          "file": "TVTestHistoryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVTestHistorySaveData",
+          "file": "TVTestHistorySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVTestHistoryDeleteData",
+          "file": "TVTestHistoryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

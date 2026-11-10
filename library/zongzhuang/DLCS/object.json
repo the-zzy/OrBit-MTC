@@ -1,0 +1,178 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DLCS",
+  "name": "TCON交货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TCON交货单",
+  "metadata": "MESDeliveryOrderTCN",
+  "objects": [
+    {
+      "id": "MTD1000001PO",
+      "name": "MESDeliveryOrderLCD",
+      "text": "TCON交货单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MESDeliveryOrderLCDMainView",
+          "file": "MESDeliveryOrderLCDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MesDeliveryOrderlcdTreeView",
+          "file": "MesDeliveryOrderlcdTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PP",
+      "name": "DeliveryOrderItemLCD",
+      "text": "交货单明细",
+      "parentId": "MTD1000001PO",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryOrderItemMainView",
+          "file": "DeliveryOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderItemTreeView",
+          "file": "DeliveryOrderItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PQ",
+      "name": "DeliveryOrderItemLotLCD",
+      "text": "交货单明细批号",
+      "parentId": "MTD1000001PP",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryOrderItemlotLCDMainView",
+          "file": "DeliveryOrderItemlotLCDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderItemLotlcdTreeView",
+          "file": "DeliveryOrderItemLotlcdTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PV",
+      "name": "KDShipPalletLCD",
+      "text": "交货单栈板信息",
+      "parentId": "MTD1000001PP",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDShipPalletMainView",
+          "file": "KDShipPalletMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDShipPalletTreeView",
+          "file": "KDShipPalletTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDShipPalletSaveData",
+          "file": "KDShipPalletSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDShipPalletDeleteData",
+          "file": "KDShipPalletDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001QT",
+      "name": "IQCCheckinLotLCD",
+      "text": "SAP确认明细",
+      "parentId": "MTD1000001PO",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotLcdTreeView",
+          "file": "IQCCheckinLotLcdTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WD",
+      "name": "VendorDeliveryItemDo",
+      "text": "SRM交货单",
+      "parentId": "MTD1000001PO",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryItemMainView",
+          "file": "VendorDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryItemDoTreeView",
+          "file": "VendorDeliveryItemDoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

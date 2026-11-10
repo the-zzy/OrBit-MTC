@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PROP",
+  "name": "PortablePrinter",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "PortablePrinter",
+  "metadata": "PortablePrinter",
+  "objects": [
+    {
+      "id": "MTD1000002GN",
+      "name": "PortablePrinter",
+      "text": "PortablePrinter",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PortablePrinterMainView",
+          "file": "PortablePrinterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PortablePrinterTreeView",
+          "file": "PortablePrinterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PortablePrinterSaveData",
+          "file": "PortablePrinterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PortablePrinterDeleteData",
+          "file": "PortablePrinterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

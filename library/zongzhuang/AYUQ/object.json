@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "AYUQ",
+  "name": "辅料解冻明细",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "辅料解冻明细",
+  "metadata": "AccessoryUnfreezeDetail",
+  "objects": [
+    {
+      "id": "MTD1000000O6",
+      "name": "AccessoryUnfreezeQuery",
+      "text": "辅料解冻明细",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

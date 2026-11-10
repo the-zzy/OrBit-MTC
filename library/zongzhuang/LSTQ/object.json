@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LSTQ",
+  "name": "拆分批号来源查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "拆分批号来源查询",
+  "metadata": "查询拆分批号的来源信息，记录原批号、拆分时间、原因、数量和新批号等关键数据，确保物料批号管理的可追溯性和准确性，方便质量部门在质量追溯过程中快速定位和处理质量问题。",
+  "objects": [
+    {
+      "id": "MTD1000001P7",
+      "name": "LotSplitTraceQuery",
+      "text": "拆分批号来源查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

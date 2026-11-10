@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PDMS",
+  "name": "工艺文件管理系统",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工艺文件管理系统",
+  "metadata": "管理工艺文件管理系统，记录文件编号、文件名称、版本号、生效日期、关联产品、上传人员等信息，确保工艺文件的准确性和有效性。这有助于提高生产过程中的工艺管理水平，保障产品质量的稳定性和一致性，促进企业的技术积累和创新。",
+  "objects": [
+    {
+      "id": "MTD1000002DL",
+      "name": "ProcessDocumentMS",
+      "text": "工艺文件管理系统",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProcessDocumentMSMainView",
+          "file": "ProcessDocumentMSMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProcessDocumentMSTreeView",
+          "file": "ProcessDocumentMSTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProcessDocumentMSSaveData",
+          "file": "ProcessDocumentMSSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProcessDocumentMSDeleteData",
+          "file": "ProcessDocumentMSDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DM",
+      "name": "ProcessDocumentMSHis",
+      "text": "工艺文件变更记录",
+      "parentId": "MTD1000002DL",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProcessDocumentMSHisMainView",
+          "file": "ProcessDocumentMSHisMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProcessDocumentMSHisTreeView",
+          "file": "ProcessDocumentMSHisTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProcessDocumentMSHisSaveData",
+          "file": "ProcessDocumentMSHisSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProcessDocumentMSHisDeleteData",
+          "file": "ProcessDocumentMSHisDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

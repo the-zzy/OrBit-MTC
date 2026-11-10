@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PFMA",
+  "name": "工序档案维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工序档案维护",
+  "metadata": "PFMA",
+  "objects": [
+    {
+      "id": "MTD10000028D",
+      "name": "ProcessFileMaintenance",
+      "text": "工序档案维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProcessFileMaintenanceMainView",
+          "file": "ProcessFileMaintenanceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProcessFileMaintenanceTreeView",
+          "file": "ProcessFileMaintenanceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProcessFileMaintenanceSaveData",
+          "file": "ProcessFileMaintenanceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProcessFileMaintenanceDeleteData",
+          "file": "ProcessFileMaintenanceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028E",
+      "name": "ProcessFileMaintenanceItem",
+      "text": "工序档案维护明细",
+      "parentId": "MTD10000028D",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProcessFileMaintenanceItemMainView",
+          "file": "ProcessFileMaintenanceItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProcessFileMaintenanceItemTreeView",
+          "file": "ProcessFileMaintenanceItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProcessFileMaintenanceItemSaveData",
+          "file": "ProcessFileMaintenanceItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProcessFileMaintenanceItemDeleteData",
+          "file": "ProcessFileMaintenanceItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

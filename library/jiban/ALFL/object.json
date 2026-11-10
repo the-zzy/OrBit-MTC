@@ -1,0 +1,243 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ALFL",
+  "name": "辅料备料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "辅料备料",
+  "metadata": "AccessoryIssue",
+  "objects": [
+    {
+      "id": "MTD10000025I",
+      "name": "AccessoryIssue",
+      "text": "辅料备料",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessoryIssueMainView",
+          "file": "AccessoryIssueMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessoryIssueTreeView",
+          "file": "AccessoryIssueTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessoryIssueSaveData",
+          "file": "AccessoryIssueSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessoryIssueDeleteData",
+          "file": "AccessoryIssueDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025M",
+      "name": "FuLiaoMatPickingList",
+      "text": "辅料领料单",
+      "parentId": "MTD10000025I",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListMainView",
+          "file": "BrazilMatPickingListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FuLiaoMatPickingListTreeView",
+          "file": "FuLiaoMatPickingListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025N",
+      "name": "FuLiaoMatPickingListItem",
+      "text": "辅料领料明细",
+      "parentId": "MTD10000025M",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListItemMainView",
+          "file": "BrazilMatPickingListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BrazilMatPickingListItemTreeView",
+          "file": "BrazilMatPickingListItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025O",
+      "name": "FuLiaoMatPickingListItemLot",
+      "text": "辅料领料明细",
+      "parentId": "MTD10000025N",
+      "sequence": "3",
+      "depth": 4,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListItemLotMainView",
+          "file": "BrazilMatPickingListItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BrazilMatPickingListItemLotTreeView",
+          "file": "BrazilMatPickingListItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025S",
+      "name": "OverPicking",
+      "text": "赠送",
+      "parentId": "MTD10000025M",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverPickingMainView",
+          "file": "OverPickingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverPickingTreeView",
+          "file": "OverPickingTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025K",
+      "name": "AccessoryIssueItem",
+      "text": "辅料发料明细",
+      "parentId": "MTD10000025I",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessoryIssueItemMainView",
+          "file": "AccessoryIssueItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessoryIssueItemTreeView",
+          "file": "AccessoryIssueItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessoryIssueItemSaveData",
+          "file": "AccessoryIssueItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessoryIssueItemDeleteData",
+          "file": "AccessoryIssueItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025J",
+      "name": "AccessoryIssueItemLot",
+      "text": "辅料发料批号明细",
+      "parentId": "MTD10000025K",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessoryIssueItemLotMainView",
+          "file": "AccessoryIssueItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessoryIssueItemLotTreeView",
+          "file": "AccessoryIssueItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessoryIssueItemLotSaveData",
+          "file": "AccessoryIssueItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessoryIssueItemLotDeleteData",
+          "file": "AccessoryIssueItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025P",
+      "name": "WW_AccessoryDeposit",
+      "text": "寄存物料",
+      "parentId": "MTD10000025I",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_AccessoryDepositMainView",
+          "file": "WW_AccessoryDepositMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_AccessoryDepositTreeView",
+          "file": "WW_AccessoryDepositTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

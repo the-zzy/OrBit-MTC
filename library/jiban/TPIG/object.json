@@ -1,0 +1,163 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TPIG",
+  "name": "TV入库确认",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV入库确认",
+  "metadata": "TVPredictInStorage",
+  "objects": [
+    {
+      "id": "MTD1000000PW",
+      "name": "TVPredictInStorage",
+      "text": "TV入库确认",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageTVMainView",
+          "file": "PredictInStorageTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageTVTreeView",
+          "file": "PredictInStorageTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RL",
+      "name": "Interface_MOInStorage",
+      "text": "SAP入库状态",
+      "parentId": "MTD1000000PW",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Interface_MOInStorageMainView",
+          "file": "Interface_MOInStorageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Interface_MOInStorageTreeView",
+          "file": "Interface_MOInStorageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001NF",
+      "name": "MOToSap_Covert",
+      "text": "SAP入库更换MO",
+      "parentId": "MTD1000000RL",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOtosapTreeView",
+          "file": "MOtosapTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PY",
+      "name": "TVPredictInStorageItemPalletSN",
+      "text": "预入库栈板明细",
+      "parentId": "MTD1000000PW",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemPalletSNTVMainView",
+          "file": "PredictInStorageItemPalletSNTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemPalletSNTVTreeView",
+          "file": "PredictInStorageItemPalletSNTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000Q0",
+      "name": "TVPredictInStorageItemLot",
+      "text": "预入库批号明细",
+      "parentId": "MTD1000000PY",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemLotTVMainView",
+          "file": "PredictInStorageItemLotTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemLotTVTreeView",
+          "file": "PredictInStorageItemLotTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001MH",
+      "name": "TVPredictAutoInStorageLog",
+      "text": "TV自动入库记录",
+      "parentId": "MTD1000000PW",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictAutoInStorageLogTVMainView",
+          "file": "PredictAutoInStorageLogTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictAutoInStorageLogTVTreeView",
+          "file": "PredictAutoInStorageLogTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

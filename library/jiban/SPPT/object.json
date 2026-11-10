@@ -1,0 +1,98 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPPT",
+  "name": "车辆调度信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "车辆调度信息",
+  "metadata": "SPPT",
+  "objects": [
+    {
+      "id": "MTD1000001YX",
+      "name": "ShippingPort",
+      "text": "车辆调度信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShippingPortMainView",
+          "file": "ShippingPortMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShippingPortTreeView",
+          "file": "ShippingPortTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShippingPortSaveData",
+          "file": "ShippingPortSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShippingPortDeleteData",
+          "file": "ShippingPortDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Z1",
+      "name": "ShippingPortItem",
+      "text": "离场车辆明细",
+      "parentId": "MTD1000001YX",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShippingPortQueueMainView",
+          "file": "ShippingPortQueueMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShippingPortItemTreeView",
+          "file": "ShippingPortItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001YY",
+      "name": "ShippingPortQueue",
+      "text": "在港队列",
+      "parentId": "MTD1000001YX",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShippingPortQueueMainView",
+          "file": "ShippingPortQueueMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShippingPortQueueTreeView",
+          "file": "ShippingPortQueueTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

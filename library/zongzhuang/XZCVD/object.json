@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "XZCVD",
+  "name": "小资产送货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "小资产送货单",
+  "metadata": "XZCVD",
+  "objects": [
+    {
+      "id": "MTD1000002D3",
+      "name": "XZCVendorDelivery",
+      "text": "小资产送货单",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XZCVendorDeliveryMainView",
+          "file": "XZCVendorDeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XZCVendorDeliveryTreeView",
+          "file": "XZCVendorDeliveryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002D4",
+      "name": "XZCVendorDeliveryItem",
+      "text": "小资产送货单明细",
+      "parentId": "MTD1000002D3",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XZCVendorDeliveryItemMainView",
+          "file": "XZCVendorDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XZCVendorDeliveryItemTreeView",
+          "file": "XZCVendorDeliveryItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002D7",
+      "name": "XZCVendorDeliveryItemLot",
+      "text": "小资产送货单明细批号",
+      "parentId": "MTD1000002D4",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XZCVendorDeliveryItemLotMainView",
+          "file": "XZCVendorDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XZCVendorDeliveryItemLotTreeView",
+          "file": "XZCVendorDeliveryItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

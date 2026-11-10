@@ -1,0 +1,108 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MBPP",
+  "name": "退领转换计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "退领转换计划",
+  "metadata": "MaterialBindPlan",
+  "objects": [
+    {
+      "id": "MTD1000002EI",
+      "name": "MaterialBindPlan",
+      "text": "退领转换计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialBindPlanMainView",
+          "file": "MaterialBindPlanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialBindPlanTreeView",
+          "file": "MaterialBindPlanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialBindPlanSaveData",
+          "file": "MaterialBindPlanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialBindPlanDeleteData",
+          "file": "MaterialBindPlanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EJ",
+      "name": "MaterialBindPlanItem",
+      "text": "材料绑定明细",
+      "parentId": "MTD1000002EI",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialBindPlanItemMainView",
+          "file": "MaterialBindPlanItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialBindPlanItemTreeView",
+          "file": "MaterialBindPlanItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialBindPlanItemSaveData",
+          "file": "MaterialBindPlanItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialBindPlanItemDeleteData",
+          "file": "MaterialBindPlanItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002F7",
+      "name": "MaterialBindPlanItemLot",
+      "text": "箱号绑定关系",
+      "parentId": "MTD1000002EJ",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialBindPlanItemLotMainView",
+          "file": "MaterialBindPlanItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialBindPlanItemLotTreeView",
+          "file": "MaterialBindPlanItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

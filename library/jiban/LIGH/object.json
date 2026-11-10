@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LIGH",
+  "name": "查询光照明度",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "查询光照明度",
+  "metadata": "QueryLightInspection",
+  "objects": [
+    {
+      "id": "MTD1000002B4",
+      "name": "LightInspection",
+      "text": "查询光照明度",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LightInspectionMainView",
+          "file": "LightInspectionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LightInspectionTreeView",
+          "file": "LightInspectionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LightInspectionSaveData",
+          "file": "LightInspectionSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LightInspectionDeleteData",
+          "file": "LightInspectionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

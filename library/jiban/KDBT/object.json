@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KDBT",
+  "name": "外箱类别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "外箱类别",
+  "metadata": "KDBoxType",
+  "objects": [
+    {
+      "id": "MTD1000000PF",
+      "name": "KDBoxType",
+      "text": "外箱类别",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxTypeMainView",
+          "file": "KDBoxTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxTypeTreeView",
+          "file": "KDBoxTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDBoxTypeSaveData",
+          "file": "KDBoxTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDBoxTypeDeleteData",
+          "file": "KDBoxTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PI",
+      "name": "KDBoxTypeItem",
+      "text": "类别明细",
+      "parentId": "MTD1000000PF",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxTypeItemMainView",
+          "file": "KDBoxTypeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxTypeItemTreeView",
+          "file": "KDBoxTypeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDBoxTypeItemSaveData",
+          "file": "KDBoxTypeItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDBoxTypeItemDeleteData",
+          "file": "KDBoxTypeItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

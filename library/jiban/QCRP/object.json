@@ -1,0 +1,278 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QCRP",
+  "name": "QC报表类别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "QC报表类别",
+  "metadata": "IQCREPORT",
+  "objects": [
+    {
+      "id": "MTD1000001NU",
+      "name": "IQCReport",
+      "text": "QC报表类别",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCReportMainView",
+          "file": "IQCReportMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCReportTreeView",
+          "file": "IQCReportTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCReportSaveData",
+          "file": "IQCReportSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCReportDeleteData",
+          "file": "IQCReportDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001P6",
+      "name": "product_OverDue",
+      "text": "超期控制定义",
+      "parentId": "MTD1000001NU",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_OverdueMainView",
+          "file": "Product_OverdueMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_OverDueTreeView",
+          "file": "Product_OverDueTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Product_overDueSaveData",
+          "file": "Product_overDueSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001QL",
+      "name": "BadMaterial",
+      "text": "IQC物料锁定",
+      "parentId": "MTD1000001NU",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BadMaterialMainView",
+          "file": "BadMaterialMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BadMaterialTreeView",
+          "file": "BadMaterialTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BadMaterialSaveData",
+          "file": "BadMaterialSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BadMaterialDeleteData",
+          "file": "BadMaterialDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001U9",
+      "name": "IQCReportRohs",
+      "text": "样品测试批号",
+      "parentId": "MTD1000001NU",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCReportRohsMainView",
+          "file": "IQCReportRohsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCReportRohsTreeView",
+          "file": "IQCReportRohsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCReportRohsSaveData",
+          "file": "IQCReportRohsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCReportRohsDeleteData",
+          "file": "IQCReportRohsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001R1",
+      "name": "IQCReportProductComfirm",
+      "text": "新标准确认",
+      "parentId": "MTD1000001NU",
+      "sequence": "12",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCReportProductMainView",
+          "file": "IQCReportProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCReportProductComfirmTreeView",
+          "file": "IQCReportProductComfirmTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001NV",
+      "name": "IQCReportSetup",
+      "text": "报表项目设定",
+      "parentId": "MTD1000001NU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCReportSetupMainView",
+          "file": "IQCReportSetupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCReportSetupTreeView",
+          "file": "IQCReportSetupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCReportSetupSaveData",
+          "file": "IQCReportSetupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCReportSetupDeleteData",
+          "file": "IQCReportSetupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PL",
+      "name": "IQCReportSetupItem",
+      "text": "检查项定义",
+      "parentId": "MTD1000001NV",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCReportSetupItemMainView",
+          "file": "IQCReportSetupItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCReportSetupItemTreeView",
+          "file": "IQCReportSetupItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCReportSetupItemSaveData",
+          "file": "IQCReportSetupItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCReportSetupItemDeleteData",
+          "file": "IQCReportSetupItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PM",
+      "name": "IQCReportProduct",
+      "text": "料号补充定义",
+      "parentId": "MTD1000001NV",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCReportProductMainView",
+          "file": "IQCReportProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCReportProductTreeView",
+          "file": "IQCReportProductTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCReportProductSaveData",
+          "file": "IQCReportProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCReportProductDeleteData",
+          "file": "IQCReportProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EICQ",
+  "name": "DIP点检查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "DIP点检查询",
+  "metadata": "ElectronicIronCheckQuery",
+  "objects": [
+    {
+      "id": "MTD10000021G",
+      "name": "ElectronicIronCheckQuery",
+      "text": "DIP点检查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

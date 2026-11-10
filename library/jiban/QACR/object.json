@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QACR",
+  "name": "QA半成品出货报告",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "QA半成品出货报告",
+  "metadata": "QACheckReport",
+  "objects": [
+    {
+      "id": "MTD10000029Y",
+      "name": "QACheckReport",
+      "text": "QA半成品出货报告",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QACheckReportMainView",
+          "file": "QACheckReportMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QACheckReportTreeView",
+          "file": "QACheckReportTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QACheckReportSaveData",
+          "file": "QACheckReportSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QACheckReportDeleteData",
+          "file": "QACheckReportDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

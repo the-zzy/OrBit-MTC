@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TASK",
+  "name": "生产任务",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "生产任务",
+  "metadata": "TASK",
+  "objects": [
+    {
+      "id": "MTD1000000BW",
+      "name": "MOAPS",
+      "text": "生产任务",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOSTDTreeView",
+          "file": "MOSTDTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOSTDSaveData",
+          "file": "MOSTDSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOSTDDeleteData",
+          "file": "MOSTDDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BY",
+      "name": "MOAPSItem",
+      "text": "PS工单明细",
+      "parentId": "MTD1000000BW",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemSTDMainView",
+          "file": "MOItemSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemSTDTreeView",
+          "file": "MOItemSTDTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOItemSTDSaveData",
+          "file": "MOItemSTDSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOItemSTDDeleteData",
+          "file": "MOItemSTDDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BV",
+      "name": "MOItemTask",
+      "text": "工单任务",
+      "parentId": "MTD1000000BY",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemTaskMainView",
+          "file": "MOItemTaskMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemTaskTreeView",
+          "file": "MOItemTaskTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOItemTaskSaveData",
+          "file": "MOItemTaskSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOItemTaskDeleteData",
+          "file": "MOItemTaskDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

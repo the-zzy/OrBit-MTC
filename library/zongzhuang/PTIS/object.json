@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PTIS",
+  "name": "预入库确认",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "预入库确认",
+  "metadata": "PredictInStorageAffirm",
+  "objects": [
+    {
+      "id": "MTD1000000P2",
+      "name": "PredictInStorage",
+      "text": "预入库确认",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageMainView",
+          "file": "PredictInStorageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageTreeView",
+          "file": "PredictInStorageTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PredictInStorageSaveData",
+          "file": "PredictInStorageSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PredictInStorageDeleteData",
+          "file": "PredictInStorageDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000P6",
+      "name": "PredictInStorageItemPalletSN",
+      "text": "预入库栈板明细",
+      "parentId": "MTD1000000P2",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemPalletSNMainView",
+          "file": "PredictInStorageItemPalletSNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemPalletSNTreeView",
+          "file": "PredictInStorageItemPalletSNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PredictInStorageItemPalletSNSaveData",
+          "file": "PredictInStorageItemPalletSNSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PredictInStorageItemPalletSNDeleteData",
+          "file": "PredictInStorageItemPalletSNDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000P4",
+      "name": "PredictInStorageItemLot",
+      "text": "预入库批号明细",
+      "parentId": "MTD1000000P6",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemLotMainView",
+          "file": "PredictInStorageItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemLotTreeView",
+          "file": "PredictInStorageItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PredictInStorageItemLotSaveData",
+          "file": "PredictInStorageItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PredictInStorageItemLotDeleteData",
+          "file": "PredictInStorageItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

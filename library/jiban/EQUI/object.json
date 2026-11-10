@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EQUI",
+  "name": "设备EUQ定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备EUQ定义",
+  "metadata": "DIPLineEquipment",
+  "objects": [
+    {
+      "id": "MTD10000026R",
+      "name": "DIPLineEquipment",
+      "text": "设备EUQ定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPLineEquipmentMainView",
+          "file": "DIPLineEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPLineEquipmentTreeView",
+          "file": "DIPLineEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPLineEquipmentSaveData",
+          "file": "DIPLineEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPLineEquipmentDeleteData",
+          "file": "DIPLineEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

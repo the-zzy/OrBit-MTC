@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SMTR",
+  "name": "SMT收料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SMT收料",
+  "metadata": "StockListSmt",
+  "objects": [
+    {
+      "id": "MTD10000026U",
+      "name": "StockListSmt",
+      "text": "SMT收料",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "StockListSmtTreeView",
+          "file": "StockListSmtTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026W",
+      "name": "SmtProductionMark",
+      "text": "SMT标识卡打印记录",
+      "parentId": "MTD10000026U",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SmtProductionMarkMainView",
+          "file": "SmtProductionMarkMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SmtProductionMarkTreeView",
+          "file": "SmtProductionMarkTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026T",
+      "name": "StockListItemReceivedLot",
+      "text": "收料明细确认",
+      "parentId": "MTD10000026U",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockListItemReceivedLotMainView",
+          "file": "StockListItemReceivedLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockListItemReceivedLotTreeView",
+          "file": "StockListItemReceivedLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

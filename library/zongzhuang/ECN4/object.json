@@ -1,0 +1,78 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ECN4",
+  "name": "散件资料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件资料",
+  "metadata": "查询散件资料，记录资料编号、散件信息、资料名称、版本号、生效日期、上传人员等信息，确保散件资料的准确性和有效性。这有助于提高散件管理效率，保障散件的质量和可追溯性，促进企业的技术研发和生产优化。",
+  "objects": [
+    {
+      "id": "MTD1000000M9",
+      "name": "ECN4",
+      "text": "散件资料",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNMainView",
+          "file": "ECNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNTreeView",
+          "file": "ECNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNSaveData",
+          "file": "ECNSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MA",
+      "name": "ECNItem4",
+      "text": "散件URL",
+      "parentId": "MTD1000000M9",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNItemMainView",
+          "file": "ECNItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNItemTreeView",
+          "file": "ECNItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNItemSaveData",
+          "file": "ECNItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ECNItemDeleteData",
+          "file": "ECNItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

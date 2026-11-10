@@ -1,0 +1,38 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDCEL",
+  "name": "未上架清单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "未上架清单",
+  "metadata": "WW_RMInventory",
+  "objects": [
+    {
+      "id": "MTD10000025Q",
+      "name": "WW_RMInventory",
+      "text": "未上架清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_RMinventoryMainView",
+          "file": "WW_RMinventoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_RMinventoryTreeView",
+          "file": "WW_RMinventoryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

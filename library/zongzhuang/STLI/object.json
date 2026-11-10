@@ -1,0 +1,193 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "STLI",
+  "name": "工单备料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工单备料单",
+  "metadata": "查询工单备料单，记录备料单编号、工单编号、物料信息、备料数量、备料日期等数据，确保工单备料过程的规范性和可追溯性。这有助于优化物料管理流程，避免因备料错误导致的生产延误和物料浪费，提高生产效率。",
+  "objects": [
+    {
+      "id": "MTD1000001WZ",
+      "name": "StockList",
+      "text": "工单备料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockListMainView",
+          "file": "StockListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockListTreeView",
+          "file": "StockListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockListSaveData",
+          "file": "StockListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockListDeleteData",
+          "file": "StockListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X0",
+      "name": "StockList_MO",
+      "text": "备料工单",
+      "parentId": "MTD1000001WZ",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockList_MOMainView",
+          "file": "StockList_MOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockList_MOTreeView",
+          "file": "StockList_MOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockList_MOSaveData",
+          "file": "StockList_MOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockList_MODeleteData",
+          "file": "StockList_MODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X1",
+      "name": "StockListItem",
+      "text": "备料单明细汇总",
+      "parentId": "MTD1000001WZ",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockListItemMainView",
+          "file": "StockListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockListItemTreeView",
+          "file": "StockListItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockListItemSaveData",
+          "file": "StockListItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockListItemDeleteData",
+          "file": "StockListItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X2",
+      "name": "StockListItemLot",
+      "text": "备料单明细批号",
+      "parentId": "MTD1000001X1",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockListItemLotMainView",
+          "file": "StockListItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockListItemLotTreeView",
+          "file": "StockListItemLotTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockListItemLotDeleteData",
+          "file": "StockListItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021E",
+      "name": "StockList_MOItem",
+      "text": "备料单工单明细",
+      "parentId": "MTD1000001WZ",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "StockListItem_MOItemTreeView",
+          "file": "StockListItem_MOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000214",
+      "name": "ProductIssueMOItemStockList",
+      "text": "备料单工单明细",
+      "parentId": "MTD1000001WZ",
+      "sequence": "35",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductIssueMOItemStockListmainView",
+          "file": "ProductIssueMOItemStockListmainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductIssueMOItemStockListTreeView",
+          "file": "ProductIssueMOItemStockListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

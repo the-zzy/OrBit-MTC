@@ -1,0 +1,148 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CUST",
+  "name": "客户",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户",
+  "metadata": "Customer",
+  "objects": [
+    {
+      "id": "MTD100000088",
+      "name": "Customer",
+      "text": "客户",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerMainView",
+          "file": "CustomerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerTreeView",
+          "file": "CustomerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSaveData",
+          "file": "CustomerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerDeleteData",
+          "file": "CustomerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PB",
+      "name": "CustomerRef",
+      "text": "客户产品对照",
+      "parentId": "MTD100000088",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerRefMainView",
+          "file": "CustomerRefMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerRefTreeView",
+          "file": "CustomerRefTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerRefSaveData",
+          "file": "CustomerRefSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AV",
+      "name": "CustomerSNRule",
+      "text": "客户SN规则信息",
+      "parentId": "MTD100000088",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerSNRuleMainView",
+          "file": "CustomerSNRuleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerSNRuleTreeView",
+          "file": "CustomerSNRuleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSNRuleSaveData",
+          "file": "CustomerSNRuleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerSNRuleDeleteData",
+          "file": "CustomerSNRuleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AW",
+      "name": "CustomerOrder",
+      "text": "客户订单号",
+      "parentId": "MTD100000088",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerOrderMainView",
+          "file": "CustomerOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerOrderTreeView",
+          "file": "CustomerOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerOrderSaveData",
+          "file": "CustomerOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerOrderDeleteData",
+          "file": "CustomerOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,148 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PUVES",
+  "name": "采购送货单管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "采购送货单管理",
+  "metadata": "PURVendorDelivery",
+  "objects": [
+    {
+      "id": "MTD1000001OA",
+      "name": "PURVendorDelivery",
+      "text": "采购送货单管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SRMVendorDeliveryMainView",
+          "file": "SRMVendorDeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SRMVendorDeliveryTreeView",
+          "file": "SRMVendorDeliveryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Q7",
+      "name": "IQCCheckinLotpur",
+      "text": "SAP确认明细",
+      "parentId": "MTD1000001OA",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotTreeView",
+          "file": "IQCCheckinLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OB",
+      "name": "PURVendorDeliveryItem",
+      "text": "SRM 送货单明细（采购）",
+      "parentId": "MTD1000001OA",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SRMVendorDeliveryItemMainView",
+          "file": "SRMVendorDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SRMVendorDeliveryItemTreeView",
+          "file": "SRMVendorDeliveryItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SrmVendorDeliveryItemSaveData",
+          "file": "SrmVendorDeliveryItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XX",
+      "name": "PurVendorDeliveryItemLot",
+      "text": "SRM 送货单明细批号",
+      "parentId": "MTD1000001OB",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SRMVendorDeliveryItemLotMainView",
+          "file": "SRMVendorDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SRMVendorDeliveryItemLotTreeView",
+          "file": "SRMVendorDeliveryItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OD",
+      "name": "PURPOItem_DeliveryList",
+      "text": "送货计划查询",
+      "parentId": "MTD1000001OB",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemMainView",
+          "file": "POItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItem_DeliveryListTreeView",
+          "file": "POItem_DeliveryListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD5",
+  "name": "基础数据维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "基础数据维护",
+  "metadata": "维护基础数据，记录数据编码、名称、描述、值列表等信息，确保基础数据的准确性和完整性。这有助于优化企业数据管理流程，提高各业务系统数据的一致性和准确性，支持企业的生产和运营管理决策。",
+  "objects": [
+    {
+      "id": "MTD10000024E",
+      "name": "ProductSpec",
+      "text": "基础数据维护",
+      "parentId": "",
+      "sequence": "03",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductSpecMainView",
+          "file": "ProductSpecMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductSpecTreeView",
+          "file": "ProductSpecTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductSpecSaveData",
+          "file": "ProductSpecSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductSpecDeleteData",
+          "file": "ProductSpecDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "FPCKQ",
+  "name": "首件SN品质确认查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "首件SN品质确认查询",
+  "metadata": "首件SN品质确认查询",
+  "objects": [
+    {
+      "id": "MTD10000026H",
+      "name": "FirstProductCheckQuery",
+      "text": "首件SN品质确认查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CPKD",
+  "name": "CPK导出",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "CPK导出",
+  "metadata": "CPK导出",
+  "objects": [
+    {
+      "id": "MTD10000021X",
+      "name": "FuntionTestCPKQuery",
+      "text": "CPK导出",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

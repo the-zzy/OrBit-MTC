@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PCSQU",
+  "name": "30PCS仓库查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "30PCS仓库查询",
+  "metadata": "仓库/生产 30PCS首件板收货/借出查询",
+  "objects": [
+    {
+      "id": "MTD1000002F0",
+      "name": "PCS30BoxQuery",
+      "text": "30PCS仓库查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

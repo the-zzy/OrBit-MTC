@@ -1,0 +1,38 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PIFP",
+  "name": "员工信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "员工信息",
+  "metadata": "PersonInfoPrint",
+  "objects": [
+    {
+      "id": "MTD1000000N3",
+      "name": "PersonInfoPrint",
+      "text": "员工信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PersonInfoPrintMainView",
+          "file": "PersonInfoPrintMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PersonInfoPrintTreeView",
+          "file": "PersonInfoPrintTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

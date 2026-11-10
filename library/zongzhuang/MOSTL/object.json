@@ -1,0 +1,148 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MOSTL",
+  "name": "光学工单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "光学工单",
+  "metadata": "查询光学工单信息，记录工单编号、产品型号、生产数量、计划开工日期、计划完工日期等关键数据，确保工单信息的准确性和完整性。这有助于光学生产部门合理安排生产计划，提高生产效率，确保工单按时完成和交付。",
+  "objects": [
+    {
+      "id": "MTD1000001UU",
+      "name": "MOSTD_2",
+      "text": "光学工单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOSTDTreeView",
+          "file": "MOSTDTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOSTDSaveData",
+          "file": "MOSTDSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001UV",
+      "name": "MOItemLot2",
+      "text": "光学工单批号",
+      "parentId": "MTD1000001UU",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemLotMainView",
+          "file": "MOItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemLotTreeView",
+          "file": "MOItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000280",
+      "name": "KDBoxInfoGX",
+      "text": "光学外箱",
+      "parentId": "MTD1000001UU",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxInfoGXMainView",
+          "file": "KDBoxInfoGXMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxInfoGXTreeView",
+          "file": "KDBoxInfoGXTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZE",
+      "name": "DataChainTEST",
+      "text": "产测LOG",
+      "parentId": "MTD1000001UU",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataChainTESTMainView",
+          "file": "DataChainTESTMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataChainTESTTreeView",
+          "file": "DataChainTESTTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataChainTESTSaveData",
+          "file": "DataChainTESTSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000281",
+      "name": "KDPalletInfoGX",
+      "text": "光学栈板",
+      "parentId": "MTD1000001UU",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDPalletInfoGXMainView",
+          "file": "KDPalletInfoGXMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDPalletInfoGXTreeView",
+          "file": "KDPalletInfoGXTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

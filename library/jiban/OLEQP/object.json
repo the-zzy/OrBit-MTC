@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OLEQP",
+  "name": "DIP线外设备",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP线外设备",
+  "metadata": "OLEQP",
+  "objects": [
+    {
+      "id": "MTD1000002CP",
+      "name": "OfflineEquipment",
+      "text": "DIP线外设备",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OfflineEquipmentMainView",
+          "file": "OfflineEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OfflineEquipmentTreeView",
+          "file": "OfflineEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OfflineEquipmentSaveData",
+          "file": "OfflineEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OfflineEquipmentDeleteData",
+          "file": "OfflineEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

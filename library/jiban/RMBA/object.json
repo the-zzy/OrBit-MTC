@@ -1,0 +1,43 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RMBA",
+  "name": "物料报关",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物料报关",
+  "metadata": "AcceptanceList",
+  "objects": [
+    {
+      "id": "MTD1000002DJ",
+      "name": "RawMaterialBomAlert",
+      "text": "物料报关",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RawMaterialBomAlertMainView",
+          "file": "RawMaterialBomAlertMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RawMaterialBomAlertTreeView",
+          "file": "RawMaterialBomAlertTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "RawMaterialBomAlertSaveData",
+          "file": "RawMaterialBomAlertSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

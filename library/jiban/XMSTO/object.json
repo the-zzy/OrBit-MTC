@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "XMSTO",
+  "name": "小米库存结算查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "小米库存结算查询",
+  "metadata": "XMSTO",
+  "objects": [
+    {
+      "id": "MTD10000029X",
+      "name": "XMStockInventory",
+      "text": "小米库存结算查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

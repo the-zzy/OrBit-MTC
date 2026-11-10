@@ -1,0 +1,178 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD6",
+  "name": "订单柜量配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单柜量配置",
+  "metadata": "设置订单柜量配置，记录配置编号、产品型号、柜量标准、适用订单等信息，确保订单柜量配置的合理性和可追溯性。这有助于优化包装和物流管理流程，提高仓库空间利用率，降低运输成本，保障产品按时交付给客户。",
+  "objects": [
+    {
+      "id": "MTD10000024T",
+      "name": "ContainerInfo",
+      "text": "订单柜量配置",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ContainerInfoMainView",
+          "file": "ContainerInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ContainerInfoTreeView",
+          "file": "ContainerInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ContainerInfoSaveData",
+          "file": "ContainerInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ContainerInfoDeleteData",
+          "file": "ContainerInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024U",
+      "name": "ContainerItem",
+      "text": "货柜明细",
+      "parentId": "MTD10000024T",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ContainerItemMainView",
+          "file": "ContainerItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ContainerItemTreeView",
+          "file": "ContainerItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ContainerItemSaveData",
+          "file": "ContainerItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ContainerItemDeleteData",
+          "file": "ContainerItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024V",
+      "name": "ContainerKDOrderInfo",
+      "text": "订单列表",
+      "parentId": "MTD10000024T",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ContainerKDOrderInfoMainView",
+          "file": "ContainerKDOrderInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ContainerKDOrderInfoTreeView",
+          "file": "ContainerKDOrderInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027W",
+      "name": "ContainerMaterial",
+      "text": "物料配载",
+      "parentId": "MTD10000024V",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ContainerMaterialMainView",
+          "file": "ContainerMaterialMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ContainerMaterialTreeView",
+          "file": "ContainerMaterialTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ContainerMaterialSaveData",
+          "file": "ContainerMaterialSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002G7",
+      "name": "UnContainerMaterial",
+      "text": "未物料配载明细",
+      "parentId": "MTD10000024V",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "UnContainerMaterialTreeView",
+          "file": "UnContainerMaterialTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002G9",
+      "name": "ContainerMaterialKG",
+      "text": "配载重量信息",
+      "parentId": "MTD10000024V",
+      "sequence": "6",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ContainerMaterialKGTreeView",
+          "file": "ContainerMaterialKGTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

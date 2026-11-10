@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "HPSA",
+  "name": "手贴物料查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "手贴物料查询",
+  "metadata": "HandPaste",
+  "objects": [
+    {
+      "id": "MTD1000002DI",
+      "name": "HandPaste",
+      "text": "手贴物料查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

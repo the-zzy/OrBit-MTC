@@ -1,0 +1,113 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GDRS",
+  "name": "国外发料配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "国外发料配置",
+  "metadata": "GDRS",
+  "objects": [
+    {
+      "id": "MTD1000001TB",
+      "name": "AbroadPreset",
+      "text": "国外发料配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AbroadPresetMainView",
+          "file": "AbroadPresetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AbroadPresetTreeView",
+          "file": "AbroadPresetTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TC",
+      "name": "GoodsRule",
+      "text": "配置物料列表",
+      "parentId": "MTD1000001TB",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GoodsRuleMainView",
+          "file": "GoodsRuleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GoodsRuleTreeView",
+          "file": "GoodsRuleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GoodsRuleSaveData",
+          "file": "GoodsRuleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GoodsRuleDeleteData",
+          "file": "GoodsRuleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TD",
+      "name": "GoodsStock",
+      "text": "物料暂存库存",
+      "parentId": "MTD1000001TC",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "GoodsStockTreeView",
+          "file": "GoodsStockTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TF",
+      "name": "GoodsMoveRecord",
+      "text": "国外物料移动历史",
+      "parentId": "MTD1000001TC",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "GoodsMoveRecordTreeView",
+          "file": "GoodsMoveRecordTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

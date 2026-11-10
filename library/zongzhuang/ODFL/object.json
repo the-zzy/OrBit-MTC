@@ -1,0 +1,358 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ODFL",
+  "name": "订单预置数据(AV)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单预置数据(AV)",
+  "metadata": "OrderFieldSettingAV",
+  "objects": [
+    {
+      "id": "MTD1000000JY",
+      "name": "OrderFieldSettingAV",
+      "text": "订单预置数据(AV)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingAVMainView",
+          "file": "OrderFieldSettingAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingAVTreeView",
+          "file": "OrderFieldSettingAVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldSettingAVSaveData",
+          "file": "OrderFieldSettingAVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldSettingAVDeleteData",
+          "file": "OrderFieldSettingAVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JX",
+      "name": "OrderFieldSettingItemAV",
+      "text": "字段规则",
+      "parentId": "MTD1000000JY",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingItemAVMainView",
+          "file": "OrderFieldSettingItemAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingItemAVTreeView",
+          "file": "OrderFieldSettingItemAVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldSettingItemAVSaveData",
+          "file": "OrderFieldSettingItemAVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldSettingItemAVDeleteData",
+          "file": "OrderFieldSettingItemAVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000K3",
+      "name": "OrderSetItemAV",
+      "text": "订单数据",
+      "parentId": "MTD1000000JY",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderSetItemAVMainView",
+          "file": "OrderSetItemAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderSetItemAVTreeView",
+          "file": "OrderSetItemAVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LB",
+      "name": "BoxInfoAV",
+      "text": "箱号信息",
+      "parentId": "MTD1000000JY",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BoxInfoAVMainView",
+          "file": "BoxInfoAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BoxInfoAVTreeView",
+          "file": "BoxInfoAVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KN",
+      "name": "PalletInfoAV",
+      "text": "栈板信息",
+      "parentId": "MTD1000000JY",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PalletInfoAVMainView",
+          "file": "PalletInfoAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PalletInfoAVTreeView",
+          "file": "PalletInfoAVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MJ",
+      "name": "OrderStepLabel",
+      "text": "订单标签",
+      "parentId": "MTD1000000JY",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderStepLabelMainView",
+          "file": "OrderStepLabelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderStepLabelTreeView",
+          "file": "OrderStepLabelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderStepLabelSaveData",
+          "file": "OrderStepLabelSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderStepLabelDeleteData",
+          "file": "OrderStepLabelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NM",
+      "name": "OrderAdditionInfo",
+      "text": "附加信息",
+      "parentId": "MTD1000000JY",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderAdditionInfoMainView",
+          "file": "OrderAdditionInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderAdditionInfoTreeView",
+          "file": "OrderAdditionInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderAdditionInfoSaveData",
+          "file": "OrderAdditionInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderAdditionInfoDeleteData",
+          "file": "OrderAdditionInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000L2",
+      "name": "OrderFieldSettingUser",
+      "text": "订单用户组",
+      "parentId": "MTD1000000JY",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingUserMainView",
+          "file": "OrderFieldSettingUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingUserTreeView",
+          "file": "OrderFieldSettingUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldSettingUserSaveData",
+          "file": "OrderFieldSettingUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldSettingUserDeleteData",
+          "file": "OrderFieldSettingUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NR",
+      "name": "OrderRelate",
+      "text": "关联订单",
+      "parentId": "MTD1000000JY",
+      "sequence": "8",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderRelateMainView",
+          "file": "OrderRelateMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderRelateTreeView",
+          "file": "OrderRelateTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderRelateSaveData",
+          "file": "OrderRelateSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderRelateDeleteData",
+          "file": "OrderRelateDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OO",
+      "name": "Order_CollectSettingAV",
+      "text": "采集项",
+      "parentId": "MTD1000000JY",
+      "sequence": "8",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Order_CollectSettingMainView",
+          "file": "Order_CollectSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Order_CollectSettingTreeView",
+          "file": "Order_CollectSettingTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OP",
+      "name": "Order_CollectSettingCheckAV",
+      "text": "采集项规则",
+      "parentId": "MTD1000000OO",
+      "sequence": "9",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Order_CollectSettingCheckMainView",
+          "file": "Order_CollectSettingCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Order_CollectSettingCheckTreeView",
+          "file": "Order_CollectSettingCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Order_CollectSettingCheckSaveData",
+          "file": "Order_CollectSettingCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Order_CollectSettingCheckDeleteData",
+          "file": "Order_CollectSettingCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

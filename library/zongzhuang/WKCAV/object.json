@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WKCAV",
+  "name": "AV工作中心",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AV工作中心",
+  "metadata": "WorkcenterAV",
+  "objects": [
+    {
+      "id": "MTD1000000S0",
+      "name": "WorkcenterAV",
+      "text": "AV工作中心",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkcenterMainView",
+          "file": "WorkcenterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkcenterTreeView",
+          "file": "WorkcenterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkcenterSaveData",
+          "file": "WorkcenterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkcenterDeleteData",
+          "file": "WorkcenterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

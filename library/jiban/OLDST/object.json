@@ -1,0 +1,103 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OLDST",
+  "name": "旧库存机(TV)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "旧库存机(TV)",
+  "metadata": "OLDST",
+  "objects": [
+    {
+      "id": "MTD1000000TS",
+      "name": "OldStock",
+      "text": "旧库存机(TV)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OldStockMainView",
+          "file": "OldStockMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OldStockTreeView",
+          "file": "OldStockTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OldStockSaveData",
+          "file": "OldStockSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OldStockDeleteData",
+          "file": "OldStockDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000U1",
+      "name": "PalletStock",
+      "text": "库存机栈板信息",
+      "parentId": "MTD1000000TS",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PalletStockMainView",
+          "file": "PalletStockMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PalletStockTreeView",
+          "file": "PalletStockTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000TT",
+      "name": "OldStockItem",
+      "text": "批号明细",
+      "parentId": "MTD1000000TS",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "OldStockItemTreeView",
+          "file": "OldStockItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OldStockItemSaveData",
+          "file": "OldStockItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OldStockItemDeleteData",
+          "file": "OldStockItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

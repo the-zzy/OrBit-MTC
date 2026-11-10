@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "STOR",
+  "name": "叫料信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "叫料信息",
+  "metadata": "维护叫料信息",
+  "objects": [
+    {
+      "id": "MTD1000002EQ",
+      "name": "StockRequest",
+      "text": "叫料信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockRequestMainView",
+          "file": "StockRequestMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockRequestTreeView",
+          "file": "StockRequestTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockRequestSaveData",
+          "file": "StockRequestSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockRequestDeleteData",
+          "file": "StockRequestDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

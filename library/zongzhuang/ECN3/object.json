@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ECN3",
+  "name": "技术通知单-仓库/PMC",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "技术通知单-仓库/PMC",
+  "metadata": "管理技术通知单（仓库/PMC），记录通知单编号、发布日期、主题内容、受影响产品、发布部门等信息，确保技术通知单的及时传达和有效执行。这有助于指导仓库和PMC部门按照最新技术要求进行操作，保障产品在仓储和生产计划阶段的质量和一致性。",
+  "objects": [
+    {
+      "id": "MTD1000000M6",
+      "name": "ECN3",
+      "text": "技术通知单-仓库/PMC",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNMainView",
+          "file": "ECNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNTreeView",
+          "file": "ECNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNSaveData",
+          "file": "ECNSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ECNDeleteData",
+          "file": "ECNDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000M8",
+      "name": "ECNItem3",
+      "text": "技术通知单列表",
+      "parentId": "MTD1000000M6",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNItemMainView",
+          "file": "ECNItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNItemTreeView",
+          "file": "ECNItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNItemSaveData",
+          "file": "ECNItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ECNItemDeleteData",
+          "file": "ECNItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

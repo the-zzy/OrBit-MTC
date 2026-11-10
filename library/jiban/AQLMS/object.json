@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AQLMS",
+  "name": "AQL样本大小设定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AQL样本大小设定",
+  "metadata": "AQLSampleSize",
+  "objects": [
+    {
+      "id": "MTD1000000ET",
+      "name": "AQLSampleSize",
+      "text": "AQL样本大小设定",
+      "parentId": "MTD1000000ES",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AQLSampleSizeMainView",
+          "file": "AQLSampleSizeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AQLSampleSizeTreeView",
+          "file": "AQLSampleSizeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AQLSampleSizeSaveData",
+          "file": "AQLSampleSizeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AQLSampleSizeDeleteData",
+          "file": "AQLSampleSizeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ACPL",
+  "name": "设备验收",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备验收",
+  "metadata": "AcceptanceList",
+  "objects": [
+    {
+      "id": "MTD1000000FV",
+      "name": "AcceptanceList",
+      "text": "设备验收",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AcceptanceListMainView",
+          "file": "AcceptanceListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AcceptanceListTreeView",
+          "file": "AcceptanceListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AcceptanceListSaveData",
+          "file": "AcceptanceListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AcceptanceListDeleteData",
+          "file": "AcceptanceListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

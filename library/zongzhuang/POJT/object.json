@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "POJT",
+  "name": "项目设定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "项目设定",
+  "metadata": "Parameter",
+  "objects": [
+    {
+      "id": "MTD10000021H",
+      "name": "Parameter",
+      "text": "项目设定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ParameterMainView",
+          "file": "ParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ParameterTreeView",
+          "file": "ParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ParameterSaveData",
+          "file": "ParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ParameterDeleteData",
+          "file": "ParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

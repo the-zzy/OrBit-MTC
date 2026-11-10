@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "P30B",
+  "name": "30PCS首件老化板卡箱号",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "30PCS首件老化板卡箱号",
+  "metadata": "P30B",
+  "objects": [
+    {
+      "id": "MTD10000025Y",
+      "name": "PCS30Box",
+      "text": "30PCS首件老化板卡箱号",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PCS30BoxMainView",
+          "file": "PCS30BoxMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PCS30BoxTreeView",
+          "file": "PCS30BoxTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BS",
+      "name": "PCS30OQCCheck",
+      "text": "30PCS OQC抽检",
+      "parentId": "MTD10000025Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PCS30OQCCheckMainView",
+          "file": "PCS30OQCCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PCS30OQCCheckTreeView",
+          "file": "PCS30OQCCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

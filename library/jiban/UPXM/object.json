@@ -1,0 +1,78 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "UPXM",
+  "name": "上传小米数据",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "上传小米数据",
+  "metadata": "UPXM",
+  "objects": [
+    {
+      "id": "MTD100000244",
+      "name": "XMStockMoveMaster",
+      "text": "上传小米数据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XMStockMoveMasterMainView",
+          "file": "XMStockMoveMasterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XMStockMoveMasterTreeView",
+          "file": "XMStockMoveMasterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "XMStockMoveMasterSaveData",
+          "file": "XMStockMoveMasterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "XMStockMoveMasterDeleteData",
+          "file": "XMStockMoveMasterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000245",
+      "name": "XMStockMoveDetail",
+      "text": "财务对账明细",
+      "parentId": "MTD100000244",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XMStockMoveDetailMainView",
+          "file": "XMStockMoveDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XMStockMoveDetailTreeView",
+          "file": "XMStockMoveDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "XMStockMoveDetailSaveData",
+          "file": "XMStockMoveDetailSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

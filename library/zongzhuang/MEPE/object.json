@@ -1,0 +1,98 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MEPE",
+  "name": "元对象授权",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "元对象授权",
+  "metadata": "MetadataPermission",
+  "objects": [
+    {
+      "id": "MTD1000000QN",
+      "name": "MetadataPermission",
+      "text": "元对象授权",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataPermissionMainView",
+          "file": "MetadataPermissionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataPermissionTreeView",
+          "file": "MetadataPermissionTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000QO",
+      "name": "MetadataPermissionItem",
+      "text": "授权事件",
+      "parentId": "MTD1000000QN",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataPermissionItemMainView",
+          "file": "MetadataPermissionItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataPermissionItemTreeView",
+          "file": "MetadataPermissionItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000QP",
+      "name": "MetadataPermission_User",
+      "text": "授权用户",
+      "parentId": "MTD1000000QO",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataPermission_UserMainView",
+          "file": "MetadataPermission_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataPermission_UserTreeView",
+          "file": "MetadataPermission_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MetadataPermission_UserSaveData",
+          "file": "MetadataPermission_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MetadataPermission_UserDeleteData",
+          "file": "MetadataPermission_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

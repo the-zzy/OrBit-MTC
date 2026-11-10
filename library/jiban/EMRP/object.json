@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EMRP",
+  "name": "EMR人员信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "EMR人员信息",
+  "metadata": "EMRP",
+  "objects": [
+    {
+      "id": "MTD1000000TH",
+      "name": "EMR_PersonInfo",
+      "text": "EMR人员信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EMR_PersonInfoMainView",
+          "file": "EMR_PersonInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EMR_PersonInfoTreeView",
+          "file": "EMR_PersonInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EMR_PersonInfoSaveData",
+          "file": "EMR_PersonInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EMR_PersonInfoDeleteData",
+          "file": "EMR_PersonInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

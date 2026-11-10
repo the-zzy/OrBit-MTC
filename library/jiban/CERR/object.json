@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CERR",
+  "name": "无尘车间环境记录",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "无尘车间环境记录",
+  "metadata": "CERR",
+  "objects": [
+    {
+      "id": "MTD1000002ED",
+      "name": "Cleanroom Environment Record",
+      "text": "无尘车间环境记录",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

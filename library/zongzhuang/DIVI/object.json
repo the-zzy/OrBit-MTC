@@ -1,0 +1,43 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DIVI",
+  "name": "部门",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "部门",
+  "metadata": "Division",
+  "objects": [
+    {
+      "id": "MTD100000085",
+      "name": "Division",
+      "text": "部门",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DivisionMainView",
+          "file": "DivisionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DivisionTreeView",
+          "file": "DivisionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DivisionSaveData",
+          "file": "DivisionSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

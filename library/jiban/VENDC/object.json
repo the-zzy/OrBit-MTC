@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VENDC",
+  "name": "客户供应商管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户供应商管理",
+  "metadata": "VENDC",
+  "objects": [
+    {
+      "id": "MTD1000001TY",
+      "name": "Vendor_Customer",
+      "text": "客户供应商管理",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerVendorMainView",
+          "file": "CustomerVendorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerVendorTreeView",
+          "file": "CustomerVendorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerVendorSaveData",
+          "file": "CustomerVendorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerVendorDeleteData",
+          "file": "CustomerVendorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "GLT",
+  "name": "量具仪器领用",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具仪器领用",
+  "metadata": "GageLent",
+  "objects": [
+    {
+      "id": "MTD1000000HN",
+      "name": "GageLent",
+      "text": "量具仪器领用",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageLentMainView",
+          "file": "GageLentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageLentTreeView",
+          "file": "GageLentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageLentSaveData",
+          "file": "GageLentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageLentDeleteData",
+          "file": "GageLentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000HO",
+      "name": "GageLentDetail",
+      "text": "量具仪器清单",
+      "parentId": "MTD1000000HN",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageLentDetailMainView",
+          "file": "GageLentDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageLentDetailTreeView",
+          "file": "GageLentDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageLentDetailSaveData",
+          "file": "GageLentDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageLentDetailDeleteData",
+          "file": "GageLentDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

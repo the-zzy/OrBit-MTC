@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MDST",
+  "name": "数据库机型",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "数据库机型",
+  "metadata": "查询数据库机型信息，记录机型编号、名称、规格、参数、所属系列、状态等信息，确保机型数据的准确性和完整性。这有助于优化产品管理流程，提高销售、库存、生产等环节的效率和准确性，支持企业的市场销售和生产决策。",
+  "objects": [
+    {
+      "id": "MTD1000000JZ",
+      "name": "ModelSetting",
+      "text": "数据库机型",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ModelSettingMainView",
+          "file": "ModelSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ModelSettingTreeView",
+          "file": "ModelSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ModelSettingSaveData",
+          "file": "ModelSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ModelSettingDeleteData",
+          "file": "ModelSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JV",
+      "name": "ModelFieldSetting",
+      "text": "机型字段设置",
+      "parentId": "MTD1000000JZ",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ModelFieldSettingMainView",
+          "file": "ModelFieldSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ModelFieldSettingTreeView",
+          "file": "ModelFieldSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ModelFieldSettingSaveData",
+          "file": "ModelFieldSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ModelFieldSettingDeleteData",
+          "file": "ModelFieldSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LR",
+      "name": "ModelFieldFilter",
+      "text": "过滤字符",
+      "parentId": "MTD1000000JV",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ModelFieldFilterMainView",
+          "file": "ModelFieldFilterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ModelFieldFilterTreeView",
+          "file": "ModelFieldFilterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ModelFieldFilterSaveData",
+          "file": "ModelFieldFilterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ModelFieldFilterDeleteData",
+          "file": "ModelFieldFilterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

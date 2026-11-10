@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EXTS2",
+  "name": "SMT/DIP异常时间录入",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SMT/DIP异常时间录入",
+  "metadata": "ExceptionTimeSet2",
+  "objects": [
+    {
+      "id": "MTD1000001QF",
+      "name": "ExceptionTimeSet2",
+      "text": "SMT/DIP异常时间录入",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ExceptionTimeSetMainView",
+          "file": "ExceptionTimeSetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ExceptionTimeSetTreeView2",
+          "file": "ExceptionTimeSetTreeView2.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ExceptionTimeSetSaveData2",
+          "file": "ExceptionTimeSetSaveData2.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ExceptionTimeSetDeleteData",
+          "file": "ExceptionTimeSetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

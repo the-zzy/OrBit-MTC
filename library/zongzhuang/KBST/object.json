@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KBST",
+  "name": "看板对象",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "看板对象",
+  "metadata": "KanBan Object",
+  "objects": [
+    {
+      "id": "MTD1000000EW",
+      "name": "Kanban",
+      "text": "看板对象",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanbanMainView",
+          "file": "KanbanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanbanTreeView",
+          "file": "KanbanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanbanSaveData",
+          "file": "KanbanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanbanDeleteData",
+          "file": "KanbanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000F0",
+      "name": "Kanban_User",
+      "text": "看板用户",
+      "parentId": "MTD1000000EW",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Kanban_UserMainView",
+          "file": "Kanban_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Kanban_UserTreeView",
+          "file": "Kanban_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Kanban_UserSaveData",
+          "file": "Kanban_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Kanban_UserDeleteData",
+          "file": "Kanban_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000F8",
+      "name": "KanBan_KanBanItem_G",
+      "text": "看板项目",
+      "parentId": "MTD1000000EW",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBan_KanBanItem_G_MainView",
+          "file": "KanBan_KanBanItem_G_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBan_KanBanItem_G_TreeView",
+          "file": "KanBan_KanBanItem_G_TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBan_KanBanItem_G_SaveData",
+          "file": "KanBan_KanBanItem_G_SaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBan_KanBanItemDeleteData",
+          "file": "KanBan_KanBanItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000F9",
+      "name": "KanBanBaseType",
+      "text": "基类样式",
+      "parentId": "MTD1000000EW",
+      "sequence": "B",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanBaseTypeMainView",
+          "file": "KanBanBaseTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanBaseTypeTreeView",
+          "file": "KanBanBaseTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanBaseTypeSaveData",
+          "file": "KanBanBaseTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanBaseTypeDeleteData",
+          "file": "KanBanBaseTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

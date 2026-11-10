@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WTST",
+  "name": "TV返工放假录入",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV返工放假录入",
+  "metadata": "WorkcenterTimeSet",
+  "objects": [
+    {
+      "id": "MTD10000021V",
+      "name": "WorkcenterTimeSet",
+      "text": "TV返工放假录入",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkcenterTimeSetMainView",
+          "file": "WorkcenterTimeSetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkcenterTimeSetTreeView",
+          "file": "WorkcenterTimeSetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkcenterTimeSetSaveData",
+          "file": "WorkcenterTimeSetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkcenterTimeSetDeleteData",
+          "file": "WorkcenterTimeSetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

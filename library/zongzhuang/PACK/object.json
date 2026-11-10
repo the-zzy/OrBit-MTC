@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PACK",
+  "name": "装箱清单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "装箱清单",
+  "metadata": "查询装箱清单信息，记录清单编号、产品型号、数量、包装规格、箱号、客户订单等数据，确保装箱清单的准确性和可追溯性。这有助于优化包装和物流管理流程，提高仓库发货效率，保障产品安全送达客户。",
+  "objects": [
+    {
+      "id": "MTD10000027X",
+      "name": "PackingList",
+      "text": "装箱清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PackingListMainView",
+          "file": "PackingListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PackingListTreeView",
+          "file": "PackingListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PackingListSaveData",
+          "file": "PackingListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PackingListDeleteData",
+          "file": "PackingListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027Y",
+      "name": "PackingListItem",
+      "text": "装箱清单明细",
+      "parentId": "MTD10000027X",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PackingListItemMainView",
+          "file": "PackingListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PackingListItemTreeView",
+          "file": "PackingListItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PackingListItemSaveData",
+          "file": "PackingListItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PackingListItemDeleteData",
+          "file": "PackingListItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

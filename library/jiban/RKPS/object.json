@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RKPS",
+  "name": "维修计件工资",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "维修计件工资",
+  "metadata": "RepairKPISetting",
+  "objects": [
+    {
+      "id": "MTD10000022S",
+      "name": "RepairUserKPI",
+      "text": "维修计件工资",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RepairUserKPIMainView",
+          "file": "RepairUserKPIMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RepairUserKPITreeView",
+          "file": "RepairUserKPITreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "RepairUserKPISaveData",
+          "file": "RepairUserKPISaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "RepairUserKPIDeleteData",
+          "file": "RepairUserKPIDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

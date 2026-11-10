@@ -1,0 +1,108 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "FGSTL",
+  "name": "成品调拨清单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "成品调拨清单",
+  "metadata": "查询成品调拨清单，记录清单编号、产品型号、调拨数量、调拨日期、调拨来源、调拨去向等数据，确保成品调拨过程的规范性和可追溯性。这有助于优化成品库存管理，提高成品资源调配效率，保障成品在不同仓库或地区之间的合理分布和及时供应。",
+  "objects": [
+    {
+      "id": "MTD10000022O",
+      "name": "FGShift",
+      "text": "成品调拨清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FGShiftMainView",
+          "file": "FGShiftMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FGShiftTreeView",
+          "file": "FGShiftTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FGShiftSaveData",
+          "file": "FGShiftSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FGShiftDeleteData",
+          "file": "FGShiftDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022P",
+      "name": "FGShiftItem",
+      "text": "成品调拨明细",
+      "parentId": "MTD10000022O",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FGShiftItemMainView",
+          "file": "FGShiftItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FGShiftItemTreeView",
+          "file": "FGShiftItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FGShiftItemSaveData",
+          "file": "FGShiftItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FGShiftItemDeleteData",
+          "file": "FGShiftItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026V",
+      "name": "FGShiftItemLot",
+      "text": "成品调拨批号",
+      "parentId": "MTD10000022P",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FGShiftItemLotMainView",
+          "file": "FGShiftItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FGShiftItemLotTreeView",
+          "file": "FGShiftItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

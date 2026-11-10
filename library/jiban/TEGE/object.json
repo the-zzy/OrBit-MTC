@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TEGE",
+  "name": "测试组维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "测试组维护",
+  "metadata": "TestGroup",
+  "objects": [
+    {
+      "id": "MTD100000297",
+      "name": "TestGroup",
+      "text": "测试组维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TestGroupMainView",
+          "file": "TestGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TestGroupTreeView",
+          "file": "TestGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TestGroupSaveData",
+          "file": "TestGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TestGroupDeleteData",
+          "file": "TestGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "WKEP",
+  "name": "线体标准设备",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "线体标准设备",
+  "metadata": "WKEP",
+  "objects": [
+    {
+      "id": "MTD1000002A5",
+      "name": "WorkcenterEquipment",
+      "text": "线体标准设备",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkcenterEquipmentMainView",
+          "file": "WorkcenterEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkcenterEquipmentTreeView",
+          "file": "WorkcenterEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkcenterEquipmentSaveData",
+          "file": "WorkcenterEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkcenterEquipmentDeleteData",
+          "file": "WorkcenterEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

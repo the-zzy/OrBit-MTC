@@ -1,0 +1,73 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DIPGX",
+  "name": "光学入库记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "光学入库记录",
+  "metadata": "查询光学入库记录，记录入库编号、产品型号、数量、入库日期、供应商等信息，确保光学产品入库数据的准确性和可追溯性。这有助于及时更新库存数据，优化库存管理，保障生产所需的光学产品按时、按质、按量供应。",
+  "objects": [
+    {
+      "id": "MTD1000001VR",
+      "name": "DIPFGLotGx",
+      "text": "光学入库记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPFGLotMainView",
+          "file": "DIPFGLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPFGLotTreeView",
+          "file": "DIPFGLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPFGLotSaveData",
+          "file": "DIPFGLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPFGLotDeleteData",
+          "file": "DIPFGLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001W4",
+      "name": "MOItemLotGX",
+      "text": "光学工单批号",
+      "parentId": "MTD1000001VR",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemLotMainView",
+          "file": "MOItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemLotGXTreeView",
+          "file": "MOItemLotGXTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

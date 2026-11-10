@@ -1,0 +1,1347 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MOSTD",
+  "name": "标准工单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "标准工单",
+  "metadata": "MOSTD",
+  "objects": [
+    {
+      "id": "MTD1000000AM",
+      "name": "MOSTD",
+      "text": "标准工单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "MO",
+        "columns": [
+          {
+            "name": "MOId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "工单ID"
+          },
+          {
+            "name": "MOName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工单名称"
+          },
+          {
+            "name": "MODescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工单描述"
+          },
+          {
+            "name": "MOStatus",
+            "type": "char(2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工单状态"
+          },
+          {
+            "name": "MOERPStatus",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "ERP 工单状态"
+          },
+          {
+            "name": "MOTypeId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工单类型"
+          },
+          {
+            "name": "PlannedDateFrom",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "计划开始"
+          },
+          {
+            "name": "PlannedDateTo",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "计划完成日期"
+          },
+          {
+            "name": "ExecuteDateFrom",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "执行开始日期"
+          },
+          {
+            "name": "ExecuteDateTo",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "执行结束日期"
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "产品ID"
+          },
+          {
+            "name": "MOQtyRequired",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "计划数量"
+          },
+          {
+            "name": "MOQtyDone",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "完成数量"
+          },
+          {
+            "name": "PriorityLevel",
+            "type": "char(5)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "加工优先级"
+          },
+          {
+            "name": "SOName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "CustomerId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户ID"
+          },
+          {
+            "name": "ParentMOId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "父级工单ID"
+          },
+          {
+            "name": "FactoryId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工厂ID"
+          },
+          {
+            "name": "WorkflowId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作流ID"
+          },
+          {
+            "name": "LGORT",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "库存地点"
+          },
+          {
+            "name": "OrganID",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "组织ID"
+          },
+          {
+            "name": "ERPDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "ERP日期"
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "ApproveUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "审核人"
+          },
+          {
+            "name": "ApproveDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "审核日期"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建用户"
+          },
+          {
+            "name": "CreateResourceId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建资源"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "SoItemSeq",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FEVOR",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsOnLine",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "当前是否在生产"
+          },
+          {
+            "name": "BatchNum",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户批次号"
+          },
+          {
+            "name": "DivisionId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "部门"
+          },
+          {
+            "name": "SapPost",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FLAG",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否为数码工单，Y是，N不是"
+          },
+          {
+            "name": "IsBaoGong",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LastBaoGDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MOSequence",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "顺序号订单"
+          },
+          {
+            "name": "MOLGORT",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "InputQty",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工单投入量"
+          },
+          {
+            "name": "InSOName",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "InSOLineSeq",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "RSNUM",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FirstArtMethod",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FirstArtDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ZFLBS",
+            "type": "nvarchar(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FTRMI",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "实际下达日期"
+          },
+          {
+            "name": "ERDAT",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "ARBPL",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作中心"
+          },
+          {
+            "name": "MOQtyExtendAllow",
+            "type": "bigint",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "延号允许数量(额外)，叠加在 MOQtyRequired 之上，仅用于批号/延号可申请上限，不回写 SAP"
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOSTDTreeView",
+          "file": "MOSTDTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOSTDSaveData",
+          "file": "MOSTDSaveData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T15:33:18+08:00",
+        "TreeView": "2026-11-09T15:33:34+08:00",
+        "style": "2026-11-09T15:35:24+08:00",
+        "valueList": "2026-11-09T15:38:59+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "MOSTDTreeView",
+          "columns": [
+            {
+              "name": "MOId",
+              "text": "工单号ID"
+            },
+            {
+              "name": "MOName",
+              "text": "工单号"
+            },
+            {
+              "name": "MOTypeId",
+              "text": ""
+            },
+            {
+              "name": "MOType",
+              "text": "制造订单类型"
+            },
+            {
+              "name": "ProductName",
+              "text": "产品名称"
+            },
+            {
+              "name": "SOName",
+              "text": "订单号"
+            },
+            {
+              "name": "MOERPStatus",
+              "text": "工单状态"
+            },
+            {
+              "name": "CustmerPo",
+              "text": ""
+            },
+            {
+              "name": "BatchNum",
+              "text": "客户批次号"
+            },
+            {
+              "name": "MOQtyRequired",
+              "text": "需求数量"
+            },
+            {
+              "name": "ProductDescription",
+              "text": "料号描述"
+            },
+            {
+              "name": "CreateDate",
+              "text": "创建时间"
+            }
+          ]
+        },
+        "main": {
+          "name": "MOSTD",
+          "groups": [
+            {
+              "id": "MFG10000008D",
+              "sequence": "1",
+              "name": "MOSTD Default Group",
+              "text": "标准工单默认组",
+              "columns": 3,
+              "height": 400,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000AAP",
+                  "name": "MOId",
+                  "text": "工单号ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000YY",
+                  "name": "MOName",
+                  "text": "工单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z1",
+                  "name": "MOTypeId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z2",
+                  "name": "MOType",
+                  "text": "制造订单类型",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "MOType_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z3",
+                  "name": "MOStatus",
+                  "text": "审批状态",
+                  "type": "char(2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "MOStatus_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004HV",
+                  "name": "MOERPStatus",
+                  "text": "工单状态",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000ZE",
+                  "name": "MODescription",
+                  "text": "工单描述",
+                  "type": "nvarchar(100)",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z4",
+                  "name": "ProductId",
+                  "text": "物料编码",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAQ",
+                  "name": "OrganID",
+                  "text": "客户PO",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAR",
+                  "name": "BatchNum",
+                  "text": "客户批次号",
+                  "type": "varchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z8",
+                  "name": "MOQtyRequired",
+                  "text": "需求数量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XR",
+                  "name": "MOQtyStart",
+                  "text": "启动数量",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000BLJ",
+                  "name": "NoStartQty",
+                  "text": "启动数量",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000ZB",
+                  "name": "MOQtyDone",
+                  "text": "完工数量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000EZQ",
+                  "name": "MOQtyExtendAllow",
+                  "text": "额外延号数",
+                  "type": "bigint",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z5",
+                  "name": "ProductName",
+                  "text": "产品名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "MOProduct_ViewWindow",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000YZ",
+                  "name": "ProductDescription",
+                  "text": "料号描述",
+                  "type": "",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z6",
+                  "name": "PlannedDateFrom",
+                  "text": "计划开始日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z7",
+                  "name": "PlannedDateTo",
+                  "text": "计划完成日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000Z9",
+                  "name": "ExecuteDateFrom",
+                  "text": "执行开始日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000ZA",
+                  "name": "ExecuteDateTo",
+                  "text": "执行结束日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003YO",
+                  "name": "WorkflowId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000BLK",
+                  "name": "MaterialType",
+                  "text": "类别",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003YP",
+                  "name": "WorkflowName",
+                  "text": "工作流",
+                  "type": "",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "Workflow_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000046L",
+                  "name": "FactoryName",
+                  "text": "工厂",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000046M",
+                  "name": "SOName",
+                  "text": "订单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003YN",
+                  "name": "ModifyDate",
+                  "text": "修改日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000200",
+                  "name": "ApproveUserName",
+                  "text": "审核人",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000201",
+                  "name": "ApproveDate",
+                  "text": "审核日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000BLL",
+                  "name": "DataValue",
+                  "text": "物料名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            },
+            {
+              "id": "MFG10000008E",
+              "sequence": "2",
+              "name": "MOSTD Button Group",
+              "text": "工单事件组",
+              "columns": 3,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000B5",
+                  "sequence": "01",
+                  "name": "RefreshData",
+                  "text": "刷新数据",
+                  "sql": "RefreshDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "DataValue",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "RefreshDataDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000001Y7",
+                  "sequence": "02",
+                  "name": "CovertWorkFlow",
+                  "text": "转换工作流",
+                  "sql": "MoToSapCovertDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "WorkFlowName",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "MoToSapCovertDoMethod.sql"
+                },
+                {
+                  "id": "SMM100000366",
+                  "sequence": "03",
+                  "name": "SetMOQtyExtendAllow",
+                  "text": "设置延号数",
+                  "sql": "MOSetQtyExtendAllowDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "MOSetQtyExtendAllowDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "Workflow_ViewList",
+          "file": "Workflow_ViewList.sql",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "id": "MTD1000000AN",
+      "name": "MOItemSTD",
+      "text": "标准工单明细",
+      "parentId": "MTD1000000AM",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemSTDMainView",
+          "file": "MOItemSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemSTDTreeView",
+          "file": "MOItemSTDTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MF",
+      "name": "MOItemReprintLot",
+      "text": "工单明细补印批号",
+      "parentId": "MTD1000000AN",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemReprintLotMainView",
+          "file": "MOItemReprintLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemReprintLotTreeView",
+          "file": "MOItemReprintLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000AO",
+      "name": "MOItemLot",
+      "text": "工单明细批号",
+      "parentId": "MTD1000000AM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemLotMainView",
+          "file": "MOItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemLotTreeView",
+          "file": "MOItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000UJ",
+      "name": "Burnlot",
+      "text": "装车管理",
+      "parentId": "MTD1000000AM",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnlotMainView",
+          "file": "BurnlotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnlotTreeView",
+          "file": "BurnlotTreeView.sql"
+        }
+      ],
+      "pulled": {
+        "style": "2026-11-09T15:39:55+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "BurnlotTreeView",
+          "columns": [
+            {
+              "name": "burnlotid",
+              "text": ""
+            },
+            {
+              "name": "WorkcenterName",
+              "text": "线体"
+            },
+            {
+              "name": "burnNO",
+              "text": "装车车号"
+            },
+            {
+              "name": "QtyOnCar",
+              "text": "装车数量"
+            },
+            {
+              "name": "CreateOperator",
+              "text": "操作员"
+            },
+            {
+              "name": "QcResult",
+              "text": "测试结果"
+            },
+            {
+              "name": "createdate",
+              "text": "创建时间"
+            },
+            {
+              "name": "MOName",
+              "text": "工单号"
+            }
+          ]
+        },
+        "main": {
+          "name": "Burnlot",
+          "groups": [
+            {
+              "id": "MFG100000129",
+              "sequence": "01",
+              "name": "Burnlot Default Group",
+              "text": "装车管理",
+              "columns": 3,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000006XB",
+                  "name": "Lotsn",
+                  "text": "批号",
+                  "type": "nchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XC",
+                  "name": "CreateUserid",
+                  "text": "创建人ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XD",
+                  "name": "burnNO",
+                  "text": "装车车号",
+                  "type": "nvarchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XE",
+                  "name": "Moid",
+                  "text": "工单号ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XF",
+                  "name": "startTime",
+                  "text": "开始时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XG",
+                  "name": "lotid",
+                  "text": "批号ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XH",
+                  "name": "EndOperator",
+                  "text": "结束老化操作员",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XI",
+                  "name": "burnNoBK",
+                  "text": "",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XJ",
+                  "name": "BurnOperator",
+                  "text": "开始老化操作员",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XK",
+                  "name": "Productid",
+                  "text": "物料编码",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XL",
+                  "name": "Workcenterid",
+                  "text": "线体",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XM",
+                  "name": "endTime",
+                  "text": "结束时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XN",
+                  "name": "CreateOperator",
+                  "text": "操作员",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

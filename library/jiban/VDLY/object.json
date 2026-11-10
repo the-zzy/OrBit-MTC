@@ -1,0 +1,108 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDLY",
+  "name": "送货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "送货单",
+  "metadata": "VendorDelivery",
+  "objects": [
+    {
+      "id": "MTD1000000CH",
+      "name": "VendorDelivery",
+      "text": "送货单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryMainView",
+          "file": "VendorDeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryTreeView",
+          "file": "VendorDeliveryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorDeliverySaveData",
+          "file": "VendorDeliverySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorDeliveryDeleteData",
+          "file": "VendorDeliveryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CI",
+      "name": "VendorDeliveryItem",
+      "text": "送货单明细",
+      "parentId": "MTD1000000CH",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryItemMainView",
+          "file": "VendorDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryItemTreeView",
+          "file": "VendorDeliveryItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorDeliveryItemSaveData",
+          "file": "VendorDeliveryItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorDeliveryItemDeleteData",
+          "file": "VendorDeliveryItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CJ",
+      "name": "VendorDeliveryItemLot",
+      "text": "送货单明细批号",
+      "parentId": "MTD1000000CI",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryItemLotMainView",
+          "file": "VendorDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryItemLotTreeView",
+          "file": "VendorDeliveryItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

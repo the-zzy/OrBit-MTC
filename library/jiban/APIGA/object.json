@@ -1,0 +1,88 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "APIGA",
+  "name": "AV入库确认(ALL)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AV入库确认(ALL)",
+  "metadata": "AV PredictInStorage ALL",
+  "objects": [
+    {
+      "id": "MTD1000000PV",
+      "name": "AVPredictInStorage",
+      "text": "AV入库确认(ALL)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageAVMainView",
+          "file": "PredictInStorageAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageAVTreeView",
+          "file": "PredictInStorageAVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PX",
+      "name": "AVPredictInStorageItemPalletSN",
+      "text": "预入库栈板明细",
+      "parentId": "MTD1000000PV",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemPalletSNAVMainView",
+          "file": "PredictInStorageItemPalletSNAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemPalletSNAVTreeView",
+          "file": "PredictInStorageItemPalletSNAVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PZ",
+      "name": "AVPredictInStorageItemLot",
+      "text": "预入库批号明细",
+      "parentId": "MTD1000000PX",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemLotAVMainView",
+          "file": "PredictInStorageItemLotAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemLotAVTreeView",
+          "file": "PredictInStorageItemLotAVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

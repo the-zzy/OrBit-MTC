@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VPCQ",
+  "name": "VendorProductCountryQuery",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "VendorProductCountryQuery",
+  "metadata": "VendorProductCountryQuery",
+  "objects": [
+    {
+      "id": "MTD1000002DY",
+      "name": "VendorProductCountryQuery",
+      "text": "VendorProductCountryQuery",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

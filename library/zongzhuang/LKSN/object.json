@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LKSN",
+  "name": "厂商/批号锁定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "厂商/批号锁定",
+  "metadata": "LKSN",
+  "objects": [
+    {
+      "id": "MTD1000000S8",
+      "name": "LockLotSN",
+      "text": "厂商/批号锁定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LockLotSNMainView",
+          "file": "LockLotSNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LockLotSNTreeView",
+          "file": "LockLotSNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LockLotSNSaveData",
+          "file": "LockLotSNSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LockLotSNDeleteData",
+          "file": "LockLotSNDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

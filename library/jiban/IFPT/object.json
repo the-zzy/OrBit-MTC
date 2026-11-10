@@ -1,0 +1,68 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "IFPT",
+  "name": "接口项目",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "接口项目",
+  "metadata": "IFPT",
+  "objects": [
+    {
+      "id": "MTD1000001W6",
+      "name": "InterfaceProject",
+      "text": "接口项目",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InterfaceProjectMainView",
+          "file": "InterfaceProjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InterfaceProjectTreeView",
+          "file": "InterfaceProjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InterfaceProjectSaveData",
+          "file": "InterfaceProjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InterfaceProjectDeleteData",
+          "file": "InterfaceProjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001W7",
+      "name": "InterfaceProjectExeReocrd",
+      "text": "接口执行记录",
+      "parentId": "MTD1000001W6",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "InterfaceProjectExeReocrdTreeView",
+          "file": "InterfaceProjectExeReocrdTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

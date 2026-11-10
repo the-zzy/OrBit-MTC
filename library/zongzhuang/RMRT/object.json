@@ -1,0 +1,138 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RMRT",
+  "name": "工单退料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工单退料单",
+  "metadata": "管理工单退料单，记录退料单编号、工单编号、物料信息、退料数量、退料原因等关键数据，确保工单退料过程的规范性和可追溯性。这有助于优化退料管理流程，避免因退料错误导致的生产混乱和物料浪费，提高生产效率和物料管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000001WM",
+      "name": "LineMatReturn",
+      "text": "工单退料单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnMainView",
+          "file": "LineMatReturnMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnTreeView",
+          "file": "LineMatReturnTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatReturnItemSaveData",
+          "file": "LineMatReturnItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatReturnDeleteData",
+          "file": "LineMatReturnDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WQ",
+      "name": "LineMatReturnLot",
+      "text": "退料品检明细",
+      "parentId": "MTD1000001WM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnLotMainView",
+          "file": "LineMatReturnLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnLotTreeView",
+          "file": "LineMatReturnLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatReturnLotSaveData",
+          "file": "LineMatReturnLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatReturnLotDeleteData",
+          "file": "LineMatReturnLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X9",
+      "name": "LineMatReturnStock",
+      "text": "退库材料再入库",
+      "parentId": "MTD1000001WM",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnStockMainView",
+          "file": "LineMatReturnStockMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnStockTreeView",
+          "file": "LineMatReturnStockTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000230",
+      "name": "PickingListForMaterialReject",
+      "text": "SAP工单退库",
+      "parentId": "MTD1000001WM",
+      "sequence": "8",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PickingListitemrejectMainView",
+          "file": "PickingListitemrejectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PickingListRejectTreeView",
+          "file": "PickingListRejectTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PickingListItemDeleteData",
+          "file": "PickingListItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

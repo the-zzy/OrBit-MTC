@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BJPQ",
+  "name": "备件预入库查询",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "备件预入库查询",
+  "metadata": "管理备件预入库查询，记录查询编号、备件信息、入库日期、数量、状态等数据，确保备件预入库数据的准确性和可追溯性。这有助于优化备件库存管理，提高备件的供应效率，保障设备的正常运行。",
+  "objects": [
+    {
+      "id": "MTD10000027T",
+      "name": "BJPredictInStorage",
+      "text": "备件预入库查询",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageBJMainView",
+          "file": "PredictInStorageBJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageBJTreeView",
+          "file": "PredictInStorageBJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027U",
+      "name": "BJPredictInStorageItemPalletSN",
+      "text": "备件预入库栈板明细",
+      "parentId": "MTD10000027T",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemPalletSNSJMainView",
+          "file": "PredictInStorageItemPalletSNSJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemPalletSNSJTreeView",
+          "file": "PredictInStorageItemPalletSNSJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027V",
+      "name": "BJPredictInStorageItemBoxSN",
+      "text": "备件预入库箱号明细",
+      "parentId": "MTD10000027U",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemBoxSNBJMainView",
+          "file": "PredictInStorageItemBoxSNBJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemBoxSNBJTreeView",
+          "file": "PredictInStorageItemBoxSNBJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

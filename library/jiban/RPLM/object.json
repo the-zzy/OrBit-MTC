@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RPLM",
+  "name": "补印条码管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "补印条码管理",
+  "metadata": "ReprintLotManage",
+  "objects": [
+    {
+      "id": "MTD1000001PW",
+      "name": "ReprintLot",
+      "text": "补印条码管理",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReprintLotMainView",
+          "file": "ReprintLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReprintLotTreeView",
+          "file": "ReprintLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReprintLotSaveData",
+          "file": "ReprintLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReprintLotDeleteData",
+          "file": "ReprintLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PX",
+      "name": "ReprintLotDetail",
+      "text": "补印条码登记",
+      "parentId": "MTD1000001PW",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReprintLotDetailMainView",
+          "file": "ReprintLotDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReprintLotDetailTreeView",
+          "file": "ReprintLotDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReprintLotDetailSaveData",
+          "file": "ReprintLotDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReprintLotDetailDeleteData",
+          "file": "ReprintLotDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

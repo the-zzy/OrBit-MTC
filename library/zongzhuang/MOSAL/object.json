@@ -1,0 +1,123 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MOSAL",
+  "name": "工单领料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工单领料单",
+  "metadata": "查询工单领料单信息，记录领料单编号、工单编号、物料信息、领料数量、领料日期等关键数据，确保工单领料过程的规范性和可追溯性。这有助于优化物料管理流程，避免因领料错误导致的生产延误和物料浪费，提高生产效率。",
+  "objects": [
+    {
+      "id": "MTD1000001Q2",
+      "name": "TVMonitorPickingList",
+      "text": "工单领料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVMonitorPickingListMainView",
+          "file": "TVMonitorPickingListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVMonitorPickingListTreeView",
+          "file": "TVMonitorPickingListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Q3",
+      "name": "TVMonitorPickingListItem",
+      "text": "领料单明细",
+      "parentId": "MTD1000001Q2",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PickingListItemMainView",
+          "file": "PickingListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PickingListItemTreeView",
+          "file": "PickingListItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Q4",
+      "name": "TVMonitorPickingListItemLot",
+      "text": "已分配批号清单",
+      "parentId": "MTD1000001Q3",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PickingListItemLotMainView",
+          "file": "PickingListItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PickingListItemLotTreeView",
+          "file": "PickingListItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027M",
+      "name": "LotsnFIFOCovert",
+      "text": "先进先出变更",
+      "parentId": "MTD1000001Q2",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LotsnFIFOCovertMainView",
+          "file": "LotsnFIFOCovertMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LotsnFIFOCovertTreeView",
+          "file": "LotsnFIFOCovertTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LotsnFIFOCovertSaveData",
+          "file": "LotsnFIFOCovertSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LotsnFIFOCovertDeleteData",
+          "file": "LotsnFIFOCovertDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

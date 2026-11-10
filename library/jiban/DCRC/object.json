@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DCRC",
+  "name": "DIP维修不良预警配置表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP维修不良预警配置表",
+  "metadata": "DCRC",
+  "objects": [
+    {
+      "id": "MTD1000002AB",
+      "name": "DCRepairRecordConfiguration",
+      "text": "DIP维修不良预警配置表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCRepairRecordConfigurationMainView",
+          "file": "DCRepairRecordConfigurationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCRepairRecordConfigurationTreeView",
+          "file": "DCRepairRecordConfigurationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DCRepairRecordConfigurationSaveData",
+          "file": "DCRepairRecordConfigurationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DCRepairRecordConfigurationDeleteData",
+          "file": "DCRepairRecordConfigurationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AC",
+      "name": "DCRepairRecordConfigurationProducts",
+      "text": "DIP不良预警监控物料品类",
+      "parentId": "MTD1000002AB",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCRepairRecordConfigurationMainView",
+          "file": "DCRepairRecordConfigurationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCRepairRecordConfigurationTreeView",
+          "file": "DCRepairRecordConfigurationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DCRepairRecordConfigurationSaveData",
+          "file": "DCRepairRecordConfigurationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DCRepairRecordConfigurationDeleteData",
+          "file": "DCRepairRecordConfigurationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

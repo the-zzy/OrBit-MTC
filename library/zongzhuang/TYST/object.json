@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TYST",
+  "name": "值列表类别/值设定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "值列表类别/值设定",
+  "metadata": "管理值列表类别和值设定，记录类别编号、类别名称、值列表名称、值列表内容、生效日期等信息，确保值列表数据的准确性和完整性。这有助于优化企业数据管理流程，提高各业务系统数据的一致性和准确性，支持企业的生产和运营管理决策。",
+  "objects": [
+    {
+      "id": "MTD10000022W",
+      "name": "TypeSetting",
+      "text": "值列表类别/值设定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TypeSettingMainView",
+          "file": "TypeSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TypeSettingTreeView",
+          "file": "TypeSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TypeSettingSaveData",
+          "file": "TypeSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TypeSettingDeleteData",
+          "file": "TypeSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022X",
+      "name": "TypeSettingItem",
+      "text": "值列表值设定",
+      "parentId": "MTD10000022W",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TypeSettingItemMainView",
+          "file": "TypeSettingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TypeSettingItemTreeView",
+          "file": "TypeSettingItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TypeSettingItemSaveData",
+          "file": "TypeSettingItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TypeSettingItemDeleteData",
+          "file": "TypeSettingItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

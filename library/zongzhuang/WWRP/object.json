@@ -1,0 +1,78 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WWRP",
+  "name": "材料发料寄存料号维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "材料发料寄存料号维护",
+  "metadata": "管理材料发料寄存料号维护，记录料号维护编号、物料信息、寄存料号、维护日期、操作人员等信息，确保材料发料寄存料号的准确性和可追溯性。这有助于优化物料管理流程，提高发料效率，避免因料号错误导致的生产混乱和物料浪费。",
+  "objects": [
+    {
+      "id": "MTD1000002C2",
+      "name": "WW_RMDepositPrd",
+      "text": "材料发料寄存料号维护",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_RMDepositPrdMainView",
+          "file": "WW_RMDepositPrdMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_RMDepositPrdTreeView",
+          "file": "WW_RMDepositPrdTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WW_RMDepositPrdSaveData",
+          "file": "WW_RMDepositPrdSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WW_RMDepositPrdDeleteData",
+          "file": "WW_RMDepositPrdDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002C3",
+      "name": "WW_RMDeposit",
+      "text": "材料发料寄存明细",
+      "parentId": "MTD1000002C2",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_RMDepositMainView",
+          "file": "WW_RMDepositMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_RMDepositTreeView",
+          "file": "WW_RMDepositTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WW_RMDepositDeleteData",
+          "file": "WW_RMDepositDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

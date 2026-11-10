@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EMRRT",
+  "name": "查询SN数据",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "查询SN数据",
+  "metadata": "查询与产品序列号（SN）相关的数据，包括产品型号、生产日期、生产批次、客户信息、维修记录等，实现产品全生命周期的数据追溯。这为企业的产品质量管控、售后服务和客户关系管理提供了有力的数据支持。",
+  "objects": [
+    {
+      "id": "MTD10000029L",
+      "name": "EMRQuery",
+      "text": "查询SN数据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

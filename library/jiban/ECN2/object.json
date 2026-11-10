@@ -1,0 +1,78 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ECN2",
+  "name": "技术通知单-预加工",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "技术通知单-预加工",
+  "metadata": "ECN2",
+  "objects": [
+    {
+      "id": "MTD1000000M5",
+      "name": "ECN2",
+      "text": "技术通知单-预加工",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNMainView",
+          "file": "ECNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNTreeView",
+          "file": "ECNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNSaveData",
+          "file": "ECNSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000M7",
+      "name": "ECNItem2",
+      "text": "技术通知单列表",
+      "parentId": "MTD1000000M5",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNItemMainView",
+          "file": "ECNItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNItemTreeView",
+          "file": "ECNItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNItemSaveData",
+          "file": "ECNItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ECNItemDeleteData",
+          "file": "ECNItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

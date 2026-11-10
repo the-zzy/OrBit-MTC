@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FYRD",
+  "name": "FY维修数据删除",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "FY维修数据删除",
+  "metadata": "FeiyueRepairDeleteQuery",
+  "objects": [
+    {
+      "id": "MTD1000001MI",
+      "name": "FeiyueRepairDeleteQuery",
+      "text": "FY维修数据删除",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

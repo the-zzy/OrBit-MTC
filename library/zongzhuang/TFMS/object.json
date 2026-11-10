@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TFMS",
+  "name": "工装治具管理系统",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工装治具管理系统",
+  "metadata": "TFMS",
+  "objects": [
+    {
+      "id": "MTD1000002DN",
+      "name": "ToolFixturesMS",
+      "text": "工装治具管理系统",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToolFixturesMSMainView",
+          "file": "ToolFixturesMSMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToolFixturesMSTreeView",
+          "file": "ToolFixturesMSTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToolFixturesMSSaveData",
+          "file": "ToolFixturesMSSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToolFixturesMSDeleteData",
+          "file": "ToolFixturesMSDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DO",
+      "name": "ToolFixturesMSHis",
+      "text": "工装治具变更记录",
+      "parentId": "MTD1000002DN",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToolFixturesMSHisMainView",
+          "file": "ToolFixturesMSHisMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToolFixturesMSHisTreeView",
+          "file": "ToolFixturesMSHisTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToolFixturesMSHisSaveData",
+          "file": "ToolFixturesMSHisSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToolFixturesMSHisDeleteData",
+          "file": "ToolFixturesMSHisDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DT",
+      "name": "FileOwnershipGZ",
+      "text": "工装-文件归属",
+      "parentId": "MTD1000002DN",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FileOwnershipMainView",
+          "file": "FileOwnershipMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FileOwnershipTreeView",
+          "file": "FileOwnershipTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FileOwnershipSaveData",
+          "file": "FileOwnershipSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FileOwnershipDeleteData",
+          "file": "FileOwnershipDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

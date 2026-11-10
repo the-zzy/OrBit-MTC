@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CKPL",
+  "name": "检查计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "检查计划",
+  "metadata": "CheckPlan",
+  "objects": [
+    {
+      "id": "MTD10000025J",
+      "name": "CheckPlan",
+      "text": "检查计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CheckPlanMainView",
+          "file": "CheckPlanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CheckPlanTreeView",
+          "file": "CheckPlanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CheckPlanSaveData",
+          "file": "CheckPlanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CheckPlanDeleteData",
+          "file": "CheckPlanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025K",
+      "name": "CheckPlanItemLot",
+      "text": "检查计划黑名单",
+      "parentId": "MTD10000025J",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CheckPlanItemLotMainView",
+          "file": "CheckPlanItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CheckPlanItemLotTreeView",
+          "file": "CheckPlanItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CheckPlanItemLotSaveData",
+          "file": "CheckPlanItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CheckPlanItemLotDeleteData",
+          "file": "CheckPlanItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025L",
+      "name": "CheckScanLot",
+      "text": "检查计划扫描批号清单",
+      "parentId": "MTD10000025J",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CheckScanLotMainView",
+          "file": "CheckScanLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CheckScanLotTreeView",
+          "file": "CheckScanLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CheckScanLotSaveData",
+          "file": "CheckScanLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CheckScanLotDeleteData",
+          "file": "CheckScanLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025M",
+      "name": "CheckPlanItem",
+      "text": "检查计划从表",
+      "parentId": "MTD10000025J",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CheckPlanItemMainView",
+          "file": "CheckPlanItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CheckPlanItemTreeView",
+          "file": "CheckPlanItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CheckPlanItemSaveData",
+          "file": "CheckPlanItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CheckPlanItemDeleteData",
+          "file": "CheckPlanItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

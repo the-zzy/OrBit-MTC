@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ICOR",
+  "name": "IQCOverdueReport",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "IQCOverdueReport",
+  "metadata": "IQCOverdueReport",
+  "objects": [
+    {
+      "id": "MTD1000002CK",
+      "name": "IQCOverdueReport",
+      "text": "IQCOverdueReport",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCOverdueReportMainView",
+          "file": "IQCOverdueReportMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCOverdueReportTreeView",
+          "file": "IQCOverdueReportTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCOverdueReportSaveData",
+          "file": "IQCOverdueReportSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCOverdueReportDeleteData",
+          "file": "IQCOverdueReportDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

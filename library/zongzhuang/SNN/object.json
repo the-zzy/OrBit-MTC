@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SNN",
+  "name": "SN预置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SN预置",
+  "metadata": "OrderSet",
+  "objects": [
+    {
+      "id": "MTD1000000JN",
+      "name": "OrderSet",
+      "text": "SN预置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderSetMainView",
+          "file": "OrderSetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderSetTreeView",
+          "file": "OrderSetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderSetSaveData",
+          "file": "OrderSetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderSetDeleteData",
+          "file": "OrderSetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

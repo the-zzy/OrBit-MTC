@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RSNI",
+  "name": "更换SN信息",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "更换SN信息",
+  "metadata": "ReplaceSNInfo",
+  "objects": [
+    {
+      "id": "MTD1000002BN",
+      "name": "ReplaceSNLog",
+      "text": "更换SN信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReplaceSNLogMainView",
+          "file": "ReplaceSNLogMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReplaceSNLogTreeView",
+          "file": "ReplaceSNLogTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReplaceSNLogSaveData",
+          "file": "ReplaceSNLogSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReplaceSNLogDeleteData",
+          "file": "ReplaceSNLogDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

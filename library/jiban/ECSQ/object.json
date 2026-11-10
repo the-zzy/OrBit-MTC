@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ECSQ",
+  "name": "客户批号查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "客户批号查询",
+  "metadata": "ELEMENTCustSNQuery",
+  "objects": [
+    {
+      "id": "MTD1000001ZT",
+      "name": "ELEMENTCustSNQuery",
+      "text": "客户批号查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

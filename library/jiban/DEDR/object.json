@@ -1,0 +1,228 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DEDR",
+  "name": "点收上架清单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "点收上架清单",
+  "metadata": "DEDR",
+  "objects": [
+    {
+      "id": "MTD10000026H",
+      "name": "DeliveryReceive",
+      "text": "点收上架清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryReceiveMainView",
+          "file": "DeliveryReceiveMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryReceiveTreeView",
+          "file": "DeliveryReceiveTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026I",
+      "name": "WW_RMinventoryQty",
+      "text": "待上架明细",
+      "parentId": "MTD10000026H",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_RMinventoryQtyMainView",
+          "file": "WW_RMinventoryQtyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_RMinventoryQtyTreeView",
+          "file": "WW_RMinventoryQtyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027T",
+      "name": "WW_RMinventoryReBackQty",
+      "text": "待回仓明细",
+      "parentId": "MTD10000026H",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_RMinventoryReBackQtyMainView",
+          "file": "WW_RMinventoryReBackQtyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_RMinventoryReBackQtyTreeView",
+          "file": "WW_RMinventoryReBackQtyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026J",
+      "name": "WW_AGVInVentoryQty",
+      "text": "AGV储位存放明细",
+      "parentId": "MTD10000026H",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "WW_AGVinventoryQtyTreeView",
+          "file": "WW_AGVinventoryQtyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000273",
+      "name": "WW_RMinventorySumQty",
+      "text": "AGV库存汇总表",
+      "parentId": "MTD10000026H",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "WW_RMinventorySumQtyTreeView",
+          "file": "WW_RMinventorySumQtyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000276",
+      "name": "AGVTaskInstructItemError",
+      "text": "AGV任务异常",
+      "parentId": "MTD10000026H",
+      "sequence": "8",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVTaskInstructItemMainView",
+          "file": "AGVTaskInstructItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVTaskInstructItemTreeView",
+          "file": "AGVTaskInstructItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027D",
+      "name": "WMSCellCheck",
+      "text": "储位盘点",
+      "parentId": "MTD10000026H",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WMSCellCheckMainView",
+          "file": "WMSCellCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WMSCellCheckTreeView",
+          "file": "WMSCellCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027P",
+      "name": "CellStatus",
+      "text": "库位状态",
+      "parentId": "MTD10000026H",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CellMainView",
+          "file": "CellMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CellStatusTreeView",
+          "file": "CellStatusTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027S",
+      "name": "CellCount",
+      "text": "库位统计",
+      "parentId": "MTD10000026H",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CellMainView",
+          "file": "CellMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CellCountTreeView",
+          "file": "CellCountTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

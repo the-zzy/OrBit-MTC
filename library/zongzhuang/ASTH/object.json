@@ -1,0 +1,312 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ASTH",
+  "name": "设备类别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备类别",
+  "metadata": "AssetHead",
+  "objects": [
+    {
+      "id": "MTD1000001OM",
+      "name": "AssetHead",
+      "text": "设备类别",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetHeadMainView",
+          "file": "AssetHeadMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetHeadTreeView",
+          "file": "AssetHeadTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetHeadSaveData",
+          "file": "AssetHeadSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetHeadDeleteData",
+          "file": "AssetHeadDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "MainView": "2026-11-09T10:24:06+08:00",
+        "style": "2026-11-09T11:11:06+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "AssetHeadTreeView",
+          "columns": [
+            {
+              "name": "AssetHeadid",
+              "text": ""
+            },
+            {
+              "name": "DivisionName",
+              "text": "部门"
+            },
+            {
+              "name": "assetCode",
+              "text": "设备资产条码"
+            },
+            {
+              "name": "AssetTypeName",
+              "text": "资产类别"
+            },
+            {
+              "name": "AutoLineEquip",
+              "text": "自动化线体"
+            }
+          ]
+        },
+        "main": {
+          "name": "AssetHead",
+          "groups": [
+            {
+              "id": "MFG1000001XV",
+              "sequence": "01",
+              "name": "AssetHead Default Group",
+              "text": "设备分类",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000008G2",
+                  "name": "DivisionName",
+                  "text": "部门",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true
+                },
+                {
+                  "id": "MDF1000009FM",
+                  "name": "iscancel",
+                  "text": "是否失效",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false
+                },
+                {
+                  "id": "MDF1000008CQ",
+                  "name": "AssetTypeName",
+                  "text": "资产类别",
+                  "type": "nvarchar(50)",
+                  "lines": 1,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false
+                },
+                {
+                  "id": "MDF1000008G1",
+                  "name": "DivisionId",
+                  "text": "部门",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false
+                },
+                {
+                  "id": "MDF1000008CR",
+                  "name": "AssetCode",
+                  "text": "设备资产条码",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false
+                },
+                {
+                  "id": "MDF1000008CS",
+                  "name": "AssetTypeid",
+                  "text": "",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false
+                },
+                {
+                  "id": "MDF1000009F1",
+                  "name": "WeiXinChart",
+                  "text": "微信号码（多个用/分开）",
+                  "type": "nvarchar(max)",
+                  "lines": 3,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false
+                },
+                {
+                  "id": "MDF100000G5N",
+                  "name": "IsAutoLineEquipCategory",
+                  "text": "自动化线体设备",
+                  "type": "",
+                  "lines": 2,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "MTD1000001OL",
+      "name": "AssetTypeObject",
+      "text": "设备项目管理",
+      "parentId": "MTD1000001OM",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetTypeObjectMainView",
+          "file": "AssetTypeObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetTypeObjectTreeView",
+          "file": "AssetTypeObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetTypeObjectSaveData",
+          "file": "AssetTypeObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetTypeObjectDeleteData",
+          "file": "AssetTypeObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001NW",
+      "name": "AssetDetail",
+      "text": "资产设备明细",
+      "parentId": "MTD1000001OM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetDetailMainView",
+          "file": "AssetDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetDetailTreeView",
+          "file": "AssetDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetDetailSaveData",
+          "file": "AssetDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetDetailDeleteData",
+          "file": "AssetDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OS",
+      "name": "AssetCheck",
+      "text": "设备保养记录",
+      "parentId": "MTD1000001NW",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetCheckMainView",
+          "file": "AssetCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetCheckTreeView",
+          "file": "AssetCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OT",
+      "name": "AssetDetailModify",
+      "text": "资产设备定义",
+      "parentId": "MTD1000001OM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetDetailMainView",
+          "file": "AssetDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetDetailModifyTreeView",
+          "file": "AssetDetailModifyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetDetailSaveData",
+          "file": "AssetDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetDetailDeleteData",
+          "file": "AssetDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ]
+}

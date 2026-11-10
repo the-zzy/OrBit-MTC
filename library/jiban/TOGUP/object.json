@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TOGUP",
+  "name": "工具类别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工具类别",
+  "metadata": "ToolGroup",
+  "objects": [
+    {
+      "id": "MTD10000026N",
+      "name": "ToolGroup",
+      "text": "工具类别",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToolGroupMainView",
+          "file": "ToolGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToolGroupTreeView",
+          "file": "ToolGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToolGroupSaveData",
+          "file": "ToolGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToolGroupDeleteData",
+          "file": "ToolGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026O",
+      "name": "ToolGroupItem",
+      "text": "类别项目",
+      "parentId": "MTD10000026N",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToolGroupItemMainView",
+          "file": "ToolGroupItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToolGroupItemTreeView",
+          "file": "ToolGroupItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToolGroupItemSaveData",
+          "file": "ToolGroupItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToolGroupItemDeleteData",
+          "file": "ToolGroupItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

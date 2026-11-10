@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SMUL",
+  "name": "钢网解封",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "钢网解封",
+  "metadata": "SteelmeshUnlock",
+  "objects": [
+    {
+      "id": "MTD1000001OG",
+      "name": "SteelmeshUnlock",
+      "text": "钢网解封",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

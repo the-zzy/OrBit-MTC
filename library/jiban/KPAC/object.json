@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KPAC",
+  "name": "KpiAssessmentConfig",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "KpiAssessmentConfig",
+  "metadata": "KpiAssessmentConfig",
+  "objects": [
+    {
+      "id": "MTD1000002DK",
+      "name": "KpiAssessmentConfig",
+      "text": "KpiAssessmentConfig",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KpiAssessmentConfigMainView",
+          "file": "KpiAssessmentConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KpiAssessmentConfigTreeView",
+          "file": "KpiAssessmentConfigTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KpiAssessmentConfigSaveData",
+          "file": "KpiAssessmentConfigSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KpiAssessmentConfigDeleteData",
+          "file": "KpiAssessmentConfigDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

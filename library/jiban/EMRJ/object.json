@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EMRJ",
+  "name": "EMR工作项目",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "EMR工作项目",
+  "metadata": "EMRJ",
+  "objects": [
+    {
+      "id": "MTD1000000TI",
+      "name": "EMRProject",
+      "text": "EMR工作项目",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EMRProjectMainView",
+          "file": "EMRProjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EMRProjectTreeView",
+          "file": "EMRProjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EMRProjectSaveData",
+          "file": "EMRProjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EMRProjectDeleteData",
+          "file": "EMRProjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000TJ",
+      "name": "EMRProjectItem",
+      "text": "EMR项目生产计划",
+      "parentId": "MTD1000000TI",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EMRProjectItemMainView",
+          "file": "EMRProjectItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EMRProjectItemTreeView",
+          "file": "EMRProjectItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EMRProjectItemSaveData",
+          "file": "EMRProjectItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EMRProjectItemDeleteData",
+          "file": "EMRProjectItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

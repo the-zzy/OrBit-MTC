@@ -1,0 +1,38 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LPOS",
+  "name": "批号PO设置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "批号PO设置",
+  "metadata": "LPOS",
+  "objects": [
+    {
+      "id": "MTD10000024D",
+      "name": "OrderFieldSettingLotPOSN",
+      "text": "批号PO设置",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingTVMainView",
+          "file": "OrderFieldSettingTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingTVTreeView",
+          "file": "OrderFieldSettingTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,153 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "POST",
+  "name": "自动数据采集对象",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "自动数据采集对象",
+  "metadata": "Post Test Data",
+  "objects": [
+    {
+      "id": "MTD1000000CF",
+      "name": "PostTestData",
+      "text": "自动数据采集对象",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PostTestDataMainView",
+          "file": "PostTestDataMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PostTestDataTreeView",
+          "file": "PostTestDataTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PostTestDataSaveData",
+          "file": "PostTestDataSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PostTestDataDeleteData",
+          "file": "PostTestDataDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CG",
+      "name": "PostTestDataParameter",
+      "text": "数据采集对象参数",
+      "parentId": "MTD1000000CF",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PostTestDataParameterMainView",
+          "file": "PostTestDataParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PostTestDataParameterTreeView",
+          "file": "PostTestDataParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PostTestDataParameterSaveData",
+          "file": "PostTestDataParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PostTestDataParameterDeleteData",
+          "file": "PostTestDataParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000E5",
+      "name": "PostTestData_Product",
+      "text": "自动数据采集对象_产品",
+      "parentId": "MTD1000000CF",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PostTestData_ProductMainView",
+          "file": "PostTestData_ProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PostTestData_ProductTreeView",
+          "file": "PostTestData_ProductTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PostTestData_ProductSaveData",
+          "file": "PostTestData_ProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PostTestData_ProductDeleteData",
+          "file": "PostTestData_ProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000E6",
+      "name": "PostTestData_Specification",
+      "text": "自动数据采集对象_规程",
+      "parentId": "MTD1000000CF",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PostTestData_SpecificationMainView",
+          "file": "PostTestData_SpecificationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PostTestData_SpecificationTreeView",
+          "file": "PostTestData_SpecificationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PostTestData_SpecificationSaveData",
+          "file": "PostTestData_SpecificationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PostTestData_SpecificationDeleteData",
+          "file": "PostTestData_SpecificationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

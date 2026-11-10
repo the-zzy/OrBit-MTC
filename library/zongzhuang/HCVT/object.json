@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HCVT",
+  "name": "标准人力配置数据倒入",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "标准人力配置数据倒入",
+  "metadata": "HCVT",
+  "objects": [
+    {
+      "id": "MTD10000025W",
+      "name": "HumanConfiguration",
+      "text": "标准人力配置数据倒入",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "HumanConfigurationMainView",
+          "file": "HumanConfigurationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "HumanConfigurationTreeView",
+          "file": "HumanConfigurationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "HumanConfigurationSaveData",
+          "file": "HumanConfigurationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "HumanConfigurationDeleteData",
+          "file": "HumanConfigurationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

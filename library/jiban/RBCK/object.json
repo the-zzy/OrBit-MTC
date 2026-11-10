@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RBCK",
+  "name": "树莓派温湿度计年度校验",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "树莓派温湿度计年度校验",
+  "metadata": "RaspberryCheck",
+  "objects": [
+    {
+      "id": "MTD1000002BY",
+      "name": "RaspberryCheck",
+      "text": "树莓派温湿度计年度校验",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RaspberryCheckMainView",
+          "file": "RaspberryCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RaspberryCheckTreeView",
+          "file": "RaspberryCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "RaspberryCheckSaveData",
+          "file": "RaspberryCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "RaspberryCheckDeleteData",
+          "file": "RaspberryCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,88 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EVLG",
+  "name": "事件日志",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "事件日志",
+  "metadata": "Event Log",
+  "objects": [
+    {
+      "id": "MTD100000073",
+      "name": "SysEventLog",
+      "text": "事件日志",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysEventLogMainView",
+          "file": "SysEventLogMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysEventLogTreeView",
+          "file": "SysEventLogTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000B0",
+      "name": "SysEventOnline",
+      "text": "数据库在线用户",
+      "parentId": "MTD100000073",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysEventOnlineMainView",
+          "file": "SysEventOnlineMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysEventOnlineTreeView",
+          "file": "SysEventOnlineTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000C4",
+      "name": "SysArchitectureUpgrade",
+      "text": "系统升级记录",
+      "parentId": "MTD100000073",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysArchitectureUpgradeMainView",
+          "file": "SysArchitectureUpgradeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysArchitectureUpgradeTreeView",
+          "file": "SysArchitectureUpgradeTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

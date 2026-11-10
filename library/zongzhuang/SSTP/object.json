@@ -1,0 +1,113 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SSTP",
+  "name": "代用物料试产单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "代用物料试产单",
+  "metadata": "SubstituteTrialProduce",
+  "objects": [
+    {
+      "id": "MTD10000026I",
+      "name": "SubstituteTrialProduce",
+      "text": "代用物料试产单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SubstituteTrialProduceMainView",
+          "file": "SubstituteTrialProduceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SubstituteTrialProduceTreeView",
+          "file": "SubstituteTrialProduceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SubstituteTrialProduceSaveData",
+          "file": "SubstituteTrialProduceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SubstituteTrialProduceDeleteData",
+          "file": "SubstituteTrialProduceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026O",
+      "name": "SubstituteTrialProduceItem",
+      "text": "代用物料试产明细",
+      "parentId": "MTD10000026I",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SubstituteTrialProduceItemMainView",
+          "file": "SubstituteTrialProduceItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SubstituteTrialProduceItemTreeView",
+          "file": "SubstituteTrialProduceItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SubstituteTrialProduceItemSaveData",
+          "file": "SubstituteTrialProduceItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SubstituteTrialProduceItemDeleteData",
+          "file": "SubstituteTrialProduceItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026M",
+      "name": "SubstituteTrialProducelot",
+      "text": "代用物料试产批号",
+      "parentId": "MTD10000026I",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SubstituteTrialProducelotMainView",
+          "file": "SubstituteTrialProducelotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SubstituteTrialProducelotTreeView",
+          "file": "SubstituteTrialProducelotTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SubstituteTrialProducelotDeleteData",
+          "file": "SubstituteTrialProducelotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

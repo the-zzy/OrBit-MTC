@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VNRM",
+  "name": "越南收货管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "越南收货管理",
+  "metadata": "VNRM",
+  "objects": [
+    {
+      "id": "MTD1000002BV",
+      "name": "VNReceiving",
+      "text": "越南收货管理",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VNReceivingMainView",
+          "file": "VNReceivingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VNReceivingTreeView",
+          "file": "VNReceivingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VNReceivingSaveData",
+          "file": "VNReceivingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VNReceivingDeleteData",
+          "file": "VNReceivingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BX",
+      "name": "VNReceivingItem",
+      "text": "越南收货明细",
+      "parentId": "MTD1000002BV",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VNReceivingItemMainView",
+          "file": "VNReceivingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VNReceivingItemTreeView",
+          "file": "VNReceivingItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VNReceivingItemSaveData",
+          "file": "VNReceivingItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VNReceivingItemDeleteData",
+          "file": "VNReceivingItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BW",
+      "name": "VNReceivingItemLot",
+      "text": "越南收货条码明细",
+      "parentId": "MTD1000002BV",
+      "sequence": "03",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VNReceivingItemLotMainView",
+          "file": "VNReceivingItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VNReceivingItemLotTreeView",
+          "file": "VNReceivingItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VNReceivingItemLotSaveData",
+          "file": "VNReceivingItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VNReceivingItemLotDeleteData",
+          "file": "VNReceivingItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

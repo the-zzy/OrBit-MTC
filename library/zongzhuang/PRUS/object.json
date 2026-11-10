@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PRUS",
+  "name": "账户与料号绑定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "账户与料号绑定",
+  "metadata": "PRUS",
+  "objects": [
+    {
+      "id": "MTD10000023H",
+      "name": "Product_User",
+      "text": "账户与料号绑定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_UserMainView",
+          "file": "Product_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_UserTreeView",
+          "file": "Product_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Product_UserSaveData",
+          "file": "Product_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Product_UserDeleteData",
+          "file": "Product_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

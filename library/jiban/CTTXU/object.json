@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CTTXU",
+  "name": "基板未结案工单管理查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "基板未结案工单管理查询",
+  "metadata": "CTTXU",
+  "objects": [
+    {
+      "id": "MTD10000025T",
+      "name": "CQManagement",
+      "text": "基板未结案工单管理查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

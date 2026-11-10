@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GCOD",
+  "name": "量具仪器入库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具仪器入库",
+  "metadata": "GageCheck",
+  "objects": [
+    {
+      "id": "MTD1000000HL",
+      "name": "GageCheck",
+      "text": "量具仪器入库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageCheckMainView",
+          "file": "GageCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageCheckTreeView",
+          "file": "GageCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageCheckSaveData",
+          "file": "GageCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageCheckDeleteData",
+          "file": "GageCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000HK",
+      "name": "GageCheckIn",
+      "text": "量具入库明细",
+      "parentId": "MTD1000000HL",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageCheckInMainView",
+          "file": "GageCheckInMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageCheckInTreeView",
+          "file": "GageCheckInTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageCheckInSaveData",
+          "file": "GageCheckInSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageCheckInDeleteData",
+          "file": "GageCheckInDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

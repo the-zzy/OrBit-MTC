@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DNUL",
+  "name": "刮刀解封",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "刮刀解封",
+  "metadata": "DNUL",
+  "objects": [
+    {
+      "id": "MTD1000001OH",
+      "name": "DrawknifeUnlock",
+      "text": "刮刀解封",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

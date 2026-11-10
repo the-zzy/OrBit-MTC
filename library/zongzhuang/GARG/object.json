@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "GARG",
+  "name": "量具仪器登记卡",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具仪器登记卡",
+  "metadata": "GageAssetRegister",
+  "objects": [
+    {
+      "id": "MTD1000000I3",
+      "name": "GageAssetRegister",
+      "text": "量具仪器登记卡",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageAssetRegisterMainView",
+          "file": "GageAssetRegisterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageAssetRegisterTreeView",
+          "file": "GageAssetRegisterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageAssetRegisterSaveData",
+          "file": "GageAssetRegisterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageAssetRegisterDeleteData",
+          "file": "GageAssetRegisterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

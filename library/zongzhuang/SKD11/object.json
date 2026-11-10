@@ -1,0 +1,288 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD11",
+  "name": "SKD散件订单管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SKD散件订单管理",
+  "metadata": "管理SKD散件订单，记录订单编号、客户信息、产品型号、数量、交货日期等关键数据，确保SKD散件订单信息的准确传达和及时更新。这有助于优化生产计划安排，提高生产效率，确保SKD散件订单按时交付，满足客户需求。",
+  "objects": [
+    {
+      "id": "MTD10000024F",
+      "name": "SKDOrderInfo",
+      "text": "SKD散件订单管理",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDOrderInfoMainView",
+          "file": "SKDOrderInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDOrderInfoTreeView",
+          "file": "SKDOrderInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDOrderInfoSaveData",
+          "file": "SKDOrderInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDOrderInfoDeleteData",
+          "file": "SKDOrderInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024G",
+      "name": "SKDOrderItem",
+      "text": "散件订单明细",
+      "parentId": "MTD10000024F",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDOrderItemMainView",
+          "file": "SKDOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDOrderItemTreeView",
+          "file": "SKDOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDOrderItemSaveData",
+          "file": "SKDOrderItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDOrderItemDeleteData",
+          "file": "SKDOrderItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002F8",
+      "name": "MOCompare",
+      "text": "工单信息比对",
+      "parentId": "MTD10000024F",
+      "sequence": "03",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOCompareMainView",
+          "file": "MOCompareMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOCompareTreeView",
+          "file": "MOCompareTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOCompareSaveData",
+          "file": "MOCompareSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOCompareDeleteData",
+          "file": "MOCompareDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EK",
+      "name": "SKDBOMItemComparisonOrder",
+      "text": "SKD散件订单明细比对",
+      "parentId": "MTD10000024F",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDBOMItemMainView",
+          "file": "SKDBOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDBOMItemComparisonOrderTreeView",
+          "file": "SKDBOMItemComparisonOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024J",
+      "name": "SKDOrderBoxInfo",
+      "text": "加载箱号列表",
+      "parentId": "MTD10000024F",
+      "sequence": "05",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDOrderBoxInfoMainView",
+          "file": "SKDOrderBoxInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDOrderBoxInfoTreeView",
+          "file": "SKDOrderBoxInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024H",
+      "name": "SKDOrderBoxInfoItem",
+      "text": "外箱批号明细",
+      "parentId": "MTD10000024J",
+      "sequence": "06",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDOrderBoxInfoItemMainView",
+          "file": "SKDOrderBoxInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDOrderBoxInfoItemTreeView",
+          "file": "SKDOrderBoxInfoItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024I",
+      "name": "SKDPalletInfo",
+      "text": "散件栈板",
+      "parentId": "MTD10000024F",
+      "sequence": "07",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDPalletInfoMainView",
+          "file": "SKDPalletInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDPalletInfoTreeView",
+          "file": "SKDPalletInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BG",
+      "name": "SKDModuleOrder",
+      "text": "模组订单",
+      "parentId": "MTD10000024F",
+      "sequence": "09",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDModuleOrderMainView",
+          "file": "SKDModuleOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDModuleOrderTreeView",
+          "file": "SKDModuleOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDModuleOrderSaveData",
+          "file": "SKDModuleOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDModuleOrderDeleteData",
+          "file": "SKDModuleOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002F2",
+      "name": "SKDPackingListVerify",
+      "text": "散件清单差异核对",
+      "parentId": "MTD10000024F",
+      "sequence": "11",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDPackingListVerifyMainView",
+          "file": "SKDPackingListVerifyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDPackingListVerifyTreeView",
+          "file": "SKDPackingListVerifyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDPackingListVerifySaveData",
+          "file": "SKDPackingListVerifySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDPackingListVerifyDeleteData",
+          "file": "SKDPackingListVerifyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

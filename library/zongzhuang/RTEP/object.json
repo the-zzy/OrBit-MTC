@@ -1,0 +1,213 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RTEP",
+  "name": "报盘信息维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "报盘信息维护",
+  "metadata": "Excel Export Project",
+  "objects": [
+    {
+      "id": "MTD1000000F3",
+      "name": "ReportExportProject",
+      "text": "报盘信息维护",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReportExportProjectMainView",
+          "file": "ReportExportProjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReportExportProjectTreeView",
+          "file": "ReportExportProjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReportExportProjectSaveData",
+          "file": "ReportExportProjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReportExportProjectDeleteData",
+          "file": "ReportExportProjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000F4",
+      "name": "ReportExportSheet",
+      "text": "Excel 工作表",
+      "parentId": "MTD1000000F3",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReportExportSheetMainView",
+          "file": "ReportExportSheetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReportExportSheetTreeView",
+          "file": "ReportExportSheetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReportExportSheetSaveData",
+          "file": "ReportExportSheetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReportExportSheetDeleteData",
+          "file": "ReportExportSheetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000F5",
+      "name": "ReportExportContent",
+      "text": "工作表内容",
+      "parentId": "MTD1000000F4",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReportExportContentMainView",
+          "file": "ReportExportContentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReportExportContentTreeView",
+          "file": "ReportExportContentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReportExportContentSaveData",
+          "file": "ReportExportContentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReportExportContentDeleteData",
+          "file": "ReportExportContentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MX",
+      "name": "ReportExportParameter",
+      "text": "输出参数",
+      "parentId": "MTD1000000F3",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReportExportParameterMainView",
+          "file": "ReportExportParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReportExportParameterTreeView",
+          "file": "ReportExportParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReportExportParameterSaveData",
+          "file": "ReportExportParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReportExportParameterDeleteData",
+          "file": "ReportExportParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000F6",
+      "name": "ReportExportUser",
+      "text": "输出用户",
+      "parentId": "MTD1000000F3",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReportExportUserMainView",
+          "file": "ReportExportUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReportExportUserTreeView",
+          "file": "ReportExportUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReportExportUserSaveData",
+          "file": "ReportExportUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReportExportUserDeleteData",
+          "file": "ReportExportUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000UH",
+      "name": "ReportExportLog",
+      "text": "Excel 输出日志",
+      "parentId": "MTD1000000F3",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReportExportLogMainView",
+          "file": "ReportExportLogMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReportExportLogTreeView",
+          "file": "ReportExportLogTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

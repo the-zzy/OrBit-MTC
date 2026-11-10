@@ -1,0 +1,73 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ELRGD",
+  "name": "EMR附件维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "EMR附件维护",
+  "metadata": "ELRGD",
+  "objects": [
+    {
+      "id": "MTD1000001ON",
+      "name": "EnclosureRegCommodity",
+      "text": "EMR附件维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EnclosureRegCommodityMainView",
+          "file": "EnclosureRegCommodityMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EnclosureRegCommodityTreeView",
+          "file": "EnclosureRegCommodityTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OO",
+      "name": "EnclosureReg",
+      "text": "附件条码列表",
+      "parentId": "MTD1000001ON",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EnclosureRegMainView",
+          "file": "EnclosureRegMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EnclosureRegTreeView",
+          "file": "EnclosureRegTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EnclosureRegSaveData",
+          "file": "EnclosureRegSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EnclosureRegDeleteData",
+          "file": "EnclosureRegDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

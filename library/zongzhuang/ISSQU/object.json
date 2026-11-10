@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ISSQU",
+  "name": "产线报工",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "产线报工",
+  "metadata": "IssuedMateralOfDip",
+  "objects": [
+    {
+      "id": "MTD1000001V7",
+      "name": "IssuedMateralOfDip",
+      "text": "产线报工",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PBQY",
+  "name": "退料查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "退料查询",
+  "metadata": "PBQY",
+  "objects": [
+    {
+      "id": "MTD10000022T",
+      "name": "ProductBackQuery",
+      "text": "退料查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

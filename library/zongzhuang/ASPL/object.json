@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ASPL",
+  "name": "自动启动订单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "自动启动订单",
+  "metadata": "AutoStartPOList",
+  "objects": [
+    {
+      "id": "MTD1000000OU",
+      "name": "AutoStartPOList",
+      "text": "自动启动订单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AutoStartPOListMainView",
+          "file": "AutoStartPOListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AutoStartPOListTreeView",
+          "file": "AutoStartPOListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AutoStartPOListSaveData",
+          "file": "AutoStartPOListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AutoStartPOListDeleteData",
+          "file": "AutoStartPOListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

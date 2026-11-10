@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SSVN",
+  "name": "系统SVN",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "系统SVN",
+  "metadata": "SSVN",
+  "objects": [
+    {
+      "id": "MTD1000002E3",
+      "name": "SysDBSVN",
+      "text": "系统SVN",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysDBSVNMainView",
+          "file": "SysDBSVNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysDBSVNTreeView",
+          "file": "SysDBSVNTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002E4",
+      "name": "SysDBSVNSub",
+      "text": "系统SVN历史",
+      "parentId": "MTD1000002E3",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysDBSVNSubMainView",
+          "file": "SysDBSVNSubMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysDBSVNSubTreeView",
+          "file": "SysDBSVNSubTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

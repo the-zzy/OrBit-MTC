@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EGCK",
+  "name": "EMR玻璃绑定检测",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "EMR玻璃绑定检测",
+  "metadata": "EGCK",
+  "objects": [
+    {
+      "id": "MTD1000001R7",
+      "name": "EMRGlassCheck",
+      "text": "EMR玻璃绑定检测",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

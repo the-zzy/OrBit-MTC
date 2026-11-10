@@ -1,0 +1,93 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPCT",
+  "name": "SPC任务",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SPC任务",
+  "metadata": "SPC Task",
+  "objects": [
+    {
+      "id": "MTD1000000EN",
+      "name": "SPCTaskView",
+      "text": "SPC任务",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCTaskViewMainView",
+          "file": "SPCTaskViewMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCTaskViewTreeView",
+          "file": "SPCTaskViewTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000EP",
+      "name": "SPCTaskDataView",
+      "text": "SPC原始数据",
+      "parentId": "MTD1000000EN",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "SPCTaskData_TreeView",
+          "file": "SPCTaskData_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000EQ",
+      "name": "SPCTaskAlarm",
+      "text": "SPC报警记录",
+      "parentId": "MTD1000000EN",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCTaskAlarmMainView",
+          "file": "SPCTaskAlarmMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCTaskAlarmTreeView",
+          "file": "SPCTaskAlarmTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SPCTaskAlarmSaveData",
+          "file": "SPCTaskAlarmSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SPCTaskAlarmDeleteData",
+          "file": "SPCTaskAlarmDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

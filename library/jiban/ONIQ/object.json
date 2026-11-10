@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ONIQ",
+  "name": "订单数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "订单数据查询",
+  "metadata": "OrderNameImportDataquery",
+  "objects": [
+    {
+      "id": "MTD1000000KQ",
+      "name": "OrderDataQuery",
+      "text": "订单数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TDLQ",
+  "name": "任务清单",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "任务清单",
+  "metadata": "TDLQ",
+  "objects": [
+    {
+      "id": "MTD1000002BU",
+      "name": "ToDOListQuery",
+      "text": "任务清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

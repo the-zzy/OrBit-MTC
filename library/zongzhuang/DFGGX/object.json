@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DFGGX",
+  "name": "光学入库记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "光学入库记录查询",
+  "metadata": "DIPFGLotGxQuery",
+  "objects": [
+    {
+      "id": "MTD1000002EW",
+      "name": "DIPFGLotGxQuery",
+      "text": "光学入库记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

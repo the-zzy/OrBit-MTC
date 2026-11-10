@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ROSQ",
+  "name": "ROKU订单数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "ROKU订单数据查询",
+  "metadata": "ROSQ",
+  "objects": [
+    {
+      "id": "MTD10000028Q",
+      "name": "ROKUOrderSNInfoQuery",
+      "text": "ROKU订单数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

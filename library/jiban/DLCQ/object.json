@@ -1,0 +1,93 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DLCQ",
+  "name": "484交货单查询",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "484交货单查询",
+  "metadata": "DLCQ",
+  "objects": [
+    {
+      "id": "MTD10000028F",
+      "name": "MESDeliveryOrderFor484",
+      "text": "484交货单查询",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MesDeliveryOrderFor484MainView",
+          "file": "MesDeliveryOrderFor484MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MesDeliveryOrderFor484TreeView",
+          "file": "MesDeliveryOrderFor484TreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MESDeliveryOrderDeleteDataFor484",
+          "file": "MESDeliveryOrderDeleteDataFor484.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028G",
+      "name": "DeliveryOrderItemFor484",
+      "text": "交货单明细",
+      "parentId": "MTD10000028F",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryOrderItemMainView",
+          "file": "DeliveryOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderItemFor484TreeView",
+          "file": "DeliveryOrderItemFor484TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028H",
+      "name": "DeliveryOrderItemLotFor484",
+      "text": "交货单明细批号",
+      "parentId": "MTD10000028G",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryOrderItemlotLCDMainView",
+          "file": "DeliveryOrderItemlotLCDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderItemLotlcdTreeView",
+          "file": "DeliveryOrderItemLotlcdTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

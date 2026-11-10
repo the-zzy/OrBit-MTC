@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RMQY",
+  "name": "收料查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "收料查询",
+  "metadata": "ReceiveMaterialQuery",
+  "objects": [
+    {
+      "id": "MTD10000021U",
+      "name": "ReceiveMaterialQuery",
+      "text": "收料查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ZXWFQ",
+  "name": "(新)线外测试扫描查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "(新)线外测试扫描查询",
+  "metadata": "ZXDataChainTESTQuery",
+  "objects": [
+    {
+      "id": "MTD1000002CA",
+      "name": "ZXDataChainTESTQuery",
+      "text": "(新)线外测试扫描查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDRPQ",
+  "name": "来料报表状态查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "来料报表状态查询",
+  "metadata": "VendorDeliveryresQuery",
+  "objects": [
+    {
+      "id": "MTD1000001SY",
+      "name": "VendorDeliveryresQuery",
+      "text": "来料报表状态查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

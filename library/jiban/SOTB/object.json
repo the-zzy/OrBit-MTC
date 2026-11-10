@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SOTB",
+  "name": "新销售订单表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "新销售订单表",
+  "metadata": "SoNameTable",
+  "objects": [
+    {
+      "id": "MTD1000000RN",
+      "name": "SONameTb",
+      "text": "新销售订单表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SONameTbMainView",
+          "file": "SONameTbMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SONameTbTreeView",
+          "file": "SONameTbTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SONameTbSaveData",
+          "file": "SONameTbSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SONameTbDeleteData",
+          "file": "SONameTbDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

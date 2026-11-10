@@ -1,0 +1,43 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PBCL",
+  "name": "不良品退库库位",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "不良品退库库位",
+  "metadata": "ProductBackCell",
+  "objects": [
+    {
+      "id": "MTD1000001YM",
+      "name": "ProductBackCell",
+      "text": "不良品退库库位",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProducBackCellMainView",
+          "file": "ProducBackCellMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductBackCellTreeView",
+          "file": "ProductBackCellTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductbackCellSaveData",
+          "file": "ProductbackCellSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

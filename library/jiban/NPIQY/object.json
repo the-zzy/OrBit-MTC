@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "NPIQY",
+  "name": "NPI样机解绑查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "NPI样机解绑查询",
+  "metadata": "NPIQY",
+  "objects": [
+    {
+      "id": "MTD1000001RP",
+      "name": "NPIDisassemblyPrototypeQuery",
+      "text": "NPI样机解绑查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

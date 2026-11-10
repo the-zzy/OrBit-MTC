@@ -1,0 +1,113 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CMCF",
+  "name": "配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "配置",
+  "metadata": "CommodityConfigure",
+  "objects": [
+    {
+      "id": "MTD1000000O2",
+      "name": "CommodityConfigure",
+      "text": "配置",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityConfigureMainView",
+          "file": "CommodityConfigureMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityConfigureTreeView",
+          "file": "CommodityConfigureTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityConfigureSaveData",
+          "file": "CommodityConfigureSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000O3",
+      "name": "CommodityConfigureAdOp",
+      "text": "增加选项",
+      "parentId": "MTD1000000O2",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityConfigureAdOpMainView",
+          "file": "CommodityConfigureAdOpMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityConfigureAdOpTreeView",
+          "file": "CommodityConfigureAdOpTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityConfigureAdOpSaveData",
+          "file": "CommodityConfigureAdOpSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CommodityConfigureAdOpDeleteData",
+          "file": "CommodityConfigureAdOpDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000O4",
+      "name": "CommodityConfigureObOp",
+      "text": "预留选项卡",
+      "parentId": "MTD1000000O2",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityConfigureObOpMainView",
+          "file": "CommodityConfigureObOpMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityConfigureObOpTreeView",
+          "file": "CommodityConfigureObOpTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityConfigureObOpSaveData",
+          "file": "CommodityConfigureObOpSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CommodityConfigureObOpDeleteData",
+          "file": "CommodityConfigureObOpDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

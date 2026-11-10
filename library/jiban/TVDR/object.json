@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TVDR",
+  "name": "TV实时效率查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV实时效率查询",
+  "metadata": "TVDR",
+  "objects": [
+    {
+      "id": "MTD1000001PJ",
+      "name": "TVDailyRateReport",
+      "text": "TV实时效率查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

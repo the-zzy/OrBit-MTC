@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KCPC",
+  "name": "散件清单客户信息对照表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件清单客户信息对照表",
+  "metadata": "管理散件清单客户信息对照表，记录对照表编号、散件信息、客户名称、对照关系、生效日期等信息，确保散件清单客户信息对照的准确性和完整性。这有助于销售部门根据客户需求提供准确的散件清单信息，提高客户满意度和市场响应速度。",
+  "objects": [
+    {
+      "id": "MTD1000002AK",
+      "name": "KDCustomerProdConsult",
+      "text": "散件清单客户信息对照表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCustomerProdConsultMainView",
+          "file": "KDCustomerProdConsultMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCustomerProdConsultTreeView",
+          "file": "KDCustomerProdConsultTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCustomerProdConsultSaveData",
+          "file": "KDCustomerProdConsultSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCustomerProdConsultDeleteData",
+          "file": "KDCustomerProdConsultDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AL",
+      "name": "KDCustomerProdConsultItem",
+      "text": "散件物料客户对照表明细",
+      "parentId": "MTD1000002AK",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCustomerProdConsultItemMainView",
+          "file": "KDCustomerProdConsultItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCustomerProdConsultItemTreeView",
+          "file": "KDCustomerProdConsultItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCustomerProdConsultItemSaveData",
+          "file": "KDCustomerProdConsultItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCustomerProdConsultItemDeleteData",
+          "file": "KDCustomerProdConsultItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

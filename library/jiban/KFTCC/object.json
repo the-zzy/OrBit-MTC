@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KFTCC",
+  "name": "基板首件数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "基板首件数据查询",
+  "metadata": "FirstToConfirm",
+  "objects": [
+    {
+      "id": "MTD10000024W",
+      "name": "FirstToConfirm",
+      "text": "基板首件数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

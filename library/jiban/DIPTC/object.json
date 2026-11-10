@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DIPTC",
+  "name": "测试效率报表查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "测试效率报表查询",
+  "metadata": "DIPEfficiencyStatisticDoMethod",
+  "objects": [
+    {
+      "id": "MTD10000029B",
+      "name": "DIPEfficiencyStatisticDoMethod",
+      "text": "测试效率报表查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

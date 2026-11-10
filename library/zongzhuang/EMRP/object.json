@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EMRP",
+  "name": "EMR人员信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "EMR人员信息",
+  "metadata": "管理EMR人员信息，记录人员编号、姓名、部门、岗位、联系方式、权限等信息，确保EMR系统人员数据的准确性和完整性。这有助于优化系统用户管理，保障系统的安全性和稳定性，提高企业的信息化管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000000TH",
+      "name": "EMR_PersonInfo",
+      "text": "EMR人员信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EMR_PersonInfoMainView",
+          "file": "EMR_PersonInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EMR_PersonInfoTreeView",
+          "file": "EMR_PersonInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EMR_PersonInfoSaveData",
+          "file": "EMR_PersonInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EMR_PersonInfoDeleteData",
+          "file": "EMR_PersonInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

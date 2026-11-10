@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PCAP",
+  "name": "产能表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产能表",
+  "metadata": "Product_Capacity",
+  "objects": [
+    {
+      "id": "MTD1000000OT",
+      "name": "Product_Capacity",
+      "text": "产能表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_CapacityMainView",
+          "file": "Product_CapacityMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_CapacityTreeView",
+          "file": "Product_CapacityTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OS",
+      "name": "ProductCapacity",
+      "text": "产能表",
+      "parentId": "MTD1000000OT",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductCapacityMainView",
+          "file": "ProductCapacityMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductCapacityTreeView",
+          "file": "ProductCapacityTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductCapacitySaveData",
+          "file": "ProductCapacitySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductCapacityDeleteData",
+          "file": "ProductCapacityDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

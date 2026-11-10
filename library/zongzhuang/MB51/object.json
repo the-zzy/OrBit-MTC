@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MB51",
+  "name": "MB51信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "MB51信息查询",
+  "metadata": "TradeLogInfo",
+  "objects": [
+    {
+      "id": "MTD1000002EC",
+      "name": "TradeLogInfo",
+      "text": "MB51信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

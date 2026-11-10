@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "XMCB",
+  "name": "小米晨报100",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "小米晨报100",
+  "metadata": "XiaomiProductPlan",
+  "objects": [
+    {
+      "id": "MTD1000001QB",
+      "name": "XiaomiProductPlan",
+      "text": "小米晨报100",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XiaomiProductPlanMainView",
+          "file": "XiaomiProductPlanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XiaomiProductPlanTreeView",
+          "file": "XiaomiProductPlanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "XiaomiProductPlanSaveData",
+          "file": "XiaomiProductPlanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "XiaomiProductPlanDeleteData",
+          "file": "XiaomiProductPlanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

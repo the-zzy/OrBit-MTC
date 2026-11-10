@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PDSMQ",
+  "name": "整板批号管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "整板批号管理",
+  "metadata": "StocktakeMerge",
+  "objects": [
+    {
+      "id": "MTD1000002GK",
+      "name": "StocktakeMerge",
+      "text": "整板批号管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeMergeMainView",
+          "file": "StocktakeMergeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeMergeTreeView",
+          "file": "StocktakeMergeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeMergeSaveData",
+          "file": "StocktakeMergeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeMergeDeleteData",
+          "file": "StocktakeMergeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GL",
+      "name": "StocktakeMergeItem",
+      "text": "整板条码明细",
+      "parentId": "MTD1000002GK",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeMergeItemMainView",
+          "file": "StocktakeMergeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeMergeItemTreeView",
+          "file": "StocktakeMergeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeMergeItemSaveData",
+          "file": "StocktakeMergeItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeMergeItemDeleteData",
+          "file": "StocktakeMergeItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

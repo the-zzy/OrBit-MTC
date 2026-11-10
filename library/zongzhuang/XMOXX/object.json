@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "XMOXX",
+  "name": "小米云直通率数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "小米云直通率数据查询",
+  "metadata": "XMOXX",
+  "objects": [
+    {
+      "id": "MTD100000289",
+      "name": "XMOEM Query",
+      "text": "小米云直通率数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

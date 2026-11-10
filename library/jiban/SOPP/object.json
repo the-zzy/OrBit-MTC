@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SOPP",
+  "name": "产品作业流程表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品作业流程表",
+  "metadata": "SOPProduct",
+  "objects": [
+    {
+      "id": "MTD1000000SE",
+      "name": "SOPProduct",
+      "text": "产品作业流程表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPProductMainView",
+          "file": "SOPProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPProductTreeView",
+          "file": "SOPProductTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPProductSaveData",
+          "file": "SOPProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPProductDeleteData",
+          "file": "SOPProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SF",
+      "name": "SOPProductItem",
+      "text": "产品资料明细",
+      "parentId": "MTD1000000SE",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPProductItemMainView",
+          "file": "SOPProductItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPProductItemTreeView",
+          "file": "SOPProductItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPProductItemSaveData",
+          "file": "SOPProductItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPProductItemDeleteData",
+          "file": "SOPProductItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

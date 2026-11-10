@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SMTLQ",
+  "name": "SMT线体设备清单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SMT线体设备清单",
+  "metadata": "SMTLineEquipment",
+  "objects": [
+    {
+      "id": "MTD1000001R8",
+      "name": "SMTLineEquipment",
+      "text": "SMT线体设备清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTLineEquipmentMainView",
+          "file": "SMTLineEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTLineEquipmentTreeView",
+          "file": "SMTLineEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMTLineEquipmentSaveData",
+          "file": "SMTLineEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMTLineEquipmentDeleteData",
+          "file": "SMTLineEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CR",
+      "name": "AIWorkshopEquipment",
+      "text": "SMT-AI车间设备",
+      "parentId": "MTD1000001R8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AIWorkshopEquipmentMainView",
+          "file": "AIWorkshopEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AIWorkshopEquipmentTreeView",
+          "file": "AIWorkshopEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AIWorkshopEquipmentSaveData",
+          "file": "AIWorkshopEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AIWorkshopEquipmentDeleteData",
+          "file": "AIWorkshopEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CS",
+      "name": "SMTOutsideEquipment",
+      "text": "SMT-线外设备",
+      "parentId": "MTD1000001R8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTOutsideEquipmentMainView",
+          "file": "SMTOutsideEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTOutsideEquipmentTreeView",
+          "file": "SMTOutsideEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMTOutsideEquipmentSaveData",
+          "file": "SMTOutsideEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMTOutsideEquipmentDeleteData",
+          "file": "SMTOutsideEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

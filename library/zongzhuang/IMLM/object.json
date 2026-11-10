@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "IMLM",
+  "name": "工厂内部物料标签申请",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工厂内部物料标签申请",
+  "metadata": "申请工厂内部物料标签，记录申请编号、物料信息、申请数量、申请日期、申请人、审批状态等信息，确保物料标签申请的规范性和可追溯性。这有助于提高物料标识管理效率，避免因标签缺失或错误导致的物料管理和生产问题。",
+  "objects": [
+    {
+      "id": "MTD1000002BH",
+      "name": "InnerMaterialsLabel",
+      "text": "工厂内部物料标签申请",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InnerMaterialsLabelMainView",
+          "file": "InnerMaterialsLabelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InnerMaterialsLabelTreeView",
+          "file": "InnerMaterialsLabelTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BI",
+      "name": "InnerMaterialsLabelItem",
+      "text": "工厂内部物料标签明细",
+      "parentId": "MTD1000002BH",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InnerMaterialsLabelItemMainView",
+          "file": "InnerMaterialsLabelItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InnerMaterialsLabelItemTreeView",
+          "file": "InnerMaterialsLabelItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

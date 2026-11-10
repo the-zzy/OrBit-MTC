@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PROF",
+  "name": "产品族",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品族",
+  "metadata": "Product Family",
+  "objects": [
+    {
+      "id": "MTD10000007B",
+      "name": "ProductFamily",
+      "text": "产品族",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductFamilyMainView",
+          "file": "ProductFamilyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductFamilyTreeView",
+          "file": "ProductFamilyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductFamilySaveData",
+          "file": "ProductFamilySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductFamilyDeleteData",
+          "file": "ProductFamilyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CP",
+      "name": "ProductFamily_User",
+      "text": "产品组用户",
+      "parentId": "MTD10000007B",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductFamily_UserMainView",
+          "file": "ProductFamily_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductFamily_UserTreeView",
+          "file": "ProductFamily_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductFamily_UserSaveData",
+          "file": "ProductFamily_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductFamily_UserDeleteData",
+          "file": "ProductFamily_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

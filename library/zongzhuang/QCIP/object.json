@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QCIP",
+  "name": "TV客检报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV客检报表",
+  "metadata": "CustomerInspectionQuery",
+  "objects": [
+    {
+      "id": "MTD1000000RY",
+      "name": "CustomerInspectionQuery",
+      "text": "TV客检报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "POAL",
+  "name": "到货计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "到货计划",
+  "metadata": "POAL",
+  "objects": [
+    {
+      "id": "MTD1000001WA",
+      "name": "POArrivalPlanFile",
+      "text": "到货计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POArrivalPlanFileMainView",
+          "file": "POArrivalPlanFileMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POArrivalPlanFileTreeView",
+          "file": "POArrivalPlanFileTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "POArrivalPlanFileSaveData",
+          "file": "POArrivalPlanFileSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "POArrivalPlanFileDeleteData",
+          "file": "POArrivalPlanFileDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WB",
+      "name": "POArrivalPlanRecord",
+      "text": "到货计划导入数据",
+      "parentId": "MTD1000001WA",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POArrivalPlanRecordMainView",
+          "file": "POArrivalPlanRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POArrivalPlanRecordTreeView",
+          "file": "POArrivalPlanRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "POArrivalPlanRecordSaveData",
+          "file": "POArrivalPlanRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "POArrivalPlanRecordDeleteData",
+          "file": "POArrivalPlanRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

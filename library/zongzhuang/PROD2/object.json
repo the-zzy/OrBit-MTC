@@ -1,0 +1,133 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PROD2",
+  "name": "半成品",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "半成品",
+  "metadata": "Product",
+  "objects": [
+    {
+      "id": "MTD10000007C",
+      "name": "Product",
+      "text": "半成品",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductMainView",
+          "file": "ProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductRootTreeView",
+          "file": "ProductRootTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductSaveData",
+          "file": "ProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductDeleteData",
+          "file": "ProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KR",
+      "name": "Product_LGORT",
+      "text": "库存地点",
+      "parentId": "MTD10000007C",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_LGORTMainView",
+          "file": "Product_LGORTMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_LGORTTreeView",
+          "file": "Product_LGORTTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020X",
+      "name": "ProductInv_LGORT",
+      "text": "库存地点",
+      "parentId": "MTD10000007C",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_LGORTMainView",
+          "file": "Product_LGORTMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_LGORTTreeView",
+          "file": "Product_LGORTTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BT",
+      "name": "ProductAPSPara",
+      "text": "APS参数",
+      "parentId": "MTD10000007C",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductAPSParaMainView",
+          "file": "ProductAPSParaMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductAPSParaTreeView",
+          "file": "ProductAPSParaTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductAPSParaSaveData",
+          "file": "ProductAPSParaSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductAPSParaDeleteData",
+          "file": "ProductAPSParaDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

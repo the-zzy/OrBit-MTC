@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CSMM",
+  "name": "客户序列号管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户序列号管理",
+  "metadata": "CustomerSerialManage",
+  "objects": [
+    {
+      "id": "MTD1000002EM",
+      "name": "CustomerSerialManage",
+      "text": "客户序列号管理",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerSerialManageMainView",
+          "file": "CustomerSerialManageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerSerialManageTreeView",
+          "file": "CustomerSerialManageTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSerialManageSaveData",
+          "file": "CustomerSerialManageSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerSerialManageDeleteData",
+          "file": "CustomerSerialManageDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EN",
+      "name": "CustomerSerialManageItem",
+      "text": "客户序列号明细",
+      "parentId": "MTD1000002EM",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerSerialManageItemMainView",
+          "file": "CustomerSerialManageItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerSerialManageItemTreeView",
+          "file": "CustomerSerialManageItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSerialManageItemSaveData",
+          "file": "CustomerSerialManageItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerSerialManageItemDeleteData",
+          "file": "CustomerSerialManageItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

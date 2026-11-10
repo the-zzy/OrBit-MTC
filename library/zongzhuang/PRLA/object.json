@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PRLA",
+  "name": "料号替代预置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "料号替代预置",
+  "metadata": "管理料号替代预置，记录替代编号、原料号、新料号、替代原因、替代生效日期、操作人员等信息，确保料号替代过程的规范性和可追溯性。这有助于优化物料管理流程，避免因料号替代错误导致的生产混乱和物料浪费，提高物料管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000000AJ",
+      "name": "ProductReplace",
+      "text": "料号替代预置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductReplaceMainView",
+          "file": "ProductReplaceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductReplaceTreeView",
+          "file": "ProductReplaceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductReplaceSaveData",
+          "file": "ProductReplaceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductReplaceDeleteData",
+          "file": "ProductReplaceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OQAO",
+  "name": "OQA送检单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "OQA送检单",
+  "metadata": "OQAOrder",
+  "objects": [
+    {
+      "id": "MTD1000000K7",
+      "name": "OQAOrder",
+      "text": "OQA送检单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQAOrderMainView",
+          "file": "OQAOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQAOrderTreeView",
+          "file": "OQAOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OQAOrderSaveData",
+          "file": "OQAOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OQAOrderDeleteData",
+          "file": "OQAOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000K8",
+      "name": "OQACheckItem",
+      "text": "抽检详细",
+      "parentId": "MTD1000000K7",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQACheckItemMainView",
+          "file": "OQACheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQACheckItemTreeView",
+          "file": "OQACheckItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OQACheckItemSaveData",
+          "file": "OQACheckItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OQACheckItemDeleteData",
+          "file": "OQACheckItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

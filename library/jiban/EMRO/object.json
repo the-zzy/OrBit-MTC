@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EMRO",
+  "name": "EMR看板维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "EMR看板维护",
+  "metadata": "EMROutput",
+  "objects": [
+    {
+      "id": "MTD1000001V4",
+      "name": "EMROutput",
+      "text": "EMR看板维护",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EMROutputMainView",
+          "file": "EMROutputMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EMROutputTreeView",
+          "file": "EMROutputTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EMROutputSaveData",
+          "file": "EMROutputSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EMROutputDeleteData",
+          "file": "EMROutputDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

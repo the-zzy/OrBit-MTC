@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OFGP",
+  "name": "订单成品属性设置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单成品属性设置",
+  "metadata": "设置订单成品属性，记录订单编号、产品型号、属性名称、属性值等信息，确保订单成品属性的准确性和完整性。这有助于生产部门根据订单要求合理安排生产计划，提高生产效率，确保订单按时完成和交付。",
+  "objects": [
+    {
+      "id": "MTD10000027Z",
+      "name": "OrderFGProperty",
+      "text": "订单成品属性设置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFGPropertyMainView",
+          "file": "OrderFGPropertyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFGPropertyTreeView",
+          "file": "OrderFGPropertyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFGPropertySaveData",
+          "file": "OrderFGPropertySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFGPropertyDeleteData",
+          "file": "OrderFGPropertyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

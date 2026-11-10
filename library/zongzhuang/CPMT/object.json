@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CPMT",
+  "name": "标产维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "标产维护",
+  "metadata": "CapacityMaintain",
+  "objects": [
+    {
+      "id": "MTD10000025X",
+      "name": "CapacityMaintain",
+      "text": "标产维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CapacityMaintainMainView",
+          "file": "CapacityMaintainMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CapacityMaintainTreeView",
+          "file": "CapacityMaintainTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CapacityMaintainSaveData",
+          "file": "CapacityMaintainSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CapacityMaintainDeleteData",
+          "file": "CapacityMaintainDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

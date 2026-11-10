@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VNSC",
+  "name": "越南收货SOPO对照表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "越南收货SOPO对照表",
+  "metadata": "VNReceivingSOPOContrast",
+  "objects": [
+    {
+      "id": "MTD1000002BY",
+      "name": "VNReceivingSOPOContrast",
+      "text": "越南收货SOPO对照表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VNReceivingSOPOContrastMainView",
+          "file": "VNReceivingSOPOContrastMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VNReceivingSOPOContrastTreeView",
+          "file": "VNReceivingSOPOContrastTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VNReceivingSOPOContrastSaveData",
+          "file": "VNReceivingSOPOContrastSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VNReceivingSOPOContrastDeleteData",
+          "file": "VNReceivingSOPOContrastDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

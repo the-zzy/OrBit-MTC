@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EAQY",
+  "name": "异常分析",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "异常分析",
+  "metadata": "ExceptionAnalyse",
+  "objects": [
+    {
+      "id": "MTD1000001WG",
+      "name": "ExceptionAnalyse",
+      "text": "异常分析",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

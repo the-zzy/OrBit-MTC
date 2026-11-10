@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CKKX",
+  "name": "开箱验货",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "开箱验货",
+  "metadata": "CheckOutOfTheBox",
+  "objects": [
+    {
+      "id": "MTD1000000FT",
+      "name": "CheckOutOfTheBox",
+      "text": "开箱验货",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CheckOutOfTheBoxMainView",
+          "file": "CheckOutOfTheBoxMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CheckOutOfTheBoxTreeView",
+          "file": "CheckOutOfTheBoxTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CheckOutOfTheBoxSaveData",
+          "file": "CheckOutOfTheBoxSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CheckOutOfTheBoxDeleteData",
+          "file": "CheckOutOfTheBoxDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000FU",
+      "name": "CheckOutOfTheBoxDetail",
+      "text": "验货图片上传",
+      "parentId": "MTD1000000FT",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CheckOutOfTheBoxDetailMainView",
+          "file": "CheckOutOfTheBoxDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CheckOutOfTheBoxDetailTreeView",
+          "file": "CheckOutOfTheBoxDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CheckOutOfTheBoxDetailSaveData",
+          "file": "CheckOutOfTheBoxDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CheckOutOfTheBoxDetailDeleteData",
+          "file": "CheckOutOfTheBoxDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

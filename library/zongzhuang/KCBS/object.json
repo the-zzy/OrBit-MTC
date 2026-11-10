@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KCBS",
+  "name": "散件成品编码匹配",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件成品编码匹配",
+  "metadata": "查询散件成品编码匹配信息，记录匹配编号、散件信息、成品编码、匹配规则、匹配日期、操作人员等数据，确保散件成品编码匹配的准确性和可追溯性。这有助于提高散件管理效率，保障产品质量的追溯性和一致性，优化企业的物料编码体系。",
+  "objects": [
+    {
+      "id": "MTD1000002AD",
+      "name": "KDCraftPrdSetting",
+      "text": "散件成品编码匹配",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCraftPrdSettingMainView",
+          "file": "KDCraftPrdSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCraftPrdSettingTreeView",
+          "file": "KDCraftPrdSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCraftPrdSettingSaveData",
+          "file": "KDCraftPrdSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCraftPrdSettingDeleteData",
+          "file": "KDCraftPrdSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AE",
+      "name": "KDCraftPrdIngredients",
+      "text": "散件工艺辅料设置",
+      "parentId": "MTD1000002AD",
+      "sequence": "01",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCraftPrdIngredientsMainView",
+          "file": "KDCraftPrdIngredientsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCraftPrdIngredientsTreeView",
+          "file": "KDCraftPrdIngredientsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCraftPrdIngredientsSaveData",
+          "file": "KDCraftPrdIngredientsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCraftPrdIngredientsDeleteData",
+          "file": "KDCraftPrdIngredientsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AF",
+      "name": "KDCraftPrdAssemble",
+      "text": "散件工艺组装设置",
+      "parentId": "MTD1000002AD",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCraftPrdAssembleMainView",
+          "file": "KDCraftPrdAssembleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCraftPrdAssembleTreeView",
+          "file": "KDCraftPrdAssembleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCraftPrdAssembleSaveData",
+          "file": "KDCraftPrdAssembleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCraftPrdAssembleDeleteData",
+          "file": "KDCraftPrdAssembleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

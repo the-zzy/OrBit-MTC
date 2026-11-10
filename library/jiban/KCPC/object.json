@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KCPC",
+  "name": "散件清单客户信息对照表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件清单客户信息对照表",
+  "metadata": "KCPC",
+  "objects": [
+    {
+      "id": "MTD1000002BI",
+      "name": "KDCustomerProdConsult",
+      "text": "散件清单客户信息对照表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCustomerProdConsultMainView",
+          "file": "KDCustomerProdConsultMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCustomerProdConsultTreeView",
+          "file": "KDCustomerProdConsultTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCustomerProdConsultSaveData",
+          "file": "KDCustomerProdConsultSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCustomerProdConsultDeleteData",
+          "file": "KDCustomerProdConsultDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BJ",
+      "name": "KDCustomerProdConsultItem",
+      "text": "散件物料客户对照表明细",
+      "parentId": "MTD1000002BI",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCustomerProdConsultItemMainView",
+          "file": "KDCustomerProdConsultItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCustomerProdConsultItemTreeView",
+          "file": "KDCustomerProdConsultItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCustomerProdConsultItemSaveData",
+          "file": "KDCustomerProdConsultItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCustomerProdConsultItemDeleteData",
+          "file": "KDCustomerProdConsultItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

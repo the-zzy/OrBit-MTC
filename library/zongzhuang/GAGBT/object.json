@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "GAGBT",
+  "name": "量具仪器转借",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具仪器转借",
+  "metadata": "Gagesubtenancy",
+  "objects": [
+    {
+      "id": "MTD1000000HS",
+      "name": "Gagesubtenancy",
+      "text": "量具仪器转借",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GagesubtenancyMainView",
+          "file": "GagesubtenancyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GagesubtenancyTreeView",
+          "file": "GagesubtenancyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GagesubtenancySaveData",
+          "file": "GagesubtenancySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GagesubtenancyDeleteData",
+          "file": "GagesubtenancyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000HT",
+      "name": "GagesubtenancyDetail",
+      "text": "量具仪器清单",
+      "parentId": "MTD1000000HS",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GagesubtenancyDetailMainView",
+          "file": "GagesubtenancyDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GagesubtenancyDetailTreeView",
+          "file": "GagesubtenancyDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GagesubtenancyDetailSaveData",
+          "file": "GagesubtenancyDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GagesubtenancyDetailDeleteData",
+          "file": "GagesubtenancyDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

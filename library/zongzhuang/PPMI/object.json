@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PPMI",
+  "name": "摆板采集打印方法",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "摆板采集打印方法",
+  "metadata": "PalletPrintMethod",
+  "objects": [
+    {
+      "id": "MTD1000000TE",
+      "name": "PalletPrintMethod",
+      "text": "摆板采集打印方法",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PalletPrintMethodMainView",
+          "file": "PalletPrintMethodMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PalletPrintMethodTreeView",
+          "file": "PalletPrintMethodTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PalletPrintMethodSaveData",
+          "file": "PalletPrintMethodSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PalletPrintMethodDeleteData",
+          "file": "PalletPrintMethodDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000TF",
+      "name": "PalletPrintMethodItem",
+      "text": "摆板采集打印方法明细",
+      "parentId": "MTD1000000TE",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PalletPrintMethodItemMainView",
+          "file": "PalletPrintMethodItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PalletPrintMethodItemTreeView",
+          "file": "PalletPrintMethodItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PalletPrintMethodItemSaveData",
+          "file": "PalletPrintMethodItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PalletPrintMethodItemDeleteData",
+          "file": "PalletPrintMethodItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

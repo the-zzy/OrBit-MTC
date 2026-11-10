@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ASQU",
+  "name": "采集项查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "采集项查询",
+  "metadata": "Assembly Query",
+  "objects": [
+    {
+      "id": "MTD1000000KS",
+      "name": "DataChainAssemblyQuery",
+      "text": "采集项查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

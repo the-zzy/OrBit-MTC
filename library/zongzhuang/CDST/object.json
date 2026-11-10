@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CDST",
+  "name": "商检报告",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "商检报告",
+  "metadata": "查询商检报告，记录报告编号、检验产品、检验项目、检验标准、检验结果、检验日期等信息，确保商检报告的准确性和完整性。这有助于企业及时了解产品在商检过程中的质量状况，对不合格产品采取有效的处理措施，保障产品质量符合出口要求。",
+  "objects": [
+    {
+      "id": "MTD1000000NT",
+      "name": "CommodityInspection",
+      "text": "商检报告",
+      "parentId": "MTD1000001QD",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionMainView",
+          "file": "CommodityInspectionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionTreeView",
+          "file": "CommodityInspectionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityInspectionSaveData",
+          "file": "CommodityInspectionSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NU",
+      "name": "CommodityInspectionItem",
+      "text": "商检明细",
+      "parentId": "MTD1000000NT",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemMainView",
+          "file": "CommodityInspectionItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemTreeView",
+          "file": "CommodityInspectionItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityInspectionItemSaveData",
+          "file": "CommodityInspectionItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CommodityInspectionItemDeleteData",
+          "file": "CommodityInspectionItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000UA",
+      "name": "CommodityInspectionItemInfo",
+      "text": "小米生产信息",
+      "parentId": "MTD1000000NU",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemInfoMainView",
+          "file": "CommodityInspectionItemInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemInfoTreeView",
+          "file": "CommodityInspectionItemInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000UL",
+      "name": "CommodityInspectionItemAssembly",
+      "text": "小米组件列表",
+      "parentId": "MTD1000000NU",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemAssemblyMainView",
+          "file": "CommodityInspectionItemAssemblyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemAssemblyTreeView",
+          "file": "CommodityInspectionItemAssemblyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001QE",
+      "name": "CommodityInspectionItemInfo2",
+      "text": "小米生产信息",
+      "parentId": "MTD1000000NT",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemInfoMainView",
+          "file": "CommodityInspectionItemInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemInfo2TreeView",
+          "file": "CommodityInspectionItemInfo2TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

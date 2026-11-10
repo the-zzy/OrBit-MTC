@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BIOC",
+  "name": "付款凭证",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "付款凭证",
+  "metadata": "BIOC",
+  "objects": [
+    {
+      "id": "MTD1000002CN",
+      "name": "BillOfCredit",
+      "text": "付款凭证",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BillOfCreditMainView",
+          "file": "BillOfCreditMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BillOfCreditTreeView",
+          "file": "BillOfCreditTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BillOfCreditSaveData",
+          "file": "BillOfCreditSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BillOfCreditDeleteData",
+          "file": "BillOfCreditDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,78 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ECN16",
+  "name": "TV实验履历数据",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV实验履历数据",
+  "metadata": "ECN16",
+  "objects": [
+    {
+      "id": "MTD10000021Q",
+      "name": "ECN16",
+      "text": "TV实验履历数据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNMainView",
+          "file": "ECNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNTreeView",
+          "file": "ECNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNSaveData",
+          "file": "ECNSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021R",
+      "name": "ECNItem16",
+      "text": "TV实验履历数据",
+      "parentId": "MTD10000021Q",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNItemMainView",
+          "file": "ECNItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNItemTreeView",
+          "file": "ECNItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNItemSaveData",
+          "file": "ECNItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ECNItemDeleteData",
+          "file": "ECNItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

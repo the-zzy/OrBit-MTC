@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "STGM",
+  "name": "呆滞料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "呆滞料",
+  "metadata": "StagnantMaterial",
+  "objects": [
+    {
+      "id": "MTD10000020N",
+      "name": "StagnantMaterial",
+      "text": "呆滞料",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StagnantMaterialMainView",
+          "file": "StagnantMaterialMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StagnantMaterialTreeView",
+          "file": "StagnantMaterialTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020O",
+      "name": "StagnantMaterialItem",
+      "text": "呆滞料明细",
+      "parentId": "MTD10000020N",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AbnormalMaterialBillItemMainView",
+          "file": "AbnormalMaterialBillItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StagnantMaterialItemTreeView",
+          "file": "StagnantMaterialItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020P",
+      "name": "StagnantMaterialItemLot",
+      "text": "呆滞料明细批次",
+      "parentId": "MTD10000020O",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AbnormalMaterialBillItemLotMainView",
+          "file": "AbnormalMaterialBillItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StagnantMaterialItemLotTreeView",
+          "file": "StagnantMaterialItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "UCOD",
+  "name": "用户编码定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "用户编码定义",
+  "metadata": "User Code Define",
+  "objects": [
+    {
+      "id": "MTD10000007F",
+      "name": "UserCode",
+      "text": "用户编码定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeTreeView",
+          "file": "UserCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000007G",
+      "name": "UserCodeDetail",
+      "text": "用户子级编码",
+      "parentId": "MTD10000007F",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeTreeView",
+          "file": "UserCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

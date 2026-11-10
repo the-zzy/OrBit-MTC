@@ -1,0 +1,328 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ODFWF",
+  "name": "订单设置(外发)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单设置(外发)",
+  "metadata": "设置订单参数（外发），记录订单编号、产品型号、生产数量、交货日期、特殊要求等信息，确保外发订单信息的准确性和完整性。这有助于外协厂商根据订单要求合理安排生产计划，提高生产效率，确保外发订单按时完成和交付。",
+  "objects": [
+    {
+      "id": "MTD1000000MN",
+      "name": "OrderFieldSettingTV",
+      "text": "订单设置(外发)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingTVMainView",
+          "file": "OrderFieldSettingTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingTVTreeView",
+          "file": "OrderFieldSettingTVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldSettingTVSaveData",
+          "file": "OrderFieldSettingTVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldSettingTVDeleteData",
+          "file": "OrderFieldSettingTVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MR",
+      "name": "OrderFieldSettingItemTV",
+      "text": "字段规则",
+      "parentId": "MTD1000000MN",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingItemTVMainView",
+          "file": "OrderFieldSettingItemTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingItemTVTreeView",
+          "file": "OrderFieldSettingItemTVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldSettingItemTVSaveData",
+          "file": "OrderFieldSettingItemTVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldSettingItemTVDeleteData",
+          "file": "OrderFieldSettingItemTVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MS",
+      "name": "OrderSetItemTV",
+      "text": "订单数据",
+      "parentId": "MTD1000000MN",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderSetItemAVMainView",
+          "file": "OrderSetItemAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderSetItemTVTreeView",
+          "file": "OrderSetItemTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MU",
+      "name": "BoxInfoTV",
+      "text": "箱号信息",
+      "parentId": "MTD1000000MN",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BoxInfoTVMainView",
+          "file": "BoxInfoTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BoxInfoTVTreeView",
+          "file": "BoxInfoTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MT",
+      "name": "PalletInfoTV",
+      "text": "栈板信息",
+      "parentId": "MTD1000000MN",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PalletInfoTVMainView",
+          "file": "PalletInfoTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PalletInfoTVTreeView",
+          "file": "PalletInfoTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000Q1",
+      "name": "OrderStepLabelTV",
+      "text": "订单标签",
+      "parentId": "MTD1000000MN",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderStepLabelMainView",
+          "file": "OrderStepLabelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderStepLabelTreeView",
+          "file": "OrderStepLabelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderStepLabelSaveData",
+          "file": "OrderStepLabelSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderStepLabelDeleteData",
+          "file": "OrderStepLabelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000QM",
+      "name": "OrderAdditionInfoTV",
+      "text": "附加信息",
+      "parentId": "MTD1000000MN",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderAdditionInfoMainView",
+          "file": "OrderAdditionInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderAdditionInfoTreeView",
+          "file": "OrderAdditionInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderAdditionInfoTVSaveData",
+          "file": "OrderAdditionInfoTVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderAdditionInfoDeleteData",
+          "file": "OrderAdditionInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OV",
+      "name": "Order_CollectSettingTV",
+      "text": "采集项",
+      "parentId": "MTD1000000MN",
+      "sequence": "8",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Order_CollectSettingMainView",
+          "file": "Order_CollectSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Order_CollectSettingTVTreeView",
+          "file": "Order_CollectSettingTVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Order_CollectSettingSaveData",
+          "file": "Order_CollectSettingSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OW",
+      "name": "Order_CollectSettingCheckTV",
+      "text": "采集项规则",
+      "parentId": "MTD1000000OV",
+      "sequence": "9",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Order_CollectSettingCheckMainView",
+          "file": "Order_CollectSettingCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Order_CollectSettingCheckTreeView",
+          "file": "Order_CollectSettingCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Order_CollectSettingCheckSaveData",
+          "file": "Order_CollectSettingCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Order_CollectSettingCheckDeleteData",
+          "file": "Order_CollectSettingCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001P8",
+      "name": "ShipPalletMegre",
+      "text": "栈板重组",
+      "parentId": "MTD1000000MN",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShipPalletMegreMainView",
+          "file": "ShipPalletMegreMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShipPalletMegreTreeView",
+          "file": "ShipPalletMegreTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShipPalletMegreSaveData",
+          "file": "ShipPalletMegreSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShipPalletMegreDeleteData",
+          "file": "ShipPalletMegreDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

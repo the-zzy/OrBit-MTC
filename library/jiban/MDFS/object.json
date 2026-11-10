@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MDFS",
+  "name": "机型字段设置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "机型字段设置",
+  "metadata": "ModelFieldSetting",
+  "objects": [
+    {
+      "id": "MTD1000000JV",
+      "name": "ModelFieldSetting",
+      "text": "机型字段设置",
+      "parentId": "MTD1000000JZ",
+      "sequence": "2",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ModelFieldSettingMainView",
+          "file": "ModelFieldSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ModelFieldSettingTreeView",
+          "file": "ModelFieldSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ModelFieldSettingSaveData",
+          "file": "ModelFieldSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ModelFieldSettingDeleteData",
+          "file": "ModelFieldSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LR",
+      "name": "ModelFieldFilter",
+      "text": "过滤字符",
+      "parentId": "MTD1000000JV",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ModelFieldFilterMainView",
+          "file": "ModelFieldFilterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ModelFieldFilterTreeView",
+          "file": "ModelFieldFilterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ModelFieldFilterSaveData",
+          "file": "ModelFieldFilterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ModelFieldFilterDeleteData",
+          "file": "ModelFieldFilterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

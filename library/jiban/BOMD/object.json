@@ -1,0 +1,103 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BOMD",
+  "name": "产品结构(DIP)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品结构(DIP)",
+  "metadata": "BOMD",
+  "objects": [
+    {
+      "id": "MTD10000008U",
+      "name": "BOM",
+      "text": "产品结构(DIP)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMMainView",
+          "file": "BOMMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMRootTreeView",
+          "file": "BOMRootTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000008V",
+      "name": "BOMItem",
+      "text": "BOM项目",
+      "parentId": "MTD10000008U",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMItemMainView",
+          "file": "BOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMItemTreeView",
+          "file": "BOMItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BOMItemSaveData",
+          "file": "BOMItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BM",
+      "name": "BOMBindRalation",
+      "text": "物料绑定关系",
+      "parentId": "MTD10000008V",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMBindRalationMainView",
+          "file": "BOMBindRalationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMBindRalationTreeView",
+          "file": "BOMBindRalationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BOMBindRalationSaveData",
+          "file": "BOMBindRalationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BOMBindRalationDeleteData",
+          "file": "BOMBindRalationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

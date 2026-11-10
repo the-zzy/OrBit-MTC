@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RPLQ",
+  "name": "补印条码查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "补印条码查询",
+  "metadata": "ReprintLotQuery",
+  "objects": [
+    {
+      "id": "MTD1000001PY",
+      "name": "ReprintLotQuery",
+      "text": "补印条码查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

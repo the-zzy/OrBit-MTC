@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SPSG",
+  "name": "备件入库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "备件入库",
+  "metadata": "SparePartsStorage",
+  "objects": [
+    {
+      "id": "MTD1000000G2",
+      "name": "SparePartsStorage",
+      "text": "备件入库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SparePartsStorageMainView",
+          "file": "SparePartsStorageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SparePartsStorageTreeView",
+          "file": "SparePartsStorageTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SparePartsStorageSaveData",
+          "file": "SparePartsStorageSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SparePartsStorageDeleteData",
+          "file": "SparePartsStorageDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000G3",
+      "name": "SparePartsStorageDetail",
+      "text": "备件清单",
+      "parentId": "MTD1000000G2",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SparePartsStorageDetailMainView",
+          "file": "SparePartsStorageDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SparePartsStorageDetailTreeView",
+          "file": "SparePartsStorageDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SparePartsStorageDetailSaveData",
+          "file": "SparePartsStorageDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SparePartsStorageDetailDeleteData",
+          "file": "SparePartsStorageDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

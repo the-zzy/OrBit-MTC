@@ -1,0 +1,138 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TDOL",
+  "name": "IT项目管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "IT项目管理",
+  "metadata": "ToDOList",
+  "objects": [
+    {
+      "id": "MTD1000001WE",
+      "name": "ToDOList",
+      "text": "IT项目管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToDOListMainView",
+          "file": "ToDOListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToDOListTreeView",
+          "file": "ToDOListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToDOListSaveData",
+          "file": "ToDOListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToDOListDeleteData",
+          "file": "ToDOListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WF",
+      "name": "ToDOListItem",
+      "text": "项目详情",
+      "parentId": "MTD1000001WE",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToDOListItemMainView",
+          "file": "ToDOListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToDOListItemTreeView",
+          "file": "ToDOListItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToDOListItemSaveData",
+          "file": "ToDOListItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToDOListItemDeleteData",
+          "file": "ToDOListItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XC",
+      "name": "ToDOListLot",
+      "text": "工作日志",
+      "parentId": "MTD1000001WF",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToDOListLotMainView",
+          "file": "ToDOListLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToDOListLotTreeView",
+          "file": "ToDOListLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToDOListLotSaveData",
+          "file": "ToDOListLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToDOListLotDeleteData",
+          "file": "ToDOListLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XO",
+      "name": "ToDOListLotAll",
+      "text": "工作周报",
+      "parentId": "MTD1000001WE",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ToDOListLotAllTreeView",
+          "file": "ToDOListLotAllTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

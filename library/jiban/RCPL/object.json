@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RCPL",
+  "name": "周转栈板",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "周转栈板",
+  "metadata": "RecyclePallet",
+  "objects": [
+    {
+      "id": "MTD10000022D",
+      "name": "RecyclePallet",
+      "text": "周转栈板",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RecyclePalletMainView",
+          "file": "RecyclePalletMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RecyclePalletTreeView",
+          "file": "RecyclePalletTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "RecyclePalletSaveData",
+          "file": "RecyclePalletSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "RecyclePalletDeleteData",
+          "file": "RecyclePalletDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

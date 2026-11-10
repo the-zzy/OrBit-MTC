@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MOCL",
+  "name": "工单超期",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工单超期",
+  "metadata": "MOClose",
+  "objects": [
+    {
+      "id": "MTD10000025Y",
+      "name": "MOClose",
+      "text": "工单超期",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOCloseMainView",
+          "file": "MOCloseMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOCloseTreeView",
+          "file": "MOCloseTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOCloseSaveData",
+          "file": "MOCloseSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOCloseDeleteData",
+          "file": "MOCloseDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025Z",
+      "name": "MOCloseMail",
+      "text": "超期工单邮箱",
+      "parentId": "MTD10000025Y",
+      "sequence": "01",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOCloseMailMainView",
+          "file": "MOCloseMailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOCloseMailTreeView",
+          "file": "MOCloseMailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOCloseMailSaveData",
+          "file": "MOCloseMailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOCloseMailDeleteData",
+          "file": "MOCloseMailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

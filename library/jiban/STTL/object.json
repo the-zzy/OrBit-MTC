@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "STTL",
+  "name": "SKD 条码报表查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SKD 条码报表查询",
+  "metadata": "SKD 条码报表查询",
+  "objects": [
+    {
+      "id": "MTD1000002DZ",
+      "name": "SKDTempTwoLotInfo",
+      "text": "SKD 条码报表查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

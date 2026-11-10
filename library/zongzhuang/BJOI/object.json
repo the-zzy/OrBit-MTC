@@ -1,0 +1,1634 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BJOI",
+  "name": "备件订单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "备件订单",
+  "metadata": "管理备件订单，记录订单编号、备件信息、需求数量、交货日期、客户信息等数据，确保备件订单的准确性和完整性。这有助于备件管理部门根据订单要求合理安排生产和配送计划，提高备件供应效率，保障设备正常运行。",
+  "pulled": {
+    "MainView": "2026-11-07T18:21:09+08:00",
+    "meta": "2026-11-09T09:54:15+08:00"
+  },
+  "objects": [
+    {
+      "id": "MTD10000027O",
+      "name": "KDOrderInfoBJ",
+      "text": "备件订单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "KDOrderInfo",
+        "columns": [
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderDescription",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderType",
+            "type": "char(2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SOName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsSplitBatch",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerModel",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderQty",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductCode",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "RollingPlan",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Brand",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Panel",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SKD",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SupplierCode",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProjectNo",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PONO",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LotNo",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MadeCountry",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Country",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "KDLabelTypeId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LabelId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WorkflowId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxCounter",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PalletCounter",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PINO",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerModule",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerProduct",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerAddress",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LMNYPCustomerModel",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LMNYPPINO",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LMNYSCustomerModel",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LMNYSPINO",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "JBKDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderTypeS",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Customer",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductsCode",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerType",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "HSCode",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MOId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModuleBinningQty",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsMustWeigh",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FGProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDOrderInfoMainView",
+          "file": "KDOrderInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDOrderInfoTreeView",
+          "file": "KDOrderInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDOrderInfoSaveData",
+          "file": "KDOrderInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDOrderInfoDeleteData",
+          "file": "KDOrderInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:15+08:00",
+        "MainView": "2026-11-09T09:54:15+08:00",
+        "TreeView": "2026-11-09T09:54:15+08:00",
+        "SaveData": "2026-11-09T09:54:15+08:00",
+        "DeleteView": "2026-11-09T09:54:16+08:00"
+      }
+    },
+    {
+      "id": "MTD10000027P",
+      "name": "KDOrderItemBJ",
+      "text": "备件组件",
+      "parentId": "MTD10000027O",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "KDOrderItem",
+        "columns": [
+          {
+            "name": "KDOrderItemId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModuleName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "EnglishDescription",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FieldsA",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FieldsB",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BOMQtyRequired",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "QtyPack",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ItemQtyRequired",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SingleWeight",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "UOMId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsAdd",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsIgnore",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsValidity",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OQCAffirmUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OQCAffirmResult",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OQCAffirmDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OQAAffirmUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OQAAffirmResult",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OQAAffirmDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerPN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModuleSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DosageQty",
+            "type": "numeric(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DosageUnit",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "TotalUnit",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsULinePrd",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SKDOrderItemId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OAId",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LineSequence",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDOrderItemMainView",
+          "file": "KDOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDOrderItemTreeView",
+          "file": "KDOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDOrderItemSaveData",
+          "file": "KDOrderItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDOrderItemDeleteData",
+          "file": "KDOrderItemDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:16+08:00",
+        "MainView": "2026-11-09T09:54:16+08:00",
+        "TreeView": "2026-11-09T09:54:16+08:00",
+        "SaveData": "2026-11-09T09:54:16+08:00",
+        "DeleteView": "2026-11-09T09:54:16+08:00"
+      }
+    },
+    {
+      "id": "MTD10000027S",
+      "name": "KDBoxInfoBJ",
+      "text": "加载箱号列表",
+      "parentId": "MTD10000027O",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "KDBoxInfo",
+        "columns": [
+          {
+            "name": "KDBoxInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxLevel",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxType",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxLength",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxWidth",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxHeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "NetWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "GrossWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsBox",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Container",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DeliveryName",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ScanOperator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IssuerDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSeq",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "JBKDBoxInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsWeight",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Weight",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CState",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PieceWeight",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StorageStatus",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SourceType",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WeighingDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "InDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StorageLocation",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxInfoMainView",
+          "file": "KDBoxInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxInfoTreeView",
+          "file": "KDBoxInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDBoxInfoSaveData",
+          "file": "KDBoxInfoSaveData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:16+08:00",
+        "MainView": "2026-11-09T09:54:16+08:00",
+        "TreeView": "2026-11-09T09:54:16+08:00",
+        "SaveData": "2026-11-09T09:54:16+08:00"
+      }
+    },
+    {
+      "id": "MTD10000027R",
+      "name": "KDBoxInfoItemBJ",
+      "text": "外箱批号明细",
+      "parentId": "MTD10000027S",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "KDBoxInfo",
+        "columns": [
+          {
+            "name": "KDBoxInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxLevel",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxType",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxLength",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxWidth",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxHeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "NetWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "GrossWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsBox",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Container",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DeliveryName",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ScanOperator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IssuerDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSeq",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "JBKDBoxInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsWeight",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Weight",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CState",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PieceWeight",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StorageStatus",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SourceType",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WeighingDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "InDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StorageLocation",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxInfoItemMainView",
+          "file": "KDBoxInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxInfoItemTreeView",
+          "file": "KDBoxInfoItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDBoxInfoItemSaveData",
+          "file": "KDBoxInfoItemSaveData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:16+08:00",
+        "MainView": "2026-11-09T09:54:17+08:00",
+        "TreeView": "2026-11-09T09:54:17+08:00",
+        "SaveData": "2026-11-09T09:54:17+08:00"
+      }
+    },
+    {
+      "id": "MTD10000027Q",
+      "name": "KDPalletInfoBJ",
+      "text": "备件栈板",
+      "parentId": "MTD10000027O",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "KDPalletInfo",
+        "columns": [
+          {
+            "name": "KDPalletInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PalletSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DeliveryOrderitemid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StorageStatus",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "InUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "InDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OutUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OutDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CountQty",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PallteType",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PNetWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PGrossWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "L",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "W",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "H",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "QCStatus",
+            "type": "varchar(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Volume",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "JBKDPalletInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PalletProdCode",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PalletProdSpec",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Floors",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PalletProductName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PalletTexture",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDPalletInfoMainView",
+          "file": "KDPalletInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDPalletInfoTreeView",
+          "file": "KDPalletInfoTreeView.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:17+08:00",
+        "MainView": "2026-11-09T09:54:17+08:00",
+        "TreeView": "2026-11-09T09:54:17+08:00"
+      }
+    }
+  ]
+}

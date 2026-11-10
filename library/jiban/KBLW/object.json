@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KBLW",
+  "name": "DIP炉温曲线",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP炉温曲线",
+  "metadata": "KBLW",
+  "objects": [
+    {
+      "id": "MTD10000028L",
+      "name": "KanBan_DIP_Setting",
+      "text": "DIP炉温曲线",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Kanban_DIP_Setting_MainView",
+          "file": "Kanban_DIP_Setting_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Kanban_DIP_Setting_TreeView",
+          "file": "Kanban_DIP_Setting_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028M",
+      "name": "KanBanItem_DIP_Setting",
+      "text": "看板项",
+      "parentId": "MTD10000028L",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanItem_DIP_Setting_MainView",
+          "file": "KanBanItem_DIP_Setting_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanItem_DIP_Setting_TreeView",
+          "file": "KanBanItem_DIP_Setting_TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanItem_DIP_Setting_SaveData",
+          "file": "KanBanItem_DIP_Setting_SaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanItem_DIP_Setting_DeleteData",
+          "file": "KanBanItem_DIP_Setting_DeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

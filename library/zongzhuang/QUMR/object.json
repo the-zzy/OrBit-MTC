@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QUMR",
+  "name": "上料记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "上料记录查询",
+  "metadata": "记录上料操作的详细信息，包括上料时间、物料编号、数量、工单号等，确保上料过程的准确性和可追溯性。通过查询上料记录，生产管理人员可以及时发现上料错误或异常情况，保障生产的顺利进行和产品质量的稳定性。",
+  "objects": [
+    {
+      "id": "MTD1000000N0",
+      "name": "MOLotOnRecordQuery",
+      "text": "上料记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

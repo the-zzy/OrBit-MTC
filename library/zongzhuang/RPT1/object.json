@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RPT1",
+  "name": "水晶报表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "水晶报表",
+  "metadata": "PRT Object",
+  "objects": [
+    {
+      "id": "MTD1000000E2",
+      "name": "RptObject",
+      "text": "水晶报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RptObjectMainView",
+          "file": "RptObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RptObjectTreeView",
+          "file": "RptObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "RptObjectSaveData",
+          "file": "RptObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "RptObjectDeleteData",
+          "file": "RptObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

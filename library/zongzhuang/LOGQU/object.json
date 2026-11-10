@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LOGQU",
+  "name": "查询日志",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "查询日志",
+  "metadata": "Query Log",
+  "objects": [
+    {
+      "id": "MTD1000000UC",
+      "name": "QueryLog",
+      "text": "查询日志",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

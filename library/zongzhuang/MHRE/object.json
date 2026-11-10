@@ -1,0 +1,68 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MHRE",
+  "name": "交接查询",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "交接查询",
+  "metadata": "MaterialHandoverRecord",
+  "objects": [
+    {
+      "id": "MTD10000028V",
+      "name": "MaterialHandoverRecord",
+      "text": "交接查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialHandoverRecordMainView",
+          "file": "MaterialHandoverRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialHandoverRecordTreeView",
+          "file": "MaterialHandoverRecordTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialHandoverRecordDeleteData",
+          "file": "MaterialHandoverRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028X",
+      "name": "MaterialHandoverRecordDetail",
+      "text": "交接明细",
+      "parentId": "MTD10000028V",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialHandoverRecordDetailMainView",
+          "file": "MaterialHandoverRecordDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialHandoverRecordDetailTreeView",
+          "file": "MaterialHandoverRecordDetailTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

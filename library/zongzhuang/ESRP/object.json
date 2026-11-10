@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ESRP",
+  "name": "设备报废流程",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备报废流程",
+  "metadata": "EquipmentScrap",
+  "objects": [
+    {
+      "id": "MTD1000000GW",
+      "name": "EquipmentScrap",
+      "text": "设备报废流程",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentScrapMainView",
+          "file": "EquipmentScrapMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentScrapTreeView",
+          "file": "EquipmentScrapTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentScrapSaveData",
+          "file": "EquipmentScrapSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentScrapDeleteData",
+          "file": "EquipmentScrapDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

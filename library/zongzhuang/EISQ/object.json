@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EISQ",
+  "name": "EMR入库查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "EMR入库查询",
+  "metadata": "EMRInStockQuery",
+  "objects": [
+    {
+      "id": "MTD1000001V5",
+      "name": "EMRInStockQuery",
+      "text": "EMR入库查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

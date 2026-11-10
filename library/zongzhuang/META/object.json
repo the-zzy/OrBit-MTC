@@ -1,0 +1,213 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "META",
+  "name": "元对象建模",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "元对象建模",
+  "metadata": "Meta Object Modeling",
+  "objects": [
+    {
+      "id": "MTD100000002",
+      "name": "SysMetadata",
+      "text": "元对象建模",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataMainView",
+          "file": "MetadataMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataTreeView",
+          "file": "MetadataTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MetadataSaveData",
+          "file": "MetadataSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MetadataDeleteData",
+          "file": "MetadataDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000006F",
+      "name": "SysMetadataFieldGroup",
+      "text": "元字段组",
+      "parentId": "MTD100000002",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataFieldGroupMainView",
+          "file": "MetadataFieldGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataFieldGroupTreeView",
+          "file": "MetadataFieldGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MetadataFieldGroupSaveData",
+          "file": "MetadataFieldGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MetadataFieldGroupDeleteData",
+          "file": "MetadataFieldGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000006H",
+      "name": "SysMetadataField",
+      "text": "元字段",
+      "parentId": "MTD10000006F",
+      "sequence": "1",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataFieldMainView",
+          "file": "MetadataFieldMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataFieldTreeView",
+          "file": "MetadataFieldTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MetadataFieldSaveData",
+          "file": "MetadataFieldSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MetadataFieldDeleteData",
+          "file": "MetadataFieldDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000007E",
+      "name": "SysMetadataMethod",
+      "text": "元对象方法",
+      "parentId": "MTD10000006F",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataMethodMainView",
+          "file": "MetadataMethodMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataMethodTreeView",
+          "file": "MetadataMethodTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MetadataMethodSaveData",
+          "file": "MetadataMethodSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MetadataMethodDeleteData",
+          "file": "MetadataMethodDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000090",
+      "name": "SysMetadataQuery",
+      "text": "查询参数",
+      "parentId": "MTD10000006F",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataQueryMainView",
+          "file": "MetadataQueryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataQueryTreeView",
+          "file": "MetadataQueryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MetadataQuerySaveData",
+          "file": "MetadataQuerySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MetadataQueryDeleteData",
+          "file": "MetadataQueryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000B7",
+      "name": "SysMetadataStoredProcedure",
+      "text": "元对象业务代码",
+      "parentId": "MTD100000002",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MetadataStoredProcedureMainView",
+          "file": "MetadataStoredProcedureMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MetadataStoredProcedureTreeView",
+          "file": "MetadataStoredProcedureTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

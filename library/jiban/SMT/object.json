@@ -1,0 +1,108 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SMT",
+  "name": "SMT料站表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SMT料站表",
+  "metadata": "SMT",
+  "objects": [
+    {
+      "id": "MTD1000000AD",
+      "name": "SMTMount",
+      "text": "SMT料站表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTMountMainView",
+          "file": "SMTMountMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTMountTreeView",
+          "file": "SMTMountTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMTMountSaveData",
+          "file": "SMTMountSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMTMountDeleteData",
+          "file": "SMTMountDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000AF",
+      "name": "SMTMountItem",
+      "text": "料站表明细",
+      "parentId": "MTD1000000AD",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTMountItemMainView",
+          "file": "SMTMountItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTMountItemTreeView",
+          "file": "SMTMountItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JA",
+      "name": "SMTMountItemReplace",
+      "text": "料站表明细替代",
+      "parentId": "MTD1000000AF",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTMountItemReplaceMainView",
+          "file": "SMTMountItemReplaceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTMountItemReplaceTreeView",
+          "file": "SMTMountItemReplaceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMTMountItemReplaceSaveData",
+          "file": "SMTMountItemReplaceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMTMountItemReplaceDeleteData",
+          "file": "SMTMountItemReplaceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

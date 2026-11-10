@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ICCK",
+  "name": "IC烧录抽检查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "IC烧录抽检查询",
+  "metadata": "ICSLCJQuery",
+  "objects": [
+    {
+      "id": "MTD1000002AA",
+      "name": "ICSLCJQuery",
+      "text": "IC烧录抽检查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

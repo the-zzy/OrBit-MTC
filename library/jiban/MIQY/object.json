@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MIQY",
+  "name": "发料明细查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "发料明细查询",
+  "metadata": "ISQY",
+  "objects": [
+    {
+      "id": "MTD1000001YA",
+      "name": "MaterialIssuanceQuery",
+      "text": "发料明细查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

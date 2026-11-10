@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TOMU",
+  "name": "钢网报废报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "钢网报废报表",
+  "metadata": "TOMU",
+  "objects": [
+    {
+      "id": "MTD10000029O",
+      "name": "ToolManageUnlessReport",
+      "text": "钢网报废报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

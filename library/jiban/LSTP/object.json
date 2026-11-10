@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LSTP",
+  "name": "QMS停拉清单",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "QMS停拉清单",
+  "metadata": "LSTP",
+  "objects": [
+    {
+      "id": "MTD100000267",
+      "name": "QMSLineStop",
+      "text": "QMS停拉清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QMSLineStopMainView",
+          "file": "QMSLineStopMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QMSLineStopTreeView",
+          "file": "QMSLineStopTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QMSLineStopSaveData",
+          "file": "QMSLineStopSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QMSLineStopDeleteData",
+          "file": "QMSLineStopDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

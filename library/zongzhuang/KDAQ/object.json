@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KDAQ",
+  "name": "散件工单包装要求查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "散件工单包装要求查询",
+  "metadata": "符合以下条件的工单：- 排产日期在当前日期到未来22天之间- 成品编码以 `7` 开头且不以 `A` 结尾（特定产品系列）\r\n- 工单编号以 `00101` 开头（数件工单标识）\r\n检查  KCMI：- 如果某订单+产品组合已有审核通过的包装工艺记录，结果中排除- \r\n排除以下不需要包装维护的订单：\r\n- 发货类型为空（可能是内部工单）- 订单号以 `201` 开头且发货类型为 `Y1` 的",
+  "objects": [
+    {
+      "id": "MTD1000002EO",
+      "name": "KDCraftMOAssembleQuery",
+      "text": "散件工单包装要求查询",
+      "parentId": "",
+      "sequence": "03",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

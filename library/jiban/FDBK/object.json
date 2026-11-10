@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FDBK",
+  "name": "基板生产报工",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "基板生产报工",
+  "metadata": "FDBK",
+  "objects": [
+    {
+      "id": "MTD10000022V",
+      "name": "FeedBack",
+      "text": "基板生产报工",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FeedBackMainView",
+          "file": "FeedBackMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FeedBackTreeView",
+          "file": "FeedBackTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FeedBackSaveData",
+          "file": "FeedBackSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FeedBackDeleteData",
+          "file": "FeedBackDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022W",
+      "name": "FeedBackItem",
+      "text": "报工明细",
+      "parentId": "MTD10000022V",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FeedBackItemMainView",
+          "file": "FeedBackItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FeedBackItemTreeView",
+          "file": "FeedBackItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FeedBackItemSaveData",
+          "file": "FeedBackItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FeedBackItemDeleteData",
+          "file": "FeedBackItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

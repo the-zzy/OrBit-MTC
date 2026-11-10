@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ECN99",
+  "name": "IT帮助/配置文档",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "IT帮助/配置文档",
+  "metadata": "ECN99",
+  "objects": [
+    {
+      "id": "MTD10000022Y",
+      "name": "ECN996",
+      "text": "IT帮助/配置文档",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNMainView",
+          "file": "ECNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNTreeView",
+          "file": "ECNTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNSaveData",
+          "file": "ECNSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022Z",
+      "name": "ECNItem996",
+      "text": "IT帮助/配置文档列表",
+      "parentId": "MTD10000022Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ECNItemMainView",
+          "file": "ECNItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ECNItemTreeView",
+          "file": "ECNItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ECNItemSaveData",
+          "file": "ECNItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

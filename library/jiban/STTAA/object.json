@@ -1,0 +1,143 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "STTAA",
+  "name": "盘点计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "盘点计划",
+  "metadata": "Stocktake",
+  "objects": [
+    {
+      "id": "MTD1000000DM",
+      "name": "Stocktake",
+      "text": "盘点计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeMainView",
+          "file": "StocktakeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeTreeView",
+          "file": "StocktakeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeSaveData",
+          "file": "StocktakeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeDeleteData",
+          "file": "StocktakeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PK",
+      "name": "AssetDetailStockTake",
+      "text": "设备盘点明细",
+      "parentId": "MTD1000000DM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetDetailMainView",
+          "file": "AssetDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetDetailStocktakeTreeView",
+          "file": "AssetDetailStocktakeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetDetailSaveData",
+          "file": "AssetDetailSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000DN",
+      "name": "StocktakeItem",
+      "text": "盘点计划明细",
+      "parentId": "MTD1000000DM",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeItemMainView",
+          "file": "StocktakeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeItemTreeView",
+          "file": "StocktakeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeItemSaveData",
+          "file": "StocktakeItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000DO",
+      "name": "StocktakeItemLot",
+      "text": "盘点计划明细批次",
+      "parentId": "MTD1000000DN",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeItemLotMainView",
+          "file": "StocktakeItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeItemLotTreeView",
+          "file": "StocktakeItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeItemLotSaveData",
+          "file": "StocktakeItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeItemLotDeleteData",
+          "file": "StocktakeItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

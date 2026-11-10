@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CHEQ",
+  "name": "车辆进出统计",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "车辆进出统计",
+  "metadata": "CHEQ",
+  "objects": [
+    {
+      "id": "MTD1000000TX",
+      "name": "CheQuery",
+      "text": "车辆进出统计",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

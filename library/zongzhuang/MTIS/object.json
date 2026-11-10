@@ -1,0 +1,228 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MTIS",
+  "name": "发料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "发料单",
+  "metadata": "MaterialIssuance",
+  "objects": [
+    {
+      "id": "MTD1000001X3",
+      "name": "MaterialIssuance",
+      "text": "发料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialIssuanceMainView",
+          "file": "MaterialIssuanceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceTreeView",
+          "file": "MaterialIssuanceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialIssuanceSaveData",
+          "file": "MaterialIssuanceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialIssuanceDeleteData",
+          "file": "MaterialIssuanceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X6",
+      "name": "MaterialIssuanceMO",
+      "text": "发料工单",
+      "parentId": "MTD1000001X3",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialIssuanceMOMainView",
+          "file": "MaterialIssuanceMOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceMOTreeView",
+          "file": "MaterialIssuanceMOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialIssuanceMOSaveData",
+          "file": "MaterialIssuanceMOSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X7",
+      "name": "MaterialIssuanceQty",
+      "text": "发料明细统计",
+      "parentId": "MTD1000001X3",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceQtyTreeView",
+          "file": "MaterialIssuanceQtyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X4",
+      "name": "MaterialIssuanceItem",
+      "text": "发料单明细",
+      "parentId": "MTD1000001X3",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceItemTreeView",
+          "file": "MaterialIssuanceItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X5",
+      "name": "MaterialIssuanceItemLot",
+      "text": "发料单明细批次",
+      "parentId": "MTD1000001X4",
+      "sequence": "6",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceItemLotTreeView",
+          "file": "MaterialIssuanceItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZZ",
+      "name": "MaterialIssuanceSUMQty",
+      "text": "发料明细合并统计",
+      "parentId": "MTD1000001X3",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuancesumQtyTreeView",
+          "file": "MaterialIssuancesumQtyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020C",
+      "name": "MaterialIssuanceUpSAPReocrd",
+      "text": "回传SAP记录",
+      "parentId": "MTD1000001X3",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceUpSAPReocrdTreeView",
+          "file": "MaterialIssuanceUpSAPReocrdTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Y4",
+      "name": "ProductIssueMOItem",
+      "text": "发料工单明细",
+      "parentId": "MTD1000001X3",
+      "sequence": "35",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductIssueMOItemMainView",
+          "file": "ProductIssueMOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductIssueMOItemTreeView",
+          "file": "ProductIssueMOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020Q",
+      "name": "MaterialIssuanceSAPMessage",
+      "text": "SAP返回信息",
+      "parentId": "MTD1000001X3",
+      "sequence": "91",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialIssuanceSAPMessageMainView",
+          "file": "MaterialIssuanceSAPMessageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceSAPMessageTreeView",
+          "file": "MaterialIssuanceSAPMessageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

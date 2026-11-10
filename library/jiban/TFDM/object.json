@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TFDM",
+  "name": "303物料24小时允发查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "303物料24小时允发查询",
+  "metadata": "TwentyFourAllowQuery",
+  "objects": [
+    {
+      "id": "MTD1000002DU",
+      "name": "TwentyFourAllowQuery",
+      "text": "303物料24小时允发查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

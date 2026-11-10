@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "JBBC",
+  "name": "基板月奖金",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "基板月奖金",
+  "metadata": "JBBonusCheck",
+  "objects": [
+    {
+      "id": "MTD1000001VV",
+      "name": "JBBonusCheck",
+      "text": "基板月奖金",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "JBBonusCheckMainView",
+          "file": "JBBonusCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "JBBonusCheckTreeView",
+          "file": "JBBonusCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "JBBonusCheckSaveData",
+          "file": "JBBonusCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "JBBonusCheckDeleteData",
+          "file": "JBBonusCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VW",
+      "name": "JBBonusCheckItem",
+      "text": "基板月奖金明细",
+      "parentId": "MTD1000001VV",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "JBBonusCheckItemMainView",
+          "file": "JBBonusCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "JBBonusCheckItemTreeView",
+          "file": "JBBonusCheckItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "JBBonusCheckItemSaveData",
+          "file": "JBBonusCheckItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "JBBonusCheckItemDeleteData",
+          "file": "JBBonusCheckItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

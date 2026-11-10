@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DSCQ",
+  "name": "SMT刮刀点检查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SMT刮刀点检查询",
+  "metadata": "DrawknifeSpotCheckQuery",
+  "objects": [
+    {
+      "id": "MTD1000001YR",
+      "name": "DrawknifeSpotCheckQuery",
+      "text": "SMT刮刀点检查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

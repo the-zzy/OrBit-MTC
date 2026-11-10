@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PRLA",
+  "name": "料号替代预置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "料号替代预置",
+  "metadata": "ProductReplace",
+  "objects": [
+    {
+      "id": "MTD1000000AJ",
+      "name": "ProductReplace",
+      "text": "料号替代预置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductReplaceMainView",
+          "file": "ProductReplaceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductReplaceTreeView",
+          "file": "ProductReplaceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductReplaceSaveData",
+          "file": "ProductReplaceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductReplaceDeleteData",
+          "file": "ProductReplaceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

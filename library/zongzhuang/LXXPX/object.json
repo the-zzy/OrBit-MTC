@@ -1,0 +1,108 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LXXPX",
+  "name": "TV标记设置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV标记设置",
+  "metadata": "设置TV标记，记录标记编号、产品型号、标记内容、标记位置、设置人员等信息，确保TV标记的准确性和可追溯性。这有助于提高产品的可识别性和可追溯性，方便生产、质量、物流等环节的管理和操作，保障产品质量和客户满意度。",
+  "objects": [
+    {
+      "id": "MTD10000026N",
+      "name": "OrderFieldSettingLotPOSet",
+      "text": "TV标记设置",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingTVMainView",
+          "file": "OrderFieldSettingTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingTVTreeView",
+          "file": "OrderFieldSettingTVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028B",
+      "name": "LotJMBNameSet",
+      "text": "LotSN标记设置",
+      "parentId": "MTD10000026N",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LotJMBNameSetMainView",
+          "file": "LotJMBNameSetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LotJMBNameSetTreeView",
+          "file": "LotJMBNameSetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LotJMBNameSetSaveData",
+          "file": "LotJMBNameSetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LotJMBNameSetDeleteData",
+          "file": "LotJMBNameSetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024C",
+      "name": "LotPONameSet",
+      "text": "批号PO设置",
+      "parentId": "MTD10000026N",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LotPONameSetMainView",
+          "file": "LotPONameSetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LotPONameSetTreeView",
+          "file": "LotPONameSetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LotPONameSetSaveData",
+          "file": "LotPONameSetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LotPONameSetDeleteData",
+          "file": "LotPONameSetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

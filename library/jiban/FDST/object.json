@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FDST",
+  "name": "字段设置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "字段设置",
+  "metadata": "FieldSetting",
+  "objects": [
+    {
+      "id": "MTD1000000K0",
+      "name": "FieldSetting",
+      "text": "字段设置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FieldSettingMainView",
+          "file": "FieldSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FieldSettingTreeView",
+          "file": "FieldSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FieldSettingSaveData",
+          "file": "FieldSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FieldSettingDeleteData",
+          "file": "FieldSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

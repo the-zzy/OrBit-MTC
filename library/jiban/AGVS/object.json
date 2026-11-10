@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AGVS",
+  "name": "AGV轨道",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AGV轨道",
+  "metadata": "AGVCallRoute",
+  "objects": [
+    {
+      "id": "MTD10000026G",
+      "name": "AGVCallRoute",
+      "text": "AGV轨道",
+      "parentId": "MTD100000272",
+      "sequence": "6",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVCallRouteMainView",
+          "file": "AGVCallRouteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVCallRouteTreeView",
+          "file": "AGVCallRouteTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AGVCallRouteSaveData",
+          "file": "AGVCallRouteSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AGVCallRouteDeleteData",
+          "file": "AGVCallRouteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

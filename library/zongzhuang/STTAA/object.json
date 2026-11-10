@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "STTAA",
+  "name": "盘点计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "盘点计划",
+  "metadata": "维护盘点计划，记录计划编号、盘点日期、盘点范围、责任人、状态等数据，确保盘点工作的规范性和可追溯性。这有助于及时发现库存管理中的问题，优化库存策略，降低库存成本，提高仓库运营效率。",
+  "objects": [
+    {
+      "id": "MTD1000000DM",
+      "name": "Stocktake",
+      "text": "盘点计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeMainView",
+          "file": "StocktakeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeTreeView",
+          "file": "StocktakeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeSaveData",
+          "file": "StocktakeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeDeleteData",
+          "file": "StocktakeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000288",
+      "name": "StocktakeCheckList",
+      "text": "固定资产盘点明细",
+      "parentId": "MTD1000000DM",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeCheckListMainView",
+          "file": "StocktakeCheckListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeCheckListTreeView",
+          "file": "StocktakeCheckListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeCheckListSaveData",
+          "file": "StocktakeCheckListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeCheckListDeleteData",
+          "file": "StocktakeCheckListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

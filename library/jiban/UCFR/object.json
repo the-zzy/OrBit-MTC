@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "UCFR",
+  "name": "FY编码定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "FY编码定义",
+  "metadata": "UserCodeFeiyueRepair",
+  "objects": [
+    {
+      "id": "MTD1000000U4",
+      "name": "UserCodeFeiyueRepair",
+      "text": "FY编码定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeFeiyueRepairTreeView",
+          "file": "UserCodeFeiyueRepairTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000U5",
+      "name": "UserCodeDetailFeiyueRepair",
+      "text": "飞越用户子级编码",
+      "parentId": "MTD1000000U4",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeTreeView",
+          "file": "UserCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

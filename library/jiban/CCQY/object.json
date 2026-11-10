@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CCQY",
+  "name": "集装箱记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "集装箱记录查询",
+  "metadata": "ContainerQuery",
+  "objects": [
+    {
+      "id": "MTD1000001SU",
+      "name": "ContainerQuery",
+      "text": "集装箱记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

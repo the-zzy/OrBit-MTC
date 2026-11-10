@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SHIF",
+  "name": "班次",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "班次",
+  "metadata": "Shift",
+  "objects": [
+    {
+      "id": "MTD10000008D",
+      "name": "Shift",
+      "text": "班次",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShiftMainView",
+          "file": "ShiftMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShiftTreeView",
+          "file": "ShiftTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShiftSaveData",
+          "file": "ShiftSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShiftDeleteData",
+          "file": "ShiftDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000008L",
+      "name": "Shift_User",
+      "text": "班次用户",
+      "parentId": "MTD10000008D",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Shift_UserMainView",
+          "file": "Shift_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Shift_UserTreeView",
+          "file": "Shift_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Shift_UserSaveData",
+          "file": "Shift_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Shift_UserDeleteData",
+          "file": "Shift_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

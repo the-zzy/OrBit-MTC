@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RES",
+  "name": "资源",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "资源",
+  "metadata": "Resource",
+  "objects": [
+    {
+      "id": "MTD10000008A",
+      "name": "Resource",
+      "text": "资源",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ResourceMainView",
+          "file": "ResourceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ResourceTreeView",
+          "file": "ResourceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ResourceSaveData",
+          "file": "ResourceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ResourceDeleteData",
+          "file": "ResourceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000008J",
+      "name": "Resource_User",
+      "text": "资源用户",
+      "parentId": "MTD10000008A",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Resource_UserMainView",
+          "file": "Resource_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Resource_UserTreeView",
+          "file": "Resource_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Resource_UserSaveData",
+          "file": "Resource_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Resource_UserDeleteData",
+          "file": "Resource_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

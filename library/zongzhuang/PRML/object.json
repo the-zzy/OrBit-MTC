@@ -1,0 +1,188 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PRML",
+  "name": "产品机型",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品机型",
+  "metadata": "ProductModel",
+  "objects": [
+    {
+      "id": "MTD1000000KU",
+      "name": "ProductModel",
+      "text": "产品机型",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductModelMainView",
+          "file": "ProductModelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductModelTreeView",
+          "file": "ProductModelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductModelSaveData",
+          "file": "ProductModelSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductModelDeleteData",
+          "file": "ProductModelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KV",
+      "name": "Model_Product",
+      "text": "产品",
+      "parentId": "MTD1000000KU",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Model_ProductMainView",
+          "file": "Model_ProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Model_ProductTreeView",
+          "file": "Model_ProductTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Model_ProductSaveData",
+          "file": "Model_ProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Model_ProductDeleteData",
+          "file": "Model_ProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KW",
+      "name": "Model_CollectSetting",
+      "text": "采集项",
+      "parentId": "MTD1000000KU",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Model_CollectSettingMainView",
+          "file": "Model_CollectSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Model_CollectSettingTreeView",
+          "file": "Model_CollectSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Model_CollectSettingSaveData",
+          "file": "Model_CollectSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Model_CollectSettingDeleteData",
+          "file": "Model_CollectSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KX",
+      "name": "Model_CollectSettingCheck",
+      "text": "采集项规则",
+      "parentId": "MTD1000000KW",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Model_CollectSettingCheckMainView",
+          "file": "Model_CollectSettingCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Model_CollectSettingCheckTreeView",
+          "file": "Model_CollectSettingCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Model_CollectSettingCheckSaveData",
+          "file": "Model_CollectSettingCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Model_CollectSettingCheckDeleteData",
+          "file": "Model_CollectSettingCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KY",
+      "name": "Model_TestRule",
+      "text": "测试规则",
+      "parentId": "MTD1000000KU",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Model_TestRuleMainView",
+          "file": "Model_TestRuleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Model_TestRuleTreeView",
+          "file": "Model_TestRuleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Model_TestRuleSaveData",
+          "file": "Model_TestRuleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Model_TestRuleDeleteData",
+          "file": "Model_TestRuleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

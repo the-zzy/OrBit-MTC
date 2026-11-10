@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "POQU",
+  "name": "采购订单查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "采购订单查询",
+  "metadata": "POQU",
+  "objects": [
+    {
+      "id": "MTD100000280",
+      "name": "POQuery",
+      "text": "采购订单查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

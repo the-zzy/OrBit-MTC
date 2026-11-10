@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CRPC",
+  "name": "客户维修机抽检",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户维修机抽检",
+  "metadata": "CRPC",
+  "objects": [
+    {
+      "id": "MTD10000027U",
+      "name": "CustomerRepairCheck",
+      "text": "客户维修机抽检",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerRepairCheckMainView",
+          "file": "CustomerRepairCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerTreeView",
+          "file": "CustomerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerRepairCheckSaveData",
+          "file": "CustomerRepairCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerDeleteData",
+          "file": "CustomerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

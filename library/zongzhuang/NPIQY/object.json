@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "NPIQY",
+  "name": "NPI样机解绑查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "NPI样机解绑查询",
+  "metadata": "查询NPI样机的解绑记录，包括解绑时间、解绑原因、解绑人员、样机信息等，确保样机解绑过程的规范性和可追溯性。这有助于研发部门跟踪样机的使用情况，合理安排样机资源，避免样机资源的浪费和混乱。",
+  "objects": [
+    {
+      "id": "MTD1000001RP",
+      "name": "NPIDisassemblyPrototypeQuery",
+      "text": "NPI样机解绑查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

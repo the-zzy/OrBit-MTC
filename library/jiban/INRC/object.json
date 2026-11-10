@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "INRC",
+  "name": "巡检记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "巡检记录",
+  "metadata": "InspectionRecord",
+  "objects": [
+    {
+      "id": "MTD10000028T",
+      "name": "InspectionRecord",
+      "text": "巡检记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectionRecordMainView",
+          "file": "InspectionRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectionRecordTreeView",
+          "file": "InspectionRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InspectionRecordSaveData",
+          "file": "InspectionRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InspectionRecordDeleteData",
+          "file": "InspectionRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028U",
+      "name": "InspectionRecordItem",
+      "text": "巡检单明细",
+      "parentId": "MTD10000028T",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectionRecordItemMainView",
+          "file": "InspectionRecordItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectionRecordItemTreeView",
+          "file": "InspectionRecordItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InspectionRecordItemSaveData",
+          "file": "InspectionRecordItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InspectionRecordItemDeleteData",
+          "file": "InspectionRecordItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

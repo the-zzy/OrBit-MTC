@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EQRU",
+  "name": "设备维修报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "设备维修报表",
+  "metadata": "EQRU",
+  "objects": [
+    {
+      "id": "MTD10000029R",
+      "name": "EquipmentRepairQuery",
+      "text": "设备维修报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,143 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PCXXX",
+  "name": "物料转线",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物料转线",
+  "metadata": "Product Change",
+  "objects": [
+    {
+      "id": "MTD1000001XQ",
+      "name": "ProductMove",
+      "text": "物料转线",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductMoveMainView",
+          "file": "ProductMoveMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductMoveTreeView",
+          "file": "ProductMoveTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductMoveSaveData",
+          "file": "ProductMoveSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductMoveDeleteData",
+          "file": "ProductMoveDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XR",
+      "name": "ProductCBackItem",
+      "text": "退料明细",
+      "parentId": "MTD1000001XQ",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductCBackItemTreeView",
+          "file": "ProductCBackItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XS",
+      "name": "ProductCIssueItem",
+      "text": "发料明细",
+      "parentId": "MTD1000001XR",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductCIssueItemTreeView",
+          "file": "ProductCIssueItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XT",
+      "name": "ProductMoveItem",
+      "text": "明细",
+      "parentId": "MTD1000001XS",
+      "sequence": "2",
+      "depth": 4,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductMoveItemMainView",
+          "file": "ProductMoveItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductMoveItemTreeView",
+          "file": "ProductMoveItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductMoveItemSaveData",
+          "file": "ProductMoveItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductMoveItemDeleteData",
+          "file": "ProductMoveItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XU",
+      "name": "ProductMoveItemLot",
+      "text": "明细批号",
+      "parentId": "MTD1000001XT",
+      "sequence": "3",
+      "depth": 5,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductMoveItemLotTreeView",
+          "file": "ProductMoveItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MDOQ",
+  "name": "MES交货单查询报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "MES交货单查询报表",
+  "metadata": "提供MES交货单的查询报表功能，记录交货单号、客户名称、产品、数量、日期和状态等信息，方便销售、物流和生产部门实时掌握产品交货情况，确保按时交付，提高客户满意度，并优化企业交货流程和资源配置。",
+  "objects": [
+    {
+      "id": "MTD10000027C",
+      "name": "MESDeliveryOrderQuery",
+      "text": "MES交货单查询报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

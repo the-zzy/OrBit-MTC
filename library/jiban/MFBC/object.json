@@ -1,0 +1,63 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MFBC",
+  "name": "首件仪测试报告",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "首件仪测试报告",
+  "metadata": "MFBC",
+  "objects": [
+    {
+      "id": "MTD100000298",
+      "name": "Man_FirstBoardCheck",
+      "text": "首件仪测试报告",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Man_FirstBoardCheckMainView",
+          "file": "Man_FirstBoardCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Man_FirstBoardCheckTreeView",
+          "file": "Man_FirstBoardCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000299",
+      "name": "Man_FirstBoardCheckItem",
+      "text": "首件仪检测报告明细",
+      "parentId": "MTD100000298",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Man_FirstBoardCheckItemMainView",
+          "file": "Man_FirstBoardCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Man_FirstBoardCheckItemTreeView",
+          "file": "Man_FirstBoardCheckItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

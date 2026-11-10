@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PRTQ",
+  "name": "ProductTaskQuery",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "ProductTaskQuery",
+  "metadata": "ProductTaskQuery",
+  "objects": [
+    {
+      "id": "MTD1000002CX",
+      "name": "ProductTaskQuery",
+      "text": "ProductTaskQuery",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

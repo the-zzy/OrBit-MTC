@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AGVQ",
+  "name": "储位管理",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "储位管理",
+  "metadata": "AGVPutShellInfomationQuery",
+  "objects": [
+    {
+      "id": "MTD10000027K",
+      "name": "AGVPutShellInfomationQuery",
+      "text": "储位管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

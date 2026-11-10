@@ -1,0 +1,208 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "IQCDO",
+  "name": "IQC抽检清单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "IQC抽检清单",
+  "metadata": "查询IQC抽检清单，记录清单编号、抽检订单、物料信息、抽检数量、抽检标准、抽检结果等数据，确保IQC抽检工作的规范性和可追溯性。这有助于及时发现来料质量问题，采取有效的处理措施，保障生产过程的质量稳定性和产品可靠性。",
+  "objects": [
+    {
+      "id": "MTD1000000TV",
+      "name": "IQCOrder",
+      "text": "IQC抽检清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCOrderMainView",
+          "file": "IQCOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCOrderTreeView",
+          "file": "IQCOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCOrderSaveData",
+          "file": "IQCOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCOrderDeleteData",
+          "file": "IQCOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001O8",
+      "name": "IQCOrderLot",
+      "text": "IQC抽检明细",
+      "parentId": "MTD1000000TV",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCOrderLotMainView",
+          "file": "IQCOrderLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCOrderLotTreeView",
+          "file": "IQCOrderLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001O7",
+      "name": "IQCCheckinLotIQC",
+      "text": "SAP确认明细",
+      "parentId": "MTD1000000TV",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotIQCTreeView",
+          "file": "IQCCheckinLotIQCTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001SG",
+      "name": "IQCMRBOrder",
+      "text": "QCMRB处理",
+      "parentId": "MTD1000000TV",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCMRBOrderMainView",
+          "file": "IQCMRBOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCMRBOrderTreeView",
+          "file": "IQCMRBOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCMRBOrderSaveData",
+          "file": "IQCMRBOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCMRBOrderDeleteData",
+          "file": "IQCMRBOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZX",
+      "name": "ProductOverDue",
+      "text": "超期返检",
+      "parentId": "MTD1000000TV",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductOverDueMainView",
+          "file": "ProductOverDueMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductOverDueTreeView",
+          "file": "ProductOverDueTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductOverDueSaveData",
+          "file": "ProductOverDueSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductOverDueDeleteData",
+          "file": "ProductOverDueDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001O6",
+      "name": "IQCObject",
+      "text": "IQC项目",
+      "parentId": "MTD1000000TV",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCObjectMainView",
+          "file": "IQCObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCObjectTreeView",
+          "file": "IQCObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCObjectSaveData",
+          "file": "IQCObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCObjectDeleteData",
+          "file": "IQCObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

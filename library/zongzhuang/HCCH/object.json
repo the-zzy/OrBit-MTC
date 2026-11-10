@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HCCH",
+  "name": "海尔条码管控",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "海尔条码管控",
+  "metadata": "HaierCodeCheckHead",
+  "objects": [
+    {
+      "id": "MTD1000002GM",
+      "name": "HaierCodeCheckHead",
+      "text": "海尔条码管控",
+      "parentId": "",
+      "sequence": "03",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "HaierCodeCheckHeadMainView",
+          "file": "HaierCodeCheckHeadMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "HaierCodeCheckHeadTreeView",
+          "file": "HaierCodeCheckHeadTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "HaierCodeCheckHeadSaveData",
+          "file": "HaierCodeCheckHeadSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "HaierCodeCheckHeadDeleteData",
+          "file": "HaierCodeCheckHeadDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

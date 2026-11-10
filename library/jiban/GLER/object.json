@@ -1,0 +1,108 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GLER",
+  "name": "量具档案",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具档案",
+  "metadata": "GageLedger",
+  "objects": [
+    {
+      "id": "MTD1000000HM",
+      "name": "GageLedger",
+      "text": "量具档案",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageLedgerMainView",
+          "file": "GageLedgerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageLedgerTreeView",
+          "file": "GageLedgerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageLedgerSaveData",
+          "file": "GageLedgerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageLedgerDeleteData",
+          "file": "GageLedgerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000HI",
+      "name": "GageCertificate",
+      "text": "量具证书",
+      "parentId": "MTD1000000HM",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageCertificateMainView",
+          "file": "GageCertificateMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageCertificateTreeView",
+          "file": "GageCertificateTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageCertificateSaveData",
+          "file": "GageCertificateSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageCertificateDeleteData",
+          "file": "GageCertificateDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000HR",
+      "name": "GageLentReturnHistory",
+      "text": "量具仪器领用归还历史",
+      "parentId": "MTD1000000HM",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageLentReturnHistoryMainView",
+          "file": "GageLentReturnHistoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageLentReturnHistoryTreeView",
+          "file": "GageLentReturnHistoryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

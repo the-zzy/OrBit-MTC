@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TVSM",
+  "name": "TV扫描主表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV扫描主表",
+  "metadata": "TVScanMaster",
+  "objects": [
+    {
+      "id": "MTD1000000P5",
+      "name": "TVScanMaster",
+      "text": "TV扫描主表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVScanMasterMainView",
+          "file": "TVScanMasterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVScanMasterTreeView",
+          "file": "TVScanMasterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVScanMasterSaveData",
+          "file": "TVScanMasterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVScanMasterDeleteData",
+          "file": "TVScanMasterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OZ",
+      "name": "TVScanDeliveryOrder",
+      "text": "扫描单号",
+      "parentId": "MTD1000000P5",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVScanDeliveryOrderMainView",
+          "file": "TVScanDeliveryOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVScanDeliveryOrderTreeView",
+          "file": "TVScanDeliveryOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVScanDeliveryOrderSaveData",
+          "file": "TVScanDeliveryOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVScanDeliveryOrderDeleteData",
+          "file": "TVScanDeliveryOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

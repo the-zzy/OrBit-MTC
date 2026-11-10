@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SOPO",
+  "name": "订单作业流程表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单作业流程表",
+  "metadata": "查询订单作业流程表，记录流程表编号、订单编号、作业步骤、工艺要求、完成时间等数据，确保订单作业流程的规范性和可追溯性。这有助于生产部门合理安排生产计划，提高生产效率，确保订单按时完成和交付。",
+  "objects": [
+    {
+      "id": "MTD1000000LG",
+      "name": "SOPOrder",
+      "text": "订单作业流程表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPOrderMainView",
+          "file": "SOPOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPOrderTreeView",
+          "file": "SOPOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPOrderSaveData",
+          "file": "SOPOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPOrderDeleteData",
+          "file": "SOPOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LH",
+      "name": "SOPOrderItem",
+      "text": "订单资料明细",
+      "parentId": "MTD1000000LG",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPOrderItemMainView",
+          "file": "SOPOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPOrderItemTreeView",
+          "file": "SOPOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPOrderItemSaveData",
+          "file": "SOPOrderItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPOrderItemDeleteData",
+          "file": "SOPOrderItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

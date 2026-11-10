@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SPJT",
+  "name": "示例项目任务明细",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "示例项目任务明细",
+  "metadata": "Sample Project Task",
+  "objects": [
+    {
+      "id": "MTD100000078",
+      "name": "_SampleProjectTask",
+      "text": "示例项目任务明细",
+      "parentId": "MTD100000077",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "_SampleProjectTaskMainView",
+          "file": "_SampleProjectTaskMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "_SampleProjectTaskTreeView",
+          "file": "_SampleProjectTaskTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "_SampleProjectTaskSaveData",
+          "file": "_SampleProjectTaskSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "_SampleProjectTaskDeleteData",
+          "file": "_SampleProjectTaskDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

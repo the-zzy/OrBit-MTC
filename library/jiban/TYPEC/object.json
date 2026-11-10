@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TYPEC",
+  "name": "公共数据维护表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "公共数据维护表",
+  "metadata": "TYPEC",
+  "objects": [
+    {
+      "id": "MTD10000024X",
+      "name": "TypeCodeX",
+      "text": "公共数据维护表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TypeCodeMainView",
+          "file": "TypeCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TypeCodeTreeView",
+          "file": "TypeCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TypeCodeSaveData",
+          "file": "TypeCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TypeCodeDeleteData",
+          "file": "TypeCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024Y",
+      "name": "TypeCodeItem",
+      "text": "公用数据明细",
+      "parentId": "MTD10000024X",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TypeCodeItemMainView",
+          "file": "TypeCodeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TypeCodeItemTreeView",
+          "file": "TypeCodeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TypeCodeItemSaveData",
+          "file": "TypeCodeItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TypeCodeItemDeleteData",
+          "file": "TypeCodeItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000029S",
+      "name": "TypeCodeUser",
+      "text": "公共数据维护授权用户",
+      "parentId": "MTD10000024X",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TypeCodeUserMainView",
+          "file": "TypeCodeUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TypeCodeUserTreeView",
+          "file": "TypeCodeUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TypeCodeUserSaveData",
+          "file": "TypeCodeUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TypeCodeUserDeleteData",
+          "file": "TypeCodeUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

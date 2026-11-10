@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AOIL",
+  "name": "AOI线体配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AOI线体配置",
+  "metadata": "AOILineConfig",
+  "objects": [
+    {
+      "id": "MTD1000002DT",
+      "name": "AOILineConfig",
+      "text": "AOI线体配置",
+      "parentId": "",
+      "sequence": "03",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AOILineConfigMainView",
+          "file": "AOILineConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AOILineConfigTreeView",
+          "file": "AOILineConfigTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AOILineConfigSaveData",
+          "file": "AOILineConfigSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AOILineConfigDeleteData",
+          "file": "AOILineConfigDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

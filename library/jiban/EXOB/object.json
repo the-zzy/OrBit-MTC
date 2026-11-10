@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EXOB",
+  "name": "Excel对象",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Excel对象",
+  "metadata": "Excel Object",
+  "objects": [
+    {
+      "id": "MTD1000000EG",
+      "name": "ExcelObject",
+      "text": "Excel对象",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ExcelObjectMainView",
+          "file": "ExcelObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ExcelObjectTreeView",
+          "file": "ExcelObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ExcelObjectSaveData",
+          "file": "ExcelObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ExcelObjectDeleteData",
+          "file": "ExcelObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

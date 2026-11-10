@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VENS",
+  "name": "供应商设备",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "供应商设备",
+  "metadata": "Vendor Equpments",
+  "objects": [
+    {
+      "id": "MTD1000000GP",
+      "name": "Vendors",
+      "text": "供应商设备",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMainView",
+          "file": "VendorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorTreeView",
+          "file": "VendorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorSaveData",
+          "file": "VendorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorDeleteData",
+          "file": "VendorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GO",
+      "name": "VendorManufacturer",
+      "text": "供应经销的设备列表",
+      "parentId": "MTD1000000GP",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorManufacturerMainView",
+          "file": "VendorManufacturerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorManufacturerTreeView",
+          "file": "VendorManufacturerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorManufacturerSaveData",
+          "file": "VendorManufacturerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorManufacturerDeleteData",
+          "file": "VendorManufacturerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

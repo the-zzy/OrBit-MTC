@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CICHQ",
+  "name": "客验抽机查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "客验抽机查询",
+  "metadata": "查询客验抽机的相关信息，包括抽机时间、抽机样品编号、检验项目、标准、结果和客户反馈等，确保客验抽机过程的规范性和数据准确性。这有助于企业及时了解客户需求和产品在客户端的表现，促进产品质量改进和客户关系维护。",
+  "objects": [
+    {
+      "id": "MTD100000260",
+      "name": "CustomerInspectionCheckQuery",
+      "text": "客验抽机查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

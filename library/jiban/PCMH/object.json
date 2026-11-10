@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PCMH",
+  "name": "TV工艺路线工时维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV工艺路线工时维护",
+  "metadata": "PCMH",
+  "objects": [
+    {
+      "id": "MTD1000001V3",
+      "name": "Man_Hour",
+      "text": "TV工艺路线工时维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Man_HourMainView",
+          "file": "Man_HourMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Man_HourTreeView",
+          "file": "Man_HourTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Man_HourSaveData",
+          "file": "Man_HourSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Man_HourDeleteData",
+          "file": "Man_HourDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

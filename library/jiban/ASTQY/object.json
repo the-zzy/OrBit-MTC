@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ASTQY",
+  "name": "设备点检查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "设备点检查询",
+  "metadata": "ASTQY",
+  "objects": [
+    {
+      "id": "MTD1000000U7",
+      "name": "AssetKeepQuery",
+      "text": "设备点检查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

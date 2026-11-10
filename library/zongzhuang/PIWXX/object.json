@@ -1,0 +1,188 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PIWXX",
+  "name": "外协发料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "外协发料单",
+  "metadata": "管理外协发料单，记录发料单编号、外协厂商、发料日期、物料信息、数量等数据，确保外协发料过程的规范性和可追溯性。这有助于优化外协采购流程，提高外协管理效率，保障外协加工产品的质量和按时交付。",
+  "objects": [
+    {
+      "id": "MTD1000001Z2",
+      "name": "ProductIssueW",
+      "text": "外协发料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductIssueWMainView",
+          "file": "ProductIssueWMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductIssueWTreeView",
+          "file": "ProductIssueWTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductIssueWSaveData",
+          "file": "ProductIssueWSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductIssueWDeleteData",
+          "file": "ProductIssueWDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020U",
+      "name": "ProductIssueWSAPMessage",
+      "text": "SAP返回信息",
+      "parentId": "MTD1000001Z2",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductIssueWSAPMessageMainView",
+          "file": "ProductIssueWSAPMessageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductIssueWSAPMessageTreeView",
+          "file": "ProductIssueWSAPMessageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Z6",
+      "name": "ProductIssueWMO",
+      "text": "外协采购订单",
+      "parentId": "MTD1000001Z2",
+      "sequence": "20",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductIssueWMOMainView",
+          "file": "ProductIssueWMOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductIssueWMOTreeView",
+          "file": "ProductIssueWMOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductIssueWMOSaveData",
+          "file": "ProductIssueWMOSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Z7",
+      "name": "ProductIssueRequestList",
+      "text": "发料需求清单",
+      "parentId": "MTD1000001Z2",
+      "sequence": "25",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductIssueRequestListTreeView",
+          "file": "ProductIssueRequestListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Z3",
+      "name": "ProductIssueWMOItem",
+      "text": "发料采购单明细",
+      "parentId": "MTD1000001Z2",
+      "sequence": "30",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductIssueWMOItemMainView",
+          "file": "ProductIssueWMOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductIssueWMOItemTreeView",
+          "file": "ProductIssueWMOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Z4",
+      "name": "ProductIssueWItem",
+      "text": "外协发料明细",
+      "parentId": "MTD1000001Z2",
+      "sequence": "50",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductIssueWItemTreeView",
+          "file": "ProductIssueWItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Z5",
+      "name": "ProductIssueWItemLot",
+      "text": "发料明细批号",
+      "parentId": "MTD1000001Z4",
+      "sequence": "60",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductIssueWItemLotTreeView",
+          "file": "ProductIssueWItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

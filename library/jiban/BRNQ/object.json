@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BRNQ",
+  "name": "老化报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "老化报表",
+  "metadata": "BRNQ",
+  "objects": [
+    {
+      "id": "MTD10000028C",
+      "name": "BurnQuery",
+      "text": "老化报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

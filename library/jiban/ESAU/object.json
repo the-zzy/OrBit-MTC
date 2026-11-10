@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ESAU",
+  "name": "ESD项目点检",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "ESD项目点检",
+  "metadata": "ESDEquipmentCheck",
+  "objects": [
+    {
+      "id": "MTD100000296",
+      "name": "ESDEquipmentCheck",
+      "text": "ESD项目点检",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ESDEquipmentCheckMainView",
+          "file": "ESDEquipmentCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ESDEquipmentCheckTreeView",
+          "file": "ESDEquipmentCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ESDEquipmentCheckSaveData",
+          "file": "ESDEquipmentCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ESDEquipmentCheckDeleteData",
+          "file": "ESDEquipmentCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

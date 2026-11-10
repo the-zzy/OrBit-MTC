@@ -1,0 +1,148 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD23",
+  "name": "OQC送检单(散件)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "OQC送检单(散件)",
+  "metadata": "OQCOrderTVSJ",
+  "objects": [
+    {
+      "id": "MTD100000252",
+      "name": "OQCOrderTVSJ",
+      "text": "OQC送检单(散件)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCOrderTVSJMainView",
+          "file": "OQCOrderTVSJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCOrderTVSJTreeView",
+          "file": "OQCOrderTVSJTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OQCOrderTVSJDeleteData",
+          "file": "OQCOrderTVSJDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000255",
+      "name": "OQCOrderTVSJPallet",
+      "text": "已下线栈板",
+      "parentId": "MTD100000252",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCOrderTVItemMainView",
+          "file": "OQCOrderTVItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCOrderTVSJPalletTreeView",
+          "file": "OQCOrderTVSJPalletTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000256",
+      "name": "OQCCheckSJItem",
+      "text": "抽检记录",
+      "parentId": "MTD100000255",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCCheckItemMainView",
+          "file": "OQCCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCCheckItemTreeView",
+          "file": "OQCCheckItemTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OQCCheckItemDeleteData",
+          "file": "OQCCheckItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000253",
+      "name": "OQCOrderTVSJItem",
+      "text": "抽检详细",
+      "parentId": "MTD100000252",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCOrderTVItemMainView",
+          "file": "OQCOrderTVItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCOrderTVItemTreeView",
+          "file": "OQCOrderTVItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025I",
+      "name": "OQCOrderTVSJBox",
+      "text": "按箱抽检详细",
+      "parentId": "MTD100000252",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCOrderTVBoxMainView",
+          "file": "OQCOrderTVBoxMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCOrderTVSJBoxTreeView",
+          "file": "OQCOrderTVSJBoxTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

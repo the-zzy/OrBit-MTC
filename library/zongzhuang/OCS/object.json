@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OCS",
+  "name": "订单导入规则检查",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单导入规则检查",
+  "metadata": "OrderCheckSetting",
+  "objects": [
+    {
+      "id": "MTD1000002B2",
+      "name": "OrderCheckSetting",
+      "text": "订单导入规则检查",
+      "parentId": "",
+      "sequence": "0",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderCheckSettingMainView",
+          "file": "OrderCheckSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderCheckSettingTreeView",
+          "file": "OrderCheckSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderCheckSettingSaveData",
+          "file": "OrderCheckSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderCheckSettingDeleteData",
+          "file": "OrderCheckSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002B3",
+      "name": "OrderCheckSettingItem",
+      "text": "规则检查字段",
+      "parentId": "MTD1000002B2",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderCheckSettingItemMainView",
+          "file": "OrderCheckSettingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderCheckSettingItemTreeView",
+          "file": "OrderCheckSettingItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderCheckSettingItemSaveData",
+          "file": "OrderCheckSettingItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderCheckSettingItemDeleteData",
+          "file": "OrderCheckSettingItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002B4",
+      "name": "OrderCheckSettingItemRule",
+      "text": "字段检查规则",
+      "parentId": "MTD1000002B3",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderCheckSettingItemRuleMainView",
+          "file": "OrderCheckSettingItemRuleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderCheckSettingItemRuleTreeView",
+          "file": "OrderCheckSettingItemRuleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderCheckSettingItemRuleSaveData",
+          "file": "OrderCheckSettingItemRuleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderCheckSettingItemRuleDeleteData",
+          "file": "OrderCheckSettingItemRuleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

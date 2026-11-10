@@ -1,0 +1,113 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MIPO",
+  "name": "客供采购订单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客供采购订单",
+  "metadata": "MIPO",
+  "objects": [
+    {
+      "id": "MTD1000001UE",
+      "name": "MIPO",
+      "text": "客供采购订单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MIPOMainView",
+          "file": "MIPOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MIPOTreeView",
+          "file": "MIPOTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001UF",
+      "name": "MIPOItem",
+      "text": "客供采购订单明细",
+      "parentId": "MTD1000001UE",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MIPOItemMainView",
+          "file": "MIPOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MIPOItemTreeView",
+          "file": "MIPOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001UH",
+      "name": "MIPODelivery",
+      "text": "客供送货计划",
+      "parentId": "MTD1000001UE",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MIPODeliveryMainView",
+          "file": "MIPODeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MIPODeliveryTreeView",
+          "file": "MIPODeliveryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001UG",
+      "name": "MIPOItemLot",
+      "text": "客供采购单明细批号",
+      "parentId": "MTD1000001UH",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MIPOItemLotMainView",
+          "file": "MIPOItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MIPOItemLotTreeView",
+          "file": "MIPOItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LOSG",
+  "name": "不良/缺陷组别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "不良/缺陷组别",
+  "metadata": "Lose/Defect Group",
+  "objects": [
+    {
+      "id": "MTD10000007X",
+      "name": "ReasonLossGroup",
+      "text": "不良/缺陷组别",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReasonGroupMainView",
+          "file": "ReasonGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReasonGroupTreeView",
+          "file": "ReasonGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReasonGroupSaveData",
+          "file": "ReasonGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReasonGroupDeleteData",
+          "file": "ReasonGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000007Z",
+      "name": "ReasonLossGroup_UserCode",
+      "text": "报废原因清单",
+      "parentId": "MTD10000007X",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReasonGroup_UserCode_MainView",
+          "file": "ReasonGroup_UserCode_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReasonGroup_UserCode_TreeView",
+          "file": "ReasonGroup_UserCode_TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReasonGroup_UserCode_SaveData",
+          "file": "ReasonGroup_UserCode_SaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReasonGroup_UserCode_DeleteData",
+          "file": "ReasonGroup_UserCode_DeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

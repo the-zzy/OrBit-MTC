@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MESO",
+  "name": "MES事务对象",
+  "application": "MES",
+  "kind": "PluginMESObject",
+  "pluginName": "MES事务对象",
+  "metadata": "MES Txn Object",
+  "objects": [
+    {
+      "id": "MTD10000009S",
+      "name": "MESTxnObject",
+      "text": "MES事务对象",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MESTxnObjectMainView",
+          "file": "MESTxnObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MESTxnObjectTreeView",
+          "file": "MESTxnObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MESTxnObjectSaveData",
+          "file": "MESTxnObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MESTxnObjectDeleteData",
+          "file": "MESTxnObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000009T",
+      "name": "MESTxnObjectMethod",
+      "text": "MES事务对象方法",
+      "parentId": "MTD10000009S",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MESTxnObjectMethodMainView",
+          "file": "MESTxnObjectMethodMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MESTxnObjectMethodTreeView",
+          "file": "MESTxnObjectMethodTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MESTxnObjectMethodSaveData",
+          "file": "MESTxnObjectMethodSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MESTxnObjectMethodDeleteData",
+          "file": "MESTxnObjectMethodDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000009U",
+      "name": "MESTxnObjectParameter",
+      "text": "MES事务对象参数",
+      "parentId": "MTD10000009S",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MESTxnObjectParameterMainView",
+          "file": "MESTxnObjectParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MESTxnObjectParameterTreeView",
+          "file": "MESTxnObjectParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MESTxnObjectParameterSaveData",
+          "file": "MESTxnObjectParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MESTxnObjectParameterDeleteData",
+          "file": "MESTxnObjectParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JD",
+      "name": "MESTxnObjectSpecification",
+      "text": "事务对象规程",
+      "parentId": "MTD10000009S",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MESTxnObjectSpecificationMainView",
+          "file": "MESTxnObjectSpecificationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MESTxnObjectSpecificationTreeView",
+          "file": "MESTxnObjectSpecificationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MESTxnObjectSpecificationSaveData",
+          "file": "MESTxnObjectSpecificationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MESTxnObjectSpecificationDeleteData",
+          "file": "MESTxnObjectSpecificationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

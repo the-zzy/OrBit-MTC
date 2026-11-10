@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RIRQ",
+  "name": "ResItemRatioQuery",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "ResItemRatioQuery",
+  "metadata": "ResItemRatioQuery",
+  "objects": [
+    {
+      "id": "MTD1000002D3",
+      "name": "ResItemRatioQuery",
+      "text": "ResItemRatioQuery",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

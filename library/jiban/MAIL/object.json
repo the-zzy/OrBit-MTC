@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MAIL",
+  "name": "E-Mail 组",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "E-Mail 组",
+  "metadata": "Mailbox",
+  "objects": [
+    {
+      "id": "MTD1000000N5",
+      "name": "Mailbox",
+      "text": "E-Mail 组",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MailboxMainView",
+          "file": "MailboxMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MailboxTreeView",
+          "file": "MailboxTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MailboxSaveData",
+          "file": "MailboxSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MailboxDeleteData",
+          "file": "MailboxDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000N6",
+      "name": "MailboxItem",
+      "text": "E-Mail 用户",
+      "parentId": "MTD1000000N5",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MailboxItemMainView",
+          "file": "MailboxItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MailboxItemTreeView",
+          "file": "MailboxItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MailboxItemSaveData",
+          "file": "MailboxItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MailboxItemDeleteData",
+          "file": "MailboxItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

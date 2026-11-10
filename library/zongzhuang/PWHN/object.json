@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PWHN",
+  "name": "料号信息维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "料号信息维护",
+  "metadata": "ProductWHPerson",
+  "objects": [
+    {
+      "id": "MTD1000001ZU",
+      "name": "ProductWHPerson",
+      "text": "料号信息维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductWHPersonMainView",
+          "file": "ProductWHPersonMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductWHPersonTreeView",
+          "file": "ProductWHPersonTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductWHPersonSaveData",
+          "file": "ProductWHPersonSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductWHPersonDeleteData",
+          "file": "ProductWHPersonDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZV",
+      "name": "ProductWHPersonItem",
+      "text": "料号信息明细",
+      "parentId": "MTD1000001ZU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductWHPersonItemMainView",
+          "file": "ProductWHPersonItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductWHPersonItemTreeView",
+          "file": "ProductWHPersonItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductWHPersonItemSaveData",
+          "file": "ProductWHPersonItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductWHPersonItemDeleteData",
+          "file": "ProductWHPersonItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

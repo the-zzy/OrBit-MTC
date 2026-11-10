@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ODFMQ",
+  "name": "订单预置修改记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "订单预置修改记录查询",
+  "metadata": "查询订单预置信息的修改记录，包括修改时间、修改内容、修改人、修改原因等，确保订单数据的可追溯性和准确性。这有助于生产计划部门及时了解订单变更情况，调整生产计划，避免因订单修改不及时导致的生产混乱和客户投诉。",
+  "objects": [
+    {
+      "id": "MTD1000001ZF",
+      "name": "ODFTVModifyQuery",
+      "text": "订单预置修改记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

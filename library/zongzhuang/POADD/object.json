@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "POADD",
+  "name": "订单地址信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单地址信息",
+  "metadata": "OrderAddressInfo",
+  "objects": [
+    {
+      "id": "MTD1000002G8",
+      "name": "OrderAddressInfo",
+      "text": "订单地址信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderAddressInfoMainView",
+          "file": "OrderAddressInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderAddressInfoTreeView",
+          "file": "OrderAddressInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderAddressInfoSaveData",
+          "file": "OrderAddressInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderAddressInfoDeleteData",
+          "file": "OrderAddressInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

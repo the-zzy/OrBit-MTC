@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TOT",
+  "name": "周转工具",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "周转工具",
+  "metadata": "TurnoverTool",
+  "objects": [
+    {
+      "id": "MTD1000000JB",
+      "name": "TurnoverTool",
+      "text": "周转工具",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TurnoverToolMainView",
+          "file": "TurnoverToolMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TurnoverToolTreeView",
+          "file": "TurnoverToolTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TurnoverToolSaveData",
+          "file": "TurnoverToolSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TurnoverToolDeleteData",
+          "file": "TurnoverToolDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

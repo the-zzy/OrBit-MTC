@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GAGR",
+  "name": "量具报废记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具报废记录",
+  "metadata": "GageScrapped",
+  "objects": [
+    {
+      "id": "MTD1000000HY",
+      "name": "GageScrapped",
+      "text": "量具报废记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageScrappedMainView",
+          "file": "GageScrappedMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageScrappedTreeView",
+          "file": "GageScrappedTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageScrappedSaveData",
+          "file": "GageScrappedSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageScrappedDeleteData",
+          "file": "GageScrappedDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

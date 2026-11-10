@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SPCP",
+  "name": "SPC项目",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SPC项目",
+  "metadata": "SPC Project",
+  "objects": [
+    {
+      "id": "MTD1000000EH",
+      "name": "SPCProject",
+      "text": "SPC项目",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCProjectMainView",
+          "file": "SPCProjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCProjectTreeView",
+          "file": "SPCProjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SPCProjectSaveData",
+          "file": "SPCProjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SPCProjectDeleteData",
+          "file": "SPCProjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000EI",
+      "name": "SPCTask",
+      "text": "SPC任务",
+      "parentId": "MTD1000000EH",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCTaskMainView",
+          "file": "SPCTaskMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCTaskTreeView",
+          "file": "SPCTaskTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SPCTaskSaveData",
+          "file": "SPCTaskSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SPCTaskDeleteData",
+          "file": "SPCTaskDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000EK",
+      "name": "SPCTask_User",
+      "text": "SPC用户",
+      "parentId": "MTD1000000EI",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCTask_UserMainView",
+          "file": "SPCTask_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCTask_UserTreeView",
+          "file": "SPCTask_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SPCTask_UserSaveData",
+          "file": "SPCTask_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SPCTask_UserDeleteData",
+          "file": "SPCTask_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000EL",
+      "name": "SPCTaskParameter",
+      "text": "SPC扩展参数",
+      "parentId": "MTD1000000EI",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCTaskParameterMainView",
+          "file": "SPCTaskParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCTaskParameterTreeView",
+          "file": "SPCTaskParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SPCTaskParameterSaveData",
+          "file": "SPCTaskParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SPCTaskParameterDeleteData",
+          "file": "SPCTaskParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

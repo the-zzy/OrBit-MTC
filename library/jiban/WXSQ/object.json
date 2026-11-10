@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "WXSQ",
+  "name": "设备维修流程",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备维修流程",
+  "metadata": "EquipmentRepairOrder1",
+  "objects": [
+    {
+      "id": "MTD1000000G1",
+      "name": "EquipmentRepairOrder1",
+      "text": "设备维修流程",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentRepairOrder1MainView",
+          "file": "EquipmentRepairOrder1MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentRepairOrder1TreeView",
+          "file": "EquipmentRepairOrder1TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentRepairOrder1SaveData",
+          "file": "EquipmentRepairOrder1SaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentRepairOrder1DeleteData",
+          "file": "EquipmentRepairOrder1DeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GC",
+      "name": "SparePartsChangeList",
+      "text": "备件更换清单",
+      "parentId": "MTD1000000G1",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SparePartsChangeListMainView",
+          "file": "SparePartsChangeListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SparePartsChangeListTreeView",
+          "file": "SparePartsChangeListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SparePartsChangeListSaveData",
+          "file": "SparePartsChangeListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SparePartsChangeListDeleteData",
+          "file": "SparePartsChangeListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

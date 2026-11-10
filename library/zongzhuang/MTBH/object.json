@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MTBH",
+  "name": "订单首件护屏品号",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单首件护屏品号",
+  "metadata": "MaterialBindHead",
+  "objects": [
+    {
+      "id": "MTD1000002GH",
+      "name": "MaterialBindHead",
+      "text": "订单首件护屏品号",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialBindHeadMainView",
+          "file": "MaterialBindHeadMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialBindHeadTreeView",
+          "file": "MaterialBindHeadTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialBindHeadSaveData",
+          "file": "MaterialBindHeadSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialBindHeadDeleteData",
+          "file": "MaterialBindHeadDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GI",
+      "name": "MaterialBinding",
+      "text": "首件护屏绑定功能",
+      "parentId": "MTD1000002GH",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialBindingMainView",
+          "file": "MaterialBindingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialBindingTreeView",
+          "file": "MaterialBindingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialBindingSaveData",
+          "file": "MaterialBindingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialBindingDeleteData",
+          "file": "MaterialBindingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

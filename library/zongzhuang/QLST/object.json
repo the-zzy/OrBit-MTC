@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QLST",
+  "name": "QMS系统停线",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "QMS系统停线",
+  "metadata": "QLST",
+  "objects": [
+    {
+      "id": "MTD10000028U",
+      "name": "QMSLineStop",
+      "text": "QMS系统停线",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QMSLineStopMainView",
+          "file": "QMSLineStopMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QMSLineStopTreeView",
+          "file": "QMSLineStopTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QMSLineStopSaveData",
+          "file": "QMSLineStopSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QMSLineStopDeleteData",
+          "file": "QMSLineStopDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

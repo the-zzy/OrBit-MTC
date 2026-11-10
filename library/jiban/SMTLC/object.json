@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SMTLC",
+  "name": "SMT线体配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SMT线体配置",
+  "metadata": "SMTLC",
+  "objects": [
+    {
+      "id": "MTD100000293",
+      "name": "SMTLineConfig",
+      "text": "SMT线体配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTLineConfigMainView",
+          "file": "SMTLineConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTLineConfigTreeView",
+          "file": "SMTLineConfigTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMTLineConfigSaveData",
+          "file": "SMTLineConfigSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMTLineConfigDeleteData",
+          "file": "SMTLineConfigDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

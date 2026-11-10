@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SCPO",
+  "name": "采购单创建信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "采购单创建信息",
+  "metadata": "GetPOResultInfo",
+  "objects": [
+    {
+      "id": "MTD1000002G0",
+      "name": "GetPOResultInfo",
+      "text": "采购单创建信息",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GetPOResultInfoMainView",
+          "file": "GetPOResultInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GetPOResultInfoTreeView",
+          "file": "GetPOResultInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002G1",
+      "name": "GetPOResultInfoItem",
+      "text": "生成采购单信息",
+      "parentId": "MTD1000002G0",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GetPOResultInfoItemMainView",
+          "file": "GetPOResultInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GetPOResultInfoItemTreeView",
+          "file": "GetPOResultInfoItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002G2",
+      "name": "GetPOResultInfoItemLot",
+      "text": "采购单明细",
+      "parentId": "MTD1000002G1",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GetPOResultInfoItemLotMainView",
+          "file": "GetPOResultInfoItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GetPOResultInfoItemLotTreeView",
+          "file": "GetPOResultInfoItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

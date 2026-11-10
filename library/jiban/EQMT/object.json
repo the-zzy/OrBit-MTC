@@ -1,0 +1,253 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EQMT",
+  "name": "设备档案",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备档案",
+  "metadata": "Equipment Management",
+  "objects": [
+    {
+      "id": "MTD1000000B2",
+      "name": "Equipment",
+      "text": "设备档案",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentMainView",
+          "file": "EquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentTreeView",
+          "file": "EquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentSaveData",
+          "file": "EquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentDeleteData",
+          "file": "EquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GQ",
+      "name": "EQtechnologyFiles",
+      "text": "设备技术文档",
+      "parentId": "MTD1000000B2",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EQtechnologyFilesMainView",
+          "file": "EQtechnologyFilesMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EQtechnologyFilesTreeView",
+          "file": "EQtechnologyFilesTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EQtechnologyFilesSaveData",
+          "file": "EQtechnologyFilesSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EQtechnologyFilesDeleteData",
+          "file": "EQtechnologyFilesDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GI",
+      "name": "EquipmentMaintenanceCFG",
+      "text": "保养配置列表",
+      "parentId": "MTD1000000B2",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentMaintenanceCFGMainView",
+          "file": "EquipmentMaintenanceCFGMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentMaintenanceCFGTreeView",
+          "file": "EquipmentMaintenanceCFGTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentMaintenanceCFGSaveData",
+          "file": "EquipmentMaintenanceCFGSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentMaintenanceCFGDeleteData",
+          "file": "EquipmentMaintenanceCFGDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GL",
+      "name": "EquipmentCheckItem",
+      "text": "设备点检配置列表",
+      "parentId": "MTD1000000B2",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentCheckItemMainView",
+          "file": "EquipmentCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentCheckItemTreeView",
+          "file": "EquipmentCheckItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentCheckItemSaveData",
+          "file": "EquipmentCheckItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentCheckItemDeleteData",
+          "file": "EquipmentCheckItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000B5",
+      "name": "EquipmentRepairOrder",
+      "text": "该设备维修单显示",
+      "parentId": "MTD1000000B2",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentRepairOrderMainView",
+          "file": "EquipmentRepairOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentRepairOrderTreeView",
+          "file": "EquipmentRepairOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000I4",
+      "name": "PanDianHistory",
+      "text": "该设备盘点历史",
+      "parentId": "MTD1000000B2",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PanDianHistoryMainView",
+          "file": "PanDianHistoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PanDianHistoryTreeView",
+          "file": "PanDianHistoryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000I5",
+      "name": "DianJianHistory",
+      "text": "该设备点检历史",
+      "parentId": "MTD1000000B2",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DianJianHistoryMainView",
+          "file": "DianJianHistoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DianJianHistoryTreeView",
+          "file": "DianJianHistoryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000I7",
+      "name": "BaoYangHistory",
+      "text": "该设备保养历史",
+      "parentId": "MTD1000000B2",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BaoYangHistoryMainView",
+          "file": "BaoYangHistoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BaoYangHistoryTreeView",
+          "file": "BaoYangHistoryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

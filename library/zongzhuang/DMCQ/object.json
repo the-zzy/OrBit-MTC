@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DMCQ",
+  "name": "条码信息匹配查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "条码信息匹配查询",
+  "metadata": "TVDataMatchingQuery",
+  "objects": [
+    {
+      "id": "MTD100000275",
+      "name": "TVDataMatchingQuery",
+      "text": "条码信息匹配查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

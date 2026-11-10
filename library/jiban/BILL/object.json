@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BILL",
+  "name": "单据",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "单据",
+  "metadata": "BILL",
+  "objects": [
+    {
+      "id": "MTD1000000DC",
+      "name": "Bill",
+      "text": "单据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BillMainView",
+          "file": "BillMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BillTreeView",
+          "file": "BillTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BillSaveData",
+          "file": "BillSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BillDeleteData",
+          "file": "BillDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000DR",
+      "name": "BillStates",
+      "text": "单据状态",
+      "parentId": "MTD1000000DC",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BillStatesMainView",
+          "file": "BillStatesMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BillStatesTreeView",
+          "file": "BillStatesTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BillStatesSaveData",
+          "file": "BillStatesSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BillStatesDeleteData",
+          "file": "BillStatesDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VU",
+      "name": "BillType",
+      "text": "单据类型",
+      "parentId": "MTD1000000DC",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BillTypeMainView",
+          "file": "BillTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BillTypeTreeView",
+          "file": "BillTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BillTypeSaveData",
+          "file": "BillTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BillTypeDeleteData",
+          "file": "BillTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

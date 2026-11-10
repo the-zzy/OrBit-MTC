@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RTOPQ",
+  "name": "实时生产数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "实时生产数据查询",
+  "metadata": "RTOPQ",
+  "objects": [
+    {
+      "id": "MTD1000001OU",
+      "name": "RealtimeOutputReportQuery",
+      "text": "实时生产数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

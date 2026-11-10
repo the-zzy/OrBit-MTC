@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SHOR",
+  "name": "物流信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物流信息",
+  "metadata": "查询物流信息，记录物流单编号、发货单号、运输方式、发货日期、预计到货日期、实际到货日期、承运商等数据，确保物流信息的准确性和可追溯性。这有助于优化物流配送计划，提高客户服务水平，确保货物按时送达客户。",
+  "objects": [
+    {
+      "id": "MTD10000025P",
+      "name": "ShippingOrder",
+      "text": "物流信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShippingOrderMainView",
+          "file": "ShippingOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShippingOrderTreeView",
+          "file": "ShippingOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShippingOrderSaveData",
+          "file": "ShippingOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShippingOrderDeleteData",
+          "file": "ShippingOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025Q",
+      "name": "BusinessClient",
+      "text": "船务专员",
+      "parentId": "MTD10000025P",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BusinessClientMainView",
+          "file": "BusinessClientMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BusinessClientTreeView",
+          "file": "BusinessClientTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BusinessClientSaveData",
+          "file": "BusinessClientSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BusinessClientDeleteData",
+          "file": "BusinessClientDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

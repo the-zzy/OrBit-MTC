@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVSOT",
+  "name": "TV扫描单号表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV扫描单号表",
+  "metadata": "TVScanDeliveryOrder",
+  "objects": [
+    {
+      "id": "MTD1000000OZ",
+      "name": "TVScanDeliveryOrder",
+      "text": "TV扫描单号表",
+      "parentId": "MTD1000000P5",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVScanDeliveryOrderMainView",
+          "file": "TVScanDeliveryOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVScanDeliveryOrderTreeView",
+          "file": "TVScanDeliveryOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVScanDeliveryOrderSaveData",
+          "file": "TVScanDeliveryOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVScanDeliveryOrderDeleteData",
+          "file": "TVScanDeliveryOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

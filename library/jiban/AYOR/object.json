@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AYOR",
+  "name": "剩余锡膏明细",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "剩余锡膏明细",
+  "metadata": "AccessoryOutStorageReturnDetails",
+  "objects": [
+    {
+      "id": "MTD1000000O9",
+      "name": "AccessoryOutStorageReturnQuery",
+      "text": "剩余锡膏明细",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

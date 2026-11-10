@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SMTS",
+  "name": "SMTCheck",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SMTCheck",
+  "metadata": "SMTCheck",
+  "objects": [
+    {
+      "id": "MTD1000001SV",
+      "name": "SMTCheck",
+      "text": "SMTCheck",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

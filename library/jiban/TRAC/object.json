@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TRAC",
+  "name": "机型推车容纳配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "机型推车容纳配置",
+  "metadata": "TrailerCapacity",
+  "objects": [
+    {
+      "id": "MTD1000002C2",
+      "name": "TrailerCapacity",
+      "text": "机型推车容纳配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TrailerCapacityMainView",
+          "file": "TrailerCapacityMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TrailerCapacityTreeView",
+          "file": "TrailerCapacityTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TrailerCapacitySaveData",
+          "file": "TrailerCapacitySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TrailerCapacityDeleteData",
+          "file": "TrailerCapacityDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

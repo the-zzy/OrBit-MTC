@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DBOJ",
+  "name": "仪表组",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "仪表组",
+  "metadata": "DashBoardGroup",
+  "objects": [
+    {
+      "id": "MTD1000000BB",
+      "name": "DashBoardGroup",
+      "text": "仪表组",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DashBoardGroupMainView",
+          "file": "DashBoardGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DashBoardGroupTreeView",
+          "file": "DashBoardGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DashBoardGroupSaveData",
+          "file": "DashBoardGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DashBoardGroupDeleteData",
+          "file": "DashBoardGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BC",
+      "name": "DashBoardObject",
+      "text": "仪表对象",
+      "parentId": "MTD1000000BB",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DashBoardObjectMainView",
+          "file": "DashBoardObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DashBoardObjectTreeView",
+          "file": "DashBoardObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DashBoardObjectSaveData",
+          "file": "DashBoardObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DashBoardObjectDeleteData",
+          "file": "DashBoardObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BD",
+      "name": "DashBoardField",
+      "text": "仪表参数",
+      "parentId": "MTD1000000BC",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DashBoardFieldMainView",
+          "file": "DashBoardFieldMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DashBoardFieldTreeView",
+          "file": "DashBoardFieldTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DashBoardFieldSaveData",
+          "file": "DashBoardFieldSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DashBoardFieldDeleteData",
+          "file": "DashBoardFieldDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

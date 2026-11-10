@@ -1,0 +1,98 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DOTV",
+  "name": "MES交货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "MES交货单",
+  "metadata": "管理MES交货单，记录交货单编号、客户名称、产品信息、交货数量、交货日期等数据，确保交货单数据的准确性和可追溯性。这有助于提高发货效率，避免因交货信息错误导致的客户投诉和物流配送问题。",
+  "objects": [
+    {
+      "id": "MTD1000000RQ",
+      "name": "MESDeliveryOrder",
+      "text": "MES交货单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MESDeliveryOrderMainView",
+          "file": "MESDeliveryOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MESDeliveryOrderTreeView",
+          "file": "MESDeliveryOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MESDeliveryOrderSaveData",
+          "file": "MESDeliveryOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MESDeliveryOrderDeleteData",
+          "file": "MESDeliveryOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RR",
+      "name": "MESDeliveryOrderItem",
+      "text": "交货单明细",
+      "parentId": "MTD1000000RQ",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryOrderItemMainView",
+          "file": "DeliveryOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MESDeliveryOrderItemTreeView",
+          "file": "MESDeliveryOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MESDeliveryOrderItemSaveData",
+          "file": "MESDeliveryOrderItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RS",
+      "name": "MESDeliveryOrderItemLot",
+      "text": "交货单明细批号",
+      "parentId": "MTD1000000RQ",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderItemLotTreeView",
+          "file": "DeliveryOrderItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

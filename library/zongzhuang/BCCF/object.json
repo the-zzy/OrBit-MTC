@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BCCF",
+  "name": "线外条码生成",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "线外条码生成",
+  "metadata": "BarCodeConfiguration",
+  "objects": [
+    {
+      "id": "MTD1000001Y9",
+      "name": "BarCodeConfiguration",
+      "text": "线外条码生成",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BarCodeConfigurationMainView",
+          "file": "BarCodeConfigurationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BarCodeConfigurationTreeView",
+          "file": "BarCodeConfigurationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BarCodeConfigurationSaveData",
+          "file": "BarCodeConfigurationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BarCodeConfigurationDeleteData",
+          "file": "BarCodeConfigurationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Y8",
+      "name": "BarCodeConfigurationItem",
+      "text": "线外条码生成批号明细",
+      "parentId": "MTD1000001Y9",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BarCodeConfigurationItemMainView",
+          "file": "BarCodeConfigurationItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BarCodeConfigurationItemTreeView",
+          "file": "BarCodeConfigurationItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BarCodeConfigurationItemSaveData",
+          "file": "BarCodeConfigurationItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BarCodeConfigurationItemDeleteData",
+          "file": "BarCodeConfigurationItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

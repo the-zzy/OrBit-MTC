@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ABBD",
+  "name": "附件首件物料绑定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "附件首件物料绑定",
+  "metadata": "管理附件首件物料绑定操作，记录绑定编号、附件信息、物料信息、绑定时间、操作人员等数据，确保附件首件物料绑定的准确性和可追溯性。这有助于优化生产流程，避免因物料绑定错误导致的生产问题和质量风险。",
+  "objects": [
+    {
+      "id": "MTD10000025R",
+      "name": "AttachmentBindHead",
+      "text": "附件首件物料绑定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AttachmentBindHeadMainView",
+          "file": "AttachmentBindHeadMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AttachmentBindHeadTreeView",
+          "file": "AttachmentBindHeadTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AttachmentBindHeadSaveData",
+          "file": "AttachmentBindHeadSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AttachmentBindHeadDeleteData",
+          "file": "AttachmentBindHeadDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024Q",
+      "name": "AttachmentBinding",
+      "text": "附件首件物料绑定",
+      "parentId": "MTD10000025R",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AttachmentBindingMainView",
+          "file": "AttachmentBindingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AttachmentBindingTreeView",
+          "file": "AttachmentBindingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AttachmentBindingSaveData",
+          "file": "AttachmentBindingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AttachmentBindingDeleteData",
+          "file": "AttachmentBindingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

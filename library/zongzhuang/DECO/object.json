@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DECO",
+  "name": "缺陷代码",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "缺陷代码",
+  "metadata": "记录缺陷代码信息，记录代码编号、缺陷类型、缺陷描述、影响分析、应对措施等信息，确保缺陷代码管理的准确性和完整性。这有助于提高产品质量控制水平，及时发现和纠正产品质量问题，提高客户满意度。",
+  "objects": [
+    {
+      "id": "MTD1000000J9",
+      "name": "DefectCode",
+      "text": "缺陷代码",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DefectCodeMainView",
+          "file": "DefectCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DefectCodeTreeView",
+          "file": "DefectCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DefectCodeSaveData",
+          "file": "DefectCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DefectCodeDeleteData",
+          "file": "DefectCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

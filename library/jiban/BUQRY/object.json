@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BUQRY",
+  "name": "烧录首件确认查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "烧录首件确认查询",
+  "metadata": "SMTICBurnComfirmQuery",
+  "objects": [
+    {
+      "id": "MTD1000002C5",
+      "name": "SMTICBurnComfirmQuery",
+      "text": "烧录首件确认查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "UNFM",
+  "name": "UnFinshMo",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "UnFinshMo",
+  "metadata": "UnFinshMo",
+  "objects": [
+    {
+      "id": "MTD1000002E0",
+      "name": "UnFinshMo",
+      "text": "UnFinshMo",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UnFinshMoMainView",
+          "file": "UnFinshMoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "unfinishmoTreeView",
+          "file": "unfinishmoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UnFinshMoSaveData",
+          "file": "UnFinshMoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UnFinshMoDeleteData",
+          "file": "UnFinshMoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

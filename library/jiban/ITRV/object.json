@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ITRV",
+  "name": "设备验收模版",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备验收模版",
+  "metadata": "InspectTemplate",
+  "objects": [
+    {
+      "id": "MTD1000002EK",
+      "name": "InspectTemplate",
+      "text": "设备验收模版",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectTemplateMainView",
+          "file": "InspectTemplateMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectTemplateTreeView",
+          "file": "InspectTemplateTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InspectTemplateSaveData",
+          "file": "InspectTemplateSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InspectTemplateDeleteData",
+          "file": "InspectTemplateDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EL",
+      "name": "InspectTemplateItem",
+      "text": "填写项",
+      "parentId": "MTD1000002EK",
+      "sequence": "01",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectTemplateItemMainView",
+          "file": "InspectTemplateItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectTemplateItemTreeView",
+          "file": "InspectTemplateItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InspectTemplateItemSaveData",
+          "file": "InspectTemplateItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InspectTemplateItemDeleteData",
+          "file": "InspectTemplateItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EM",
+      "name": "InspectTemplateReviewer",
+      "text": "审核主管",
+      "parentId": "MTD1000002EK",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectTemplateReviewerMainView",
+          "file": "InspectTemplateReviewerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectTemplateReviewerTreeView",
+          "file": "InspectTemplateReviewerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InspectTemplateReviewerSaveData",
+          "file": "InspectTemplateReviewerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InspectTemplateReviewerDeleteData",
+          "file": "InspectTemplateReviewerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

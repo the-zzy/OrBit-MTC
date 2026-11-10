@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SZSO",
+  "name": "试制订单",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "试制订单",
+  "metadata": "SZSO",
+  "objects": [
+    {
+      "id": "MTD1000002G6",
+      "name": "ShiZhiMOQuery",
+      "text": "试制订单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

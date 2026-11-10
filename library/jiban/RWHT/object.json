@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RWHT",
+  "name": "仓库报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "仓库报表",
+  "metadata": "ReportWarehouse",
+  "objects": [
+    {
+      "id": "MTD1000000PB",
+      "name": "WarehouseReportQuery",
+      "text": "仓库报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

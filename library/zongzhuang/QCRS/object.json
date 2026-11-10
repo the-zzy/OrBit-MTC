@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QCRS",
+  "name": "QC不良品配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "QC不良品配置",
+  "metadata": "设置QC不良品配置，记录配置编号、不良品类型、检验项目、检验标准、处理措施等信息，确保QC不良品管理的规范性和有效性。这有助于提高产品质量控制水平，及时发现和纠正产品质量问题，提高客户满意度。",
+  "objects": [
+    {
+      "id": "MTD10000028N",
+      "name": "QCRejectsSite",
+      "text": "QC不良品配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QCRejectsSiteMainView",
+          "file": "QCRejectsSiteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QCRejectsSiteTreeView",
+          "file": "QCRejectsSiteTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QCRejectsSiteSaveData",
+          "file": "QCRejectsSiteSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QCRejectsSiteDeleteData",
+          "file": "QCRejectsSiteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028O",
+      "name": "QCRejectsSiteDetail",
+      "text": "不良明细",
+      "parentId": "MTD10000028N",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QCRejectsSiteDetailMainView",
+          "file": "QCRejectsSiteDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QCRejectsSiteDetailTreeView",
+          "file": "QCRejectsSiteDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QCRejectsSiteDetailSaveData",
+          "file": "QCRejectsSiteDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QCRejectsSiteDetailDeleteData",
+          "file": "QCRejectsSiteDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

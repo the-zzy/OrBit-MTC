@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PPCG",
+  "name": "产品面板变更",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品面板变更",
+  "metadata": "ProductPanelChange",
+  "objects": [
+    {
+      "id": "MTD100000224",
+      "name": "ProductPanelChange",
+      "text": "产品面板变更",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductPanelChangeMainView",
+          "file": "ProductPanelChangeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductPanelChangeTreeView",
+          "file": "ProductPanelChangeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductPanelChangeSaveData",
+          "file": "ProductPanelChangeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductPanelChangeDeleteData",
+          "file": "ProductPanelChangeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

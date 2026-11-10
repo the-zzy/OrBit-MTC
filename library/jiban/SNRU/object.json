@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SNRU",
+  "name": "SN 规则",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SN 规则",
+  "metadata": "SNRule",
+  "objects": [
+    {
+      "id": "MTD1000000IM",
+      "name": "SNRule",
+      "text": "SN 规则",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SNRuleMainView",
+          "file": "SNRuleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SNRuleTreeView",
+          "file": "SNRuleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SNRuleSaveData",
+          "file": "SNRuleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SNRuleDeleteData",
+          "file": "SNRuleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000IN",
+      "name": "SNRuleItem",
+      "text": "SN规则明细",
+      "parentId": "MTD1000000IM",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SNRuleItemMainView",
+          "file": "SNRuleItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SNRuleItemTreeView",
+          "file": "SNRuleItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SNRuleItemSaveData",
+          "file": "SNRuleItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SNRuleItemDeleteData",
+          "file": "SNRuleItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

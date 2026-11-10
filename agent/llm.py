@@ -9,7 +9,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 ENV_FILE = ROOT / "secrets" / "llm.env"
-GUIDE_DIR = ROOT / ".AGENTS"
+GUIDE_DIR = ROOT / "super-agent"
 
 
 def load_config() -> dict[str, str]:
@@ -30,7 +30,7 @@ def describe() -> dict[str, str | bool]:
     model = config.get("LLM_MODEL", "")
     ready = bool(config.get("LLM_BASE_URL") and config.get("LLM_API_KEY") and model)
     return {
-        "name": "管家",
+        "name": "super-agent",
         "ready": ready,
         "model": model if ready else "",
         "note": model if ready else "还没接入大模型",

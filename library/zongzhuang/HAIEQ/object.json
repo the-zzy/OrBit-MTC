@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HAIEQ",
+  "name": "海尔出货外箱查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "海尔出货外箱查询",
+  "metadata": "HAIEQ",
+  "objects": [
+    {
+      "id": "MTD1000001PT",
+      "name": "HaierOutBoxQuery",
+      "text": "海尔出货外箱查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

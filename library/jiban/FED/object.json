@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FED",
+  "name": "Feeder管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Feeder管理",
+  "metadata": "ToolManage_Feeder",
+  "objects": [
+    {
+      "id": "MTD1000000KG",
+      "name": "ToolManage_Feeder",
+      "text": "Feeder管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToolManageMainView",
+          "file": "ToolManageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToolManage_FeederTreeView",
+          "file": "ToolManage_FeederTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToolManageSaveData",
+          "file": "ToolManageSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToolManageDeleteData",
+          "file": "ToolManageDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KH",
+      "name": "ToolLendRecord_Feeder",
+      "text": "Feeder借出记录",
+      "parentId": "MTD1000000KG",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToolLendRecordMainView",
+          "file": "ToolLendRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToolLendRecordTreeView",
+          "file": "ToolLendRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToolLendRecordSaveData",
+          "file": "ToolLendRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToolLendRecordDeleteData",
+          "file": "ToolLendRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KI",
+      "name": "ToolMaintainRecord_Feeder",
+      "text": "Feeder维修保养记录",
+      "parentId": "MTD1000000KG",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToolMaintainRecordMainView",
+          "file": "ToolMaintainRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToolMaintainRecordTreeView",
+          "file": "ToolMaintainRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToolMaintainRecordSaveData",
+          "file": "ToolMaintainRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToolMaintainRecordDeleteData",
+          "file": "ToolMaintainRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

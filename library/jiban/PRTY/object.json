@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PRTY",
+  "name": "产品类别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品类别",
+  "metadata": "Product Type",
+  "objects": [
+    {
+      "id": "MTD1000000KC",
+      "name": "ProductType",
+      "text": "产品类别",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductTypeMainView",
+          "file": "ProductTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductTypeTreeView",
+          "file": "ProductTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductTypeSaveData",
+          "file": "ProductTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductTypeDeleteData",
+          "file": "ProductTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VMRQ",
+  "name": "外协查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "外协查询",
+  "metadata": "VMRQ",
+  "objects": [
+    {
+      "id": "MTD10000028M",
+      "name": "VendorMatMoveQuery",
+      "text": "外协查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

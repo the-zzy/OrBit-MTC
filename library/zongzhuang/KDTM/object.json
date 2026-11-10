@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KDTM",
+  "name": "临时物料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "临时物料",
+  "metadata": "KD Temp Material",
+  "objects": [
+    {
+      "id": "MTD1000000PG",
+      "name": "KDTempMaterial",
+      "text": "临时物料",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDMaterialMainView",
+          "file": "KDMaterialMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDMaterialRootTreeView",
+          "file": "KDMaterialRootTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDMaterialSaveData",
+          "file": "KDMaterialSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductDeleteData",
+          "file": "ProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SHPTQ",
+  "name": "仓库货架栈板查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "仓库货架栈板查询",
+  "metadata": "提供仓库货架栈板的查询功能，记录栈板编号、位置、存放物料、库存数量、入库时间等信息，方便仓库管理人员实时掌握栈板使用和物料存储情况，优化仓库布局和库存管理，提高仓库空间利用率和物料出入库效率。",
+  "objects": [
+    {
+      "id": "MTD1000001NS",
+      "name": "ShelfPalletQuery",
+      "text": "仓库货架栈板查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

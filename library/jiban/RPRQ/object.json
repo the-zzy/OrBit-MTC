@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RPRQ",
+  "name": "回流焊参数查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "回流焊参数查询",
+  "metadata": "ReflowProfileRecordQuery",
+  "objects": [
+    {
+      "id": "MTD10000023Y",
+      "name": "ReflowProfileRecordQuery",
+      "text": "回流焊参数查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

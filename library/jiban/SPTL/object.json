@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPTL",
+  "name": "设备备件出库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备备件出库",
+  "metadata": "SparePartsTheLibrary",
+  "objects": [
+    {
+      "id": "MTD1000000GA",
+      "name": "SparePartsTheLibrary",
+      "text": "设备备件出库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SparePartsTheLibraryMainView",
+          "file": "SparePartsTheLibraryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SparePartsTheLibraryTreeView",
+          "file": "SparePartsTheLibraryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SparePartsTheLibrarySaveData",
+          "file": "SparePartsTheLibrarySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SparePartsTheLibraryDeleteData",
+          "file": "SparePartsTheLibraryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GB",
+      "name": "SparePartsTheLibraryDetail",
+      "text": "出库清单",
+      "parentId": "MTD1000000GA",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SparePartsTheLibraryDetailMainView",
+          "file": "SparePartsTheLibraryDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SparePartsTheLibraryDetailTreeView",
+          "file": "SparePartsTheLibraryDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SparePartsTheLibraryDetailSaveData",
+          "file": "SparePartsTheLibraryDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SparePartsTheLibraryDetailDeleteData",
+          "file": "SparePartsTheLibraryDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

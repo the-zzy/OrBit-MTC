@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TMSS",
+  "name": "TMS物流调度单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TMS物流调度单",
+  "metadata": "TMSS",
+  "objects": [
+    {
+      "id": "MTD1000002CJ",
+      "name": "TMSSchedulingOrder",
+      "text": "TMS物流调度单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TMSSchedulingOrderMainView",
+          "file": "TMSSchedulingOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TMSSchedulingOrderTreeView",
+          "file": "TMSSchedulingOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CK",
+      "name": "TMSSchedulingOrderItem",
+      "text": "物流调度单明细",
+      "parentId": "MTD1000002CJ",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TMSSchedulingOrderItemMainView",
+          "file": "TMSSchedulingOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TMSSchedulingOrderItemTreeView",
+          "file": "TMSSchedulingOrderItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

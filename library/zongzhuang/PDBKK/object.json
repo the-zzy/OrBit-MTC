@@ -1,0 +1,168 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PDBKK",
+  "name": "退料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "退料单",
+  "metadata": "ProductBack",
+  "objects": [
+    {
+      "id": "MTD1000000DU",
+      "name": "ProductBack",
+      "text": "退料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductBackMainView",
+          "file": "ProductBackMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductBackTreeView",
+          "file": "ProductBackTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductBackSaveData",
+          "file": "ProductBackSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductBackDeleteData",
+          "file": "ProductBackDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Y1",
+      "name": "ProductBackMOItem",
+      "text": "退料工单明细",
+      "parentId": "MTD1000000DU",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductBackMOItemTreeView",
+          "file": "ProductBackMOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020W",
+      "name": "ProductBackSAPMessage",
+      "text": "SAP返回信息",
+      "parentId": "MTD1000000DU",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductBackSAPMessageMainView",
+          "file": "ProductBackSAPMessageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductBackSAPMessageTreeView",
+          "file": "ProductBackSAPMessageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000DV",
+      "name": "ProductBackItem",
+      "text": "退料单明细",
+      "parentId": "MTD1000000DU",
+      "sequence": "40",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductBackItemTreeView",
+          "file": "ProductBackItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000DW",
+      "name": "ProductBackItemLot",
+      "text": "退料单明细批次",
+      "parentId": "MTD1000000DV",
+      "sequence": "50",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductBackItemLotTreeView",
+          "file": "ProductBackItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Y5",
+      "name": "ProductBackMO",
+      "text": "退料工单",
+      "parentId": "MTD1000000DU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductBackMOMainView",
+          "file": "ProductBackMOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductBackMOTreeView",
+          "file": "ProductBackMOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductBackMOSaveData",
+          "file": "ProductBackMOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductBackMODeleteData",
+          "file": "ProductBackMODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

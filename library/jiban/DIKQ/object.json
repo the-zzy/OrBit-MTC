@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DIKQ",
+  "name": "品质看板数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "品质看板数据查询",
+  "metadata": "DIPInspectionKanBanQuery",
+  "objects": [
+    {
+      "id": "MTD1000002BO",
+      "name": "InspectionKanBanData",
+      "text": "品质看板数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

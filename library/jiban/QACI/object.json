@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QACI",
+  "name": "QACheckItem",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "QACheckItem",
+  "metadata": "QACheckItem",
+  "objects": [
+    {
+      "id": "MTD1000002A4",
+      "name": "QACheckItem",
+      "text": "QACheckItem",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QACheckItemMainView",
+          "file": "QACheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QACheckItemTreeView",
+          "file": "QACheckItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QACheckItemSaveData",
+          "file": "QACheckItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QACheckItemDeleteData",
+          "file": "QACheckItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

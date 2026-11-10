@@ -1,0 +1,53 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MLXXX",
+  "name": "制造损耗",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "制造损耗",
+  "metadata": "ManufactureLoss",
+  "objects": [
+    {
+      "id": "MTD1000001Y6",
+      "name": "ManufactureLoss",
+      "text": "制造损耗",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ManufactureLossTreeView",
+          "file": "ManufactureLossTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Y7",
+      "name": "ManufactureLossItem",
+      "text": "制造损耗明细",
+      "parentId": "MTD1000001Y6",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ManufactureLossItemTreeView",
+          "file": "ManufactureLossItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

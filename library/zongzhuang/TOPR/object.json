@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TOPR",
+  "name": "OQC30PCS检验记录",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "OQC30PCS检验记录",
+  "metadata": "OQC30PCSRecord",
+  "objects": [
+    {
+      "id": "MTD1000002GB",
+      "name": "OQC30PCSRecord",
+      "text": "OQC30PCS检验记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

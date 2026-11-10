@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VNPOR",
+  "name": "VNProductionOrderRunNodeOwnerConfig",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "VNProductionOrderRunNodeOwnerConfig",
+  "metadata": "VNProductionOrderRunNodeOwnerConfig",
+  "objects": [
+    {
+      "id": "MTD1000002GD",
+      "name": "VNProductionOrderRunNodeOwnerConfig",
+      "text": "VNProductionOrderRunNodeOwnerConfig",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VNProductionOrderRunNodeOwnerConfigMainView",
+          "file": "VNProductionOrderRunNodeOwnerConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VNProductionOrderRunNodeOwnerConfigTreeView",
+          "file": "VNProductionOrderRunNodeOwnerConfigTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VNProductionOrderRunNodeOwnerConfigSaveData",
+          "file": "VNProductionOrderRunNodeOwnerConfigSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VNProductionOrderRunNodeOwnerConfigDeleteData",
+          "file": "VNProductionOrderRunNodeOwnerConfigDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

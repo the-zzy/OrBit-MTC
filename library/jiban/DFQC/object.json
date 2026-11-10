@@ -1,0 +1,38 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DFQC",
+  "name": "DIP车间OQA出货检验",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP车间OQA出货检验",
+  "metadata": "DFQC",
+  "objects": [
+    {
+      "id": "MTD10000022R",
+      "name": "DIPFGLotQCConfirm",
+      "text": "DIP车间OQA出货检验",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPFGLotQCConfirmMainView",
+          "file": "DIPFGLotQCConfirmMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPFGLotQCConfirmTreeView",
+          "file": "DIPFGLotQCConfirmTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

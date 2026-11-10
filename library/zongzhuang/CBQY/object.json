@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CBQY",
+  "name": "收集条码查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "收集条码查询",
+  "metadata": "CollectBarcodeQuery",
+  "objects": [
+    {
+      "id": "MTD10000023E",
+      "name": "CollectBarcodeQuery",
+      "text": "收集条码查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

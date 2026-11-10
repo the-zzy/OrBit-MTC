@@ -1,0 +1,138 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "XSMM",
+  "name": "财务对账(小米)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "财务对账(小米)",
+  "metadata": "XSMM",
+  "objects": [
+    {
+      "id": "MTD10000023R",
+      "name": "XM107",
+      "text": "财务对账(小米)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XM107_MainView",
+          "file": "XM107_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XM107_TreeView",
+          "file": "XM107_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023S",
+      "name": "XM107_CGRK",
+      "text": "入库明细",
+      "parentId": "MTD10000023R",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "XM107_CGRK_TreeView",
+          "file": "XM107_CGRK_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023T",
+      "name": "XM107_DBCRK",
+      "text": "工厂间调拨",
+      "parentId": "MTD10000023R",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "XM107_DBCRK_TreeView",
+          "file": "XM107_DBCRK_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023U",
+      "name": "XM107_SHDCR",
+      "text": "售后调拨",
+      "parentId": "MTD10000023R",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "XM107_SHDCR_TreeView",
+          "file": "XM107_SHDCR_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023V",
+      "name": "XM107_SCBG",
+      "text": "生产报工",
+      "parentId": "MTD10000023R",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "XM107_SCBG_TreeView",
+          "file": "XM107_SCBG_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023W",
+      "name": "XM107_WWFH",
+      "text": "委外订单发货",
+      "parentId": "MTD10000023R",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "XM107_WWFH_TreeView",
+          "file": "XM107_WWFH_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

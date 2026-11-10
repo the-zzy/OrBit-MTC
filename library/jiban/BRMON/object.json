@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BRMON",
+  "name": "通用烧录信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "通用烧录信息",
+  "metadata": "BRMON",
+  "objects": [
+    {
+      "id": "MTD1000002CV",
+      "name": "BurnMOCommon",
+      "text": "通用烧录信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnMOCommonMainView",
+          "file": "BurnMOCommonMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnMOCommonTreeView",
+          "file": "BurnMOCommonTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BurnMOCommonSaveData",
+          "file": "BurnMOCommonSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BurnMOCommonDeleteData",
+          "file": "BurnMOCommonDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

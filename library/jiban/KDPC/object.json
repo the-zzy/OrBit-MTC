@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KDPC",
+  "name": "散件工序",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件工序",
+  "metadata": "KD Process Setting",
+  "objects": [
+    {
+      "id": "MTD1000000NO",
+      "name": "KDProcessSetting",
+      "text": "散件工序",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDProcessSettingMainView",
+          "file": "KDProcessSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDProcessSettingTreeView",
+          "file": "KDProcessSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDProcessSettingSaveData",
+          "file": "KDProcessSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDProcessSettingDeleteData",
+          "file": "KDProcessSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NP",
+      "name": "KDProcess_User",
+      "text": "散件工序用户",
+      "parentId": "MTD1000000NO",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDProcess_UserMainView",
+          "file": "KDProcess_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDProcess_UserTreeView",
+          "file": "KDProcess_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDProcess_UserSaveData",
+          "file": "KDProcess_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDProcess_UserDeleteData",
+          "file": "KDProcess_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

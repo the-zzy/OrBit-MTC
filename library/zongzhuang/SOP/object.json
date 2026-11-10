@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SOP",
+  "name": "操作手册",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "操作手册",
+  "metadata": "SOP",
+  "objects": [
+    {
+      "id": "MTD10000008E",
+      "name": "SOP",
+      "text": "操作手册",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOPMainView",
+          "file": "SOPMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOPRootTreeView",
+          "file": "SOPRootTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOPSaveData",
+          "file": "SOPSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOPDeleteData",
+          "file": "SOPDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

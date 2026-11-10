@@ -1,0 +1,38 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VMPC1",
+  "name": "VendorMatMovePMCCheck",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "VendorMatMovePMCCheck",
+  "metadata": "VendorMatMovePMCCheck",
+  "objects": [
+    {
+      "id": "MTD1000002GV",
+      "name": "VendorMatMovePMCCheck",
+      "text": "VendorMatMovePMCCheck",
+      "parentId": "MTD1000002CR",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMatMovePMCCheckMainView",
+          "file": "VendorMatMovePMCCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorMatMovePMCCheckTreeView",
+          "file": "VendorMatMovePMCCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

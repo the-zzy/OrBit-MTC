@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AOIQ",
+  "name": "AOI数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "AOI数据查询",
+  "metadata": "AOIQ",
+  "objects": [
+    {
+      "id": "MTD1000001NK",
+      "name": "AOIDataQuery",
+      "text": "AOI数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

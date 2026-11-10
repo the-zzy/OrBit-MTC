@@ -1,0 +1,63 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PCBL",
+  "name": "PCB坐标信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "PCB坐标信息",
+  "metadata": "PCBL",
+  "objects": [
+    {
+      "id": "MTD100000290",
+      "name": "PCBLocation",
+      "text": "PCB坐标信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PCBLocationMainView",
+          "file": "PCBLocationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PCBLocationTreeView",
+          "file": "PCBLocationTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000291",
+      "name": "PCBLocationItem",
+      "text": "PCB坐标明细",
+      "parentId": "MTD100000290",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PCBLocationItemMainView",
+          "file": "PCBLocationItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PCBLocationItemTreeView",
+          "file": "PCBLocationItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

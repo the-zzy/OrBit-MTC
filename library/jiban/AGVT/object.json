@@ -1,0 +1,193 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AGVT",
+  "name": "AGV任务",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AGV任务",
+  "metadata": "AGVT",
+  "objects": [
+    {
+      "id": "MTD100000272",
+      "name": "AGVTaskInstruct",
+      "text": "AGV任务",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVTaskInstructMainView",
+          "file": "AGVTaskInstructMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVTaskInstructTreeView",
+          "file": "AGVTaskInstructTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AGVTaskInstructSaveData",
+          "file": "AGVTaskInstructSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AGVTaskInstructDeleteData",
+          "file": "AGVTaskInstructDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000271",
+      "name": "AGVTaskInstructItem",
+      "text": "AGV任务内容",
+      "parentId": "MTD100000272",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVTaskInstructItemMainView",
+          "file": "AGVTaskInstructItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVTaskInstructItemTreeView",
+          "file": "AGVTaskInstructItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027I",
+      "name": "AGVErrorFlowDetail",
+      "text": "AGV待处理异常",
+      "parentId": "MTD100000272",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVErrorFlowDetailMainView",
+          "file": "AGVErrorFlowDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVErrorFlowDetailTreeView",
+          "file": "AGVErrorFlowDetailTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026S",
+      "name": "AGVErrorFlow",
+      "text": "AGV执行日志",
+      "parentId": "MTD100000272",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVErrorFlowMainView",
+          "file": "AGVErrorFlowMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVErrorFlowTreeView",
+          "file": "AGVErrorFlowTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026G",
+      "name": "AGVCallRoute",
+      "text": "AGV轨道",
+      "parentId": "MTD100000272",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVCallRouteMainView",
+          "file": "AGVCallRouteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVCallRouteTreeView",
+          "file": "AGVCallRouteTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AGVCallRouteSaveData",
+          "file": "AGVCallRouteSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AGVCallRouteDeleteData",
+          "file": "AGVCallRouteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000274",
+      "name": "AGVCAR",
+      "text": "AGV车号",
+      "parentId": "MTD100000272",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AGVCARMainView",
+          "file": "AGVCARMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AGVCARTreeView",
+          "file": "AGVCARTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AGVCARSaveData",
+          "file": "AGVCARSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AGVCARDeleteData",
+          "file": "AGVCARDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

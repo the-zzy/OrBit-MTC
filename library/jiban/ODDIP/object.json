@@ -1,0 +1,218 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ODDIP",
+  "name": "订单设置(DIP)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单设置(DIP)",
+  "metadata": "OrderFieldSettingDIP",
+  "objects": [
+    {
+      "id": "MTD1000001PU",
+      "name": "OrderFieldSettingDIP",
+      "text": "订单设置(DIP)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingDIPMainView",
+          "file": "OrderFieldSettingDIPMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingDIPTreeView",
+          "file": "OrderFieldSettingDIPTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldSettingDIPSaveData",
+          "file": "OrderFieldSettingDIPSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldSettingDIPDeleteData",
+          "file": "OrderFieldSettingDIPDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PZ",
+      "name": "OrderFieldSettingItemDIP",
+      "text": "订单预置项设置",
+      "parentId": "MTD1000001PU",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPOrderFieldSettingItemMainView",
+          "file": "DIPOrderFieldSettingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPOrderFieldSettingItemTreeView",
+          "file": "DIPOrderFieldSettingItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPOrderFieldSettingItemSaveData",
+          "file": "DIPOrderFieldSettingItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPOrderFieldSettingItemDeleteData",
+          "file": "DIPOrderFieldSettingItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001Q0",
+      "name": "OrderSetItemDIP",
+      "text": "订单预置数据",
+      "parentId": "MTD1000001PU",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPOrderSetItemMainView",
+          "file": "DIPOrderSetItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPOrderSetItemTreeView",
+          "file": "DIPOrderSetItemTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPOrderSetItemDeleteData",
+          "file": "DIPOrderSetItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001R9",
+      "name": "TestXml",
+      "text": "提交数据",
+      "parentId": "MTD1000001PU",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TestXmlMainView",
+          "file": "TestXmlMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TestXmlTreeView",
+          "file": "TestXmlTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TestXmlSaveData",
+          "file": "TestXmlSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TestXmlDeleteData",
+          "file": "TestXmlDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001S0",
+      "name": "MacInfo",
+      "text": "DIP MAC地址池",
+      "parentId": "MTD1000001PU",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MacInfoMainView",
+          "file": "MacInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MacInfoTreeView",
+          "file": "MacInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MacInfoSaveData",
+          "file": "MacInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MacInfoDeleteData",
+          "file": "MacInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026P",
+      "name": "OrderFunTestMethod",
+      "text": "测试工具定义",
+      "parentId": "MTD1000001PU",
+      "sequence": "8",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFunTestMethodMainView",
+          "file": "OrderFunTestMethodMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFunTestMethodTreeView",
+          "file": "OrderFunTestMethodTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFunTestMethodSaveData",
+          "file": "OrderFunTestMethodSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFunTestMethodDeleteData",
+          "file": "OrderFunTestMethodDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

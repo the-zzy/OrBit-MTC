@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WKFA",
+  "name": "工作流(AV)",
+  "application": "MES",
+  "kind": "工作流对象",
+  "pluginName": "工作流(AV)",
+  "metadata": "Workflow(AV)",
+  "objects": [
+    {
+      "id": "MTD10000009P",
+      "name": "Workflow",
+      "text": "工作流(AV)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkflowMainView",
+          "file": "WorkflowMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkflowRootTreeView",
+          "file": "WorkflowRootTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkflowSaveData",
+          "file": "WorkflowSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkflowDeleteData",
+          "file": "WorkflowDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

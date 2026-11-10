@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ERRQ",
+  "name": "EMR 修理数据",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "EMR 修理数据",
+  "metadata": "ERRQ",
+  "objects": [
+    {
+      "id": "MTD1000001QO",
+      "name": "EMRRepaireQuery",
+      "text": "EMR 修理数据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

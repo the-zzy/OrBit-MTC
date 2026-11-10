@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ATP3",
+  "name": "DIP效率查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "DIP效率查询",
+  "metadata": "AOITOP3Query",
+  "objects": [
+    {
+      "id": "MTD100000246",
+      "name": "AOITOP3Query",
+      "text": "DIP效率查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

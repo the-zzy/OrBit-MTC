@@ -1,0 +1,68 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SSDL",
+  "name": "出货排期",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "出货排期",
+  "metadata": "SSDL",
+  "objects": [
+    {
+      "id": "MTD100000201",
+      "name": "ShipmentScheduling",
+      "text": "出货排期",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShipmentSchedulingMainView",
+          "file": "ShipmentSchedulingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShipmentSchedulingTreeView",
+          "file": "ShipmentSchedulingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShipmentSchedulingSaveData",
+          "file": "ShipmentSchedulingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShipmentSchedulingDeleteData",
+          "file": "ShipmentSchedulingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000206",
+      "name": "ShipmentSchedulingItemSTD",
+      "text": "车辆明细",
+      "parentId": "MTD100000201",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ShipmentSchedulingItemSTDTreeView",
+          "file": "ShipmentSchedulingItemSTDTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

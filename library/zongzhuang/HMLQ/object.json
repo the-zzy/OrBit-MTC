@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HMLQ",
+  "name": "历史库数据移动日志",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "历史库数据移动日志",
+  "metadata": "HistoryRecordMoveLogQuery",
+  "objects": [
+    {
+      "id": "MTD1000001QI",
+      "name": "HistoryRecordMoveLogQuery",
+      "text": "历史库数据移动日志",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

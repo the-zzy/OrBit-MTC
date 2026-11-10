@@ -1,0 +1,452 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BOM",
+  "name": "产品结构",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品结构",
+  "metadata": "BOM",
+  "pulled": {
+    "table": "2026-11-07T17:52:03+08:00",
+    "meta": "2026-11-09T09:54:19+08:00"
+  },
+  "objects": [
+    {
+      "id": "MTD10000008U",
+      "name": "BOM",
+      "text": "产品结构",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "BOM",
+        "columns": [
+          {
+            "name": "BOMId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "BOMRootId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BOMRevision",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BOMDescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FactoryId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsActivity",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsDefaultBOM",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DataStatus",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ERPDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMMainView",
+          "file": "BOMMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMRootTreeView",
+          "file": "BOMRootTreeView.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:19+08:00",
+        "MainView": "2026-11-09T09:54:19+08:00",
+        "TreeView": "2026-11-09T09:54:19+08:00"
+      }
+    },
+    {
+      "id": "MTD10000008V",
+      "name": "BOMItem",
+      "text": "BOM项目",
+      "parentId": "MTD10000008U",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "BOMItem",
+        "columns": [
+          {
+            "name": "BOMItemId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "BOMId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ItemSequence",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "QtyRequired",
+            "type": "decimal(18,4)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "QtyPack",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SingleWeight",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SpecificationId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ReplaceGroup",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ReplaceChar",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsAllowReplace",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsMESTxn",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsExpandItem",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModuleName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "EnglishDescription",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FieldsA",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FieldsB",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsIgnore",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "KDProcess",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LTEXT",
+            "type": "nvarchar(3000)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMItemMainView",
+          "file": "BOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMItemTreeView",
+          "file": "BOMItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BOMItemSaveData",
+          "file": "BOMItemSaveData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:19+08:00",
+        "MainView": "2026-11-09T09:54:20+08:00",
+        "TreeView": "2026-11-09T09:54:20+08:00",
+        "SaveData": "2026-11-09T09:54:20+08:00"
+      }
+    },
+    {
+      "id": "MTD1000002BM",
+      "name": "BOMBindRalation",
+      "text": "物料绑定关系",
+      "parentId": "MTD10000008V",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "BOMBindRalation",
+        "columns": [
+          {
+            "name": "BOMBindRalationId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "BOMItemId",
+            "type": "char(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BindType",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMBindRalationMainView",
+          "file": "BOMBindRalationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMBindRalationTreeView",
+          "file": "BOMBindRalationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BOMBindRalationSaveData",
+          "file": "BOMBindRalationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BOMBindRalationDeleteData",
+          "file": "BOMBindRalationDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:20+08:00",
+        "MainView": "2026-11-09T09:54:20+08:00",
+        "TreeView": "2026-11-09T09:54:20+08:00",
+        "SaveData": "2026-11-09T09:54:20+08:00",
+        "DeleteView": "2026-11-09T09:54:20+08:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QUDC",
+  "name": "问题反馈",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "问题反馈",
+  "metadata": "Trouble shooting",
+  "objects": [
+    {
+      "id": "MTD1000000ED",
+      "name": "QuestionDC",
+      "text": "问题反馈",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QuestionDCMainView",
+          "file": "QuestionDCMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QuestionDCTreeView",
+          "file": "QuestionDCTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QuestionDCSaveData",
+          "file": "QuestionDCSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QuestionDCDeleteData",
+          "file": "QuestionDCDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

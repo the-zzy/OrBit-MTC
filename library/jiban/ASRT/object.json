@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ASRT",
+  "name": "设备资产登记卡",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备资产登记卡",
+  "metadata": "AssetRegister",
+  "objects": [
+    {
+      "id": "MTD1000000I1",
+      "name": "AssetRegister",
+      "text": "设备资产登记卡",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetRegisterMainView",
+          "file": "AssetRegisterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetRegisterTreeView",
+          "file": "AssetRegisterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetRegisterSaveData",
+          "file": "AssetRegisterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetRegisterDeleteData",
+          "file": "AssetRegisterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

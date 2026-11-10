@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WKFL",
+  "name": "楼层",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "楼层",
+  "metadata": "WKFL",
+  "objects": [
+    {
+      "id": "MTD1000002AP",
+      "name": "WorkFloor",
+      "text": "楼层",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkFloorMainView",
+          "file": "WorkFloorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkFloorTreeView",
+          "file": "WorkFloorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkFloorSaveData",
+          "file": "WorkFloorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkFloorDeleteData",
+          "file": "WorkFloorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

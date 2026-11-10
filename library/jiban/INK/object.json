@@ -1,0 +1,78 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "INK",
+  "name": "返工出库记录表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "返工出库记录表",
+  "metadata": "InventoryRework",
+  "objects": [
+    {
+      "id": "MTD1000000RV",
+      "name": "InventoryRework",
+      "text": "返工出库记录表",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InventoryReworkMainView",
+          "file": "InventoryReworkMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InventoryReworkTreeView",
+          "file": "InventoryReworkTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InventoryReworkDeleteData",
+          "file": "InventoryReworkDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RW",
+      "name": "InventoryReworkItem",
+      "text": "返工出库明细",
+      "parentId": "MTD1000000RV",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InventoryReworkItemMainView",
+          "file": "InventoryReworkItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InventoryReworkItemTreeView",
+          "file": "InventoryReworkItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InventoryReworkItemSaveData",
+          "file": "InventoryReworkItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InventoryReworkItemDeleteData",
+          "file": "InventoryReworkItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

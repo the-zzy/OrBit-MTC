@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TERU",
+  "name": "测试规则",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "测试规则",
+  "metadata": "TestRule",
+  "objects": [
+    {
+      "id": "MTD1000000J2",
+      "name": "TestRule",
+      "text": "测试规则",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TestRuleMainView",
+          "file": "TestRuleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TestRuleTreeView",
+          "file": "TestRuleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TestRuleSaveData",
+          "file": "TestRuleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TestRuleDeleteData",
+          "file": "TestRuleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

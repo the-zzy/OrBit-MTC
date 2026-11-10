@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PMSQ",
+  "name": "SMT领料点收查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SMT领料点收查询",
+  "metadata": "PMSQ",
+  "objects": [
+    {
+      "id": "MTD1000001OV",
+      "name": "SMTMatRecQuery",
+      "text": "SMT领料点收查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QUER",
+  "name": "查询示例",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "查询示例",
+  "metadata": "Query Sample",
+  "objects": [
+    {
+      "id": "MTD10000008Z",
+      "name": "_MyQuery",
+      "text": "查询示例",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

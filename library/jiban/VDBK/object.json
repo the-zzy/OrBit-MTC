@@ -1,0 +1,123 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDBK",
+  "name": "退货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "退货单",
+  "metadata": "VendorDeliveryBack",
+  "objects": [
+    {
+      "id": "MTD1000000KE",
+      "name": "VendorDeliveryBack",
+      "text": "退货单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryBackMainView",
+          "file": "VendorDeliveryBackMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryBackTreeView",
+          "file": "VendorDeliveryBackTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorDeliveryBackSaveData",
+          "file": "VendorDeliveryBackSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorDeliveryBackDeleteData",
+          "file": "VendorDeliveryBackDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZJ",
+      "name": "VendorDeliveryBackPO",
+      "text": "退货订单",
+      "parentId": "MTD1000000KE",
+      "sequence": "01",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryBackPOMainView",
+          "file": "VendorDeliveryBackPOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryBackPOTreeView",
+          "file": "VendorDeliveryBackPOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorDeliveryBackPOSaveData",
+          "file": "VendorDeliveryBackPOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorDeliveryBackPODeleteData",
+          "file": "VendorDeliveryBackPODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KF",
+      "name": "VendorDeliveryBackItem",
+      "text": "退货单明细",
+      "parentId": "MTD1000000KE",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryBackItemTreeView",
+          "file": "VendorDeliveryBackItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZI",
+      "name": "VendorDeliveryBackItemLot",
+      "text": "退货单明细批次",
+      "parentId": "MTD1000000KF",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryBackItemLotTreeView",
+          "file": "VendorDeliveryBackItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

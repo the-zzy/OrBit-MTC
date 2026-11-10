@@ -1,0 +1,113 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ARCO",
+  "name": "区域码管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "区域码管理",
+  "metadata": "AreaCode",
+  "objects": [
+    {
+      "id": "MTD10000023C",
+      "name": "AreaCode",
+      "text": "区域码管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AreaCodeMainView",
+          "file": "AreaCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AreaCodeTreeView",
+          "file": "AreaCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AreaCodeSaveData",
+          "file": "AreaCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AreaCodeDeleteData",
+          "file": "AreaCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GO",
+      "name": "AreaShelf",
+      "text": "区域货架",
+      "parentId": "MTD10000023C",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AreaShelfMainView",
+          "file": "AreaShelfMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AreaShelfTreeView",
+          "file": "AreaShelfTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AreaShelfSaveData",
+          "file": "AreaShelfSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AreaShelfDeleteData",
+          "file": "AreaShelfDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GP",
+      "name": "AreaShelfPallet",
+      "text": "货架栈板",
+      "parentId": "MTD1000002GO",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AreaShelfPalletMainView",
+          "file": "AreaShelfPalletMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AreaShelfPalletTreeView",
+          "file": "AreaShelfPalletTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AreaShelfPalletDeleteData",
+          "file": "AreaShelfPalletDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

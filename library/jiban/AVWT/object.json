@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AVWT",
+  "name": "AV总装生产工时",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AV总装生产工时",
+  "metadata": "WorkcenterStatusAV",
+  "objects": [
+    {
+      "id": "MTD1000000OX",
+      "name": "WorkcenterStatus_AV",
+      "text": "AV总装生产工时",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkcenterStatus_AVMainView",
+          "file": "WorkcenterStatus_AVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkcenterStatus_AVTreeView",
+          "file": "WorkcenterStatus_AVTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OY",
+      "name": "WorkcenterStatusAV",
+      "text": "AV产线生产工时录入",
+      "parentId": "MTD1000000OX",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkcenterStatusAVMainView",
+          "file": "WorkcenterStatusAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkcenterStatusAVTreeView",
+          "file": "WorkcenterStatusAVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkcenterStatusAVSaveData",
+          "file": "WorkcenterStatusAVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkcenterStatusDeleteData",
+          "file": "WorkcenterStatusDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

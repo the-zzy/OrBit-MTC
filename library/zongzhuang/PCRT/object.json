@@ -1,0 +1,73 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PCRT",
+  "name": "工艺路线",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工艺路线",
+  "metadata": "PCRT",
+  "objects": [
+    {
+      "id": "MTD1000001TP",
+      "name": "ProcessRoute",
+      "text": "工艺路线",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProcessRouteMainView",
+          "file": "ProcessRouteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProcessRouteTreeView",
+          "file": "ProcessRouteTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProcessRouteSaveData",
+          "file": "ProcessRouteSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProcessRouteDeleteData",
+          "file": "ProcessRouteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TQ",
+      "name": "ProcessRouteItem",
+      "text": "工艺流程清单",
+      "parentId": "MTD1000001TP",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProcessRouteItemMainView",
+          "file": "ProcessRouteItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProcessRouteItemTreeView",
+          "file": "ProcessRouteItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

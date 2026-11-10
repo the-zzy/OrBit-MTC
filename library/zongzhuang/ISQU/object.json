@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ISQU",
+  "name": "物料追溯查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "物料追溯查询",
+  "metadata": "查询物料追溯信息，记录物料在生产过程中的使用情况，包括物料编号、使用时间、使用数量、使用工单、产品流向等，实现物料的全程追溯。这有助于企业在出现质量问题时快速定位问题根源，采取有效的召回和纠正措施，保障产品质量和企业信誉。",
+  "objects": [
+    {
+      "id": "MTD1000000KT",
+      "name": "AssyIssueQuery",
+      "text": "物料追溯查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

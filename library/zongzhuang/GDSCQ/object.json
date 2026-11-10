@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "GDSCQ",
+  "name": "获取扫描查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "获取扫描查询",
+  "metadata": "GDSCQ",
+  "objects": [
+    {
+      "id": "MTD1000002CO",
+      "name": "GoodsScanQuery",
+      "text": "获取扫描查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

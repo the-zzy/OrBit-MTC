@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MSPR",
+  "name": "MaterialStoragePeriodRules",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "MaterialStoragePeriodRules",
+  "metadata": "MaterialStoragePeriodRules",
+  "objects": [
+    {
+      "id": "MTD1000002D4",
+      "name": "MaterialStoragePeriodRules",
+      "text": "MaterialStoragePeriodRules",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialStoragePeriodRulesMainView",
+          "file": "MaterialStoragePeriodRulesMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialStoragePeriodRulesTreeView",
+          "file": "MaterialStoragePeriodRulesTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialStoragePeriodRulesSaveData",
+          "file": "MaterialStoragePeriodRulesSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialStoragePeriodRulesDeleteData",
+          "file": "MaterialStoragePeriodRulesDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

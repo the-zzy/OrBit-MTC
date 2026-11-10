@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BMPLT",
+  "name": "巴西材料领料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "巴西材料领料单",
+  "metadata": "BrazilMatPickingList",
+  "objects": [
+    {
+      "id": "MTD1000001TR",
+      "name": "BrazilMatPickingList",
+      "text": "巴西材料领料单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListMainView",
+          "file": "BrazilMatPickingListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BrazilMatPickingListTreeView",
+          "file": "BrazilMatPickingListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TS",
+      "name": "BrazilMatPickingListItem",
+      "text": "工单领料明细",
+      "parentId": "MTD1000001TR",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListItemMainView",
+          "file": "BrazilMatPickingListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BrazilMatPickingListItemTreeView",
+          "file": "BrazilMatPickingListItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001TT",
+      "name": "BrazilMatPickingListItemLot",
+      "text": "单物料领料明细",
+      "parentId": "MTD1000001TS",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListItemLotMainView",
+          "file": "BrazilMatPickingListItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BrazilMatPickingListItemLotTreeView",
+          "file": "BrazilMatPickingListItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

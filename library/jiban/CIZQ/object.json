@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CIZQ",
+  "name": "整机维修查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "整机维修查询",
+  "metadata": "CIZQ",
+  "objects": [
+    {
+      "id": "MTD1000000TK",
+      "name": "CommodityInspectionQuery",
+      "text": "整机维修查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

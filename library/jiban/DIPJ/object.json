@@ -1,0 +1,138 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DIPJ",
+  "name": "Excel数据导入项目",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Excel数据导入项目",
+  "metadata": "DataImportProject",
+  "objects": [
+    {
+      "id": "MTD100000250",
+      "name": "DataImportProject",
+      "text": "Excel数据导入项目",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataImportProjectMainView",
+          "file": "DataImportProjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectTreeView",
+          "file": "DataImportProjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataImportProjectSaveData",
+          "file": "DataImportProjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataImportProjectDeleteData",
+          "file": "DataImportProjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000252",
+      "name": "DataImportProjectCheck",
+      "text": "Excel数据导入项目数据校验",
+      "parentId": "MTD100000250",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataImportProjectCheckMainView",
+          "file": "DataImportProjectCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectCheckTreeView",
+          "file": "DataImportProjectCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataImportProjectCheckSaveData",
+          "file": "DataImportProjectCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataImportProjectCheckDeleteData",
+          "file": "DataImportProjectCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000253",
+      "name": "DataImportProjectUser",
+      "text": "Excel数据导入项目用户",
+      "parentId": "MTD100000250",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataImportProjectUserMainView",
+          "file": "DataImportProjectUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectUserTreeView",
+          "file": "DataImportProjectUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataImportProjectUserSaveData",
+          "file": "DataImportProjectUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataImportProjectUserDeleteData",
+          "file": "DataImportProjectUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000251",
+      "name": "DataImportProjectExelog",
+      "text": "Excel数据导入项目日志",
+      "parentId": "MTD100000250",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectExelogTreeView",
+          "file": "DataImportProjectExelogTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

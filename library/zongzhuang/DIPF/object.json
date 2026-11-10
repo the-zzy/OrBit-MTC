@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DIPF",
+  "name": "DIP入库记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP入库记录",
+  "metadata": "查询DIP入库记录，记录入库编号、产品型号、数量、入库日期、供应商等信息，确保DIP产品入库数据的准确性和可追溯性。这有助于及时更新库存数据，优化库存管理，保障生产所需的DIP产品按时、按质、按量供应。",
+  "objects": [
+    {
+      "id": "MTD1000001R5",
+      "name": "DIPFGLot",
+      "text": "DIP入库记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPFGLotMainView",
+          "file": "DIPFGLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPFGLotTreeView",
+          "file": "DIPFGLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPFGLotSaveData",
+          "file": "DIPFGLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPFGLotDeleteData",
+          "file": "DIPFGLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

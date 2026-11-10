@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PEIN",
+  "name": "人员",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "人员",
+  "metadata": "PersonInfo",
+  "objects": [
+    {
+      "id": "MTD1000000IL",
+      "name": "PersonInfo",
+      "text": "人员",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PersonInfoMainView",
+          "file": "PersonInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PersonInfoTreeView",
+          "file": "PersonInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PersonInfoSaveData",
+          "file": "PersonInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PersonInfoDeleteData",
+          "file": "PersonInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002FZ",
+      "name": "PersonLgort",
+      "text": "人员仓位",
+      "parentId": "MTD1000000IL",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PersonLgortMainView",
+          "file": "PersonLgortMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PersonLgortTreeView",
+          "file": "PersonLgortTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PersonLgortSaveData",
+          "file": "PersonLgortSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PersonLgortDeleteData",
+          "file": "PersonLgortDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

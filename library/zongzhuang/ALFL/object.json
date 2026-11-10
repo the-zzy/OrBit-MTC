@@ -1,0 +1,253 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ALFL",
+  "name": "辅料备料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "辅料备料",
+  "metadata": "查询辅料备料信息，记录备料编号、生产订单、物料信息、备料数量、备料日期、状态等数据，确保辅料备料过程的规范性和可追溯性。这有助于优化物料管理流程，避免因备料错误导致的生产延误和物料浪费，提高生产效率。",
+  "objects": [
+    {
+      "id": "MTD10000024Y",
+      "name": "AccessoryIssue",
+      "text": "辅料备料",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessoryIssueMainView",
+          "file": "AccessoryIssueMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessoryIssueTreeView",
+          "file": "AccessoryIssueTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessoryIssueSaveData",
+          "file": "AccessoryIssueSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessoryIssueDeleteData",
+          "file": "AccessoryIssueDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025D",
+      "name": "FuLiaoMatPickingList",
+      "text": "辅料领料单",
+      "parentId": "MTD10000024Y",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListMainView",
+          "file": "BrazilMatPickingListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FuLiaoMatPickingListTreeView",
+          "file": "FuLiaoMatPickingListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025E",
+      "name": "FuLiaoMatPickingListItem",
+      "text": "辅料领料明细",
+      "parentId": "MTD10000025D",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListItemMainView",
+          "file": "BrazilMatPickingListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BrazilMatPickingListItemTreeView",
+          "file": "BrazilMatPickingListItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025H",
+      "name": "FuLiaoMatPickingListItemLot",
+      "text": "辅料领料明细",
+      "parentId": "MTD10000025E",
+      "sequence": "3",
+      "depth": 4,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BrazilMatPickingListItemLotMainView",
+          "file": "BrazilMatPickingListItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BrazilMatPickingListItemLotTreeView",
+          "file": "BrazilMatPickingListItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027A",
+      "name": "WW_DepositFuli",
+      "text": "寄存仓",
+      "parentId": "MTD10000025D",
+      "sequence": "8",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_DepositMainView",
+          "file": "WW_DepositMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_DepositTreeView",
+          "file": "WW_DepositTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024Z",
+      "name": "AccessoryIssueItem",
+      "text": "辅料发料明细",
+      "parentId": "MTD10000024Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessoryIssueItemMainView",
+          "file": "AccessoryIssueItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessoryIssueItemTreeView",
+          "file": "AccessoryIssueItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessoryIssueItemSaveData",
+          "file": "AccessoryIssueItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessoryIssueItemDeleteData",
+          "file": "AccessoryIssueItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000250",
+      "name": "AccessoryIssueItemLot",
+      "text": "辅料发料批号明细",
+      "parentId": "MTD10000024Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessoryIssueItemLotMainView",
+          "file": "AccessoryIssueItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessoryIssueItemLotTreeView",
+          "file": "AccessoryIssueItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessoryIssueItemLotSaveData",
+          "file": "AccessoryIssueItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessoryIssueItemLotDeleteData",
+          "file": "AccessoryIssueItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000251",
+      "name": "WW_Deposit",
+      "text": "寄存仓",
+      "parentId": "MTD10000024Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_DepositMainView",
+          "file": "WW_DepositMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_DepositTreeView",
+          "file": "WW_DepositTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WW_DepositSaveData",
+          "file": "WW_DepositSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WW_DepositDeleteData",
+          "file": "WW_DepositDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

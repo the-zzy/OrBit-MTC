@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OTCY",
+  "name": "开发过程事务",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "开发过程事务",
+  "metadata": "Procedure Develop",
+  "objects": [
+    {
+      "id": "MTD1000000OJ",
+      "name": "ObjectCategory",
+      "text": "开发过程事务",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ObjectCategoryMainView",
+          "file": "ObjectCategoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ObjectCategoryTreeView",
+          "file": "ObjectCategoryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ObjectCategorySaveData",
+          "file": "ObjectCategorySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ObjectCategoryDeleteData",
+          "file": "ObjectCategoryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OL",
+      "name": "ObjectCategoryItem",
+      "text": "事务对象明细",
+      "parentId": "MTD1000000OJ",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ObjectCategoryItemMainView",
+          "file": "ObjectCategoryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ObjectCategoryItemTreeView",
+          "file": "ObjectCategoryItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ObjectCategoryItemSaveData",
+          "file": "ObjectCategoryItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ObjectCategoryItemDeleteData",
+          "file": "ObjectCategoryItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

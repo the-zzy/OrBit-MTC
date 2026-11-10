@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FOSM",
+  "name": "FOS订单管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "FOS订单管理",
+  "metadata": "FOSM",
+  "objects": [
+    {
+      "id": "MTD1000001QZ",
+      "name": "FOSOrder",
+      "text": "FOS订单管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FOSOrderMainView",
+          "file": "FOSOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FOSOrderTreeView",
+          "file": "FOSOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001R0",
+      "name": "FOSOrderLot",
+      "text": "FOS出货明细",
+      "parentId": "MTD1000001QZ",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FOSOrderLotMainView",
+          "file": "FOSOrderLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FOSOrderLotTreeView",
+          "file": "FOSOrderLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FOSOrderLotSaveData",
+          "file": "FOSOrderLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FOSOrderLotDeleteData",
+          "file": "FOSOrderLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

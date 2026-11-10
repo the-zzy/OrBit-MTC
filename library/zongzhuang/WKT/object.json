@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WKT",
+  "name": "工作时间段",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工作时间段",
+  "metadata": "WorktimeRange",
+  "objects": [
+    {
+      "id": "MTD1000000OQ",
+      "name": "WorktimeRange",
+      "text": "工作时间段",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorktimeRangeMainView",
+          "file": "WorktimeRangeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorktimeRangeTreeView",
+          "file": "WorktimeRangeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorktimeRangeSaveData",
+          "file": "WorktimeRangeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorktimeRangeDeleteData",
+          "file": "WorktimeRangeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OR",
+      "name": "WorktimeRangeItem",
+      "text": "工作时间段明细",
+      "parentId": "MTD1000000OQ",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorktimeRangeItemMainView",
+          "file": "WorktimeRangeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorktimeRangeItemTreeView",
+          "file": "WorktimeRangeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorktimeRangeItemSaveData",
+          "file": "WorktimeRangeItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorktimeRangeItemDeleteData",
+          "file": "WorktimeRangeItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

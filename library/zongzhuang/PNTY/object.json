@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PNTY",
+  "name": "料号类型",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "料号类型",
+  "metadata": "IQCMatType",
+  "objects": [
+    {
+      "id": "MTD10000025C",
+      "name": "IQCMatType",
+      "text": "料号类型",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCMatTypeMainView",
+          "file": "IQCMatTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCMatTypeTreeView",
+          "file": "IQCMatTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCMatTypeSaveData",
+          "file": "IQCMatTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IQCMatTypeDeleteData",
+          "file": "IQCMatTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

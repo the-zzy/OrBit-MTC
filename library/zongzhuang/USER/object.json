@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "USER",
+  "name": "用户管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "用户管理",
+  "metadata": "User",
+  "objects": [
+    {
+      "id": "MTD10000006Z",
+      "name": "SysUser",
+      "text": "用户管理",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysUserMainView",
+          "file": "SysUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysUserTreeView",
+          "file": "SysUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysUserSaveData",
+          "file": "SysUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysUserDeleteData",
+          "file": "SysUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000070",
+      "name": "SysUser_UserGroup_UR",
+      "text": "用户所属的用户组",
+      "parentId": "MTD10000006Z",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysUser_UserGroup_UR_MainView",
+          "file": "SysUser_UserGroup_UR_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysUser_UserGroup_UR_TreeView",
+          "file": "SysUser_UserGroup_UR_TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysUser_UserGroup_UR_SaveData",
+          "file": "SysUser_UserGroup_UR_SaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysUser_UserGroup_DeleteData",
+          "file": "SysUser_UserGroup_DeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NS",
+      "name": "SysUser_Factory",
+      "text": "用户所属工厂",
+      "parentId": "MTD10000006Z",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysUser_FactoryMainView",
+          "file": "SysUser_FactoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysUser_FactoryTreeView",
+          "file": "SysUser_FactoryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysUser_FactorySaveData",
+          "file": "SysUser_FactorySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysUser_FactoryDeleteData",
+          "file": "SysUser_FactoryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

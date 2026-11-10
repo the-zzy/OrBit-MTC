@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MPPT",
+  "name": "小米料号对应表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "小米料号对应表",
+  "metadata": "MPPT",
+  "objects": [
+    {
+      "id": "MTD1000001UN",
+      "name": "MIPOProduct",
+      "text": "小米料号对应表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MIPOProductMainView",
+          "file": "MIPOProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MIPOProductTreeView",
+          "file": "MIPOProductTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MIPOProductSaveData",
+          "file": "MIPOProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MIPOProductDeleteData",
+          "file": "MIPOProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

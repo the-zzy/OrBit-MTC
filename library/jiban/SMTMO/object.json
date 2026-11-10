@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SMTMO",
+  "name": "SMT/DIP工单入库查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SMT/DIP工单入库查询",
+  "metadata": "SMTMO",
+  "objects": [
+    {
+      "id": "MTD10000029T",
+      "name": "SAP_WorkQuery",
+      "text": "SMT/DIP工单入库查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

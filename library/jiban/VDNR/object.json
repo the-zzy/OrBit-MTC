@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDNR",
+  "name": "送货单信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "送货单信息查询",
+  "metadata": "VendordeliveryInfoQuery",
+  "objects": [
+    {
+      "id": "MTD1000001N4",
+      "name": "VendordeliveryInfoQuery",
+      "text": "送货单信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

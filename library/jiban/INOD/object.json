@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "INOD",
+  "name": "进货通知单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "进货通知单",
+  "metadata": "Incoming Order",
+  "objects": [
+    {
+      "id": "Err458a80ccc",
+      "name": "IncomingOrder",
+      "text": "进货通知单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingOrderMainView",
+          "file": "IncomingOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingOrderTreeView",
+          "file": "IncomingOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001R6",
+      "name": "IQCCheckinLotIncom",
+      "text": "SAP确认明细",
+      "parentId": "Err458a80ccc",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotTreeView",
+          "file": "IQCCheckinLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JQ",
+      "name": "IncomingOrderItem",
+      "text": "进货通知单明细",
+      "parentId": "Err458a80ccc",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingOrderItemMainView",
+          "file": "IncomingOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingOrderItemTreeView",
+          "file": "IncomingOrderItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JR",
+      "name": "IncomingOrderItemLot",
+      "text": "进货通知单明细批号",
+      "parentId": "MTD1000000JQ",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingOrderItemLotMainView",
+          "file": "IncomingOrderItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingOrderItemLotTreeView",
+          "file": "IncomingOrderItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HEXTS",
+  "name": "进制转换查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "进制转换查询",
+  "metadata": "实现不同进制数据的转换查询，支持二进制、八进制、十进制、十六进制之间的转换，方便技术人员和生产人员在涉及数值计算、编程开发和设备调试等场景下快速准确地进行数据转换和处理，提高工作效率和数据准确性。",
+  "objects": [
+    {
+      "id": "MTD1000002B7",
+      "name": "HexToIntProx",
+      "text": "进制转换查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

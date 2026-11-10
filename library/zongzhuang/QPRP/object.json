@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QPRP",
+  "name": "生产记录查询(集团)",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "生产记录查询(集团)",
+  "metadata": "ProdRecRptQuery",
+  "objects": [
+    {
+      "id": "MTD1000000KB",
+      "name": "ProdRecRptQuery",
+      "text": "生产记录查询(集团)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ODFS2",
+  "name": "订单设置(AV)2",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单设置(AV)2",
+  "metadata": "OrderFieldSettingAV2",
+  "objects": [
+    {
+      "id": "MTD1000001NP",
+      "name": "OrderFieldSettingAV2",
+      "text": "订单设置(AV)2",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingAVMainView",
+          "file": "OrderFieldSettingAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingAVTreeView",
+          "file": "OrderFieldSettingAVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldSettingAVSaveData",
+          "file": "OrderFieldSettingAVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldSettingAVDeleteData",
+          "file": "OrderFieldSettingAVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001NO",
+      "name": "OrderFieldCheckingAV",
+      "text": "字段检查",
+      "parentId": "MTD1000001NP",
+      "sequence": "10",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldCheckingMainView",
+          "file": "OrderFieldCheckingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldCheckingTreeView",
+          "file": "OrderFieldCheckingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrderFieldCheckingSaveData",
+          "file": "OrderFieldCheckingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrderFieldCheckingDeleteData",
+          "file": "OrderFieldCheckingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

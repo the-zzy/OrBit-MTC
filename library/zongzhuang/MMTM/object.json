@@ -1,0 +1,98 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MMTM",
+  "name": "工单转料管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工单转料管理",
+  "metadata": "查询工单转料管理信息，记录转料单编号、工单编号、物料信息、转料数量、转料日期等数据，确保工单转料过程的规范性和可追溯性。这有助于优化物料管理流程，避免因转料错误导致的生产混乱和物料浪费，提高生产效率。",
+  "objects": [
+    {
+      "id": "MTD1000002A1",
+      "name": "MOTransferMaterial",
+      "text": "工单转料管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOTransferMaterialMainView",
+          "file": "MOTransferMaterialMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOTransferMaterialTreeView",
+          "file": "MOTransferMaterialTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOTransferMaterialSaveData",
+          "file": "MOTransferMaterialSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOTransferMaterialDeleteData",
+          "file": "MOTransferMaterialDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002A2",
+      "name": "MOTransferMaterialItem",
+      "text": "工单转料明细",
+      "parentId": "MTD1000002A1",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOTransferMaterialItemMainView",
+          "file": "MOTransferMaterialItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOTransferMaterialItemTreeView",
+          "file": "MOTransferMaterialItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002A3",
+      "name": "MOTransferMaterialItemLot",
+      "text": "工单转料明细批号",
+      "parentId": "MTD1000002A2",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOTransferMaterialItemLotMainView",
+          "file": "MOTransferMaterialItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOTransferMaterialItemLotTreeView",
+          "file": "MOTransferMaterialItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

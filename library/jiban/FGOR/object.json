@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FGOR",
+  "name": "产品借出表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品借出表",
+  "metadata": "FGLendOrder",
+  "objects": [
+    {
+      "id": "MTD1000000SY",
+      "name": "FGLendOrder",
+      "text": "产品借出表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FGLendOrderMainView",
+          "file": "FGLendOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FGLendOrderTreeView",
+          "file": "FGLendOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FGLendOrderSaveData",
+          "file": "FGLendOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FGLendOrderDeleteData",
+          "file": "FGLendOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SZ",
+      "name": "FGLend",
+      "text": "产品借用审批",
+      "parentId": "MTD1000000SY",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FGlendMainView",
+          "file": "FGlendMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FGlendTreeView",
+          "file": "FGlendTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FGLendSaveData",
+          "file": "FGLendSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FGLendDeleteData",
+          "file": "FGLendDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

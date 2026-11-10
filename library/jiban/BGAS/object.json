@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BGAS",
+  "name": "BGA物料拆解",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "BGA物料拆解",
+  "metadata": "BGAS",
+  "objects": [
+    {
+      "id": "MTD1000001WI",
+      "name": "BGASplit",
+      "text": "BGA物料拆解",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BGASplitMainView",
+          "file": "BGASplitMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BGASplitTreeView",
+          "file": "BGASplitTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BGASplitDeleteData",
+          "file": "BGASplitDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WJ",
+      "name": "BGASplitItem",
+      "text": "物料拆解明细",
+      "parentId": "MTD1000001WI",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BGASplitItemMainView",
+          "file": "BGASplitItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BGASplitItemTreeView",
+          "file": "BGASplitItemTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BGASplitItemDeleteData",
+          "file": "BGASplitItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TSTQ",
+  "name": "Testquery",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "Testquery",
+  "metadata": "Testquery",
+  "objects": [
+    {
+      "id": "MTD1000000R1",
+      "name": "TestQuery",
+      "text": "Testquery",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

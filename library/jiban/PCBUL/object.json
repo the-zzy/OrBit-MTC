@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PCBUL",
+  "name": "PCB上料解封",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "PCB上料解封",
+  "metadata": "PCBUL",
+  "objects": [
+    {
+      "id": "MTD1000001PG",
+      "name": "PCBOnMtUnlock",
+      "text": "PCB上料解封",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

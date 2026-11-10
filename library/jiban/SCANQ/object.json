@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SCANQ",
+  "name": "焊接手压测试查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "焊接手压测试查询",
+  "metadata": "ScanItemQuery",
+  "objects": [
+    {
+      "id": "MTD1000001TH",
+      "name": "ScanItemQuery",
+      "text": "焊接手压测试查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

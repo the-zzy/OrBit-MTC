@@ -1,0 +1,52 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MOSBA",
+  "name": "大货排产查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "大货排产查询",
+  "metadata": "MOSBA",
+  "objects": [
+    {
+      "id": "MTD1000002ET",
+      "name": "MOScheduleBulkyAlert",
+      "text": "大货排产查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EU",
+      "name": "MOScheduleBulkyAlertItem",
+      "text": "",
+      "parentId": "MTD1000002ET",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOScheduleBulkyAlertMainView",
+          "file": "MOScheduleBulkyAlertMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOScheduleBulkyAlertItemTreeView",
+          "file": "MOScheduleBulkyAlertItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

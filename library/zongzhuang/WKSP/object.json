@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WKSP",
+  "name": "车间",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "车间",
+  "metadata": "Workshop",
+  "objects": [
+    {
+      "id": "MTD1000000FX",
+      "name": "Workshop",
+      "text": "车间",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkshopMainView",
+          "file": "WorkshopMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkshopTreeView",
+          "file": "WorkshopTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkshopSaveData",
+          "file": "WorkshopSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkshopDeleteData",
+          "file": "WorkshopDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GM",
+      "name": "WorkShopUser",
+      "text": "车间点检作业员",
+      "parentId": "MTD1000000FX",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkShopUserMainView",
+          "file": "WorkShopUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkShopUserTreeView",
+          "file": "WorkShopUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkShopUserSaveData",
+          "file": "WorkShopUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkShopUserDeleteData",
+          "file": "WorkShopUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

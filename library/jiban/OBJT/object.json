@@ -1,0 +1,98 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OBJT",
+  "name": "表对象管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "表对象管理",
+  "metadata": "Table Object",
+  "objects": [
+    {
+      "id": "MTD10000006T",
+      "name": "SysObject",
+      "text": "表对象管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysObjectMainView",
+          "file": "SysObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysObjectTreeView",
+          "file": "SysObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysObjectSaveData",
+          "file": "SysObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysObjectDeleteData",
+          "file": "SysObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000091",
+      "name": "SysObjectColumn",
+      "text": "表对象列信息",
+      "parentId": "MTD10000006T",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysObjectColumnMainView",
+          "file": "SysObjectColumnMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysObjectColumnTreeView",
+          "file": "SysObjectColumnTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000AV",
+      "name": "SysObjectChangedRow",
+      "text": "表对象行数据变更历史",
+      "parentId": "MTD10000006T",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysObjectChangedRowMainView",
+          "file": "SysObjectChangedRowMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysObjectChangedRowTreeView",
+          "file": "SysObjectChangedRowTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

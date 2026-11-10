@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RPLT",
+  "name": "总装生产报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "总装生产报表",
+  "metadata": "ProductionReportQuery",
+  "objects": [
+    {
+      "id": "MTD1000000RE",
+      "name": "ProductionReportQuery",
+      "text": "总装生产报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ASTDQ",
+  "name": "资产查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "资产查询",
+  "metadata": "ASTDQ",
+  "objects": [
+    {
+      "id": "MTD1000001NZ",
+      "name": "AssetDetailQuery",
+      "text": "资产查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

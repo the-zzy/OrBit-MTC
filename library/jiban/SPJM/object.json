@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPJM",
+  "name": "示例项目成员",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "示例项目成员",
+  "metadata": "Sample Project Member",
+  "objects": [
+    {
+      "id": "MTD100000076",
+      "name": "_SampleProjectMember",
+      "text": "示例项目成员",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "_SampleProjectMemberMainView",
+          "file": "_SampleProjectMemberMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "_SampleProjectMemberTreeView",
+          "file": "_SampleProjectMemberTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "_SampleProjectMemberSaveData",
+          "file": "_SampleProjectMemberSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "_SampleProjectMemberDeleteData",
+          "file": "_SampleProjectMemberDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

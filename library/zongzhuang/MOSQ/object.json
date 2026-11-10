@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MOSQ",
+  "name": "工单排产计划查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "工单排产计划查询",
+  "metadata": "MOSQ",
+  "objects": [
+    {
+      "id": "MTD1000002B5",
+      "name": "MOScheduleQuery",
+      "text": "工单排产计划查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

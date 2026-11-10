@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPOF",
+  "name": "发货报盘",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "发货报盘",
+  "metadata": "ShipmentsOffer",
+  "objects": [
+    {
+      "id": "MTD1000000ND",
+      "name": "ShipmentsOffer",
+      "text": "发货报盘",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShipmentsOfferMainView",
+          "file": "ShipmentsOfferMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShipmentsOfferTreeView",
+          "file": "ShipmentsOfferTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShipmentsOfferSaveData",
+          "file": "ShipmentsOfferSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShipmentsOfferDeleteData",
+          "file": "ShipmentsOfferDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

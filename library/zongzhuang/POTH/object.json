@@ -1,0 +1,138 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "POTH",
+  "name": "采购退货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "采购退货单",
+  "metadata": "管理采购退货单，记录退货单编号、供应商名称、退货日期、物料信息、数量、退货原因等数据，确保采购退货过程的规范性和可追溯性。这有助于优化采购流程，提高供应商管理效率，降低采购风险，保障企业利益。",
+  "objects": [
+    {
+      "id": "MTD1000002CR",
+      "name": "POFor471",
+      "text": "采购退货单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POFor471MainView",
+          "file": "POFor471MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POFor471TreeView",
+          "file": "POFor471TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CS",
+      "name": "POItemFor471",
+      "text": "采购退货单明细",
+      "parentId": "MTD1000002CR",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemFor471MainView",
+          "file": "POItemFor471MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItemFor471TreeView",
+          "file": "POItemFor471TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CT",
+      "name": "POItemLotFor471",
+      "text": "采购退货单明细批号",
+      "parentId": "MTD1000002CS",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemLotFor471MainView",
+          "file": "POItemLotFor471MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItemLotFor471TreeView",
+          "file": "POItemLotFor471TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CU",
+      "name": "IQCCheckinlotFor471",
+      "text": "SAP确认明细",
+      "parentId": "MTD1000002CR",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotFor471MainView",
+          "file": "IQCCheckinLotFor471MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinlotFor471TreeView",
+          "file": "IQCCheckinlotFor471TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GV",
+      "name": "VendorMatMovePMCCheck",
+      "text": "物料移动PMC审核",
+      "parentId": "MTD1000002CR",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMatMovePMCCheckMainView",
+          "file": "VendorMatMovePMCCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorMatMovePMCCheckTreeView",
+          "file": "VendorMatMovePMCCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

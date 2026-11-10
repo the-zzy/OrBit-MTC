@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "UOSA",
+  "name": "成品出库撤销确认",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "成品出库撤销确认",
+  "metadata": "UndoOutStorageAffirm",
+  "objects": [
+    {
+      "id": "MTD1000000PR",
+      "name": "UndoOutStorageAffirm",
+      "text": "成品出库撤销确认",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UndoOutStorageAffirmMainView",
+          "file": "UndoOutStorageAffirmMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UndoOutStorageAffirmTreeView",
+          "file": "UndoOutStorageAffirmTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UndoOutStorageAffirmSaveData",
+          "file": "UndoOutStorageAffirmSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UndoOutStorageAffirmDeleteData",
+          "file": "UndoOutStorageAffirmDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PS",
+      "name": "UndoOutStorageAffirmItem",
+      "text": "成品出货撤销明细",
+      "parentId": "MTD1000000PR",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UndoOutStorageAffirmItemMainView",
+          "file": "UndoOutStorageAffirmItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UndoOutStorageAffirmItemTreeView",
+          "file": "UndoOutStorageAffirmItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UndoOutStorageAffirmItemSaveData",
+          "file": "UndoOutStorageAffirmItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UndoOutStorageAffirmItemDeleteData",
+          "file": "UndoOutStorageAffirmItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PT",
+      "name": "UndoOutStorageAffirmItemLot",
+      "text": "成品出货撤销批号明细",
+      "parentId": "MTD1000000PS",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UndoOutStorageAffirmItemLotMainView",
+          "file": "UndoOutStorageAffirmItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UndoOutStorageAffirmItemLotTreeView",
+          "file": "UndoOutStorageAffirmItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UndoOutStorageAffirmItemLotSaveData",
+          "file": "UndoOutStorageAffirmItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UndoOutStorageAffirmItemLotDeleteData",
+          "file": "UndoOutStorageAffirmItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

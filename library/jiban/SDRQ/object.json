@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SDRQ",
+  "name": "屏发货报表查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "屏发货报表查询",
+  "metadata": "SDRQ",
+  "objects": [
+    {
+      "id": "MTD10000021I",
+      "name": "ScrnDeliveryReportQuery",
+      "text": "屏发货报表查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

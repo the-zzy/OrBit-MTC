@@ -1,0 +1,133 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MALT",
+  "name": "DIP MAC地址分配",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP MAC地址分配",
+  "metadata": "MALT",
+  "objects": [
+    {
+      "id": "MTD1000001YN",
+      "name": "DIPMacAllot",
+      "text": "DIP MAC地址分配",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPMacAllotMainView",
+          "file": "DIPMacAllotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPMacAllotTreeView",
+          "file": "DIPMacAllotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPMacAllotSaveData",
+          "file": "DIPMacAllotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPMacAllotDeleteData",
+          "file": "DIPMacAllotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001YP",
+      "name": "DIPMacAllotItem",
+      "text": "MAC地址分配从表",
+      "parentId": "MTD1000001YN",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPMacAllotItemMainView",
+          "file": "DIPMacAllotItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPMacAllotItemTreeView",
+          "file": "DIPMacAllotItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPMacAllotItemSaveData",
+          "file": "DIPMacAllotItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPMacAllotItemDeleteData",
+          "file": "DIPMacAllotItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001YO",
+      "name": "DIPMacAllotItemMac",
+      "text": "MAC分配池",
+      "parentId": "MTD1000001YN",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SyncDIPMacInfoMainView",
+          "file": "SyncDIPMacInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SyncDIPMacInfoTreeView",
+          "file": "SyncDIPMacInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001YQ",
+      "name": "DIPMacAllotItemCustSN",
+      "text": "客户SN分配池",
+      "parentId": "MTD1000001YN",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SyncDIPCustSNMainView",
+          "file": "SyncDIPCustSNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SyncDIPCustSNTreeView",
+          "file": "SyncDIPCustSNTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

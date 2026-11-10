@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PDQU",
+  "name": "进货明细查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "进货明细查询",
+  "metadata": "Purchase Detail Query",
+  "objects": [
+    {
+      "id": "MTD1000000QV",
+      "name": "PurchaseDetailQuery",
+      "text": "进货明细查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

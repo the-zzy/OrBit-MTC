@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "POND",
+  "name": "客户PO信息维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户PO信息维护",
+  "metadata": "PONODelivery",
+  "objects": [
+    {
+      "id": "MTD10000023A",
+      "name": "PONODelivery",
+      "text": "客户PO信息维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PONODeliveryMainView",
+          "file": "PONODeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PONODeliveryTreeView",
+          "file": "PONODeliveryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PONODeliverySaveData",
+          "file": "PONODeliverySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PONODeliveryDeleteData",
+          "file": "PONODeliveryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

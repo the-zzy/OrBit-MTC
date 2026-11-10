@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RTRQ",
+  "name": "测试结果复判",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "测试结果复判",
+  "metadata": "RTRQ",
+  "objects": [
+    {
+      "id": "MTD100000290",
+      "name": "RetestingResultsQuery",
+      "text": "测试结果复判",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

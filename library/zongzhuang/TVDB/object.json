@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVDB",
+  "name": "TV每日奖金",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV每日奖金",
+  "metadata": "查询TV生产相关的每日奖金数据，记录员工产量、质量、效率等绩效指标和奖金计算结果，让员工及时了解工作绩效和奖金收入，提高工作积极性。同时，为人力资源部门提供准确的奖金核算和发放依据，促进企业激励机制的有效运行。",
+  "objects": [
+    {
+      "id": "MTD1000001VH",
+      "name": "TVDailyBonusReport",
+      "text": "TV每日奖金",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

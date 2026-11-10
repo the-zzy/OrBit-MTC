@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DLO",
+  "name": "交货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "交货单",
+  "metadata": "DeliveryOrder",
+  "objects": [
+    {
+      "id": "MTD1000000JL",
+      "name": "DeliveryOrder",
+      "text": "交货单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryOrderMainView",
+          "file": "DeliveryOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderTreeView",
+          "file": "DeliveryOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JM",
+      "name": "DeliveryOrderItem",
+      "text": "交货单明细",
+      "parentId": "MTD1000000JL",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryOrderItemMainView",
+          "file": "DeliveryOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderItemTreeView",
+          "file": "DeliveryOrderItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000L5",
+      "name": "DeliveryOrderItemLot",
+      "text": "交货单明细批号",
+      "parentId": "MTD1000000JM",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "DeliveryOrderItemLotTreeView",
+          "file": "DeliveryOrderItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000QU",
+      "name": "DeliveryRepeal",
+      "text": "发货撤销",
+      "parentId": "MTD1000000JM",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryRepealMainView",
+          "file": "DeliveryRepealMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryRepealTreeView",
+          "file": "DeliveryRepealTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DeliveryRepealSaveData",
+          "file": "DeliveryRepealSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DeliveryRepealDeleteData",
+          "file": "DeliveryRepealDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001NL",
+      "name": "DeliveryAdditionInfoAV",
+      "text": "交货单附加信息",
+      "parentId": "MTD1000000JL",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DeliveryAdditionInfoMainView",
+          "file": "DeliveryAdditionInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DeliveryAdditionInfoTreeView",
+          "file": "DeliveryAdditionInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DeliveryAdditionInfoSaveData",
+          "file": "DeliveryAdditionInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DeliveryAdditionInfoDeleteData",
+          "file": "DeliveryAdditionInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

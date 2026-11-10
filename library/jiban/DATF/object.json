@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DATF",
+  "name": "主数据同步任务维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "主数据同步任务维护",
+  "metadata": "DATF",
+  "objects": [
+    {
+      "id": "MTD1000002AX",
+      "name": "DataTransfer",
+      "text": "主数据同步任务维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataTransferMainView",
+          "file": "DataTransferMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataTransferTreeView",
+          "file": "DataTransferTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataTransferSaveData",
+          "file": "DataTransferSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataTransferDeleteData",
+          "file": "DataTransferDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

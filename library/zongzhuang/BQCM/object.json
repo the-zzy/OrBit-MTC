@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BQCM",
+  "name": "基板奖金QC扣减",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "基板奖金QC扣减",
+  "metadata": "基板奖金QC扣减",
+  "objects": [
+    {
+      "id": "MTD1000001V6",
+      "name": "BonusQCMinus",
+      "text": "基板奖金QC扣减",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BonusQCMinusMainView",
+          "file": "BonusQCMinusMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BonusQCMinusTreeView",
+          "file": "BonusQCMinusTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BonusQCMinusSaveData",
+          "file": "BonusQCMinusSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BonusQCMinusDeleteData",
+          "file": "BonusQCMinusDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

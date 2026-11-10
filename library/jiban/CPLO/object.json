@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CPLO",
+  "name": "CellPlot",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "CellPlot",
+  "metadata": "CellPlot",
+  "objects": [
+    {
+      "id": "MTD1000002DD",
+      "name": "CellPlot",
+      "text": "CellPlot",
+      "parentId": "MTD1000000CL",
+      "sequence": "0",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CellPlotMainView",
+          "file": "CellPlotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CellPlotTreeView",
+          "file": "CellPlotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CellPlotSaveData",
+          "file": "CellPlotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CellPlotDeleteData",
+          "file": "CellPlotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

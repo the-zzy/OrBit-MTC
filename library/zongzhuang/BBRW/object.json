@@ -1,0 +1,732 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BBRW",
+  "name": "借机管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "借机管理",
+  "metadata": "查询借机管理信息，记录借机单编号、设备名称、借出日期、预计归还日期、借用部门、实际归还日期等数据，确保借机过程的规范性和可追溯性。这有助于提高设备资源的利用效率，避免设备逾期未还或丢失，保障企业的设备管理和运营效率。",
+  "pulled": {
+    "table": "2026-11-09T09:02:14+08:00",
+    "meta": "2026-11-09T09:54:14+08:00"
+  },
+  "objects": [
+    {
+      "id": "MTD1000001MU",
+      "name": "BorrowBill",
+      "text": "借机管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "BorrowBill",
+        "columns": [
+          {
+            "name": "BorrowBillId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "OAId",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BillType",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FactoryId",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "FactoryName",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DepartId",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DepartName",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ApplyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SAPBIll",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SAPMessage",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreaDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MoveReason",
+            "type": "nvarchar(300)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AppOperator",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "COSTCENTER",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BorrowBillMainView",
+          "file": "BorrowBillMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BorrowBillTreeView",
+          "file": "BorrowBillTreeView.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:14+08:00",
+        "MainView": "2026-11-09T09:54:14+08:00",
+        "TreeView": "2026-11-09T09:54:14+08:00"
+      }
+    },
+    {
+      "id": "MTD1000001MV",
+      "name": "BorrowBillItem",
+      "text": "借机项目",
+      "parentId": "MTD1000001MU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "BorrowBillItem",
+        "columns": [
+          {
+            "name": "BorrowBillItemId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "BorrowBillId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Sequence",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SOName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Qnty",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "GQnty",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ReturnQty",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WarehouseId",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WarehouseName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "VLBN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Remrk",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AffirmuserName",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AffirmDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsSap",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AffirmQty",
+            "type": "decimal(18,0)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SapMesg",
+            "type": "nvarchar(300)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SOItem",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BorrowBillItemMainView",
+          "file": "BorrowBillItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BorrowBillItemTreeView",
+          "file": "BorrowBillItemTreeView.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:15+08:00",
+        "MainView": "2026-11-09T09:54:15+08:00",
+        "TreeView": "2026-11-09T09:54:15+08:00"
+      }
+    },
+    {
+      "id": "MTD1000001MW",
+      "name": "BorrowBillLot",
+      "text": "借机SN明细",
+      "parentId": "MTD1000001MV",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "BorrowBillLot",
+        "columns": [
+          {
+            "name": "BorrowBillLotId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "BorrowBillItemId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "InventoryReworkItemId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LOTSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BorrowType",
+            "type": "nchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Productname",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BorrowQty",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsReturn",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Operator",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SapMesg",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AffirmUserName",
+            "type": "char(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsSap",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AffirmDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SapUser",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "BorrowBillLotTreeView",
+          "file": "BorrowBillLotTreeView.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:15+08:00",
+        "TreeView": "2026-11-09T09:54:15+08:00"
+      }
+    },
+    {
+      "id": "MTD1000001MX",
+      "name": "BorrowBillSubmit",
+      "text": "借机SAP确认",
+      "parentId": "MTD1000001MU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "BorrowBillSubmit",
+        "columns": [
+          {
+            "name": "BorrowBillSubmitID",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "BorrowBillId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BorrowBillItemid",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductName",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BorrowBillQty",
+            "type": "numeric(18,0)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Factory",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WareHouseFrom",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WareHouseTo",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BorrowOperator",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SapUser",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SapQty",
+            "type": "numeric(18,0)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsSap",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "TransNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SapMesg",
+            "type": "nvarchar(max)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Createdate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PreTransNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SoName",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BorrowType",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BorrowNote",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PredictInStorageId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SOItem",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifyUser",
+            "type": "varchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "BorrowBillSubmitTreeView",
+          "file": "BorrowBillSubmitTreeView.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:15+08:00",
+        "TreeView": "2026-11-09T09:54:15+08:00"
+      }
+    }
+  ]
+}

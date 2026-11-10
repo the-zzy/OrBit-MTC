@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "JXQU",
+  "name": "晶显组装查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "晶显组装查询",
+  "metadata": "JXQU",
+  "objects": [
+    {
+      "id": "MTD10000028I",
+      "name": "JXMOFor759Query",
+      "text": "晶显组装查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

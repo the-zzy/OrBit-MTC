@@ -1,0 +1,153 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "REFM",
+  "name": "氮气回流焊状态主表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "氮气回流焊状态主表",
+  "metadata": "REFM",
+  "objects": [
+    {
+      "id": "MTD1000002E9",
+      "name": "ReflowMain",
+      "text": "氮气回流焊状态主表",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReflowMainMainView",
+          "file": "ReflowMainMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReflowMainTreeView",
+          "file": "ReflowMainTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReflowMainSaveData",
+          "file": "ReflowMainSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReflowMainDeleteData",
+          "file": "ReflowMainDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EA",
+      "name": "ReflowDetail",
+      "text": "氮气回流焊状态明细表",
+      "parentId": "MTD1000002E9",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReflowDetailMainView",
+          "file": "ReflowDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReflowDetailTreeView",
+          "file": "ReflowDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReflowDetailSaveData",
+          "file": "ReflowDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReflowDetailDeleteData",
+          "file": "ReflowDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EB",
+      "name": "ReflowHeaterTemp",
+      "text": "加热区炉温",
+      "parentId": "MTD1000002EA",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReflowHeaterTempMainView",
+          "file": "ReflowHeaterTempMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReflowHeaterTempTreeView",
+          "file": "ReflowHeaterTempTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReflowHeaterTempSaveData",
+          "file": "ReflowHeaterTempSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReflowHeaterTempDeleteData",
+          "file": "ReflowHeaterTempDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EC",
+      "name": "ReflowCoolingTemp",
+      "text": "冷却区温度",
+      "parentId": "MTD1000002EA",
+      "sequence": "04",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReflowCoolingTempMainView",
+          "file": "ReflowCoolingTempMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReflowCoolingTempTreeView",
+          "file": "ReflowCoolingTempTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReflowCoolingTempSaveData",
+          "file": "ReflowCoolingTempSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReflowCoolingTempDeleteData",
+          "file": "ReflowCoolingTempDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

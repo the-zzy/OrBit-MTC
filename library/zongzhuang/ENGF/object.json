@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ENGF",
+  "name": "工程资料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工程资料",
+  "metadata": "管理工程资料，记录资料编号、项目名称、资料名称、版本号、生效日期、上传人员等信息，确保工程资料的准确性和有效性。这有助于提高工程项目的管理水平，保障工程质量和进度，促进企业技术积累和传承。",
+  "objects": [
+    {
+      "id": "MTD1000000LS",
+      "name": "EngineersFile",
+      "text": "工程资料",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EngineersFileMainView",
+          "file": "EngineersFileMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EngineersFileTreeView",
+          "file": "EngineersFileTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EngineersFileSaveData",
+          "file": "EngineersFileSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EngineersFileDeleteData",
+          "file": "EngineersFileDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LY",
+      "name": "EngineersFileItem",
+      "text": "工程文件列表",
+      "parentId": "MTD1000000LS",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EngineersFileItemMainView",
+          "file": "EngineersFileItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EngineersFileItemTreeView",
+          "file": "EngineersFileItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EngineersFileItemSaveData",
+          "file": "EngineersFileItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EngineersFileItemDeleteData",
+          "file": "EngineersFileItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

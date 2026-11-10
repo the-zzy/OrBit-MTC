@@ -1,0 +1,38 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GAGSJ",
+  "name": "应当送检的量具仪器",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "应当送检的量具仪器",
+  "metadata": "GageSongJianing",
+  "objects": [
+    {
+      "id": "MTD1000000HU",
+      "name": "GageSongJianing",
+      "text": "应当送检的量具仪器",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageSongJianingMainView",
+          "file": "GageSongJianingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageSongJianingTreeView",
+          "file": "GageSongJianingTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

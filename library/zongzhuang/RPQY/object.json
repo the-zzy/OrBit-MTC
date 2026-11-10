@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RPQY",
+  "name": "周转栈板查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "周转栈板查询",
+  "metadata": "RecyclePalletQuery",
+  "objects": [
+    {
+      "id": "MTD10000022T",
+      "name": "RecyclePalletQuery",
+      "text": "周转栈板查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

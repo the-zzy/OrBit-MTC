@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKDQ",
+  "name": "散件类物料绑板查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "散件类物料绑板查询",
+  "metadata": "提供散件类物料绑板的查询功能，记录散件物料编号、绑板时间、绑板数量、操作人员等信息，方便生产管理人员跟踪散件类物料的绑板情况，确保绑板操作的准确性和可追溯性，优化生产流程和物料管理，提高生产效率和产品质量。",
+  "objects": [
+    {
+      "id": "MTD1000001U1",
+      "name": "SKDPutThesTackQuery",
+      "text": "散件类物料绑板查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

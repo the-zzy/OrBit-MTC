@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ICDT",
+  "name": "来料不良数据维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "来料不良数据维护",
+  "metadata": "IncomingDefect",
+  "objects": [
+    {
+      "id": "MTD1000002F4",
+      "name": "IncomingDefect",
+      "text": "来料不良数据维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingDefectMainView",
+          "file": "IncomingDefectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingDefectTreeView",
+          "file": "IncomingDefectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IncomingDefectSaveData",
+          "file": "IncomingDefectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IncomingDefectDeleteData",
+          "file": "IncomingDefectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002FK",
+      "name": "IncomingDefectVendor",
+      "text": "光学供应商不良数据维护",
+      "parentId": "MTD1000002F4",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingDefectVendorMainView",
+          "file": "IncomingDefectVendorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingDefectVendorTreeView",
+          "file": "IncomingDefectVendorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IncomingDefectVendorSaveData",
+          "file": "IncomingDefectVendorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IncomingDefectVendorDeleteData",
+          "file": "IncomingDefectVendorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002FL",
+      "name": "IncomingDefectWorkcenter",
+      "text": "总装线体不良数据维护",
+      "parentId": "MTD1000002F4",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingDefectWorkcenterMainView",
+          "file": "IncomingDefectWorkcenterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingDefectWorkcenterTreeView",
+          "file": "IncomingDefectWorkcenterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IncomingDefectWorkcenterSaveData",
+          "file": "IncomingDefectWorkcenterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IncomingDefectWorkcenterDeleteData",
+          "file": "IncomingDefectWorkcenterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

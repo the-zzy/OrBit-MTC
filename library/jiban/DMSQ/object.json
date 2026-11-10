@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DMSQ",
+  "name": "工单备料查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "工单备料查询",
+  "metadata": "DCMOStockQuery",
+  "objects": [
+    {
+      "id": "MTD1000000MD",
+      "name": "DCMOStockQuery",
+      "text": "工单备料查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

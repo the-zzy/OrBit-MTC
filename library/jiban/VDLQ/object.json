@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDLQ",
+  "name": "vendorDeliveryItemLotQuery",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "vendorDeliveryItemLotQuery",
+  "metadata": "vendorDeliveryItemLotQuery",
+  "objects": [
+    {
+      "id": "MTD1000002CO",
+      "name": "vendorDeliveryItemLotQuery",
+      "text": "vendorDeliveryItemLotQuery",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

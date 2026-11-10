@@ -1,0 +1,33 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EPRQ",
+  "name": "设备维修记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "设备维修记录查询",
+  "metadata": "EPRQ",
+  "objects": [
+    {
+      "id": "MTD1000001QS",
+      "name": "EquipmentRepairLogQuery",
+      "text": "设备维修记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentRepairLogQueryMainView",
+          "file": "EquipmentRepairLogQueryMainView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

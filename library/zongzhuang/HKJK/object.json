@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HKJK",
+  "name": "海康监控区域信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "海康监控区域信息",
+  "metadata": "HKResourceRegions",
+  "objects": [
+    {
+      "id": "MTD1000002FA",
+      "name": "HKResourceRegions",
+      "text": "海康监控区域信息",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "HKResourceRegionsMainView",
+          "file": "HKResourceRegionsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "HKResourceRegionsTreeView",
+          "file": "HKResourceRegionsTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002FB",
+      "name": "HKResourceRegionsItem",
+      "text": "海康监控明细信息",
+      "parentId": "MTD1000002FA",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "HKResourceRegionsItemTreeView",
+          "file": "HKResourceRegionsItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002FE",
+      "name": "Kanban_CamerasSet",
+      "text": "海康监控绑定",
+      "parentId": "MTD1000002FB",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Kanban_CamerasSetMainView",
+          "file": "Kanban_CamerasSetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Kanban_CamerasSetTreeView",
+          "file": "Kanban_CamerasSetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Kanban_CamerasSetSaveData",
+          "file": "Kanban_CamerasSetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Kanban_CamerasDeleteData",
+          "file": "Kanban_CamerasDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002FH",
+      "name": "HKResourceRegionsItemLot",
+      "text": "看板监控明细",
+      "parentId": "MTD1000002FA",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "HKResourceRegionsItemLotMainView",
+          "file": "HKResourceRegionsItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "HKResourceRegionsItemLotTreeView",
+          "file": "HKResourceRegionsItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

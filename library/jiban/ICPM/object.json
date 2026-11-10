@@ -1,0 +1,43 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ICPM",
+  "name": "IC丝印",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "IC丝印",
+  "metadata": "ICPM",
+  "objects": [
+    {
+      "id": "MTD1000002CN",
+      "name": "IC_PrintMaster",
+      "text": "IC丝印",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IC_PrintMasterMainView",
+          "file": "IC_PrintMasterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IC_PrintMasterTreeView",
+          "file": "IC_PrintMasterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IC_PrintMasterSaveData",
+          "file": "IC_PrintMasterSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

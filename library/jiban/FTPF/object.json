@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FTPF",
+  "name": "Ftp文件库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Ftp文件库",
+  "metadata": "Ftp File Libary",
+  "objects": [
+    {
+      "id": "MTD1000000FI",
+      "name": "FtpFile",
+      "text": "Ftp文件库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FtpFileMainView",
+          "file": "FtpFileMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FtpFileTreeView",
+          "file": "FtpFileTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FtpFileSaveData",
+          "file": "FtpFileSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FtpFileDeleteData",
+          "file": "FtpFileDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

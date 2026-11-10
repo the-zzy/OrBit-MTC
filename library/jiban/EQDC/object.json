@@ -1,0 +1,78 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EQDC",
+  "name": "设备点检项目定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备点检项目定义",
+  "metadata": "EQDailyCheck",
+  "objects": [
+    {
+      "id": "MTD1000000GJ",
+      "name": "EQDailyCheck",
+      "text": "设备点检项目定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EQDailyCheckMainView",
+          "file": "EQDailyCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EQDailyCheckTreeView",
+          "file": "EQDailyCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EQDailyCheckSaveData",
+          "file": "EQDailyCheckSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GK",
+      "name": "EQDailyCheckList",
+      "text": "点检列表",
+      "parentId": "MTD1000000GJ",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EQDailyCheckListMainView",
+          "file": "EQDailyCheckListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EQDailyCheckListTreeView",
+          "file": "EQDailyCheckListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EQDailyCheckListSaveData",
+          "file": "EQDailyCheckListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EQDailyCheckListDeleteData",
+          "file": "EQDailyCheckListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

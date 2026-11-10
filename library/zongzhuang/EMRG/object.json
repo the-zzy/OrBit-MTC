@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EMRG",
+  "name": "EMR玻璃工单查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "EMR玻璃工单查询",
+  "metadata": "EMRG",
+  "objects": [
+    {
+      "id": "MTD1000001XD",
+      "name": "EMRGlassQuery",
+      "text": "EMR玻璃工单查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

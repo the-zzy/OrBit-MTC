@@ -1,0 +1,108 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "IQCRE",
+  "name": "物料超期返检单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物料超期返检单",
+  "metadata": "查询物料超期返检单，记录返检单编号、物料信息、超期原因、返检日期、返检结果、处理措施等数据，确保物料超期返检管理的准确性和可追溯性。这有助于避免使用超期物料，保障产品质量和生产安全，降低企业的质量风险。",
+  "objects": [
+    {
+      "id": "MTD1000002CD",
+      "name": "OverdueInspectionReport",
+      "text": "物料超期返检单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueInspectionReportMainView",
+          "file": "OverdueInspectionReportMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueInspectionReportTreeView",
+          "file": "OverdueInspectionReportTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OverdueInspectionReportSaveData",
+          "file": "OverdueInspectionReportSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OverdueInspectionReportDeleteData",
+          "file": "OverdueInspectionReportDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CE",
+      "name": "OverdueInspectionReportItem",
+      "text": "超期返检单明细",
+      "parentId": "MTD1000002CD",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueInspectionReportItemMainView",
+          "file": "OverdueInspectionReportItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueInspectionReportItemTreeView",
+          "file": "OverdueInspectionReportItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OverdueInspectionReportItemSaveData",
+          "file": "OverdueInspectionReportItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OverdueInspectionReportItemDeleteData",
+          "file": "OverdueInspectionReportItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CF",
+      "name": "OverdueInspectionReportItemLot",
+      "text": "返检单明细批号",
+      "parentId": "MTD1000002CE",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueInspectionReportItemLotMainView",
+          "file": "OverdueInspectionReportItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueInspectionReportItemLotTreeView",
+          "file": "OverdueInspectionReportItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

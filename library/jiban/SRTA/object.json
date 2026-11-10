@@ -1,0 +1,123 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SRTA",
+  "name": "材料欠料计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "材料欠料计划",
+  "metadata": "SMT_SRTA_Schedule",
+  "objects": [
+    {
+      "id": "MTD10000021Y",
+      "name": "SMT_SRTA_Schedule",
+      "text": "材料欠料计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMT_SRTA_ScheduleMainView",
+          "file": "SMT_SRTA_ScheduleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMT_SRTA_ScheduleTreeView",
+          "file": "SMT_SRTA_ScheduleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMT_SRTA_ScheduleSaveData",
+          "file": "SMT_SRTA_ScheduleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMT_SRTA_ScheduleDeleteData",
+          "file": "SMT_SRTA_ScheduleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000220",
+      "name": "SMT_SRTA_FGSchedule",
+      "text": "组件号排产计划",
+      "parentId": "MTD10000021Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMT_SRTA_FGScheduleMainView",
+          "file": "SMT_SRTA_FGScheduleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMT_SRTA_FGScheduleTreeView",
+          "file": "SMT_SRTA_FGScheduleTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000222",
+      "name": "SMT_SRTA_OpenStock",
+      "text": "在途库存",
+      "parentId": "MTD10000021Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMT_SRTA_OpenStockMainView",
+          "file": "SMT_SRTA_OpenStockMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMT_SRTA_OpenStockTreeView",
+          "file": "SMT_SRTA_OpenStockTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000223",
+      "name": "SMT_SRTA_Shortage",
+      "text": "短缺清单",
+      "parentId": "MTD10000021Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMT_SRTA_ShortageMainView",
+          "file": "SMT_SRTA_ShortageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMT_SRTA_ShortageTreeView",
+          "file": "SMT_SRTA_ShortageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

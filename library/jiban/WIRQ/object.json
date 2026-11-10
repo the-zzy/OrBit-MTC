@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "WIRQ",
+  "name": "原材料封存查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "原材料封存查询",
+  "metadata": "WIRQ",
+  "objects": [
+    {
+      "id": "MTD100000261",
+      "name": "RMInventoryLockQuery",
+      "text": "原材料封存查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

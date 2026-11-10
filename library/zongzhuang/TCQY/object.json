@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TCQY",
+  "name": "钢网清洗查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "钢网清洗查询",
+  "metadata": "TCQY",
+  "objects": [
+    {
+      "id": "MTD1000001T3",
+      "name": "ToolCleanScanQuery",
+      "text": "钢网清洗查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DEXP",
+  "name": "数据回传方案",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "数据回传方案",
+  "metadata": "DataExportScheme",
+  "objects": [
+    {
+      "id": "MTD1000002GR",
+      "name": "DataExportScheme",
+      "text": "数据回传方案",
+      "parentId": "",
+      "sequence": "02",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataExportSchemeMainView",
+          "file": "DataExportSchemeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataExportSchemeTreeView",
+          "file": "DataExportSchemeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataExportSchemeSaveData",
+          "file": "DataExportSchemeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataExportSchemeDeleteData",
+          "file": "DataExportSchemeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GS",
+      "name": "DataExportSchemeCondition",
+      "text": "方案匹配条件",
+      "parentId": "MTD1000002GR",
+      "sequence": "03",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataExportSchemeConditionMainView",
+          "file": "DataExportSchemeConditionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataExportSchemeConditionTreeView",
+          "file": "DataExportSchemeConditionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataExportSchemeConditionSaveData",
+          "file": "DataExportSchemeConditionSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataExportSchemeConditionDeleteData",
+          "file": "DataExportSchemeConditionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GT",
+      "name": "DataExportSchemeMatchValue",
+      "text": "方案匹配取值",
+      "parentId": "MTD1000002GS",
+      "sequence": "04",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataExportSchemeMatchValueMainView",
+          "file": "DataExportSchemeMatchValueMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataExportSchemeMatchValueTreeView",
+          "file": "DataExportSchemeMatchValueTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataExportSchemeMatchValueSaveData",
+          "file": "DataExportSchemeMatchValueSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataExportSchemeMatchValueDeleteData",
+          "file": "DataExportSchemeMatchValueDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002GU",
+      "name": "DataExportSchemeRecipient",
+      "text": "方案收件人",
+      "parentId": "MTD1000002GR",
+      "sequence": "05",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataExportSchemeRecipientMainView",
+          "file": "DataExportSchemeRecipientMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataExportSchemeRecipientTreeView",
+          "file": "DataExportSchemeRecipientTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataExportSchemeRecipientSaveData",
+          "file": "DataExportSchemeRecipientSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataExportSchemeRecipientDeleteData",
+          "file": "DataExportSchemeRecipientDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

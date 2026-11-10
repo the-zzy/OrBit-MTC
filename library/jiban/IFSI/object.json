@@ -1,0 +1,43 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "IFSI",
+  "name": "接口详细设置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "接口详细设置",
+  "metadata": "InterfaceSettingItem",
+  "objects": [
+    {
+      "id": "MTD1000000JP",
+      "name": "InterfaceSettingItem",
+      "text": "接口详细设置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InterfaceSettingItemMainView",
+          "file": "InterfaceSettingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InterfaceSettingItemTreeView",
+          "file": "InterfaceSettingItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InterfaceSettingItemSaveData",
+          "file": "InterfaceSettingItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

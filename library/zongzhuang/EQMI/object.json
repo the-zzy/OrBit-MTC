@@ -1,0 +1,78 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EQMI",
+  "name": "设备保养数据定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备保养数据定义",
+  "metadata": "EQMItem",
+  "objects": [
+    {
+      "id": "MTD1000000GG",
+      "name": "EQMItem",
+      "text": "设备保养数据定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EQMItemMainView",
+          "file": "EQMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EQMItemTreeView",
+          "file": "EQMItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EQMItemSaveData",
+          "file": "EQMItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GH",
+      "name": "EQItemList",
+      "text": "保养列表",
+      "parentId": "MTD1000000GG",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EQItemListMainView",
+          "file": "EQItemListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EQItemListTreeView",
+          "file": "EQItemListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EQItemListSaveData",
+          "file": "EQItemListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EQItemListDeleteData",
+          "file": "EQItemListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

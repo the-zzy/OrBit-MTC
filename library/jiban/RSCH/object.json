@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RSCH",
+  "name": "对应关系查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "对应关系查询",
+  "metadata": "RSCH",
+  "objects": [
+    {
+      "id": "MTD1000001U6",
+      "name": "TVRelation",
+      "text": "对应关系查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVRelationMainView",
+          "file": "TVRelationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVRelationTreeView",
+          "file": "TVRelationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVRelationSaveData",
+          "file": "TVRelationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVRelationDeleteData",
+          "file": "TVRelationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RERT",
+  "name": "测试复判",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "测试复判",
+  "metadata": "管理测试复判流程，记录复判单编号、产品信息、测试项目、原测试结果、复判结果等数据，确保测试复判过程的规范性和数据准确性。这有助于及时纠正测试错误，保障产品质量符合标准要求，提高客户满意度。",
+  "objects": [
+    {
+      "id": "MTD10000029J",
+      "name": "ResultsRetesting",
+      "text": "测试复判",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ResultsRetestingMainView",
+          "file": "ResultsRetestingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RetestingResultsQueryTreeView",
+          "file": "RetestingResultsQueryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000029K",
+      "name": "ResultsRetestingitem",
+      "text": "复判明细",
+      "parentId": "MTD10000029J",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ResultsRetestingitemMainView",
+          "file": "ResultsRetestingitemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ResultsRetestingitemTreeView",
+          "file": "ResultsRetestingitemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

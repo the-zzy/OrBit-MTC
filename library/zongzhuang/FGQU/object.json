@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "FGQU",
+  "name": "成品仓查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "成品仓查询",
+  "metadata": "提供成品仓库中成品的查询功能，记录成品编号、名称、规格、库存数量、库位、质量状态等信息，方便仓库管理人员实时掌握成品库存情况，进行库存盘点、出入库管理和库存预警设置，提高成品仓库管理效率和库存准确性。",
+  "objects": [
+    {
+      "id": "MTD1000000MH",
+      "name": "FGWareHouseQuery",
+      "text": "成品仓查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

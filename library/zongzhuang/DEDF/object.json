@@ -1,0 +1,43 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DEDF",
+  "name": "维修失效记录清除",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "维修失效记录清除",
+  "metadata": "DCDefectDelete",
+  "objects": [
+    {
+      "id": "MTD1000000RI",
+      "name": "DCDefectDelete",
+      "text": "维修失效记录清除",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCDefectDeleteMainView",
+          "file": "DCDefectDeleteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCDefectDeleteTreeView",
+          "file": "DCDefectDeleteTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DCDefectDeleteDeleteData",
+          "file": "DCDefectDeleteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QATH",
+  "name": "查询QA温湿度",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "查询QA温湿度",
+  "metadata": "QueryQATemperature",
+  "objects": [
+    {
+      "id": "MTD1000002B3",
+      "name": "QATemperature",
+      "text": "查询QA温湿度",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QATemperatureMainView",
+          "file": "QATemperatureMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QATemperatureTreeView",
+          "file": "QATemperatureTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QATemperatureSaveData",
+          "file": "QATemperatureSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QATemperatureDeleteData",
+          "file": "QATemperatureDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

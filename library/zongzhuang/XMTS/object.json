@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "XMTS",
+  "name": "小米测试工位",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "小米测试工位",
+  "metadata": "XMTS",
+  "objects": [
+    {
+      "id": "MTD1000001ME",
+      "name": "XMType",
+      "text": "小米测试工位",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XMTypeMainView",
+          "file": "XMTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XMTypeTreeView",
+          "file": "XMTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "XMTypeSaveData",
+          "file": "XMTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "XMTypeDeleteData",
+          "file": "XMTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SR",
+      "name": "TeststationMain",
+      "text": "测试工位",
+      "parentId": "MTD1000001ME",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TeststationMainMainView",
+          "file": "TeststationMainMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TeststationMainTreeView",
+          "file": "TeststationMainTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TeststationMainSaveData",
+          "file": "TeststationMainSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TeststationMainDeleteData",
+          "file": "TeststationMainDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SS",
+      "name": "TeststationSub",
+      "text": "工位测试项目",
+      "parentId": "MTD1000000SR",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TeststationSubMainView",
+          "file": "TeststationSubMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TeststationSubTreeView",
+          "file": "TeststationSubTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TeststationSubSaveData",
+          "file": "TeststationSubSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TeststationSubDeleteData",
+          "file": "TeststationSubDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

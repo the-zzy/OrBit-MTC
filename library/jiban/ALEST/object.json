@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ALEST",
+  "name": "余料清点",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "余料清点",
+  "metadata": "LotEmptyApplyStart",
+  "objects": [
+    {
+      "id": "MTD1000000E1",
+      "name": "LotEmptyApplyStart",
+      "text": "余料清点",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LotEmptyApplyStartMainView",
+          "file": "LotEmptyApplyStartMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LotEmptyApplyStartTreeView",
+          "file": "LotEmptyApplyStartTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LotEmptyApplyStartSaveData",
+          "file": "LotEmptyApplyStartSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LotEmptyApplyStartDeleteData",
+          "file": "LotEmptyApplyStartDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000E0",
+      "name": "LotEmptyStart",
+      "text": "零星批号申请单明细",
+      "parentId": "MTD1000000E1",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LotEmptyStartMainView",
+          "file": "LotEmptyStartMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LotEmptyStartTreeView",
+          "file": "LotEmptyStartTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LotEmptyStartSaveData",
+          "file": "LotEmptyStartSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LotEmptyStartDeleteData",
+          "file": "LotEmptyStartDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

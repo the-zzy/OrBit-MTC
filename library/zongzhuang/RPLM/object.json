@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RPLM",
+  "name": "补印条码管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "补印条码管理",
+  "metadata": "管理补印条码，记录条码补印编号、产品信息、原条码、补印原因、补印日期等信息，确保条码补印的准确性和可追溯性。这有助于提高物料和产品的可识别性，保障生产和物流环节的顺利进行，避免因条码缺失或损坏导致的数据管理问题。",
+  "objects": [
+    {
+      "id": "MTD1000001PW",
+      "name": "ReprintLot",
+      "text": "补印条码管理",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReprintLotMainView",
+          "file": "ReprintLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReprintLotTreeView",
+          "file": "ReprintLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReprintLotSaveData",
+          "file": "ReprintLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReprintLotDeleteData",
+          "file": "ReprintLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PX",
+      "name": "ReprintLotDetail",
+      "text": "补印条码登记",
+      "parentId": "MTD1000001PW",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ReprintLotDetailMainView",
+          "file": "ReprintLotDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ReprintLotDetailTreeView",
+          "file": "ReprintLotDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ReprintLotDetailSaveData",
+          "file": "ReprintLotDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ReprintLotDetailDeleteData",
+          "file": "ReprintLotDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

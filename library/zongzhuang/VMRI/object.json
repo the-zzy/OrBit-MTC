@@ -1,0 +1,78 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VMRI",
+  "name": "供应商选修(oa)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "供应商选修(oa)",
+  "metadata": "VendorMatMoveRechek",
+  "objects": [
+    {
+      "id": "MTD10000028K",
+      "name": "VendorMatMoveReCheck",
+      "text": "供应商选修(oa)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMatMoveReCheckMainView",
+          "file": "VendorMatMoveReCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorMatMoveReCheckTreeView",
+          "file": "VendorMatMoveReCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorMatMoveReCheckSaveData",
+          "file": "VendorMatMoveReCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorMatMoveReCheckDeleteData",
+          "file": "VendorMatMoveReCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028L",
+      "name": "VendorMatMoveItemReCheck",
+      "text": "供应商选修明细",
+      "parentId": "MTD10000028K",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMatMoveItemReCheckMainView",
+          "file": "VendorMatMoveItemReCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorMatMoveItemReCheckTreeView",
+          "file": "VendorMatMoveItemReCheckTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorMatMoveItemReCheckDeleteData",
+          "file": "VendorMatMoveItemReCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

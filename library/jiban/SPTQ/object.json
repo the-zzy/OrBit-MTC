@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPTQ",
+  "name": "包装绩效考核查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "包装绩效考核查询",
+  "metadata": "SKDPackagingStatusEntryQuery",
+  "objects": [
+    {
+      "id": "MTD10000022I",
+      "name": "SKDPackagingStatusEntryQuery",
+      "text": "包装绩效考核查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

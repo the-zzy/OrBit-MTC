@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BACT",
+  "name": "批次BOM异常处理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "批次BOM异常处理",
+  "metadata": "BatchContrast",
+  "objects": [
+    {
+      "id": "MTD100000238",
+      "name": "BatchContrast",
+      "text": "批次BOM异常处理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BatchContrastMainView",
+          "file": "BatchContrastMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BatchContrastTreeView",
+          "file": "BatchContrastTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000239",
+      "name": "BatchContrastItem",
+      "text": "批次BOM异常处理明细",
+      "parentId": "MTD100000238",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BatchContrastItemMainView",
+          "file": "BatchContrastItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BatchContrastItemTreeView",
+          "file": "BatchContrastItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BatchContrastItemSaveData",
+          "file": "BatchContrastItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BatchContrastItemDeleteData",
+          "file": "BatchContrastItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

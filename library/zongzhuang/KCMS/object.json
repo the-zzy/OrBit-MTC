@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KCMS",
+  "name": "散件物料属性维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件物料属性维护",
+  "metadata": "维护散件物料属性，记录属性编号、物料信息、属性名称、属性值、生效日期等信息，确保散件物料属性数据的准确性和完整性。这有助于优化散件物料管理流程，提高散件物料的可追溯性和一致性，支持企业的生产和质量管理工作。",
+  "objects": [
+    {
+      "id": "MTD1000002AM",
+      "name": "KDCraftMaterialSpec",
+      "text": "散件物料属性维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCraftMaterialSpecMainView",
+          "file": "KDCraftMaterialSpecMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCraftMaterialSpecTreeView",
+          "file": "KDCraftMaterialSpecTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDCraftMaterialSpecSaveData",
+          "file": "KDCraftMaterialSpecSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDCraftMaterialSpecDeleteData",
+          "file": "KDCraftMaterialSpecDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

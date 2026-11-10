@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MMQM",
+  "name": "303物料监控台账查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "303物料监控台账查询",
+  "metadata": "MaterialMonitorQuery",
+  "objects": [
+    {
+      "id": "MTD1000002DV",
+      "name": "MaterialMonitorQuery",
+      "text": "303物料监控台账查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

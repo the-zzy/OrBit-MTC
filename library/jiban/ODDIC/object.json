@@ -1,0 +1,38 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ODDIC",
+  "name": "DIP订单审核",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP订单审核",
+  "metadata": "ODDIC",
+  "objects": [
+    {
+      "id": "MTD1000002AR",
+      "name": "OrderFieldSettingCheck",
+      "text": "DIP订单审核",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrderFieldSettingCheckMainView",
+          "file": "OrderFieldSettingCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrderFieldSettingCheckTreeView",
+          "file": "OrderFieldSettingCheckTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

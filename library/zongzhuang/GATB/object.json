@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "GATB",
+  "name": "量具代码定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具代码定义",
+  "metadata": "GageTable",
+  "objects": [
+    {
+      "id": "MTD1000000H8",
+      "name": "GageTable",
+      "text": "量具代码定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageTableMainView",
+          "file": "GageTableMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageTableTreeView",
+          "file": "GageTableTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageTableSaveData",
+          "file": "GageTableSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageTableDeleteData",
+          "file": "GageTableDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QPRT",
+  "name": "TV生产记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV生产记录查询",
+  "metadata": "提供TV产品生产记录的查询功能，涵盖生产时间、数量、班组、设备使用、质量检测等数据，助力管理人员及时了解TV生产动态，发现生产问题和瓶颈，优化生产流程，保障TV产品生产效率和质量稳定性，增强企业市场竞争力。",
+  "objects": [
+    {
+      "id": "MTD1000000QR",
+      "name": "ProdRecRptTVQuery",
+      "text": "TV生产记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

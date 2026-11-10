@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TRREC",
+  "name": "培训记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "培训记录",
+  "metadata": "Training Record",
+  "objects": [
+    {
+      "id": "MTD1000000IA",
+      "name": "TrainingRecord",
+      "text": "培训记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TrainingRecordMainView",
+          "file": "TrainingRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TrainingRecordTreeView",
+          "file": "TrainingRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TrainingRecordSaveData",
+          "file": "TrainingRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TrainingRecordDeleteData",
+          "file": "TrainingRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000ID",
+      "name": "TrainingRecDet",
+      "text": "培训记录明细",
+      "parentId": "MTD1000000IA",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TrainingRecDetMainView",
+          "file": "TrainingRecDetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TrainingRecDetTreeView",
+          "file": "TrainingRecDetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TrainingRecDetSaveData",
+          "file": "TrainingRecDetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TrainingRecDetDeleteData",
+          "file": "TrainingRecDetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CCTD",
+  "name": "资产成本中心",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "资产成本中心",
+  "metadata": "Costcenter",
+  "objects": [
+    {
+      "id": "MTD1000001NY",
+      "name": "CostCenter",
+      "text": "资产成本中心",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CostCenterMainView",
+          "file": "CostCenterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CostCenterTreeView",
+          "file": "CostCenterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CostCenterSaveData",
+          "file": "CostCenterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CostCenterDeleteData",
+          "file": "CostCenterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

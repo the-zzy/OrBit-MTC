@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ITSG",
+  "name": "IT设备请购",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "IT设备请购",
+  "metadata": "IT_PUROFAssets",
+  "objects": [
+    {
+      "id": "MTD1000000FO",
+      "name": "PUROFAssets",
+      "text": "IT设备请购",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PUROFAssetsMainView",
+          "file": "PUROFAssetsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PUROFAssetsTreeView",
+          "file": "PUROFAssetsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PUROFAssetsSaveData",
+          "file": "PUROFAssetsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PUROFAssetsDeleteData",
+          "file": "PUROFAssetsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

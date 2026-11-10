@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SHLQ",
+  "name": "物料存放位置",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "物料存放位置",
+  "metadata": "SHLQ",
+  "objects": [
+    {
+      "id": "MTD1000000T6",
+      "name": "MaterieShelvesQuery",
+      "text": "物料存放位置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TMSP",
+  "name": "物流计划订单管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物流计划订单管理",
+  "metadata": "TMSP",
+  "objects": [
+    {
+      "id": "MTD1000002CH",
+      "name": "TMSLogisticsPlanningOrder",
+      "text": "物流计划订单管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TMSLogisticsPlanningOrderMainView",
+          "file": "TMSLogisticsPlanningOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TMSLogisticsPlanningOrderTreeView",
+          "file": "TMSLogisticsPlanningOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CI",
+      "name": "TMSLogisticsPlanningOrderItem",
+      "text": "物流计划订单明细",
+      "parentId": "MTD1000002CH",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TMSLogisticsPlanningOrderItemMainView",
+          "file": "TMSLogisticsPlanningOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TMSLogisticsPlanningOrderItemTreeView",
+          "file": "TMSLogisticsPlanningOrderItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

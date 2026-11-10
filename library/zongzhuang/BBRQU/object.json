@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BBRQU",
+  "name": "借机查询报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "借机查询报表",
+  "metadata": "记录并查询设备借出和归还的详细信息，包括借出设备编号、借出时间、预计归还时间、借用部门或人员、设备状态等，确保设备借出过程的规范性和可追溯性。及时更新设备借出状态，避免设备逾期未还或丢失，提高设备使用效率和管理效率。",
+  "objects": [
+    {
+      "id": "MTD1000002B6",
+      "name": "BorrowBillQuery",
+      "text": "借机查询报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

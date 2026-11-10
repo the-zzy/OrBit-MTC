@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QUMR",
+  "name": "上料记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "上料记录查询",
+  "metadata": "MOLotOnRecord",
+  "objects": [
+    {
+      "id": "MTD1000000N0",
+      "name": "MOLotOnRecordQuery",
+      "text": "上料记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

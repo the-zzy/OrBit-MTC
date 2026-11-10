@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PBAR",
+  "name": "产品条码采集项",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品条码采集项",
+  "metadata": "Barcode of product",
+  "objects": [
+    {
+      "id": "MTD1000000FM",
+      "name": "ProductBarcode",
+      "text": "产品条码采集项",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductBarcodeMainView",
+          "file": "ProductBarcodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductBarcodeTreeView",
+          "file": "ProductBarcodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductBarcodeSaveData",
+          "file": "ProductBarcodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductBarcodeDeleteData",
+          "file": "ProductBarcodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000FL",
+      "name": "ProductBarcodeDC",
+      "text": "产品快速条码采集项目明细",
+      "parentId": "MTD1000000FM",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductBarcodeDCMainView",
+          "file": "ProductBarcodeDCMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductBarcodeDCTreeView",
+          "file": "ProductBarcodeDCTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductBarcodeDCSaveData",
+          "file": "ProductBarcodeDCSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductBarcodeDCDeleteData",
+          "file": "ProductBarcodeDCDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

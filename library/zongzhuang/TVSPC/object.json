@@ -1,0 +1,93 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVSPC",
+  "name": "备件板卡送检单(TV)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "备件板卡送检单(TV)",
+  "metadata": "SPCOrderTV",
+  "objects": [
+    {
+      "id": "MTD1000002E5",
+      "name": "SPCOrderTV",
+      "text": "备件板卡送检单(TV)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCOrderTVMainView",
+          "file": "SPCOrderTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCOrderTVTreeView",
+          "file": "SPCOrderTVTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SPCOrderTVDeleteData",
+          "file": "SPCOrderTVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002E6",
+      "name": "SPCOrderTVItem",
+      "text": "抽检详细",
+      "parentId": "MTD1000002E5",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCOrderTVItemMainView",
+          "file": "SPCOrderTVItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCOrderTVItemTreeView",
+          "file": "SPCOrderTVItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002E8",
+      "name": "SPCOrderTVItemLot",
+      "text": "送检单明细",
+      "parentId": "MTD1000002E6",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SPCOrderTVItemLotMainView",
+          "file": "SPCOrderTVItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SPCOrderTVItemLotTreeView",
+          "file": "SPCOrderTVItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

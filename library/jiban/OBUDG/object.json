@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OBUDG",
+  "name": "自定义对话框",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "自定义对话框",
+  "metadata": "OrBitUserDialog",
+  "objects": [
+    {
+      "id": "MTD1000002CE",
+      "name": "OrBitUserDialog",
+      "text": "自定义对话框",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrBitUserDialogMainView",
+          "file": "OrBitUserDialogMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrBitUserDialogTreeView",
+          "file": "OrBitUserDialogTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrBitUserDialogSaveData",
+          "file": "OrBitUserDialogSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrBitUserDialogDeleteData",
+          "file": "OrBitUserDialogDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

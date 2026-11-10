@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "XMSQ",
+  "name": "XMStorageQuery",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "XMStorageQuery",
+  "metadata": "XMStorageQuery",
+  "objects": [
+    {
+      "id": "MTD1000002AO",
+      "name": "XMStorageQuery",
+      "text": "XMStorageQuery",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KPLXX",
+  "name": "基板KPL生产日报查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "基板KPL生产日报查询",
+  "metadata": "KPLXX",
+  "objects": [
+    {
+      "id": "MTD10000024T",
+      "name": "GetDipAndSmtProductTime",
+      "text": "基板KPL生产日报查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "XMTSQ",
+  "name": "小米测试记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "小米测试记录查询",
+  "metadata": "XMTSQ",
+  "objects": [
+    {
+      "id": "MTD1000000ST",
+      "name": "TeststationQuery",
+      "text": "小米测试记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

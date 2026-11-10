@@ -1,0 +1,223 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KBIST",
+  "name": "看板项",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "看板项",
+  "metadata": "KanBan Item",
+  "objects": [
+    {
+      "id": "MTD1000000EX",
+      "name": "KanBanItem",
+      "text": "看板项",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanItemMainView",
+          "file": "KanBanItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanItemTreeView",
+          "file": "KanBanItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanItemSaveData",
+          "file": "KanBanItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanItemDeleteData",
+          "file": "KanBanItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023O",
+      "name": "KanBanITEM_Echart",
+      "text": "EChart布局",
+      "parentId": "MTD1000000EX",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanITEM_EchartMainView",
+          "file": "KanBanITEM_EchartMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanITEM_EchartTreeView",
+          "file": "KanBanITEM_EchartTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanITEM_EchartSaveData",
+          "file": "KanBanITEM_EchartSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanITEM_EchartDeleteData",
+          "file": "KanBanITEM_EchartDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023P",
+      "name": "KanBanItem_EditUser",
+      "text": "可编辑用户",
+      "parentId": "MTD1000000EX",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanItem_EditUserMainView",
+          "file": "KanBanItem_EditUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanItem_EditUserTreeView",
+          "file": "KanBanItem_EditUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanItem_EditUserSaveData",
+          "file": "KanBanItem_EditUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanItem_EditUserDeleteData",
+          "file": "KanBanItem_EditUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000F1",
+      "name": "KanBanItemType",
+      "text": "项目样式",
+      "parentId": "MTD1000000EX",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanItemTypeMainView",
+          "file": "KanBanItemTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanItemTypeTreeView",
+          "file": "KanBanItemTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanItemTypeSaveData",
+          "file": "KanBanItemTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanItemTypeDeleteData",
+          "file": "KanBanItemTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000H3",
+      "name": "KanBanIndex",
+      "text": "看板翻页设置",
+      "parentId": "MTD1000000EX",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanIndexMainView",
+          "file": "KanBanIndexMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanIndexTreeView",
+          "file": "KanBanIndexTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanIndexSaveData",
+          "file": "KanBanIndexSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanIndexDeleteData",
+          "file": "KanBanIndexDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000FA",
+      "name": "KanBanBaseTypeItem",
+      "text": "基类样式",
+      "parentId": "MTD1000000EX",
+      "sequence": "B",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanBanBaseTypeMainView",
+          "file": "KanBanBaseTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanBanBaseTypeTreeView",
+          "file": "KanBanBaseTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanBanBaseTypeSaveData",
+          "file": "KanBanBaseTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanBanBaseTypeDeleteData",
+          "file": "KanBanBaseTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

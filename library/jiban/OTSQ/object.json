@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OTSQ",
+  "name": "成品出库记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "成品出库记录查询",
+  "metadata": "TVOutStorageByDeliveryQuery",
+  "objects": [
+    {
+      "id": "MTD1000001NR",
+      "name": "TVOutStorageByDeliveryQuery",
+      "text": "成品出库记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

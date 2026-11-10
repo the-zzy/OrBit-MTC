@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "REQU",
+  "name": "报盘输出日志",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "报盘输出日志",
+  "metadata": "Report Export Log",
+  "objects": [
+    {
+      "id": "MTD1000000UI",
+      "name": "ReportExportLogQuery",
+      "text": "报盘输出日志",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,173 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DIPJ",
+  "name": "Excel数据导入项目",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Excel数据导入项目",
+  "metadata": "DataImportProject",
+  "objects": [
+    {
+      "id": "MTD10000026B",
+      "name": "DataImportProject",
+      "text": "Excel数据导入项目",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataImportProjectMainView",
+          "file": "DataImportProjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectTreeView",
+          "file": "DataImportProjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataImportProjectSaveData",
+          "file": "DataImportProjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataImportProjectDeleteData",
+          "file": "DataImportProjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026D",
+      "name": "DataImportProjectCheck",
+      "text": "Excel数据导入项目数据校验",
+      "parentId": "MTD10000026B",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataImportProjectCheckMainView",
+          "file": "DataImportProjectCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectCheckTreeView",
+          "file": "DataImportProjectCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataImportProjectCheckSaveData",
+          "file": "DataImportProjectCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataImportProjectCheckDeleteData",
+          "file": "DataImportProjectCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026E",
+      "name": "DataImportProjectUser",
+      "text": "Excel数据导入项目用户",
+      "parentId": "MTD10000026B",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataImportProjectUserMainView",
+          "file": "DataImportProjectUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectUserTreeView",
+          "file": "DataImportProjectUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataImportProjectUserSaveData",
+          "file": "DataImportProjectUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataImportProjectUserDeleteData",
+          "file": "DataImportProjectUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026C",
+      "name": "DataImportProjectExelog",
+      "text": "Excel数据导入项目日志",
+      "parentId": "MTD10000026B",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectExelogTreeView",
+          "file": "DataImportProjectExelogTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028H",
+      "name": "DataImportProjectExtraParameter",
+      "text": "Excel数据导入附加参数",
+      "parentId": "MTD10000026B",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataImportProjectExtraParameterMainView",
+          "file": "DataImportProjectExtraParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataImportProjectExtraParameterTreeView",
+          "file": "DataImportProjectExtraParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataImportProjectExtraParameterSaveData",
+          "file": "DataImportProjectExtraParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataImportProjectExtraParameterDeleteData",
+          "file": "DataImportProjectExtraParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

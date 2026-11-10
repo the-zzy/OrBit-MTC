@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SELQ",
+  "name": "节点报错记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "节点报错记录查询",
+  "metadata": "SELQ",
+  "objects": [
+    {
+      "id": "MTD10000020B",
+      "name": "SpecificationErrorLogQuery",
+      "text": "节点报错记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

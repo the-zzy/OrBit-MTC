@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "IQCQR",
+  "name": "来料状态报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "来料状态报表",
+  "metadata": "生成来料质量检验报表，展示检验进度、结果、合格率和不合格项处理情况，帮助相关部门及时了解来料质量，对不合格来料采取退货、换货等措施，确保原材料质量符合生产要求，同时为供应商管理和评价提供数据支持。",
+  "objects": [
+    {
+      "id": "MTD1000000TU",
+      "name": "IQCInspectionQuery",
+      "text": "来料状态报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

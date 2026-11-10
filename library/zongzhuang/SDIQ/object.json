@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SDIQ",
+  "name": "SKD订单包装明细查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SKD订单包装明细查询",
+  "metadata": "SDIQ",
+  "objects": [
+    {
+      "id": "MTD100000292",
+      "name": "SKDOrderInfoQuery",
+      "text": "SKD订单包装明细查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

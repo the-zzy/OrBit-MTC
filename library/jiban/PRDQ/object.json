@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PRDQ",
+  "name": "基板生产日报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "基板生产日报表",
+  "metadata": "ProdSMTDayQuery",
+  "objects": [
+    {
+      "id": "MTD1000002DR",
+      "name": "ProdSMTDayQuery",
+      "text": "基板生产日报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VBXD",
+  "name": "来料箱号分配",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "来料箱号分配",
+  "metadata": "VendorBoxlevel",
+  "objects": [
+    {
+      "id": "MTD10000025F",
+      "name": "VendorBoxlevel",
+      "text": "来料箱号分配",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorBoxlevelTreeView",
+          "file": "VendorBoxlevelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025G",
+      "name": "BoxLevelProd",
+      "text": "箱号类别分配",
+      "parentId": "MTD10000025F",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BoxLevelProdMainView",
+          "file": "BoxLevelProdMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BoxLevelProdTreeView",
+          "file": "BoxLevelProdTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BoxLevelProdSaveData",
+          "file": "BoxLevelProdSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BoxLevelProdDeleteData",
+          "file": "BoxLevelProdDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

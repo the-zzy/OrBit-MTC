@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HRRT",
+  "name": "海尔生产数据回传",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "海尔生产数据回传",
+  "metadata": "HaierProdReturnTask",
+  "objects": [
+    {
+      "id": "MTD1000002G4",
+      "name": "HaierProdReturnTask",
+      "text": "海尔生产数据回传",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "HaierProdReturnTaskMainView",
+          "file": "HaierProdReturnTaskMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "HaierProdReturnTaskTreeView",
+          "file": "HaierProdReturnTaskTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "HaierProdReturnTaskSaveData",
+          "file": "HaierProdReturnTaskSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "HaierProdReturnTaskDeleteData",
+          "file": "HaierProdReturnTaskDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002G5",
+      "name": "HaierProdReturnTaskDetail",
+      "text": "回传分组明细",
+      "parentId": "MTD1000002G4",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "HaierProdReturnTaskDetailMainView",
+          "file": "HaierProdReturnTaskDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "HaierProdReturnTaskDetailTreeView",
+          "file": "HaierProdReturnTaskDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "HaierProdReturnTaskDetailSaveData",
+          "file": "HaierProdReturnTaskDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "HaierProdReturnTaskDetailDeleteData",
+          "file": "HaierProdReturnTaskDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PLCM",
+  "name": "PLC设备管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "PLC设备管理",
+  "metadata": "PLCM",
+  "objects": [
+    {
+      "id": "MTD1000002CL",
+      "name": "PLC_ReadAndWrite",
+      "text": "PLC设备管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PLC_ReadAndWriteMainView",
+          "file": "PLC_ReadAndWriteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PLC_ReadAndWriteTreeView",
+          "file": "PLC_ReadAndWriteTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PLC_ReadAndWriteSaveData",
+          "file": "PLC_ReadAndWriteSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PLC_ReadAndWriteDeleteData",
+          "file": "PLC_ReadAndWriteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CM",
+      "name": "PLC_ReadAndWriteItem",
+      "text": "PLC地址信息维护",
+      "parentId": "MTD1000002CL",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PLC_ReadAndWriteItemMainView",
+          "file": "PLC_ReadAndWriteItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PLC_ReadAndWriteItemTreeView",
+          "file": "PLC_ReadAndWriteItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PLC_ReadAndWriteItemSaveData",
+          "file": "PLC_ReadAndWriteItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PLC_ReadAndWriteItemDeleteData",
+          "file": "PLC_ReadAndWriteItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,58 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "INRF",
+  "name": "巡检配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "巡检配置",
+  "metadata": "INRF",
+  "objects": [
+    {
+      "id": "MTD10000028R",
+      "name": "InspectionConfig",
+      "text": "巡检配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectionConfigMainView",
+          "file": "InspectionConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectionConfigTreeView",
+          "file": "InspectionConfigTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028S",
+      "name": "InspectionConfigItem",
+      "text": "巡检配置明细",
+      "parentId": "MTD10000028R",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "InspectionConfigItemTreeView",
+          "file": "InspectionConfigItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

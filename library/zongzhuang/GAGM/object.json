@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "GAGM",
+  "name": "量具仪器丢失记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具仪器丢失记录",
+  "metadata": "GageMiss",
+  "objects": [
+    {
+      "id": "MTD1000000HX",
+      "name": "GageMiss",
+      "text": "量具仪器丢失记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageMissMainView",
+          "file": "GageMissMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageMissTreeView",
+          "file": "GageMissTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageMissSaveData",
+          "file": "GageMissSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageMissDeleteData",
+          "file": "GageMissDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

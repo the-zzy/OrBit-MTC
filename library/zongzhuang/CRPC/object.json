@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CRPC",
+  "name": "客户信息配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户信息配置",
+  "metadata": "CRPC",
+  "objects": [
+    {
+      "id": "MTD10000028I",
+      "name": "CustomerRepairCheck",
+      "text": "客户信息配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerRepairMainView",
+          "file": "CustomerRepairMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerTreeView",
+          "file": "CustomerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerRepairSaveData",
+          "file": "CustomerRepairSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerDeleteData",
+          "file": "CustomerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPCS",
+  "name": "备件消耗查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "备件消耗查询",
+  "metadata": "SparePartconsume",
+  "objects": [
+    {
+      "id": "MTD1000000H4",
+      "name": "SparePartconsume",
+      "text": "备件消耗查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LMVT",
+  "name": "供应商屏分类",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "供应商屏分类",
+  "metadata": "LMVT",
+  "objects": [
+    {
+      "id": "MTD10000021M",
+      "name": "LineMatVendorType",
+      "text": "供应商屏分类",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatVendorTypeMainView",
+          "file": "LineMatVendorTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatVendorTypeTreeView",
+          "file": "LineMatVendorTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatVendorTypeSaveData",
+          "file": "LineMatVendorTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatVendorTypeDeleteData",
+          "file": "LineMatVendorTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021N",
+      "name": "LineMatVendorTypeItem",
+      "text": "供应商分类明细",
+      "parentId": "MTD10000021M",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatVendorTypeItemMainView",
+          "file": "LineMatVendorTypeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatVendorTypeItemTreeView",
+          "file": "LineMatVendorTypeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatVendorTypeItemSaveData",
+          "file": "LineMatVendorTypeItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatVendorTypeItemDeleteData",
+          "file": "LineMatVendorTypeItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

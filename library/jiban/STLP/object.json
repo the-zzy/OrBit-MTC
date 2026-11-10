@@ -1,0 +1,153 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "STLP",
+  "name": "PCB板备料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "PCB板备料单",
+  "metadata": "StockIssuedOrder",
+  "objects": [
+    {
+      "id": "MTD10000026K",
+      "name": "StockIssuedOrder",
+      "text": "PCB板备料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockIssuedOrderMainView",
+          "file": "StockIssuedOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockIssuedOrderTreeView",
+          "file": "StockIssuedOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockIssuedOrderSaveData",
+          "file": "StockIssuedOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockIssuedOrderDeleteData",
+          "file": "StockIssuedOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026L",
+      "name": "StockIssuedOrderItem",
+      "text": "备料号明细",
+      "parentId": "MTD10000026K",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockIssuedOrderItemMainView",
+          "file": "StockIssuedOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockIssuedOrderItemTreeView",
+          "file": "StockIssuedOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockIssuedOrderItemSaveData",
+          "file": "StockIssuedOrderItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockIssuedOrderItemDeleteData",
+          "file": "StockIssuedOrderItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026Q",
+      "name": "StockIssuedOrderDetail",
+      "text": "备料料号明细",
+      "parentId": "MTD10000026K",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockIssuedOrderDetailMainView",
+          "file": "StockIssuedOrderDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockIssuedOrderDetailTreeView",
+          "file": "StockIssuedOrderDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockIssuedOrderDetailSaveData",
+          "file": "StockIssuedOrderDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockIssuedOrderDetailDeleteData",
+          "file": "StockIssuedOrderDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026M",
+      "name": "StockIssuedOrderItemLot",
+      "text": "备料单批号",
+      "parentId": "MTD10000026Q",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockIssuedOrderItemLotMainView",
+          "file": "StockIssuedOrderItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockIssuedOrderItemLotTreeView",
+          "file": "StockIssuedOrderItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StockIssuedOrderItemLotSaveData",
+          "file": "StockIssuedOrderItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockIssuedOrderItemLotDeleteData",
+          "file": "StockIssuedOrderItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

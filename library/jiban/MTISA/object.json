@@ -1,0 +1,273 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MTISA",
+  "name": "A类发料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "A类发料单",
+  "metadata": "MaterialIssuanceA",
+  "objects": [
+    {
+      "id": "MTD10000020F",
+      "name": "MaterialIssuanceA",
+      "text": "A类发料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialIssuanceMainView",
+          "file": "MaterialIssuanceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceATreeView",
+          "file": "MaterialIssuanceATreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialIssuanceASaveData",
+          "file": "MaterialIssuanceASaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialIssuanceDeleteData",
+          "file": "MaterialIssuanceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025W",
+      "name": "WW_DepositA",
+      "text": "寄存仓",
+      "parentId": "MTD10000020F",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_DepositMainView",
+          "file": "WW_DepositMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_DepositTreeView",
+          "file": "WW_DepositTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WW_DepositSaveData",
+          "file": "WW_DepositSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WW_DepositDeleteData",
+          "file": "WW_DepositDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000026E",
+      "name": "LXPickingListItemMTISA",
+      "text": "超发出库明细",
+      "parentId": "MTD10000020F",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXPickingListItemMainView",
+          "file": "LXPickingListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXPickingListItemTreeView",
+          "file": "LXPickingListItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LXPickingListItemSaveData",
+          "file": "LXPickingListItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LXPickingListItemDeleteData",
+          "file": "LXPickingListItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020I",
+      "name": "MaterialIssuanceMOA",
+      "text": "A类发料工单",
+      "parentId": "MTD10000020F",
+      "sequence": "20",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialIssuanceMOMainView",
+          "file": "MaterialIssuanceMOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceMOTreeView",
+          "file": "MaterialIssuanceMOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialIssuanceMOSaveData",
+          "file": "MaterialIssuanceMOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialIssuanceMODeleteData",
+          "file": "MaterialIssuanceMODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020J",
+      "name": "MaterialIssuanceQtyA",
+      "text": "A类发料明细统计",
+      "parentId": "MTD10000020F",
+      "sequence": "30",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceAQtyTreeView",
+          "file": "MaterialIssuanceAQtyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020K",
+      "name": "ProductIssueMOItemA",
+      "text": "A类发料工单明细",
+      "parentId": "MTD10000020F",
+      "sequence": "35",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductIssueMOItemMainView",
+          "file": "ProductIssueMOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductIssueMOItemTreeView",
+          "file": "ProductIssueMOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020G",
+      "name": "MaterialIssuanceItemA",
+      "text": "A类发料单明细",
+      "parentId": "MTD10000020F",
+      "sequence": "40",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceItemTreeView",
+          "file": "MaterialIssuanceItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020H",
+      "name": "MaterialIssuanceItemLotA",
+      "text": "A类发料单明细批次",
+      "parentId": "MTD10000020G",
+      "sequence": "50",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialIssuanceItemLotMainView",
+          "file": "MaterialIssuanceItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialIssuanceItemLotTreeView",
+          "file": "MaterialIssuanceItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000025X",
+      "name": "ProductAllotItem_MTISA",
+      "text": "调拨单明细",
+      "parentId": "MTD10000020F",
+      "sequence": "A1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductAllotItemMainView",
+          "file": "ProductAllotItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductAllotItemTreeView",
+          "file": "ProductAllotItemTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductAllotItemDeleteData",
+          "file": "ProductAllotItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

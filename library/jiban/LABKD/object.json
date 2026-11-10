@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LABKD",
+  "name": "散件标签模板",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件标签模板",
+  "metadata": "LabelKD",
+  "objects": [
+    {
+      "id": "MTD1000000OM",
+      "name": "LabelKD",
+      "text": "散件标签模板",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelKDMainView",
+          "file": "LabelKDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelKDTreeView",
+          "file": "LabelKDTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelKDSaveData",
+          "file": "LabelKDSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelKDDeleteData",
+          "file": "LabelKDDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

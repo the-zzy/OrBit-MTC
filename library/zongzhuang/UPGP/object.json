@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "UPGP",
+  "name": "用户分组",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "用户分组",
+  "metadata": "UserPartGroup",
+  "objects": [
+    {
+      "id": "MTD1000000LV",
+      "name": "UserPartGroup",
+      "text": "用户分组",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserPartGroupMainView",
+          "file": "UserPartGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserPartGroupTreeView",
+          "file": "UserPartGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserPartGroupSaveData",
+          "file": "UserPartGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserPartGroupDeleteData",
+          "file": "UserPartGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LW",
+      "name": "UserPartGroupItem",
+      "text": "用户明细",
+      "parentId": "MTD1000000LV",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserPartGroupItemMainView",
+          "file": "UserPartGroupItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserPartGroupItemTreeView",
+          "file": "UserPartGroupItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserPartGroupItemSaveData",
+          "file": "UserPartGroupItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserPartGroupItemDeleteData",
+          "file": "UserPartGroupItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

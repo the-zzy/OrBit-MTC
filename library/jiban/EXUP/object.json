@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EXUP",
+  "name": "Excel对象管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Excel对象管理",
+  "metadata": "Excel Upload",
+  "objects": [
+    {
+      "id": "MTD1000000BM",
+      "name": "SysExcelUpload",
+      "text": "Excel对象管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysExcelUploadMainView",
+          "file": "SysExcelUploadMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysExcelUploadTreeView",
+          "file": "SysExcelUploadTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysExcelUploadSaveData",
+          "file": "SysExcelUploadSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysExcelUploadDeleteData",
+          "file": "SysExcelUploadDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BN",
+      "name": "SysExcelUploadMethod",
+      "text": "Excel对象方法",
+      "parentId": "MTD1000000BM",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysExcelUploadMethodMainView",
+          "file": "SysExcelUploadMethodMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysExcelUploadMethodTreeView",
+          "file": "SysExcelUploadMethodTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysExcelUploadMethodSaveData",
+          "file": "SysExcelUploadMethodSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysExcelUploadMethodDeleteData",
+          "file": "SysExcelUploadMethodDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BO",
+      "name": "SysExcelUploadField",
+      "text": "Excel对象参数",
+      "parentId": "MTD1000000BN",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysExcelUploadFieldMainView",
+          "file": "SysExcelUploadFieldMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysExcelUploadFieldTreeView",
+          "file": "SysExcelUploadFieldTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysExcelUploadFieldSaveData",
+          "file": "SysExcelUploadFieldSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysExcelUploadFieldDeleteData",
+          "file": "SysExcelUploadFieldDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

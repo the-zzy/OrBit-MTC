@@ -1,0 +1,213 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "IQCRE",
+  "name": "超期返检查询",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "超期返检查询",
+  "metadata": "VendorDeliveryRes",
+  "objects": [
+    {
+      "id": "MTD1000000TO",
+      "name": "VendorDeliveryres",
+      "text": "超期返检查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryResMainView",
+          "file": "VendorDeliveryResMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryResTreeView",
+          "file": "VendorDeliveryResTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorDeliveryResSaveData",
+          "file": "VendorDeliveryResSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorDeliveryResDeleteData",
+          "file": "VendorDeliveryResDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001NB",
+      "name": "SRMVendorDeliveryItem_Scan",
+      "text": "扫描明细对照",
+      "parentId": "MTD1000000TO",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SRMVendorDeliveryItemMainView",
+          "file": "SRMVendorDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SRMVendorDeliveryItem_scanTreeView",
+          "file": "SRMVendorDeliveryItem_scanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SrmVendorDeliveryItemSaveData",
+          "file": "SrmVendorDeliveryItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001MN",
+      "name": "IQCCheckinLot",
+      "text": "SAP确认明细",
+      "parentId": "MTD1000000TO",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotTreeView",
+          "file": "IQCCheckinLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ND",
+      "name": "POItem_CovertRes",
+      "text": "更换送货单入库(扫描）",
+      "parentId": "MTD1000001MN",
+      "sequence": "9",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemMainView",
+          "file": "POItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItem_Convert_srmTreeView",
+          "file": "POItem_Convert_srmTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OE",
+      "name": "POItem_DeliveryresList",
+      "text": "送货计划查询",
+      "parentId": "MTD1000001MN",
+      "sequence": "9",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemMainView",
+          "file": "POItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItem_DeliveryresListTreeView",
+          "file": "POItem_DeliveryresListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000TQ",
+      "name": "Vendordeliveryresitem",
+      "text": "送货对帐明细",
+      "parentId": "MTD1000000TO",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendordeliveryresitemMainView",
+          "file": "VendordeliveryresitemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendordeliveryresitemTreeView",
+          "file": "VendordeliveryresitemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendordeliveryresitemSaveData",
+          "file": "VendordeliveryresitemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001W2",
+      "name": "VendordeliveryresitemLOT",
+      "text": "送货对帐批号明细",
+      "parentId": "MTD1000000TO",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryItemLotMainView",
+          "file": "VendorDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryItemLotTreeView",
+          "file": "VendorDeliveryItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

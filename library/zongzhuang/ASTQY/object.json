@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ASTQY",
+  "name": "设备点检查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "设备点检查询",
+  "metadata": "记录并提供设备点检数据的查询功能，包括设备基本信息、点检时间、项目、结果和运行参数，助力设备管理部门实时掌握设备运行状况，及时安排维修保养，避免故障停机，提高设备可靠性和使用寿命。",
+  "objects": [
+    {
+      "id": "MTD1000000U7",
+      "name": "AssetKeepQuery",
+      "text": "设备点检查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ELSO",
+  "name": "Element订单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Element订单",
+  "metadata": "ElemenSO",
+  "objects": [
+    {
+      "id": "MTD100000208",
+      "name": "ElemenSO",
+      "text": "Element订单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOMainView",
+          "file": "SOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ElementSOTreeView",
+          "file": "ElementSOTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000207",
+      "name": "ElementOrderitem",
+      "text": "Elemnt订单同步信息",
+      "parentId": "MTD100000208",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ElementOrderitemMainView",
+          "file": "ElementOrderitemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ElementOrderitemTreeView",
+          "file": "ElementOrderitemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

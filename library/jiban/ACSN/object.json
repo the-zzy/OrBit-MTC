@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ACSN",
+  "name": "作废批号查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "作废批号查询",
+  "metadata": "ACSN",
+  "objects": [
+    {
+      "id": "MTD1000000S7",
+      "name": "AlreadyCancelSN",
+      "text": "作废批号查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

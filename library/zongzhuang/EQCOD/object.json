@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EQCOD",
+  "name": "设备代码定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备代码定义",
+  "metadata": "EquipmentSPEC",
+  "objects": [
+    {
+      "id": "MTD1000000G4",
+      "name": "EquipmentSPEC",
+      "text": "设备代码定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentSPECMainView",
+          "file": "EquipmentSPECMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentSPECTreeView",
+          "file": "EquipmentSPECTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentSPECSaveData",
+          "file": "EquipmentSPECSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentSPECDeleteData",
+          "file": "EquipmentSPECDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

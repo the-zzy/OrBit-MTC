@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EXLO",
+  "name": "异常批号",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "异常批号",
+  "metadata": "Exception Lot",
+  "objects": [
+    {
+      "id": "MTD1000000QI",
+      "name": "ExceptionLot",
+      "text": "异常批号",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ExceptionLotMainView",
+          "file": "ExceptionLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ExceptionLotTreeView",
+          "file": "ExceptionLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ExceptionLotSaveData",
+          "file": "ExceptionLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ExceptionLotDeleteData",
+          "file": "ExceptionLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

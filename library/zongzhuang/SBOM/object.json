@@ -1,0 +1,143 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SBOM",
+  "name": "散件BOM模板",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件BOM模板",
+  "metadata": "SKDBOM",
+  "objects": [
+    {
+      "id": "MTD10000027H",
+      "name": "SKDBOM",
+      "text": "散件BOM模板",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDBOMMainView",
+          "file": "SKDBOMMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDBOMTreeView",
+          "file": "SKDBOMTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDBOMSaveData",
+          "file": "SKDBOMSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDBOMDeleteData",
+          "file": "SKDBOMDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002F9",
+      "name": "ChecklistType",
+      "text": "清单模板类别",
+      "parentId": "MTD10000027H",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ChecklistTypeMainView",
+          "file": "ChecklistTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ChecklistTypeTreeView",
+          "file": "ChecklistTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ChecklistTypeSaveData",
+          "file": "ChecklistTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ChecklistTypeDeleteData",
+          "file": "ChecklistTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027I",
+      "name": "SKDBOMItem",
+      "text": "散件BOM模板明细",
+      "parentId": "MTD1000002F9",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDBOMItemMainView",
+          "file": "SKDBOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDBOMItemTreeView",
+          "file": "SKDBOMItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDBOMItemSaveData",
+          "file": "SKDBOMItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDBOMItemDeleteData",
+          "file": "SKDBOMItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027J",
+      "name": "SKDBOMItemComparison",
+      "text": "SKD散件BOM明细比对",
+      "parentId": "MTD10000027H",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDBOMItemMainView",
+          "file": "SKDBOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDBOMItemComparisonTreeView",
+          "file": "SKDBOMItemComparisonTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

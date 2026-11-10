@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PLUG",
+  "name": "插件管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "插件管理",
+  "metadata": "System Plugin",
+  "objects": [
+    {
+      "id": "MTD10000006U",
+      "name": "SysPlugIn",
+      "text": "插件管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysPluginMainView",
+          "file": "SysPluginMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysPluginTreeView",
+          "file": "SysPluginTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysPluginSaveData",
+          "file": "SysPluginSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysPluginDeleteData",
+          "file": "SysPluginDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

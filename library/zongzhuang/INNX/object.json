@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "INNX",
+  "name": "仪器信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "仪器信息",
+  "metadata": "查询仪器信息，记录仪器编号、名称、型号、规格、购置日期、校准日期、使用部门等信息，确保仪器数据的准确性和完整性。这有助于优化仪器管理流程，提高仪器的使用效率和准确性，保障企业的生产质量和检测能力。",
+  "objects": [
+    {
+      "id": "MTD100000279",
+      "name": "InstrumentInfo",
+      "text": "仪器信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InstrumentInfoMainView",
+          "file": "InstrumentInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InstrumentInfoTreeView",
+          "file": "InstrumentInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InstrumentInfoSaveData",
+          "file": "InstrumentInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InstrumentInfoDeleteData",
+          "file": "InstrumentInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000278",
+      "name": "InstrumentInfoItem",
+      "text": "仪器文件",
+      "parentId": "MTD100000279",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InstrumentInfoItemMainView",
+          "file": "InstrumentInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InstrumentInfoItemTreeView",
+          "file": "InstrumentInfoItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InstrumentInfoItemSaveData",
+          "file": "InstrumentInfoItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InstrumentInfoItemDeleteData",
+          "file": "InstrumentInfoItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000276",
+      "name": "InstrumentSetContent",
+      "text": "仪器信息配方/指令",
+      "parentId": "MTD100000278",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InstrumentSetContentMainView",
+          "file": "InstrumentSetContentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InstrumentSetContentTreeView",
+          "file": "InstrumentSetContentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InstrumentSetContentSaveData",
+          "file": "InstrumentSetContentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InstrumentSetContentDeleteData",
+          "file": "InstrumentSetContentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000277",
+      "name": "InstrumentTestItem",
+      "text": "",
+      "parentId": "MTD100000276",
+      "sequence": "3",
+      "depth": 4,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InstrumentTestItemMainView",
+          "file": "InstrumentTestItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InstrumentTestItemTreeView",
+          "file": "InstrumentTestItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InstrumentTestItemSaveData",
+          "file": "InstrumentTestItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InstrumentTestItemDeleteData",
+          "file": "InstrumentTestItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

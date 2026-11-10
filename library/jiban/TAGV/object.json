@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TAGV",
+  "name": "AGV物料上下架管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AGV物料上下架管理",
+  "metadata": "ToAGVMove",
+  "objects": [
+    {
+      "id": "MTD100000265",
+      "name": "ToAGVMove",
+      "text": "AGV物料上下架管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToAGVMoveMainView",
+          "file": "ToAGVMoveMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToAGVMoveTreeView",
+          "file": "ToAGVMoveTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToAGVMoveSaveData",
+          "file": "ToAGVMoveSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToAGVMoveDeleteData",
+          "file": "ToAGVMoveDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000266",
+      "name": "ToAGVMoveItem",
+      "text": "AGV物料上下架管理明细",
+      "parentId": "MTD100000265",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ToAGVMoveItemMainView",
+          "file": "ToAGVMoveItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ToAGVMoveItemTreeView",
+          "file": "ToAGVMoveItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ToAGVMoveItemSaveData",
+          "file": "ToAGVMoveItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ToAGVMoveItemDeleteData",
+          "file": "ToAGVMoveItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

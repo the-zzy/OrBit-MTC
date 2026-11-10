@@ -1,0 +1,78 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SCPSA",
+  "name": "SCKD生产状态",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SCKD生产状态",
+  "metadata": "SCKDProStatus",
+  "objects": [
+    {
+      "id": "MTD1000002EY",
+      "name": "SCKDProStatus",
+      "text": "SCKD生产状态",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SCKDProStatusMainView",
+          "file": "SCKDProStatusMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SCKDProStatusTreeView",
+          "file": "SCKDProStatusTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SCKDProStatusSaveData",
+          "file": "SCKDProStatusSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SCKDProStatusDeleteData",
+          "file": "SCKDProStatusDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002F1",
+      "name": "SCKDProStatus1",
+      "text": "SCKD待包装信息",
+      "parentId": "MTD1000002EY",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SCKDProStatus1MainView",
+          "file": "SCKDProStatus1MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SCKDProStatus1TreeView",
+          "file": "SCKDProStatus1TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SCKDProStatus1SaveData",
+          "file": "SCKDProStatus1SaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

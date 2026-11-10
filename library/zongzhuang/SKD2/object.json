@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD2",
+  "name": "散件物料单位维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件物料单位维护",
+  "metadata": "SKD2",
+  "objects": [
+    {
+      "id": "MTD1000002DX",
+      "name": "SKDPrdUnit",
+      "text": "散件物料单位维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDPrdUnitMainView",
+          "file": "SKDPrdUnitMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDPrdUnitTreeView",
+          "file": "SKDPrdUnitTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDPrdUnitSaveData",
+          "file": "SKDPrdUnitSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDPrdUnitDeleteData",
+          "file": "SKDPrdUnitDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,68 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BINM",
+  "name": "BIN KEY管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "BIN KEY管理",
+  "metadata": "管理BIN KEY，记录KEY编号、产品型号、BIN值、描述、生效日期等信息，确保BIN KEY数据的准确性和完整性。这有助于优化产品质量控制流程，提高产品的可追溯性和一致性，保障企业的生产质量和市场信誉。",
+  "objects": [
+    {
+      "id": "MTD1000001QG",
+      "name": "BinKeyManager",
+      "text": "BIN KEY管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BinKeyManagerMainView",
+          "file": "BinKeyManagerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BinKeyManagerTreeView",
+          "file": "BinKeyManagerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BinKeyManagerSaveData",
+          "file": "BinKeyManagerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BinKeyManagerDeleteData",
+          "file": "BinKeyManagerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AT",
+      "name": "BinKeyManagerGroup",
+      "text": "BinKey用量查询",
+      "parentId": "MTD1000001QG",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "BinKeyManagerGroupTreeView",
+          "file": "BinKeyManagerGroupTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

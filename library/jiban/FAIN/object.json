@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FAIN",
+  "name": "首件检测结果",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "首件检测结果",
+  "metadata": "FAIN",
+  "objects": [
+    {
+      "id": "MTD10000028Y",
+      "name": "FAInspection",
+      "text": "首件检测结果",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FAInspectionMainView",
+          "file": "FAInspectionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FAInspectionTreeView",
+          "file": "FAInspectionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FAInspectionSaveData",
+          "file": "FAInspectionSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FAInspectionDeleteData",
+          "file": "FAInspectionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028Z",
+      "name": "FAInspectionItem",
+      "text": "首件检测明细",
+      "parentId": "MTD10000028Y",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FAInspectionItemMainView",
+          "file": "FAInspectionItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FAInspectionItemTreeView",
+          "file": "FAInspectionItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FAInspectionItemSaveData",
+          "file": "FAInspectionItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FAInspectionItemDeleteData",
+          "file": "FAInspectionItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

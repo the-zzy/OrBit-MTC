@@ -1,0 +1,43 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EQMV",
+  "name": "设备搬迁",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备搬迁",
+  "metadata": "EquipmentMove",
+  "objects": [
+    {
+      "id": "MTD1000000GN",
+      "name": "EquipmentMove",
+      "text": "设备搬迁",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentMoveMainView",
+          "file": "EquipmentMoveMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentMoveTreeView",
+          "file": "EquipmentMoveTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentMoveSaveData",
+          "file": "EquipmentMoveSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

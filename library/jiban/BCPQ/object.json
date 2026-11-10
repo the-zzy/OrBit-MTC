@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BCPQ",
+  "name": "Bom工单比较查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "Bom工单比较查询",
+  "metadata": "Bom工单比较查询",
+  "objects": [
+    {
+      "id": "MTD100000256",
+      "name": "BomCompareQuery",
+      "text": "Bom工单比较查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

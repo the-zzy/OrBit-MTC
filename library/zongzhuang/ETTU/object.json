@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ETTU",
+  "name": "系统订单工时成本自动核算",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "系统订单工时成本自动核算",
+  "metadata": "ASTQY",
+  "objects": [
+    {
+      "id": "MTD10000025U",
+      "name": "GetProductTimeQuery",
+      "text": "系统订单工时成本自动核算",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

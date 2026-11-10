@@ -1,0 +1,108 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FACT",
+  "name": "工厂",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工厂",
+  "metadata": "Factory",
+  "objects": [
+    {
+      "id": "MTD100000082",
+      "name": "Factory",
+      "text": "工厂",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FactoryMainView",
+          "file": "FactoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FactoryTreeView",
+          "file": "FactoryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FactorySaveData",
+          "file": "FactorySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FactoryDeleteData",
+          "file": "FactoryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RT",
+      "name": "Factory_User",
+      "text": "工厂用户",
+      "parentId": "MTD100000082",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Factory_UserMainView",
+          "file": "Factory_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Factory_UserTreeView",
+          "file": "Factory_UserTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BU",
+      "name": "FactoryCalendor",
+      "text": "工厂日历",
+      "parentId": "MTD100000082",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FactoryCalendorMainView",
+          "file": "FactoryCalendorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FactoryCalendorTreeView",
+          "file": "FactoryCalendorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FactoryCalendorSaveData",
+          "file": "FactoryCalendorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FactoryCalendorDeleteData",
+          "file": "FactoryCalendorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

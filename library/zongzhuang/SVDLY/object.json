@@ -1,0 +1,258 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SVDLY",
+  "name": "SRM 送货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SRM 送货单",
+  "metadata": "管理SRM送货单，记录送货单编号、供应商名称、送货日期、物料信息、数量、质量状态等数据，确保送货单数据的准确性和可追溯性。这有助于优化采购流程，提高供应商管理效率，保障生产所需的物料按时、按质、按量供应。增加修改采购单仓位时，上传sap要修改库位按钮，否则发料失败",
+  "objects": [
+    {
+      "id": "MTD1000000KJ",
+      "name": "SRMVendorDelivery",
+      "text": "SRM 送货单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SRMVendorDeliveryMainView",
+          "file": "SRMVendorDeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SRMVendorDeliveryTreeView",
+          "file": "SRMVendorDeliveryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KK",
+      "name": "SRMVendorDeliveryItem",
+      "text": "SRM 送货单明细",
+      "parentId": "MTD1000000KJ",
+      "sequence": "01",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SRMVendorDeliveryItemMainView",
+          "file": "SRMVendorDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SRMVendorDeliveryItemTreeView",
+          "file": "SRMVendorDeliveryItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SrmVendorDeliveryItemSaveData",
+          "file": "SrmVendorDeliveryItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KL",
+      "name": "SRMVendorDeliveryItemLot",
+      "text": "SRM 送货单明细批号",
+      "parentId": "MTD1000000KK",
+      "sequence": "02",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SRMVendorDeliveryItemLotMainView",
+          "file": "SRMVendorDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SRMVendorDeliveryItemLotTreeView",
+          "file": "SRMVendorDeliveryItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OC",
+      "name": "POItem_DeliveryList",
+      "text": "送货计划查询",
+      "parentId": "MTD1000000KK",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemMainView",
+          "file": "POItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItem_DeliveryListTreeView",
+          "file": "POItem_DeliveryListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000U0",
+      "name": "VendorDeliveryBoxInfo",
+      "text": "送货单箱号信息",
+      "parentId": "MTD1000000KK",
+      "sequence": "9",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorDeliveryBoxInfoMainView",
+          "file": "VendorDeliveryBoxInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorDeliveryBoxInfoTreeView",
+          "file": "VendorDeliveryBoxInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001N3",
+      "name": "SRMIQCOrder",
+      "text": "IQC抽样检查",
+      "parentId": "MTD1000000KJ",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCOrderSrmMainView",
+          "file": "IQCOrderSrmMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCOrderSrmTreeView",
+          "file": "IQCOrderSrmTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001N5",
+      "name": "IQCCheckinLotSRM",
+      "text": "SAP确认明细",
+      "parentId": "MTD1000000KJ",
+      "sequence": "05",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotTreeView",
+          "file": "IQCCheckinLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001NC",
+      "name": "POItem_Covert",
+      "text": "更换送货单入库",
+      "parentId": "MTD1000001N5",
+      "sequence": "8",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemMainView",
+          "file": "POItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItem_Convert_srmTreeView",
+          "file": "POItem_Convert_srmTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001U2",
+      "name": "WW_RMinventoryExt",
+      "text": "原厂信息绑定",
+      "parentId": "MTD1000000KJ",
+      "sequence": "06",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WW_RMinventoryExtMainView",
+          "file": "WW_RMinventoryExtMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WW_RMinventoryExtTreeView",
+          "file": "WW_RMinventoryExtTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WW_RMinventoryExtSaveData",
+          "file": "WW_RMinventoryExtSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WW_RMinventoryExtDeleteData",
+          "file": "WW_RMinventoryExtDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

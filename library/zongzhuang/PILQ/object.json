@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PILQ",
+  "name": "发料/退料记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "发料/退料记录查询",
+  "metadata": "记录和查询发料和退料操作的详细信息，包括发料时间、物料编号、数量、发料工单、退料原因等，确保发料和退料过程的准确性和可追溯性。这有助于优化物料管理流程，避免物料浪费和账实不符问题，提高企业物料管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000002BF",
+      "name": "PickingListQuery",
+      "text": "发料/退料记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

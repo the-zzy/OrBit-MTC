@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CIYQ",
+  "name": "储位库存查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "储位库存查询",
+  "metadata": "CIYQ",
+  "objects": [
+    {
+      "id": "MTD1000002DQ",
+      "name": "CellInventoryQuery",
+      "text": "储位库存查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

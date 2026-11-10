@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "STDRQ",
+  "name": "SMT抛料信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SMT抛料信息查询",
+  "metadata": "SMTDiscardRecordQuery",
+  "objects": [
+    {
+      "id": "MTD1000002E4",
+      "name": "SMTDiscardRecordQuery",
+      "text": "SMT抛料信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

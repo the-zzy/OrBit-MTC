@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WDCX",
+  "name": "寄存仓查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "寄存仓查询",
+  "metadata": "WDCX",
+  "objects": [
+    {
+      "id": "MTD10000025O",
+      "name": "WW_DepositChaXun",
+      "text": "寄存仓查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ASQU",
+  "name": "采集项查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "采集项查询",
+  "metadata": "提供采集项数据的查询功能，涵盖质量检测、工艺参数、设备运行和物料消耗等信息，方便管理人员和技术人员快速获取所需数据，用于生产监控、质量分析和工艺优化，提高生产决策的科学性和时效性。",
+  "objects": [
+    {
+      "id": "MTD1000000KS",
+      "name": "DataChainAssemblyQuery",
+      "text": "采集项查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

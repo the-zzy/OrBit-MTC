@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CTQU",
+  "name": "清尾查询报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "清尾查询报表",
+  "metadata": "CTQU",
+  "objects": [
+    {
+      "id": "MTD10000028W",
+      "name": "ClearTailQuery",
+      "text": "清尾查询报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

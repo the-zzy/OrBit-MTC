@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DSNQ",
+  "name": "DSN查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "DSN查询",
+  "metadata": "DSNQ",
+  "objects": [
+    {
+      "id": "MTD1000001VK",
+      "name": "DSNCheckQuery",
+      "text": "DSN查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

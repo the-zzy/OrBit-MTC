@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CIWQ",
+  "name": "EMR 生产查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "EMR 生产查询",
+  "metadata": "CommodityInspectionWIPQuery",
+  "objects": [
+    {
+      "id": "MTD1000000P8",
+      "name": "CommodityInspectionWIPQuery",
+      "text": "EMR 生产查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

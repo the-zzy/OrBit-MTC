@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GACY",
+  "name": "合格认证计量机构",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "合格认证计量机构",
+  "metadata": "GageAgency",
+  "objects": [
+    {
+      "id": "MTD1000000H7",
+      "name": "GageAgency",
+      "text": "合格认证计量机构",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageAgencyMainView",
+          "file": "GageAgencyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageAgencyTreeView",
+          "file": "GageAgencyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageAgencySaveData",
+          "file": "GageAgencySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageAgencyDeleteData",
+          "file": "GageAgencyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

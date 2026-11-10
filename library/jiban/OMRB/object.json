@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OMRB",
+  "name": "OverdueMaterialRecheckBatch",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "OverdueMaterialRecheckBatch",
+  "metadata": "OverdueMaterialRecheckBatch",
+  "objects": [
+    {
+      "id": "MTD1000002EU",
+      "name": "OverdueMaterialRecheckBatch",
+      "text": "OverdueMaterialRecheckBatch",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueMaterialRecheckBatchMainView",
+          "file": "OverdueMaterialRecheckBatchMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueMaterialRecheckBatchTreeView",
+          "file": "OverdueMaterialRecheckBatchTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OverdueMaterialRecheckBatchSaveData",
+          "file": "OverdueMaterialRecheckBatchSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OverdueMaterialRecheckBatchDeleteData",
+          "file": "OverdueMaterialRecheckBatchDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EW",
+      "name": "OverdueMaterialRecheckBatchLot",
+      "text": "超期物料批号",
+      "parentId": "MTD1000002EU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueMaterialRecheckBatchLotMainView",
+          "file": "OverdueMaterialRecheckBatchLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueMaterialRecheckBatchLotTreeView",
+          "file": "OverdueMaterialRecheckBatchLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OverdueMaterialRecheckBatchLotSaveData",
+          "file": "OverdueMaterialRecheckBatchLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OverdueMaterialRecheckBatchLotDeleteData",
+          "file": "OverdueMaterialRecheckBatchLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

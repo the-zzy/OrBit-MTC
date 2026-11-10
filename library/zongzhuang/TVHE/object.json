@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVHE",
+  "name": "线体小时效率",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "线体小时效率",
+  "metadata": "维护线体小时效率不达标原因；计划/产出由作业按线体小时产出算法写入。",
+  "objects": [
+    {
+      "id": "MTD1000002GZ",
+      "name": "TVLineHourEfficiency",
+      "text": "线体小时效率",
+      "parentId": "",
+      "sequence": "03",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVLineHourEfficiencyMainView",
+          "file": "TVLineHourEfficiencyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVLineHourEfficiencyTreeView",
+          "file": "TVLineHourEfficiencyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVLineHourEfficiencySaveData",
+          "file": "TVLineHourEfficiencySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVLineHourEfficiencyDeleteData",
+          "file": "TVLineHourEfficiencyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

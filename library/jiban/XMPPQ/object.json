@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "XMPPQ",
+  "name": "小米晨报102报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "小米晨报102报表",
+  "metadata": "XMPPQ",
+  "objects": [
+    {
+      "id": "MTD1000001SW",
+      "name": "XiaoMiProductPlanQuery",
+      "text": "小米晨报102报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

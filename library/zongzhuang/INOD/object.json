@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "INOD",
+  "name": "进货通知单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "进货通知单",
+  "metadata": "管理进货通知单，记录通知单编号、供应商名称、采购订单、预计到货日期、实际到货日期、物料信息、数量等数据，确保进货通知工作的规范性和可追溯性。这有助于及时安排收货和检验工作，保障生产所需的物料按时、按质、按量供应。",
+  "objects": [
+    {
+      "id": "Err458a80ccc",
+      "name": "IncomingOrder",
+      "text": "进货通知单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingOrderMainView",
+          "file": "IncomingOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingOrderTreeView",
+          "file": "IncomingOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001R6",
+      "name": "IQCCheckinLotIncom",
+      "text": "SAP确认明细",
+      "parentId": "Err458a80ccc",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotTreeView",
+          "file": "IQCCheckinLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JQ",
+      "name": "IncomingOrderItem",
+      "text": "进货通知单明细",
+      "parentId": "Err458a80ccc",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingOrderItemMainView",
+          "file": "IncomingOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingOrderItemTreeView",
+          "file": "IncomingOrderItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JR",
+      "name": "IncomingOrderItemLot",
+      "text": "进货通知单明细批号",
+      "parentId": "MTD1000000JQ",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IncomingOrderItemLotMainView",
+          "file": "IncomingOrderItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IncomingOrderItemLotTreeView",
+          "file": "IncomingOrderItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

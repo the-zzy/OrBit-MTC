@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SMCI",
+  "name": "SMT标准产能",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SMT标准产能",
+  "metadata": "SMTCapacity",
+  "objects": [
+    {
+      "id": "MTD1000000N7",
+      "name": "SMTCapacity",
+      "text": "SMT标准产能",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTCapacityMainView",
+          "file": "SMTCapacityMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTCapacityTreeView",
+          "file": "SMTCapacityTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMTCapacitySaveData",
+          "file": "SMTCapacitySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMTCapacityDeleteData",
+          "file": "SMTCapacityDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000O8",
+      "name": "SMTCapacityItem",
+      "text": "SMT产能明细",
+      "parentId": "MTD1000000N7",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SMTCapacityItemMainView",
+          "file": "SMTCapacityItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SMTCapacityItemTreeView",
+          "file": "SMTCapacityItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SMTCapacityItemSaveData",
+          "file": "SMTCapacityItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SMTCapacityItemDeleteData",
+          "file": "SMTCapacityItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,98 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVBC",
+  "name": "TV奖金审核",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV奖金审核",
+  "metadata": "审核TV奖金，记录审核编号、员工信息、奖金项目、奖金金额、审核日期、审核结果等信息，确保奖金审核的准确性和公正性。这有助于激励员工提高工作效率和质量，促进企业目标的实现，提高员工满意度和忠诚度。",
+  "objects": [
+    {
+      "id": "MTD1000001VI",
+      "name": "TVBonusCheck",
+      "text": "TV奖金审核",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVBonusCheckMainView",
+          "file": "TVBonusCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVBonusCheckTreeView",
+          "file": "TVBonusCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVBonusCheckSaveData",
+          "file": "TVBonusCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVBonusCheckDeleteData",
+          "file": "TVBonusCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VJ",
+      "name": "TVbonusCheckItem",
+      "text": "TV奖金发放审核明细",
+      "parentId": "MTD1000001VI",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVbonusCheckItemMainView",
+          "file": "TVbonusCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVbonusCheckItemTreeView",
+          "file": "TVbonusCheckItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVbonusCheckItemSaveData",
+          "file": "TVbonusCheckItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000231",
+      "name": "TVShouldDeductedBonus",
+      "text": "应抵扣奖金",
+      "parentId": "MTD1000001VI",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "TVShouldDeductedBonusTreeView",
+          "file": "TVShouldDeductedBonusTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

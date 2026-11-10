@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VNPOS",
+  "name": "VNProductionOrderRunStandardDays",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "VNProductionOrderRunStandardDays",
+  "metadata": "VNProductionOrderRunStandardDays",
+  "objects": [
+    {
+      "id": "MTD1000002GE",
+      "name": "VNProductionOrderRunStandardDays",
+      "text": "VNProductionOrderRunStandardDays",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VNProductionOrderRunStandardDaysMainView",
+          "file": "VNProductionOrderRunStandardDaysMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VNProductionOrderRunStandardDaysTreeView",
+          "file": "VNProductionOrderRunStandardDaysTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VNProductionOrderRunStandardDaysSaveData",
+          "file": "VNProductionOrderRunStandardDaysSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VNProductionOrderRunStandardDaysDeleteData",
+          "file": "VNProductionOrderRunStandardDaysDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

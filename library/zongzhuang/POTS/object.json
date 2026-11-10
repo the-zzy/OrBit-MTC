@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "POTS",
+  "name": "设备端口资料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备端口资料",
+  "metadata": "PortSetting",
+  "objects": [
+    {
+      "id": "MTD1000000NN",
+      "name": "PortSetting",
+      "text": "设备端口资料",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PortSettingMainView",
+          "file": "PortSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PortSettingTreeView",
+          "file": "PortSettingTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000P1",
+      "name": "PortSettingItem",
+      "text": "设备端口设置",
+      "parentId": "MTD1000000NN",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PortSettingItemMainView",
+          "file": "PortSettingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PortSettingItemTreeView",
+          "file": "PortSettingItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

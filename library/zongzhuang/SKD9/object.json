@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD9",
+  "name": "SKD料号基础信息维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SKD料号基础信息维护",
+  "metadata": "SKD料号基础信息维护",
+  "objects": [
+    {
+      "id": "MTD1000002EL",
+      "name": "SKDMaterialsBasicInfo",
+      "text": "SKD料号基础信息维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDMaterialsBasicInfoMainView",
+          "file": "SKDMaterialsBasicInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDMaterialsBasicInfoTreeView",
+          "file": "SKDMaterialsBasicInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDMaterialsBasicInfoSaveData",
+          "file": "SKDMaterialsBasicInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDMaterialsBasicInfoDeleteData",
+          "file": "SKDMaterialsBasicInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

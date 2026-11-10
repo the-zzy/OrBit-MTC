@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CHEQ",
+  "name": "车辆进出统计",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "车辆进出统计",
+  "metadata": "统计企业厂区内车辆进出情况，记录时间、车牌号、车辆类型、进出原因等信息，实现车辆进出的规范化管理。通过数据分析，优化厂内交通流和车辆管理策略，提升企业运营效率和安全管理水平，保障运营环境的安全与秩序。",
+  "objects": [
+    {
+      "id": "MTD1000000TX",
+      "name": "CheQuery",
+      "text": "车辆进出统计",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

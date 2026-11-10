@@ -1,0 +1,88 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SRSO",
+  "name": "销退订单管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "销退订单管理",
+  "metadata": "SRSO",
+  "objects": [
+    {
+      "id": "MTD1000002BK",
+      "name": "SellReturnSO",
+      "text": "销退订单管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SellReturnSOMainView",
+          "file": "SellReturnSOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SellReturnSOTreeView",
+          "file": "SellReturnSOTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BL",
+      "name": "SellReturnSOItem",
+      "text": "销售退货订单明细",
+      "parentId": "MTD1000002BK",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SellReturnSOItemMainView",
+          "file": "SellReturnSOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SellReturnSOItemTreeView",
+          "file": "SellReturnSOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BN",
+      "name": "SellReturnSOItemLot",
+      "text": "销售退货订单批号明细",
+      "parentId": "MTD1000002BL",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SellReturnSOItemLotMainView",
+          "file": "SellReturnSOItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SellReturnSOItemLotTreeView",
+          "file": "SellReturnSOItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

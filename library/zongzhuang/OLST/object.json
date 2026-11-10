@@ -1,0 +1,33 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OLST",
+  "name": "订单批号信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "订单批号信息查询",
+  "metadata": "OLST",
+  "objects": [
+    {
+      "id": "MTD1000000ON",
+      "name": "OrderLotSNSelect",
+      "text": "订单批号信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "_LsMainView",
+          "file": "_LsMainView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

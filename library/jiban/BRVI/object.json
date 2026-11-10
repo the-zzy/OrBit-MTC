@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BRVI",
+  "name": "老化车号绑定记录",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "老化车号绑定记录",
+  "metadata": "BurningVehicleInfo",
+  "objects": [
+    {
+      "id": "MTD1000002C4",
+      "name": "BurningVehicleInfo",
+      "text": "老化车号绑定记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

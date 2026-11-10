@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AYCD",
+  "name": "辅料管控明细",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "辅料管控明细",
+  "metadata": "AccessoryControlDetails",
+  "objects": [
+    {
+      "id": "MTD1000000OA",
+      "name": "AccessoryControlDetailsQuery",
+      "text": "辅料管控明细",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

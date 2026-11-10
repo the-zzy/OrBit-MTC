@@ -1,0 +1,153 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CUSS",
+  "name": "客户系列对照",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户系列对照",
+  "metadata": "查询客户系列对照信息，记录对照编号、客户名称、系列名称、对照关系、生效日期等信息，确保客户系列对照数据的准确性和完整性。这有助于销售部门根据客户需求提供准确的产品系列信息，提高客户满意度和市场响应速度。",
+  "objects": [
+    {
+      "id": "MTD1000002C1",
+      "name": "CustomerSeries",
+      "text": "客户系列对照",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerSeriesMainView",
+          "file": "CustomerSeriesMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerSeriesTreeView",
+          "file": "CustomerSeriesTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSeriesSaveData",
+          "file": "CustomerSeriesSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerSeriesDeleteData",
+          "file": "CustomerSeriesDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CA",
+      "name": "CustomerSeriesItem",
+      "text": "客户系列对照明细",
+      "parentId": "MTD1000002C1",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerSeriesItemMainView",
+          "file": "CustomerSeriesItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerSeriesItemTreeView",
+          "file": "CustomerSeriesItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSeriesItemSaveData",
+          "file": "CustomerSeriesItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerSeriesItemDeleteData",
+          "file": "CustomerSeriesItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002C0",
+      "name": "CustomerSeriesModel",
+      "text": "客户系列机型对照",
+      "parentId": "MTD1000002CA",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerSeriesModelMainView",
+          "file": "CustomerSeriesModelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerSeriesModelTreeView",
+          "file": "CustomerSeriesModelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSeriesModelSaveData",
+          "file": "CustomerSeriesModelSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerSeriesModelDeleteData",
+          "file": "CustomerSeriesModelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CB",
+      "name": "CustomerSeriesPIDContrast",
+      "text": "PID对照",
+      "parentId": "MTD1000002C1",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerSeriesPIDContrastMainView",
+          "file": "CustomerSeriesPIDContrastMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerSeriesPIDContrastTreeView",
+          "file": "CustomerSeriesPIDContrastTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSeriesPIDContrastSaveData",
+          "file": "CustomerSeriesPIDContrastSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerSeriesPIDContrastDeleteData",
+          "file": "CustomerSeriesPIDContrastDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

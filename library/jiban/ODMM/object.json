@@ -1,0 +1,88 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ODMM",
+  "name": "OverdueMaterialMaster",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "OverdueMaterialMaster",
+  "metadata": "OverdueMaterialMaster",
+  "objects": [
+    {
+      "id": "MTD1000002DE",
+      "name": "OverdueMaterialMaster",
+      "text": "OverdueMaterialMaster",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueMaterialMasterMainView",
+          "file": "OverdueMaterialMasterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueMaterialMasterTreeView",
+          "file": "OverdueMaterialMasterTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DF",
+      "name": "OverdueMaterialItem",
+      "text": "物料超期从表",
+      "parentId": "MTD1000002DE",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueMaterialItemMainView",
+          "file": "OverdueMaterialItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueMaterialItemTreeView",
+          "file": "OverdueMaterialItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DG",
+      "name": "OverdueMaterialLot",
+      "text": "物料超期明细",
+      "parentId": "MTD1000002DF",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverdueMaterialLotMainView",
+          "file": "OverdueMaterialLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverdueMaterialLotTreeView",
+          "file": "OverdueMaterialLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

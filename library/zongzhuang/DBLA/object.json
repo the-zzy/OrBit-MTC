@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DBLA",
+  "name": "仪表布局",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "仪表布局",
+  "metadata": "DashBoardLayout",
+  "objects": [
+    {
+      "id": "MTD1000000BE",
+      "name": "DashBoardLayout",
+      "text": "仪表布局",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DashBoardLayoutMainView",
+          "file": "DashBoardLayoutMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DashBoardLayoutTreeView",
+          "file": "DashBoardLayoutTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DashBoardLayoutSaveData",
+          "file": "DashBoardLayoutSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DashBoardLayoutDeleteData",
+          "file": "DashBoardLayoutDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000BF",
+      "name": "DashBoardLayoutItem",
+      "text": "布局详细",
+      "parentId": "MTD1000000BE",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DashBoardLayoutItemMainView",
+          "file": "DashBoardLayoutItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DashBoardLayoutItemTreeView",
+          "file": "DashBoardLayoutItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DashBoardLayoutItemSaveData",
+          "file": "DashBoardLayoutItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DashBoardLayoutItemDeleteData",
+          "file": "DashBoardLayoutItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

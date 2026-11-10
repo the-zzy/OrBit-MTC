@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PWUQ",
+  "name": "散件包装称重查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "散件包装称重查询",
+  "metadata": "PartsWeightUpdateQuery",
+  "objects": [
+    {
+      "id": "MTD10000022S",
+      "name": "PartsWeightUpdateQuery",
+      "text": "散件包装称重查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

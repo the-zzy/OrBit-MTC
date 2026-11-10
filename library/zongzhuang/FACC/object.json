@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "FACC",
+  "name": "工厂日历",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工厂日历",
+  "metadata": "FACC",
+  "objects": [
+    {
+      "id": "MTD1000002E2",
+      "name": "FactoryCalendar",
+      "text": "工厂日历",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FactoryCalendarMainView",
+          "file": "FactoryCalendarMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FactoryCalendarTreeView",
+          "file": "FactoryCalendarTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FactoryCalendarSaveData",
+          "file": "FactoryCalendarSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FactoryCalendarDeleteData",
+          "file": "FactoryCalendarDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

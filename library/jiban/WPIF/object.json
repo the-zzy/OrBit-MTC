@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "WPIF",
+  "name": "预警人员信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "预警人员信息",
+  "metadata": "WPIF",
+  "objects": [
+    {
+      "id": "MTD10000029D",
+      "name": "WarningPersonnelInfo",
+      "text": "预警人员信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WarningPersonnelInfoMainView",
+          "file": "WarningPersonnelInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WarningPersonnelInfoTreeView",
+          "file": "WarningPersonnelInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WarningPersonnelInfoSaveData",
+          "file": "WarningPersonnelInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WarningPersonnelInfoDeleteData",
+          "file": "WarningPersonnelInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

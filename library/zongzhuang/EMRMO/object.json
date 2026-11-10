@@ -1,0 +1,73 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EMRMO",
+  "name": "EMR返修工单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "EMR返修工单",
+  "metadata": "EMRMO",
+  "objects": [
+    {
+      "id": "MTD1000001N0",
+      "name": "EMRMOSTD",
+      "text": "EMR返修工单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EMRMOSTDMainView",
+          "file": "EMRMOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EMRMOSTDTreeView",
+          "file": "EMRMOSTDTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001N1",
+      "name": "EMRMOItem",
+      "text": "返修工单项目",
+      "parentId": "MTD1000001N0",
+      "sequence": "01",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemMainView",
+          "file": "MOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemTreeView",
+          "file": "MOItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOItemSaveData",
+          "file": "MOItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOItemDeleteData",
+          "file": "MOItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

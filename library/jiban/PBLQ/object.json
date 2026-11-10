@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PBLQ",
+  "name": "BOM及坐标信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "BOM及坐标信息查询",
+  "metadata": "PBLQ",
+  "objects": [
+    {
+      "id": "MTD10000028X",
+      "name": "FAInQuery",
+      "text": "BOM及坐标信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GSIQ",
+  "name": "Google订单数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "Google订单数据查询",
+  "metadata": "Google SN Info Query",
+  "objects": [
+    {
+      "id": "MTD10000027V",
+      "name": "Google SN Info Query",
+      "text": "Google订单数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

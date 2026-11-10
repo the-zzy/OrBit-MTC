@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "AILCG",
+  "name": "AI线体配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AI线体配置",
+  "metadata": "AILCG",
+  "objects": [
+    {
+      "id": "MTD100000292",
+      "name": "AILineConfig",
+      "text": "AI线体配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AILineConfigMainView",
+          "file": "AILineConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AILineConfigTreeView",
+          "file": "AILineConfigTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AILineConfigSaveData",
+          "file": "AILineConfigSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AILineConfigDeleteData",
+          "file": "AILineConfigDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

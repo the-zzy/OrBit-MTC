@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "FEED",
+  "name": "载具",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "载具",
+  "metadata": "Feeder/Cassette",
+  "objects": [
+    {
+      "id": "MTD1000000A6",
+      "name": "Feeder",
+      "text": "载具",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "FeederMainView",
+          "file": "FeederMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "FeederTreeView",
+          "file": "FeederTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "FeederSaveData",
+          "file": "FeederSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "FeederDeleteData",
+          "file": "FeederDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

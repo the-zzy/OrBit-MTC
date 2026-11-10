@@ -1,0 +1,43 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SOSPR",
+  "name": "备品订单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "备品订单",
+  "metadata": "SOSPAR PART",
+  "objects": [
+    {
+      "id": "MTD1000001VB",
+      "name": "SOSPR",
+      "text": "备品订单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOMainView",
+          "file": "SOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOTreeView",
+          "file": "SOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOSaveData",
+          "file": "SOSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

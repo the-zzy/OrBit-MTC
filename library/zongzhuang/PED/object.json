@@ -1,0 +1,93 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PED",
+  "name": "采购入库单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "采购入库单",
+  "metadata": "ProductEntryDelivery",
+  "objects": [
+    {
+      "id": "MTD1000000D7",
+      "name": "ProductEntryDelivery",
+      "text": "采购入库单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductEntryDeliveryMainView",
+          "file": "ProductEntryDeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductEntryDeliveryTreeView",
+          "file": "ProductEntryDeliveryTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductEntryDeliveryDeleteData",
+          "file": "ProductEntryDeliveryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000DA",
+      "name": "ProductEntryDeliveryItem",
+      "text": "入库单明细",
+      "parentId": "MTD1000000D7",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductEntryDeliveryItemMainView",
+          "file": "ProductEntryDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductEntryDeliveryItemTreeView",
+          "file": "ProductEntryDeliveryItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000DB",
+      "name": "ProductEntryDeliveryVendorDeliveryItemLot",
+      "text": "入库单批号清单",
+      "parentId": "MTD1000000DA",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductEntryDeliveryVendorDeliveryItemLotMainView",
+          "file": "ProductEntryDeliveryVendorDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductEntryDeliveryVendorDeliveryItemLotTreeView",
+          "file": "ProductEntryDeliveryVendorDeliveryItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

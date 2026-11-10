@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "WKCB",
+  "name": "WorkCenterBindCust",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "WorkCenterBindCust",
+  "metadata": "WorkCenterBindCust",
+  "objects": [
+    {
+      "id": "MTD1000002DH",
+      "name": "WorkCenterBindCust",
+      "text": "WorkCenterBindCust",
+      "parentId": "MTD100000086",
+      "sequence": "99",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkCenterBindCustMainView",
+          "file": "WorkCenterBindCustMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkCenterBindCustTreeView",
+          "file": "WorkCenterBindCustTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkCenterBindCustSaveData",
+          "file": "WorkCenterBindCustSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkCenterBindCustDeleteData",
+          "file": "WorkCenterBindCustDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

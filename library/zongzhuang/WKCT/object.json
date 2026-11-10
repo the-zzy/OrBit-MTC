@@ -1,0 +1,328 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WKCT",
+  "name": "工作中心",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工作中心",
+  "metadata": "查询工作中心信息，记录中心编号、中心名称、设备信息、产能、负责人、状态等数据，确保工作中心数据的准确性和完整性。这有助于优化生产布局和资源配置，提高生产效率，保障生产运营的顺畅性和稳定性。",
+  "objects": [
+    {
+      "id": "MTD100000086",
+      "name": "Workcenter",
+      "text": "工作中心",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkcenterMainView",
+          "file": "WorkcenterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkcenterTreeView",
+          "file": "WorkcenterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkcenterSaveData",
+          "file": "WorkcenterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkcenterDeleteData",
+          "file": "WorkcenterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000IO",
+      "name": "Workcenter_Machine",
+      "text": "工作中心_机台",
+      "parentId": "MTD100000086",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Workcenter_MachineMainView",
+          "file": "Workcenter_MachineMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Workcenter_MachineTreeView",
+          "file": "Workcenter_MachineTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Workcenter_MachineSaveData",
+          "file": "Workcenter_MachineSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Workcenter_MachineDeleteData",
+          "file": "Workcenter_MachineDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KA",
+      "name": "Machine_SLotNO",
+      "text": "机台站位",
+      "parentId": "MTD1000000IO",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Machine_SLotNOMainView",
+          "file": "Machine_SLotNOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Machine_SLotNOTreeView",
+          "file": "Machine_SLotNOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Machine_SLotNOSaveData",
+          "file": "Machine_SLotNOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Machine_SLotNODeleteData",
+          "file": "Machine_SLotNODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NV",
+      "name": "AccessorySetting",
+      "text": "附件设置",
+      "parentId": "MTD100000086",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessorySettingMainView",
+          "file": "AccessorySettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessorySettingTreeView",
+          "file": "AccessorySettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessorySettingSaveData",
+          "file": "AccessorySettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessorySettingDeleteData",
+          "file": "AccessorySettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NW",
+      "name": "AccessorySettingCheck",
+      "text": "附件设置检查",
+      "parentId": "MTD1000000NV",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AccessorySettingCheckMainView",
+          "file": "AccessorySettingCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AccessorySettingCheckTreeView",
+          "file": "AccessorySettingCheckTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AccessorySettingCheckSaveData",
+          "file": "AccessorySettingCheckSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AccessorySettingCheckDeleteData",
+          "file": "AccessorySettingCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OD",
+      "name": "WorkcenterStatus",
+      "text": "产线生产状态",
+      "parentId": "MTD100000086",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkcenterStatusMainView",
+          "file": "WorkcenterStatusMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkcenterStatusTreeView",
+          "file": "WorkcenterStatusTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkcenterStatusSaveData",
+          "file": "WorkcenterStatusSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkcenterStatusDeleteData",
+          "file": "WorkcenterStatusDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000TG",
+      "name": "DayliPlan",
+      "text": "产线每日计划",
+      "parentId": "MTD100000086",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DayliPlanMainView",
+          "file": "DayliPlanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DayliPlanTreeView",
+          "file": "DayliPlanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DayliPlanSaveData",
+          "file": "DayliPlanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DayliPlanDeleteData",
+          "file": "DayliPlanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000S2",
+      "name": "Workcenter_Plan",
+      "text": "日计划产能",
+      "parentId": "MTD100000086",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Workcenter_PlanMainView",
+          "file": "Workcenter_PlanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Workcenter_PlanTreeView",
+          "file": "Workcenter_PlanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Workcenter_PlanSaveData",
+          "file": "Workcenter_PlanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Workcenter_PlanDeleteData",
+          "file": "Workcenter_PlanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SI",
+      "name": "Workcenter_Position",
+      "text": "产线工位",
+      "parentId": "MTD100000086",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Workcenter_PositionMainView",
+          "file": "Workcenter_PositionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Workcenter_PositionTreeView",
+          "file": "Workcenter_PositionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Workcenter_PositionSaveData",
+          "file": "Workcenter_PositionSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Workcenter_PositionDeleteData",
+          "file": "Workcenter_PositionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

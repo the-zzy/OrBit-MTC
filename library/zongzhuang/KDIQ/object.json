@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KDIQ",
+  "name": "散件库存报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "散件库存报表",
+  "metadata": "KDIQ",
+  "objects": [
+    {
+      "id": "MTD1000002CQ",
+      "name": "KDInventoryQuery",
+      "text": "散件库存报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

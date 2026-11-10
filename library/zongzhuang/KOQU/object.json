@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KOQU",
+  "name": "散件订单查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "散件订单查询",
+  "metadata": "KD Order Detail Query",
+  "objects": [
+    {
+      "id": "MTD1000000P7",
+      "name": "KDOrderDetailQuery",
+      "text": "散件订单查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

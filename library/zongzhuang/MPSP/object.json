@@ -1,0 +1,198 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MPSP",
+  "name": "SAP排产计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SAP排产计划",
+  "metadata": "MPSP",
+  "objects": [
+    {
+      "id": "MTD1000002A8",
+      "name": "ZPPT_MPS",
+      "text": "SAP排产计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ZPPT_MPSMainView",
+          "file": "ZPPT_MPSMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ZPPT_MPSTreeView",
+          "file": "ZPPT_MPSTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ZPPT_MPSSaveData",
+          "file": "ZPPT_MPSSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ZPPT_MPSDeleteData",
+          "file": "ZPPT_MPSDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002A4",
+      "name": "ZPPT_MPSK",
+      "text": "MPS计划",
+      "parentId": "MTD1000002A8",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ZPPT_MPSKMainView",
+          "file": "ZPPT_MPSKMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ZPPT_MPSKTreeView",
+          "file": "ZPPT_MPSKTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ZPPT_MPSKSaveData",
+          "file": "ZPPT_MPSKSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ZPPT_MPSKDeleteData",
+          "file": "ZPPT_MPSKDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002A5",
+      "name": "ZPPT_MPSP",
+      "text": "MPS计划明细",
+      "parentId": "MTD1000002A4",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ZPPT_MPSPMainView",
+          "file": "ZPPT_MPSPMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ZPPT_MPSPTreeView",
+          "file": "ZPPT_MPSPTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ZPPT_MPSPSaveData",
+          "file": "ZPPT_MPSPSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ZPPT_MPSPDeleteData",
+          "file": "ZPPT_MPSPDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002A6",
+      "name": "StockList_Mps",
+      "text": "备料单",
+      "parentId": "MTD1000002A5",
+      "sequence": "9",
+      "depth": 4,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockListMainView",
+          "file": "StockListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockListTreeView",
+          "file": "StockListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002A7",
+      "name": "StockListMps_MO",
+      "text": "备料工单",
+      "parentId": "MTD1000002A6",
+      "sequence": "9",
+      "depth": 5,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StockList_MOMainView",
+          "file": "StockList_MOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StockList_MOTreeView",
+          "file": "StockList_MOTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StockList_MODeleteData",
+          "file": "StockList_MODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AC",
+      "name": "ZPPT_MPS_SAP",
+      "text": "SAP排产计划",
+      "parentId": "MTD1000002A8",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ZPPT_MPSMainView",
+          "file": "ZPPT_MPSMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ZPPT_MPS_SAP_TreeView",
+          "file": "ZPPT_MPS_SAP_TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

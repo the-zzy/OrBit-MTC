@@ -1,0 +1,168 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SO",
+  "name": "销售订单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "销售订单",
+  "metadata": "Sales Order",
+  "objects": [
+    {
+      "id": "MTD1000000MB",
+      "name": "SO",
+      "text": "销售订单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOMainView",
+          "file": "SOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOTreeView",
+          "file": "SOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOSaveData",
+          "file": "SOSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MC",
+      "name": "SOItem",
+      "text": "订单行项目号",
+      "parentId": "MTD1000000MB",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOItemMainView",
+          "file": "SOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOItemTreeView",
+          "file": "SOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001QU",
+      "name": "Soitemlot",
+      "text": "销售订单批次号",
+      "parentId": "MTD1000000MC",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SoitemlotMainView",
+          "file": "SoitemlotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SoitemlotTreeView",
+          "file": "SoitemlotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SoitemlotSaveData",
+          "file": "SoitemlotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SoitemlotDeleteData",
+          "file": "SoitemlotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001R2",
+      "name": "SoToDelivery",
+      "text": "SAP销售号",
+      "parentId": "MTD1000000MC",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SoToDeliveryMainView",
+          "file": "SoToDeliveryMainView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SoToDeliverySaveData",
+          "file": "SoToDeliverySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SoToDeliveryDeleteData",
+          "file": "SoToDeliveryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OH",
+      "name": "SOBorrowItem",
+      "text": "订单借用明细",
+      "parentId": "MTD1000000MB",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOBorrowItemMainView",
+          "file": "SOBorrowItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOBorrowItemTreeView",
+          "file": "SOBorrowItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SOBorrowItemSaveData",
+          "file": "SOBorrowItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SOBorrowItemDeleteData",
+          "file": "SOBorrowItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

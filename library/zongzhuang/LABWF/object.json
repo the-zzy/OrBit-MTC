@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LABWF",
+  "name": "标签模板(外发)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "标签模板(外发)",
+  "metadata": "查询标签模板（外发），记录模板编号、产品型号、标签内容、标签格式、使用部门等信息，确保标签打印的准确性和规范性。这有助于提高外协加工和物流环节的标识管理效率，避免因标签错误导致的产品混淆和质量风险。",
+  "objects": [
+    {
+      "id": "MTD1000000ML",
+      "name": "LabelTV",
+      "text": "标签模板(外发)",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelTVMainView",
+          "file": "LabelTVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelTVTreeView",
+          "file": "LabelTVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelTVSaveData",
+          "file": "LabelTVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelTVDeleteData",
+          "file": "LabelTVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000027G",
+      "name": "LabelCust",
+      "text": "客户国家型号维护",
+      "parentId": "MTD1000000ML",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelCustMainView",
+          "file": "LabelCustMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelCustTreeView",
+          "file": "LabelCustTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelCustSaveData",
+          "file": "LabelCustSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelCustDeleteData",
+          "file": "LabelCustDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002BZ",
+      "name": "LabelDivision",
+      "text": "标签部门对照维护",
+      "parentId": "MTD1000000ML",
+      "sequence": "03",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelDivisionMainView",
+          "file": "LabelDivisionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelDivisionTreeView",
+          "file": "LabelDivisionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelDivisionSaveData",
+          "file": "LabelDivisionSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelDivisionDeleteData",
+          "file": "LabelDivisionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

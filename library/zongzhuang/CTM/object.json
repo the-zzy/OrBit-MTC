@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CTM",
+  "name": "客户物料对照",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户物料对照",
+  "metadata": "CustomerMateriel",
+  "objects": [
+    {
+      "id": "MTD1000001Q9",
+      "name": "CustomerMateriel",
+      "text": "客户物料对照",
+      "parentId": "",
+      "sequence": "0",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerMaterielMainView",
+          "file": "CustomerMaterielMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerMaterielTreeView",
+          "file": "CustomerMaterielTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerMaterielSaveData",
+          "file": "CustomerMaterielSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerMaterielDeleteData",
+          "file": "CustomerMaterielDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

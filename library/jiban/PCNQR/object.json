@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PCNQR",
+  "name": "PCN首件历史查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "PCN首件历史查询",
+  "metadata": "PCNQR",
+  "objects": [
+    {
+      "id": "MTD1000002E8",
+      "name": "PCNFirstArticle",
+      "text": "PCN首件历史查询",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

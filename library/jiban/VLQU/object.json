@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VLQU",
+  "name": "送货批号查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "送货批号查询",
+  "metadata": "VendorDelivery Lot Query",
+  "objects": [
+    {
+      "id": "MTD1000000PC",
+      "name": "VendorDeliveryLotQuery",
+      "text": "送货批号查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

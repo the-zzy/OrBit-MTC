@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ECSQ",
+  "name": "客户批号查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "客户批号查询",
+  "metadata": "查询客户指定的批号信息，包括客户名称、产品型号、批号、生产日期、数量等，满足客户的个性化需求和管理要求。这有助于企业在生产、销售和售后服务中准确识别和处理客户指定的批号产品，提高客户满意度和市场竞争力。",
+  "objects": [
+    {
+      "id": "MTD1000001ZT",
+      "name": "ELEMENTCustSNQuery",
+      "text": "客户批号查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

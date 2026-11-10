@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DIPA",
+  "name": "DIP异常履历",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "DIP异常履历",
+  "metadata": "AddDIPAbnormal",
+  "objects": [
+    {
+      "id": "MTD1000002B2",
+      "name": "DIPAbnormal",
+      "text": "DIP异常履历",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPAbnormalMainView",
+          "file": "DIPAbnormalMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPAbnormalTreeView",
+          "file": "DIPAbnormalTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPAbnormalSaveData",
+          "file": "DIPAbnormalSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPAbnormalDeleteData",
+          "file": "DIPAbnormalDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

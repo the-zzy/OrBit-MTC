@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TBMR",
+  "name": "测温板监控记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "测温板监控记录",
+  "metadata": "TestBoardMonitor",
+  "objects": [
+    {
+      "id": "MTD1000002CY",
+      "name": "TestBoardMonitor",
+      "text": "测温板监控记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TestBoardMonitorMainView",
+          "file": "TestBoardMonitorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TestBoardMonitorTreeView",
+          "file": "TestBoardMonitorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TestBoardMonitorSaveData",
+          "file": "TestBoardMonitorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TestBoardMonitorDeleteData",
+          "file": "TestBoardMonitorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CZ",
+      "name": "TestBoardMonitorItem",
+      "text": "测温板监控明细记录",
+      "parentId": "MTD1000002CY",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TestBoardMonitorItemMainView",
+          "file": "TestBoardMonitorItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TestBoardMonitorItemTreeView",
+          "file": "TestBoardMonitorItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TestBoardMonitorItemSaveData",
+          "file": "TestBoardMonitorItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TestBoardMonitorItemDeleteData",
+          "file": "TestBoardMonitorItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

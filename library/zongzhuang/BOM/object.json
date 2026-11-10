@@ -1,0 +1,68 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BOM",
+  "name": "产品结构",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品结构",
+  "metadata": "BOM",
+  "objects": [
+    {
+      "id": "MTD10000008U",
+      "name": "BOM",
+      "text": "产品结构",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMMainView",
+          "file": "BOMMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMRootTreeView",
+          "file": "BOMRootTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000008V",
+      "name": "BOMItem",
+      "text": "BOM项目",
+      "parentId": "MTD10000008U",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMItemMainView",
+          "file": "BOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMItemTreeView",
+          "file": "BOMItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BOMItemSaveData",
+          "file": "BOMItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

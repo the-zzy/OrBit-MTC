@@ -1,0 +1,113 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PE",
+  "name": "零星采购入库单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "零星采购入库单",
+  "metadata": "ProductEntry",
+  "objects": [
+    {
+      "id": "MTD1000000D5",
+      "name": "ProductEntry",
+      "text": "零星采购入库单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductEntryMainView",
+          "file": "ProductEntryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductEntryTreeView",
+          "file": "ProductEntryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductEntrySaveData",
+          "file": "ProductEntrySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductEntryDeleteData",
+          "file": "ProductEntryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000D6",
+      "name": "ProductEntryItem",
+      "text": "入库单明细",
+      "parentId": "MTD1000000D5",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductEntryItemMainView",
+          "file": "ProductEntryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductEntryItemTreeView",
+          "file": "ProductEntryItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductEntryItemSaveData",
+          "file": "ProductEntryItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductEntryItemDeleteData",
+          "file": "ProductEntryItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000D4",
+      "name": "ProductEntryVendorDeliveryItemLot",
+      "text": "入库单批号清单",
+      "parentId": "MTD1000000D6",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductEntryVendorDeliveryItemLotMainView",
+          "file": "ProductEntryVendorDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductEntryVendorDeliveryItemLotTreeView",
+          "file": "ProductEntryVendorDeliveryItemLotTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductEntryVendorDeliveryItemLotDeleteData",
+          "file": "ProductEntryVendorDeliveryItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

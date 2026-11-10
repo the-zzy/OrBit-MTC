@@ -1,0 +1,198 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MCNS",
+  "name": "物料转换单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物料转换单",
+  "metadata": "MConversion",
+  "objects": [
+    {
+      "id": "MTD10000020Z",
+      "name": "MConversion",
+      "text": "物料转换单",
+      "parentId": "",
+      "sequence": "0",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MConversionMainView",
+          "file": "MConversionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MConversionTreeView",
+          "file": "MConversionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MConversionSaveData",
+          "file": "MConversionSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000212",
+      "name": "MConversionMO",
+      "text": "物料转单合并工单",
+      "parentId": "MTD10000020Z",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MConversionMOTreeView",
+          "file": "MConversionMOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MConversionMOSaveData",
+          "file": "MConversionMOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MConversionMODeleteData",
+          "file": "MConversionMODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000210",
+      "name": "MConversionItem",
+      "text": "物料转单明细",
+      "parentId": "MTD10000020Z",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MConversionItemTreeView",
+          "file": "MConversionItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000211",
+      "name": "MConversionItemLot",
+      "text": "转换明细批号",
+      "parentId": "MTD100000210",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MConversionItemLotTreeView",
+          "file": "MConversionItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000216",
+      "name": "MConversion_IssueMOItem",
+      "text": "上传SAP明细",
+      "parentId": "MTD10000020Z",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MConversion_ProductIssueMOItemTreeView",
+          "file": "MConversion_ProductIssueMOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000217",
+      "name": "MConversion_BackMOItem",
+      "text": "退料工单明细",
+      "parentId": "MTD10000020Z",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MConversion_BackMOItemTreeView",
+          "file": "MConversion_BackMOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021K",
+      "name": "MConversion_MIssuanceItem",
+      "text": "发料单明细",
+      "parentId": "MTD10000020Z",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "MConversion_MIssuanceItemTreeView",
+          "file": "MConversion_MIssuanceItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021L",
+      "name": "MConversion_SAPMessage",
+      "text": "SAP返回信息",
+      "parentId": "MTD10000020Z",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialIssuanceSAPMessageMainView",
+          "file": "MaterialIssuanceSAPMessageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MConversion_MIssuanceSAPMessageTreeView",
+          "file": "MConversion_MIssuanceSAPMessageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

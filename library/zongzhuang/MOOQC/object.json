@@ -1,0 +1,98 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MOOQC",
+  "name": "品质工单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "品质工单",
+  "metadata": "查询品质工单信息，记录工单编号、产品型号、生产数量、质量要求、检验结果等数据，确保品质工单的准确性和完整性。这有助于质量管理部门根据工单要求进行质量检验和控制，提高产品质量稳定性和可靠性。",
+  "objects": [
+    {
+      "id": "MTD1000001ZH",
+      "name": "MOSTDOQC",
+      "text": "品质工单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QCMOSTDTreeView",
+          "file": "QCMOSTDTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOSTDSaveData",
+          "file": "MOSTDSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028D",
+      "name": "OQCCheckLast",
+      "text": "指定SN抽检",
+      "parentId": "MTD1000001ZH",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OQCCheckLastMainView",
+          "file": "OQCCheckLastMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OQCCheckLastTreeView",
+          "file": "OQCCheckLastTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OQCCheckLastDeleteData",
+          "file": "OQCCheckLastDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZG",
+      "name": "DCRepairRecordOQC",
+      "text": "QC修理检验",
+      "parentId": "MTD1000001ZH",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCRepairRecordMainView",
+          "file": "DCRepairRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCRepairRecordTreeView",
+          "file": "DCRepairRecordTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

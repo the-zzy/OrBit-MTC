@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "UOM",
+  "name": "计量单位",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "计量单位",
+  "metadata": "UOM",
+  "objects": [
+    {
+      "id": "MTD100000080",
+      "name": "UOM",
+      "text": "计量单位",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UOMMainView",
+          "file": "UOMMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UOMTreeView",
+          "file": "UOMTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UOMSaveData",
+          "file": "UOMSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UOMDeleteData",
+          "file": "UOMDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000081",
+      "name": "UOMConversion",
+      "text": "计量单位换算",
+      "parentId": "MTD100000080",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UOMConversion_MainView",
+          "file": "UOMConversion_MainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UOMConversion_TreeView",
+          "file": "UOMConversion_TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UOMConversion_SaveData",
+          "file": "UOMConversion_SaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UOMConversion_DeleteData",
+          "file": "UOMConversion_DeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

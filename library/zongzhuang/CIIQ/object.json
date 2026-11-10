@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CIIQ",
+  "name": "商检记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "商检记录查询",
+  "metadata": "CIIQ",
+  "objects": [
+    {
+      "id": "MTD10000026R",
+      "name": "CommodityInspectionItemQuery",
+      "text": "商检记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

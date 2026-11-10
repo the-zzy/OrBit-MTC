@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OQAQ",
+  "name": "OQA抽检查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "OQA抽检查询",
+  "metadata": "OQAOrderQuery",
+  "objects": [
+    {
+      "id": "MTD1000000N8",
+      "name": "OQAOrderQuery",
+      "text": "OQA抽检查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

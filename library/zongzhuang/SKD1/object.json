@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD1",
+  "name": "散件物料包装种类维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件物料包装种类维护",
+  "metadata": "SKD2",
+  "objects": [
+    {
+      "id": "MTD1000002EE",
+      "name": "SKDPackageKind",
+      "text": "散件物料包装种类维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDPackageKindMainView",
+          "file": "SKDPackageKindMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDPackageKindTreeView",
+          "file": "SKDPackageKindTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SKDPackageKindSaveData",
+          "file": "SKDPackageKindSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SKDPackageKindDeleteData",
+          "file": "SKDPackageKindDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

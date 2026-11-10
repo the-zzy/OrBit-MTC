@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "REGQ",
+  "name": "设备资产登记",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备资产登记",
+  "metadata": "REGEquipment",
+  "objects": [
+    {
+      "id": "MTD1000000FW",
+      "name": "REGEquipment",
+      "text": "设备资产登记",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "REGEquipmentMainView",
+          "file": "REGEquipmentMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "REGEquipmentTreeView",
+          "file": "REGEquipmentTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "REGEquipmentSaveData",
+          "file": "REGEquipmentSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "REGEquipmentDeleteData",
+          "file": "REGEquipmentDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PEDY",
+  "name": "改制工单绑定原工单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "改制工单绑定原工单",
+  "metadata": "PEDY",
+  "objects": [
+    {
+      "id": "MTD1000001RU",
+      "name": "PreDisassembly",
+      "text": "改制工单绑定原工单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PreDisassemblyMainView",
+          "file": "PreDisassemblyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PreDisassemblyTreeView",
+          "file": "PreDisassemblyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PreDisassemblySaveData",
+          "file": "PreDisassemblySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PreDisassemblyDeleteData",
+          "file": "PreDisassemblyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

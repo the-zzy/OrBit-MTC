@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QMIB",
+  "name": "QueryMaterialInfoByBoardAndPosition",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "QueryMaterialInfoByBoardAndPosition",
+  "metadata": "QueryMaterialInfoByBoardAndPosition",
+  "objects": [
+    {
+      "id": "MTD1000002DB",
+      "name": "QueryMaterialInfoByBoardAndPosition",
+      "text": "QueryMaterialInfoByBoardAndPosition",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "_LsMainView",
+          "file": "_LsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "_LsTreeView",
+          "file": "_LsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "_LsSaveData",
+          "file": "_LsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "_LsDeleteData",
+          "file": "_LsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PEIG",
+  "name": "料号缺失信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "料号缺失信息查询",
+  "metadata": "TDLQ",
+  "objects": [
+    {
+      "id": "MTD1000002GQ",
+      "name": "ProductExportInfoGapQuery",
+      "text": "料号缺失信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

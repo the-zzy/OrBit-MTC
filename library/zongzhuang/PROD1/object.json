@@ -1,0 +1,127 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PROD1",
+  "name": "产品(仓库）",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产品(仓库）",
+  "metadata": "Product",
+  "objects": [
+    {
+      "id": "MTD1000000T0",
+      "name": "productinv",
+      "text": "产品(仓库）",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductinvMainView",
+          "file": "ProductinvMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductRootinvTreeView",
+          "file": "ProductRootinvTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductInvSaveData",
+          "file": "ProductInvSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021W",
+      "name": "Vendor_ProductInv",
+      "text": "供应商产品",
+      "parentId": "MTD1000000T0",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001MT",
+      "name": "Location",
+      "text": "位置名称",
+      "parentId": "MTD1000000T0",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LocationMainView",
+          "file": "LocationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LocationTreeView",
+          "file": "LocationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LocationSaveData",
+          "file": "LocationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LocationDeleteData",
+          "file": "LocationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020Y",
+      "name": "ProductScrapLgort",
+      "text": "呆滞料仓位定义",
+      "parentId": "MTD1000000T0",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductScrapLgortMainView",
+          "file": "ProductScrapLgortMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductScrapLgortTreeView",
+          "file": "ProductScrapLgortTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductScrapLgortSaveData",
+          "file": "ProductScrapLgortSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductScrapLgortDeleteData",
+          "file": "ProductScrapLgortDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

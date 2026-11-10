@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "FCSDQ",
+  "name": "富可视模块数据核对查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "富可视模块数据核对查询",
+  "metadata": "FCSDQ",
+  "objects": [
+    {
+      "id": "MTD1000001NN",
+      "name": "InFocusdatacheckQuery",
+      "text": "富可视模块数据核对查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

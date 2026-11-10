@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KBPQ",
+  "name": "看板参数查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "看板参数查询",
+  "metadata": "KBPQ",
+  "objects": [
+    {
+      "id": "MTD1000001PI",
+      "name": "KanBanParametersQuery",
+      "text": "看板参数查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "XMFT",
+  "name": "TV整机测试数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV整机测试数据查询",
+  "metadata": "记录并提供TV整机测试环节的各项数据查询功能，包括测试时间、项目、标准、实际结果、设备和人员等信息，确保质量部门和技术部门全面了解TV整机测试情况，及时发现功能、性能和可靠性问题，保障产品质量和稳定性。",
+  "objects": [
+    {
+      "id": "MTD1000001ZP",
+      "name": "XiaoMiFunctionTest",
+      "text": "TV整机测试数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

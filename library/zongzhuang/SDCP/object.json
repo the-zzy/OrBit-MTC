@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SDCP",
+  "name": "SmarDTV一次性通过率查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SmarDTV一次性通过率查询",
+  "metadata": "SmarDTVCheckPass",
+  "objects": [
+    {
+      "id": "MTD1000001NI",
+      "name": "SmarDTVCheckPass",
+      "text": "SmarDTV一次性通过率查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

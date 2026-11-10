@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PDLI",
+  "name": "交货单预入库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "交货单预入库",
+  "metadata": "PreDeliveryorderInstock",
+  "objects": [
+    {
+      "id": "MTD1000001PR",
+      "name": "PreDeliveryorderInstock",
+      "text": "交货单预入库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PreDeliveryorderInstockMainView",
+          "file": "PreDeliveryorderInstockMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PreDeliveryorderInstockTreeView",
+          "file": "PreDeliveryorderInstockTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PreDeliveryorderInstockSaveData",
+          "file": "PreDeliveryorderInstockSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PreDeliveryorderInstockDeleteData",
+          "file": "PreDeliveryorderInstockDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PS",
+      "name": "PreDeliveryorderInstockItem",
+      "text": "交货单明细",
+      "parentId": "MTD1000001PR",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PreDeliveryorderInstockItemMainView",
+          "file": "PreDeliveryorderInstockItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PreDeliveryorderInstockItemTreeView",
+          "file": "PreDeliveryorderInstockItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PreDeliveryorderInstockItemSaveData",
+          "file": "PreDeliveryorderInstockItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PreDeliveryorderInstockItemDeleteData",
+          "file": "PreDeliveryorderInstockItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

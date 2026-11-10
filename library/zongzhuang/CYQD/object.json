@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CYQD",
+  "name": "全厂盘点数据",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "全厂盘点数据",
+  "metadata": "CYQD",
+  "objects": [
+    {
+      "id": "MTD1000000U9",
+      "name": "StocktakecycleQuery",
+      "text": "全厂盘点数据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

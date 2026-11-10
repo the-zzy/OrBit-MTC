@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OPLUG",
+  "name": "OrDroid插件",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "OrDroid插件",
+  "metadata": "OrDroid Plugin",
+  "objects": [
+    {
+      "id": "MTD10000023T",
+      "name": "OrDroidPlugin",
+      "text": "OrDroid插件",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrDroidPluginMainView",
+          "file": "OrDroidPluginMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrDroidPluginTreeView",
+          "file": "OrDroidPluginTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrDroidPluginSaveData",
+          "file": "OrDroidPluginSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrDroidPluginDeleteData",
+          "file": "OrDroidPluginDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023V",
+      "name": "OrDroidPluginSpecification",
+      "text": "插件规程",
+      "parentId": "MTD10000023T",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrDroidPluginSpecificationMainView",
+          "file": "OrDroidPluginSpecificationMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrDroidPluginSpecificationTreeView",
+          "file": "OrDroidPluginSpecificationTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrDroidPluginSpecificationSaveData",
+          "file": "OrDroidPluginSpecificationSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrDroidPluginSpecificationDeleteData",
+          "file": "OrDroidPluginSpecificationDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023U",
+      "name": "OrDroid_MobileObject",
+      "text": "移动事务对象配置",
+      "parentId": "MTD10000023T",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OrDroid_MobileObjectMainView",
+          "file": "OrDroid_MobileObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OrDroid_MobileObjectTreeView",
+          "file": "OrDroid_MobileObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OrDroid_MobileObjectSaveData",
+          "file": "OrDroid_MobileObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OrDroid_MobileObjectDeleteData",
+          "file": "OrDroid_MobileObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

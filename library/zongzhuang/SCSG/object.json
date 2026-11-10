@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SCSG",
+  "name": "生产设备请购",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "生产设备请购",
+  "metadata": "SC_PUROFAssets",
+  "objects": [
+    {
+      "id": "MTD1000000G6",
+      "name": "SCPUROFAssets",
+      "text": "生产设备请购",
+      "parentId": "",
+      "sequence": "0",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SCPUROFAssetsMainView",
+          "file": "SCPUROFAssetsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SCPUROFAssetsTreeView",
+          "file": "SCPUROFAssetsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SCPUROFAssetsSaveData",
+          "file": "SCPUROFAssetsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SCPUROFAssetsDeleteData",
+          "file": "SCPUROFAssetsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

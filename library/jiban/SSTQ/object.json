@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SSTQ",
+  "name": "钢网清洗检查记录",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "钢网清洗检查记录",
+  "metadata": "SMTStencilTensionVerifyQuery",
+  "objects": [
+    {
+      "id": "MTD100000237",
+      "name": "SMTStencilTensionVerifyQuery",
+      "text": "钢网清洗检查记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

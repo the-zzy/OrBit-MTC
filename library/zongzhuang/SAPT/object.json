@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SAPT",
+  "name": "设备备件库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备备件库",
+  "metadata": "SpareParts",
+  "objects": [
+    {
+      "id": "MTD1000000G7",
+      "name": "SpareParts",
+      "text": "设备备件库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SparePartsMainView",
+          "file": "SparePartsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SparePartsTreeView",
+          "file": "SparePartsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SparePartsSaveData",
+          "file": "SparePartsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SparePartsDeleteData",
+          "file": "SparePartsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

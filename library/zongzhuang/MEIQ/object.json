@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MEIQ",
+  "name": "MES库存报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "MES库存报表",
+  "metadata": "MEIQ",
+  "objects": [
+    {
+      "id": "MTD1000002BO",
+      "name": "MESInventoryQuery",
+      "text": "MES库存报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

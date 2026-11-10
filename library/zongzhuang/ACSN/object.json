@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ACSN",
+  "name": "作废批号查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "作废批号查询",
+  "metadata": "管理作废批号的相关信息，包括批号、作废时间、原因、处理方式等，确保作废批号的准确记录和可追溯性。这有助于防止作废批号的物料被误用或重新流入生产环节，保障生产质量和产品安全性。",
+  "objects": [
+    {
+      "id": "MTD1000000S7",
+      "name": "AlreadyCancelSN",
+      "text": "作废批号查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

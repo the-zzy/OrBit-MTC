@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ORAQ",
+  "name": "数码测试直通率查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "数码测试直通率查询",
+  "metadata": "OrderTestRateQuery",
+  "objects": [
+    {
+      "id": "MTD1000001MY",
+      "name": "OrderTestRateQuery",
+      "text": "数码测试直通率查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

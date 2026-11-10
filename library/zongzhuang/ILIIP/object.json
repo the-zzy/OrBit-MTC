@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ILIIP",
+  "name": "解码板锁定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "解码板锁定",
+  "metadata": "IsolationItem",
+  "objects": [
+    {
+      "id": "MTD1000002C6",
+      "name": "IsolationItem",
+      "text": "解码板锁定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IsolationItemMainView",
+          "file": "IsolationItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IsolationItemTreeView",
+          "file": "IsolationItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IsolationItemSaveData",
+          "file": "IsolationItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IsolationItemDeleteData",
+          "file": "IsolationItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002C9",
+      "name": "IsolationItemLot",
+      "text": "解码板锁定批号",
+      "parentId": "MTD1000002C6",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IsolationItemMainView",
+          "file": "IsolationItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IsolationItemLotTreeView",
+          "file": "IsolationItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IsolationItemSaveData",
+          "file": "IsolationItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "IsolationItemDeleteData",
+          "file": "IsolationItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

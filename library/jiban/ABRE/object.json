@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ABRE",
+  "name": "异常问题登记",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "异常问题登记",
+  "metadata": "AbnormalRecord",
+  "objects": [
+    {
+      "id": "MTD10000024U",
+      "name": "AbnormalRecord",
+      "text": "异常问题登记",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AbnormalRecordMainView",
+          "file": "AbnormalRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AbnormalRecordTreeView",
+          "file": "AbnormalRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AbnormalRecordSaveData",
+          "file": "AbnormalRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AbnormalRecordDeleteData",
+          "file": "AbnormalRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024V",
+      "name": "AbnormalRecordQurery",
+      "text": "系统异常处理查询",
+      "parentId": "MTD10000024U",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AbnormalRecordMainView",
+          "file": "AbnormalRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AbnormalRecordQueryTreeView",
+          "file": "AbnormalRecordQueryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AbnormalRecordSaveData",
+          "file": "AbnormalRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AbnormalRecordDeleteData",
+          "file": "AbnormalRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

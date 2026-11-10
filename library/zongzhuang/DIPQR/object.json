@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DIPQR",
+  "name": "BOSA数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "BOSA数据查询",
+  "metadata": "DIPQR",
+  "objects": [
+    {
+      "id": "MTD1000000TY",
+      "name": "DIPBandBosaQury",
+      "text": "BOSA数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

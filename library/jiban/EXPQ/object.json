@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EXPQ",
+  "name": "运维异常记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "运维异常记录查询",
+  "metadata": "EXPQ",
+  "objects": [
+    {
+      "id": "MTD10000029F",
+      "name": "ExceptionReocrdQuery",
+      "text": "运维异常记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

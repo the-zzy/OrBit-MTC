@@ -1,0 +1,183 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PO",
+  "name": "采购订单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "采购订单",
+  "metadata": "PO",
+  "objects": [
+    {
+      "id": "MTD10000009Z",
+      "name": "PO",
+      "text": "采购订单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POMainView",
+          "file": "POMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POTreeView",
+          "file": "POTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000A4",
+      "name": "POItem",
+      "text": "采购订单明细",
+      "parentId": "MTD10000009Z",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemMainView",
+          "file": "POItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POItemTreeView",
+          "file": "POItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "POItemSaveData",
+          "file": "POItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZD",
+      "name": "POPickList",
+      "text": "外协订单发料明细",
+      "parentId": "MTD1000000A4",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POPickListMainView",
+          "file": "POPickListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "POPickListTreeView",
+          "file": "POPickListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "POPickListSaveData",
+          "file": "POPickListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "POPickListDeleteData",
+          "file": "POPickListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001OK",
+      "name": "PO_DeliveryList",
+      "text": "送货计划查询",
+      "parentId": "MTD1000000A4",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "POItemMainView",
+          "file": "POItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PO_DeliveryListTreeView",
+          "file": "PO_DeliveryListTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022C",
+      "name": "User_Vendor",
+      "text": "供应商采购员",
+      "parentId": "MTD10000009Z",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "User_VendorMainView",
+          "file": "User_VendorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "User_VendorTreeView",
+          "file": "User_VendorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "User_VendorSaveData",
+          "file": "User_VendorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "User_VendorDeleteData",
+          "file": "User_VendorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000230",
+      "name": "Product_Vendor",
+      "text": "供应商料号",
+      "parentId": "MTD10000009Z",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "ProductVendorTreeView",
+          "file": "ProductVendorTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

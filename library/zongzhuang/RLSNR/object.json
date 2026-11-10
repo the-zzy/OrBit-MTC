@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RLSNR",
+  "name": "DIP变更SN记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "DIP变更SN记录查询",
+  "metadata": "RLSNR",
+  "objects": [
+    {
+      "id": "MTD1000001R4",
+      "name": "DIPReplaceSNRecord",
+      "text": "DIP变更SN记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,2200 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ASTH",
+  "name": "设备类别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备类别",
+  "metadata": "AssetHead",
+  "pulled": {
+    "table": "2026-11-07T17:42:34+08:00",
+    "MainView": "2026-11-07T17:43:19+08:00",
+    "meta": "2026-11-09T09:54:17+08:00"
+  },
+  "objects": [
+    {
+      "id": "MTD1000001OM",
+      "name": "AssetHead",
+      "text": "设备类别",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "AssetHead",
+        "columns": [
+          {
+            "name": "AssetHeadid",
+            "type": "nchar(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "Divisionid",
+            "type": "nchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "部门"
+          },
+          {
+            "name": "AssetCode",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "设备资产条码"
+          },
+          {
+            "name": "AssetTypeid",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AssetTypeName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "资产类别"
+          },
+          {
+            "name": "Createdate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建时间"
+          },
+          {
+            "name": "factory",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工厂"
+          },
+          {
+            "name": "WeixinChart",
+            "type": "nvarchar(max)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "微信号码（多个用/分开）"
+          },
+          {
+            "name": "iscancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetHeadMainView",
+          "file": "AssetHeadMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetHeadTreeView",
+          "file": "AssetHeadTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetHeadSaveData",
+          "file": "AssetHeadSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetHeadDeleteData",
+          "file": "AssetHeadDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-10T09:11:47+08:00",
+        "MainView": "2026-11-10T09:11:52+08:00",
+        "TreeView": "2026-11-10T09:11:55+08:00",
+        "SaveData": "2026-11-10T09:11:59+08:00",
+        "DeleteView": "2026-11-10T09:12:02+08:00",
+        "style": "2026-11-09T11:58:48+08:00",
+        "valueList": "2026-11-10T09:12:26+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "AssetHeadTreeView",
+          "columns": [
+            {
+              "name": "AssetHeadid",
+              "text": ""
+            },
+            {
+              "name": "DivisionName",
+              "text": "部门"
+            },
+            {
+              "name": "assetCode",
+              "text": "设备资产条码"
+            },
+            {
+              "name": "AssetTypeName",
+              "text": "资产类别"
+            }
+          ]
+        },
+        "main": {
+          "name": "AssetHead",
+          "groups": [
+            {
+              "id": "MFG1000001XV",
+              "sequence": "01",
+              "name": "AssetHead Default Group",
+              "text": "",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000008G2",
+                  "name": "DivisionName",
+                  "text": "部门",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "DivisionEquid_ViewListex",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008CQ",
+                  "name": "AssetTypeName",
+                  "text": "资产类别",
+                  "type": "nvarchar(50)",
+                  "lines": 1,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008G1",
+                  "name": "DivisionId",
+                  "text": "部门",
+                  "type": "nchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008CR",
+                  "name": "AssetCode",
+                  "text": "设备资产条码",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008CS",
+                  "name": "AssetTypeid",
+                  "text": "",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009F1",
+                  "name": "WeiXinChart",
+                  "text": "微信号码（多个用/分开）",
+                  "type": "nvarchar(max)",
+                  "lines": 3,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009FM",
+                  "name": "iscancel",
+                  "text": "是否失效",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "DivisionEquid_ViewListex",
+          "file": "DivisionEquid_ViewListex.sql",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "id": "MTD1000001OL",
+      "name": "AssetTypeObject",
+      "text": "设备项目管理",
+      "parentId": "MTD1000001OM",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "AssetTypeObject",
+        "columns": [
+          {
+            "name": "AssetTypeObjectid",
+            "type": "varchar(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "AssetHeadid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "objectType",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Value",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ObjectTypeName",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MinValue",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MaxValue",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "UOM",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Createdate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Alarmquarter",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AlarmMonth",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OverdueControl",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AlarmWeek",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "TypeCode",
+            "type": "nchar(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetTypeObjectMainView",
+          "file": "AssetTypeObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetTypeObjectTreeView",
+          "file": "AssetTypeObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetTypeObjectSaveData",
+          "file": "AssetTypeObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetTypeObjectDeleteData",
+          "file": "AssetTypeObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:17+08:00",
+        "MainView": "2026-11-09T09:54:17+08:00",
+        "TreeView": "2026-11-09T09:54:18+08:00",
+        "SaveData": "2026-11-09T09:54:18+08:00",
+        "DeleteView": "2026-11-09T09:54:18+08:00"
+      }
+    },
+    {
+      "id": "MTD1000001NW",
+      "name": "AssetDetail",
+      "text": "资产设备明细",
+      "parentId": "MTD1000001OM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "AssetDetail",
+        "columns": [
+          {
+            "name": "AssetDetailid",
+            "type": "varchar(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "Factoryid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "收货工厂"
+          },
+          {
+            "name": "AssetHeadid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Divisionid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "部门"
+          },
+          {
+            "name": "Company",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "公司名"
+          },
+          {
+            "name": "Activer",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "TypeName",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "类型"
+          },
+          {
+            "name": "AssetNum",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "设备资产条码"
+          },
+          {
+            "name": "Descriptionx",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "资产描述"
+          },
+          {
+            "name": "ExtDescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "扩展描述"
+          },
+          {
+            "name": "UOM",
+            "type": "nvarchar(5)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "计量单位"
+          },
+          {
+            "name": "QTY",
+            "type": "float",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "需求数量"
+          },
+          {
+            "name": "CostCenterid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CostCenter",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "成本中心"
+          },
+          {
+            "name": "Roomer",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "管理人"
+          },
+          {
+            "name": "IsSoftAsset",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Createuser",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人"
+          },
+          {
+            "name": "Createdate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建时间"
+          },
+          {
+            "name": "ModifyUser",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改用户"
+          },
+          {
+            "name": "ModifiDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DeleteFlag",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "删除标识"
+          },
+          {
+            "name": "CountNumber",
+            "type": "nvarchar(25)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "科目代码"
+          },
+          {
+            "name": "BuyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "购买日期"
+          },
+          {
+            "name": "AssetRegistordate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ScrapDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "作废日期"
+          },
+          {
+            "name": "NoUseDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PoDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "VendorName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "供应商"
+          },
+          {
+            "name": "Country",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "国家"
+          },
+          {
+            "name": "Manufacture",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsFinished",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否完成"
+          },
+          {
+            "name": "Original_assets",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "第二部门"
+          },
+          {
+            "name": "SubCountNum",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "微信号"
+          },
+          {
+            "name": "Acquisition_assets",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LanguageName",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "EffectToDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "过期日期"
+          },
+          {
+            "name": "EffectFromDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "有效开始日期"
+          },
+          {
+            "name": "OrderNum",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "生产订单号"
+          },
+          {
+            "name": "stockTakeid",
+            "type": "nchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Location",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "位置名称"
+          },
+          {
+            "name": "ZoneCode",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "存放区代码"
+          },
+          {
+            "name": "Operator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "操作员"
+          },
+          {
+            "name": "DisCode",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "RemainValue",
+            "type": "float",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "stockCheckDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsKeeupCheck",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StockNumber",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StockCheck",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "workcenterid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "线体"
+          },
+          {
+            "name": "StockTakeItemid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "RunStauts",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "notActiver",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "闲置"
+          },
+          {
+            "name": "IsDailyRemind",
+            "type": "bit",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否开启每日提醒：0-否，1-是"
+          },
+          {
+            "name": "CheckResponsible",
+            "type": "varchar(20)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "点检负责人工号（关联PersonInfo.PersonNumber）"
+          },
+          {
+            "name": "AgingLoadQty",
+            "type": "int",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "老化柜负载数量（未维护时默认56，仅首次保存生成负载档案）"
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetDetailMainView",
+          "file": "AssetDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetDetailTreeView",
+          "file": "AssetDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetDetailSaveData",
+          "file": "AssetDetailSaveData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T14:13:06+08:00",
+        "MainView": "2026-11-09T09:54:18+08:00",
+        "TreeView": "2026-11-09T12:37:07+08:00",
+        "SaveData": "2026-11-09T09:54:18+08:00",
+        "style": "2026-11-09T14:02:12+08:00",
+        "valueList": "2026-11-09T12:37:57+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "AssetDetailTreeView",
+          "columns": [
+            {
+              "name": "AssetDetailid",
+              "text": ""
+            },
+            {
+              "name": "Company",
+              "text": "公司名"
+            },
+            {
+              "name": "TypeName",
+              "text": "类型"
+            },
+            {
+              "name": "AssetNum",
+              "text": "设备资产条码"
+            },
+            {
+              "name": "Descriptionx",
+              "text": "资产描述"
+            },
+            {
+              "name": "roomer",
+              "text": "管理人"
+            },
+            {
+              "name": "DivisionName",
+              "text": "部门"
+            },
+            {
+              "name": "CostCenter",
+              "text": "成本中心"
+            },
+            {
+              "name": "Createdate",
+              "text": "创建时间"
+            },
+            {
+              "name": "ModifyUser",
+              "text": "修改用户"
+            },
+            {
+              "name": "AssetRegistordate",
+              "text": ""
+            },
+            {
+              "name": "是否每日提醒",
+              "text": ""
+            },
+            {
+              "name": "点检负责人",
+              "text": ""
+            }
+          ]
+        },
+        "main": {
+          "name": "AssetDetail",
+          "groups": [
+            {
+              "id": "MFG1000001WK",
+              "sequence": "01",
+              "name": "AssetDetail Default Group",
+              "text": "资产明细变更",
+              "columns": 4,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000008EJ",
+                  "name": "AssetDetailid",
+                  "text": "",
+                  "type": "varchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008EQ",
+                  "name": "AssetHeadid",
+                  "text": "",
+                  "type": "varchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000093R",
+                  "name": "divisionid",
+                  "text": "部门",
+                  "type": "varchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000093S",
+                  "name": "DivisionName",
+                  "text": "部门",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "EquipmentDivision_ViewListex",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009ET",
+                  "name": "Original_assets",
+                  "text": "第二部门",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "Divisionorginal_ViewListex",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008ER",
+                  "name": "AssetTypeName",
+                  "text": "资产类别",
+                  "type": "",
+                  "lines": 1,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "Assethead_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008EK",
+                  "name": "AssetNum",
+                  "text": "设备资产条码",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008EN",
+                  "name": "Company",
+                  "text": "公司名",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "Factory_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008EO",
+                  "name": "CostCenter",
+                  "text": "成本中心",
+                  "type": "nvarchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008EP",
+                  "name": "roomer",
+                  "text": "管理人",
+                  "type": "nvarchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009AE",
+                  "name": "Location",
+                  "text": "位置名称",
+                  "type": "nvarchar(100)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "Workcenter_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009AF",
+                  "name": "workcenterid",
+                  "text": "线体",
+                  "type": "varchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "Workcenter_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009F0",
+                  "name": "SubCountNum",
+                  "text": "微信号",
+                  "type": "nvarchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008EL",
+                  "name": "Descriptionx",
+                  "text": "资产描述",
+                  "type": "nvarchar(100)",
+                  "lines": 1,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000008EM",
+                  "name": "ExtDescription",
+                  "text": "扩展描述",
+                  "type": "nvarchar(100)",
+                  "lines": 1,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM10000035D",
+                  "sequence": "01",
+                  "name": "EnableDailyRemind",
+                  "text": "开启每日提醒",
+                  "sql": "AssetDetail_EnableDailyRemindDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "ResponsibleNumber,Password",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "AssetDetail_EnableDailyRemindDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000035C",
+                  "sequence": "02",
+                  "name": "DisableDailyRemind",
+                  "text": "取消提醒",
+                  "sql": "AssetDetail_DisableDailyRemindDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "password",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "AssetDetail_DisableDailyRemindDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "EquipmentDivision_ViewListex",
+          "file": "EquipmentDivision_ViewListex.sql",
+          "missing": false
+        },
+        {
+          "name": "Divisionorginal_ViewListex",
+          "file": "Divisionorginal_ViewListex.sql",
+          "missing": false
+        },
+        {
+          "name": "Assethead_ViewList",
+          "file": "Assethead_ViewList.sql",
+          "missing": false
+        },
+        {
+          "name": "Factory_ViewList",
+          "file": "Factory_ViewList.sql",
+          "missing": false
+        },
+        {
+          "name": "Workcenter_ViewList",
+          "file": "Workcenter_ViewList.sql",
+          "missing": false
+        }
+      ]
+    },
+    {
+      "id": "MTD1000001OS",
+      "name": "AssetCheck",
+      "text": "设备保养记录",
+      "parentId": "MTD1000001NW",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "AssetCheck",
+        "columns": [
+          {
+            "name": "AssetCheckID",
+            "type": "nchar(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "AssetTypeObjectId",
+            "type": "nchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AssetDetailid",
+            "type": "nchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Assetheadid",
+            "type": "nchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AssetNum",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CheckYYMM",
+            "type": "nchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D01",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D02",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D03",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D04",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D05",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D06",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D07",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D08",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D09",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D10",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D11",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D12",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D13",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D14",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D15",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D16",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D17",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D18",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D19",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D20",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D21",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D22",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D23",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D24",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D25",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D26",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D27",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D28",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D29",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D30",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "D31",
+            "type": "nchar(5)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateUserid",
+            "type": "varchar(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Operator",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "WorkCenterId",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetCheckMainView",
+          "file": "AssetCheckMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetCheckTreeView",
+          "file": "AssetCheckTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetCheckDeleteData",
+          "file": "AssetCheckDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:18+08:00",
+        "MainView": "2026-11-09T09:54:18+08:00",
+        "TreeView": "2026-11-09T09:54:18+08:00",
+        "DeleteView": "2026-11-09T09:54:18+08:00"
+      }
+    },
+    {
+      "id": "MTD1000002EX",
+      "name": "AgingCabinetLoad",
+      "text": "老化柜负载",
+      "parentId": "MTD1000001NW",
+      "sequence": "04",
+      "depth": 3,
+      "table": {
+        "name": "AgingCabinetLoad",
+        "columns": [
+          {
+            "name": "AgingCabinetLoadId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "AssetDetailId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LoadSeq",
+            "type": "int",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LoadCode",
+            "type": "nvarchar(80)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AgingCabinetLoadMainView",
+          "file": "AgingCabinetLoadMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AgingCabinetLoadTreeView",
+          "file": "AgingCabinetLoadTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AgingCabinetLoadSaveData",
+          "file": "AgingCabinetLoadSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AgingCabinetLoadDeleteData",
+          "file": "AgingCabinetLoadDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:18+08:00",
+        "MainView": "2026-11-09T09:54:18+08:00",
+        "TreeView": "2026-11-09T09:54:19+08:00",
+        "SaveData": "2026-11-09T09:54:19+08:00",
+        "DeleteView": "2026-11-09T09:54:19+08:00"
+      }
+    },
+    {
+      "id": "MTD1000001OT",
+      "name": "AssetDetailModify",
+      "text": "资产设备定义",
+      "parentId": "MTD1000001OM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "AssetDetail",
+        "columns": [
+          {
+            "name": "AssetDetailid",
+            "type": "varchar(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "Factoryid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AssetHeadid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Divisionid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Company",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Activer",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "TypeName",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AssetNum",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Descriptionx",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ExtDescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "UOM",
+            "type": "nvarchar(5)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "QTY",
+            "type": "float",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CostCenterid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CostCenter",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Roomer",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsSoftAsset",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Createuser",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Createdate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifyUser",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ModifiDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DeleteFlag",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CountNumber",
+            "type": "nvarchar(25)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BuyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AssetRegistordate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ScrapDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "NoUseDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PoDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "VendorName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Country",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Manufacture",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsFinished",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Original_assets",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "SubCountNum",
+            "type": "nvarchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Acquisition_assets",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "LanguageName",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "EffectToDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "EffectFromDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderNum",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "stockTakeid",
+            "type": "nchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Location",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ZoneCode",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Operator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "DisCode",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "RemainValue",
+            "type": "float",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "stockCheckDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsKeeupCheck",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StockNumber",
+            "type": "varchar(15)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StockCheck",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "workcenterid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "StockTakeItemid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "RunStauts",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "notActiver",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "IsDailyRemind",
+            "type": "bit",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CheckResponsible",
+            "type": "varchar(20)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "AgingLoadQty",
+            "type": "int",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AssetDetailMainView",
+          "file": "AssetDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AssetDetailModifyTreeView",
+          "file": "AssetDetailModifyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AssetDetailSaveData",
+          "file": "AssetDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AssetDetailDeleteData",
+          "file": "AssetDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:19+08:00",
+        "MainView": "2026-11-09T09:54:19+08:00",
+        "TreeView": "2026-11-09T09:54:19+08:00",
+        "SaveData": "2026-11-09T09:54:19+08:00",
+        "DeleteView": "2026-11-09T09:54:19+08:00"
+      }
+    }
+  ]
+}

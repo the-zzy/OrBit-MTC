@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CHAIN",
+  "name": "数据链定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "数据链定义",
+  "metadata": "Data Chain Define",
+  "objects": [
+    {
+      "id": "MTD1000000A5",
+      "name": "DataChainQuery",
+      "text": "数据链定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DataChainQueryMainView",
+          "file": "DataChainQueryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DataChainQueryTreeView",
+          "file": "DataChainQueryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DataChainQuerySaveData",
+          "file": "DataChainQuerySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DataChainQueryDeleteData",
+          "file": "DataChainQueryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

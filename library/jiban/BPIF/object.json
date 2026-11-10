@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BPIF",
+  "name": "烧录人员信息",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "烧录人员信息",
+  "metadata": "BPIF",
+  "objects": [
+    {
+      "id": "MTD10000024J",
+      "name": "BurnPersonInfo",
+      "text": "烧录人员信息",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnPersonInfoMainView",
+          "file": "BurnPersonInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnPersonInfoTreeView",
+          "file": "BurnPersonInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BurnPersonInfoSaveData",
+          "file": "BurnPersonInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BurnPersonInfoDeleteData",
+          "file": "BurnPersonInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

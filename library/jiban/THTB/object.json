@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "THTB",
+  "name": "温湿度查询报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "温湿度查询报表",
+  "metadata": "HumitureQuery",
+  "objects": [
+    {
+      "id": "MTD10000022M",
+      "name": "HumitureQuery",
+      "text": "温湿度查询报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

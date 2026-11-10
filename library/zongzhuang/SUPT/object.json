@@ -1,0 +1,38 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SUPT",
+  "name": "系统用户",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "系统用户",
+  "metadata": "查询系统用户信息，记录用户编号、用户名、部门、岗位、联系方式、权限等信息，确保系统用户数据的准确性和完整性。这有助于优化用户管理，保障系统的安全性和稳定性，提高企业的信息化管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000000N4",
+      "name": "SysUserPrint",
+      "text": "系统用户",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysUserPrintMainView",
+          "file": "SysUserPrintMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysUserPrintTreeView",
+          "file": "SysUserPrintTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

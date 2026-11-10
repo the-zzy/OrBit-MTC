@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TEPE",
+  "name": "测试人员工时库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "测试人员工时库",
+  "metadata": "TestPerson",
+  "objects": [
+    {
+      "id": "MTD100000263",
+      "name": "TestPerson",
+      "text": "测试人员工时库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TestPersonMainView",
+          "file": "TestPersonMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TestPersonTreeView",
+          "file": "TestPersonTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TestPersonSaveData",
+          "file": "TestPersonSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TestPersonDeleteData",
+          "file": "TestPersonDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000264",
+      "name": "TestPersonException",
+      "text": "测试异常工时",
+      "parentId": "MTD100000263",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TestPersonExceptionMainView",
+          "file": "TestPersonExceptionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TestPersonExceptionTreeView",
+          "file": "TestPersonExceptionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TestPersonExceptionSaveData",
+          "file": "TestPersonExceptionSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TestPersonExceptionDeleteData",
+          "file": "TestPersonExceptionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

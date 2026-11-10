@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MQRT",
+  "name": "生产品质区间报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "生产品质区间报表",
+  "metadata": "MQRT",
+  "objects": [
+    {
+      "id": "MTD1000000S4",
+      "name": "MocAndQualityReport",
+      "text": "生产品质区间报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

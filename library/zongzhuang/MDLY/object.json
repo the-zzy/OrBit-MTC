@@ -1,0 +1,108 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MDLY",
+  "name": "物料申请单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物料申请单",
+  "metadata": "查询物料申请单信息，记录申请单编号、产品型号、物料信息、申请数量、申请日期等关键数据，确保物料申请过程的规范性和可追溯性。这有助于优化物料管理流程，避免因申请错误导致的生产延误和物料浪费，提高生产效率。",
+  "objects": [
+    {
+      "id": "MTD1000000JF",
+      "name": "MiscDelivery",
+      "text": "物料申请单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MiscDeliveryMainView",
+          "file": "MiscDeliveryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MiscDeliveryTreeView",
+          "file": "MiscDeliveryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MiscDeliverySaveData",
+          "file": "MiscDeliverySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MiscDeliveryDeleteData",
+          "file": "MiscDeliveryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JH",
+      "name": "MiscDeliveryItem",
+      "text": "申请单明细",
+      "parentId": "MTD1000000JF",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MiscDeliveryItemMainView",
+          "file": "MiscDeliveryItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MiscDeliveryItemTreeView",
+          "file": "MiscDeliveryItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MiscDeliveryItemSaveData",
+          "file": "MiscDeliveryItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MiscDeliveryItemDeleteData",
+          "file": "MiscDeliveryItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JI",
+      "name": "MiscDeliveryItemLot",
+      "text": "申请单明细批号",
+      "parentId": "MTD1000000JH",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MiscDeliveryItemLotMainView",
+          "file": "MiscDeliveryItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MiscDeliveryItemLotTreeView",
+          "file": "MiscDeliveryItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

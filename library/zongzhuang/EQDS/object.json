@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EQDS",
+  "name": "设备处置流程",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备处置流程",
+  "metadata": "EquipmentDisposal",
+  "objects": [
+    {
+      "id": "MTD1000000H2",
+      "name": "EquipmentDisposal",
+      "text": "设备处置流程",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentDisposalMainView",
+          "file": "EquipmentDisposalMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentDisposalTreeView",
+          "file": "EquipmentDisposalTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentDisposalSaveData",
+          "file": "EquipmentDisposalSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentDisposalDeleteData",
+          "file": "EquipmentDisposalDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

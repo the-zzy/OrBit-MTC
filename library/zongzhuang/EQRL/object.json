@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EQRL",
+  "name": "设备送修",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备送修",
+  "metadata": "EquipmentRepairList",
+  "objects": [
+    {
+      "id": "MTD1000000H5",
+      "name": "EquipmentRepairList",
+      "text": "设备送修",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentRepairListMainView",
+          "file": "EquipmentRepairListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentRepairListTreeView",
+          "file": "EquipmentRepairListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentRepairListSaveData",
+          "file": "EquipmentRepairListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentRepairListDeleteData",
+          "file": "EquipmentRepairListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000H6",
+      "name": "EquipmentRepairListDetail",
+      "text": "送修设备清单",
+      "parentId": "MTD1000000H5",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EquipmentRepairListDetailMainView",
+          "file": "EquipmentRepairListDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EquipmentRepairListDetailTreeView",
+          "file": "EquipmentRepairListDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EquipmentRepairListDetailSaveData",
+          "file": "EquipmentRepairListDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EquipmentRepairListDetailDeleteData",
+          "file": "EquipmentRepairListDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

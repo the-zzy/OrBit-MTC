@@ -1,0 +1,63 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TVMI",
+  "name": "TV备件板",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV备件板",
+  "metadata": "TVMI",
+  "objects": [
+    {
+      "id": "MTD100000225",
+      "name": "SyncTVMacInfo",
+      "text": "TV备件板",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SyncTVMacInfoMainView",
+          "file": "SyncTVMacInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SyncTVMacInfoTreeView",
+          "file": "SyncTVMacInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000226",
+      "name": "SyncTVMacInfoItem",
+      "text": "MAC地址明细",
+      "parentId": "MTD100000225",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SyncTVMacInfoItemMainView",
+          "file": "SyncTVMacInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SyncTVMacInfoItemTreeView",
+          "file": "SyncTVMacInfoItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

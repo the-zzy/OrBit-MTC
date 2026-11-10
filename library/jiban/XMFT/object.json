@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "XMFT",
+  "name": "TV整机测试数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV整机测试数据查询",
+  "metadata": "XMFT",
+  "objects": [
+    {
+      "id": "MTD1000001ZP",
+      "name": "XiaoMiFunctionTest",
+      "text": "TV整机测试数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

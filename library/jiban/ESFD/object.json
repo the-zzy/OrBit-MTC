@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ESFD",
+  "name": "ESD点检时间查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "ESD点检时间查询",
+  "metadata": "ESDCheckFromNow",
+  "objects": [
+    {
+      "id": "MTD1000002B0",
+      "name": "ESDCheckFromNow",
+      "text": "ESD点检时间查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

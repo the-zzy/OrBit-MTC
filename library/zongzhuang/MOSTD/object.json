@@ -1,0 +1,93 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MOSTD",
+  "name": "标准工单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "标准工单",
+  "metadata": "查询标准工单信息，记录工单编号、产品型号、生产数量、计划开工日期、计划完工日期等关键数据，确保工单信息的准确性和完整性。这有助于生产部门合理安排生产计划，提高生产效率，确保工单按时完成和交付。",
+  "objects": [
+    {
+      "id": "MTD1000000AM",
+      "name": "MOSTD",
+      "text": "标准工单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOSTDTreeView",
+          "file": "MOSTDTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOSTDSaveData",
+          "file": "MOSTDSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000AN",
+      "name": "MOItemSTD",
+      "text": "标准工单明细",
+      "parentId": "MTD1000000AM",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemSTDMainView",
+          "file": "MOItemSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemSTDTreeView",
+          "file": "MOItemSTDTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000AO",
+      "name": "MOItemLot",
+      "text": "工单明细批号",
+      "parentId": "MTD1000000AM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOItemLotMainView",
+          "file": "MOItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOItemLotTreeView",
+          "file": "MOItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LOCCK",
+  "name": "货架库存查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "货架库存查询",
+  "metadata": "LOCCK",
+  "objects": [
+    {
+      "id": "MTD1000001NQ",
+      "name": "LocationInventoryQuery",
+      "text": "货架库存查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

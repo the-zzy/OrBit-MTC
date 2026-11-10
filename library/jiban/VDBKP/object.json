@@ -1,0 +1,103 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDBKP",
+  "name": "呆滞料退货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "呆滞料退货单",
+  "metadata": "VendorBackPO",
+  "objects": [
+    {
+      "id": "MTD1000001VX",
+      "name": "VendorBackPO",
+      "text": "呆滞料退货单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorBackPOMainView",
+          "file": "VendorBackPOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorBackPOTreeView",
+          "file": "VendorBackPOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorBackPOSaveData",
+          "file": "VendorBackPOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorBackPODeleteData",
+          "file": "VendorBackPODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VY",
+      "name": "VendorBackItemPO",
+      "text": "退货单明细",
+      "parentId": "MTD1000001VX",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorBackItemPOMainView",
+          "file": "VendorBackItemPOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorBackItemPOTreeView",
+          "file": "VendorBackItemPOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "VendorBackItemPOSaveData",
+          "file": "VendorBackItemPOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "VendorBackItemPODeleteData",
+          "file": "VendorBackItemPODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VZ",
+      "name": "VendorBackItemLotPO",
+      "text": "退货单明细批号",
+      "parentId": "MTD1000001VY",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "VendorBackItemLotPOTreeView",
+          "file": "VendorBackItemLotPOTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

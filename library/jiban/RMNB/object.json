@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RMNB",
+  "name": "RM号",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "RM号",
+  "metadata": "RMNB",
+  "objects": [
+    {
+      "id": "MTD10000021O",
+      "name": "RMNumber",
+      "text": "RM号",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RMNumberMainView",
+          "file": "RMNumberMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RMNumberTreeView",
+          "file": "RMNumberTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "RMNumberSaveData",
+          "file": "RMNumberSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "RMNumberDeleteData",
+          "file": "RMNumberDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021P",
+      "name": "RMNumberItem",
+      "text": "",
+      "parentId": "MTD10000021O",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RMNumberItemMainView",
+          "file": "RMNumberItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RMNumberItemTreeView",
+          "file": "RMNumberItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "RMNumberItemSaveData",
+          "file": "RMNumberItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "RMNumberItemDeleteData",
+          "file": "RMNumberItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

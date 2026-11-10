@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "EASD",
+  "name": "Element基础数据维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Element基础数据维护",
+  "metadata": "EASD",
+  "objects": [
+    {
+      "id": "MTD1000002DP",
+      "name": "EleAmericanSumData",
+      "text": "Element基础数据维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EleAmericanSumDataMainView",
+          "file": "EleAmericanSumDataMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EleAmericanSumDataTreeView",
+          "file": "EleAmericanSumDataTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EleAmericanSumDataSaveData",
+          "file": "EleAmericanSumDataSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EleAmericanSumDataDeleteData",
+          "file": "EleAmericanSumDataDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

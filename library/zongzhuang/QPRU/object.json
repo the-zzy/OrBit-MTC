@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "QPRU",
+  "name": "SKD生产记录查询(TV)",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SKD生产记录查询(TV)",
+  "metadata": "ProdRecordTVSKDQuery",
+  "objects": [
+    {
+      "id": "MTD1000000SK",
+      "name": "ProdRecordTVSKDQuery",
+      "text": "SKD生产记录查询(TV)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

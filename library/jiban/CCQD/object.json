@@ -1,0 +1,277 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CCQD",
+  "name": "打叉板开始日期",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "打叉板开始日期",
+  "metadata": "ReceivedRateDate",
+  "pulled": {
+    "MainView": "2026-11-07T18:17:47+08:00",
+    "DeleteView": "2026-11-07T18:20:39+08:00",
+    "meta": "2026-11-09T09:54:20+08:00"
+  },
+  "objects": [
+    {
+      "id": "MTD10000007F",
+      "name": "UserCode",
+      "text": "打叉板开始日期",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "UserCode",
+        "columns": [
+          {
+            "name": "UserCodeId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "UserCodeName",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "UserCodeDescription",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Protected",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ParentUserCodeId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Divisionid",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ItemSequence",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Parameter1",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Parameter2",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Parameter3",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeTreeView",
+          "file": "UserCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:20+08:00",
+        "MainView": "2026-11-09T09:54:20+08:00",
+        "TreeView": "2026-11-09T09:54:20+08:00",
+        "SaveData": "2026-11-09T09:54:20+08:00",
+        "DeleteView": "2026-11-09T09:54:21+08:00"
+      }
+    },
+    {
+      "id": "MTD10000007G",
+      "name": "UserCodeDetail",
+      "text": "用户子级编码",
+      "parentId": "MTD10000007F",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "UserCode",
+        "columns": [
+          {
+            "name": "UserCodeId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "UserCodeName",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "UserCodeDescription",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Protected",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ParentUserCodeId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Divisionid",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "ItemSequence",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Parameter1",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Parameter2",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "Parameter3",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeTreeView",
+          "file": "UserCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-09T09:54:21+08:00",
+        "MainView": "2026-11-09T09:54:21+08:00",
+        "TreeView": "2026-11-09T09:54:21+08:00",
+        "SaveData": "2026-11-09T09:54:21+08:00",
+        "DeleteView": "2026-11-09T09:54:21+08:00"
+      }
+    }
+  ]
+}

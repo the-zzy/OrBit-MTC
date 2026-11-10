@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BFHL",
+  "name": "烽火老化报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "烽火老化报表",
+  "metadata": "BurnFengHuoLotQuery",
+  "objects": [
+    {
+      "id": "MTD1000002E2",
+      "name": "BurnFengHuoLotQuery",
+      "text": "烽火老化报表",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

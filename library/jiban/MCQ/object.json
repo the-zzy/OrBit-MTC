@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MCQ",
+  "name": "MConversionQuery",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "MConversionQuery",
+  "metadata": "MConversionQuery",
+  "objects": [
+    {
+      "id": "MTD10000029K",
+      "name": "MconversionQuery",
+      "text": "MConversionQuery",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

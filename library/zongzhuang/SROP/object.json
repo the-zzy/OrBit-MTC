@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SROP",
+  "name": "销退订单打印",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "销退订单打印",
+  "metadata": "SalesReturnOrderPrint",
+  "objects": [
+    {
+      "id": "MTD1000002DB",
+      "name": "SOLabel",
+      "text": "销退订单打印",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOMainView",
+          "file": "SOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOLabelTreeView",
+          "file": "SOLabelTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DD",
+      "name": "SOLabelItem",
+      "text": "销退订单打印项",
+      "parentId": "MTD1000002DB",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SOItemMainView",
+          "file": "SOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SOItemTreeView",
+          "file": "SOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

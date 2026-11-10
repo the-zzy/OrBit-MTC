@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SHELF",
+  "name": "货架维护管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "货架维护管理",
+  "metadata": "SHELF",
+  "objects": [
+    {
+      "id": "MTD1000000T4",
+      "name": "Shelves",
+      "text": "货架维护管理",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShelvesMainView",
+          "file": "ShelvesMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShelvesTreeView",
+          "file": "ShelvesTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShelvesSaveData",
+          "file": "ShelvesSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShelvesDeleteData",
+          "file": "ShelvesDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000T5",
+      "name": "ShelvesItem",
+      "text": "货架物料管理",
+      "parentId": "MTD1000000T4",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShelvesItemMainView",
+          "file": "ShelvesItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShelvesItemTreeView",
+          "file": "ShelvesItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShelvesItemSaveData",
+          "file": "ShelvesItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShelvesItemDeleteData",
+          "file": "ShelvesItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PN",
+      "name": "Shelves_User",
+      "text": "货架用户",
+      "parentId": "MTD1000000T4",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Shelves_UserMainView",
+          "file": "Shelves_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Shelves_UserTreeView",
+          "file": "Shelves_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Shelves_UserSaveData",
+          "file": "Shelves_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Shelves_UserDeleteData",
+          "file": "Shelves_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

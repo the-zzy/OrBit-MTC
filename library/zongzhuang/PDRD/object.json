@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PDRD",
+  "name": "物料基础数据维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物料基础数据维护",
+  "metadata": "维护物料基础数据，记录物料编码、名称、规格、单位、供应商、成本等信息，确保物料数据的准确性和完整性。这有助于优化物料管理流程，提高采购、库存、生产等环节的效率和准确性，降低企业运营成本。",
+  "objects": [
+    {
+      "id": "MTD1000001UW",
+      "name": "ProductRoot",
+      "text": "物料基础数据维护",
+      "parentId": "",
+      "sequence": "07",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProductRootMainView_Root",
+          "file": "ProductRootMainView_Root.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProductRootTreeView_Root",
+          "file": "ProductRootTreeView_Root.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProductRootSaveData_Root",
+          "file": "ProductRootSaveData_Root.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProductRootDeleteData",
+          "file": "ProductRootDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000287",
+      "name": "ModuleSonPrd",
+      "text": "组件子物料",
+      "parentId": "MTD1000001UW",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ModuleSonPrdMainView",
+          "file": "ModuleSonPrdMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ModuleSonPrdTreeView",
+          "file": "ModuleSonPrdTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ModuleSonPrdSaveData",
+          "file": "ModuleSonPrdSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ModuleSonPrdDeleteData",
+          "file": "ModuleSonPrdDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

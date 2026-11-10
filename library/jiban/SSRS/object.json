@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SSRS",
+  "name": "SampleSigningRecords",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SampleSigningRecords",
+  "metadata": "SampleSigningRecords",
+  "objects": [
+    {
+      "id": "MTD1000002CJ",
+      "name": "SampleSigningRecords",
+      "text": "SampleSigningRecords",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SampleSigningRecordsMainView",
+          "file": "SampleSigningRecordsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SampleSigningRecordsTreeView",
+          "file": "SampleSigningRecordsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SampleSigningRecordsSaveData",
+          "file": "SampleSigningRecordsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SampleSigningRecordsDeleteData",
+          "file": "SampleSigningRecordsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

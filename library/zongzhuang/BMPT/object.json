@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BMPT",
+  "name": "外箱栈板核对记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "外箱栈板核对记录",
+  "metadata": "BoxMergePallet",
+  "objects": [
+    {
+      "id": "MTD1000000S1",
+      "name": "BoxMergePallet",
+      "text": "外箱栈板核对记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BoxMergePalletMainView",
+          "file": "BoxMergePalletMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BoxMergePalletTreeView",
+          "file": "BoxMergePalletTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BoxMergePalletSaveData",
+          "file": "BoxMergePalletSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BoxMergePalletDeleteData",
+          "file": "BoxMergePalletDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

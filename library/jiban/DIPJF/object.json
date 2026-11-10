@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DIPJF",
+  "name": "DIPJF",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "DIPJF",
+  "metadata": "DIPJF",
+  "objects": [
+    {
+      "id": "MTD1000001NG",
+      "name": "DIPOnlineScanRemove",
+      "text": "DIPJF",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

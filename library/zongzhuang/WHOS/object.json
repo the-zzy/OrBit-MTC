@@ -1,0 +1,188 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WHOS",
+  "name": "仓库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "仓库",
+  "metadata": "Warehouse",
+  "objects": [
+    {
+      "id": "MTD1000000IP",
+      "name": "Warehouse",
+      "text": "仓库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WarehouseMainView",
+          "file": "WarehouseMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WarehouseTreeView",
+          "file": "WarehouseTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WarehouseSaveData",
+          "file": "WarehouseSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WarehouseDeleteData",
+          "file": "WarehouseDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CT",
+      "name": "Workcenter_ProductFamily",
+      "text": "产品族",
+      "parentId": "MTD1000000IP",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Workcenter_ProductFamilyMainView",
+          "file": "Workcenter_ProductFamilyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Workcenter_ProductFamilyTreeView",
+          "file": "Workcenter_ProductFamilyTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Workcenter_ProductFamilySaveData",
+          "file": "Workcenter_ProductFamilySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Workcenter_ProductFamilyDeleteData",
+          "file": "Workcenter_ProductFamilyDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CQ",
+      "name": "CellSTD",
+      "text": "库位",
+      "parentId": "MTD1000000IP",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CellMainView",
+          "file": "CellMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CellTreeView",
+          "file": "CellTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CellSTDSaveData",
+          "file": "CellSTDSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CellDeleteData",
+          "file": "CellDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CS",
+      "name": "CellSTD_Product",
+      "text": "库位产品",
+      "parentId": "MTD1000000CQ",
+      "sequence": "6",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Cell_ProductMainView",
+          "file": "Cell_ProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Cell_ProductTreeView",
+          "file": "Cell_ProductTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Cell_ProductSaveData",
+          "file": "Cell_ProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Cell_ProductDeleteData",
+          "file": "Cell_ProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WH",
+      "name": "WorkCenterCell",
+      "text": "仓库库位",
+      "parentId": "MTD1000000IP",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkCenterCellMainView",
+          "file": "WorkCenterCellMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkCenterCellTreeView",
+          "file": "WorkCenterCellTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkCenterCellSaveData",
+          "file": "WorkCenterCellSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkCenterCellDeleteData",
+          "file": "WorkCenterCellDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,38 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TMSD",
+  "name": "TMS物流计划订单管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TMS物流计划订单管理",
+  "metadata": "查询TMS物流计划订单管理信息，记录订单编号、计划编号、运输方式、发货日期、到货日期、状态等数据，确保物流计划订单管理的准确性和可追溯性。这有助于优化物流配送计划，提高车辆利用率，降低运输成本，保障货物按时送达客户。",
+  "objects": [
+    {
+      "id": "MTD1000002CP",
+      "name": "TMSShipmentScheduling",
+      "text": "TMS物流计划订单管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TMSShipmentSchedulingMainView",
+          "file": "TMSShipmentSchedulingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TMSShipmentSchedulingTreeView",
+          "file": "TMSShipmentSchedulingTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

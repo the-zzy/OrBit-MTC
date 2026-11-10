@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DCRR",
+  "name": "维修分析原因",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "维修分析原因",
+  "metadata": "DCRepairReason",
+  "objects": [
+    {
+      "id": "MTD1000002CL",
+      "name": "DCRepairAnalysis",
+      "text": "维修分析原因",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCRepairAnalysisMainView",
+          "file": "DCRepairAnalysisMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCRepairAnalysisTreeView",
+          "file": "DCRepairAnalysisTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DCRepairAnalysisSaveData",
+          "file": "DCRepairAnalysisSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DCRepairAnalysisDeleteData",
+          "file": "DCRepairAnalysisDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CM",
+      "name": "DCRepairAnalysisHis",
+      "text": "过程分析",
+      "parentId": "MTD1000002CL",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCRepairAnalysisHisMainView",
+          "file": "DCRepairAnalysisHisMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCRepairAnalysisHisTreeView",
+          "file": "DCRepairAnalysisHisTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

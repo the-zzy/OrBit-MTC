@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GSJD",
+  "name": "送检单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "送检单",
+  "metadata": "GageSongJianDing",
+  "objects": [
+    {
+      "id": "MTD1000000HV",
+      "name": "GageSongJianDing",
+      "text": "送检单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageSongJianDingMainView",
+          "file": "GageSongJianDingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageSongJianDingTreeView",
+          "file": "GageSongJianDingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageSongJianDingSaveData",
+          "file": "GageSongJianDingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageSongJianDingDeleteData",
+          "file": "GageSongJianDingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000HW",
+      "name": "GageSongJianDingDetail",
+      "text": "送检结果文件",
+      "parentId": "MTD1000000HV",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageSongJianDingDetailMainView",
+          "file": "GageSongJianDingDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageSongJianDingDetailTreeView",
+          "file": "GageSongJianDingDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageSongJianDingDetailSaveData",
+          "file": "GageSongJianDingDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageSongJianDingDetailDeleteData",
+          "file": "GageSongJianDingDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

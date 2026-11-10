@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ALOB",
+  "name": "警告事件",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "警告事件",
+  "metadata": "AlarmObject",
+  "objects": [
+    {
+      "id": "MTD1000000GT",
+      "name": "AlarmObject",
+      "text": "警告事件",
+      "parentId": "",
+      "sequence": "00",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AlarmObjectMainView",
+          "file": "AlarmObjectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AlarmObjectTreeView",
+          "file": "AlarmObjectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AlarmObjectSaveData",
+          "file": "AlarmObjectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AlarmObjectDeleteData",
+          "file": "AlarmObjectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GR",
+      "name": "Alarm",
+      "text": "警告",
+      "parentId": "MTD1000000GT",
+      "sequence": "01",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AlarmMainView",
+          "file": "AlarmMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AlarmTreeView",
+          "file": "AlarmTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AlarmSaveData",
+          "file": "AlarmSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AlarmDeleteData",
+          "file": "AlarmDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000GV",
+      "name": "AlarmReceiveMember",
+      "text": "警告事件接收人员",
+      "parentId": "MTD1000000GT",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AlarmReceiveMemberMainView",
+          "file": "AlarmReceiveMemberMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AlarmReceiveMemberTreeView",
+          "file": "AlarmReceiveMemberTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AlarmReceiveMemberSaveData",
+          "file": "AlarmReceiveMemberSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AlarmReceiveMemberDeleteData",
+          "file": "AlarmReceiveMemberDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

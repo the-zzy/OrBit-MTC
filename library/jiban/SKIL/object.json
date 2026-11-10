@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SKIL",
+  "name": "技能列表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "技能列表",
+  "metadata": "Skill List",
+  "objects": [
+    {
+      "id": "MTD1000000IG",
+      "name": "Skill",
+      "text": "技能列表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SkillMainView",
+          "file": "SkillMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SkillTreeView",
+          "file": "SkillTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SkillSaveData",
+          "file": "SkillSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SkillDeleteData",
+          "file": "SkillDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

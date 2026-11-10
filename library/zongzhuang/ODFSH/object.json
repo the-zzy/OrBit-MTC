@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ODFSH",
+  "name": "订单设置(SH)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单设置(SH)",
+  "metadata": "设置订单参数（SH），记录订单编号、产品型号、生产数量、交货日期、特殊要求等信息，确保SH订单信息的准确性和完整性。这有助于生产部门根据订单要求合理安排生产计划，提高生产效率，确保订单按时完成和交付。",
+  "objects": [
+    {
+      "id": "MTD1000001RS",
+      "name": "DIPOrderSetItem",
+      "text": "订单设置(SH)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DIPOrderSetItemMainView",
+          "file": "DIPOrderSetItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DIPOrderSetItemTreeView",
+          "file": "DIPOrderSetItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DIPOrderSetItemSaveData",
+          "file": "DIPOrderSetItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DIPOrderSetItemDeleteData",
+          "file": "DIPOrderSetItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

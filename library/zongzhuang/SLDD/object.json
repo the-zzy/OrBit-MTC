@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SLDD",
+  "name": "排期可发货数量查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "排期可发货数量查询",
+  "metadata": "结合生产进度、库存水平和订单交付要求，实时计算并展示各产品在不同时间排期下的可发货数量，确保销售部门准确掌握可销售库存，及时响应客户订单需求，优化发货计划，提高客户服务水平和市场响应速度。同时，为生产计划和库存管理提供数据支持，降低库存成本和缺货风险。",
+  "objects": [
+    {
+      "id": "MTD1000002A0",
+      "name": "ScheduleDeliverableDetail",
+      "text": "排期可发货数量查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

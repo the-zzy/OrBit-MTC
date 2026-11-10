@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "PAQY",
+  "name": "超发调拨查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "超发调拨查询",
+  "metadata": "ProductAllotQuery",
+  "objects": [
+    {
+      "id": "MTD10000021T",
+      "name": "ProductAllotQuery",
+      "text": "超发调拨查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

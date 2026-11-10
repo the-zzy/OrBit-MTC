@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ADDAB",
+  "name": "添加异常履历",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "添加异常履历",
+  "metadata": "ADDAB",
+  "objects": [
+    {
+      "id": "MTD1000002B1",
+      "name": "Abnormal",
+      "text": "添加异常履历",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AbnormalMainView",
+          "file": "AbnormalMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AbnormalTreeView",
+          "file": "AbnormalTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AbnormalSaveData",
+          "file": "AbnormalSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AbnormalDeleteData",
+          "file": "AbnormalDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

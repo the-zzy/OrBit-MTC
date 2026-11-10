@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OQAD",
+  "name": "OQA检验报表查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "OQA检验报表查询",
+  "metadata": "OQAD",
+  "objects": [
+    {
+      "id": "MTD1000001UT",
+      "name": "OQACheckDefect",
+      "text": "OQA检验报表查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QPRT",
+  "name": "TV生产记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV生产记录查询",
+  "metadata": "ProdRecRptTVQuery",
+  "objects": [
+    {
+      "id": "MTD1000000QR",
+      "name": "ProdRecRptTVQuery",
+      "text": "TV生产记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SPEG",
+  "name": "作业规程组别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "作业规程组别",
+  "metadata": "Specification Group",
+  "objects": [
+    {
+      "id": "MTD10000008P",
+      "name": "SpecificationGroup",
+      "text": "作业规程组别",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SpecificationGroupMainView",
+          "file": "SpecificationGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SpecificationGroupTreeView",
+          "file": "SpecificationGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SpecificationGroupSaveData",
+          "file": "SpecificationGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SpecificationGroupDeleteData",
+          "file": "SpecificationGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000008Q",
+      "name": "SpecificationGroup_Spec",
+      "text": "作业规程组下属规程",
+      "parentId": "MTD10000008P",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SpecificationGroup_SpecMainView",
+          "file": "SpecificationGroup_SpecMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SpecificationGroup_SpecTreeView",
+          "file": "SpecificationGroup_SpecTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SpecificationGroup_SpecSaveData",
+          "file": "SpecificationGroup_SpecSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SpecificationGroup_SpecDeleteData",
+          "file": "SpecificationGroup_SpecDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

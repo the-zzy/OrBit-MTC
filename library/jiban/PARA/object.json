@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PARA",
+  "name": "系统参数管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "系统参数管理",
+  "metadata": "System Parameter",
+  "objects": [
+    {
+      "id": "MTD100000074",
+      "name": "SysParameter",
+      "text": "系统参数管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SysParameterMainView",
+          "file": "SysParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SysParameterTreeView",
+          "file": "SysParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SysParameterSaveData",
+          "file": "SysParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SysParameterDeleteData",
+          "file": "SysParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

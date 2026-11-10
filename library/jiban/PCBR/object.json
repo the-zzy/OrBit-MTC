@@ -1,0 +1,43 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PCBR",
+  "name": "基板过板",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "基板过板",
+  "metadata": "PCBR",
+  "objects": [
+    {
+      "id": "MTD10000022Q",
+      "name": "PlacodeBorrow",
+      "text": "基板过板",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PlacodeBorrowMainView",
+          "file": "PlacodeBorrowMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PlacodeBorrowTreeView",
+          "file": "PlacodeBorrowTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PlacodeBorrowDeleteData",
+          "file": "PlacodeBorrowDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

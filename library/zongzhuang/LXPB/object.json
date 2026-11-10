@@ -1,0 +1,143 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LXPB",
+  "name": "零星退料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "零星退料单",
+  "metadata": "查询零星退料单信息，记录退料单编号、生产订单、物料信息、退料数量、退料原因等关键数据，确保零星退料过程的规范性和可追溯性。这有助于优化退料管理流程，避免因退料错误导致的生产混乱和物料浪费，提高生产效率和物料管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000001XH",
+      "name": "LXProductBack",
+      "text": "零星退料单",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXProductBackMainView",
+          "file": "LXProductBackMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXProductBackTreeView",
+          "file": "LXProductBackTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LXProductBackSaveData",
+          "file": "LXProductBackSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LXProductBackDeleteData",
+          "file": "LXProductBackDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XI",
+      "name": "LXProductBackItem",
+      "text": "零星退料单明细",
+      "parentId": "MTD1000001XH",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXProductBackItemMainView",
+          "file": "LXProductBackItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXProductBackItemTreeView",
+          "file": "LXProductBackItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LXProductBackItemSaveData",
+          "file": "LXProductBackItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LXProductBackItemDeleteData",
+          "file": "LXProductBackItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XJ",
+      "name": "LXProductBackItemLot",
+      "text": "零星退料单明细批号",
+      "parentId": "MTD1000001XI",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXProductBackItemLotMainView",
+          "file": "LXProductBackItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXProductBackItemLotTreeView",
+          "file": "LXProductBackItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LXProductBackItemLotSaveData",
+          "file": "LXProductBackItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LXProductBackItemLotDeleteData",
+          "file": "LXProductBackItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020V",
+      "name": "LXProductBackSAPMessage",
+      "text": "SAP返回信息",
+      "parentId": "MTD1000001XH",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXProductBackSAPMessageMainView",
+          "file": "LXProductBackSAPMessageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXProductBackSAPMessageTreeView",
+          "file": "LXProductBackSAPMessageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "IQCQR",
+  "name": "来料状态报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "来料状态报表",
+  "metadata": "IQCInspectionQuery",
+  "objects": [
+    {
+      "id": "MTD1000000TU",
+      "name": "IQCInspectionQuery",
+      "text": "来料状态报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

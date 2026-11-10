@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MBCT",
+  "name": "料号系数维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "料号系数维护",
+  "metadata": "MaterialBindCoefficient",
+  "objects": [
+    {
+      "id": "MTD1000002EH",
+      "name": "MaterialBindCoefficient",
+      "text": "料号系数维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialBindCoefficientMainView",
+          "file": "MaterialBindCoefficientMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialBindCoefficientTreeView",
+          "file": "MaterialBindCoefficientTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MaterialBindCoefficientSaveData",
+          "file": "MaterialBindCoefficientSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MaterialBindCoefficientDeleteData",
+          "file": "MaterialBindCoefficientDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

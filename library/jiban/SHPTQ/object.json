@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SHPTQ",
+  "name": "仓库货架栈板查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "仓库货架栈板查询",
+  "metadata": "shptq",
+  "objects": [
+    {
+      "id": "MTD1000001NS",
+      "name": "ShelfPalletQuery",
+      "text": "仓库货架栈板查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

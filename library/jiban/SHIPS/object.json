@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SHIPS",
+  "name": "发货地址",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "发货地址",
+  "metadata": "ShippingSite",
+  "objects": [
+    {
+      "id": "MTD1000000TP",
+      "name": "ShippingSite",
+      "text": "发货地址",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ShippingSiteMainView",
+          "file": "ShippingSiteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ShippingSiteTreeView",
+          "file": "ShippingSiteTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ShippingSiteSaveData",
+          "file": "ShippingSiteSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ShippingSiteDeleteData",
+          "file": "ShippingSiteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001SX",
+      "name": "Province",
+      "text": "省",
+      "parentId": "MTD1000000TP",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ProvinceMainView",
+          "file": "ProvinceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ProvinceTreeView",
+          "file": "ProvinceTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ProvinceSaveData",
+          "file": "ProvinceSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ProvinceDeleteData",
+          "file": "ProvinceDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

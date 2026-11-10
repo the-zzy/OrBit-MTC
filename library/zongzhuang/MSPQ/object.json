@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MSPQ",
+  "name": "产测直通率查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "产测直通率查询",
+  "metadata": "MSPQ",
+  "objects": [
+    {
+      "id": "MTD1000001RZ",
+      "name": "ManufactureTestQuery",
+      "text": "产测直通率查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

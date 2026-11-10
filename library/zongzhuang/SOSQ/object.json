@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SOSQ",
+  "name": "屏外发查询报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "屏外发查询报表",
+  "metadata": "SOSQ",
+  "objects": [
+    {
+      "id": "MTD100000291",
+      "name": "ScrnOutSourceQuery",
+      "text": "屏外发查询报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

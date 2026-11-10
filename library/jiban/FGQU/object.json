@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FGQU",
+  "name": "成品仓查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "成品仓查询",
+  "metadata": "FG WareHouse Query",
+  "objects": [
+    {
+      "id": "MTD1000000MH",
+      "name": "FGWareHouseQuery",
+      "text": "成品仓查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

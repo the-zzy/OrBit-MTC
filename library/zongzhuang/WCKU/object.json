@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "WCKU",
+  "name": "仓位用户",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "仓位用户",
+  "metadata": "WorkCenter_User",
+  "objects": [
+    {
+      "id": "MTD10000022N",
+      "name": "WorkCenter_User",
+      "text": "仓位用户",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkCenter_UserMainView",
+          "file": "WorkCenter_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkCenter_UserTreeView",
+          "file": "WorkCenter_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkCenter_UserSaveData",
+          "file": "WorkCenter_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkCenter_UserDeleteData",
+          "file": "WorkCenter_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

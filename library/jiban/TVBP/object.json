@@ -1,0 +1,218 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TVBP",
+  "name": "TV效率奖金发放",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV效率奖金发放",
+  "metadata": "TVBonusPosition",
+  "objects": [
+    {
+      "id": "MTD1000001V8",
+      "name": "TVBonusPosition",
+      "text": "TV效率奖金发放",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVBonusPositionMainView",
+          "file": "TVBonusPositionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVBonusPositionTreeView",
+          "file": "TVBonusPositionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVBonusPositionSaveData",
+          "file": "TVBonusPositionSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001V9",
+      "name": "TVBonusPositionItem",
+      "text": "职位级别奖金明细",
+      "parentId": "MTD1000001V8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVBonusPositionItemMainView",
+          "file": "TVBonusPositionItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVBonusPositionItemTreeView",
+          "file": "TVBonusPositionItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVBonusPositionItemSaveData",
+          "file": "TVBonusPositionItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVBonusPositionItemDeleteData",
+          "file": "TVBonusPositionItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VA",
+      "name": "TVBonusPositionPerson",
+      "text": "职位人员",
+      "parentId": "MTD1000001V8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVBonusPositionPersonMainView",
+          "file": "TVBonusPositionPersonMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVBonusPositionPersonTreeView",
+          "file": "TVBonusPositionPersonTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVBonusPositionPersonSaveData",
+          "file": "TVBonusPositionPersonSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVBonusPositionPersonDeleteData",
+          "file": "TVBonusPositionPersonDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VC",
+      "name": "TVBonusNewLine",
+      "text": "新线效率设置",
+      "parentId": "MTD1000001V8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVBonusNewLineMainView",
+          "file": "TVBonusNewLineMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVBonusNewLineTreeView",
+          "file": "TVBonusNewLineTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVBonusNewLineSaveData",
+          "file": "TVBonusNewLineSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVBonusNewLineDeleteData",
+          "file": "TVBonusNewLineDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VD",
+      "name": "TVBonusRhythm",
+      "text": "线体节拍维护",
+      "parentId": "MTD1000001V8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVBonusRhythmMainView",
+          "file": "TVBonusRhythmMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVBonusRhythmTreeView",
+          "file": "TVBonusRhythmTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVBonusRhythmSaveData",
+          "file": "TVBonusRhythmSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVBonusRhythmDeleteData",
+          "file": "TVBonusRhythmDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001VF",
+      "name": "TVBonusLevel",
+      "text": "TV奖金档位",
+      "parentId": "MTD1000001V8",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVBonusLevelMainView",
+          "file": "TVBonusLevelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVBonusLevelTreeView",
+          "file": "TVBonusLevelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVBonusLevelSaveData",
+          "file": "TVBonusLevelSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVBonusLevelDeleteData",
+          "file": "TVBonusLevelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "HANQ",
+  "name": "交接数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "交接数据查询",
+  "metadata": "HANQ",
+  "objects": [
+    {
+      "id": "MTD10000024P",
+      "name": "HandoverDataQuery",
+      "text": "交接数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

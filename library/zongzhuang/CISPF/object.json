@@ -1,0 +1,188 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CISPF",
+  "name": "客验EMR",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客验EMR",
+  "metadata": "CustomerCommodity",
+  "objects": [
+    {
+      "id": "MTD1000001QD",
+      "name": "CustomerCommodity",
+      "text": "客验EMR",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerMainView",
+          "file": "CustomerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerInspecitionTreeView",
+          "file": "CustomerInspecitionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CustomerSaveData",
+          "file": "CustomerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CustomerDeleteData",
+          "file": "CustomerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NT",
+      "name": "CommodityInspection",
+      "text": "商品检验",
+      "parentId": "MTD1000001QD",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionMainView",
+          "file": "CommodityInspectionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionTreeView",
+          "file": "CommodityInspectionTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityInspectionSaveData",
+          "file": "CommodityInspectionSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000NU",
+      "name": "CommodityInspectionItem",
+      "text": "商检明细",
+      "parentId": "MTD1000000NT",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemMainView",
+          "file": "CommodityInspectionItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemTreeView",
+          "file": "CommodityInspectionItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CommodityInspectionItemSaveData",
+          "file": "CommodityInspectionItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CommodityInspectionItemDeleteData",
+          "file": "CommodityInspectionItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000UA",
+      "name": "CommodityInspectionItemInfo",
+      "text": "小米生产信息",
+      "parentId": "MTD1000000NU",
+      "sequence": "",
+      "depth": 4,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemInfoMainView",
+          "file": "CommodityInspectionItemInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemInfoTreeView",
+          "file": "CommodityInspectionItemInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000UL",
+      "name": "CommodityInspectionItemAssembly",
+      "text": "小米组件列表",
+      "parentId": "MTD1000000NU",
+      "sequence": "",
+      "depth": 4,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemAssemblyMainView",
+          "file": "CommodityInspectionItemAssemblyMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemAssemblyTreeView",
+          "file": "CommodityInspectionItemAssemblyTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001QE",
+      "name": "CommodityInspectionItemInfo2",
+      "text": "小米生产信息",
+      "parentId": "MTD1000000NT",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CommodityInspectionItemInfoMainView",
+          "file": "CommodityInspectionItemInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CommodityInspectionItemInfo2TreeView",
+          "file": "CommodityInspectionItemInfo2TreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

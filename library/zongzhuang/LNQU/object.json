@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LNQU",
+  "name": "条码追溯查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "条码追溯查询",
+  "metadata": "LotSNQuery",
+  "objects": [
+    {
+      "id": "MTD1000002G3",
+      "name": "LotSNQuery",
+      "text": "条码追溯查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

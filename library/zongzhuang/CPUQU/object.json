@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CPUQU",
+  "name": "CPU 耗时查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "CPU 耗时查询",
+  "metadata": "CPU TimeConsuming Query",
+  "objects": [
+    {
+      "id": "MTD1000000UB",
+      "name": "CPUTimeConsumingQuery",
+      "text": "CPU 耗时查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

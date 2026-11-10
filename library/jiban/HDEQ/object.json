@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "HDEQ",
+  "name": "湿敏元器件管控查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "湿敏元器件管控查询",
+  "metadata": "HDEQ",
+  "objects": [
+    {
+      "id": "MTD10000027B",
+      "name": "HumidityElementQuery",
+      "text": "湿敏元器件管控查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

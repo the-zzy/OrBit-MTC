@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TPML",
+  "name": "试投物料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "试投物料",
+  "metadata": "DCTrialProduceMaterial",
+  "objects": [
+    {
+      "id": "MTD1000000OF",
+      "name": "DCTrialProduceMaterial",
+      "text": "试投物料",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCTrialProduceMaterialMainView",
+          "file": "DCTrialProduceMaterialMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCTrialProduceMaterialTreeView",
+          "file": "DCTrialProduceMaterialTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DCTrialProduceMaterialSaveData",
+          "file": "DCTrialProduceMaterialSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DCTrialProduceMaterialDeleteData",
+          "file": "DCTrialProduceMaterialDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OG",
+      "name": "DCTrialProduceMaterialItem",
+      "text": "试投物料明细",
+      "parentId": "MTD1000000OF",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "DCTrialProduceMaterialItemMainView",
+          "file": "DCTrialProduceMaterialItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "DCTrialProduceMaterialItemTreeView",
+          "file": "DCTrialProduceMaterialItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "DCTrialProduceMaterialItemSaveData",
+          "file": "DCTrialProduceMaterialItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "DCTrialProduceMaterialItemDeleteData",
+          "file": "DCTrialProduceMaterialItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

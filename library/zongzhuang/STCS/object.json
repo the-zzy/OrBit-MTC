@@ -1,0 +1,158 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "STCS",
+  "name": "盘点记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "盘点记录",
+  "metadata": "查询盘点记录，记录盘点编号、盘点日期、盘点类型、物料信息、账存数量、实盘数量、差异数量、盘点人员等数据，确保盘点工作的规范性和可追溯性。这有助于及时发现库存管理中的问题，优化库存策略，降低库存成本，提高仓库运营效率。",
+  "objects": [
+    {
+      "id": "MTD1000001OY",
+      "name": "StocktakePd",
+      "text": "盘点记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakePlanMainView",
+          "file": "StocktakePlanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakePlanTreeView",
+          "file": "StocktakePlanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakePlanSaveData",
+          "file": "StocktakePlanSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001P0",
+      "name": "StocktakePdItem",
+      "text": "SAP盘点明细",
+      "parentId": "MTD1000001OY",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InventoryCheckItemMainView",
+          "file": "InventoryCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InventoryCheckItemTreeView",
+          "file": "InventoryCheckItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001P2",
+      "name": "StocktakeBaseDiff",
+      "text": "盘点差异",
+      "parentId": "MTD1000001OY",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeDiffMainView",
+          "file": "StocktakeDiffMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeDiffTreeView",
+          "file": "StocktakeDiffTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000QX",
+      "name": "StocktakeBase",
+      "text": "仓库实盘数",
+      "parentId": "MTD1000001OY",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeBaseMainView",
+          "file": "StocktakeBaseMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeBaseTreeView",
+          "file": "StocktakeBaseTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeBaseDeleteData",
+          "file": "StocktakeBaseDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001P3",
+      "name": "PDAInventory",
+      "text": "离线扫描数据",
+      "parentId": "MTD1000001OY",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PDAInventoryMainView",
+          "file": "PDAInventoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PDAInventoryTreeView",
+          "file": "PDAInventoryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PDAInventorySaveData",
+          "file": "PDAInventorySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PDAInventoryDeleteData",
+          "file": "PDAInventoryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

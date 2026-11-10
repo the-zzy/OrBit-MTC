@@ -1,0 +1,403 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KDOIB",
+  "name": "订单(基板)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "订单(基板)",
+  "metadata": "KD Order Info Base",
+  "objects": [
+    {
+      "id": "MTD1000000LI",
+      "name": "KDOrderInfo",
+      "text": "订单(基板)",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDOrderInfoMainView",
+          "file": "KDOrderInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDOrderInfoTreeView",
+          "file": "KDOrderInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDOrderInfoSaveData",
+          "file": "KDOrderInfoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDOrderInfoDeleteData",
+          "file": "KDOrderInfoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000OB",
+      "name": "KDMO",
+      "text": "散件工单",
+      "parentId": "MTD1000000LI",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDMOMainView",
+          "file": "KDMOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDMOTreeView",
+          "file": "KDMOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDMOSaveData",
+          "file": "KDMOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDMODeleteData",
+          "file": "KDMODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LJ",
+      "name": "KDOrderItem",
+      "text": "散件组件",
+      "parentId": "MTD1000000LI",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDOrderItemMainView",
+          "file": "KDOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDOrderItemTreeView",
+          "file": "KDOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDOrderItemSaveData",
+          "file": "KDOrderItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDOrderItemDeleteData",
+          "file": "KDOrderItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PH",
+      "name": "KDOrderItemRule",
+      "text": "组件规则",
+      "parentId": "MTD1000000LJ",
+      "sequence": "4",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDOrderItemRuleMainView",
+          "file": "KDOrderItemRuleMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDOrderItemRuleTreeView",
+          "file": "KDOrderItemRuleTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDOrderItemRuleSaveData",
+          "file": "KDOrderItemRuleSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDOrderItemRuleDeleteData",
+          "file": "KDOrderItemRuleDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RA",
+      "name": "KDCheckItem",
+      "text": "抽检明细",
+      "parentId": "MTD1000000LI",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDCheckItemMainView",
+          "file": "KDCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDCheckItemTreeView",
+          "file": "KDCheckItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LK",
+      "name": "KDBoxInfo",
+      "text": "散件外箱",
+      "parentId": "MTD1000000LI",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxInfoMainView",
+          "file": "KDBoxInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxInfoTreeView",
+          "file": "KDBoxInfoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDBoxInfoSaveData",
+          "file": "KDBoxInfoSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PE",
+      "name": "KDBoxInfoItem",
+      "text": "外箱批号明细",
+      "parentId": "MTD1000000LK",
+      "sequence": "6",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxInfoItemMainView",
+          "file": "KDBoxInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxInfoItemTreeView",
+          "file": "KDBoxInfoItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDBoxInfoSaveData",
+          "file": "KDBoxInfoSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000S5",
+      "name": "KDBoxInfoItemPro",
+      "text": "外箱物料明细",
+      "parentId": "MTD1000000LK",
+      "sequence": "7",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxInfoItemMainView",
+          "file": "KDBoxInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDBoxInfoItemProTreeView",
+          "file": "KDBoxInfoItemProTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000S6",
+      "name": "KDBoxDetail",
+      "text": "外箱清单",
+      "parentId": "MTD1000000LK",
+      "sequence": "8",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDBoxInfoItemMainView",
+          "file": "KDBoxInfoItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDLoadBoxTreeView",
+          "file": "KDLoadBoxTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000LL",
+      "name": "KDPalletInfo",
+      "text": "散件栈板",
+      "parentId": "MTD1000000LI",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDPalletInfoMainView",
+          "file": "KDPalletInfoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDPalletInfoTreeView",
+          "file": "KDPalletInfoTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000RB",
+      "name": "KDModuleOrder",
+      "text": "模组订单",
+      "parentId": "MTD1000000LI",
+      "sequence": "91",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDModuleOrderMainView",
+          "file": "KDModuleOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDModuleOrderTreeView",
+          "file": "KDModuleOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDModuleOrderSaveData",
+          "file": "KDModuleOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDModuleOrderDeleteData",
+          "file": "KDModuleOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AU",
+      "name": "KDPallet",
+      "text": "散件栈板",
+      "parentId": "MTD1000000LI",
+      "sequence": "91",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDPalletMainView",
+          "file": "KDPalletMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDPalletTreeView",
+          "file": "KDPalletTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDPalletSaveData",
+          "file": "KDPalletSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AP",
+      "name": "SKDOQACheckItem",
+      "text": "抽检明细",
+      "parentId": "MTD1000000LI",
+      "sequence": "95",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SKDOQACheckItemMainView",
+          "file": "SKDOQACheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SKDOQACheckItemTreeView",
+          "file": "SKDOQACheckItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

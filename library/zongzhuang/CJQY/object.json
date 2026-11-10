@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CJQY",
+  "name": "拆解查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "拆解查询",
+  "metadata": "CJQY",
+  "objects": [
+    {
+      "id": "MTD1000001RY",
+      "name": "PreDisassemblyInfoCJ",
+      "text": "拆解查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PreDisassemblyInfoCJMainView",
+          "file": "PreDisassemblyInfoCJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PreDisassemblyInfoCJTreeView",
+          "file": "PreDisassemblyInfoCJTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PreDisassemblyInfoCJSaveData",
+          "file": "PreDisassemblyInfoCJSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PreDisassemblyInfoCJDeleteData",
+          "file": "PreDisassemblyInfoCJDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

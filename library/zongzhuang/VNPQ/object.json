@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VNPQ",
+  "name": "越南生产计划查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "越南生产计划查询",
+  "metadata": "查询越南生产基地的生产计划数据，包括订单编号、产品型号、生产数量、交货日期等关键信息，确保生产计划的准确传达和及时更新。这有助于协调生产资源和物流配送，提高生产效率和客户满意度，满足越南生产基地的生产管理和运营需求。",
+  "objects": [
+    {
+      "id": "MTD1000002C5",
+      "name": "VNProductionPlanQuery",
+      "text": "越南生产计划查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

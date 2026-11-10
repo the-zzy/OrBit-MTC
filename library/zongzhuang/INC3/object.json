@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "INC3",
+  "name": "调拨料号MC",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "调拨料号MC",
+  "metadata": "InventoryCovert2",
+  "objects": [
+    {
+      "id": "MTD10000022Q",
+      "name": "InventoryCovert2",
+      "text": "调拨料号MC",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InventoryCovertMainView",
+          "file": "InventoryCovertMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InventoryCovert2TreeView",
+          "file": "InventoryCovert2TreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InventoryCovertSaveData",
+          "file": "InventoryCovertSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InventoryCovertDeleteData",
+          "file": "InventoryCovertDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

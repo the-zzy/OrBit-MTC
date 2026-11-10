@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SDRQ",
+  "name": "屏发货报表查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "屏发货报表查询",
+  "metadata": "生成屏产品发货报表并提供查询功能，记录发货时间、数量、去向、运输方式等信息，确保屏产品发货数据的准确性，为销售、物流、库存管理等部门提供可靠的数据支持，优化发货流程，提高客户满意度。",
+  "objects": [
+    {
+      "id": "MTD10000021I",
+      "name": "ScrnDeliveryReportQuery",
+      "text": "屏发货报表查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

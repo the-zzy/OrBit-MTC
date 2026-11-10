@@ -1,0 +1,78 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ITRW",
+  "name": "设备验收单据",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备验收单据",
+  "metadata": "InspectBill",
+  "objects": [
+    {
+      "id": "MTD1000002EN",
+      "name": "InspectBill",
+      "text": "设备验收单据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectBillMainView",
+          "file": "InspectBillMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectBillTreeView",
+          "file": "InspectBillTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InspectBillSaveData",
+          "file": "InspectBillSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InspectBillDeleteData",
+          "file": "InspectBillDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002EP",
+      "name": "InspectBillItem",
+      "text": "验收单详情",
+      "parentId": "MTD1000002EN",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InspectBillItemMainView",
+          "file": "InspectBillItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InspectBillItemTreeView",
+          "file": "InspectBillItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InspectBillItemSaveData",
+          "file": "InspectBillItemSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

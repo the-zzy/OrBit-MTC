@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TSDT",
+  "name": "放行单类型配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "放行单类型配置",
+  "metadata": "TSDT",
+  "objects": [
+    {
+      "id": "MTD1000001QV",
+      "name": "TransireDocType",
+      "text": "放行单类型配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TransireDocTypeMainView",
+          "file": "TransireDocTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TransireDocTypeTreeView",
+          "file": "TransireDocTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TransireDocTypeSaveData",
+          "file": "TransireDocTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TransireDocTypeDeleteData",
+          "file": "TransireDocTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

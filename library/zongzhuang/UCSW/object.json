@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "UCSW",
+  "name": "出货预警推送",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "出货预警推送",
+  "metadata": "UCSW",
+  "objects": [
+    {
+      "id": "MTD10000028T",
+      "name": "UserCodeShipmentWarning",
+      "text": "出货预警推送",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeShipmentWarningTreeView",
+          "file": "UserCodeShipmentWarningTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeSaveData",
+          "file": "UserCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028S",
+      "name": "UserCodeDetailShipmentWarning",
+      "text": "出货预警推送人员",
+      "parentId": "MTD10000028T",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeMainView",
+          "file": "UserCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeDetailShipmentWarningTreeView",
+          "file": "UserCodeDetailShipmentWarningTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeDetailShipmentWarningSaveData",
+          "file": "UserCodeDetailShipmentWarningSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDetailShipmentWarningDeleteData",
+          "file": "UserCodeDetailShipmentWarningDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

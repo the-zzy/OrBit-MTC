@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TSMQ",
+  "name": "机身SN和MAC查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "机身SN和MAC查询",
+  "metadata": "_SnMacQuery",
+  "objects": [
+    {
+      "id": "MTD1000000R2",
+      "name": "_SnMacQuery",
+      "text": "机身SN和MAC查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

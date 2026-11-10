@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MRPO",
+  "name": "Mes维修批次",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "Mes维修批次",
+  "metadata": "Mes维修批次",
+  "objects": [
+    {
+      "id": "MTD1000000U6",
+      "name": "MesRepairOrder",
+      "text": "Mes维修批次",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MesRepairOrderMainView",
+          "file": "MesRepairOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MesRepairOrderTreeView",
+          "file": "MesRepairOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MesRepairOrderSaveData",
+          "file": "MesRepairOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MesRepairOrderDeleteData",
+          "file": "MesRepairOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

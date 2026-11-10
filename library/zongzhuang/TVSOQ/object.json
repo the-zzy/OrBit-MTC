@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TVSOQ",
+  "name": "TV扫描单号查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "TV扫描单号查询",
+  "metadata": "TVScanDeliveryOrder",
+  "objects": [
+    {
+      "id": "MTD1000000P0",
+      "name": "TVScanDeliveryOrderQuery",
+      "text": "TV扫描单号查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

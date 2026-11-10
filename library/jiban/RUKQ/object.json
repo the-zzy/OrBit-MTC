@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RUKQ",
+  "name": "维修计件工资查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "维修计件工资查询",
+  "metadata": "RepairUserKPIQuery",
+  "objects": [
+    {
+      "id": "MTD10000022O",
+      "name": "RepairUserKPIQuery",
+      "text": "维修计件工资查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

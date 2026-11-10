@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ACLWB",
+  "name": "老化柜负载维保统计",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "老化柜负载维保统计",
+  "metadata": "AgingCabinetLoadMaintStats",
+  "objects": [
+    {
+      "id": "MTD1000002EY",
+      "name": "AgingCabinetLoadMaintStats",
+      "text": "老化柜负载维保统计",
+      "parentId": "",
+      "sequence": "05",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

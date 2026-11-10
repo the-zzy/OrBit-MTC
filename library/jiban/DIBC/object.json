@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DIBC",
+  "name": "DIP维修记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "DIP维修记录查询",
+  "metadata": "DIPRepairByCode",
+  "objects": [
+    {
+      "id": "MTD1000002DS",
+      "name": "DIPRepairByCode",
+      "text": "DIP维修记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,118 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VDMM",
+  "name": "仓库通用物料退供应商",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "仓库通用物料退供应商",
+  "metadata": "管理仓库通用物料退供应商流程，记录退料单编号、供应商名称、退料日期、物料信息、数量、退料原因等数据，确保退料过程的规范性和可追溯性。这有助于优化采购流程，提高供应商管理效率，降低库存成本和风险。",
+  "objects": [
+    {
+      "id": "MTD100000237",
+      "name": "VendorMatMove",
+      "text": "仓库通用物料退供应商",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMatMoveMainView",
+          "file": "VendorMatMoveMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorMatMoveTreeView",
+          "file": "VendorMatMoveTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023G",
+      "name": "IQCCheckinLotMatMove",
+      "text": "SAP确认明细",
+      "parentId": "MTD100000237",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "IQCCheckinLotMainView",
+          "file": "IQCCheckinLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "IQCCheckinLotMatMoveTreeView",
+          "file": "IQCCheckinLotMatMoveTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "IQCCheckinLotSaveData",
+          "file": "IQCCheckinLotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000238",
+      "name": "VendorMatMoveItem",
+      "text": "退货明细",
+      "parentId": "MTD100000237",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMatMoveItemMainView",
+          "file": "VendorMatMoveItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorMatMoveItemTreeView",
+          "file": "VendorMatMoveItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000239",
+      "name": "VendorMatMoveItemLot",
+      "text": "退货批号明细表",
+      "parentId": "MTD100000238",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendorMatMoveItemLotMainView",
+          "file": "VendorMatMoveItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendorMatMoveItemLotTreeView",
+          "file": "VendorMatMoveItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

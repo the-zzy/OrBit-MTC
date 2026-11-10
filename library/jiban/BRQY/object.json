@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BRQY",
+  "name": "烧录信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "烧录信息查询",
+  "metadata": "BRQY",
+  "objects": [
+    {
+      "id": "MTD10000025B",
+      "name": "BurnInfoQuery",
+      "text": "烧录信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

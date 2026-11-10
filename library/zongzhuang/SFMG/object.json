@@ -1,0 +1,138 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SFMG",
+  "name": "测试软件管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "测试软件管理",
+  "metadata": "管理测试软件，记录软件编号、软件名称、版本号、适用产品、上传日期等信息，确保测试软件的准确性和有效性。这有助于提高测试效率和准确性，保障产品质量符合标准要求，提高企业生产过程中的测试管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000002DE",
+      "name": "SoftwareManagement",
+      "text": "测试软件管理",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SoftwareManagementMainView",
+          "file": "SoftwareManagementMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SoftwareManagementTreeView",
+          "file": "SoftwareManagementTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SoftwareManagementSaveData",
+          "file": "SoftwareManagementSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SoftwareManagementDeleteData",
+          "file": "SoftwareManagementDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DF",
+      "name": "SoftwareManagementItem",
+      "text": "软件管理-测试方案",
+      "parentId": "MTD1000002DE",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SoftwareManagementItemMainView",
+          "file": "SoftwareManagementItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SoftwareManagementItemTreeView",
+          "file": "SoftwareManagementItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SoftwareManagementItemSaveData",
+          "file": "SoftwareManagementItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SoftwareManagementItemDeleteData",
+          "file": "SoftwareManagementItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DG",
+      "name": "SoftwareManagementItemLot",
+      "text": "软件管理-测试程序",
+      "parentId": "MTD1000002DF",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SoftwareManagementItemLotMainView",
+          "file": "SoftwareManagementItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SoftwareManagementItemLotTreeView",
+          "file": "SoftwareManagementItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SoftwareManagementItemLotSaveData",
+          "file": "SoftwareManagementItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SoftwareManagementItemLotDeleteData",
+          "file": "SoftwareManagementItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DH",
+      "name": "SoftwareManagementModifyLog",
+      "text": "软件管理-变更日志",
+      "parentId": "MTD1000002DE",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "SoftwareManagementModifyLogTreeView",
+          "file": "SoftwareManagementModifyLogTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

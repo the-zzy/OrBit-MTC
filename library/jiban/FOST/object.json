@@ -1,0 +1,178 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FOST",
+  "name": "生产排程",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "生产排程",
+  "metadata": "ForCastor",
+  "objects": [
+    {
+      "id": "MTD100000202",
+      "name": "ForCastor",
+      "text": "生产排程",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ForCastorMainView",
+          "file": "ForCastorMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ForCastorTreeView",
+          "file": "ForCastorTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ForCastorSaveData",
+          "file": "ForCastorSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ForCastorDeleteData",
+          "file": "ForCastorDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000203",
+      "name": "ForCastorItem",
+      "text": "总装计划",
+      "parentId": "MTD100000202",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ForCastorItemMainView",
+          "file": "ForCastorItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ForCastorItemTreeView",
+          "file": "ForCastorItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ForCastorItemSaveData",
+          "file": "ForCastorItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ForCastorItemDeleteData",
+          "file": "ForCastorItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000021C",
+      "name": "FosBOMItem",
+      "text": "BOM项目",
+      "parentId": "MTD100000203",
+      "sequence": "2",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BOMItemMainView",
+          "file": "BOMItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BOMItemTreeView",
+          "file": "BOMItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020D",
+      "name": "ForCastorBom",
+      "text": "组件明细",
+      "parentId": "MTD100000203",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ForCastorBomMainView",
+          "file": "ForCastorBomMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ForCastorBomTreeView",
+          "file": "ForCastorBomTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ForCastorBomSaveData",
+          "file": "ForCastorBomSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ForCastorBomDeleteData",
+          "file": "ForCastorBomDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000204",
+      "name": "ForCastorItemCal",
+      "text": "排期计划",
+      "parentId": "MTD100000202",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "ForCastorItemCalMainView",
+          "file": "ForCastorItemCalMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "ForCastorItemCalTreeView",
+          "file": "ForCastorItemCalTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "ForCastorItemCalSaveData",
+          "file": "ForCastorItemCalSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "ForCastorItemCalDeleteData",
+          "file": "ForCastorItemCalDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

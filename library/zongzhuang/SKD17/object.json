@@ -1,0 +1,138 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SKD17",
+  "name": "SKD预入库管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "SKD预入库管理",
+  "metadata": "查询SKD预入库管理信息，记录预入库编号、产品型号、数量、预入库日期、供应商等信息，确保SKD产品预入库数据的准确性和可追溯性。这有助于提前规划仓库存储空间，提高入库效率，避免因入库信息错误导致的库存管理混乱。注意：只有订单料号以745..A结尾、539Q、客户是EMTC0并且是536/8的料号才能入库",
+  "objects": [
+    {
+      "id": "MTD10000024O",
+      "name": "SJPredictInStorage",
+      "text": "SKD预入库管理",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageSJMainView",
+          "file": "PredictInStorageSJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageSJTreeView",
+          "file": "PredictInStorageSJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000024P",
+      "name": "SJPredictInStorageItemPalletSN",
+      "text": "散件预入库栈板明细",
+      "parentId": "MTD10000024O",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemPalletSNSJMainView",
+          "file": "PredictInStorageItemPalletSNSJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemPalletSNSJTreeView",
+          "file": "PredictInStorageItemPalletSNSJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CG",
+      "name": "SJPredictInStorageItemLot",
+      "text": "散件预入库箱号明细",
+      "parentId": "MTD10000024P",
+      "sequence": "03",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PredictInStorageItemLotSJMainView",
+          "file": "PredictInStorageItemLotSJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PredictInStorageItemLotSJTreeView",
+          "file": "PredictInStorageItemLotSJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001T2",
+      "name": "SJInterface_MOInStorage",
+      "text": "SAP入库状态",
+      "parentId": "MTD10000024O",
+      "sequence": "04",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Interface_MOInStorageSJMainView",
+          "file": "Interface_MOInStorageSJMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Interface_MOInStorageSJTreeView",
+          "file": "Interface_MOInStorageSJTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002CZ",
+      "name": "SJMOToSap_Covert",
+      "text": "SAP入库更换MO",
+      "parentId": "MTD1000001T2",
+      "sequence": "5",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOSTDMainView",
+          "file": "MOSTDMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOtosapTreeView",
+          "file": "MOtosapTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

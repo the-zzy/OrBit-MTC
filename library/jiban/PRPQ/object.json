@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PRPQ",
+  "name": "上线备料DIP",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "上线备料DIP",
+  "metadata": "PrePareOrder",
+  "objects": [
+    {
+      "id": "MTD1000001RL",
+      "name": "PrePareOrder",
+      "text": "上线备料DIP",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PrePareOrderMainView",
+          "file": "PrePareOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PrePareOrderTreeView",
+          "file": "PrePareOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PrePareOrderSaveData",
+          "file": "PrePareOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PrePareOrderDeleteData",
+          "file": "PrePareOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001RM",
+      "name": "PrePareOrderItem",
+      "text": "备料明细",
+      "parentId": "MTD1000001RL",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PrePareOrderItemMainView",
+          "file": "PrePareOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PrePareOrderItemTreeView",
+          "file": "PrePareOrderItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PrePareOrderItemSaveData",
+          "file": "PrePareOrderItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PrePareOrderItemDeleteData",
+          "file": "PrePareOrderItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001RN",
+      "name": "PrepareOrderItemLot",
+      "text": "备料明细批号",
+      "parentId": "MTD1000001RL",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "PrepareOrderItemLotMainView",
+          "file": "PrepareOrderItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "PrepareOrderItemLotTreeView",
+          "file": "PrepareOrderItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "PrepareOrderItemLotSaveData",
+          "file": "PrepareOrderItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "PrepareOrderItemLotDeleteData",
+          "file": "PrepareOrderItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

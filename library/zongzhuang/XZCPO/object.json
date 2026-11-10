@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "XZCPO",
+  "name": "小资产采购单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "小资产采购单",
+  "metadata": "XZCPO",
+  "objects": [
+    {
+      "id": "MTD1000002D1",
+      "name": "XZCPO",
+      "text": "小资产采购单",
+      "parentId": "",
+      "sequence": "01",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XZCPOMainView",
+          "file": "XZCPOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XZCPOTreeView",
+          "file": "XZCPOTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002D2",
+      "name": "XZCPOItem",
+      "text": "小资产采购单明细",
+      "parentId": "MTD1000002D1",
+      "sequence": "02",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "XZCPOItemMainView",
+          "file": "XZCPOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "XZCPOItemTreeView",
+          "file": "XZCPOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

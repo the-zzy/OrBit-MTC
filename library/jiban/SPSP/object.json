@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPSP",
+  "name": "设备备件编码定义",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "设备备件编码定义",
+  "metadata": "SparePartsSPEC",
+  "objects": [
+    {
+      "id": "MTD1000000G5",
+      "name": "SparePartsSPEC",
+      "text": "设备备件编码定义",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SparePartsSPECMainView",
+          "file": "SparePartsSPECMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SparePartsSPECTreeView",
+          "file": "SparePartsSPECTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SparePartsSPECSaveData",
+          "file": "SparePartsSPECSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SparePartsSPECDeleteData",
+          "file": "SparePartsSPECDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

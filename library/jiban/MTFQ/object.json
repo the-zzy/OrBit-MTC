@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MTFQ",
+  "name": "测试直通率查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "测试直通率查询",
+  "metadata": "MTFQ",
+  "objects": [
+    {
+      "id": "MTD1000002BL",
+      "name": "ManufactureTestFtyQuery",
+      "text": "测试直通率查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

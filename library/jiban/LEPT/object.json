@@ -1,0 +1,78 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LEPT",
+  "name": "线体异常记录",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "线体异常记录",
+  "metadata": "LineExceptionConfig",
+  "objects": [
+    {
+      "id": "MTD1000002DW",
+      "name": "LineExceptionConfig",
+      "text": "线体异常记录",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineExceptionConfigMainView",
+          "file": "LineExceptionConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineExceptionConfigTreeView",
+          "file": "LineExceptionConfigTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineExceptionConfigSaveData",
+          "file": "LineExceptionConfigSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineExceptionConfigDeleteData",
+          "file": "LineExceptionConfigDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DQ",
+      "name": "LineException",
+      "text": "线体异常记录",
+      "parentId": "MTD1000002DW",
+      "sequence": "03",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineExceptionMainView",
+          "file": "LineExceptionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineExceptionTreeView",
+          "file": "LineExceptionTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineExceptionDeleteData",
+          "file": "LineExceptionDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

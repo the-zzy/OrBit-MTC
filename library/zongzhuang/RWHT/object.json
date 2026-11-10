@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RWHT",
+  "name": "仓库报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "仓库报表",
+  "metadata": "生成仓库相关的报表，汇总仓库的收发存数据、库存周转率、库存结构、呆滞物料等信息，为仓库管理人员提供全面的仓库运营状况展示。这有助于及时发现库存管理中的问题，优化库存策略，降低库存成本，提高仓库运营效率。",
+  "objects": [
+    {
+      "id": "MTD1000000PB",
+      "name": "WarehouseReportQuery",
+      "text": "仓库报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

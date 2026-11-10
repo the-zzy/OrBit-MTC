@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QDRD",
+  "name": "QualityDefectRecord",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "QualityDefectRecord",
+  "metadata": "QualityDefectRecord",
+  "objects": [
+    {
+      "id": "MTD1000002DX",
+      "name": "QualityDefectRecord",
+      "text": "QualityDefectRecord",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QualityDefectRecordMainView",
+          "file": "QualityDefectRecordMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QualityDefectRecordTreeView",
+          "file": "QualityDefectRecordTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QualityDefectRecordSaveData",
+          "file": "QualityDefectRecordSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QualityDefectRecordDeleteData",
+          "file": "QualityDefectRecordDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

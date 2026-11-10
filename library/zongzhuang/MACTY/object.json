@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MACTY",
+  "name": "MAC类型配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "MAC类型配置",
+  "metadata": "MACTY",
+  "objects": [
+    {
+      "id": "MTD1000002DU",
+      "name": "MacTypeSetting",
+      "text": "MAC类型配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MacTypeSettingMainView",
+          "file": "MacTypeSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MacTypeSettingTreeView",
+          "file": "MacTypeSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MacTypeSettingSaveData",
+          "file": "MacTypeSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MacTypeSettingDeleteData",
+          "file": "MacTypeSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DV",
+      "name": "MacTypeSettingItem",
+      "text": "MAC方案配置",
+      "parentId": "MTD1000002DU",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MacTypeSettingItemMainView",
+          "file": "MacTypeSettingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MacTypeSettingItemTreeView",
+          "file": "MacTypeSettingItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MacTypeSettingItemSaveData",
+          "file": "MacTypeSettingItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MacTypeSettingItemDeleteData",
+          "file": "MacTypeSettingItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

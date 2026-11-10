@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MOLK",
+  "name": "工单关联",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "工单关联",
+  "metadata": "MOLK",
+  "objects": [
+    {
+      "id": "MTD10000028J",
+      "name": "MOLinkMain",
+      "text": "工单关联",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOLinkMainMainView",
+          "file": "MOLinkMainMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOLinkMainTreeView",
+          "file": "MOLinkMainTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOLinkSaveData",
+          "file": "MOLinkSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOLinkDeleteData",
+          "file": "MOLinkDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028K",
+      "name": "MOLink",
+      "text": "关联工单",
+      "parentId": "MTD10000028J",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MOLinkMainView",
+          "file": "MOLinkMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MOLinkTreeView",
+          "file": "MOLinkTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "MOLinkSaveData",
+          "file": "MOLinkSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "MOLinkDeleteData",
+          "file": "MOLinkDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

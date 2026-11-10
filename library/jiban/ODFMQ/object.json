@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ODFMQ",
+  "name": "订单预置修改记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "订单预置修改记录查询",
+  "metadata": "ODFMQ",
+  "objects": [
+    {
+      "id": "MTD1000001ZF",
+      "name": "ODFTVModifyQuery",
+      "text": "订单预置修改记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

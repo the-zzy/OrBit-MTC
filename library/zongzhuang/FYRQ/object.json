@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "FYRQ",
+  "name": "FY维修数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "FY维修数据查询",
+  "metadata": "FeiyueRepairRecordQuery",
+  "objects": [
+    {
+      "id": "MTD1000000U2",
+      "name": "FeiyueRepairRecordQuery",
+      "text": "FY维修数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

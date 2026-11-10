@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SPIQ",
+  "name": "SPI数据绑定查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SPI数据绑定查询",
+  "metadata": "SPIQuery",
+  "objects": [
+    {
+      "id": "MTD10000020E",
+      "name": "SPIQuery",
+      "text": "SPI数据绑定查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

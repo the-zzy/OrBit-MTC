@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CVTQ",
+  "name": "常规检验查询报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "常规检验查询报表",
+  "metadata": "整合常规检验数据，生成报表供用户查询分析，呈现检验项目、结果、合格率等信息，助力质量管理人员实时掌握产品质量状况，发现质量波动趋势，为质量改进提供数据支持，是产品质量管控的关键数据分析工具。",
+  "objects": [
+    {
+      "id": "MTD10000029O",
+      "name": "ConventionTestCollectQuery",
+      "text": "常规检验查询报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "ENTE",
+  "name": "企业",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "企业",
+  "metadata": "Enterprise",
+  "objects": [
+    {
+      "id": "MTD10000007V",
+      "name": "Enterprise",
+      "text": "企业",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EnterpriseMainView",
+          "file": "EnterpriseMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EnterpriseTreeView",
+          "file": "EnterpriseTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EnterpriseSaveData",
+          "file": "EnterpriseSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EnterpriseDeleteData",
+          "file": "EnterpriseDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

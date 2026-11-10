@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "HLIDY",
+  "name": "假期放假安排",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "假期放假安排",
+  "metadata": "HolidayCalendar",
+  "objects": [
+    {
+      "id": "MTD1000002GA",
+      "name": "HolidayCalendar",
+      "text": "假期放假安排",
+      "parentId": "",
+      "sequence": "03",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "HolidayCalendarMainView",
+          "file": "HolidayCalendarMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "HolidayCalendarTreeView",
+          "file": "HolidayCalendarTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "HolidayCalendarSaveData",
+          "file": "HolidayCalendarSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "HolidayCalendarDeleteData",
+          "file": "HolidayCalendarDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

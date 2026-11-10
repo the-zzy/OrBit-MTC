@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QWES1",
+  "name": "查询库位库存",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "查询库位库存",
+  "metadata": "Query WES1",
+  "objects": [
+    {
+      "id": "MTD1000000ER",
+      "name": "_QueryWES",
+      "text": "查询库位库存",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,63 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MDOH",
+  "name": "小米交货单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "小米交货单",
+  "metadata": "MDOH",
+  "objects": [
+    {
+      "id": "MTD1000001YB",
+      "name": "MIDeliveryOrder",
+      "text": "小米交货单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MIDeliveryOrderMainView",
+          "file": "MIDeliveryOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MIDeliveryOrderTreeView",
+          "file": "MIDeliveryOrderTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001YC",
+      "name": "MIDeliveryOrderItem",
+      "text": "小米发货明细",
+      "parentId": "MTD1000001YB",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MIDeliveryOrderItemMainView",
+          "file": "MIDeliveryOrderItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MIDeliveryOrderItemTreeView",
+          "file": "MIDeliveryOrderItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

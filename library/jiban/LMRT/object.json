@@ -1,0 +1,143 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LMRT",
+  "name": "产线退料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "产线退料单",
+  "metadata": "LMRT",
+  "objects": [
+    {
+      "id": "MTD1000001WM",
+      "name": "LineMatReturn",
+      "text": "产线退料单",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnMainView",
+          "file": "LineMatReturnMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnTreeView",
+          "file": "LineMatReturnTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatReturnSaveData",
+          "file": "LineMatReturnSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatReturnDeleteData",
+          "file": "LineMatReturnDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WN",
+      "name": "LineMatReturnItem",
+      "text": "产线退料明细",
+      "parentId": "MTD1000001WM",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnItemMainView",
+          "file": "LineMatReturnItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnItemTreeView",
+          "file": "LineMatReturnItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatReturnItemSaveData",
+          "file": "LineMatReturnItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatReturnItemDeleteData",
+          "file": "LineMatReturnItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WQ",
+      "name": "LineMatReturnLot",
+      "text": "退料品检明细",
+      "parentId": "MTD1000001WM",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnLotMainView",
+          "file": "LineMatReturnLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnLotTreeView",
+          "file": "LineMatReturnLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LineMatReturnLotSaveData",
+          "file": "LineMatReturnLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LineMatReturnLotDeleteData",
+          "file": "LineMatReturnLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001X9",
+      "name": "LineMatReturnStock",
+      "text": "屏点收入库",
+      "parentId": "MTD1000001WM",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LineMatReturnStockMainView",
+          "file": "LineMatReturnStockMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LineMatReturnStockTreeView",
+          "file": "LineMatReturnStockTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

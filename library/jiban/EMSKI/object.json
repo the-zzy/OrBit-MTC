@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EMSKI",
+  "name": "技能查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "技能查询",
+  "metadata": "Skill query",
+  "objects": [
+    {
+      "id": "MTD1000000IF",
+      "name": "EmployeeSkill",
+      "text": "技能查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

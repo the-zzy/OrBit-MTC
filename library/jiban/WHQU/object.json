@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "WHQU",
+  "name": "生产工时查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "生产工时查询",
+  "metadata": "WHQU",
+  "objects": [
+    {
+      "id": "MTD1000001U7",
+      "name": "WorkingHoursQuery",
+      "text": "生产工时查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

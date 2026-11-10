@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "PRBQ",
+  "name": "栈板RFID号绑定查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "栈板RFID号绑定查询",
+  "metadata": "PRBQ",
+  "objects": [
+    {
+      "id": "MTD1000001PC",
+      "name": "PalletRFIDBindQuery",
+      "text": "栈板RFID号绑定查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

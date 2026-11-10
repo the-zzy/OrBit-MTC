@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "BCCM",
+  "name": "板卡齐套发料报表查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "板卡齐套发料报表查询",
+  "metadata": "BCCM",
+  "objects": [
+    {
+      "id": "MTD10000028R",
+      "name": "BoardCardCompleteList",
+      "text": "板卡齐套发料报表查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

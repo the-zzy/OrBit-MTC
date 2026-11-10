@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FDQY",
+  "name": "SMT飞达查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SMT飞达查询",
+  "metadata": "FDQY",
+  "objects": [
+    {
+      "id": "MTD1000001RR",
+      "name": "SMTFeederQuery",
+      "text": "SMT飞达查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

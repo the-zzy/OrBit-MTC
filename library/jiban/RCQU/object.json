@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RCQU",
+  "name": "上架查询报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "上架查询报表",
+  "metadata": "Receive Confirm Query",
+  "objects": [
+    {
+      "id": "MTD10000020A",
+      "name": "ReceiveConfirmQuery",
+      "text": "上架查询报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

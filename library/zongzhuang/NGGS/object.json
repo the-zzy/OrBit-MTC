@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "NGGS",
+  "name": "样机不良品",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "样机不良品",
+  "metadata": "查询样机不良品信息，记录不良品编号、样机信息、不良现象、发生时间、责任部门、处理措施等数据，确保样机不良品管理的准确性和可追溯性。这有助于及时发现样机生产中的质量问题，优化样机生产工艺和设计，提高样机的质量和可靠性。",
+  "objects": [
+    {
+      "id": "MTD10000022G",
+      "name": "NGGoods",
+      "text": "样机不良品",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "NGGoodsMainView",
+          "file": "NGGoodsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "NGGoodsTreeView",
+          "file": "NGGoodsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "NGGoodsSaveData",
+          "file": "NGGoodsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "NGGoodsDeleteData",
+          "file": "NGGoodsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022H",
+      "name": "NGGoodsLot",
+      "text": "样机不良品条码明细",
+      "parentId": "MTD10000022G",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "NGGoodsLotMainView",
+          "file": "NGGoodsLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "NGGoodsLotTreeView",
+          "file": "NGGoodsLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "NGGoodsLotSaveData",
+          "file": "NGGoodsLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "NGGoodsLotDeleteData",
+          "file": "NGGoodsLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

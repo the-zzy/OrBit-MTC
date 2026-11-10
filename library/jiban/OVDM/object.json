@@ -1,0 +1,73 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "OVDM",
+  "name": "超期管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "超期管理",
+  "metadata": "OverDueOrder",
+  "objects": [
+    {
+      "id": "MTD10000026Z",
+      "name": "OverDueOrder",
+      "text": "超期管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverDueOrderMainView",
+          "file": "OverDueOrderMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverDueOrderTreeView",
+          "file": "OverDueOrderTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OverDueOrderSaveData",
+          "file": "OverDueOrderSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OverDueOrderDeleteData",
+          "file": "OverDueOrderDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000270",
+      "name": "OverDueOrderDetail",
+      "text": "超期明细",
+      "parentId": "MTD10000026Z",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OverDueOrderDetailMainView",
+          "file": "OverDueOrderDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OverDueOrderDetailTreeView",
+          "file": "OverDueOrderDetailTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

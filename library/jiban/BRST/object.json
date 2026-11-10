@@ -1,0 +1,153 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BRST",
+  "name": "老化时间设置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "老化时间设置",
+  "metadata": "BRST",
+  "objects": [
+    {
+      "id": "MTD100000289",
+      "name": "BurnSet",
+      "text": "老化时间设置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnSetMainView",
+          "file": "BurnSetMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnSetTreeView",
+          "file": "BurnSetTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BurnSetSaveData",
+          "file": "BurnSetSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BurnSetDeleteData",
+          "file": "BurnSetDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028A",
+      "name": "BurnSetItem",
+      "text": "老化时间设置明细",
+      "parentId": "MTD100000289",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnSetItemMainView",
+          "file": "BurnSetItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnSetItemTreeView",
+          "file": "BurnSetItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BurnSetItemSaveData",
+          "file": "BurnSetItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BurnSetItemDeleteData",
+          "file": "BurnSetItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000028B",
+      "name": "BurnSetNGItem",
+      "text": "老化NG原因设置",
+      "parentId": "MTD100000289",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnSetNGItemMainView",
+          "file": "BurnSetNGItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnSetNGItemTreeView",
+          "file": "BurnSetNGItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BurnSetNGItemSaveData",
+          "file": "BurnSetNGItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BurnSetNGItemDeleteData",
+          "file": "BurnSetNGItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002D2",
+      "name": "BurnSetItemMo",
+      "text": "(工单)老化时间设置明细",
+      "parentId": "MTD100000289",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BurnSetItemMoMainView",
+          "file": "BurnSetItemMoMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BurnSetItemMoTreeView",
+          "file": "BurnSetItemMoTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BurnSetItemMoSaveData",
+          "file": "BurnSetItemMoSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BurnSetItemMoDeleteData",
+          "file": "BurnSetItemMoDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

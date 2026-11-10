@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SPOT",
+  "name": "维修室备件库存",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "维修室备件库存",
+  "metadata": "SparePartsOutQuery",
+  "objects": [
+    {
+      "id": "MTD1000000GF",
+      "name": "SparePartsOutQuery",
+      "text": "维修室备件库存",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MSESQ",
+  "name": "小米同步报错信息查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "小米同步报错信息查询",
+  "metadata": "MSESQ",
+  "objects": [
+    {
+      "id": "MTD10000024A",
+      "name": "MISyncErrorMsgQuery",
+      "text": "小米同步报错信息查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

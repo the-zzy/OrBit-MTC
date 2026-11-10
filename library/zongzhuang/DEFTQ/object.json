@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "DEFTQ",
+  "name": "外发修理查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "外发修理查询",
+  "metadata": "DEFTQ",
+  "objects": [
+    {
+      "id": "MTD1000001S1",
+      "name": "WorkflowDefectOut",
+      "text": "外发修理查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkflowDefectMainView",
+          "file": "WorkflowDefectMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkflowDefectTreeView",
+          "file": "WorkflowDefectTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkflowDefectSaveData",
+          "file": "WorkflowDefectSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkflowDefectDeleteData",
+          "file": "WorkflowDefectDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

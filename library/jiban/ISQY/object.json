@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ISQY",
+  "name": "仓库扫描查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "仓库扫描查询",
+  "metadata": "ISQY",
+  "objects": [
+    {
+      "id": "MTD1000001RW",
+      "name": "InventoryScan",
+      "text": "仓库扫描查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InventoryScanMainView",
+          "file": "InventoryScanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InventoryScanTreeView",
+          "file": "InventoryScanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InventoryScanSaveData",
+          "file": "InventoryScanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InventoryScanDeleteData",
+          "file": "InventoryScanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

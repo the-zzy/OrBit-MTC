@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MIRQ",
+  "name": "工单出入库记录查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "工单出入库记录查询",
+  "metadata": "记录工单在生产流程中的出入库详细信息，包括时间、数量、操作人员等。用户可通过查询功能实时跟踪工单物流状态和生产进度，为生产调度和库存管理提供精确数据支持，保障工单流转顺畅高效，降低库存成本，提升企业生产运营效率。",
+  "objects": [
+    {
+      "id": "MTD10000029P",
+      "name": "MOInStorageRecordQuery",
+      "text": "工单出入库记录查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

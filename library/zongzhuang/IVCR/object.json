@@ -1,0 +1,73 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "IVCR",
+  "name": "料号变更提交",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "料号变更提交",
+  "metadata": "提交料号变更请求，记录变更申请编号、原料号、新料号、变更原因、变更日期等信息，确保料号变更过程的规范性和可追溯性。这有助于优化物料管理流程，避免因料号变更错误导致的生产混乱和物料浪费，提高物料管理水平。",
+  "objects": [
+    {
+      "id": "MTD1000001QW",
+      "name": "InventoryCovert",
+      "text": "料号变更提交",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "InventoryCovertMainView",
+          "file": "InventoryCovertMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "InventoryCovertTreeView",
+          "file": "InventoryCovertTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "InventoryCovertSaveData",
+          "file": "InventoryCovertSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "InventoryCovertDeleteData",
+          "file": "InventoryCovertDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001QX",
+      "name": "RMIvendoryRepLace",
+      "text": "料号变更明细",
+      "parentId": "MTD1000001QW",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "RMIvendoryRepLaceMainView",
+          "file": "RMIvendoryRepLaceMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "RMIvendoryRepLaceTreeView",
+          "file": "RMIvendoryRepLaceTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "RSQD",
+  "name": "维修进度查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "维修进度查询",
+  "metadata": "RSQD",
+  "objects": [
+    {
+      "id": "MTD1000001YZ",
+      "name": "RepairScheduleQuery",
+      "text": "维修进度查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,68 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "STCFG",
+  "name": "盘点明细",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "盘点明细",
+  "metadata": "StockTakePdFG",
+  "objects": [
+    {
+      "id": "MTD10000022E",
+      "name": "StockTakePdFG",
+      "text": "盘点明细",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakePdFGMainView",
+          "file": "StocktakePdFGMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakePdFGTreeView",
+          "file": "StocktakePdFGTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022F",
+      "name": "StocktakeBaseFG",
+      "text": "仓库实盘数",
+      "parentId": "MTD10000022E",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeBaseFGMainView",
+          "file": "StocktakeBaseFGMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeBaseFGTreeView",
+          "file": "StocktakeBaseFGTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeBaseDeleteData",
+          "file": "StocktakeBaseDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

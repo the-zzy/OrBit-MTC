@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "VISP",
+  "name": "VIZIO序列号规则表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "VIZIO序列号规则表",
+  "metadata": "SerialPrefix",
+  "objects": [
+    {
+      "id": "MTD1000002FX",
+      "name": "SerialPrefix",
+      "text": "VIZIO序列号规则表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SerialPrefixMainView",
+          "file": "SerialPrefixMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SerialPrefixTreeView",
+          "file": "SerialPrefixTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SerialPrefixSaveData",
+          "file": "SerialPrefixSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SerialPrefixDeleteData",
+          "file": "SerialPrefixDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

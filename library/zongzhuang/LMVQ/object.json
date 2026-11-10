@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "LMVQ",
+  "name": "上料核对查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "上料核对查询",
+  "metadata": "LoadMaterialVerificationQuery",
+  "objects": [
+    {
+      "id": "MTD10000023D",
+      "name": "LoadMaterialVerificationQuery",
+      "text": "上料核对查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

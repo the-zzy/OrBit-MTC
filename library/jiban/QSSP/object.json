@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QSSP",
+  "name": "SMT生产效率",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "SMT生产效率",
+  "metadata": "ProductSefficiencyQury",
+  "objects": [
+    {
+      "id": "MTD1000000RM",
+      "name": "ProductSefficiencyQury",
+      "text": "SMT生产效率",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

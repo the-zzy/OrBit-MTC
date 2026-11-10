@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SDPQ",
+  "name": "标产数据查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "标产数据查询",
+  "metadata": "查询标产数据，包括产品标准产量、生产周期、单位工时等关键指标，为生产计划编制、产能评估和成本核算提供数据支持。这有助于优化生产流程，提高生产效率，确保企业生产运营的顺畅和效益。",
+  "objects": [
+    {
+      "id": "MTD10000029N",
+      "name": "StandardProductionQuery",
+      "text": "标产数据查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

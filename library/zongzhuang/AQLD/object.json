@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "AQLD",
+  "name": "AQL明细",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "AQL明细",
+  "metadata": "AQLDetail",
+  "objects": [
+    {
+      "id": "MTD1000000ES",
+      "name": "AQLDetail",
+      "text": "AQL明细",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AQLDetailMainView",
+          "file": "AQLDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AQLDetailTreeView",
+          "file": "AQLDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AQLDetailSaveData",
+          "file": "AQLDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AQLDetailDeleteData",
+          "file": "AQLDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000ET",
+      "name": "AQLSampleSize",
+      "text": "AQL样本大小设定",
+      "parentId": "MTD1000000ES",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AQLSampleSizeMainView",
+          "file": "AQLSampleSizeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AQLSampleSizeTreeView",
+          "file": "AQLSampleSizeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AQLSampleSizeSaveData",
+          "file": "AQLSampleSizeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AQLSampleSizeDeleteData",
+          "file": "AQLSampleSizeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

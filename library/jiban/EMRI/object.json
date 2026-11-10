@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "EMRI",
+  "name": "EMR库存主数据",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "EMR库存主数据",
+  "metadata": "EMR_FGInventory",
+  "objects": [
+    {
+      "id": "MTD1000001XW",
+      "name": "EMR_FGInventory",
+      "text": "EMR库存主数据",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "EMR_FGInventoryMainView",
+          "file": "EMR_FGInventoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "EMR_FGInventoryTreeView",
+          "file": "EMR_FGInventoryTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "EMR_FGInventorySaveData",
+          "file": "EMR_FGInventorySaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "EMR_FGInventoryDeleteData",
+          "file": "EMR_FGInventoryDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

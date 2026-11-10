@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "GRTN",
+  "name": "量具仪器归还",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "量具仪器归还",
+  "metadata": "GageReturn",
+  "objects": [
+    {
+      "id": "MTD1000000HP",
+      "name": "GageReturn",
+      "text": "量具仪器归还",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageReturnMainView",
+          "file": "GageReturnMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageReturnTreeView",
+          "file": "GageReturnTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageReturnSaveData",
+          "file": "GageReturnSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageReturnDeleteData",
+          "file": "GageReturnDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000HQ",
+      "name": "GageReturnDetail",
+      "text": "量具仪器清单",
+      "parentId": "MTD1000000HP",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GageReturnDetailMainView",
+          "file": "GageReturnDetailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GageReturnDetailTreeView",
+          "file": "GageReturnDetailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GageReturnDetailSaveData",
+          "file": "GageReturnDetailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GageReturnDetailDeleteData",
+          "file": "GageReturnDetailDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

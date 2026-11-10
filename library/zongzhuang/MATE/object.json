@@ -1,0 +1,63 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MATE",
+  "name": "物料",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "物料",
+  "metadata": "Material",
+  "objects": [
+    {
+      "id": "MTD1000000MY",
+      "name": "Material",
+      "text": "物料",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "MaterialMainView",
+          "file": "MaterialMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "MaterialRootTreeView",
+          "file": "MaterialRootTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MZ",
+      "name": "Material_LGORT",
+      "text": "库存地点",
+      "parentId": "MTD1000000MY",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Product_LGORTMainView",
+          "file": "Product_LGORTMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Product_LGORTTreeView",
+          "file": "Product_LGORTTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

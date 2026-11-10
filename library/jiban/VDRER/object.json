@@ -1,0 +1,38 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "VDRER",
+  "name": "VendordeliveryresitemRatio",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "VendordeliveryresitemRatio",
+  "metadata": "VendordeliveryresitemRatio",
+  "objects": [
+    {
+      "id": "MTD1000002C9",
+      "name": "VendordeliveryresitemRatio",
+      "text": "VendordeliveryresitemRatio",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "VendordeliveryresitemMainView",
+          "file": "VendordeliveryresitemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "VendordeliveryresitemRatioTreeView",
+          "file": "VendordeliveryresitemRatioTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

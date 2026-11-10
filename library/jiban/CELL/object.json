@@ -1,0 +1,153 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "CELL",
+  "name": "库位管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "库位管理",
+  "metadata": "CELL",
+  "objects": [
+    {
+      "id": "MTD1000000CK",
+      "name": "Cell",
+      "text": "库位管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CellMainView",
+          "file": "CellMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CellTreeView",
+          "file": "CellTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CellSaveData",
+          "file": "CellSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CellDeleteData",
+          "file": "CellDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000CL",
+      "name": "Cell_Product",
+      "text": "库位产品",
+      "parentId": "MTD1000000CK",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Cell_ProductMainView",
+          "file": "Cell_ProductMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Cell_ProductTreeView",
+          "file": "Cell_ProductTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Cell_ProductSaveData",
+          "file": "Cell_ProductSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Cell_ProductDeleteData",
+          "file": "Cell_ProductDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002DD",
+      "name": "CellPlot",
+      "text": "干燥柜明细",
+      "parentId": "MTD1000000CL",
+      "sequence": "0",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CellPlotMainView",
+          "file": "CellPlotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CellPlotTreeView",
+          "file": "CellPlotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CellPlotSaveData",
+          "file": "CellPlotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CellPlotDeleteData",
+          "file": "CellPlotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001WK",
+      "name": "WorkCenterCellSTD",
+      "text": "库位仓库",
+      "parentId": "MTD1000000CK",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkCenterCellStdMainView",
+          "file": "WorkCenterCellStdMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkCenterCellStdTreeView",
+          "file": "WorkCenterCellStdTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkCenterCellStdSaveData",
+          "file": "WorkCenterCellStdSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkCenterCellDeleteData",
+          "file": "WorkCenterCellDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

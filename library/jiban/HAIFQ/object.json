@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "HAIFQ",
+  "name": "海尔报盘文件查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "海尔报盘文件查询",
+  "metadata": "HAIFQ",
+  "objects": [
+    {
+      "id": "MTD1000001NM",
+      "name": "HaierOfferFileQuery",
+      "text": "海尔报盘文件查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

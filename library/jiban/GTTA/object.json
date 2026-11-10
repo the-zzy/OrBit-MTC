@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "GTTA",
+  "name": "甘特图任务",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "甘特图任务",
+  "metadata": "Gantt Task",
+  "objects": [
+    {
+      "id": "MTD1000000FB",
+      "name": "GanttTask",
+      "text": "甘特图任务",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GanttTaskMainView",
+          "file": "GanttTaskMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GanttTaskTreeView",
+          "file": "GanttTaskTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GanttTaskSaveData",
+          "file": "GanttTaskSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GanttTaskDeleteData",
+          "file": "GanttTaskDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000FD",
+      "name": "GanttTask_Column",
+      "text": "甘特图列",
+      "parentId": "MTD1000000FB",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GanttTask_ColumnMainView",
+          "file": "GanttTask_ColumnMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GanttTask_ColumnTreeView",
+          "file": "GanttTask_ColumnTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GanttTask_ColumnSaveData",
+          "file": "GanttTask_ColumnSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GanttTask_ColumnDeleteData",
+          "file": "GanttTask_ColumnDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000FC",
+      "name": "GanttTask_User",
+      "text": "甘特图用户",
+      "parentId": "MTD1000000FB",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "GanttTask_UserMainView",
+          "file": "GanttTask_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "GanttTask_UserTreeView",
+          "file": "GanttTask_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "GanttTask_UserSaveData",
+          "file": "GanttTask_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "GanttTask_UserDeleteData",
+          "file": "GanttTask_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

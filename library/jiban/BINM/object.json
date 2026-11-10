@@ -1,0 +1,68 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BINM",
+  "name": "BIN KEY管理",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "BIN KEY管理",
+  "metadata": "BinKeyManager",
+  "objects": [
+    {
+      "id": "MTD1000001QG",
+      "name": "BinKeyManager",
+      "text": "BIN KEY管理",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BinKeyManagerMainView",
+          "file": "BinKeyManagerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BinKeyManagerTreeView",
+          "file": "BinKeyManagerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BinKeyManagerSaveData",
+          "file": "BinKeyManagerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BinKeyManagerDeleteData",
+          "file": "BinKeyManagerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000294",
+      "name": "BinKeyManagerGroup",
+      "text": "BinKey用量查询",
+      "parentId": "MTD1000001QG",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "BinKeyManagerGroupTreeView",
+          "file": "BinKeyManagerGroupTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

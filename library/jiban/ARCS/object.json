@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "ARCS",
+  "name": "自动读码设定",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "自动读码设定",
+  "metadata": "AutoReadingCodeSetting",
+  "objects": [
+    {
+      "id": "MTD100000240",
+      "name": "AutoReadingCodeSetting",
+      "text": "自动读码设定",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AutoReadingCodeSettingMainView",
+          "file": "AutoReadingCodeSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AutoReadingCodeSettingTreeView",
+          "file": "AutoReadingCodeSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AutoReadingCodeSettingSaveData",
+          "file": "AutoReadingCodeSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AutoReadingCodeSettingDeleteData",
+          "file": "AutoReadingCodeSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023Z",
+      "name": "AutoReadingCodeSettingItem",
+      "text": "自动读码设定明细",
+      "parentId": "MTD100000240",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AutoReadingCodeSettingItemMainView",
+          "file": "AutoReadingCodeSettingItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AutoReadingCodeSettingItemTreeView",
+          "file": "AutoReadingCodeSettingItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AutoReadingCodeSettingItemSaveData",
+          "file": "AutoReadingCodeSettingItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AutoReadingCodeSettingItemDeleteData",
+          "file": "AutoReadingCodeSettingItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000241",
+      "name": "AutoReadingCodePrdSetting",
+      "text": "自动读码料号校验",
+      "parentId": "MTD10000023Z",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AutoReadingCodePrdSettingMainView",
+          "file": "AutoReadingCodePrdSettingMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AutoReadingCodePrdSettingTreeView",
+          "file": "AutoReadingCodePrdSettingTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AutoReadingCodePrdSettingSaveData",
+          "file": "AutoReadingCodePrdSettingSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AutoReadingCodePrdSettingDeleteData",
+          "file": "AutoReadingCodePrdSettingDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

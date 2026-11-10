@@ -1,0 +1,98 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "TVSP",
+  "name": "TV备件入库",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "TV备件入库",
+  "metadata": "TVSP",
+  "objects": [
+    {
+      "id": "MTD1000000SA",
+      "name": "TVSparepartsInStorage",
+      "text": "TV备件入库",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVSparepartsInStorageMainView",
+          "file": "TVSparepartsInStorageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVSparepartsInStorageTreeView",
+          "file": "TVSparepartsInStorageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SC",
+      "name": "TVSparepartsItems",
+      "text": "备件组件入库明细",
+      "parentId": "MTD1000000SA",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TVSparepartsItemsMainView",
+          "file": "TVSparepartsItemsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TVSparepartsItemsTreeView",
+          "file": "TVSparepartsItemsTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TVSparepartsItemsSaveData",
+          "file": "TVSparepartsItemsSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TVSparepartsItemsDeleteData",
+          "file": "TVSparepartsItemsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000SD",
+      "name": "Interface_SparepartsInStorage",
+      "text": "SAP入库状态",
+      "parentId": "MTD1000000SA",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Interface_SparepartsInStorageMainView",
+          "file": "Interface_SparepartsInStorageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Interface_SparepartsInStorageTreeView",
+          "file": "Interface_SparepartsInStorageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

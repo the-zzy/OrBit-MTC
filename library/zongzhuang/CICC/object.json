@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CICC",
+  "name": "客户机型配置",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "客户机型配置",
+  "metadata": "设置客户机型配置，记录配置编号、客户名称、机型、配置参数、生效日期等信息，确保客户机型配置的准确性和完整性。这有助于满足客户的个性化需求，提高客户满意度，促进企业产品的市场竞争力。",
+  "objects": [
+    {
+      "id": "MTD100000285",
+      "name": "CICustomer",
+      "text": "客户机型配置",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CICustomerMainView",
+          "file": "CICustomerMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CICustomerTreeView",
+          "file": "CICustomerTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CICustomerSaveData",
+          "file": "CICustomerSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CICustomerDeleteData",
+          "file": "CICustomerDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000284",
+      "name": "CICustomerConfig",
+      "text": "客户机种配置",
+      "parentId": "MTD100000285",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CICustomerConfigMainView",
+          "file": "CICustomerConfigMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CICustomerConfigTreeView",
+          "file": "CICustomerConfigTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CICustomerConfigSaveData",
+          "file": "CICustomerConfigSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CICustomerConfigDeleteData",
+          "file": "CICustomerConfigDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

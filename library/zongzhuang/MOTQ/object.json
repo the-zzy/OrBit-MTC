@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "MOTQ",
+  "name": "工单测试查询",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "工单测试查询",
+  "metadata": "查询工单测试的详细记录，包括测试时间、测试项目、测试结果、测试设备、测试人员等信息，为生产管理和质量控制提供准确的测试数据。这有助于及时发现工单产品在测试环节的问题，采取整改措施，确保产品质量符合标准要求。",
+  "objects": [
+    {
+      "id": "MTD1000001O5",
+      "name": "MOTestQuery",
+      "text": "工单测试查询",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

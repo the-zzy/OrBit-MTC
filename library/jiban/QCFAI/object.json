@@ -1,0 +1,113 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "QCFAI",
+  "name": "首件检验单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "首件检验单",
+  "metadata": "QC_FAI_Ins",
+  "objects": [
+    {
+      "id": "MTD1000002AD",
+      "name": "QC_FAI_Ins",
+      "text": "首件检验单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QC_FAI_InsMainView",
+          "file": "QC_FAI_InsMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QC_FAI_InsTreeView",
+          "file": "QC_FAI_InsTreeView.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QC_FAI_InsDeleteData",
+          "file": "QC_FAI_InsDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AE",
+      "name": "QC_FAI_InsItem",
+      "text": "首件检验单明细",
+      "parentId": "MTD1000002AD",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QC_FAI_InsItemMainView",
+          "file": "QC_FAI_InsItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QC_FAI_InsItemTreeView",
+          "file": "QC_FAI_InsItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QC_FAI_InsItemSaveData",
+          "file": "QC_FAI_InsItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QC_FAI_InsItemDeleteData",
+          "file": "QC_FAI_InsItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000002AF",
+      "name": "QC_FAI_InsProblemList",
+      "text": "问题列表",
+      "parentId": "MTD1000002AD",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "QC_FAI_InsProblemListMainView",
+          "file": "QC_FAI_InsProblemListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "QC_FAI_InsProblemListTreeView",
+          "file": "QC_FAI_InsProblemListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "QC_FAI_InsProblemListSaveData",
+          "file": "QC_FAI_InsProblemListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "QC_FAI_InsProblemListDeleteData",
+          "file": "QC_FAI_InsProblemListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

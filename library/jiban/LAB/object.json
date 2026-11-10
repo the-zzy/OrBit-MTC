@@ -1,0 +1,118 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LAB",
+  "name": "标签模板",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "标签模板",
+  "metadata": "Label Templet",
+  "objects": [
+    {
+      "id": "MTD1000000B6",
+      "name": "Label",
+      "text": "标签模板",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelMainView",
+          "file": "LabelMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelTreeView",
+          "file": "LabelTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelSaveData",
+          "file": "LabelSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelDeleteData",
+          "file": "LabelDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000JT",
+      "name": "LabelItem",
+      "text": "标签明细",
+      "parentId": "MTD1000000B6",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelItemMainView",
+          "file": "LabelItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelItemTreeView",
+          "file": "LabelItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelItemSaveData",
+          "file": "LabelItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelItemDeleteData",
+          "file": "LabelItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000KP",
+      "name": "LabelUser",
+      "text": "标签用户组",
+      "parentId": "MTD1000000B6",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelUserMainView",
+          "file": "LabelUserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelUserTreeView",
+          "file": "LabelUserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelUserSaveData",
+          "file": "LabelUserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelUserDeleteData",
+          "file": "LabelUserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

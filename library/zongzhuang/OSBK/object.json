@@ -1,0 +1,178 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OSBK",
+  "name": "外协退料单",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "外协退料单",
+  "metadata": "管理外协退料单，记录退料单编号、外协厂商、退料日期、物料信息、数量、退料原因等数据，确保外协退料过程的规范性和可追溯性。这有助于优化外协采购流程，提高外协管理效率，降低外协业务成本和风险。",
+  "objects": [
+    {
+      "id": "MTD1000001ZK",
+      "name": "OutSourceBack",
+      "text": "外协退料单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OutSourceBackMainView",
+          "file": "OutSourceBackMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OutSourceBackTreeView",
+          "file": "OutSourceBackTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OutSourceBackSaveData",
+          "file": "OutSourceBackSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OutSourceBackDeleteData",
+          "file": "OutSourceBackDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZM",
+      "name": "OutSourceBackPO",
+      "text": "外协退料采购订单",
+      "parentId": "MTD1000001ZK",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OutSourceBackPOMainView",
+          "file": "OutSourceBackPOMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OutSourceBackPOTreeView",
+          "file": "OutSourceBackPOTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "OutSourceBackPOSaveData",
+          "file": "OutSourceBackPOSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "OutSourceBackPODeleteData",
+          "file": "OutSourceBackPODeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZL",
+      "name": "OutSourceBackPOItem",
+      "text": "外协退料单明细",
+      "parentId": "MTD1000001ZK",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OutSourceBackPOItemMainView",
+          "file": "OutSourceBackPOItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OutSourceBackPOItemTreeView",
+          "file": "OutSourceBackPOItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZN",
+      "name": "OutSourceBackItem",
+      "text": "退料明细",
+      "parentId": "MTD1000001ZK",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "TreeView",
+          "name": "OutSourceBackItemTreeView",
+          "file": "OutSourceBackItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001ZO",
+      "name": "OutSourceBackItemLot",
+      "text": "外协退料单明细批号",
+      "parentId": "MTD1000001ZN",
+      "sequence": "6",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OutSourceBackItemLotMainView",
+          "file": "OutSourceBackItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OutSourceBackItemLotTreeView",
+          "file": "OutSourceBackItemLotTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020T",
+      "name": "OutSourceBackSAPMessage",
+      "text": "SAP返回信息",
+      "parentId": "MTD1000001ZK",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "OutSourceBackSAPMessageMainView",
+          "file": "OutSourceBackSAPMessageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "OutSourceBackSAPMessageTreeView",
+          "file": "OutSourceBackSAPMessageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

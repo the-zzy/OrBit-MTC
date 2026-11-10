@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "KDLT",
+  "name": "散件标签类别",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "散件标签类别",
+  "metadata": "KD Label Type",
+  "objects": [
+    {
+      "id": "MTD1000000Q4",
+      "name": "KDLabelType",
+      "text": "散件标签类别",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDLabelTypeMainView",
+          "file": "KDLabelTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDLabelTypeTreeView",
+          "file": "KDLabelTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDLabelTypeSaveData",
+          "file": "KDLabelTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDLabelTypeDeleteData",
+          "file": "KDLabelTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000Q5",
+      "name": "KDLabelItem",
+      "text": "标签明细",
+      "parentId": "MTD1000000Q4",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KDLabelItemMainView",
+          "file": "KDLabelItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KDLabelItemTreeView",
+          "file": "KDLabelItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KDLabelItemSaveData",
+          "file": "KDLabelItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KDLabelItemDeleteData",
+          "file": "KDLabelItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,143 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LXPK",
+  "name": "零星领料单(标准)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "零星领料单(标准)",
+  "metadata": "LXPickingList",
+  "objects": [
+    {
+      "id": "MTD1000001XE",
+      "name": "LXPickingList",
+      "text": "零星领料单(标准)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXPickingListMainView",
+          "file": "LXPickingListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXPickingListTreeView",
+          "file": "LXPickingListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LXPickingListSaveData",
+          "file": "LXPickingListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LXPickingListDeleteData",
+          "file": "LXPickingListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000020S",
+      "name": "LXPickingListSAPMessage",
+      "text": "SAP返回信息",
+      "parentId": "MTD1000001XE",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXPickingListSAPMessageMainView",
+          "file": "LXPickingListSAPMessageMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXPickingListSAPMessageTreeView",
+          "file": "LXPickingListSAPMessageTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XF",
+      "name": "LXPickingListItem",
+      "text": "零星领料单明细",
+      "parentId": "MTD1000001XE",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXPickingListItemMainView",
+          "file": "LXPickingListItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXPickingListItemTreeView",
+          "file": "LXPickingListItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LXPickingListItemSaveData",
+          "file": "LXPickingListItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LXPickingListItemDeleteData",
+          "file": "LXPickingListItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001XG",
+      "name": "LXPickingListItemLot",
+      "text": "零星领料单明细批号",
+      "parentId": "MTD1000001XF",
+      "sequence": "",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LXPickingListItemLotMainView",
+          "file": "LXPickingListItemLotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LXPickingListItemLotTreeView",
+          "file": "LXPickingListItemLotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LXPickingListItemLotSaveData",
+          "file": "LXPickingListItemLotSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LXPickingListItemLotDeleteData",
+          "file": "LXPickingListItemLotDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

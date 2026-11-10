@@ -1,0 +1,113 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "CMIN",
+  "name": "仓库客验",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "仓库客验",
+  "metadata": "查询仓库客验信息，记录客验单编号、客户名称、产品型号、客验日期、客验结果等数据，确保客验过程的规范性和数据准确性。这有助于及时了解客户需求和产品在客户端的表现，促进产品质量改进和客户关系维护。",
+  "objects": [
+    {
+      "id": "MTD1000000PM",
+      "name": "CustomerInspection",
+      "text": "仓库客验",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerInspectionMainView",
+          "file": "CustomerInspectionMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerInspectionTreeView",
+          "file": "CustomerInspectionTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000PP",
+      "name": "CustomerInspectionItem",
+      "text": "送检明细",
+      "parentId": "MTD1000000PM",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerInspectionItemMainView",
+          "file": "CustomerInspectionItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerInspectionItemTreeView",
+          "file": "CustomerInspectionItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001PH",
+      "name": "CustomerInspectionLotSN",
+      "text": "栈板机器明细",
+      "parentId": "MTD1000000PP",
+      "sequence": "3",
+      "depth": 3,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerInspectionLotSNMainView",
+          "file": "CustomerInspectionLotSNMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerInspectionLotSNTreeView",
+          "file": "CustomerInspectionLotSNTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000QY",
+      "name": "CustomerInspectionCheckItem",
+      "text": "抽检明细",
+      "parentId": "MTD1000000PM",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CustomerInspectionCheckItemMainView",
+          "file": "CustomerInspectionCheckItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CustomerInspectionCheckItemTreeView",
+          "file": "CustomerInspectionCheckItemTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

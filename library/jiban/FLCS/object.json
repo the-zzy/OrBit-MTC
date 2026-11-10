@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "FLCS",
+  "name": "发料单已投超时未上线接收人员",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "发料单已投超时未上线接收人员",
+  "metadata": "UserCodeFLDCSSendEmail",
+  "objects": [
+    {
+      "id": "MTD10000024G",
+      "name": "UserCodeFLDCSSendEmail",
+      "text": "发料单已投超时未上线接收人员",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "UserCodeFLDCSSendEmailMainView",
+          "file": "UserCodeFLDCSSendEmailMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "UserCodeFLDCSSendEmailTreeView",
+          "file": "UserCodeFLDCSSendEmailTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "UserCodeFLDCSSendEmailSaveData",
+          "file": "UserCodeFLDCSSendEmailSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "UserCodeDeleteData",
+          "file": "UserCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

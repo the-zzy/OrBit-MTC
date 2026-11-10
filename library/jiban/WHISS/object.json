@@ -1,0 +1,27 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "WHISS",
+  "name": "原材料出库清单",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "原材料出库清单",
+  "metadata": "IQCInspectionQuery",
+  "objects": [
+    {
+      "id": "MTD1000000TW",
+      "name": "WareHouseIssueList",
+      "text": "原材料出库清单",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

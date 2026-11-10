@@ -1,0 +1,83 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "KBGT",
+  "name": "线体看板组",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "线体看板组",
+  "metadata": "KanBanGroupType",
+  "objects": [
+    {
+      "id": "MTD1000000MW",
+      "name": "KanbanGroupType",
+      "text": "线体看板组",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "KanbanGroupTypeMainView",
+          "file": "KanbanGroupTypeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "KanbanGroupTypeTreeView",
+          "file": "KanbanGroupTypeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "KanbanGroupTypeSaveData",
+          "file": "KanbanGroupTypeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "KanbanGroupTypeDeleteData",
+          "file": "KanbanGroupTypeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000MI",
+      "name": "WorkCenterForKanban",
+      "text": "线体看板组",
+      "parentId": "MTD1000000MW",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "WorkCenterForKanbanMainView",
+          "file": "WorkCenterForKanbanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "WorkCenterForKanbanTreeView",
+          "file": "WorkCenterForKanbanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "WorkCenterForKanbanSaveData",
+          "file": "WorkCenterForKanbanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "WorkCenterForKanbanDeleteData",
+          "file": "WorkCenterForKanbanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

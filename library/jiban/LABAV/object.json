@@ -1,0 +1,48 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "LABAV",
+  "name": "标签模板(AV)",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "标签模板(AV)",
+  "metadata": "LabelAV",
+  "objects": [
+    {
+      "id": "MTD1000000MK",
+      "name": "LabelAV",
+      "text": "标签模板(AV)",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "LabelAVMainView",
+          "file": "LabelAVMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "LabelAVTreeView",
+          "file": "LabelAVTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "LabelAVSaveData",
+          "file": "LabelAVSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "LabelAVDeleteData",
+          "file": "LabelAVDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

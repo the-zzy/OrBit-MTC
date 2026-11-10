@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "SITE",
+  "name": "场地",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "场地",
+  "metadata": "Site",
+  "objects": [
+    {
+      "id": "MTD100000084",
+      "name": "Site",
+      "text": "场地",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "SiteMainView",
+          "file": "SiteMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "SiteTreeView",
+          "file": "SiteTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "SiteSaveData",
+          "file": "SiteSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "SiteDeleteData",
+          "file": "SiteDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000000QJ",
+      "name": "Site_User",
+      "text": "场地用户",
+      "parentId": "MTD100000084",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "Site_UserMainView",
+          "file": "Site_UserMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "Site_UserTreeView",
+          "file": "Site_UserTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "Site_UserSaveData",
+          "file": "Site_UserSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "Site_UserDeleteData",
+          "file": "Site_UserDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

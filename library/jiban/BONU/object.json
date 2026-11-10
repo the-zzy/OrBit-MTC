@@ -1,0 +1,113 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "BONU",
+  "name": "基板考核激励",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "基板考核激励",
+  "metadata": "基板考核激励",
+  "objects": [
+    {
+      "id": "MTD1000001UY",
+      "name": "Bonusallot",
+      "text": "基板考核激励",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BonusallotMainView",
+          "file": "BonusallotMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BonusallotTreeView",
+          "file": "BonusallotTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BonusallotSaveData",
+          "file": "BonusallotSaveData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD1000001UZ",
+      "name": "BonusAllotItem",
+      "text": "基板奖金激励从表",
+      "parentId": "MTD1000001UY",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BonusAllotItemMainView",
+          "file": "BonusAllotItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BonusAllotItemTreeView",
+          "file": "BonusAllotItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BonusAllotItemSaveData",
+          "file": "BonusAllotItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BonusAllotItemDeleteData",
+          "file": "BonusAllotItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000022X",
+      "name": "BonusAllotWorkDate",
+      "text": "工作日期人员",
+      "parentId": "MTD1000001UY",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BonusAllotWorkDateMainView",
+          "file": "BonusAllotWorkDateMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BonusAllotWorkDateTreeView",
+          "file": "BonusAllotWorkDateTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BonusAllotWorkDateSaveData",
+          "file": "BonusAllotWorkDateSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BonusAllotWorkDateDeleteData",
+          "file": "BonusAllotWorkDateDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

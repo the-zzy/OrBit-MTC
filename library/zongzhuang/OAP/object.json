@@ -1,0 +1,388 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "OAP",
+  "name": "应用打包",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "应用打包",
+  "metadata": "App Transfer",
+  "objects": [
+    {
+      "id": "MTD10000023I",
+      "name": "AppTransfer",
+      "text": "应用打包",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransferMainView",
+          "file": "AppTransferMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransferTreeView",
+          "file": "AppTransferTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransferSaveData",
+          "file": "AppTransferSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransferDeleteData",
+          "file": "AppTransferDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023J",
+      "name": "AppTransfer_DB",
+      "text": "数据库资源",
+      "parentId": "MTD10000023I",
+      "sequence": "1",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_DBMainView",
+          "file": "AppTransfer_DBMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_DBTreeView",
+          "file": "AppTransfer_DBTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_DBSaveData",
+          "file": "AppTransfer_DBSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_DBDeleteData",
+          "file": "AppTransfer_DBDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023K",
+      "name": "AppTransfer_Plugin",
+      "text": "插件资源",
+      "parentId": "MTD10000023I",
+      "sequence": "2",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_PluginMainView",
+          "file": "AppTransfer_PluginMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_PluginTreeView",
+          "file": "AppTransfer_PluginTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_PluginSaveData",
+          "file": "AppTransfer_PluginSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_PluginDeleteData",
+          "file": "AppTransfer_PluginDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023S",
+      "name": "AppTransfer_MetaData",
+      "text": "元对象资源",
+      "parentId": "MTD10000023I",
+      "sequence": "3",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_MetaDataMainView",
+          "file": "AppTransfer_MetaDataMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_MetaDataTreeView",
+          "file": "AppTransfer_MetaDataTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_MetaDataSaveData",
+          "file": "AppTransfer_MetaDataSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_MetaDataDeleteData",
+          "file": "AppTransfer_MetaDataDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023M",
+      "name": "AppTransfer_MESTxn",
+      "text": "MES事务对象资源",
+      "parentId": "MTD10000023I",
+      "sequence": "4",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_MESTxnMainView",
+          "file": "AppTransfer_MESTxnMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_MESTxnTreeView",
+          "file": "AppTransfer_MESTxnTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_MESTxnSaveData",
+          "file": "AppTransfer_MESTxnSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_MESTxnDeleteData",
+          "file": "AppTransfer_MESTxnDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023N",
+      "name": "AppTransfer_Workflow",
+      "text": "工作流资源",
+      "parentId": "MTD10000023I",
+      "sequence": "5",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_WorkflowMainView",
+          "file": "AppTransfer_WorkflowMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_WorkflowTreeView",
+          "file": "AppTransfer_WorkflowTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_WorkflowSaveData",
+          "file": "AppTransfer_WorkflowSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_WorkflowDeleteData",
+          "file": "AppTransfer_WorkflowDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023O",
+      "name": "AppTransfer_KanBan",
+      "text": "看板资源",
+      "parentId": "MTD10000023I",
+      "sequence": "6",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_KanBanMainView",
+          "file": "AppTransfer_KanBanMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_KanBanTreeView",
+          "file": "AppTransfer_KanBanTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_KanBanSaveData",
+          "file": "AppTransfer_KanBanSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_KanBanDeleteData",
+          "file": "AppTransfer_KanBanDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023Q",
+      "name": "AppTransfer_UserGroup",
+      "text": "用户组资源",
+      "parentId": "MTD10000023I",
+      "sequence": "7",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_UserGroupMainView",
+          "file": "AppTransfer_UserGroupMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_UserGroupTreeView",
+          "file": "AppTransfer_UserGroupTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_UserGroupSaveData",
+          "file": "AppTransfer_UserGroupSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_UserGroupDeleteData",
+          "file": "AppTransfer_UserGroupDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023P",
+      "name": "AppTransfer_Parameter",
+      "text": "系统参数资源",
+      "parentId": "MTD10000023I",
+      "sequence": "8",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_ParameterMainView",
+          "file": "AppTransfer_ParameterMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_ParameterTreeView",
+          "file": "AppTransfer_ParameterTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_ParameterSaveData",
+          "file": "AppTransfer_ParameterSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_ParameterDeleteData",
+          "file": "AppTransfer_ParameterDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023R",
+      "name": "AppTransfer_History",
+      "text": "应用包备份及迁移历史",
+      "parentId": "MTD10000023I",
+      "sequence": "9",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_HistoryMainView",
+          "file": "AppTransfer_HistoryMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_HistoryTreeView",
+          "file": "AppTransfer_HistoryTreeView.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD10000023L",
+      "name": "AppTransfer_OrDroidPlugin",
+      "text": "OrDroid插件资源",
+      "parentId": "MTD10000023I",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "AppTransfer_OrDroidPluginMainView",
+          "file": "AppTransfer_OrDroidPluginMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "AppTransfer_OrDroidPluginTreeView",
+          "file": "AppTransfer_OrDroidPluginTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "AppTransfer_OrDroidPluginSaveData",
+          "file": "AppTransfer_OrDroidPluginSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "AppTransfer_OrDroidPluginDeleteData",
+          "file": "AppTransfer_OrDroidPluginDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

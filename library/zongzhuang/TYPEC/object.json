@@ -1,0 +1,83 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "TYPEC",
+  "name": "公共数据维护表",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "公共数据维护表",
+  "metadata": "维护公共数据，记录数据编码、数据名称、数据值、数据描述、生效日期等信息，确保公共数据的准确性和完整性。这有助于优化企业数据管理流程，提高各业务系统数据的一致性和准确性，支持企业的生产和运营管理决策。",
+  "objects": [
+    {
+      "id": "MTD100000268",
+      "name": "TypeCodeX",
+      "text": "公共数据维护表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TypeCodeMainView",
+          "file": "TypeCodeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TypeCodeTreeView",
+          "file": "TypeCodeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TypeCodeSaveData",
+          "file": "TypeCodeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TypeCodeDeleteData",
+          "file": "TypeCodeDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    },
+    {
+      "id": "MTD100000267",
+      "name": "TypeCodeItem",
+      "text": "公用数据明细",
+      "parentId": "MTD100000268",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "TypeCodeItemMainView",
+          "file": "TypeCodeItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "TypeCodeItemTreeView",
+          "file": "TypeCodeItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "TypeCodeItemSaveData",
+          "file": "TypeCodeItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "TypeCodeItemDeleteData",
+          "file": "TypeCodeItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

@@ -1,0 +1,27 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "RQYT",
+  "name": "品质报表",
+  "application": "MES",
+  "kind": "查询元对象",
+  "pluginName": "品质报表",
+  "metadata": "汇总和展示企业质量相关数据，包括产品质量检验结果、不良品率、质量改进措施执行情况等，为质量管理人员提供全面的质量报表。通过分析质量数据，企业可以及时发现质量薄弱环节，制定改进措施，提升产品质量和客户满意度。",
+  "objects": [
+    {
+      "id": "MTD1000000RF",
+      "name": "QualityReportQuery",
+      "text": "品质报表",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}

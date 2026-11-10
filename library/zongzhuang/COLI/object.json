@@ -1,0 +1,48 @@
+{
+  "plant": "zongzhuang",
+  "source": "zongzhuang-mes-prod",
+  "command": "COLI",
+  "name": "采集项维护",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "采集项维护",
+  "metadata": "CollectItem",
+  "objects": [
+    {
+      "id": "MTD1000000J1",
+      "name": "CollectItem",
+      "text": "采集项维护",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "CollectItemMainView",
+          "file": "CollectItemMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "CollectItemTreeView",
+          "file": "CollectItemTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "CollectItemSaveData",
+          "file": "CollectItemSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "CollectItemDeleteData",
+          "file": "CollectItemDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "missing": true
+}
