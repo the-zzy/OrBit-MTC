@@ -36,8 +36,271 @@
           "file": "EquipmentMoveSaveData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-16T15:10:04+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "EquipmentMoveTreeView",
+          "columns": [
+            {
+              "name": "EquipmentMoveId",
+              "text": ""
+            },
+            {
+              "name": "单据号",
+              "text": ""
+            },
+            {
+              "name": "EquipmentId",
+              "text": ""
+            }
+          ]
+        },
+        "main": {
+          "name": "EquipmentMove",
+          "groups": [
+            {
+              "id": "MFG1000000HE",
+              "sequence": "01",
+              "name": "EquipmentMove Default Group",
+              "text": "信息填写",
+              "columns": 3,
+              "height": 800,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF10000037S",
+                  "sequence": "",
+                  "name": "EquipmentMVNO",
+                  "text": "单据流水号(自动)",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000037T",
+                  "sequence": "",
+                  "name": "EquipmentId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000037U",
+                  "sequence": "",
+                  "name": "FromWorkshopId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000037V",
+                  "sequence": "",
+                  "name": "ToWorkShopId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000037W",
+                  "sequence": "",
+                  "name": "MoveResion",
+                  "text": "移机原因",
+                  "type": "nvarchar(200)",
+                  "lines": 2,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000037X",
+                  "sequence": "",
+                  "name": "ResponsiblePerson",
+                  "text": "接收单位机台责任人",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000037Y",
+                  "sequence": "",
+                  "name": "MoveDate",
+                  "text": "移机时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000037Z",
+                  "sequence": "",
+                  "name": "MoveEquipmentNO",
+                  "text": "设备编码",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "MoveEquipmentNO_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000380",
+                  "sequence": "",
+                  "name": "MoveEquipmentNumber",
+                  "text": "设备编号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000381",
+                  "sequence": "",
+                  "name": "MoveEquipmentFix",
+                  "text": "资产编号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000382",
+                  "sequence": "",
+                  "name": "MoveEquipmentSpec",
+                  "text": "规格",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000383",
+                  "sequence": "",
+                  "name": "FromWorkshopName",
+                  "text": "发出单位",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "FromWorkshopName_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000384",
+                  "sequence": "",
+                  "name": "ToWorkshopName",
+                  "text": "接收单位",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "ToWorkshopName_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000385",
+                  "sequence": "",
+                  "name": "MoveEquipmentName",
+                  "text": "设备名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000386",
+                  "sequence": "",
+                  "name": "InstallDate",
+                  "text": "安装时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

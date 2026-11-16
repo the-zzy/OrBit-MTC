@@ -16,8 +16,73 @@
       "sequence": "03",
       "depth": 1,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "BurnFengHuoSetTwo",
+        "columns": [
+          {
+            "name": "BurnFengHuoSetTwoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "主键"
+          },
+          {
+            "name": "ControlType",
+            "type": "nvarchar(20)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "控制类型(MO=工单/Product=产品)"
+          },
+          {
+            "name": "ControlValue",
+            "type": "nvarchar(50)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "控制值(工单号/产品品号)"
+          },
+          {
+            "name": "BurnTimeSet",
+            "type": "decimal(18,2)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "老化时间设定(小时)"
+          },
+          {
+            "name": "IsEnabled",
+            "type": "bit",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否启用(1=启用/0=禁用)"
+          },
+          {
+            "name": "Remark",
+            "type": "nvarchar(200)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "备注"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建用户ID"
+          }
+        ]
       },
       "procedures": [
         {
@@ -41,8 +106,138 @@
           "file": "BurnFengHuoSetTwoDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-13T11:38:26+08:00",
+        "MainView": "2026-11-13T11:38:30+08:00",
+        "TreeView": "2026-11-13T11:38:35+08:00",
+        "SaveData": "2026-11-13T11:38:37+08:00",
+        "DeleteView": "2026-11-13T11:38:40+08:00",
+        "style": "2026-11-13T11:39:51+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "BurnFengHuoSetTwoTreeView",
+          "columns": [
+            {
+              "name": "BurnFengHuoSetTwoId",
+              "text": ""
+            },
+            {
+              "name": "ControlType",
+              "text": "控制类型"
+            },
+            {
+              "name": "ControlValue",
+              "text": "控制值"
+            },
+            {
+              "name": "BurnTimeSet",
+              "text": "老化时间(小时)"
+            },
+            {
+              "name": "IsEnabled",
+              "text": "启动否"
+            },
+            {
+              "name": "Remark",
+              "text": "备注"
+            }
+          ]
+        },
+        "main": {
+          "name": "BurnFengHuoSetTwo",
+          "groups": [
+            {
+              "id": "MFG1000002VL",
+              "sequence": "01",
+              "name": "BurnFengHuoSetTwo Default Group",
+              "text": "烽火老化时间配置",
+              "columns": 3,
+              "height": 300,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000EXU",
+                  "sequence": "",
+                  "name": "ControlType",
+                  "text": "控制类型",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000EXV",
+                  "sequence": "",
+                  "name": "ControlValue",
+                  "text": "控制值",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000EXW",
+                  "sequence": "",
+                  "name": "BurnTimeSet",
+                  "text": "老化时间(小时)",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000EXX",
+                  "sequence": "",
+                  "name": "IsEnabled",
+                  "text": "启动否",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000EXY",
+                  "sequence": "",
+                  "name": "Remark",
+                  "text": "备注",
+                  "type": "nvarchar(200)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

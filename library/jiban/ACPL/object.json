@@ -41,8 +41,428 @@
           "file": "AcceptanceListDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-16T12:21:20+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "AcceptanceListTreeView",
+          "columns": [
+            {
+              "name": "AcceptanceListId",
+              "text": ""
+            },
+            {
+              "name": "AcceptanceListNO",
+              "text": "单号(自动)"
+            },
+            {
+              "name": "PurchaseOrderId",
+              "text": ""
+            },
+            {
+              "name": "PurchaseOrderNO1",
+              "text": "采购单号"
+            },
+            {
+              "name": "EquipmentNO",
+              "text": "设备代码"
+            },
+            {
+              "name": "EquipmentName",
+              "text": "设备名称"
+            },
+            {
+              "name": "EquipmentTypeNO",
+              "text": "制造商设备型号"
+            },
+            {
+              "name": "ManufacturingNumber",
+              "text": "出厂编号"
+            },
+            {
+              "name": "InstallationLocation",
+              "text": "安装地点"
+            },
+            {
+              "name": "Recipient",
+              "text": "接收人"
+            },
+            {
+              "name": "ContactPhone",
+              "text": "联系电话"
+            },
+            {
+              "name": "状态",
+              "text": ""
+            }
+          ]
+        },
+        "main": {
+          "name": "AcceptanceList",
+          "groups": [
+            {
+              "id": "MFG1000000GH",
+              "sequence": "01",
+              "name": "AcceptanceList Default Group",
+              "text": "内容",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000317",
+                  "sequence": "",
+                  "name": "AcceptanceListNO",
+                  "text": "单号(自动)",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000318",
+                  "sequence": "",
+                  "name": "PurchaseOrderId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031K",
+                  "sequence": "",
+                  "name": "PurchaseOrderNO1",
+                  "text": "采购单号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "GetAcceptanceList_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003CS",
+                  "sequence": "",
+                  "name": "YanHuoDan",
+                  "text": "验货单",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "YanHuoDan_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000035A",
+                  "sequence": "",
+                  "name": "EquipmentNO",
+                  "text": "设备代码",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "AcceptanceList_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000319",
+                  "sequence": "",
+                  "name": "EquipmentName",
+                  "text": "设备名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031A",
+                  "sequence": "",
+                  "name": "EquipmentTypeNO",
+                  "text": "制造商设备型号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003A6",
+                  "sequence": "",
+                  "name": "ManufacturingNumber",
+                  "text": "出厂编号",
+                  "type": "nvarchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031B",
+                  "sequence": "",
+                  "name": "InstallationLocation",
+                  "text": "安装地点",
+                  "type": "nvarchar(200)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031C",
+                  "sequence": "",
+                  "name": "InstallationDate",
+                  "text": "安装时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031D",
+                  "sequence": "",
+                  "name": "Recipient",
+                  "text": "接收人",
+                  "type": "nvarchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031E",
+                  "sequence": "",
+                  "name": "ContactPhone",
+                  "text": "联系电话",
+                  "type": "nvarchar(20)",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031F",
+                  "sequence": "",
+                  "name": "Situation1",
+                  "text": "设备及其配件资料是否其全？",
+                  "type": "nvarchar(2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "[viewlist_Answer]",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031G",
+                  "sequence": "",
+                  "name": "Situation2",
+                  "text": "设备开电是否正常?",
+                  "type": "nvarchar(2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "[viewlist_Answer]",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031H",
+                  "sequence": "",
+                  "name": "Situation3",
+                  "text": "设备安装是否正常运行?",
+                  "type": "nvarchar(2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "[viewlist_Answer]",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031I",
+                  "sequence": "",
+                  "name": "Situation4",
+                  "text": "是否同意设备通过现场验收?",
+                  "type": "nvarchar(2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "[viewlist_Answer]",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000031J",
+                  "sequence": "",
+                  "name": "Orther",
+                  "text": "其它补充",
+                  "type": "nvarchar(200)",
+                  "lines": 2,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000359",
+                  "sequence": "",
+                  "name": "AcceptanceEquipentId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003CT",
+                  "sequence": "",
+                  "name": "YanHuoDanId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            },
+            {
+              "id": "MFG1000000GI",
+              "sequence": "02",
+              "name": "yangshouFun",
+              "text": "签字文件",
+              "columns": 3,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF10000031L",
+                  "sequence": "",
+                  "name": "yangshouFile",
+                  "text": "签字文件上传",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM10000007B",
+                  "sequence": "00",
+                  "name": "PrintYanShouOrder",
+                  "text": "打印",
+                  "sql": "PrintYanShouOrderDoMethod",
+                  "confirm": true,
+                  "prompt": "是否要打印?",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "PrintYanShouOrderDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000007C",
+                  "sequence": "01",
+                  "name": "yanshouClose",
+                  "text": "验收完成",
+                  "sql": "yanshouCloseDoMethod",
+                  "confirm": true,
+                  "prompt": "注意,封存的单据不接受修改!",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "yanshouCloseDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

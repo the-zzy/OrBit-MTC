@@ -23,6 +23,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\start-workbench.ps1
 
 打开 `http://127.0.0.1:3000`。
 
+## SQL 语法检查
+
+在功能详情的 SQL 阅读器中点击「语法检查」，或在右键菜单中选择同一项。工作台会在当前功能对应的数据源上使用 `SET PARSEONLY ON` 检查完整 SQL，然后关闭连接；只检查语法，不执行 SQL，也不校验表、字段等对象是否存在。
+
 ## 给 Agent
 
 会话入口是 [AGENT.md](AGENT.md)。查库时读 `.AGENTS/skills/mes-db/SKILL.md`。

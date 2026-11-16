@@ -36,7 +36,519 @@
           "file": "MOSTDSaveData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-16T15:10:54+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "MOSTDTreeView",
+          "columns": [
+            {
+              "name": "MOId",
+              "text": "工单号ID"
+            },
+            {
+              "name": "MOName",
+              "text": "工单号"
+            },
+            {
+              "name": "MOTypeId",
+              "text": ""
+            },
+            {
+              "name": "MOType",
+              "text": "制造订单类型"
+            },
+            {
+              "name": "ProductName",
+              "text": "产品名称"
+            },
+            {
+              "name": "SOName",
+              "text": "订单号"
+            },
+            {
+              "name": "MOERPStatus",
+              "text": "工单状态"
+            },
+            {
+              "name": "CustmerPo",
+              "text": ""
+            },
+            {
+              "name": "BatchNum",
+              "text": "客户批次号"
+            },
+            {
+              "name": "MOQtyRequired",
+              "text": "需求数量"
+            },
+            {
+              "name": "ProductDescription",
+              "text": "料号描述"
+            },
+            {
+              "name": "CreateDate",
+              "text": "创建时间"
+            }
+          ]
+        },
+        "main": {
+          "name": "MOSTD_2",
+          "groups": [
+            {
+              "id": "MFG10000026F",
+              "sequence": "1",
+              "name": "MOSTD Default Group",
+              "text": "标准工单默认组",
+              "columns": 4,
+              "height": 400,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000AC3",
+                  "sequence": "",
+                  "name": "MOId",
+                  "text": "工单号ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB0",
+                  "sequence": "",
+                  "name": "MOName",
+                  "text": "工单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB6",
+                  "sequence": "",
+                  "name": "MOTypeId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB5",
+                  "sequence": "",
+                  "name": "MOType",
+                  "text": "制造订单类型",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "MOType_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB4",
+                  "sequence": "",
+                  "name": "MOStatus",
+                  "text": "审批状态",
+                  "type": "char(2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "MOStatus_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAZ",
+                  "sequence": "",
+                  "name": "MOERPStatus",
+                  "text": "工单状态",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAX",
+                  "sequence": "",
+                  "name": "MODescription",
+                  "text": "工单描述",
+                  "type": "nvarchar(100)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000ABA",
+                  "sequence": "",
+                  "name": "ProductId",
+                  "text": "物料编码",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AC4",
+                  "sequence": "",
+                  "name": "OrganID",
+                  "text": "客户PO",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AC5",
+                  "sequence": "",
+                  "name": "BatchNum",
+                  "text": "客户批次号",
+                  "type": "varchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB2",
+                  "sequence": "",
+                  "name": "MOQtyRequired",
+                  "text": "需求数量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB3",
+                  "sequence": "",
+                  "name": "MOQtyStart",
+                  "text": "启动数量",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AC6",
+                  "sequence": "",
+                  "name": "NoStartQty",
+                  "text": "启动数量",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB1",
+                  "sequence": "",
+                  "name": "MOQtyDone",
+                  "text": "完工数量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000ABB",
+                  "sequence": "",
+                  "name": "ProductName",
+                  "text": "产品名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "MOProduct_ViewWindow",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB9",
+                  "sequence": "",
+                  "name": "ProductDescription",
+                  "text": "料号描述",
+                  "type": "",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB7",
+                  "sequence": "",
+                  "name": "PlannedDateFrom",
+                  "text": "计划开始日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AB8",
+                  "sequence": "",
+                  "name": "PlannedDateTo",
+                  "text": "计划完成日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAU",
+                  "sequence": "",
+                  "name": "ExecuteDateFrom",
+                  "text": "执行开始日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAV",
+                  "sequence": "",
+                  "name": "ExecuteDateTo",
+                  "text": "执行结束日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000ABD",
+                  "sequence": "",
+                  "name": "WorkflowId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AE2",
+                  "sequence": "",
+                  "name": "MaterialType",
+                  "text": "类别",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000ABE",
+                  "sequence": "",
+                  "name": "WorkflowName",
+                  "text": "工作流",
+                  "type": "",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "Workflow_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAW",
+                  "sequence": "",
+                  "name": "FactoryName",
+                  "text": "工厂",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000ABC",
+                  "sequence": "",
+                  "name": "SOName",
+                  "text": "订单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAY",
+                  "sequence": "",
+                  "name": "ModifyDate",
+                  "text": "修改日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAS",
+                  "sequence": "",
+                  "name": "ApproveDate",
+                  "text": "审核日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AAT",
+                  "sequence": "",
+                  "name": "ApproveUserName",
+                  "text": "审核人",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM10000023O",
+                  "sequence": "01",
+                  "name": "StartApplyLot",
+                  "text": "启动批号",
+                  "sql": "Txn_GuangXieLotsnDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "NoStartQty,MaterialType",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Txn_GuangXieLotsnDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "id": "MTD1000001UV",
@@ -93,6 +605,5 @@
       ],
       "pulled": {}
     }
-  ],
-  "missing": true
+  ]
 }

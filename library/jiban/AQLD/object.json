@@ -41,7 +41,172 @@
           "file": "AQLDetailDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-11T18:44:56+08:00",
+        "MainView": "2026-11-12T11:11:53+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "AQLDetailTreeView",
+          "columns": [
+            {
+              "name": "AQLDetailId",
+              "text": ""
+            },
+            {
+              "name": "AQLQualityStandard",
+              "text": "AQL检查标准"
+            },
+            {
+              "name": "AQLSampleSizeCode",
+              "text": "样本大小字码"
+            },
+            {
+              "name": "AQLSampleSizeQty",
+              "text": "样本大小"
+            },
+            {
+              "name": "ACQty",
+              "text": "合格判定数"
+            },
+            {
+              "name": "ReQty",
+              "text": "不合格判定数"
+            },
+            {
+              "name": "CreateUserId",
+              "text": "创建人ID"
+            },
+            {
+              "name": "CreateDate",
+              "text": "创建时间"
+            }
+          ]
+        },
+        "main": {
+          "name": "AQLDetail",
+          "groups": [
+            {
+              "id": "MFG1000000EO",
+              "sequence": "01",
+              "name": "AQLDetail Default Group",
+              "text": "AQL明细",
+              "columns": 2,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000002PJ",
+                  "sequence": "",
+                  "name": "AQLDetailId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002PA",
+                  "sequence": "",
+                  "name": "AQLQualityStandard",
+                  "text": "AQL检查标准",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "UserCodeAQLQualityStandard_ViewListPK",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002P8",
+                  "sequence": "",
+                  "name": "AQLSampleSizeCode",
+                  "text": "样本大小字码",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "UserCodeAQLSampleSizeCode_ViewListPK",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002P9",
+                  "sequence": "",
+                  "name": "AQLSampleSizeQty",
+                  "text": "样本大小",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002PB",
+                  "sequence": "",
+                  "name": "ACQty",
+                  "text": "合格判定数",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002PC",
+                  "sequence": "",
+                  "name": "ReQty",
+                  "text": "不合格判定数",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002PD",
+                  "sequence": "",
+                  "name": "CreateUserId",
+                  "text": "创建人ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
     },
     {
       "id": "MTD1000000ET",
@@ -78,6 +243,5 @@
       ],
       "pulled": {}
     }
-  ],
-  "missing": true
+  ]
 }

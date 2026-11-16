@@ -16,8 +16,105 @@
       "sequence": "",
       "depth": 1,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "Feeder",
+        "columns": [
+          {
+            "name": "FeederId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "送料器ID"
+          },
+          {
+            "name": "FeederName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "送料器编号"
+          },
+          {
+            "name": "FeederDescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "送料器描述"
+          },
+          {
+            "name": "BuyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "购买日期"
+          },
+          {
+            "name": "IsActivity",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否激活"
+          },
+          {
+            "name": "TotalUsedCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "累记使用资数"
+          },
+          {
+            "name": "UsedCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "当前使用次数"
+          },
+          {
+            "name": "RepairCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "累计维修次数"
+          },
+          {
+            "name": "RepairDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "最后一次维修时间"
+          },
+          {
+            "name": "UserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "维修人"
+          },
+          {
+            "name": "LotId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "最近一次挂接批号"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建时间"
+          }
+        ]
       },
       "procedures": [
         {
@@ -41,8 +138,234 @@
           "file": "FeederDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-16T15:10:15+08:00",
+        "style": "2026-11-16T15:10:17+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "FeederTreeView",
+          "columns": [
+            {
+              "name": "FeederId",
+              "text": ""
+            },
+            {
+              "name": "FeederName",
+              "text": "载具编号"
+            },
+            {
+              "name": "FeederDescription",
+              "text": "规格描述"
+            },
+            {
+              "name": "BuyDate",
+              "text": "购买日期"
+            },
+            {
+              "name": "IsActivity",
+              "text": "是否激活"
+            },
+            {
+              "name": "TotalUsedCount",
+              "text": "累计使用次数"
+            },
+            {
+              "name": "UsedCount",
+              "text": "使用次数"
+            },
+            {
+              "name": "RepairCount",
+              "text": "当前维修次数"
+            },
+            {
+              "name": "RepairDate",
+              "text": "维修日期"
+            },
+            {
+              "name": "UserId",
+              "text": "用户Id"
+            },
+            {
+              "name": "LotId",
+              "text": "批号ID"
+            },
+            {
+              "name": "CreateDate",
+              "text": "创建时间"
+            }
+          ]
+        },
+        "main": {
+          "name": "Feeder",
+          "groups": [
+            {
+              "id": "MFG10000007W",
+              "sequence": "01",
+              "name": "Feeder Default Group",
+              "text": "送料器默认组",
+              "columns": 3,
+              "height": 300,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000000T4",
+                  "sequence": "",
+                  "name": "FeederName",
+                  "text": "载具编号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000T5",
+                  "sequence": "",
+                  "name": "FeederDescription",
+                  "text": "规格描述",
+                  "type": "nvarchar(100)",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000TF",
+                  "sequence": "",
+                  "name": "IsActivity",
+                  "text": "是否激活",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000T6",
+                  "sequence": "",
+                  "name": "BuyDate",
+                  "text": "购买日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000T7",
+                  "sequence": "",
+                  "name": "TotalUsedCount",
+                  "text": "累计使用次数",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000T8",
+                  "sequence": "",
+                  "name": "UsedCount",
+                  "text": "使用次数",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000T9",
+                  "sequence": "",
+                  "name": "RepairCount",
+                  "text": "当前维修次数",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000TA",
+                  "sequence": "",
+                  "name": "RepairDate",
+                  "text": "维修日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000TC",
+                  "sequence": "",
+                  "name": "LotSN",
+                  "text": "批号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000TE",
+                  "sequence": "",
+                  "name": "UserName",
+                  "text": "用户名",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
     }
   ],
-  "missing": true
+  "channel": "PC"
 }
