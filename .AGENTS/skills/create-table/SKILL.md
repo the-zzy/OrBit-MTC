@@ -145,13 +145,13 @@ GROUP BY c.name ORDER BY UsageCount DESC;
 
 ### Step 5：生成 MTable 脚本（强制）
 
-交付文件是 `{表名}_MTable.sql`，编码 UTF-8。目录名用英文，第一段用当前这套库的 MCP 名：
+交付文件是 `{表名}_MTable.sql`，编码 UTF-8。放在仓库根 `tasks/` 下，目录名用英文，第二段用当前这套库的 MCP 名：
 
 ```text
-{MCP名}/dev/{功能英文名}/{表名}_MTable.sql
+tasks/{MCP名}/dev/{功能英文名}/{表名}_MTable.sql
 ```
 
-`{MCP名}` 是 `jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod`、`shuma-mes-prod` 之一。`{功能英文名}` 没有另给时用表名。例如 `jiban-mes-test/dev/Product/Product_MTable.sql`。先按分支写下主键列，再按本技能 `assets` 里的两份模板拼完整脚本。不要打开其他技能或规则。
+`{MCP名}` 是 `jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod`、`shuma-mes-prod` 之一。`{功能英文名}` 没有另给时用表名。例如 `tasks/jiban-mes-test/dev/Product/Product_MTable.sql`。先按分支写下主键列，再按本技能 `assets` 里的两份模板拼完整脚本。不要打开其他技能或规则。
 
 主键列：
 

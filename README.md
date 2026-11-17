@@ -11,6 +11,8 @@ MES / WMS 的 AI 工作台。页面看八套库，super-agent 接大模型，每
 | `agent/` | 大模型入口 |
 | `super-agent/` | 对用户说的话 |
 | `db/catalog/` | 八套库的目录 |
+| `library/` | 工作台的功能元数据缓存，按库/功能存放 |
+| `tasks/` | 任务交付物，按 `tasks/{库}/{类别}/{功能}/` 存放 |
 | `secrets/` | 凭据，不入库 |
 | `.AGENTS/skills/` | 给 Agent 的技能 |
 | `scripts/` | 启动工作台 |
