@@ -1,0 +1,8 @@
+ORDER=8
+STAGE=prod
+LABEL='数码 MES 正式'
+HOST=172.16.8.111
+MACHINE=MTCS8035
+DB=OrBitXIZC
+TOOLS=shuma-mes-prod-query
+CAUTION='正式生产库。仅允许查表，不能看过程正文，不能执行过程。'

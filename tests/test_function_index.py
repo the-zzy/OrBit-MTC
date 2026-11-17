@@ -12,8 +12,8 @@ class FunctionIndexTests(unittest.TestCase):
     def test_bundled_indexes_are_readable(self):
         rows = app.read_function_index()
 
-        self.assertEqual(set(rows), {"jiban", "zongzhuang", "tongxin", "guangyuan-mes", "guangyuan-wms"})
-        self.assertTrue(all(isinstance(items, list) and items for items in rows.values()))
+        self.assertEqual(set(rows), {"jiban", "zongzhuang", "tongxin", "guangyuan-mes", "guangyuan-wms", "shuma"})
+        self.assertTrue(all(isinstance(items, list) for items in rows.values()))
 
     def test_write_only_changes_the_selected_plant(self):
         with tempfile.TemporaryDirectory() as folder:

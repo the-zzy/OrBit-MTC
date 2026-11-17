@@ -1,0 +1,12 @@
+{
+  "enabledMcpjsonServers": [
+    "jiban-mes-test",
+    "jiban-mes-prod",
+    "zongzhuang-mes-test",
+    "zongzhuang-mes-prod",
+    "tongxin-mes-prod",
+    "guangyuan-mes-prod",
+    "guangyuan-wms-prod",
+    "shuma-mes-prod"
+  ]
+}

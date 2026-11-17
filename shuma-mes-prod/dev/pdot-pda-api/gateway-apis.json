@@ -1,0 +1,127 @@
+{
+  "esbDbConnId": "000037",
+  "esbDbConnLabel": "总装 MES 测试环境 (000037)；导入 ESB 前人工确认「指定数据源」",
+  "platform": {
+    "esbBaseUrl": "https://szapitest.szmtc.com.cn:8030",
+    "apiBaseUrl": "https://szapitest.szmtc.com.cn:8020"
+  },
+  "owner": {
+    "userId": "1003153",
+    "userName": "熊思思"
+  },
+  "apis": [
+    {
+      "suffix": "PDOT移动盘点初始化查询",
+      "method": "PDOTInitQuery",
+      "procedure": "dbo.APIBP_PDOTInitQuery",
+      "configName": "数码_PDOT移动盘点初始化查询",
+      "remark": "PDOT 移动盘点：action=init 初始化人员、计划、类型和部门；action=query 查询已盘、未盘、地址或 assets 数组对应的资产。assets 统一支持单条和批量，集合通过 JSON 字符串字段返回。",
+      "apiListSeq": "1",
+      "bodySample": "{\"action\":\"query\",\"pdOperator\":\"\",\"queryType\":\"assets\",\"stocktakeId\":\"PD1500008\",\"departName\":\"\",\"assets\":[{\"assetLotSN\":\"ZC20240001\"}]}",
+      "responseSample": {
+        "state": true,
+        "errcode": 200,
+        "msg": "",
+        "data": [
+          {
+            "operatorName": "",
+            "plansJson": "[]",
+            "pdTypesJson": "[]",
+            "departmentsJson": "[]",
+            "listJson": "[{\"assetNum\":\"ZC20240001\",\"assetLotSN\":\"ZC20240001\",\"description\":\"数控冲床\",\"status\":\"未盘点\",\"roomer\":\"李四\",\"isSoftAsset\":\"生产部\",\"runStatus\":\"运行\",\"location\":\"冲压一车间A区\",\"locationName\":null,\"locationDescription\":null,\"success\":true,\"message\":\"\"}]",
+            "returnMessage": "ServerMessage:查询成功",
+            "returnValue": 0
+          }
+        ]
+      },
+      "outputParams": [
+        { "fieldId": "operatorName", "fieldName": "人员姓名（init）", "fieldType": "String", "sample": "" },
+        { "fieldId": "plansJson", "fieldName": "盘点计划 JSON 数组字符串（init）", "fieldType": "String", "sample": "[]" },
+        { "fieldId": "pdTypesJson", "fieldName": "盘点类型 JSON 数组字符串（init）", "fieldType": "String", "sample": "[]" },
+        { "fieldId": "departmentsJson", "fieldName": "部门 JSON 数组字符串（init）", "fieldType": "String", "sample": "[]" },
+        { "fieldId": "listJson", "fieldName": "清单 JSON 数组字符串（query）", "fieldType": "String", "sample": "[{\"assetNum\":\"ZC20240001\",\"assetLotSN\":\"ZC20240001\",\"description\":\"数控冲床\",\"status\":\"未盘点\",\"roomer\":\"李四\",\"location\":\"冲压一车间A区\",\"success\":true,\"message\":\"\"}]" },
+        { "fieldId": "returnMessage", "fieldName": "业务返回消息", "fieldType": "String", "sample": "ServerMessage:初始化成功" },
+        { "fieldId": "returnValue", "fieldName": "业务返回值：0 成功，-1 失败", "fieldType": "Number", "sample": "0" }
+      ],
+      "params": [
+        { "id": "1001", "fieldId": "action", "procParam": "@Action", "fieldName": "操作类型：init / query", "sample": "init", "required": true, "maxLength": 10, "sortNum": 1 },
+        { "id": "1002", "fieldId": "pdOperator", "procParam": "@PDOperator", "fieldName": "盘点工号；init 必传", "sample": "2061399", "required": false, "maxLength": 20, "sortNum": 2 },
+        { "id": "1003", "fieldId": "queryType", "procParam": "@QueryType", "fieldName": "查询类型：checked / unchecked / location / assets；query 必传", "sample": "assets", "required": false, "maxLength": 20, "sortNum": 3 },
+        { "id": "1004", "fieldId": "stocktakeId", "procParam": "@StocktakeId", "fieldName": "盘点计划单号；checked / unchecked / assets 必传", "sample": "PD1500008", "required": false, "maxLength": 12, "sortNum": 4 },
+        { "id": "1005", "fieldId": "departName", "procParam": "@DepartName", "fieldName": "部门；checked / unchecked 可选筛选", "sample": "", "required": false, "maxLength": 50, "sortNum": 5 },
+        {
+          "id": "1006",
+          "fieldId": "assets",
+          "procParam": "@AssetsJson",
+          "fieldName": "资产条码数组；queryType=assets 必传，1～100 条，单条查询也传数组",
+          "fieldType": "Array",
+          "sample": "",
+          "required": false,
+          "sortNum": 6,
+          "children": [
+            { "fieldId": "assetLotSN", "fieldName": "资产条码", "fieldType": "String", "sampleValue": "ZC20240001", "required": true, "maxLength": 50, "sortNum": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "suffix": "PDOT移动盘点操作",
+      "method": "PDOTOperate",
+      "procedure": "dbo.APIBP_PDOTOperate",
+      "configName": "数码_PDOT移动盘点操作",
+      "remark": "PDOT 移动盘点：batchCheck 单条/批量盘点，unused 置闲置，cancel 取消盘点；批量明细通过 resultsJson 返回。",
+      "apiListSeq": "2",
+      "bodySample": "{\"action\":\"batchCheck\",\"stocktakeId\":\"PD1500008\",\"pdOperator\":\"2061399\",\"pdType\":\"自盘\",\"assetLotSN\":\"\",\"zoneCode\":\"A-01-01\",\"assets\":[{\"assetLotSN\":\"ZC20240001\"},{\"assetLotSN\":\"ZC20240002\"}],\"assetNum\":\"\"}",
+      "responseSample": {
+        "state": true,
+        "errcode": 200,
+        "msg": "",
+        "data": [
+          {
+            "description": "",
+            "roomer": "",
+            "unUsedNum": "",
+            "resultsJson": "[{\"assetLotSN\":\"ZC20240001\",\"success\":true,\"message\":\"盘点完成\",\"description\":\"数控冲床\",\"roomer\":\"李四\",\"assetNum\":\"ZC20240001\"},{\"assetLotSN\":\"ZC20240002\",\"success\":true,\"message\":\"盘点完成\",\"description\":\"普通车床\",\"roomer\":\"王五\",\"assetNum\":\"ZC20240002\"}]",
+            "total": 2,
+            "successCount": 2,
+            "failCount": 0,
+            "returnMessage": "ServerMessage:批量盘点完成：成功 2 条，失败 0 条",
+            "returnValue": 0
+          }
+        ]
+      },
+      "outputParams": [
+        { "fieldId": "description", "fieldName": "资产描述（单条盘点成功）", "fieldType": "String", "sample": "" },
+        { "fieldId": "roomer", "fieldName": "管理人（单条盘点成功）", "fieldType": "String", "sample": "" },
+        { "fieldId": "unUsedNum", "fieldName": "资产编号（单条盘点或置闲置成功）", "fieldType": "String", "sample": "" },
+        { "fieldId": "resultsJson", "fieldName": "逐条盘点结果 JSON 数组字符串", "fieldType": "String", "sample": "[{\"assetLotSN\":\"ZC20240001\",\"success\":true,\"message\":\"盘点完成\",\"description\":\"数控冲床\",\"roomer\":\"李四\",\"assetNum\":\"ZC20240001\"},{\"assetLotSN\":\"ZC20240002\",\"success\":true,\"message\":\"盘点完成\",\"description\":\"普通车床\",\"roomer\":\"王五\",\"assetNum\":\"ZC20240002\"}]" },
+        { "fieldId": "total", "fieldName": "处理总条数", "fieldType": "Number", "sample": "2" },
+        { "fieldId": "successCount", "fieldName": "成功条数", "fieldType": "Number", "sample": "2" },
+        { "fieldId": "failCount", "fieldName": "失败条数", "fieldType": "Number", "sample": "0" },
+        { "fieldId": "returnMessage", "fieldName": "业务返回消息", "fieldType": "String", "sample": "ServerMessage:批量盘点完成：成功 2 条，失败 0 条" },
+        { "fieldId": "returnValue", "fieldName": "业务返回值：0 成功，-1 失败；批量允许部分明细失败", "fieldType": "Number", "sample": "0" }
+      ],
+      "params": [
+        { "id": "1001", "fieldId": "action", "procParam": "@Action", "fieldName": "操作类型：batchCheck / unused / cancel", "sample": "batchCheck", "required": true, "maxLength": 20, "sortNum": 1 },
+        { "id": "1002", "fieldId": "stocktakeId", "procParam": "@StocktakeId", "fieldName": "盘点计划单号", "sample": "PD1500008", "required": true, "maxLength": 12, "sortNum": 2 },
+        { "id": "1003", "fieldId": "pdOperator", "procParam": "@PDOperator", "fieldName": "盘点工号；batchCheck 必传", "sample": "2061399", "required": false, "maxLength": 20, "sortNum": 3 },
+        { "id": "1004", "fieldId": "pdType", "procParam": "@PDType", "fieldName": "盘点类型：自盘 / 复盘；batchCheck 必传", "sample": "自盘", "required": false, "maxLength": 2, "sortNum": 4 },
+        { "id": "1005", "fieldId": "zoneCode", "procParam": "@ZoneCode", "fieldName": "存放区代码；batchCheck 必传", "sample": "A-01-01", "required": false, "maxLength": 20, "sortNum": 5 },
+        {
+          "id": "1006",
+          "fieldId": "assets",
+          "procParam": "@AssetsJson",
+          "fieldName": "资产条码数组；batchCheck 必传，1～100 条，单条也传数组",
+          "fieldType": "Array",
+          "sample": "",
+          "required": false,
+          "sortNum": 6,
+          "children": [
+            { "fieldId": "assetLotSN", "fieldName": "资产条码", "fieldType": "String", "sampleValue": "ZC20240001", "required": true, "maxLength": 50, "sortNum": 1 }
+          ]
+        },
+        { "id": "1007", "fieldId": "assetNum", "procParam": "@AssetNum", "fieldName": "资产编号；unused / cancel 必传", "sample": "", "required": false, "maxLength": 50, "sortNum": 7 }
+      ]
+    }
+  ]
+}

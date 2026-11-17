@@ -1,7 +1,7 @@
 ---
 name: mes-db
 description: >-
-  按工厂、MES 或 WMS、测试或正式选择数据库，并且只调用这一套库的工具。用户提到基板、总装、通信、光元、MES、WMS、测试、正式、查表或存储过程时使用。
+  按工厂、MES 或 WMS、测试或正式选择数据库，并且只调用这一套库的工具。用户提到基板、总装、通信、光元、数码、MES、WMS、测试、正式、查表或存储过程时使用。
 ---
 
 # 数据库
@@ -19,6 +19,7 @@ description: >-
 | 通信 MES 正式 | `192.168.0.246` / `OrBitXICH` | 查表 |
 | 光元 MES 正式 | `172.16.8.244` / `OrBitXIZC` | 查表 |
 | 光元 WMS 正式 | `172.16.9.244` / `OrBitXIZC` | 查表、看存储过程、执行存储过程 |
+| 数码 MES 正式 | `172.16.8.111` / `OrBitXIZC` | 查表 |
 
 ## 执行名
 
@@ -33,6 +34,7 @@ description: >-
 | 通信 MES 正式 | `tongxin-mes-prod` | `tongxin-mes-prod-query` |
 | 光元 MES 正式 | `guangyuan-mes-prod` | `guangyuan-mes-prod-query` |
 | 光元 WMS 正式 | `guangyuan-wms-prod` | `guangyuan-wms-prod-query` `guangyuan-wms-prod-procedure` `guangyuan-wms-prod-execute` |
+| 数码 MES 正式 | `shuma-mes-prod` | `shuma-mes-prod-query` |
 
 ## 调用
 
@@ -40,4 +42,4 @@ description: >-
 2. 只调用这一套的英文工具名。
 3. 要查另一套库，换 MCP，不在参数里改地址或库名。
 4. 别用其他对话里的库。这个对话查哪套，就只调哪套。
-5. 账号是 `AIAssistant`。凭据在 `secrets/{MCP名}.env`，不读进对话。
+5. 默认账号是 `AIAssistant`；数码 MES 正式使用 `zhuozy`。凭据在 `secrets/{MCP名}.env`，不读进对话。

@@ -113,6 +113,7 @@ const factories = [
   { id: 'jiban', label: '基板', match: (env) => env.id.startsWith('jiban-') },
   { id: 'zongzhuang', label: '总装', match: (env) => env.id.startsWith('zongzhuang-') },
   { id: 'tongxin', label: '通信', match: (env) => env.id.startsWith('tongxin-') },
+  { id: 'shuma', label: '数码', match: (env) => env.id.startsWith('shuma-') },
   { id: 'guangyuan-mes', label: '光元MES', match: (env) => env.id.startsWith('guangyuan-mes-') },
   { id: 'guangyuan-wms', label: '光元WMS', match: (env) => env.id.startsWith('guangyuan-wms-') },
 ]

@@ -1,0 +1,524 @@
+{
+  "plant": "shuma",
+  "source": "shuma-mes-prod",
+  "command": "STTAA",
+  "name": "盘点计划",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "盘点计划",
+  "metadata": "Stocktake",
+  "objects": [
+    {
+      "id": "MTD1000001VV",
+      "name": "Stocktake",
+      "text": "盘点计划",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "Stocktake",
+        "columns": [
+          {
+            "name": "StocktakeId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "PKid"
+          },
+          {
+            "name": "StocktakeName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "盘点名称"
+          },
+          {
+            "name": "StocktakeDescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "盘点说明"
+          },
+          {
+            "name": "StocktakeDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "盘点日期"
+          },
+          {
+            "name": "Factoryid",
+            "type": "nchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "收货工厂"
+          },
+          {
+            "name": "StocktakeType",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "盘点类型"
+          },
+          {
+            "name": "StocktakeUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "盘点人"
+          },
+          {
+            "name": "WorkcenterId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作中心"
+          },
+          {
+            "name": "CellId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "库位ID"
+          },
+          {
+            "name": "StocktakeStatus",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "状态"
+          },
+          {
+            "name": "ApproveUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "审核人"
+          },
+          {
+            "name": "ApproveDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "审核时间"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建用户"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeMainView",
+          "file": "StocktakeMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeTreeView",
+          "file": "StocktakeTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeSaveData",
+          "file": "StocktakeSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeDeleteData",
+          "file": "StocktakeDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-17T09:04:42+08:00",
+        "style": "2026-11-17T09:04:51+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "StocktakeTreeView",
+          "columns": [
+            {
+              "name": "StocktakeId",
+              "text": ""
+            },
+            {
+              "name": "stocktakedescription",
+              "text": "选择盘点计划"
+            },
+            {
+              "name": "StocktakeStatus",
+              "text": "盘点状态"
+            },
+            {
+              "name": "盘点公司",
+              "text": ""
+            }
+          ]
+        },
+        "main": {
+          "name": "Stocktake",
+          "groups": [
+            {
+              "id": "MFG10000028Y",
+              "sequence": "01",
+              "name": "Stocktake Default Group",
+              "text": "盘点默认组",
+              "columns": 3,
+              "height": 600,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000AKR",
+                  "sequence": "",
+                  "name": "StocktakeName",
+                  "text": "盘点计划单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKT",
+                  "sequence": "",
+                  "name": "StocktakeDate",
+                  "text": "盘点日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKU",
+                  "sequence": "",
+                  "name": "StocktakeType",
+                  "text": "盘点类别",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "StocktakeType_ViewListEx",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKS",
+                  "sequence": "",
+                  "name": "StocktakeDescription",
+                  "text": "选择盘点计划",
+                  "type": "nvarchar(100)",
+                  "lines": 5,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL0",
+                  "sequence": "",
+                  "name": "StocktakeTypeId",
+                  "text": "",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKX",
+                  "sequence": "",
+                  "name": "StocktakeUser",
+                  "text": "负责人",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL6",
+                  "sequence": "",
+                  "name": "Factoryid",
+                  "text": "收货工厂",
+                  "type": "nchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL7",
+                  "sequence": "",
+                  "name": "FactoryName",
+                  "text": "工厂",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "Factory_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKY",
+                  "sequence": "",
+                  "name": "workcenterid",
+                  "text": "线体",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "Workcenter_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKZ",
+                  "sequence": "",
+                  "name": "WorkcenterName",
+                  "text": "线体",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "Workcenter_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKV",
+                  "sequence": "",
+                  "name": "CellId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL2",
+                  "sequence": "",
+                  "name": "ApproveUserId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL3",
+                  "sequence": "",
+                  "name": "ApproveUserName",
+                  "text": "审核人",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL4",
+                  "sequence": "",
+                  "name": "ApproveDate",
+                  "text": "审核日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL1",
+                  "sequence": "",
+                  "name": "CreateUser",
+                  "text": "制单人",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AKW",
+                  "sequence": "",
+                  "name": "CreateUserId",
+                  "text": "创建人ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000AL5",
+                  "sequence": "",
+                  "name": "CreateDate",
+                  "text": "创建时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            },
+            {
+              "id": "MFG10000028Z",
+              "sequence": "02",
+              "name": "Stocktake Button Group",
+              "text": "盘点按钮组",
+              "columns": 3,
+              "height": 600,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM10000026N",
+                  "sequence": "01",
+                  "name": "CloseStocktake",
+                  "text": "关闭盘点计划",
+                  "sql": "StocktakeDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "StocktakeDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "MTD1000001VW",
+      "name": "StocktakeCheckList",
+      "text": "固定资产盘点明细",
+      "parentId": "MTD1000001VV",
+      "sequence": "",
+      "depth": 2,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "StocktakeCheckListMainView",
+          "file": "StocktakeCheckListMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "StocktakeCheckListTreeView",
+          "file": "StocktakeCheckListTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "StocktakeCheckListSaveData",
+          "file": "StocktakeCheckListSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "StocktakeCheckListDeleteData",
+          "file": "StocktakeCheckListDeleteData.sql"
+        }
+      ],
+      "pulled": {}
+    }
+  ],
+  "channel": "PC"
+}

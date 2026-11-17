@@ -151,7 +151,7 @@ GROUP BY c.name ORDER BY UsageCount DESC;
 {MCP名}/dev/{功能英文名}/{表名}_MTable.sql
 ```
 
-`{MCP名}` 是 `jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod` 之一。`{功能英文名}` 没有另给时用表名。例如 `jiban-mes-test/dev/Product/Product_MTable.sql`。先按分支写下主键列，再按本技能 `assets` 里的两份模板拼完整脚本。不要打开其他技能或规则。
+`{MCP名}` 是 `jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod`、`shuma-mes-prod` 之一。`{功能英文名}` 没有另给时用表名。例如 `jiban-mes-test/dev/Product/Product_MTable.sql`。先按分支写下主键列，再按本技能 `assets` 里的两份模板拼完整脚本。不要打开其他技能或规则。
 
 主键列：
 

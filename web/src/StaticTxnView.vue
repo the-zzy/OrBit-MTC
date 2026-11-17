@@ -23,6 +23,8 @@ const emit = defineEmits([
 ])
 
 const VIEWS = ['style', 'valueList', 'metaMethod']
+const showFieldText = ref(true)
+const showFieldName = ref(true)
 // 预览页使用工作台主题色；还原 MES 白色画布时改这里。
 const CUSTOM_CANVAS_BACKGROUND = '#f4efe4'
 const currentView = computed(() => VIEWS.includes(props.view) ? props.view : 'style')
@@ -70,11 +72,12 @@ function shownMethods(group) {
 }
 
 function groupGridStyle(group) {
+  const fieldSpace = group.fieldSpace ?? 20
   return {
     gridTemplateColumns: isMobile.value
       ? `repeat(${Math.max(group.columns || 1, 1)}, minmax(0, 1fr))`
       : `repeat(${Math.max(group.columns || 1, 1)}, ${group.fieldWidth || 200}px)`,
-    columnGap: `${group.fieldSpace ?? 20}px`,
+    columnGap: `${isMobile.value ? Math.max(fieldSpace, 24) : fieldSpace}px`,
   }
 }
 
@@ -418,6 +421,32 @@ function endListResize() {
           <section class="design-pane grow">
             <header>
               <code>{{ activeObject.name }}</code>
+              <button
+                type="button"
+                class="field-text-switch"
+                :class="{ on: showFieldText }"
+                role="switch"
+                :aria-checked="showFieldText"
+                :disabled="showFieldText && !showFieldName"
+                title="至少保留一种字段标签"
+                @click="showFieldText = !showFieldText"
+              >
+                <span>中文字段</span>
+                <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+              </button>
+              <button
+                type="button"
+                class="field-text-switch"
+                :class="{ on: showFieldName }"
+                role="switch"
+                :aria-checked="showFieldName"
+                :disabled="showFieldName && !showFieldText"
+                title="至少保留一种字段标签"
+                @click="showFieldName = !showFieldName"
+              >
+                <span>英文字段</span>
+                <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+              </button>
             </header>
             <div class="pane-body main-view">
               <div
@@ -438,26 +467,20 @@ function endListResize() {
                       :style="group.custom ? customLabelStyle(field.labelStyle) : null"
                       :title="fieldTip(field)"
                     >
-                      <span>{{ field.text || field.name }}</span>
-                      <i class="field-state">{{ fieldStateText(field) }}</i>
-                      <em v-if="field.text">{{ field.name }}</em>
-                      <i v-if="field.lines > 0" class="lines">{{ field.lines }} 行</i>
-                      <span v-if="field.valueList" class="proc-copy field-list">
-                        <button
-                          type="button"
-                          class="field-tag"
-                          :class="{ copyable: !!field.valueListName }"
-                          title="点击复制"
-                          @click.stop.prevent="copyProcName(field.valueListName)"
-                        >值列表</button>
-                      </span>
+                      <span>{{ (showFieldText ? field.text : field.name) || field.name || field.text }}</span>
+                      <em v-if="showFieldText && showFieldName && field.text">{{ field.name }}</em>
                     </span>
                     <span
                       class="field-control"
                       :style="group.custom ? customPartStyle(field.controlStyle, group.fieldWidth || 200, Math.max(fieldRows(field) * 24 + 10, 34)) : null"
                     >
                       <div v-if="field.splitLine" class="split-line-preview" aria-hidden="true"></div>
-                      <div v-else-if="field.grid" class="grid-preview" aria-label="网格区域"></div>
+                      <div
+                        v-else-if="field.grid"
+                        class="grid-preview"
+                        :style="group.custom ? null : { height: `${fieldRows(field) * 28}px` }"
+                        aria-label="网格区域"
+                      ></div>
                       <div v-else-if="field.picture || field.config?.IsPicture" class="picture-preview">
                         <span>{{ field.default || '图片' }}</span>
                       </div>
@@ -479,15 +502,8 @@ function endListResize() {
                     @keydown.enter="openMethod(method.id)"
                   >
                     <span class="method-name">
-                      <span>{{ method.text || method.name }}</span>
-                      <em v-if="method.text">{{ method.name }}</em>
-                      <button
-                        v-if="method.sql"
-                        type="button"
-                        class="copy-btn show"
-                        title="点击复制"
-                        @click.stop="copyProcName(method.sql)"
-                      >复制</button>
+                      <span>{{ (showFieldText ? method.text : method.name) || method.name || method.text }}</span>
+                      <em v-if="showFieldText && showFieldName && method.text">{{ method.name }}</em>
                     </span>
                   </div>
               </div>
@@ -783,8 +799,8 @@ button.object-path.on { background: #3d342b; color: #f4efe4; }
 }
 
 .static-design.mobile-design .design-pane {
-  flex: 0 1 480px;
-  width: 480px;
+  flex: 0 1 720px;
+  width: 720px;
   max-width: 100%;
   border-left: 1px solid #d4c6b4;
   border-right: 1px solid #d4c6b4;
@@ -813,6 +829,46 @@ button.object-path.on { background: #3d342b; color: #f4efe4; }
 
 .value-list-nav header { justify-content: space-between; gap: 10px; }
 .design-pane header code { color: #6f6256; font-size: 12px; }
+
+.field-text-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: auto;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #6f6256;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.field-text-switch + .field-text-switch { margin-left: 0; }
+.field-text-switch:disabled { opacity: 0.45; cursor: default; }
+
+.switch-track {
+  box-sizing: border-box;
+  width: 28px;
+  height: 16px;
+  padding: 2px;
+  border: 1px solid #a99b87;
+  border-radius: 999px;
+  background: #c7bdae;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.switch-thumb {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fffdf8;
+  transition: transform 0.15s;
+}
+
+.field-text-switch.on .switch-track { border-color: #3f7a34; background: #3f7a34; }
+.field-text-switch.on .switch-thumb { transform: translateX(12px); }
 
 .pane-name { color: #3d342b; font-size: 13px; font-weight: 650; }
 .proc-copy { display: inline-flex; align-items: center; gap: 6px; }
@@ -897,7 +953,20 @@ button.object-path.on { background: #3d342b; color: #f4efe4; }
 .custom-canvas .field-control input:not([type='checkbox']),
 .custom-canvas .field-control textarea { height: 100%; color: var(--field-text); background: var(--field-bg); border-color: var(--field-border); }
 .custom-canvas .split-line-preview { width: 100%; border-top: 1px solid #9aa4aa; }
-.custom-canvas .grid-preview { box-sizing: border-box; width: 100%; height: 100%; border: 1px solid #b8c4cc; background: #f0f0f0; }
+.grid-preview {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--field-border);
+  background-color: #f4efe4;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 27px,
+    var(--field-border) 27px,
+    var(--field-border) 28px
+  );
+}
+.custom-canvas .grid-preview { height: 100%; }
 .custom-canvas .picture-preview { box-sizing: border-box; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 1px solid #b8c4cc; color: #8a7b6a; background: #fff; font-size: 12px; }
 .custom-canvas .method-separator { display: none; }
 .custom-canvas .custom-method { position: absolute; }
@@ -930,7 +999,7 @@ button.object-path.on { background: #3d342b; color: #f4efe4; }
 .method-button em { color: #8a7b6a; font-family: "Cascadia Mono", Consolas, monospace; font-size: 11px; font-style: normal; font-weight: 400; }
 
 .field {
-  --field-bg: #eef4fb;
+  --field-bg: #f4efe4;
   --field-border: #a9bfd2;
   --field-text: #34556f;
   display: flex;
@@ -952,26 +1021,12 @@ button.object-path.on { background: #3d342b; color: #f4efe4; }
 .field-label > span:first-child,
 .field-label > em { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .field-label > .lines,
-.field-label > .field-list,
-.field-label > .field-state { flex: none; }
+.field-label > .field-list { flex: none; }
 .field-label em { color: #8a7b6a; font-family: "Cascadia Mono", Consolas, monospace; font-size: 11px; font-weight: 400; font-style: normal; }
-.field.readonly .field-label { color: #777168; }
-.field.required .field-label { color: #9a6217; }
-.field.required .field-label em { color: #a67a3d; }
-.field-state {
-  padding: 0 4px;
-  border: 1px solid #a9bfd2;
-  border-radius: 2px;
-  background: #e4eff8;
-  color: #426b8c;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5;
-}
-.field.readonly .field-state { border-color: #c8c2b8; background: #e5e1da; color: #777168; }
-.field.required .field-state { border-color: #d6a24a; background: #ffedc7; color: #9a6217; }
-.custom-canvas .field-state { padding: 0 3px; font-size: 9px; }
+.field.readonly .field-label,
+.field.readonly .field-label em { color: #777168; }
+.field.required .field-label { color: #3f7a34; }
+.field.required .field-label em { color: #6f9a63; }
 .field-label .lines { color: #8a7c6b; font-style: normal; font-size: 11px; }
 
 .field-tag {

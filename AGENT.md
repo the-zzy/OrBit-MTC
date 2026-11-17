@@ -4,7 +4,7 @@
 
 ## 三块
 
-- `web/` 是工作台，给人看七套库。
+- `web/` 是工作台，给人看八套库。
 - `server/` 读 `db/catalog/`，把目录给页面。
 - `agent/` 调用大模型。还没有 `secrets/llm.env` 时，就告诉用户还没接入，不要发请求。
 - `super-agent/` 是对用户说的话。`agent/llm.py` 调用时带上。
@@ -19,7 +19,7 @@
 
 一个 MCP 只连一个库。这个对话查哪套，就只调用哪套的工具。换库就换 MCP，不在参数里改地址或库名。
 
-没写系统就是 MES。只有仓储写 WMS。账号是 `AIAssistant`，凭据在 `secrets/{MCP名}.env`。
+没写系统就是 MES。只有仓储写 WMS。默认账号是 `AIAssistant`；数码 MES 正式账号是 `zhuozy`。凭据在 `secrets/{MCP名}.env`。
 
 ## super-agent
 

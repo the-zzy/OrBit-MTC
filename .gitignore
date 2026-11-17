@@ -10,4 +10,5 @@ __pycache__/
 *.py[cod]
 secrets/*.env
 super-agent/conversations/
+.claude/settings.local.json
 sp/

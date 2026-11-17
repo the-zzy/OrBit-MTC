@@ -11,7 +11,7 @@ alwaysApply: false
 {MCP名}/{类别}/{功能英文名}/
 ```
 
-`{MCP名}` 取当前 `.AGENTS/skills/mes-db/SKILL.md` 里这一套的英文名：`jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod`。
+`{MCP名}` 取当前 `.AGENTS/skills/mes-db/SKILL.md` 里这一套的英文名：`jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod`、`shuma-mes-prod`。
 
 `{类别}` 是 `dev`、`flow`、`plugin`、`ops` 之一。建表脚本用 `dev`。
 
