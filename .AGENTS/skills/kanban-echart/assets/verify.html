@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>看板 option 离线验证</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#0a1220;color:#e8eefc;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif}
+  header{position:sticky;top:0;z-index:9;padding:10px 16px;background:#111d31;border-bottom:1px solid #1d2b42;
+         display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  header h1{font-size:15px;margin:0;font-weight:600;letter-spacing:.5px}
+  #lib{font-size:12px;padding:3px 10px;border-radius:20px;background:#3a2a10;color:#ffce6b}
+  #lib.ok{background:#12351f;color:#7ef2a8}
+  #status{flex:1;font-size:13px;color:#7d8ba1}
+  button{background:#1b2c47;color:#cfe0f5;border:1px solid #2b405f;border-radius:6px;padding:6px 14px;
+         font-size:13px;cursor:pointer;font-family:inherit}
+  button:hover{background:#24395a}
+  button.pri{background:#1d4ed8;border-color:#2563eb;color:#fff}
+  button.pri:hover{background:#2563eb}
+  main{padding:16px;display:grid;grid-template-columns:minmax(320px,42%) 1fr;gap:16px;align-items:start}
+  @media(max-width:900px){main{grid-template-columns:1fr}}
+  .panel{background:#0f1b2e;border:1px solid #1d2b42;border-radius:8px;padding:12px}
+  textarea{width:100%;height:300px;background:#08101d;color:#b9cbe4;border:1px solid #1d2b42;border-radius:6px;
+           padding:10px;font-family:Consolas,Monaco,monospace;font-size:12px;line-height:1.6;resize:vertical}
+  .row{display:flex;gap:8px;align-items:center;margin-top:10px;flex-wrap:wrap}
+  input[type=text]{background:#08101d;color:#cfe0f5;border:1px solid #1d2b42;border-radius:6px;
+                   padding:5px 8px;font-size:12px;font-family:Consolas,monospace;width:190px}
+  .hint{font-size:12px;color:#6f8099;margin-top:8px;line-height:1.7}
+  .hint code{background:#16233b;padding:1px 5px;border-radius:4px;color:#22d3ee}
+  #meta{font-size:12px;color:#9fb0c8;line-height:2;margin-bottom:10px;word-break:break-all}
+  #meta b{color:#fff}
+  #meta code{background:#16233b;padding:1px 6px;border-radius:4px;color:#22d3ee}
+  #dbg{white-space:pre-wrap;word-break:break-all;font-size:12px;color:#ffd479;margin:0 0 10px}
+  #dbg:empty{display:none}
+  .wrap{display:flex;flex-wrap:wrap;gap:14px}
+  .card{background:#111c30;border:1px solid #1d2b42;border-radius:8px;padding:8px}
+  .cap{font-size:11px;color:#7d8ba1;padding:0 2px 6px}
+  .chart{background:#111c30;border-radius:4px}
+  .bad{color:#ff9d9d}
+  .good{color:#7ef2a8}
+</style>
+</head>
+<body>
+<header>
+  <h1>看板 option 离线验证</h1>
+  <span id="lib">ECharts 未就绪</span>
+  <span id="status">粘贴 option 后点「验证」</span>
+  <button id="btnPick">载入本地 echarts</button>
+</header>
+
+<main>
+  <section class="panel">
+    <div class="row" style="margin:0 0 8px">
+      <button class="pri" id="btnRun">验证</button>
+      <button id="btnFile">从文件读取</button>
+      <button id="btnSample">填示例</button>
+      <button id="btnClear">清空</button>
+    </div>
+    <textarea id="src" spellcheck="false" placeholder="粘贴以下任一形态：
+  A 明文   option = { ... };
+  B 装载   option=(function(){ ... })();"></textarea>
+    <div class="row">
+      <span style="font-size:12px;color:#7d8ba1">尺寸</span>
+      <input type="text" id="sizes" value="320x159,512x254,420x430">
+      <span style="font-size:12px;color:#6f8099">宽x高，逗号分隔</span>
+    </div>
+    <div class="hint">
+      两种形态都认：明文走 <code>new Function(src+';return option;')</code>，
+      装载走 <code>eval(src)</code>（解码器自带，验的就是它）。
+      内网无 CDN 时点右上「载入本地 echarts」选 <code>echarts-4.9.0.min.js</code>。
+    </div>
+  </section>
+
+  <section class="panel">
+    <div id="meta"></div>
+    <pre id="dbg"></pre>
+    <div class="wrap" id="wrap"></div>
+  </section>
+</main>
+
+<input type="file" id="fEcharts" accept=".js" hidden>
+<input type="file" id="fSrc" accept=".txt,.js,.sql,.json" hidden>
+
+<script>
+var CDN = 'https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js';
+var statusEl = document.getElementById('status');
+var libEl = document.getElementById('lib');
+var metaEl = document.getElementById('meta');
+var dbgEl = document.getElementById('dbg');
+var wrapEl = document.getElementById('wrap');
+var srcEl = document.getElementById('src');
+
+function setStatus(t, ok){ statusEl.innerHTML = t; statusEl.className = ok ? 'good' : ''; }
+function log(t){ dbgEl.textContent += t + '\n'; }
+
+window.onerror = function(m, s, l){ log('全局错误 ' + m + ' @' + l); setStatus('❌ ' + m, false); };
+
+function markLib(){
+  if (typeof echarts !== 'undefined') {
+    libEl.textContent = 'ECharts ' + echarts.version;
+    libEl.className = 'ok';
+    return true;
+  }
+  libEl.textContent = 'ECharts 未就绪';
+  libEl.className = '';
+  return false;
+}
+
+// 库加载顺序：同目录本地文件 → CDN → 手工载入
+(function loadLib(){
+  var local = document.createElement('script');
+  local.src = 'echarts-4.9.0.min.js';
+  local.async = false;
+  local.onload = function(){ if (markLib()) setStatus('库就绪（本地 4.9.0），粘贴 option 后点「验证」', true); };
+  local.onerror = function(){ loadCdn(); };
+  document.head.appendChild(local);
+})();
+
+function loadCdn(){
+  var s = document.createElement('script');
+  s.src = CDN; s.async = false;
+  s.onload = function(){ if (markLib()) setStatus('库就绪（CDN 4.9.0），粘贴 option 后点「验证」', true); };
+  s.onerror = function(){ libEl.textContent = '无可用库 → 点右上「载入本地 echarts」'; };
+  document.head.appendChild(s);
+}
+
+// 支持 #src=<base64> 直接带内容打开，便于无头回归
+(function fromHash(){
+  var h = location.hash || '';
+  if (h.indexOf('#src=') !== 0) return;
+  var txt;
+  try {
+    var b64 = decodeURIComponent(h.slice(5));
+    txt = decodeURIComponent(escape(atob(b64)));
+  } catch (e) {
+    log('hash 解析失败：' + e.message);
+    return;
+  }
+  srcEl.value = txt;
+  var t = setInterval(function(){
+    if (markLib()) { clearInterval(t); run(); }
+  }, 100);
+  setTimeout(function(){ clearInterval(t); }, 8000);
+})();
+
+document.getElementById('btnPick').onclick = function(){ document.getElementById('fEcharts').click(); };
+document.getElementById('fEcharts').onchange = function(e){
+  var f = e.target.files[0]; if (!f) return;
+  var r = new FileReader();
+  r.onload = function(){
+    try { new Function(r.result)(); } catch(err){ log('本地库执行失败：' + err.message); }
+    if (markLib()) setStatus('本地库已载入：' + f.name, true);
+    else setStatus('本地文件不是可用的 echarts 构建', false);
+  };
+  r.readAsText(f);
+};
+
+document.getElementById('btnFile').onclick = function(){ document.getElementById('fSrc').click(); };
+document.getElementById('fSrc').onchange = function(e){
+  var f = e.target.files[0]; if (!f) return;
+  var r = new FileReader();
+  r.onload = function(){ srcEl.value = r.result; setStatus('已读入 ' + f.name + '（' + r.result.length + ' 字符）', true); };
+  r.readAsText(f);
+};
+
+document.getElementById('btnClear').onclick = function(){
+  srcEl.value = ''; metaEl.innerHTML = ''; dbgEl.textContent = ''; wrapEl.innerHTML = '';
+  setStatus('已清空', true);
+};
+
+document.getElementById('btnSample').onclick = function(){
+  srcEl.value = "option = {backgroundColor:\"#0c192e\",grid:{left:34,right:34,top:44,bottom:28},"
+    + "xAxis:{type:\"category\",data:[\"00:00\",\"08:00\",\"16:00\",\"24:00\"]},"
+    + "yAxis:{type:\"value\",show:false},series:[{type:\"line\",smooth:true,symbol:\"none\",data:[21,25,23,20]}]};";
+  setStatus('已填示例，点「验证」', true);
+};
+
+document.getElementById('btnRun').onclick = run;
+
+function run(){
+  metaEl.innerHTML = ''; dbgEl.textContent = ''; wrapEl.innerHTML = '';
+  var src = srcEl.value.trim();
+  if (!src) { setStatus('❌ 没有内容', false); return; }
+  if (!markLib()) { setStatus('❌ ECharts 未加载，先点右上「载入本地 echarts」', false); return; }
+
+  var isPack = /var\s*B\s*=\s*19968/.test(src) || /^\(function/.test(src);
+  var form = isPack ? 'B 14bit 装载' : 'A 明文';
+  var option;
+  try {
+    option = isPack ? eval(src) : new Function(src + '\n;return option;')();
+  } catch (e) {
+    log(e.name + ': ' + e.message + '\n' + (e.stack || ''));
+    setStatus('❌ eval 失败：' + e.name + ': ' + e.message, false);
+    return;
+  }
+  if (!option || typeof option !== 'object') {
+    setStatus('❌ eval 结果不是对象：' + typeof option, false); return;
+  }
+
+  var series = [].concat(option.series || []);
+  var gElems = (option.graphic && option.graphic.elements) || [];
+  var keys = Object.keys(option);
+  metaEl.innerHTML = '形态 <b>' + form + '</b>　|　ECharts <b>' + echarts.version + '</b>'
+    + '　|　输入 <b>' + src.length + '</b> 字符'
+    + '<br>顶层键 <code>' + (keys.join(', ') || '无') + '</code>'
+    + '　|　series <b>' + series.length + '</b>　graphic <b>' + gElems.length + '</b>'
+    + '<br>首 <code>' + src.slice(0, 14).replace(/</g, '&lt;') + '</code>'
+    + '　尾 <code>' + src.slice(-8).replace(/</g, '&lt;') + '</code>';
+
+  if (!series.length && !gElems.length) {
+    setStatus('❌ 既没有 series 也没有 graphic', false); return;
+  }
+
+  var sizes = [];
+  document.getElementById('sizes').value.split(',').forEach(function(s){
+    var m = s.trim().match(/^(\d+)\s*[xX*]\s*(\d+)$/);
+    if (m) sizes.push([+m[1], +m[2]]);
+  });
+  if (!sizes.length) sizes = [[320, 159]];
+
+  var ok = 0;
+  sizes.forEach(function(sz, i){
+    var card = document.createElement('div'); card.className = 'card';
+    var cap = document.createElement('div'); cap.className = 'cap';
+    cap.textContent = sz[0] + ' × ' + sz[1];
+    var box = document.createElement('div'); box.className = 'chart';
+    box.style.width = sz[0] + 'px'; box.style.height = sz[1] + 'px';
+    card.appendChild(cap); card.appendChild(box); wrapEl.appendChild(card);
+    try {
+      var ch = echarts.init(box, null, {renderer: 'canvas'});
+      ch.setOption(option);
+      if (!box.querySelector('canvas')) { log(sz[0] + 'x' + sz[1] + ' 未生成 canvas'); return; }
+      ok++;
+    } catch (e) {
+      log('渲染 ' + sz[0] + 'x' + sz[1] + ' 失败：' + e.name + ': ' + e.message);
+    }
+  });
+
+  if (ok === sizes.length) setStatus('✅ 通过 —— ' + form + '，' + sizes.length + ' 个尺寸全部出图', true);
+  else setStatus('❌ 仅 ' + ok + '/' + sizes.length + ' 个尺寸渲染成功', false);
+}
+</script>
+</body>
+</html>

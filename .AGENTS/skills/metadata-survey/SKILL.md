@@ -18,7 +18,7 @@ description: >-
 一份 UTF-8 文件：
 
 ```text
-{MCP名}/flow/{MetadataName}/survey.md
+tasks/{MCP名}/flow/{MetadataName}/survey.md
 ```
 
 `{MCP名}` 用 `mes-db` 里这一套的英文名。多条候选还没让用户选定，或者 `PluginFileName` 不是 `Plugin Standard.dll` 时，不要写这个文件。

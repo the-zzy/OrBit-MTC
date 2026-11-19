@@ -43,3 +43,5 @@ description: >-
 3. 要查另一套库，换 MCP，不在参数里改地址或库名。
 4. 别用其他对话里的库。这个对话查哪套，就只调哪套。
 5. 默认账号是 `AIAssistant`；数码 MES 正式使用 `zhuozy`。凭据在 `secrets/{MCP名}.env`，不读进对话。
+
+架构表（`SysPlugIn`、`SysMetadata`、`MESTxnObject`、`MobileObject` 等）字段固定，快速查询用 `mes-meta-query` 技能和只读脚本 `scripts/query_meta.ps1`，不经过 MCP。

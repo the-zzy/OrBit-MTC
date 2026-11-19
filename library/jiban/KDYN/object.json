@@ -16,8 +16,369 @@
       "sequence": "1",
       "depth": 1,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDOrderInfo",
+        "columns": [
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "散件订单信息表主键"
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "OrderDescription",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单描述"
+          },
+          {
+            "name": "OrderType",
+            "type": "char(2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单类别 1 总装 2 基板,3 海外，4 巴西 ，5 散料"
+          },
+          {
+            "name": "SOName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "销售订单号"
+          },
+          {
+            "name": "IsSplitBatch",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否分批 1 是 0 否"
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "产品ID"
+          },
+          {
+            "name": "CustomerName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户"
+          },
+          {
+            "name": "CustomerModel",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户型号"
+          },
+          {
+            "name": "OrderQty",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单数量"
+          },
+          {
+            "name": "ProductCode",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "成品编码"
+          },
+          {
+            "name": "OrderDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单日期"
+          },
+          {
+            "name": "RollingPlan",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "滚动计划号"
+          },
+          {
+            "name": "Brand",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "牌子"
+          },
+          {
+            "name": "Panel",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "PANEL"
+          },
+          {
+            "name": "SKD",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "SKD"
+          },
+          {
+            "name": "SupplierCode",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "供应商代码"
+          },
+          {
+            "name": "ProjectNo",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "项目名称"
+          },
+          {
+            "name": "PONO",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户订单号"
+          },
+          {
+            "name": "LotNo",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "生产批号"
+          },
+          {
+            "name": "MadeCountry",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "生产国家"
+          },
+          {
+            "name": "Country",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "国家"
+          },
+          {
+            "name": "KDLabelTypeId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "标签类别ID"
+          },
+          {
+            "name": "LabelId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件标签ID"
+          },
+          {
+            "name": "WorkflowId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作流ID"
+          },
+          {
+            "name": "BoxCounter",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号计数器"
+          },
+          {
+            "name": "PalletCounter",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单栈板号计数器"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人ID"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "PINO",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerModule",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerProduct",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "CustomerAddress",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户地址"
+          },
+          {
+            "name": "LMNYPCustomerModel",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "罗马尼亚 屏-客户机型"
+          },
+          {
+            "name": "LMNYPPINO",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "罗马尼亚 屏-PI"
+          },
+          {
+            "name": "LMNYSCustomerModel",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "罗马尼亚 散料-客户机型"
+          },
+          {
+            "name": "LMNYSPINO",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "罗马尼亚 散料-PI"
+          },
+          {
+            "name": "IsSJ",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxLabelName",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱标签名称"
+          },
+          {
+            "name": "CustomerField1",
+            "type": "varchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "自定义1"
+          },
+          {
+            "name": "CustomerField2",
+            "type": "varchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "自定义2"
+          },
+          {
+            "name": "CustomerField3",
+            "type": "varchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "自定义3"
+          },
+          {
+            "name": "CustomerField4",
+            "type": "varchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "自定义4"
+          },
+          {
+            "name": "IsManualFinish",
+            "type": "bit",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "完成状态。0 未完成，1 已完成"
+          }
+        ]
       },
       "procedures": [
         {
@@ -41,7 +402,694 @@
           "file": "KDOrderInfoDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "MainView": "2026-11-19T09:06:34+08:00",
+        "TreeView": "2026-11-19T09:45:33+08:00",
+        "table": "2026-11-19T09:06:34+08:00",
+        "style": "2026-11-19T09:06:34+08:00",
+        "valueList": "2026-11-19T09:06:34+08:00",
+        "SaveData": "2026-11-19T09:06:35+08:00",
+        "DeleteView": "2026-11-19T09:06:35+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDOrderInfoTreeView",
+          "columns": [
+            {
+              "name": "KDOrderInfoId",
+              "text": ""
+            },
+            {
+              "name": "OrderName",
+              "text": "订单号"
+            },
+            {
+              "name": "完成状态",
+              "text": ""
+            },
+            {
+              "name": "OrderDescription",
+              "text": "订单描述"
+            },
+            {
+              "name": "SOName",
+              "text": "订单号"
+            },
+            {
+              "name": "栈板未装箱数量",
+              "text": ""
+            },
+            {
+              "name": "ColorControlId",
+              "text": ""
+            },
+            {
+              "name": "OrderQty",
+              "text": "订单数量"
+            },
+            {
+              "name": "单据状态",
+              "text": ""
+            }
+          ]
+        },
+        "main": {
+          "name": "KDOrderInfo",
+          "groups": [
+            {
+              "id": "MFG1000000NY",
+              "sequence": "01",
+              "name": "KDOrderInfo Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 600,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000004YO",
+                  "sequence": "",
+                  "name": "OrderName",
+                  "text": "订单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000064M",
+                  "sequence": "",
+                  "name": "SOName",
+                  "text": "订单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000064Y",
+                  "sequence": "",
+                  "name": "IsSplitBatch",
+                  "text": "是否分批",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004YX",
+                  "sequence": "",
+                  "name": "OrderDescription",
+                  "text": "订单描述",
+                  "type": "nvarchar(500)",
+                  "lines": 2,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004YT",
+                  "sequence": "",
+                  "name": "ProductName",
+                  "text": "产品名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "ProductByKD_ViewList",
+                  "valueListFilter": "SOName"
+                },
+                {
+                  "id": "MDF1000004YS",
+                  "sequence": "",
+                  "name": "OrderQty",
+                  "text": "订单数量",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004YQ",
+                  "sequence": "",
+                  "name": "CustomerName",
+                  "text": "客户",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004YR",
+                  "sequence": "",
+                  "name": "CustomerModel",
+                  "text": "客户机型",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FM",
+                  "sequence": "",
+                  "name": "RollingPlan",
+                  "text": "滚动计划号",
+                  "type": "nvarchar(100)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004YU",
+                  "sequence": "",
+                  "name": "OrderDate",
+                  "text": "单号日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000564",
+                  "sequence": "",
+                  "name": "Brand",
+                  "text": "品牌",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000565",
+                  "sequence": "",
+                  "name": "Panel",
+                  "text": "PANEL PO",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000566",
+                  "sequence": "",
+                  "name": "SKD",
+                  "text": "SKD PO",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FG",
+                  "sequence": "",
+                  "name": "SupplierCode",
+                  "text": "主料规格（尺寸）",
+                  "type": "nvarchar(100)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FH",
+                  "sequence": "",
+                  "name": "ProjectNo",
+                  "text": "项目编号",
+                  "type": "nvarchar(100)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FI",
+                  "sequence": "",
+                  "name": "PoNo",
+                  "text": "客户PO",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FJ",
+                  "sequence": "",
+                  "name": "LotNo",
+                  "text": "生产批号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FK",
+                  "sequence": "",
+                  "name": "MadeCountry",
+                  "text": "生产国家",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000695",
+                  "sequence": "",
+                  "name": "Country",
+                  "text": "国家",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005T6",
+                  "sequence": "",
+                  "name": "LabelTypeId",
+                  "text": "",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005T7",
+                  "sequence": "",
+                  "name": "LabelType",
+                  "text": "标签模板",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "KDLabelType_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000063J",
+                  "sequence": "",
+                  "name": "WorkflowId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000063K",
+                  "sequence": "",
+                  "name": "WorkflowName",
+                  "text": "工作流",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "WorkflowByKD_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004YW",
+                  "sequence": "",
+                  "name": "CreateUserName",
+                  "text": "创建人",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000004YZ",
+                  "sequence": "",
+                  "name": "CreateDate",
+                  "text": "创建时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000BM9",
+                  "sequence": "",
+                  "name": "CustomerAddress",
+                  "text": "客户地址",
+                  "type": "nvarchar(200)",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E3B",
+                  "sequence": "",
+                  "name": "BoxLabelName",
+                  "text": "外箱标签",
+                  "type": "nvarchar(100)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "SKDBoxLabel_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E3W",
+                  "sequence": "",
+                  "name": "CustomerField1",
+                  "text": "自定义1",
+                  "type": "varchar(500)",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E3X",
+                  "sequence": "",
+                  "name": "CustomerField2",
+                  "text": "自定义2",
+                  "type": "varchar(500)",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E3Y",
+                  "sequence": "",
+                  "name": "CustomerField3",
+                  "text": "自定义3",
+                  "type": "varchar(500)",
+                  "lines": 2,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000EDD",
+                  "sequence": "",
+                  "name": "CustomerField4",
+                  "text": "自定义4",
+                  "type": "varchar(500)",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            },
+            {
+              "id": "MFG1000000XJ",
+              "sequence": "03",
+              "name": "KDOrderInfo Button Group",
+              "text": "打印组",
+              "columns": 4,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000PM",
+                  "sequence": "01",
+                  "name": "SKDReportDoMethod",
+                  "text": "打印散件订单",
+                  "sql": "Query_SKDReportNewDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "Query_SKDReportNewDoMethod.sql"
+                },
+                {
+                  "id": "SMM100000211",
+                  "sequence": "03",
+                  "name": "ExportPicklistToexcel",
+                  "text": "导出散件EXCEL",
+                  "sql": "Export_SKDQRCodeDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Export_SKDQRCodeDoMethod.sql"
+                },
+                {
+                  "id": "SMM100000212",
+                  "sequence": "05",
+                  "name": "PrintPicklistQrcode",
+                  "text": "打印二维码",
+                  "sql": "Export_SKDQRCodeDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "Export_SKDQRCodeDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002SQ",
+                  "sequence": "07",
+                  "name": "PrintPicklistSkdOrderOut",
+                  "text": "打印散件PackingList",
+                  "sql": "Query_SKDSJReportOutDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "Query_SKDSJReportOutDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002Z2",
+                  "sequence": "08",
+                  "name": "PrintYNPackList",
+                  "text": "打印包装清单(越南)",
+                  "sql": "Query_SKDSJReportForYNNewOutDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "Query_SKDSJReportForYNNewOutDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000035Q",
+                  "sequence": "09",
+                  "name": "PrintMXGPackList",
+                  "text": "打印包装清单(墨西哥)",
+                  "sql": "Query_SKDSJReportForMXGOutDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "Query_SKDSJReportForMXGOutDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000035S",
+                  "sequence": "10",
+                  "name": "KDOrderCanel",
+                  "text": "单据禁用",
+                  "sql": "Export_SKDQRCodeDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Export_SKDQRCodeDoMethod.sql"
+                },
+                {
+                  "id": "SMM100000370",
+                  "sequence": "11",
+                  "name": "KDOrderFinishChange",
+                  "text": "变更完成状态",
+                  "sql": "KDOrderFinishChangeDoMethod",
+                  "confirm": true,
+                  "prompt": "确认变更该散件订单的完成状态？",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDOrderFinishChangeDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "ProductByKD_ViewList",
+          "file": "ProductByKD_ViewList.sql",
+          "missing": false
+        },
+        {
+          "name": "SKDBoxLabel_ViewList",
+          "file": "SKDBoxLabel_ViewList.sql",
+          "missing": false
+        }
+      ]
     },
     {
       "id": "MTD1000000OB",
@@ -51,8 +1099,57 @@
       "sequence": "2",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDMO",
+        "columns": [
+          {
+            "name": "KDMOId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "散件工单ID"
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "MOId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工单ID"
+          },
+          {
+            "name": "MOPackQty",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工单包装数"
+          },
+          {
+            "name": "IsExpand",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否展开 1 是 0 否"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          }
+        ]
       },
       "procedures": [
         {
@@ -76,7 +1173,247 @@
           "file": "KDMODeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:35+08:00",
+        "style": "2026-11-19T09:06:35+08:00",
+        "valueList": "2026-11-19T09:06:36+08:00",
+        "MainView": "2026-11-19T09:06:36+08:00",
+        "TreeView": "2026-11-19T09:06:36+08:00",
+        "SaveData": "2026-11-19T09:06:36+08:00",
+        "DeleteView": "2026-11-19T09:06:36+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDMOTreeView",
+          "columns": [
+            {
+              "name": "KDMOId",
+              "text": ""
+            },
+            {
+              "name": "KDOrderInfoId",
+              "text": ""
+            },
+            {
+              "name": "MOId",
+              "text": "工单号ID"
+            },
+            {
+              "name": "IsExpand",
+              "text": "是否展开"
+            },
+            {
+              "name": "MOName",
+              "text": "工单号"
+            },
+            {
+              "name": "ProductName",
+              "text": "产品名称"
+            },
+            {
+              "name": "MOPackQty",
+              "text": "工单包装数"
+            },
+            {
+              "name": "ProductDescription",
+              "text": "料号描述"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDMO",
+          "groups": [
+            {
+              "id": "MFG1000000SD",
+              "sequence": "01",
+              "name": "KDMO Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000005O2",
+                  "sequence": "",
+                  "name": "MOId",
+                  "text": "工单号ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005WL",
+                  "sequence": "",
+                  "name": "IsExpand",
+                  "text": "是否展开",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005O4",
+                  "sequence": "",
+                  "name": "MOName",
+                  "text": "工单号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "MOByKDOrder_ViewListPK",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005O5",
+                  "sequence": "",
+                  "name": "ProductName",
+                  "text": "产品名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000063L",
+                  "sequence": "",
+                  "name": "MOPackQty",
+                  "text": "工单包装数",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            },
+            {
+              "id": "MFG1000000SE",
+              "sequence": "02",
+              "name": "KDMO Button Group",
+              "text": "按钮组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000IO",
+                  "sequence": "01",
+                  "name": "ExpandMOItem",
+                  "text": "展开工单明细",
+                  "sql": "KDOrderExpandItemDoMethod",
+                  "confirm": true,
+                  "prompt": "点击【同步】，将会覆盖当前订单的组件信息，请确定",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDOrderExpandItemDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000IT",
+                  "sequence": "02",
+                  "name": "ClearModuleData",
+                  "text": "清除组件数据",
+                  "sql": "KDOrderClearItemDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDOrderClearItemDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000031A",
+                  "sequence": "03",
+                  "name": "SP_SyncMOItem",
+                  "text": "同步工单物料",
+                  "sql": "SP_SyncMOItemToKDOrderDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "SP_SyncMOItemToKDOrderDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000032J",
+                  "sequence": "04",
+                  "name": "GenerateNextOrder",
+                  "text": "生成下一批次",
+                  "sql": "CopyKDOrderInfoDoMethod",
+                  "confirm": true,
+                  "prompt": "点击后，将会对未发料的物料生成新的CKD订单，请确认",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "CopyKDOrderInfoDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000032W",
+                  "sequence": "05",
+                  "name": "SYNCMOFromTV",
+                  "text": "同步TV工单",
+                  "sql": "KDOrderExpandItemFromTVDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDOrderExpandItemFromTVDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "MOByKDOrder_ViewListPK",
+          "file": "MOByKDOrder_ViewListPK.sql",
+          "missing": false
+        }
+      ]
     },
     {
       "id": "MTD1000000LJ",
@@ -86,8 +1423,217 @@
       "sequence": "3",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDOrderItem",
+        "columns": [
+          {
+            "name": "KDOrderItemId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "KD 订单组件清单表主键"
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "物料品号"
+          },
+          {
+            "name": "CustomerNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "客户编号"
+          },
+          {
+            "name": "ModuleName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "组件号"
+          },
+          {
+            "name": "EnglishDescription",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "英文描述"
+          },
+          {
+            "name": "FieldsA",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "字段A"
+          },
+          {
+            "name": "FieldsB",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "字段B"
+          },
+          {
+            "name": "BOMQtyRequired",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "基本用量"
+          },
+          {
+            "name": "QtyPack",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "包装用量"
+          },
+          {
+            "name": "ItemQtyRequired",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "需求数量"
+          },
+          {
+            "name": "SingleWeight",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "单机重量"
+          },
+          {
+            "name": "UOMId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "单位ID"
+          },
+          {
+            "name": "IsAdd",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否人工添加 1 是 0 否"
+          },
+          {
+            "name": "IsIgnore",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否忽略 1 是 0 否"
+          },
+          {
+            "name": "IsValidity",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否有效 1有效0无效"
+          },
+          {
+            "name": "OQCAffirmUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQC 确认人"
+          },
+          {
+            "name": "OQCAffirmResult",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQC 确认结果 0 默认 1 合格 2 不合格"
+          },
+          {
+            "name": "OQCAffirmDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQC 确认日期"
+          },
+          {
+            "name": "OQAAffirmUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQA 确认人"
+          },
+          {
+            "name": "OQAAffirmResult",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQA 确认结果 0 默认 1 合格 2 不合格"
+          },
+          {
+            "name": "OQAAffirmDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQA 确认日期"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人ID"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "oldQty",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
       },
       "procedures": [
         {
@@ -111,7 +1657,614 @@
           "file": "KDOrderItemDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:36+08:00",
+        "style": "2026-11-19T09:06:37+08:00",
+        "valueList": "2026-11-19T09:06:37+08:00",
+        "MainView": "2026-11-19T09:06:37+08:00",
+        "TreeView": "2026-11-19T09:06:37+08:00",
+        "SaveData": "2026-11-19T09:06:37+08:00",
+        "DeleteView": "2026-11-19T09:06:37+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDOrderItemTreeView",
+          "columns": [
+            {
+              "name": "OrderName",
+              "text": "订单号"
+            },
+            {
+              "name": "CreateUserId",
+              "text": "创建人ID"
+            },
+            {
+              "name": "ProductId",
+              "text": "物料编码"
+            },
+            {
+              "name": "TotalPackQty",
+              "text": ""
+            },
+            {
+              "name": "StockListId",
+              "text": "备料单号"
+            },
+            {
+              "name": "MaterialIssuanceID",
+              "text": ""
+            },
+            {
+              "name": "MaterialIssuanceItemID",
+              "text": ""
+            },
+            {
+              "name": "Scanqty",
+              "text": "已扫数量"
+            },
+            {
+              "name": "KDOrderItemId",
+              "text": ""
+            },
+            {
+              "name": "prdname",
+              "text": "料号"
+            },
+            {
+              "name": "IsValidity",
+              "text": "是否有效"
+            },
+            {
+              "name": "ProductDescription",
+              "text": "料号描述"
+            },
+            {
+              "name": "EngDesc",
+              "text": "英文描述"
+            },
+            {
+              "name": "UOMName",
+              "text": "计量单位"
+            },
+            {
+              "name": "ItemQtyRequired",
+              "text": "需求数量"
+            },
+            {
+              "name": "ItemIssuedQty",
+              "text": "实际发料数量"
+            },
+            {
+              "name": "IsPackQty",
+              "text": "已包装数"
+            },
+            {
+              "name": "出寄存仓数量",
+              "text": ""
+            },
+            {
+              "name": "包装状态",
+              "text": ""
+            },
+            {
+              "name": "ColorControlId",
+              "text": ""
+            },
+            {
+              "name": "KDOrderInfoId",
+              "text": ""
+            },
+            {
+              "name": "ModuleName",
+              "text": "组件号"
+            },
+            {
+              "name": "CustomerNumber",
+              "text": "客户编号"
+            },
+            {
+              "name": "EnglishDescription",
+              "text": "英文描述"
+            },
+            {
+              "name": "FieldsA",
+              "text": "字段A"
+            },
+            {
+              "name": "ProductWeight",
+              "text": "物料单重（KG）"
+            },
+            {
+              "name": "ProductName",
+              "text": "产品名称"
+            },
+            {
+              "name": "BOMQtyRequired",
+              "text": "基本用量"
+            },
+            {
+              "name": "QtyPack",
+              "text": "包装用量"
+            },
+            {
+              "name": "SingleWeight",
+              "text": "单机重量"
+            },
+            {
+              "name": "OQCAffirmUserName",
+              "text": "OQC 确认人"
+            },
+            {
+              "name": "OQCAffirmResult",
+              "text": "OQC 确认结果"
+            },
+            {
+              "name": "OQCAffirmDate",
+              "text": "OQC 确认日期"
+            },
+            {
+              "name": "OQAAffirmUserName",
+              "text": "OQA 确认人"
+            },
+            {
+              "name": "OQAAffirmResult",
+              "text": "OQA 确认结果"
+            },
+            {
+              "name": "OQAAffirmDate",
+              "text": "OQA 确认日期"
+            },
+            {
+              "name": "IsInStorageQty",
+              "text": "已入库数"
+            },
+            {
+              "name": "IsOutStorageQty",
+              "text": "已出库数"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDOrderItem",
+          "groups": [
+            {
+              "id": "MFG1000000NZ",
+              "sequence": "01",
+              "name": "KDOrderItem Default Group",
+              "text": "默认组",
+              "columns": 4,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000006DO",
+                  "sequence": "",
+                  "name": "UOMID",
+                  "text": "单位ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005VT",
+                  "sequence": "",
+                  "name": "CustomerNumber",
+                  "text": "客户编号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005VS",
+                  "sequence": "",
+                  "name": "ModuleName",
+                  "text": "组件号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005VU",
+                  "sequence": "",
+                  "name": "EnglishDescription",
+                  "text": "英文描述",
+                  "type": "nvarchar(500)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005PD",
+                  "sequence": "",
+                  "name": "ProductId",
+                  "text": "物料编码",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005VV",
+                  "sequence": "",
+                  "name": "ProductName",
+                  "text": "产品名称",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "KDProduct_ViewWindow",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FS",
+                  "sequence": "",
+                  "name": "ProductWeight",
+                  "text": "物料单重（KG）",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FT",
+                  "sequence": "",
+                  "name": "FieldsA",
+                  "text": "字段A",
+                  "type": "nvarchar(500)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006DT",
+                  "sequence": "",
+                  "name": "BOMQtyRequired",
+                  "text": "基本用量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005XQ",
+                  "sequence": "",
+                  "name": "QtyPack",
+                  "text": "包装用量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000653",
+                  "sequence": "",
+                  "name": "ItemQtyRequired",
+                  "text": "需求数量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006FU",
+                  "sequence": "",
+                  "name": "SingleWeight",
+                  "text": "单机重量",
+                  "type": "decimal(18,4)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000000JN",
+                  "sequence": "01",
+                  "name": "EditModuleInfo",
+                  "text": "编辑组件信息",
+                  "sql": "KDOrderEditModuleDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "CustomerNumber,ModuleName,EnglishDescription,FieldsA,FieldsB,QtyPack,SingleWeight",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDOrderEditModuleDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000JV",
+                  "sequence": "02",
+                  "name": "IgnoreItem",
+                  "text": "忽略行项",
+                  "sql": "KDOrderIgnoreItemDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDOrderIgnoreItemDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000029M",
+                  "sequence": "03",
+                  "name": "ApplyBoxSNNew",
+                  "text": "箱号申请",
+                  "sql": "ApplyKDBoxSNDoMethod_New",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "BoxLevel,BoxType,Length,Width,Height,NWeight,GWeight,QtyByBox,ApplyQty",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDBoxSNDoMethod_New.sql"
+                },
+                {
+                  "id": "SMM1000000KZ",
+                  "sequence": "04",
+                  "name": "ApplyBoxSN",
+                  "text": "屏箱号申请",
+                  "sql": "ApplyKDBoxSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "BoxLevel,BoxType,Length,Width,Height,NWeight,GWeight,QtyByBox,ApplyQty",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDBoxSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000R2",
+                  "sequence": "05",
+                  "name": "IsValidity",
+                  "text": "是否有效",
+                  "sql": "KDOrderValidityItemDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDOrderValidityItemDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000034M",
+                  "sequence": "06",
+                  "name": "ApplyBoxSNAll",
+                  "text": "箱号一键申请",
+                  "sql": "ApplyKDBoxSNAllDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "BoxLevel,BoxType,Length,Width,Height,NWeight,GWeight,QtyByBox,ApplyQty",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDBoxSNAllDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000034P",
+                  "sequence": "07",
+                  "name": "DeleteBoxSNAll",
+                  "text": "箱号一键撤销",
+                  "sql": "ApplyKDBoxSNAllDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDBoxSNAllDoMethod.sql"
+                }
+              ]
+            },
+            {
+              "id": "MFG1000000WW",
+              "sequence": "02",
+              "name": "KDOrderItem OQCCheck Group",
+              "text": "OQC 检验组",
+              "columns": 4,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000OV",
+                  "sequence": "01",
+                  "name": "OQCOK",
+                  "text": "OQC 合格",
+                  "sql": "Txn_KDCheckAffirmDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Txn_KDCheckAffirmDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000OX",
+                  "sequence": "02",
+                  "name": "OQCNG",
+                  "text": "OQC 不合格",
+                  "sql": "Txn_KDCheckAffirmDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Txn_KDCheckAffirmDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000P0",
+                  "sequence": "03",
+                  "name": "OQCRepeal",
+                  "text": "OQC 撤销",
+                  "sql": "Txn_KDCheckAffirmDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Txn_KDCheckAffirmDoMethod.sql"
+                }
+              ]
+            },
+            {
+              "id": "MFG1000000WX",
+              "sequence": "03",
+              "name": "KDOrderItem OQACheck Group",
+              "text": "OQA 检验组",
+              "columns": 4,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000OY",
+                  "sequence": "01",
+                  "name": "OQAOK",
+                  "text": "OQA 合格",
+                  "sql": "Txn_KDCheckAffirmDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Txn_KDCheckAffirmDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000OZ",
+                  "sequence": "02",
+                  "name": "OQANG",
+                  "text": "OQA 不合格",
+                  "sql": "Txn_KDCheckAffirmDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Txn_KDCheckAffirmDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000P1",
+                  "sequence": "03",
+                  "name": "OQARepeal",
+                  "text": "OQA 撤销",
+                  "sql": "Txn_KDCheckAffirmDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "Txn_KDCheckAffirmDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "KDProduct_ViewWindow",
+          "file": "KDProduct_ViewWindow.sql",
+          "missing": false
+        }
+      ]
     },
     {
       "id": "MTD1000000PH",
@@ -121,8 +2274,105 @@
       "sequence": "4",
       "depth": 3,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDOrderItemRule",
+        "columns": [
+          {
+            "name": "KDOrderItemRuleId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "散件订单明细规则表主键"
+          },
+          {
+            "name": "KDOrderItemId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单明细ID"
+          },
+          {
+            "name": "FewHex",
+            "type": "varchar(30)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "几进制"
+          },
+          {
+            "name": "AllBits",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "总位数"
+          },
+          {
+            "name": "PrefixBits",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "头几位"
+          },
+          {
+            "name": "StartBits",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "起始位"
+          },
+          {
+            "name": "EndBits",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "结束位"
+          },
+          {
+            "name": "MinValue",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "最小值"
+          },
+          {
+            "name": "MaxValue",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "最大值"
+          },
+          {
+            "name": "IsSole",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否唯一 是/否"
+          },
+          {
+            "name": "ContainsChar",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "包含字符"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          }
+        ]
       },
       "procedures": [
         {
@@ -146,7 +2396,224 @@
           "file": "KDOrderItemRuleDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:37+08:00",
+        "style": "2026-11-19T09:06:38+08:00",
+        "valueList": "2026-11-19T09:06:38+08:00",
+        "MainView": "2026-11-19T09:06:38+08:00",
+        "TreeView": "2026-11-19T09:06:38+08:00",
+        "SaveData": "2026-11-19T09:06:38+08:00",
+        "DeleteView": "2026-11-19T09:06:38+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDOrderItemRuleTreeView",
+          "columns": [
+            {
+              "name": "KDOrderItemRuleId",
+              "text": ""
+            },
+            {
+              "name": "KDOrderItemId",
+              "text": ""
+            },
+            {
+              "name": "FewHex",
+              "text": "几进制"
+            },
+            {
+              "name": "AllBits",
+              "text": "总位数"
+            },
+            {
+              "name": "PrefixBits",
+              "text": "头几位"
+            },
+            {
+              "name": "StartBits",
+              "text": "起始位"
+            },
+            {
+              "name": "EndBits",
+              "text": "结束位"
+            },
+            {
+              "name": "MinValue",
+              "text": "最小值"
+            },
+            {
+              "name": "MaxValue",
+              "text": "最大值"
+            },
+            {
+              "name": "IsSole",
+              "text": "是否唯一"
+            },
+            {
+              "name": "ContainsChar",
+              "text": "包含字符"
+            },
+            {
+              "name": "CreateDate",
+              "text": "创建时间"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDOrderItemRule",
+          "groups": [
+            {
+              "id": "MFG1000000U7",
+              "sequence": "01",
+              "name": "KDOrderItemRule Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000005X5",
+                  "sequence": "",
+                  "name": "FewHex",
+                  "text": "几进制",
+                  "type": "varchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "FewHex_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005X6",
+                  "sequence": "",
+                  "name": "AllBits",
+                  "text": "总位数",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005X7",
+                  "sequence": "",
+                  "name": "PrefixBits",
+                  "text": "头几位",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005X8",
+                  "sequence": "",
+                  "name": "StartBits",
+                  "text": "起始位",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005X9",
+                  "sequence": "",
+                  "name": "EndBits",
+                  "text": "结束位",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005XA",
+                  "sequence": "",
+                  "name": "MinValue",
+                  "text": "最小值",
+                  "type": "varchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005XB",
+                  "sequence": "",
+                  "name": "MaxValue",
+                  "text": "最大值",
+                  "type": "varchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005XC",
+                  "sequence": "",
+                  "name": "IsSole",
+                  "text": "是否唯一",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005XD",
+                  "sequence": "",
+                  "name": "ContainsChar",
+                  "text": "包含字符",
+                  "type": "varchar(30)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": []
     },
     {
       "id": "MTD1000000RA",
@@ -156,8 +2623,89 @@
       "sequence": "4",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDCheckItem",
+        "columns": [
+          {
+            "name": "KDCheckItemId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "散件抽检明细表主键"
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "CheckType",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "检验类别 OQC/OQA"
+          },
+          {
+            "name": "BoxSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号"
+          },
+          {
+            "name": "DefectCodeName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "确认代码"
+          },
+          {
+            "name": "DefectDescription",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "确认描述"
+          },
+          {
+            "name": "Operator",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "人员"
+          },
+          {
+            "name": "CheckDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "检验日期"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效 1 是 0 否"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          }
+        ]
       },
       "procedures": [
         {
@@ -171,7 +2719,161 @@
           "file": "KDCheckItemTreeView.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:38+08:00",
+        "style": "2026-11-19T09:06:38+08:00",
+        "valueList": "2026-11-19T09:06:39+08:00",
+        "MainView": "2026-11-19T09:06:39+08:00",
+        "TreeView": "2026-11-19T09:06:39+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDCheckItemTreeView",
+          "columns": [
+            {
+              "name": "KDCheckItemId",
+              "text": ""
+            },
+            {
+              "name": "CheckType",
+              "text": "盘点类别"
+            },
+            {
+              "name": "BoxSN",
+              "text": "箱号"
+            },
+            {
+              "name": "BoxNumber",
+              "text": "外箱编号"
+            },
+            {
+              "name": "DefectCodeName",
+              "text": "缺陷代码"
+            },
+            {
+              "name": "DefectDescription",
+              "text": "缺陷描述"
+            },
+            {
+              "name": "Operator",
+              "text": "操作员"
+            },
+            {
+              "name": "CheckDate",
+              "text": "检测日期"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDCheckItem",
+          "groups": [
+            {
+              "id": "MFG1000000WY",
+              "sequence": "01",
+              "name": "KDCheckItem Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF10000068O",
+                  "sequence": "",
+                  "name": "CheckType",
+                  "text": "盘点类别",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000068P",
+                  "sequence": "",
+                  "name": "BoxSN",
+                  "text": "箱号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000068Q",
+                  "sequence": "",
+                  "name": "DefectCodeName",
+                  "text": "缺陷代码",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000068R",
+                  "sequence": "",
+                  "name": "DefectDescription",
+                  "text": "缺陷描述",
+                  "type": "nvarchar(100)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000068S",
+                  "sequence": "",
+                  "name": "Operator",
+                  "text": "操作员",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000068T",
+                  "sequence": "",
+                  "name": "CheckDate",
+                  "text": "检测日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": []
     },
     {
       "id": "MTD1000000LK",
@@ -181,8 +2883,193 @@
       "sequence": "5",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDBoxInfo",
+        "columns": [
+          {
+            "name": "KDBoxInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "BoxNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxLevel",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号层级 A4\\A2\\A0"
+          },
+          {
+            "name": "BoxType",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号类别 A0\\A2\\A4"
+          },
+          {
+            "name": "BoxLength",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的长度"
+          },
+          {
+            "name": "BoxWidth",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的宽度"
+          },
+          {
+            "name": "BoxHeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的高度"
+          },
+          {
+            "name": "NetWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "净重"
+          },
+          {
+            "name": "GrossWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "毛重"
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否打印"
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "打印次数"
+          },
+          {
+            "name": "IsBox",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否包装外箱 1 是 0 否"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人ID"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "Container",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "车号"
+          },
+          {
+            "name": "DeliveryName",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "送货单号"
+          },
+          {
+            "name": "ScanOperator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "操作工号"
+          },
+          {
+            "name": "IssuerDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSeq",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
       },
       "procedures": [
         {
@@ -201,7 +3088,291 @@
           "file": "KDBoxInfoSaveData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:39+08:00",
+        "style": "2026-11-19T09:06:39+08:00",
+        "valueList": "2026-11-19T09:06:39+08:00",
+        "MainView": "2026-11-19T09:06:39+08:00",
+        "TreeView": "2026-11-19T09:06:39+08:00",
+        "SaveData": "2026-11-19T09:06:40+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDBoxInfoTreeView",
+          "columns": [
+            {
+              "name": "KDBoxInfoId",
+              "text": ""
+            },
+            {
+              "name": "BoxNumber",
+              "text": "外箱编号"
+            },
+            {
+              "name": "BoxLevel",
+              "text": "箱号层级"
+            },
+            {
+              "name": "BoxSN",
+              "text": "箱号"
+            },
+            {
+              "name": "BoxType",
+              "text": "箱子类别"
+            },
+            {
+              "name": "BoxLength",
+              "text": "纸箱长度（MM）"
+            },
+            {
+              "name": "BoxWidth",
+              "text": "纸箱宽度（MM）"
+            },
+            {
+              "name": "BoxHeight",
+              "text": "纸箱高度（MM）"
+            },
+            {
+              "name": "NetWeight",
+              "text": "净重"
+            },
+            {
+              "name": "GrossWeight",
+              "text": "毛重"
+            },
+            {
+              "name": "maxKDBoxInfoid",
+              "text": ""
+            },
+            {
+              "name": "BoxTypeDesc",
+              "text": "箱号类别描述"
+            },
+            {
+              "name": "BoxQty",
+              "text": "箱数量"
+            },
+            {
+              "name": "StartBoxSN",
+              "text": "起始箱"
+            },
+            {
+              "name": "EndBoxSN",
+              "text": "截止箱"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDBoxInfo",
+          "groups": [
+            {
+              "id": "MFG1000000O0",
+              "sequence": "01",
+              "name": "KDBoxInfo Default Group",
+              "text": "默认组",
+              "columns": 4,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000E7M",
+                  "sequence": "",
+                  "name": "BoxNumber",
+                  "text": "外箱编号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E7N",
+                  "sequence": "",
+                  "name": "BoxSN",
+                  "text": "箱号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005W9",
+                  "sequence": "",
+                  "name": "BoxLevel",
+                  "text": "箱号层级",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005WA",
+                  "sequence": "",
+                  "name": "BoxType",
+                  "text": "箱子类别",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "KDBoxType_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E7O",
+                  "sequence": "",
+                  "name": "BoxLength",
+                  "text": "纸箱长度（MM）",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E7P",
+                  "sequence": "",
+                  "name": "BoxWidth",
+                  "text": "纸箱宽度（MM）",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E7Q",
+                  "sequence": "",
+                  "name": "BoxHeight",
+                  "text": "纸箱高度（MM）",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E7R",
+                  "sequence": "",
+                  "name": "NetWeight",
+                  "text": "净重",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E7S",
+                  "sequence": "",
+                  "name": "GrossWeight",
+                  "text": "毛重",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000005W5",
+                  "sequence": "",
+                  "name": "KDBoxInfoId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006E2",
+                  "sequence": "",
+                  "name": "LabelTypeId",
+                  "text": "",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006E3",
+                  "sequence": "",
+                  "name": "LabelType",
+                  "text": "标签模板",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "KDLabelType_ViewList",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "KDBoxType_ViewList",
+          "file": "KDBoxType_ViewList.sql",
+          "missing": false
+        },
+        {
+          "name": "KDLabelType_ViewList",
+          "file": "KDLabelType_ViewList.sql",
+          "missing": false
+        }
+      ]
     },
     {
       "id": "MTD1000000PE",
@@ -211,8 +3382,193 @@
       "sequence": "6",
       "depth": 3,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDBoxInfo",
+        "columns": [
+          {
+            "name": "KDBoxInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "BoxNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxLevel",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号层级 A4\\A2\\A0"
+          },
+          {
+            "name": "BoxType",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号类别 A0\\A2\\A4"
+          },
+          {
+            "name": "BoxLength",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的长度"
+          },
+          {
+            "name": "BoxWidth",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的宽度"
+          },
+          {
+            "name": "BoxHeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的高度"
+          },
+          {
+            "name": "NetWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "净重"
+          },
+          {
+            "name": "GrossWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "毛重"
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否打印"
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "打印次数"
+          },
+          {
+            "name": "IsBox",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否包装外箱 1 是 0 否"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人ID"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "Container",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "车号"
+          },
+          {
+            "name": "DeliveryName",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "送货单号"
+          },
+          {
+            "name": "ScanOperator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "操作工号"
+          },
+          {
+            "name": "IssuerDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSeq",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
       },
       "procedures": [
         {
@@ -231,7 +3587,363 @@
           "file": "KDBoxInfoSaveData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:40+08:00",
+        "style": "2026-11-19T09:06:40+08:00",
+        "valueList": "2026-11-19T09:06:40+08:00",
+        "MainView": "2026-11-19T09:06:40+08:00",
+        "TreeView": "2026-11-19T09:06:40+08:00",
+        "SaveData": "2026-11-19T09:06:40+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDBoxInfoItemTreeView",
+          "columns": [
+            {
+              "name": "KDBoxInfoId",
+              "text": ""
+            },
+            {
+              "name": "BoxSN",
+              "text": "箱号"
+            },
+            {
+              "name": "BoxNumber",
+              "text": "外箱编号"
+            },
+            {
+              "name": "BoxLength",
+              "text": "纸箱长度（MM）"
+            },
+            {
+              "name": "BoxWidth",
+              "text": "纸箱宽度（MM）"
+            },
+            {
+              "name": "BoxHeight",
+              "text": "纸箱高度（MM）"
+            },
+            {
+              "name": "NetWeight",
+              "text": "净重"
+            },
+            {
+              "name": "GrossWeight",
+              "text": "毛重"
+            },
+            {
+              "name": "IsPrint",
+              "text": "是否打印"
+            },
+            {
+              "name": "PrintCount",
+              "text": "打印次数"
+            },
+            {
+              "name": "PackQty",
+              "text": "最小包数量"
+            },
+            {
+              "name": "LotSN",
+              "text": "批号"
+            },
+            {
+              "name": "PCount",
+              "text": "物料种数"
+            },
+            {
+              "name": "ShipPalletId",
+              "text": ""
+            },
+            {
+              "name": "IsPallet",
+              "text": "扫描是否是栈板"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDBoxInfoItem",
+          "groups": [
+            {
+              "id": "MFG1000000U2",
+              "sequence": "01",
+              "name": "KDBoxInfoItem Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000E97",
+                  "sequence": "",
+                  "name": "BoxSN",
+                  "text": "箱号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000EQ1",
+                  "sequence": "",
+                  "name": "BoxType",
+                  "text": "箱子类别",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E9A",
+                  "sequence": "",
+                  "name": "BoxLength",
+                  "text": "纸箱长度（MM）",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E9B",
+                  "sequence": "",
+                  "name": "BoxWidth",
+                  "text": "纸箱宽度（MM）",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E9C",
+                  "sequence": "",
+                  "name": "BoxHeight",
+                  "text": "纸箱高度（MM）",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E9D",
+                  "sequence": "",
+                  "name": "NetWeight",
+                  "text": "净重",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E9E",
+                  "sequence": "",
+                  "name": "GrossWeight",
+                  "text": "毛重",
+                  "type": "decimal(18,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000000KO",
+                  "sequence": "01",
+                  "name": "KDPrintBoxSN",
+                  "text": "打印箱号",
+                  "sql": "KDPrintBoxSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartBoxSN,EndBoxSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "KDPrintBoxSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000O7",
+                  "sequence": "02",
+                  "name": "CancelBoxSN",
+                  "text": "取消箱号",
+                  "sql": "KDCancelBoxSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartBoxSN,EndBoxSN",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDCancelBoxSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000M1",
+                  "sequence": "03",
+                  "name": "ImportBoxLot",
+                  "text": "导入外箱成品",
+                  "sql": "KDBoxLotImportDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "OrderName,ImportQty",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDBoxLotImportDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000027T",
+                  "sequence": "04",
+                  "name": "ExportKDBoxInfoItem",
+                  "text": "导出",
+                  "sql": "KDBoxInfoItemProDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDBoxInfoItemProDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000029P",
+                  "sequence": "05",
+                  "name": "PrintBoxSNLable",
+                  "text": "打印箱号",
+                  "sql": "Txn_SKDBoxLabelPrintDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "NewStartBoxSN,NewEndBoxSN,BoxLabelName",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "Txn_SKDBoxLabelPrintDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002Z9",
+                  "sequence": "06",
+                  "name": "KDPrintBoxSNDetail",
+                  "text": "打印箱唛（明细）",
+                  "sql": "KDPrintBoxSNDetailDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartBoxSN,EndBoxSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "KDPrintBoxSNDetailDoMethod.sql"
+                }
+              ]
+            },
+            {
+              "id": "MFG1000000YL",
+              "sequence": "02",
+              "name": "KDBoxInfoItem Print Group",
+              "text": "MRZ打印",
+              "columns": 3,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000R9",
+                  "sequence": "01",
+                  "name": "KDPrintInnerBoxSN",
+                  "text": "打印",
+                  "sql": "KDPrintInnerBoxSNDoMethod",
+                  "confirm": false,
+                  "prompt": "StartBoxSN,EndBoxSN",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartBoxSN,EndBoxSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "KDPrintInnerBoxSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000RA",
+                  "sequence": "02",
+                  "name": "KDPrintMediumBoxSN",
+                  "text": "一层拼箱",
+                  "sql": "KDPrintMediumBoxSNDoMethod",
+                  "confirm": false,
+                  "prompt": "StartBoxSN,EndBoxSN",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartBoxSN,EndBoxSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "KDPrintMediumBoxSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000RB",
+                  "sequence": "03",
+                  "name": "KDPrintOuterBoxSN",
+                  "text": "两层拼箱",
+                  "sql": "KDPrintOuterBoxSNDoMethod",
+                  "confirm": false,
+                  "prompt": "StartBoxSN,EndBoxSN",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartBoxSN,EndBoxSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "KDPrintOuterBoxSNDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": []
     },
     {
       "id": "MTD1000000S5",
@@ -241,8 +3953,193 @@
       "sequence": "7",
       "depth": 3,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDBoxInfo",
+        "columns": [
+          {
+            "name": "KDBoxInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "BoxNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxLevel",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号层级 A4\\A2\\A0"
+          },
+          {
+            "name": "BoxType",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号类别 A0\\A2\\A4"
+          },
+          {
+            "name": "BoxLength",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的长度"
+          },
+          {
+            "name": "BoxWidth",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的宽度"
+          },
+          {
+            "name": "BoxHeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的高度"
+          },
+          {
+            "name": "NetWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "净重"
+          },
+          {
+            "name": "GrossWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "毛重"
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否打印"
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "打印次数"
+          },
+          {
+            "name": "IsBox",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否包装外箱 1 是 0 否"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人ID"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "Container",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "车号"
+          },
+          {
+            "name": "DeliveryName",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "送货单号"
+          },
+          {
+            "name": "ScanOperator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "操作工号"
+          },
+          {
+            "name": "IssuerDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSeq",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
       },
       "procedures": [
         {
@@ -256,7 +4153,184 @@
           "file": "KDBoxInfoItemProTreeView.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:41+08:00",
+        "style": "2026-11-19T09:06:41+08:00",
+        "valueList": "2026-11-19T09:06:41+08:00",
+        "MainView": "2026-11-19T09:06:41+08:00",
+        "TreeView": "2026-11-19T09:06:41+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDBoxInfoItemProTreeView",
+          "columns": [
+            {
+              "name": "KDBoxInfoId",
+              "text": ""
+            },
+            {
+              "name": "BoxSN",
+              "text": "箱号"
+            },
+            {
+              "name": "BoxNumber",
+              "text": "外箱编号"
+            },
+            {
+              "name": "ProductName",
+              "text": "产品名称"
+            },
+            {
+              "name": "ModuleName",
+              "text": "组件号"
+            },
+            {
+              "name": "PackQty",
+              "text": "最小包数量"
+            },
+            {
+              "name": "BoxLength",
+              "text": "纸箱长度（MM）"
+            },
+            {
+              "name": "BoxWidth",
+              "text": "纸箱宽度（MM）"
+            },
+            {
+              "name": "BoxHeight",
+              "text": "纸箱高度（MM）"
+            },
+            {
+              "name": "NetWeight",
+              "text": "净重"
+            },
+            {
+              "name": "GrossWeight",
+              "text": "毛重"
+            },
+            {
+              "name": "IsPrint",
+              "text": "是否打印"
+            },
+            {
+              "name": "LotSN",
+              "text": "批号"
+            },
+            {
+              "name": "PCount",
+              "text": "物料种数"
+            },
+            {
+              "name": "ShipPalletId",
+              "text": ""
+            },
+            {
+              "name": "IsPallet",
+              "text": "扫描是否是栈板"
+            },
+            {
+              "name": "PrintCount",
+              "text": "打印次数"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDBoxInfoItemPro",
+          "groups": [
+            {
+              "id": "MFG1000000Y8",
+              "sequence": "01",
+              "name": "KDBoxInfoItem Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000006DP",
+                  "sequence": "",
+                  "name": "KDBoxInfoId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006DQ",
+                  "sequence": "",
+                  "name": "StartBoxSN",
+                  "text": "起始箱",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006DR",
+                  "sequence": "",
+                  "name": "EndBoxSN",
+                  "text": "截止箱",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006DS",
+                  "sequence": "",
+                  "name": "OrderName",
+                  "text": "订单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM10000027S",
+                  "sequence": "01",
+                  "name": "ExportKDBoxInfoItemPro",
+                  "text": "导出",
+                  "sql": "KDBoxInfoItemProDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "KDBoxInfoItemProDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": []
     },
     {
       "id": "MTD1000000S6",
@@ -266,8 +4340,193 @@
       "sequence": "8",
       "depth": 3,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDBoxInfo",
+        "columns": [
+          {
+            "name": "KDBoxInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "BoxNumber",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱编号"
+          },
+          {
+            "name": "BoxLevel",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号层级 A4\\A2\\A0"
+          },
+          {
+            "name": "BoxType",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号类别 A0\\A2\\A4"
+          },
+          {
+            "name": "BoxLength",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的长度"
+          },
+          {
+            "name": "BoxWidth",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的宽度"
+          },
+          {
+            "name": "BoxHeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱的高度"
+          },
+          {
+            "name": "NetWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "净重"
+          },
+          {
+            "name": "GrossWeight",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "毛重"
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否打印"
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "打印次数"
+          },
+          {
+            "name": "IsBox",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否包装外箱 1 是 0 否"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人ID"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "Container",
+            "type": "varchar(30)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "车号"
+          },
+          {
+            "name": "DeliveryName",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "送货单号"
+          },
+          {
+            "name": "ScanOperator",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "操作工号"
+          },
+          {
+            "name": "IssuerDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "BoxSeq",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          }
+        ]
       },
       "procedures": [
         {
@@ -281,7 +4540,115 @@
           "file": "KDLoadBoxTreeView.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:41+08:00",
+        "style": "2026-11-19T09:06:41+08:00",
+        "valueList": "2026-11-19T09:06:41+08:00",
+        "MainView": "2026-11-19T09:06:41+08:00",
+        "TreeView": "2026-11-19T09:06:42+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDLoadBoxTreeView",
+          "columns": [
+            {
+              "name": "OuterBox",
+              "text": "外箱"
+            },
+            {
+              "name": "InnerBox",
+              "text": "内箱"
+            },
+            {
+              "name": "BoxType",
+              "text": "箱子类别"
+            },
+            {
+              "name": "BoxLevel",
+              "text": "箱号层级"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDBoxDetail",
+          "groups": [
+            {
+              "id": "MFG1000000Y9",
+              "sequence": "01",
+              "name": "KDBoxInfoItem Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000006DU",
+                  "sequence": "",
+                  "name": "KDBoxInfoId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006DV",
+                  "sequence": "",
+                  "name": "StartBoxSN",
+                  "text": "起始箱",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006DW",
+                  "sequence": "",
+                  "name": "EndBoxSN",
+                  "text": "截止箱",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006DX",
+                  "sequence": "",
+                  "name": "OrderName",
+                  "text": "订单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": []
     },
     {
       "id": "MTD1000000LL",
@@ -291,8 +4658,217 @@
       "sequence": "9",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDPalletInfo",
+        "columns": [
+          {
+            "name": "KDPalletInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "PalletSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板号"
+          },
+          {
+            "name": "DeliveryOrderitemid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "ID号"
+          },
+          {
+            "name": "StorageStatus",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "库存状态 0 默认 1 在库 2 出库"
+          },
+          {
+            "name": "InUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "入库人员"
+          },
+          {
+            "name": "InDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "入库时间"
+          },
+          {
+            "name": "OutUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "出库人员"
+          },
+          {
+            "name": "OutDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "出库时间"
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否打印  1 是 0 否"
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "打印次数"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效 1 是 0 否"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "CountQty",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板容量"
+          },
+          {
+            "name": "PallteType",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PNETWEIGHT",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板净重"
+          },
+          {
+            "name": "PGROSSWEIGHT",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板毛重"
+          },
+          {
+            "name": "L",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "长"
+          },
+          {
+            "name": "W",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "宽"
+          },
+          {
+            "name": "H",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "高"
+          },
+          {
+            "name": "QCStatus",
+            "type": "varchar(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "报检状态"
+          },
+          {
+            "name": "Volume",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "体积"
+          },
+          {
+            "name": "OQAResult",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQA判定"
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "QCDefect",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "不良描述"
+          }
+        ]
       },
       "procedures": [
         {
@@ -306,7 +4882,269 @@
           "file": "KDPalletInfoTreeView.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:42+08:00",
+        "style": "2026-11-19T09:06:42+08:00",
+        "valueList": "2026-11-19T09:06:42+08:00",
+        "MainView": "2026-11-19T09:06:42+08:00",
+        "TreeView": "2026-11-19T09:06:42+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDPalletInfoTreeView",
+          "columns": [
+            {
+              "name": "KDPalletInfoId",
+              "text": ""
+            },
+            {
+              "name": "PalletSN",
+              "text": "栈板号"
+            },
+            {
+              "name": "BoxSn",
+              "text": "箱号"
+            },
+            {
+              "name": "CountQty",
+              "text": "栈板容量"
+            },
+            {
+              "name": "bindqty",
+              "text": "已拼数量"
+            },
+            {
+              "name": "qty",
+              "text": "需求数量"
+            },
+            {
+              "name": "L",
+              "text": "长"
+            },
+            {
+              "name": "W",
+              "text": "宽"
+            },
+            {
+              "name": "H",
+              "text": "高"
+            },
+            {
+              "name": "PNETWEIGHT",
+              "text": "栈板净重"
+            },
+            {
+              "name": "PGROSSWEIGHT",
+              "text": "栈板毛重"
+            },
+            {
+              "name": "ProductDescription",
+              "text": "料号描述"
+            },
+            {
+              "name": "prdname",
+              "text": "料号"
+            },
+            {
+              "name": "NetWeight",
+              "text": "净重"
+            },
+            {
+              "name": "LotSN",
+              "text": "批号"
+            },
+            {
+              "name": "LotQty",
+              "text": "批次数量"
+            },
+            {
+              "name": "PrintCount",
+              "text": "打印次数"
+            },
+            {
+              "name": "IsUsed",
+              "text": "是否使用"
+            },
+            {
+              "name": "净重",
+              "text": ""
+            },
+            {
+              "name": "毛重",
+              "text": ""
+            },
+            {
+              "name": "QCStatus",
+              "text": "报检状态"
+            },
+            {
+              "name": "QCDefect",
+              "text": "不良描述"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDPalletInfo",
+          "groups": [
+            {
+              "id": "MFG1000000O4",
+              "sequence": "02",
+              "name": "KDPalletInfo Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000005VP",
+                  "sequence": "",
+                  "name": "KDPalletInfoId",
+                  "text": "",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000061H",
+                  "sequence": "",
+                  "name": "StartPalletSN",
+                  "text": "",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000061I",
+                  "sequence": "",
+                  "name": "EndPalletSN",
+                  "text": "",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000000CX",
+                  "sequence": "01",
+                  "name": "ApplyPalletSN",
+                  "text": "申请栈板号",
+                  "sql": "ApplyKDPalletSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "ApplyQty,PalletQty",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDPalletSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000CY",
+                  "sequence": "03",
+                  "name": "PrintPalletSN",
+                  "text": "打印栈板号",
+                  "sql": "PrintKDPalletSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartPalletSN,EndPalletSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "PrintKDPalletSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002DR",
+                  "sequence": "04",
+                  "name": "UpdateIscancelPalletSN",
+                  "text": "撤销栈板",
+                  "sql": "UpdateIsCancelKDPalletSNDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartPalletSN,EndPalletSN",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "UpdateIsCancelKDPalletSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000029O",
+                  "sequence": "07",
+                  "name": "PrintPalletSNLable",
+                  "text": "打印栈板号(新)",
+                  "sql": "KDPrintSNLableDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "NewStartPalletSN,NewEndPalletSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "KDPrintSNLableDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000034O",
+                  "sequence": "08",
+                  "name": "ApplyPalletSNAll",
+                  "text": "一键申请栈板号",
+                  "sql": "ApplyKDPalletSNAllDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "PalletQty,QtyByBox,IsFirst",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDPalletSNAllDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000034Q",
+                  "sequence": "09",
+                  "name": "DeletePalletSNAll",
+                  "text": "一键撤销栈板号",
+                  "sql": "ApplyKDPalletSNAllDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDPalletSNAllDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": []
     },
     {
       "id": "MTD1000000RB",
@@ -316,8 +5154,65 @@
       "sequence": "91",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDModuleOrder",
+        "columns": [
+          {
+            "name": "KDModuleOrderId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "模组订单表主键"
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单"
+          },
+          {
+            "name": "BoxLevel",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱层级"
+          },
+          {
+            "name": "BoxType",
+            "type": "varchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "外箱类别"
+          },
+          {
+            "name": "CurrentBatchQty",
+            "type": "decimal(10,2)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "当前批次数量"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          }
+        ]
       },
       "procedures": [
         {
@@ -341,7 +5236,137 @@
           "file": "KDModuleOrderDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:43+08:00",
+        "style": "2026-11-19T09:06:43+08:00",
+        "valueList": "2026-11-19T09:06:43+08:00",
+        "MainView": "2026-11-19T09:06:43+08:00",
+        "TreeView": "2026-11-19T09:06:43+08:00",
+        "SaveData": "2026-11-19T09:06:43+08:00",
+        "DeleteView": "2026-11-19T09:06:43+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDModuleOrderTreeView",
+          "columns": [
+            {
+              "name": "KDModuleOrderId",
+              "text": ""
+            },
+            {
+              "name": "OrderName",
+              "text": "订单号"
+            },
+            {
+              "name": "BoxLevel",
+              "text": "箱号层级"
+            },
+            {
+              "name": "BoxType",
+              "text": "箱子类别"
+            },
+            {
+              "name": "CurrentBatchQty",
+              "text": "当前批次数量"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDModuleOrder",
+          "groups": [
+            {
+              "id": "MFG1000000WZ",
+              "sequence": "01",
+              "name": "KDModuleOrder Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF10000068V",
+                  "sequence": "",
+                  "name": "OrderName",
+                  "text": "订单号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "KDRelateOrderName_ViewListPK",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000068W",
+                  "sequence": "",
+                  "name": "BoxLevel",
+                  "text": "箱号层级",
+                  "type": "varchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "KDBoxLevel_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000068X",
+                  "sequence": "",
+                  "name": "BoxType",
+                  "text": "箱子类别",
+                  "type": "varchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "KDBoxType_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000007YV",
+                  "sequence": "",
+                  "name": "CurrentBatchQty",
+                  "text": "当前批次数量",
+                  "type": "decimal(10,2)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "KDRelateOrderName_ViewListPK",
+          "file": "KDRelateOrderName_ViewListPK.sql",
+          "missing": false
+        },
+        {
+          "name": "KDBoxLevel_ViewList",
+          "file": "KDBoxLevel_ViewList.sql",
+          "missing": false
+        },
+        {
+          "name": "KDBoxType_ViewList",
+          "file": "KDBoxType_ViewList.sql",
+          "missing": false
+        }
+      ]
     },
     {
       "id": "MTD1000002AU",
@@ -351,8 +5376,217 @@
       "sequence": "91",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "KDPalletInfo",
+        "columns": [
+          {
+            "name": "KDPalletInfoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "散件订单ID"
+          },
+          {
+            "name": "OrderName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "PalletSN",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板号"
+          },
+          {
+            "name": "DeliveryOrderitemid",
+            "type": "varchar(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "ID号"
+          },
+          {
+            "name": "StorageStatus",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "库存状态 0 默认 1 在库 2 出库"
+          },
+          {
+            "name": "InUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "入库人员"
+          },
+          {
+            "name": "InDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "入库时间"
+          },
+          {
+            "name": "OutUser",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "出库人员"
+          },
+          {
+            "name": "OutDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "出库时间"
+          },
+          {
+            "name": "IsPrint",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否打印  1 是 0 否"
+          },
+          {
+            "name": "PrintCount",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "打印次数"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效 1 是 0 否"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          },
+          {
+            "name": "CountQty",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板容量"
+          },
+          {
+            "name": "PallteType",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": ""
+          },
+          {
+            "name": "PNETWEIGHT",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板净重"
+          },
+          {
+            "name": "PGROSSWEIGHT",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板毛重"
+          },
+          {
+            "name": "L",
+            "type": "nvarchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "长"
+          },
+          {
+            "name": "W",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "宽"
+          },
+          {
+            "name": "H",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "高"
+          },
+          {
+            "name": "QCStatus",
+            "type": "varchar(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "报检状态"
+          },
+          {
+            "name": "Volume",
+            "type": "decimal(18,4)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "体积"
+          },
+          {
+            "name": "OQAResult",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "OQA判定"
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "QCDefect",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "不良描述"
+          }
+        ]
       },
       "procedures": [
         {
@@ -371,7 +5605,262 @@
           "file": "KDPalletSaveData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:44+08:00",
+        "style": "2026-11-19T09:06:44+08:00",
+        "valueList": "2026-11-19T09:06:44+08:00",
+        "MainView": "2026-11-19T09:06:44+08:00",
+        "TreeView": "2026-11-19T09:06:44+08:00",
+        "SaveData": "2026-11-19T09:06:44+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "KDPalletTreeView",
+          "columns": [
+            {
+              "name": "KDPalletInfoId",
+              "text": ""
+            },
+            {
+              "name": "PalletSN",
+              "text": "栈板号"
+            },
+            {
+              "name": "CountQty",
+              "text": "栈板容量"
+            },
+            {
+              "name": "L",
+              "text": "长"
+            },
+            {
+              "name": "W",
+              "text": "宽"
+            },
+            {
+              "name": "H",
+              "text": "高"
+            },
+            {
+              "name": "PNETWEIGHT",
+              "text": "栈板净重"
+            },
+            {
+              "name": "PGROSSWEIGHT",
+              "text": "栈板毛重"
+            },
+            {
+              "name": "PrintCount",
+              "text": "打印次数"
+            }
+          ]
+        },
+        "main": {
+          "name": "KDPallet",
+          "groups": [
+            {
+              "id": "MFG1000002RJ",
+              "sequence": "02",
+              "name": "KDPalletInfo Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000E7Y",
+                  "sequence": "",
+                  "name": "PalletSN",
+                  "text": "栈板号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E7Z",
+                  "sequence": "",
+                  "name": "CountQty",
+                  "text": "栈板容量",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E82",
+                  "sequence": "",
+                  "name": "L",
+                  "text": "长",
+                  "type": "nvarchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E83",
+                  "sequence": "",
+                  "name": "W",
+                  "text": "宽",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E84",
+                  "sequence": "",
+                  "name": "H",
+                  "text": "高",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E80",
+                  "sequence": "",
+                  "name": "PNETWEIGHT",
+                  "text": "栈板净重",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E81",
+                  "sequence": "",
+                  "name": "PGROSSWEIGHT",
+                  "text": "栈板毛重",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000002Z3",
+                  "sequence": "01",
+                  "name": "ApplyPalletSN",
+                  "text": "申请栈板号",
+                  "sql": "ApplyKDPalletSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "ApplyQty,PalletQty",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "ApplyKDPalletSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002Z4",
+                  "sequence": "03",
+                  "name": "PrintPalletSN",
+                  "text": "打印栈板号",
+                  "sql": "PrintKDPalletSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartPalletSN,EndPalletSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "PrintKDPalletSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002Z6",
+                  "sequence": "04",
+                  "name": "UpdateIscancelPalletSN",
+                  "text": "撤销栈板",
+                  "sql": "UpdateIsCancelKDPalletSNDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartPalletSN,EndPalletSN",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "UpdateIsCancelKDPalletSNDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002Z5",
+                  "sequence": "07",
+                  "name": "PrintPalletSNLable",
+                  "text": "打印栈板号(新)",
+                  "sql": "KDPrintSNLableDoMethod",
+                  "confirm": true,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "NewStartPalletSN,NewEndPalletSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "KDPrintSNLableDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000030P",
+                  "sequence": "08",
+                  "name": "PrintSKDPalletSN",
+                  "text": "打印栈板号(SKD)",
+                  "sql": "PrintKDPalletSNDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartPalletSN,EndPalletSN",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [],
+                  "file": "PrintKDPalletSNDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": []
     },
     {
       "id": "MTD1000002AP",
@@ -381,8 +5870,105 @@
       "sequence": "95",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "SKDOQACheckItem",
+        "columns": [
+          {
+            "name": "SKDOQACheckItemId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "OrderName",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单号"
+          },
+          {
+            "name": "PalletSN",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "栈板号"
+          },
+          {
+            "name": "BoxSN",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱号"
+          },
+          {
+            "name": "LotSN",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "批号"
+          },
+          {
+            "name": "CheckUser",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "抽检人员"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建时间"
+          },
+          {
+            "name": "CreateUser",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建人"
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "ModifyUser",
+            "type": "varchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改用户"
+          },
+          {
+            "name": "CheckResult",
+            "type": "varchar(10)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "抽检结果"
+          },
+          {
+            "name": "CheckDefect",
+            "type": "nvarchar(100)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "不良项"
+          }
+        ]
       },
       "procedures": [
         {
@@ -396,8 +5982,195 @@
           "file": "SKDOQACheckItemTreeView.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-19T09:06:45+08:00",
+        "style": "2026-11-19T09:06:45+08:00",
+        "valueList": "2026-11-19T09:06:45+08:00",
+        "MainView": "2026-11-19T09:06:45+08:00",
+        "TreeView": "2026-11-19T09:06:45+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "SKDOQACheckItemTreeView",
+          "columns": [
+            {
+              "name": "OrderName",
+              "text": "订单号"
+            },
+            {
+              "name": "PalletSN",
+              "text": "栈板号"
+            },
+            {
+              "name": "BoxSN",
+              "text": "箱号"
+            },
+            {
+              "name": "LotSN",
+              "text": "批号"
+            },
+            {
+              "name": "CheckResult",
+              "text": "状态"
+            },
+            {
+              "name": "CheckDefect",
+              "text": "不良现象"
+            },
+            {
+              "name": "CheckUser",
+              "text": "审核人"
+            },
+            {
+              "name": "CreateDate",
+              "text": "创建时间"
+            }
+          ]
+        },
+        "main": {
+          "name": "SKDOQACheckItem",
+          "groups": [
+            {
+              "id": "MFG1000002RC",
+              "sequence": "01",
+              "name": "SKDOQACheckItem Default Group",
+              "text": "抽检明细",
+              "columns": 3,
+              "height": 200,
+              "collapsed": true,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF100000E5Z",
+                  "sequence": "",
+                  "name": "OrderName",
+                  "text": "订单号",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E60",
+                  "sequence": "",
+                  "name": "PalletSN",
+                  "text": "栈板号",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E61",
+                  "sequence": "",
+                  "name": "BoxSN",
+                  "text": "箱号",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E62",
+                  "sequence": "",
+                  "name": "LotSN",
+                  "text": "批号",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E63",
+                  "sequence": "",
+                  "name": "CheckUser",
+                  "text": "审核人",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E64",
+                  "sequence": "",
+                  "name": "CreateUser",
+                  "text": "创建人",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E65",
+                  "sequence": "",
+                  "name": "ModifyDate",
+                  "text": "修改日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000E66",
+                  "sequence": "",
+                  "name": "ModifyUser",
+                  "text": "修改用户",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": []
     }
   ],
-  "missing": true
+  "channel": "PC",
+  "pulled": {
+    "meta": "2026-11-19T09:06:34+08:00"
+  }
 }

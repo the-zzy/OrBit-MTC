@@ -29,6 +29,21 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\start-workbench.ps1
 
 在功能详情的 SQL 阅读器中点击「语法检查」，或在右键菜单中选择同一项。工作台会在当前功能对应的数据源上使用 `SET PARSEONLY ON` 检查完整 SQL，然后关闭连接；只检查语法，不执行 SQL，也不校验表、字段等对象是否存在。
 
+## 标准元对象关联图
+
+从元数据库拉取 `Plugin Standard.dll` 标准元对象，用物理表字段生成对象间引用关系（例如 `Factory.EnterpriseId → Enterprise`）：
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_standard_metadata_graph.py --env jiban-mes-prod
+```
+
+产物：
+
+- `library/{plant}/standard-metadata.json`：元对象、表字段、`references` / `referencedBy`
+- `server/fixtures/standard-metadata-graph.json`：工作台「7 功能逻辑」只读展示的节点和关系
+
+字段同名只代表 MES 的引用约定，不代表数据库存在外键约束。共用同一张表的多个元对象会各自带出相同字段关系。
+
 ## 给 Agent
 
 会话入口是 [AGENT.md](AGENT.md)。查库时读 `.AGENTS/skills/mes-db/SKILL.md`。

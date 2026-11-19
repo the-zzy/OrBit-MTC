@@ -9,6 +9,7 @@ var/
 __pycache__/
 *.py[cod]
 secrets/*.env
+secrets/*.json
 super-agent/conversations/
 .claude/settings.local.json
 sp/

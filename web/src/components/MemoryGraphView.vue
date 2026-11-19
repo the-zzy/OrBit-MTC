@@ -23,6 +23,8 @@ const selectedId = ref('')
 const domain = ref('all')
 const query = ref('')
 const searchMessage = ref('')
+const suggestionsOpen = ref(false)
+const suggestionIndex = ref(0)
 const showTechnical = ref(false)
 const tableMode = ref(false)
 
@@ -54,6 +56,51 @@ const visibleGraph = computed(() => ({
   nodes: visibleNodes.value.map((node) => ({ ...node })),
   links: visibleLinks.value.map((link) => ({ ...link })),
 }))
+function scoreNode(node, term) {
+  const fields = [
+    ['代码', node.code, 100],
+    ['中文', node.label, 90],
+    ['English', node.english, 86],
+    ...(node.commands || []).map((command) => ['命令', command, 82]),
+  ]
+  let best = { score: 0, hint: '' }
+  for (const [name, value, weight] of fields) {
+    const text = String(value || '').toLowerCase()
+    if (!text) continue
+    let score = 0
+    let hint = ''
+    if (text === term) {
+      score = weight
+      hint = `${name}精确`
+    } else if (text.startsWith(term)) {
+      score = weight - 30
+      hint = `${name}前缀`
+    } else if (text.includes(term)) {
+      score = weight - 55
+      hint = `${name}包含`
+    }
+    if (score > best.score) best = { score, hint }
+  }
+  return best
+}
+
+const searchSuggestions = computed(() => {
+  const term = query.value.trim().toLowerCase()
+  if (!term) return []
+  return visibleNodes.value
+    .map((node) => {
+      const { score, hint } = scoreNode(node, term)
+      return score > 0 ? { ...node, score, hint } : null
+    })
+    .filter(Boolean)
+    .sort((left, right) => {
+      return right.score - left.score
+        || left.label.length - right.label.length
+        || left.code.localeCompare(right.code)
+    })
+    .slice(0, 10)
+})
+
 const selectedNode = computed(() => nodeById.value.get(selectedId.value) || null)
 const selectedLinks = computed(() => {
   if (!selectedId.value) return []
@@ -151,15 +198,39 @@ function selectNode(node, moveCamera = false) {
   if (!node) return
   tableMode.value = false
   selectedId.value = node.id
-  if (moveCamera && graph && Number.isFinite(node.x)) {
+  const liveNode = graph?.graphData().nodes.find((item) => item.id === node.id) || node
+  if (moveCamera && graph && Number.isFinite(liveNode.x)) {
     const distance = 85
-    const ratio = 1 + distance / Math.max(1, Math.hypot(node.x, node.y, node.z))
+    const ratio = 1 + distance / Math.max(1, Math.hypot(liveNode.x, liveNode.y, liveNode.z))
     graph.cameraPosition(
-      { x: node.x * ratio, y: node.y * ratio, z: node.z * ratio },
-      { x: node.x, y: node.y, z: node.z },
+      { x: liveNode.x * ratio, y: liveNode.y * ratio, z: liveNode.z * ratio },
+      { x: liveNode.x, y: liveNode.y, z: liveNode.z },
       900,
     )
   }
+}
+
+function focusSearch() {
+  suggestionsOpen.value = true
+  suggestionIndex.value = 0
+}
+
+function closeSuggestions() {
+  suggestionsOpen.value = false
+}
+
+function moveSuggestion(step) {
+  const total = searchSuggestions.value.length
+  if (!total) return
+  suggestionsOpen.value = true
+  suggestionIndex.value = (suggestionIndex.value + step + total) % total
+}
+
+function pickSuggestion(node) {
+  selectNode(node, true)
+  suggestionsOpen.value = false
+  suggestionIndex.value = 0
+  searchMessage.value = ''
 }
 
 function clearSelection() {
@@ -177,17 +248,20 @@ function applyGraphData() {
 function locate() {
   const term = query.value.trim().toLowerCase()
   searchMessage.value = ''
-  if (!term) return
-  const matches = visibleNodes.value.filter((node) =>
-    [node.code, node.label, node.english].some((value) => String(value || '').toLowerCase().includes(term)),
-  )
+  if (!term) {
+    focusSearch()
+    return
+  }
+  const matches = searchSuggestions.value
   if (!matches.length) {
+    suggestionsOpen.value = true
     searchMessage.value = '当前筛选范围内没有匹配节点'
     return
   }
-  const exact = matches.find((node) => node.code.toLowerCase() === term || node.label.toLowerCase() === term)
-  selectNode(exact || matches[0], true)
-  if (matches.length > 1 && !exact) searchMessage.value = `已定位第一个，共 ${matches.length} 个匹配`
+  const target = matches[Math.min(suggestionIndex.value, matches.length - 1)]
+  selectNode(target, true)
+  suggestionsOpen.value = false
+  if (target.score < 70) searchMessage.value = `已定位最接近的，共 ${matches.length} 个匹配`
 }
 
 function fitView() {
@@ -246,11 +320,11 @@ function initializeGraph() {
 
   graph.d3Force('charge').strength(-115)
   graph.d3Force('link').distance((link) => link.type === 'technical' ? 62 : 46)
-  graph.cameraPosition({ x: 0, y: 0, z: 215 })
+  graph.cameraPosition({ x: 0, y: 0, z: 500 })
   graph.controls().enableDamping = true
   graph.controls().dampingFactor = 0.08
   graph.controls().minDistance = 35
-  graph.controls().maxDistance = 520
+  graph.controls().maxDistance = 1000
   graph.graphData(visibleGraph.value)
   applyEmphasis()
   resizeObserver = new ResizeObserver(resizeGraph)
@@ -276,7 +350,11 @@ async function loadGraph() {
 
 watch(selectedId, applyEmphasis)
 watch([domain, showTechnical], applyGraphData)
-watch(query, () => { searchMessage.value = '' })
+watch(query, () => {
+  searchMessage.value = ''
+  suggestionIndex.value = 0
+  suggestionsOpen.value = Boolean(query.value.trim())
+})
 watch(tableMode, async (enabled) => {
   if (!graph) return
   if (enabled) graph.pauseAnimation()
@@ -315,10 +393,39 @@ onUnmounted(() => {
         <h1>功能逻辑</h1>
         <span>{{ functionCount }} 个功能 · {{ visibleLinks.length }} 条可见关系</span>
       </div>
-      <label class="search-box">
-        <span class="sr-only">搜索并定位功能</span>
-        <input v-model="query" placeholder="搜索代码 / 中文 / English" @keyup.enter="locate">
-      </label>
+      <div class="search-wrap">
+        <label class="search-box">
+          <span class="sr-only">搜索并定位功能，支持代码、中文、English 或插件命令</span>
+          <input
+            v-model="query"
+            placeholder="搜索代码 / 中文 / English / 命令"
+            @focus="focusSearch"
+            @blur="closeSuggestions"
+            @keydown.down.prevent="moveSuggestion(1)"
+            @keydown.up.prevent="moveSuggestion(-1)"
+            @keydown.enter.prevent="locate"
+            @keydown.esc="closeSuggestions"
+          >
+        </label>
+        <ul v-if="suggestionsOpen && searchSuggestions.length" class="search-suggestions" role="listbox">
+          <li v-for="(item, index) in searchSuggestions" :key="item.id">
+            <button
+              type="button"
+              role="option"
+              :aria-selected="index === suggestionIndex"
+              :class="{ active: index === suggestionIndex }"
+              @mousedown.prevent="pickSuggestion(item)"
+              @mouseenter="suggestionIndex = index"
+            >
+              <b>{{ item.code }}</b>
+              <span>{{ item.label }}</span>
+              <small>{{ item.english }}</small>
+              <em>{{ item.hint }}</em>
+            </button>
+          </li>
+        </ul>
+        <p v-else-if="suggestionsOpen && query.trim()" class="search-empty">当前筛选范围内没有匹配对象</p>
+      </div>
       <button type="button" @click="locate">定位</button>
       <label>
         <span class="sr-only">按领域筛选</span>
@@ -374,6 +481,8 @@ onUnmounted(() => {
           <h2>{{ selectedNode.code }} <small>{{ selectedNode.label }}</small></h2>
           <p class="english">{{ selectedNode.english }}</p>
           <p>{{ selectedNode.description }}</p>
+          <p v-if="selectedNode.commands?.length > 1" class="plugin">命令：{{ selectedNode.commands.join(' / ') }}</p>
+          <p v-if="selectedNode.table" class="plugin">数据表：{{ selectedNode.table }}</p>
           <p v-if="selectedNode.plugin" class="plugin">{{ selectedNode.plugin }}</p>
           <h3>{{ selectedLinks.length }} 条关联</h3>
           <ul>
@@ -421,10 +530,10 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
   padding: 12px;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
-  overflow-x: auto;
 }
 .logic-heading { margin-right: auto; min-width: 155px; }
 .logic-heading h1 { margin: 0; font-size: 17px; font-weight: 650; }
@@ -454,7 +563,56 @@ onUnmounted(() => {
   font: inherit;
   font-size: 12px;
 }
-.search-box input { width: 205px; }
+.search-wrap { position: relative; display: flex; flex: 0 0 auto; }
+.search-box input { width: 245px; }
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  width: 360px;
+  max-height: 304px;
+  margin: 0;
+  padding: 4px;
+  overflow-y: auto;
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.42);
+}
+.search-suggestions li { margin: 0; }
+.logic-view .search-suggestions button {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 9px;
+  border: 0;
+  border-radius: 4px;
+  text-align: left;
+}
+.logic-view .search-suggestions button.active,
+.logic-view .search-suggestions button:hover { background: #2c2c2a; color: var(--text); }
+.search-suggestions b { flex: 0 0 46px; color: var(--text); font-size: 12px; font-weight: 650; }
+.search-suggestions span { flex: 0 0 auto; max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+.search-suggestions small { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--secondary); font-size: 11px; }
+.search-suggestions em { flex: 0 0 auto; color: #6ba4ee; font-size: 10px; font-style: normal; }
+.search-empty {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  width: 245px;
+  margin: 0;
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--secondary);
+  font-size: 11px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.42);
+}
 .logic-subbar {
   display: flex;
   align-items: center;
@@ -525,7 +683,8 @@ onUnmounted(() => {
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 @media (max-width: 1100px) {
   .logic-heading { min-width: 130px; }
-  .search-box input { width: 160px; }
+  .search-box input { width: 180px; }
+  .search-suggestions, .search-empty { width: 290px; }
   .logic-footer { display: block; }
   .logic-footer span { display: block; }
   .logic-footer span:last-child { max-width: none; margin-top: 4px; text-align: left; }

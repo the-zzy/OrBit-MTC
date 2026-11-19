@@ -1,4 +1,4 @@
-"""本地功能逻辑测试图。只读接口不允许前端修改节点或关系。"""
+"""本地标准元对象字段关联图。只读接口不允许前端修改节点或关系。"""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 
-FIXTURE = Path(__file__).resolve().parent / "fixtures" / "function-logic.json"
+FIXTURE = Path(__file__).resolve().parent / "fixtures" / "standard-metadata-graph.json"
 router = APIRouter(prefix="/api/memory", tags=["memory-graph"])
 
 

@@ -1,0 +1,138 @@
+{
+  "plant": "tongxin",
+  "source": "tongxin-mes-prod",
+  "command": "BLOC",
+  "name": "集团",
+  "application": "MES",
+  "kind": "标准元对象",
+  "pluginName": "集团",
+  "metadata": "BLOC",
+  "objects": [
+    {
+      "id": "MTD1000000FM",
+      "name": "Bloc",
+      "text": "集团",
+      "parentId": "",
+      "sequence": "",
+      "depth": 1,
+      "table": {
+        "name": "Bloc",
+        "columns": [
+          {
+            "name": "BlocId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": false,
+            "description": "集团表主键"
+          },
+          {
+            "name": "BlocName",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "集团名称"
+          },
+          {
+            "name": "BlocDescription",
+            "type": "nvarchar(500)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "集团描述"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          }
+        ]
+      },
+      "procedures": [
+        {
+          "role": "MainView",
+          "name": "BlocMainView",
+          "file": "BlocMainView.sql"
+        },
+        {
+          "role": "TreeView",
+          "name": "BlocTreeView",
+          "file": "BlocTreeView.sql"
+        },
+        {
+          "role": "SaveData",
+          "name": "BlocSaveData",
+          "file": "BlocSaveData.sql"
+        },
+        {
+          "role": "DeleteView",
+          "name": "BlocDeleteData",
+          "file": "BlocDeleteData.sql"
+        }
+      ],
+      "pulled": {
+        "table": "2026-11-18T09:47:22+08:00",
+        "style": "2026-11-18T09:47:25+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "BlocTreeView",
+          "columns": []
+        },
+        "main": {
+          "name": "Bloc",
+          "groups": [
+            {
+              "id": "MFG1000000G0",
+              "sequence": "01",
+              "name": "Bloc Default Group",
+              "text": "默认组",
+              "columns": 3,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000002XW",
+                  "sequence": "",
+                  "name": "BlocName",
+                  "text": "集团名称",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002XX",
+                  "sequence": "",
+                  "name": "BlocDescription",
+                  "text": "集团描述",
+                  "type": "nvarchar(500)",
+                  "lines": 2,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "channel": "PC"
+}
