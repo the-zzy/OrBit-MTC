@@ -17,6 +17,11 @@ test('功能逻辑：3D 图、筛选、搜索、关系表和拖动均可用', as
     }
   })
 
+  const login = await page.request.post('http://127.0.0.1:3000/api/login', {
+    data: { username: 'admin', password: 'orbit' },
+  })
+  expect(login.ok()).toBeTruthy()
+
   await page.goto('http://127.0.0.1:3000/env')
 
   const graph = await page.evaluate(async () => {

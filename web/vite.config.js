@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     strictPort: true,
     proxy: {
-      '/api': 'http://127.0.0.1:8765',
+      '/api': { target: 'http://127.0.0.1:8765', xfwd: true },
     },
   },
   build: {

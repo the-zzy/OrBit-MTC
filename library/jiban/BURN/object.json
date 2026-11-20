@@ -31,8 +31,261 @@
           "file": "BurnlotTreeView.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-20T17:04:52+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "BurnlotTreeView",
+          "columns": [
+            {
+              "name": "burnlotid",
+              "text": ""
+            },
+            {
+              "name": "WorkcenterName",
+              "text": "线体"
+            },
+            {
+              "name": "burnNO",
+              "text": "装车车号"
+            },
+            {
+              "name": "QtyOnCar",
+              "text": "装车数量"
+            },
+            {
+              "name": "CreateOperator",
+              "text": "操作员"
+            },
+            {
+              "name": "QcResult",
+              "text": "测试结果"
+            },
+            {
+              "name": "createdate",
+              "text": "创建时间"
+            },
+            {
+              "name": "MOName",
+              "text": "工单号"
+            }
+          ]
+        },
+        "main": {
+          "name": "Burnlot",
+          "groups": [
+            {
+              "id": "MFG100000129",
+              "sequence": "01",
+              "name": "Burnlot Default Group",
+              "text": "装车管理",
+              "columns": 3,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000006XB",
+                  "sequence": "",
+                  "name": "Lotsn",
+                  "text": "批号",
+                  "type": "nchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XC",
+                  "sequence": "",
+                  "name": "CreateUserid",
+                  "text": "创建人ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XD",
+                  "sequence": "",
+                  "name": "burnNO",
+                  "text": "装车车号",
+                  "type": "nvarchar(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XE",
+                  "sequence": "",
+                  "name": "Moid",
+                  "text": "工单号ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XF",
+                  "sequence": "",
+                  "name": "startTime",
+                  "text": "开始时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XG",
+                  "sequence": "",
+                  "name": "lotid",
+                  "text": "批号ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XH",
+                  "sequence": "",
+                  "name": "EndOperator",
+                  "text": "结束老化操作员",
+                  "type": "varchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XI",
+                  "sequence": "",
+                  "name": "burnNoBK",
+                  "text": "",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XJ",
+                  "sequence": "",
+                  "name": "BurnOperator",
+                  "text": "开始老化操作员",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XK",
+                  "sequence": "",
+                  "name": "Productid",
+                  "text": "物料编码",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XL",
+                  "sequence": "",
+                  "name": "Workcenterid",
+                  "text": "线体",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XM",
+                  "sequence": "",
+                  "name": "endTime",
+                  "text": "结束时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000006XN",
+                  "sequence": "",
+                  "name": "CreateOperator",
+                  "text": "操作员",
+                  "type": "varchar(10)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

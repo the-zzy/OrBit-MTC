@@ -370,6 +370,6 @@ POST /thirdparty/mes/PDOTOperate    →  /system_mes/PDOTOperate    →  ESB SQL
 | 版本 | 日期 | 变更内容 |
 |---|---|---|
 | V1.0 | 2026-11-17 | 初始业务草稿 |
-| V2.0 | 2026-11-17 | 按 api-interface v2.1.0 改为 BP+WG；修正网关 URL、返回包装、固定出参及数组/JSON 调用方式 |
+| V2.0 | 2026-11-17 | 按 dev-api-interface v2.1.0 改为 BP+WG；修正网关 URL、返回包装、固定出参及数组/JSON 调用方式 |
 | V2.1 | 2026-11-17 | 移除 check 单条盘点；batchCheck 统一支持单条和批量，单条时 assets 传 1 条 |
 | V2.2 | 2026-11-17 | 新增 queryType=assets；同一 assets 数组支持 1～100 条资产信息查询，扫码只带数据，点击盘点再批量提交网格 |

@@ -5,11 +5,42 @@
 }
 
 .side {
+  display: flex;
+  flex-direction: column;
   padding: 28px 14px;
   background: #ddd2c0;
   border-right: 1px solid #cfc3b0;
   overflow: auto;
 }
+
+.who {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding: 16px 12px 0;
+  border-top: 1px solid #cfc3b0;
+  font-size: 13px;
+  color: #6f6256;
+}
+
+.who-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.who button.leave {
+  width: auto;
+  padding: 0;
+  font-size: 13px;
+  color: #3d342b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.who button.leave:hover { color: #8a3b32; }
 
 .mark {
   margin: 0 12px 18px;
@@ -81,50 +112,6 @@ button.sub.on { color: #3d342b; }
   flex-direction: column;
   overflow: hidden;
 }
-
-.runtime {
-  flex: 0 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 18px;
-  margin-bottom: 12px;
-  padding: 9px 16px;
-  background: #f4efe4;
-  border: 1px solid #d4c6b4;
-}
-
-.runtime-title {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-}
-
-.runtime-title strong { font-size: 13px; color: #3d342b; white-space: nowrap; }
-.runtime-title span { font-size: 12px; color: #8a7b6a; }
-
-.runtime .stack,
-.runtime .checks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 8px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.runtime .stack li {
-  padding: 2px 7px;
-  border-radius: 2px;
-  background: #e8dcc9;
-  font-family: "Cascadia Mono", Consolas, monospace;
-  font-size: 12px;
-  color: #5a4e42;
-}
-
-.runtime .checks { margin-left: auto; font-size: 12px; }
-.runtime .checks .warn { color: #9a5b17; }
-.runtime .checks .ok { color: #65754f; }
 
 .places {
   flex: 1;
@@ -354,6 +341,39 @@ button.back {
   padding: 6px 10px;
   background: #f4efe4;
   border: 1px solid #d4c6b4;
+}
+
+.reader-ties {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 14px;
+}
+
+.reader-ties p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 0;
+}
+
+.reader-ties span {
+  color: #6f6256;
+  font-size: 13px;
+}
+
+button.jump {
+  display: inline-flex;
+  width: auto;
+  padding: 0 0 1px;
+  border: 0;
+  border-bottom: 1px solid #8a7b6a;
+  border-radius: 0;
+  background: transparent;
+  color: #3d342b;
+  font-family: "Cascadia Mono", Consolas, monospace;
+  font-size: 13px;
 }
 
 .sheet {

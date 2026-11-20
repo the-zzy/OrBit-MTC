@@ -1,8 +1,8 @@
 <script setup>
-import DOMPurify from 'dompurify'
-import { marked } from 'marked'
-import { computed, nextTick, reactive, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import seeleAvatar from './assets/seele-avatar.png'
+import AgentMessage from './components/AgentMessage.vue'
+import { useAgentChat } from './composables/useAgentChat'
 
 const props = defineProps({
   getContext: { type: Function, required: true },
@@ -10,24 +10,18 @@ const props = defineProps({
 })
 
 localStorage.removeItem('orbit.aiSettings')
-const conversationId = ref(window.crypto?.randomUUID?.() || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`)
+
 const open = ref(false)
-const messages = ref([])
+const expanded = ref(false)
 const draft = ref('')
-const sending = ref(false)
-const error = ref('')
 const context = ref({ title: '', url: '', text: '', selection: '' })
 const conversation = ref(null)
 const input = ref(null)
 
+const chat = useAgentChat({ getContext: () => context.value })
+const { messages, sending, error } = chat
+const canChat = computed(() => chat.canChat.value || props.serverConfigured)
 const contextTitle = computed(() => context.value.title || '当前页面')
-const canChat = computed(() => props.serverConfigured)
-
-marked.setOptions({ gfm: true, breaks: true })
-
-function markdown(text) {
-  return DOMPurify.sanitize(marked.parse(text))
-}
 
 function refreshContext() {
   context.value = props.getContext()
@@ -37,6 +31,7 @@ function toggleOpen() {
   open.value = !open.value
   if (!open.value) return
   refreshContext()
+  chat.loadStatus()
   nextTick(() => input.value?.focus())
 }
 
@@ -52,50 +47,14 @@ async function send() {
     error.value = 'AI 助手尚未配置，请联系管理员。'
     return
   }
-
   refreshContext()
-  messages.value.push({ role: 'user', content: text })
   draft.value = ''
-  sending.value = true
-  error.value = ''
+  await chat.send(text, scrollToEnd)
   await scrollToEnd()
-  try {
-    const response = await fetch('/api/agent/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        conversationId: conversationId.value,
-        messages: messages.value.slice(-12).map(({ role, content }) => ({ role, content })),
-        context: context.value,
-      }),
-    })
-    if (!response.ok) {
-      const body = await response.json().catch(() => null)
-      throw new Error(body?.detail || `请求失败（${response.status}）`)
-    }
-    if (!response.body) throw new Error('浏览器不支持流式读取。')
-    const reply = reactive({ role: 'assistant', content: '' })
-    const reader = response.body.getReader()
-    const decoder = new TextDecoder()
-    let received = false
-    for (;;) {
-      const { done, value } = await reader.read()
-      if (done) break
-      reply.content += decoder.decode(value, { stream: true })
-      if (!received) {
-        received = true
-        messages.value.push(reply)
-      }
-      scrollToEnd()
-    }
-    if (!received) messages.value.push(reply)
-    if (!reply.content.trim()) reply.content = '模型没有返回内容。'
-  } catch (err) {
-    error.value = err instanceof Error ? err.message : '发送失败，请稍后重试。'
-  } finally {
-    sending.value = false
-    await scrollToEnd()
-  }
+}
+
+function stop() {
+  chat.stop()
 }
 
 function ask(text) {
@@ -104,9 +63,8 @@ function ask(text) {
 }
 
 function clearChat() {
-  messages.value = []
-  conversationId.value = window.crypto?.randomUUID?.() || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`
-  error.value = ''
+  chat.newConversation()
+  draft.value = ''
   input.value?.focus()
 }
 
@@ -120,6 +78,7 @@ watch(() => props.getContext(), (value) => {
     <section
       v-if="open"
       class="ai-panel"
+      :class="{ expanded }"
       aria-label="OrBit AI 助手"
       @keydown.esc.stop="open = false"
     >
@@ -134,6 +93,15 @@ watch(() => props.getContext(), (value) => {
           </div>
         </div>
         <div class="ai-actions">
+          <button
+            type="button"
+            :title="expanded ? '收起视图' : '展开视图'"
+            :aria-label="expanded ? '收起视图' : '展开视图'"
+            @click="expanded = !expanded"
+          >
+            <svg v-if="!expanded" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M4 4l6 6M20 20l-6-6" /></svg>
+            <svg v-else viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4v5H4M15 20v-5h5M15 4l5 5M9 20l-5-5" /></svg>
+          </button>
           <button type="button" title="清空对话" aria-label="清空对话" @click="clearChat">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5" /></svg>
           </button>
@@ -174,7 +142,10 @@ watch(() => props.getContext(), (value) => {
             :class="message.role"
           >
             <span class="message-role">{{ message.role === 'user' ? '你' : 'AI' }}</span>
-            <div v-if="message.role === 'assistant'" class="message-body markdown" v-html="markdown(message.content)"></div>
+            <div v-if="message.role === 'assistant'" class="message-body">
+              <AgentMessage :message="message" />
+              <div v-if="sending && index === messages.length - 1 && !message.timeline.length" class="thinking">正在阅读页面并思考…</div>
+            </div>
             <div v-else class="message-body">{{ message.content }}</div>
           </article>
           <div v-if="sending && messages[messages.length - 1]?.role === 'user'" class="message assistant">
@@ -189,15 +160,18 @@ watch(() => props.getContext(), (value) => {
             ref="input"
             v-model="draft"
             rows="2"
-            placeholder="问问当前页面…"
+            placeholder="问问当前页面，或让我去查库…"
             :disabled="sending"
             @keydown.enter.exact.prevent="send"
           ></textarea>
-          <button type="button" class="send-button" :disabled="sending || !draft.trim()" aria-label="发送" title="发送" @click="send">
+          <button v-if="sending" type="button" class="send-button stop" aria-label="停止" title="停止" @click="stop">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1" /></svg>
+          </button>
+          <button v-else type="button" class="send-button" :disabled="!draft.trim()" aria-label="发送" title="发送" @click="send">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 4 17 8-17 8 3-8zM7 12h14" /></svg>
           </button>
         </div>
-        <p class="ai-disclaimer">记录保存在 super-agent/conversations · Enter 发送</p>
+        <p class="ai-disclaimer">只读模式 · 记录保存在 super-agent/conversations · Enter 发送</p>
       </div>
     </section>
 
@@ -670,6 +644,36 @@ watch(() => props.getContext(), (value) => {
 .chat-error {
   flex: none;
   margin: 0 16px 8px;
+}
+
+.ai-panel.expanded {
+  position: fixed;
+  inset: 24px;
+  width: auto;
+  height: auto;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.ai-panel.expanded .ai-conversation {
+  padding: 20px 22px;
+}
+
+.ai-panel.expanded .message.assistant {
+  width: 100%;
+}
+
+.ai-panel.expanded .message.assistant .message-body {
+  flex: 1;
+  max-width: 100%;
+}
+
+.ai-panel.expanded .message.user .message-body {
+  max-width: 72%;
+}
+
+.send-button.stop {
+  background: #8a4a42;
 }
 
 button:focus-visible,
