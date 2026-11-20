@@ -4,10 +4,13 @@ import { marked } from 'marked'
 import { computed, defineAsyncComponent, onMounted, onUnmounted, ref, watch } from 'vue'
 import { functionPlants } from './functionPlants.js'
 import AiAssistant from './AiAssistant.vue'
+import LoginView from './components/LoginView.vue'
+import SkillsMap from './components/SkillsMap.vue'
 import { emptyFunctionRoute, functionPath, readFunctionRoute } from './utils/functionRoutes.js'
 
 const FunctionsView = defineAsyncComponent(() => import('./components/FunctionsView.vue'))
 const MemoryGraphView = defineAsyncComponent(() => import('./components/MemoryGraphView.vue'))
+const SuperAgentView = defineAsyncComponent(() => import('./components/SuperAgentView.vue'))
 
 marked.setOptions({ gfm: true, breaks: false })
 
@@ -16,6 +19,9 @@ const error = ref('')
 const skillDoc = ref(null)
 const skillDocError = ref('')
 const functionsPage = ref(null)
+const auth = ref('checking')
+const loginUser = ref('')
+const loginRole = ref('')
 const modules = [
   { id: 'workbench', label: 'Workbench 工作台' },
   { id: 'layout', label: 'Architecture 架构' },
@@ -26,6 +32,7 @@ const modules = [
   { id: 'logic', label: '功能逻辑' },
 ]
 const moduleIds = new Set(modules.map((item) => item.id))
+const visibleModules = computed(() => modules.filter((item) => loginRole.value === 'admin' || item.id !== 'agent'))
 
 function readRoute() {
   const path = decodeURIComponent(window.location.pathname)
@@ -52,6 +59,7 @@ function readRoute() {
 const route = readRoute()
 const current = ref(route.menu)
 const openSkillId = ref(route.skillId)
+const pickedSkillId = ref(route.skillId)
 const plant = ref(route.plant)
 const functionRoute = ref(route.functionRoute || emptyFunctionRoute())
 const functionsOpen = ref(current.value === 'functions')
@@ -118,7 +126,7 @@ const factories = [
   { id: 'guangyuan-wms', label: '光元WMS', match: (env) => env.id.startsWith('guangyuan-wms-') },
 ]
 const showPlaces = computed(() => current.value === 'workbench' || current.value === 'env')
-const wide = computed(() => showPlaces.value || current.value === 'functions' || current.value === 'logic')
+const wide = computed(() => showPlaces.value || current.value === 'functions' || current.value === 'logic' || current.value === 'agent')
 const grouped = computed(() => {
   if (!board.value) return []
   const all = [...board.value.test, ...board.value.prod]
@@ -144,6 +152,29 @@ const skillHtml = computed(() => {
   return DOMPurify.sanitize(marked.parse(markdownBody(skillDoc.value.text)))
 })
 
+const skillOrder = [
+  'dev', 'ops',
+  'mes-db', 'sql-query-safety', 'mes-meta-query',
+  'ops-metadata-survey', 'ops-query-metadata-survey', 'ops-static-txn-survey', 'ops-mobile-txn-survey',
+  'dev-create-table', 'dev-kanban-echart', 'dev-api-interface', 'dev-label-mrt', 'dev-utils-toolkit', 'dev-frontend-design',
+]
+
+function sortSkillIds(ids) {
+  const rank = new Map(skillOrder.map((id, index) => [id, index]))
+  return [...ids].sort((a, b) => (rank.get(a) ?? 100) - (rank.get(b) ?? 100) || a.localeCompare(b))
+}
+
+const skillTies = computed(() => {
+  const skills = board.value?.skills || []
+  const id = skillDoc.value?.id
+  if (!id) return { reads: [], readBy: [] }
+  const self = skills.find((skill) => skill.id === id)
+  return {
+    reads: self?.reads || [],
+    readBy: sortSkillIds(skills.filter((skill) => (skill.reads || []).includes(id)).map((skill) => skill.id)),
+  }
+})
+
 function closeSkill() {
   openSkillId.value = ''
   skillDoc.value = null
@@ -152,6 +183,7 @@ function closeSkill() {
 }
 
 async function openSkill(skill) {
+  pickedSkillId.value = skill.id
   openSkillId.value = skill.id
   skillDocError.value = ''
   remember()
@@ -226,10 +258,7 @@ watch(current, () => {
   remember()
 }, { flush: 'sync' })
 
-onMounted(async () => {
-  window.addEventListener('keydown', onKey)
-  if (openSkillId.value) openSkill({ id: openSkillId.value })
-  else remember()
+async function loadBoard() {
   try {
     const response = await fetch('/api/workbench')
     if (!response.ok) throw new Error(`接口 ${response.status}`)
@@ -237,6 +266,55 @@ onMounted(async () => {
   } catch (err) {
     error.value = err instanceof Error ? err.message : '工作台没有打开'
   }
+}
+
+function applyRole() {
+  if (loginRole.value !== 'admin' && current.value === 'agent') current.value = 'env'
+}
+
+async function enter(identity) {
+  loginUser.value = identity?.user || ''
+  loginRole.value = identity?.role || 'user'
+  applyRole()
+  auth.value = 'in'
+  if (openSkillId.value) openSkill({ id: openSkillId.value })
+  else remember()
+  await loadBoard()
+}
+
+async function leave() {
+  try {
+    await fetch('/api/logout', { method: 'POST' })
+  } catch {
+    // 退出只管本地状态，接口失败也不拦人。
+  }
+  auth.value = 'out'
+  loginUser.value = ''
+  loginRole.value = ''
+  board.value = null
+  error.value = ''
+}
+
+onMounted(async () => {
+  window.addEventListener('keydown', onKey)
+  try {
+    const response = await fetch('/api/session')
+    const data = response.ok ? await response.json() : {}
+    if (!data.authenticated) {
+      auth.value = 'out'
+      return
+    }
+    loginUser.value = data.user || ''
+    loginRole.value = data.role || 'user'
+    applyRole()
+    auth.value = 'in'
+  } catch {
+    auth.value = 'out'
+    return
+  }
+  if (openSkillId.value) openSkill({ id: openSkillId.value })
+  else remember()
+  await loadBoard()
 })
 
 onUnmounted(() => {
@@ -245,11 +323,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="shell">
+  <LoginView v-if="auth !== 'in'" :checking="auth === 'checking'" @success="enter" />
+  <div v-else class="shell">
     <aside class="side">
       <p class="mark">OrBit</p>
       <nav>
-        <template v-for="(item, index) in modules" :key="item.id">
+        <template v-for="(item, index) in visibleModules" :key="item.id">
           <button type="button" :class="{ on: current === item.id }" @click="openModule(item.id)">
             <span class="no">{{ index + 1 }}</span>
             <span>{{ item.label }}</span>
@@ -269,6 +348,12 @@ onUnmounted(() => {
           </template>
         </template>
       </nav>
+      <div class="who">
+        <span class="who-name" :title="loginUser">
+          {{ loginUser || '已登录' }}<template v-if="loginRole"> · {{ loginRole === 'admin' ? '管理员' : '用户' }}</template>
+        </span>
+        <button type="button" class="leave" @click="leave">退出</button>
+      </div>
     </aside>
 
     <main class="desk" :class="{ fill: wide, reading: current === 'skills' && skillDoc }">
@@ -298,13 +383,7 @@ onUnmounted(() => {
         </ul>
       </template>
 
-      <template v-else-if="current === 'agent'">
-        <article class="card">
-          <header><h3>super-agent</h3></header>
-          <p class="where">{{ board.agent.note }}</p>
-          <p class="guide">{{ board.agent.guide }}</p>
-        </article>
-      </template>
+      <SuperAgentView v-else-if="current === 'agent'" />
 
       <template v-else-if="current === 'skills'">
         <template v-if="skillDoc">
@@ -312,41 +391,41 @@ onUnmounted(() => {
             <button type="button" class="back" @click="closeSkill">返回</button>
             <code>{{ skillDoc.path }}</code>
           </div>
+          <div v-if="skillTies.reads.length || skillTies.readBy.length" class="reader-ties">
+            <p v-if="skillTies.reads.length">
+              <span>先读</span>
+              <button
+                v-for="id in skillTies.reads"
+                :key="id"
+                type="button"
+                class="jump"
+                @click="openSkill({ id })"
+              >{{ id }}</button>
+            </p>
+            <p v-if="skillTies.readBy.length">
+              <span>会读它</span>
+              <button
+                v-for="id in skillTies.readBy"
+                :key="id"
+                type="button"
+                class="jump"
+                @click="openSkill({ id })"
+              >{{ id }}</button>
+            </p>
+          </div>
           <article class="sheet" v-html="skillHtml" @click="onSheetClick"></article>
         </template>
-        <template v-else>
-          <p class="hint">双击卡片打开 Markdown。</p>
-          <p v-if="skillDocError" class="banner">{{ skillDocError }}</p>
-          <div class="grid">
-            <article v-for="skill in board.skills" :key="skill.id" class="card skill" @dblclick="openSkill(skill)">
-              <header>
-                <h3>{{ skill.name }}</h3>
-                <span>Skills</span>
-              </header>
-              <p class="where">{{ skill.description }}</p>
-            </article>
-          </div>
-          <p v-if="!board.skills.length" class="banner">还没有技能。</p>
-        </template>
+        <SkillsMap
+          v-else
+          :skills="board.skills"
+          :picked="pickedSkillId"
+          :error="skillDocError"
+          @pick="pickedSkillId = $event"
+          @open="openSkill"
+        />
       </template>
 
       <template v-else-if="showPlaces">
-        <section v-if="board.runtime" class="runtime">
-          <div class="runtime-title">
-            <strong>Runtime 运行时</strong>
-            <span>{{ board.runtime.platform }}</span>
-          </div>
-          <ul class="stack">
-            <li>Python {{ board.runtime.python.version }}</li>
-            <li>Node {{ board.runtime.node.version || '未找到' }}</li>
-            <li v-for="pkg in board.runtime.packages" :key="pkg.name">
-              {{ pkg.name }} {{ pkg.version || '缺失' }}
-            </li>
-          </ul>
-          <ul class="checks">
-            <li v-for="check in board.runtime.checks" :key="check.text" :class="check.level">{{ check.text }}</li>
-          </ul>
-        </section>
         <div class="places">
           <article v-for="factory in grouped" :key="factory.id" class="card factory" :class="factory.id">
             <header><h3>{{ factory.label }}</h3></header>
@@ -378,7 +457,11 @@ onUnmounted(() => {
         </div>
       </template>
     </main>
-    <AiAssistant :get-context="aiPageContext" :server-configured="!!board?.agent?.ready" />
+    <AiAssistant
+      v-if="loginRole === 'admin' && current !== 'agent'"
+      :get-context="aiPageContext"
+      :server-configured="!!board?.agent?.ready"
+    />
   </div>
 </template>
 

@@ -856,7 +856,7 @@ END
 GO
 
 -- =============================================
--- 调用示例（参考 .AGENTS/skills/utils-toolkit/functions/call-api.md 风格）
+-- 调用示例（参考 .AGENTS/skills/dev-utils-toolkit/functions/call-api.md 风格）
 -- =============================================
 
 -- 3.1 初始化

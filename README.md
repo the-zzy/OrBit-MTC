@@ -23,7 +23,30 @@ MES / WMS 的 AI 工作台。页面看八套库，super-agent 接大模型，每
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\start-workbench.ps1
 ```
 
-打开 `http://127.0.0.1:3000`。
+打开 `http://127.0.0.1:3000`，先登录工作台。
+
+多个账号写在 `secrets/workbench-users.env`，每行一个：
+
+```
+root=密码:admin
+bob=密码:user
+```
+
+`secrets/workbench.env` 里的 `LOGIN_USER` / `LOGIN_PASSWORD` 固定是管理员；两个文件都没有时用缺省 `admin` / `orbit`（管理员）。角色不写时按 `user`。
+
+- 管理员：看得到测试和正式环境，用得了助手。
+- 普通用户：只下发正式环境，服务端拒绝一切连测试库的请求；助手入口不显示，相关接口返回 403。
+
+登录后页面左侧底部可以退出；除 `/api/login`、`/api/session`、`/api/logout`、`/api/health` 外，接口都要求会话。
+
+## 浏览器里的 Agent
+
+页面右下角的「OrBit 助手」是完整 Agent，不是普通聊天：每个回合由 `server/` 调起无头 `claude`，继承 `AGENT.md`、`.claude/skills/` 和 `.mcp.json` 里的八套库，能查库、读代码。
+
+- **只有只读模式**：读仓库、查库、看存储过程；不改文件、不执行命令、不写库，`secrets/` 一律拒绝。这个限制在服务端，改请求参数也发不出去。
+- 只接受本机访问；同一会话自动续聊，记录写在 `super-agent/conversations/`。
+
+左侧导航第 3 项 `super-agent` 是完整页面版：左边是历史对话，能新建、切换、删除；每段对话把思考、工具调用和 diff 一并存下来，点开还能接着聊。页面右下角的「OrBit 助手」是同一个 Agent 的悬浮版，会自动带上你正在看的页面。
 
 ## SQL 语法检查
 

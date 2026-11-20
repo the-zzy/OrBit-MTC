@@ -41,12 +41,12 @@ $ErrorActionPreference = 'Stop'
 
 # ---------- 0. 依赖定位 ----------
 $RepoRoot = 'E:\work'
-$SkillRef = Join-Path $RepoRoot '.agents\skills\api-interface\references'
+$SkillRef = Join-Path $RepoRoot '.agents\skills\dev-api-interface\references'
 if (-not (Test-Path $SkillRef)) {
-    $SkillRef = Join-Path $RepoRoot '.workbuddy\skills\api-interface\references'
+    $SkillRef = Join-Path $RepoRoot '.workbuddy\skills\dev-api-interface\references'
 }
 if (-not (Test-Path $SkillRef)) {
-    Write-Error "找不到 api-interface 技能 references 目录（试过 .agents / .workbuddy）"
+    Write-Error "找不到 dev-api-interface 技能 references 目录（试过 .agents / .workbuddy）"
     exit 1
 }
 

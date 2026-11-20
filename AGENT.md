@@ -6,7 +6,7 @@
 
 - `web/` 是工作台，给人看八套库。
 - `server/` 读 `db/catalog/`，把目录给页面。
-- `agent/` 调用大模型。还没有 `secrets/llm.env` 时，就告诉用户还没接入，不要发请求。
+- `agent/` 调用大模型。还没有 `secrets/llm.env` 时，就告诉用户还没接入，不要发请求。浏览器里的助手走 `/api/agent/run`，每回合起一个无头 `claude`，只读；工作台给别人用，不要放开写入和执行。
 - `super-agent/` 是对用户说的话。`agent/llm.py` 调用时带上。
 
 项目目录可以整份搬走。路径相对于仓库根目录来写。
