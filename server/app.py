@@ -87,13 +87,22 @@ def translate_texts(cursor, modules) -> dict[str, str]:
 
 def environment(env_id: str, values: dict[str, str]) -> dict:
     tools = [item.strip() for item in values.get("TOOLS", "").split(",") if item.strip()]
+    secret_path = SECRETS / f"{env_id}.env"
+    secrets = parse_catalog(secret_path.read_text(encoding="utf-8")) if secret_path.is_file() else {}
+    try:
+        port = int(secrets.get("DB_PORT") or "1433")
+    except ValueError:
+        port = 1433
     return {
         "id": env_id,
         "order": int(values.get("ORDER", "0")),
         "label": values.get("LABEL", env_id),
-        "host": values.get("HOST", ""),
+        # 页面显示的地址必须和 open_database() 实际连接的地址同源。
+        "host": secrets.get("DB_HOST") or values.get("HOST", ""),
+        "port": port,
         "machine": values.get("MACHINE", ""),
         "database": values.get("DB", ""),
+        "account": secrets.get("DB_USER", ""),
         "kind": values.get("STAGE", "prod"),
         "caution": values.get("CAUTION", ""),
         "tools": tools,

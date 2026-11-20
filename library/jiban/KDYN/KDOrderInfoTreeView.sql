@@ -1,7 +1,6 @@
--- 基板正式。KDYN 散件订单列表增加完成状态。
--- 已包装数只汇总未完成订单的 KDMOItem.IssuedQty。已完成订单直接读状态。
--- 已装柜数量只汇总基板本地 KDOrderLoadedItem.RealQty，列表不访问总装。
--- 完成状态在 KDOrderInfo.IsManualFinish。未完成且两边数量已经相等的订单，打开列表时写成已完成。
+-- 基板正式。KDYN 散件订单列表显示完成状态。
+-- 列表只读 KDOrderInfo.IsManualFinish，不在打开列表时自动置完成。
+-- 自动锁定保留在定时任务和「手动同步数据」按钮；手动锁定/解锁只切换状态，不做数量管控。
 -- 其他插件的列表分支保持原样。
 
 CREATE PROCEDURE [dbo].[KDOrderInfoTreeView]
@@ -31,23 +30,11 @@ BEGIN
        )
     BEGIN
         IF OBJECT_ID(N'tempdb..#Orders') IS NOT NULL DROP TABLE #Orders;
-        IF OBJECT_ID(N'tempdb..#Pack') IS NOT NULL DROP TABLE #Pack;
-        IF OBJECT_ID(N'tempdb..#Loaded') IS NOT NULL DROP TABLE #Loaded;
 
         CREATE TABLE #Orders
         (
             KDOrderInfoId CHAR(12) NOT NULL PRIMARY KEY,
             OrderName NVARCHAR(100) NOT NULL
-        );
-        CREATE TABLE #Pack
-        (
-            KDOrderInfoId CHAR(12) NOT NULL PRIMARY KEY,
-            PackQty DECIMAL(18, 4) NOT NULL
-        );
-        CREATE TABLE #Loaded
-        (
-            KDOrderInfoId CHAR(12) NOT NULL PRIMARY KEY,
-            LoadedQty DECIMAL(18, 4) NOT NULL
         );
         CREATE TABLE #Pallet
         (
@@ -67,21 +54,6 @@ BEGIN
           AND ISNULL(OrderName, N'') <> N''
           AND (@I_PKId = '' OR KDOrderInfoId = @I_PKId);
 
-        INSERT INTO #Pack (KDOrderInfoId, PackQty)
-        SELECT a.KDOrderInfoId, CONVERT(DECIMAL(18, 4), SUM(c.IssuedQty))
-        FROM #Orders AS o
-        INNER JOIN dbo.KDOrderInfo AS info ON info.KDOrderInfoId = o.KDOrderInfoId
-        INNER JOIN dbo.KDOrderItem AS a ON a.KDOrderInfoId = o.KDOrderInfoId
-        INNER JOIN dbo.KDMOItem AS c ON c.KDOrderItemId = a.KDOrderItemId
-        WHERE ISNULL(info.IsManualFinish, 0) = 0
-        GROUP BY a.KDOrderInfoId;
-
-        INSERT INTO #Loaded (KDOrderInfoId, LoadedQty)
-        SELECT t.KDOrderInfoId, CONVERT(DECIMAL(18, 4), SUM(t.RealQty))
-        FROM dbo.KDOrderLoadedItem AS t
-        INNER JOIN #Orders AS o ON o.KDOrderInfoId = t.KDOrderInfoId
-        GROUP BY t.KDOrderInfoId;
-
         INSERT INTO #Pallet (KDOrderInfoId, OpenPalletQty)
         SELECT a.KDOrderInfoId, SUM(IIF(b.PalletSN IS NULL, 1, 0))
         FROM #Orders AS o
@@ -100,16 +72,6 @@ BEGIN
                    FOR XML PATH('')
                ), 1, 2, '')
         FROM #Orders AS o;
-
-        UPDATE info
-        SET IsManualFinish = 1
-        FROM dbo.KDOrderInfo AS info
-        INNER JOIN #Orders AS o ON o.KDOrderInfoId = info.KDOrderInfoId
-        INNER JOIN #Pack AS pack ON pack.KDOrderInfoId = info.KDOrderInfoId
-        INNER JOIN #Loaded AS loaded ON loaded.KDOrderInfoId = info.KDOrderInfoId
-        WHERE ISNULL(info.IsManualFinish, 0) = 0
-          AND pack.PackQty > 0
-          AND pack.PackQty = loaded.LoadedQty;
 
         SELECT KDOrderInfo.KDOrderInfoId,
                KDOrderInfo.OrderName,

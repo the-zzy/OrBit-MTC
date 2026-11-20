@@ -340,6 +340,10 @@ onUnmounted(() => {
                   <h4>{{ stageLabel(env) }}</h4>
                   <p class="ip">{{ env.host }}</p>
                   <p class="where">{{ env.machine }} {{ env.database }}</p>
+                  <p v-if="env.account || env.port" class="acct">
+                    <span v-if="env.account"><em>账号</em><code>{{ env.account }}</code></span>
+                    <span v-if="env.port"><em>端口</em><code>{{ env.port }}</code></span>
+                  </p>
                 </div>
                 <ul class="acts">
                   <li v-for="action in actions" :key="action" :class="{ yes: allowed(env, action) }">
