@@ -1,8 +1,8 @@
 ---
 name: metadata-survey
 description: >-
-  拿到一个已有标准元对象，说明它用来干什么、从哪打开、每个功能怎么用。用户给出插件命令、元对象名、表名或维护界面时使用。
-  新建表、新建元对象、改存储过程时不要读。查询元、MES 事务、PDA、看板也不要读。
+  梳理已有标准元对象：干什么、从哪打开、每个功能怎么用。用户给插件命令、元对象名、表名或维护界面时用。
+  只读；新建表/元对象、改过程不用。查询元、事务对象、PDA、看板各有专门技能。
 ---
 
 # 元对象功能梳理
@@ -18,7 +18,7 @@ description: >-
 一份 UTF-8 文件：
 
 ```text
-{MCP名}/flow/{MetadataName}/survey.md
+tasks/{MCP名}/flow/{MetadataName}/survey.md
 ```
 
 `{MCP名}` 用 `mes-db` 里这一套的英文名。多条候选还没让用户选定，或者 `PluginFileName` 不是 `Plugin Standard.dll` 时，不要写这个文件。

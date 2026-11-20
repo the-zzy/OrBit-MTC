@@ -1,8 +1,16 @@
 node_modules/
 web/node_modules/
+web/test-results/
+web/playwright-report/
+web/dist/
+test-results/
 var/
 .venv/
 __pycache__/
 *.py[cod]
 secrets/*.env
+secrets/*.json
+super-agent/conversations/
+.claude/settings.local.json
+.claude/skills/
 sp/

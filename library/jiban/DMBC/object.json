@@ -1,0 +1,5216 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "DMBC",
+  "name": "多码合一采集 BAK",
+  "application": "MES",
+  "kind": "静态事务对象",
+  "pluginName": "多码合一采集 BAK",
+  "metadata": "多码合一采集",
+  "objects": [
+    {
+      "id": "DC MoreBarcodeCollect",
+      "name": "DC MoreBarcodeCollect",
+      "text": "多码合一采集",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {
+        "style": "2026-11-16T14:16:04+08:00",
+        "valueList": "2026-11-16T14:16:04+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "DC MoreBarcodeCollect",
+          "groups": [
+            {
+              "id": "txn-DC MoreBarcodeCollect",
+              "sequence": "1",
+              "name": "DC MoreBarcodeCollect",
+              "text": "多码合一采集",
+              "columns": 4,
+              "fieldWidth": 200,
+              "fieldSpace": 20,
+              "custom": true,
+              "uiStyle": {
+                "BackColor": "White"
+              },
+              "height": null,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MTP1000001TB",
+                  "sequence": "00",
+                  "name": "CollectStr",
+                  "text": "11",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001TB",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "CollectStr",
+                    "DataType": "C",
+                    "ParameterSequence": "00",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": true,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": null,
+                    "UIStyleControl": null,
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.217000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001TA",
+                  "sequence": "00",
+                  "name": "IsLock",
+                  "text": "已锁定",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Gray",
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 5,
+                    "LocationY": 5
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 5,
+                    "LocationY": 22,
+                    "SizeHeight": 25,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001TA",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "IsLock",
+                    "DataType": "C",
+                    "ParameterSequence": "00",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": true,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|5][LocationY|5]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|5][LocationY|22][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.210000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001SW",
+                  "sequence": "00",
+                  "name": "NextItemName",
+                  "text": "",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001SW",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "NextItemName",
+                    "DataType": "C",
+                    "ParameterSequence": "00",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": true,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": null,
+                    "UIStyleControl": null,
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.113000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T6",
+                  "sequence": "01",
+                  "name": "OrderName",
+                  "text": "订单号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "OrderName_ViewList",
+                  "valueListFilter": "MOName",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "0, 0, 192",
+                    "Font": "微软雅黑, 9pt, style=Bold",
+                    "LocationX": 5,
+                    "LocationY": 5
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 5,
+                    "LocationY": 22,
+                    "SizeHeight": 26,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T6",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "OrderName",
+                    "DataType": "C",
+                    "ParameterSequence": "01",
+                    "IsValueListUsage": true,
+                    "ControlLine": null,
+                    "ValueList": "OrderName_ViewList",
+                    "LinkToValueListParameter": "MOName",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|0, 0, 192][Font|微软雅黑, 9pt, style=Bold][LocationX|5][LocationY|5]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|5][LocationY|22][SizeHeight|26][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.180000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T7",
+                  "sequence": "02",
+                  "name": "MOId",
+                  "text": "工单号ID",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T7",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "MOId",
+                    "DataType": "C",
+                    "ParameterSequence": "02",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": true,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": null,
+                    "UIStyleControl": null,
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.190000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001SX",
+                  "sequence": "02",
+                  "name": "MOName",
+                  "text": "工单号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "MOByAssyTV_ViewListEx",
+                  "valueListFilter": "[ShowItemValue]",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Green",
+                    "Font": "微软雅黑, 9pt, style=Bold",
+                    "LocationX": 225,
+                    "LocationY": 5
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 225,
+                    "LocationY": 22,
+                    "SizeHeight": 26,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001SX",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "MOName",
+                    "DataType": "C",
+                    "ParameterSequence": "02",
+                    "IsValueListUsage": true,
+                    "ControlLine": null,
+                    "ValueList": "MOByAssyTV_ViewListEx",
+                    "LinkToValueListParameter": "[ShowItemValue]",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 9pt, style=Bold][LocationX|225][LocationY|5]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|225][LocationY|22][SizeHeight|26][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.120000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001SY",
+                  "sequence": "03",
+                  "name": "ProductName",
+                  "text": "产品名称",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Gray",
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 445,
+                    "LocationY": 5
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 445,
+                    "LocationY": 22,
+                    "SizeHeight": 25,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001SY",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "ProductName",
+                    "DataType": "C",
+                    "ParameterSequence": "03",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|445][LocationY|5]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|445][LocationY|22][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.127000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001SZ",
+                  "sequence": "04",
+                  "name": "MOQtyRequired",
+                  "text": "需求数量",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Gray",
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 665,
+                    "LocationY": 5
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 665,
+                    "LocationY": 22,
+                    "SizeHeight": 25,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001SZ",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "MOQtyRequired",
+                    "DataType": "C",
+                    "ParameterSequence": "04",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|665][LocationY|5]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|665][LocationY|22][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.133000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T8",
+                  "sequence": "05",
+                  "name": "WorkcenterName",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Gray",
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 5,
+                    "LocationY": 49
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 5,
+                    "LocationY": 66,
+                    "SizeHeight": 25,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T8",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "WorkcenterName",
+                    "DataType": "C",
+                    "ParameterSequence": "05",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|5][LocationY|49]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|5][LocationY|66][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.193000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T0",
+                  "sequence": "07",
+                  "name": "Operator",
+                  "text": "操作员",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Green",
+                    "Font": "微软雅黑, 9pt, style=Bold",
+                    "LocationX": 225,
+                    "LocationY": 49
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 225,
+                    "LocationY": 66,
+                    "SizeHeight": 25,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T0",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "Operator",
+                    "DataType": "C",
+                    "ParameterSequence": "07",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 9pt, style=Bold][LocationX|225][LocationY|49]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|225][LocationY|66][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.140000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T1",
+                  "sequence": "08",
+                  "name": "LotSN",
+                  "text": "批号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "[AssemblyScanShow]",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Green",
+                    "Font": "微软雅黑, 15pt, style=Bold",
+                    "LocationX": 4,
+                    "LocationY": 96
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 20pt, style=Bold",
+                    "LocationX": 7,
+                    "LocationY": 126,
+                    "SizeHeight": 46,
+                    "SizeWidth": 416,
+                    "ForeColor": "0, 0, 192"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T1",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "LotSN",
+                    "DataType": "C",
+                    "ParameterSequence": "08",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "[AssemblyScanShow]",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "[^A-Za-z0-9]",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 15pt, style=Bold][LocationX|4][LocationY|96]",
+                    "UIStyleControl": "[Font|微软雅黑, 20pt, style=Bold][LocationX|7][LocationY|126][SizeHeight|46][SizeWidth|416][ForeColor|0, 0, 192]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.147000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T2",
+                  "sequence": "09",
+                  "name": "WorkflowStepName",
+                  "text": "工作流节点名称",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Gray",
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 665,
+                    "LocationY": 119
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 665,
+                    "LocationY": 136,
+                    "SizeHeight": 25,
+                    "SizeWidth": 200,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T2",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "WorkflowStepName",
+                    "DataType": "C",
+                    "ParameterSequence": "09",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": true,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|665][LocationY|119]",
+                    "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|665][LocationY|136][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.153000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T3",
+                  "sequence": "10",
+                  "name": "ItemValue",
+                  "text": "采集项值",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "[AssemblyScan][SelRow]",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Green",
+                    "Font": "微软雅黑, 15pt, style=Bold",
+                    "LocationX": 443,
+                    "LocationY": 100
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 20pt, style=Bold",
+                    "LocationX": 444,
+                    "LocationY": 127,
+                    "SizeHeight": 46,
+                    "SizeWidth": 418,
+                    "ForeColor": "Purple"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T3",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "ItemValue",
+                    "DataType": "C",
+                    "ParameterSequence": "10",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "[AssemblyScan][SelRow]",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 15pt, style=Bold][LocationX|443][LocationY|100]",
+                    "UIStyleControl": "[Font|微软雅黑, 20pt, style=Bold][LocationX|444][LocationY|127][SizeHeight|46][SizeWidth|418][ForeColor|Purple]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.160000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T9",
+                  "sequence": "11",
+                  "name": "FinishQty",
+                  "text": "完成数量",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Red",
+                    "Font": "微软雅黑, 15pt, style=Bold",
+                    "LocationX": 891,
+                    "LocationY": 23
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 25pt",
+                    "LocationX": 889,
+                    "LocationY": 51,
+                    "SizeHeight": 56,
+                    "SizeWidth": 289,
+                    "ForeColor": "Red"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T9",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "FinishQty",
+                    "DataType": "C",
+                    "ParameterSequence": "11",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Red][Font|微软雅黑, 15pt, style=Bold][LocationX|891][LocationY|23]",
+                    "UIStyleControl": "[Font|微软雅黑, 25pt][LocationX|889][LocationY|51][SizeHeight|56][SizeWidth|289][ForeColor|Red]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.200000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T4",
+                  "sequence": "12",
+                  "name": "LotInfo",
+                  "text": "列表信息",
+                  "type": "nvarchar",
+                  "lines": 10,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": true,
+                  "picture": false,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Gray",
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 13,
+                    "LocationY": 188
+                  },
+                  "controlStyle": {
+                    "Font": "微软雅黑, 15pt",
+                    "LocationX": 7,
+                    "LocationY": 205,
+                    "SizeHeight": 282,
+                    "SizeWidth": 855,
+                    "ForeColor": "ControlText"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T4",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "LotInfo",
+                    "DataType": "C",
+                    "ParameterSequence": "12",
+                    "IsValueListUsage": false,
+                    "ControlLine": 10,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": true,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|13][LocationY|188]",
+                    "UIStyleControl": "[Font|微软雅黑, 15pt][LocationX|7][LocationY|205][SizeHeight|282][SizeWidth|855][ForeColor|ControlText]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.170000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                },
+                {
+                  "id": "MTP1000001T5",
+                  "sequence": "13",
+                  "name": "WarnImage",
+                  "text": ".",
+                  "type": "nvarchar",
+                  "lines": 10,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": true,
+                  "labelStyle": {
+                    "BackColor": "White",
+                    "ForeColor": "Gray",
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 5,
+                    "LocationY": 290
+                  },
+                  "controlStyle": {
+                    "BackColor": "White",
+                    "LocationX": 887,
+                    "LocationY": 187,
+                    "SizeHeight": 243,
+                    "SizeWidth": 291,
+                    "BorderStyle": "None"
+                  },
+                  "config": {
+                    "MESTxnObjectParameterId": "MTP1000001T5",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "TxnParameterName": "WarnImage",
+                    "DataType": "C",
+                    "ParameterSequence": "13",
+                    "IsValueListUsage": false,
+                    "ControlLine": 10,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": true,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsOpenFile": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "IsMustBeUpper": false,
+                    "IsValidation": false,
+                    "MustValueMoreThan": null,
+                    "MustValueLessThan": null,
+                    "MustLengthMoreThan": null,
+                    "MustLengthLessThan": null,
+                    "MustIncludedChar": "",
+                    "RegularExpression": "",
+                    "AccessCode": "",
+                    "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|5][LocationY|290]",
+                    "UIStyleControl": "[BackColor|White][LocationX|887][LocationY|187][SizeHeight|243][SizeWidth|291][BorderStyle|None]",
+                    "DefaultValue": "",
+                    "DefaultChart": "",
+                    "CreateDate": "2016-09-12T09:49:06.177000"
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "TxnParameterName",
+                      "text": "事务参数名称"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsOpenFile",
+                      "text": "是否打开并上传文件？"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "IsMustBeUpper",
+                      "text": "转换为大写吗？"
+                    },
+                    {
+                      "name": "IsValidation",
+                      "text": "执行规则检查吗？"
+                    },
+                    {
+                      "name": "MustValueMoreThan",
+                      "text": "值必须大于等于"
+                    },
+                    {
+                      "name": "MustValueLessThan",
+                      "text": "值必须小于等于"
+                    },
+                    {
+                      "name": "MustLengthMoreThan",
+                      "text": "长度必须大于等于"
+                    },
+                    {
+                      "name": "MustLengthLessThan",
+                      "text": "长度必须小于等于"
+                    },
+                    {
+                      "name": "MustIncludedChar",
+                      "text": "值中必须包含字符"
+                    },
+                    {
+                      "name": "RegularExpression",
+                      "text": "正则表达式"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "UIStyleLabel",
+                      "text": "标签布局参数"
+                    },
+                    {
+                      "name": "UIStyleControl",
+                      "text": "控件布局参数"
+                    },
+                    {
+                      "name": "DefaultValue",
+                      "text": "默认值"
+                    },
+                    {
+                      "name": "DefaultChart",
+                      "text": "默认分析图表"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ]
+                }
+              ],
+              "methods": [
+                {
+                  "id": "MOM1000000LL",
+                  "sequence": "01",
+                  "name": "SelRow",
+                  "text": "选中行",
+                  "sql": "",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MESTxnObjectMethodId": "MOM1000000LL",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "MESTxnObjectMethodName": "SelRow",
+                    "MethodSequence": "01",
+                    "SQLDoTxn": "",
+                    "TxnParameter": "",
+                    "IsHidden": true,
+                    "RefreshGridParameter": "",
+                    "IsBeforeRunningConfirm": false,
+                    "IsResetWhenDone": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "IsPlaySound": false,
+                    "PromptMessage": "",
+                    "AccessCode": "",
+                    "LabelCopies": 1,
+                    "LabelLeftMargin": 0,
+                    "LabelTopMargin": 0,
+                    "LabelFileSP": null,
+                    "LabelFileName": "",
+                    "IsWriteToPort": false,
+                    "PortNumber": "LPT1:",
+                    "UIStyle": null,
+                    "IsPreview": false,
+                    "IsShowDataSetWindow": false,
+                    "ButtonPicture": "",
+                    "CreateDate": "2016-09-12T09:49:06.083000",
+                    "UDialogParameter": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectMethodName",
+                      "text": "事务方法名称"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsResetWhenDone",
+                      "text": "执行成功后是否复位界面?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "LabelCopies",
+                      "text": "标签打印份数"
+                    },
+                    {
+                      "name": "LabelLeftMargin",
+                      "text": "标签左边距"
+                    },
+                    {
+                      "name": "LabelTopMargin",
+                      "text": "标签上边距"
+                    },
+                    {
+                      "name": "LabelFileSP",
+                      "text": "动态标签文件存储过程"
+                    },
+                    {
+                      "name": "LabelFileName",
+                      "text": "标签/报表文件名(*.LAB,*.RPT, *.MRZ)"
+                    },
+                    {
+                      "name": "IsWriteToPort",
+                      "text": "是否直接从端口输出?"
+                    },
+                    {
+                      "name": "PortNumber",
+                      "text": "端口号"
+                    },
+                    {
+                      "name": "UIStyle",
+                      "text": "布局参数"
+                    },
+                    {
+                      "name": "IsPreview",
+                      "text": "打印前是否预览?"
+                    },
+                    {
+                      "name": "IsShowDataSetWindow",
+                      "text": "是否显示数据集窗体"
+                    },
+                    {
+                      "name": "ButtonPicture",
+                      "text": "按钮图片"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "UDialogParameter",
+                      "text": ""
+                    }
+                  ],
+                  "file": "",
+                  "missing": false
+                },
+                {
+                  "id": "MOM1000000LM",
+                  "sequence": "02",
+                  "name": "AssemblyScan",
+                  "text": "",
+                  "sql": "Txn_DCMoreBarcodeCollect",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "OrderName,MOId,Operator,LotSN,ItemValue,CollectStr",
+                  "accessCode": "",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MESTxnObjectMethodId": "MOM1000000LM",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "MESTxnObjectMethodName": "AssemblyScan",
+                    "MethodSequence": "02",
+                    "SQLDoTxn": "Txn_DCMoreBarcodeCollect",
+                    "TxnParameter": "OrderName,MOId,Operator,LotSN,ItemValue,CollectStr",
+                    "IsHidden": true,
+                    "RefreshGridParameter": "LotInfo",
+                    "IsBeforeRunningConfirm": false,
+                    "IsResetWhenDone": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "IsPlaySound": false,
+                    "PromptMessage": "",
+                    "AccessCode": "",
+                    "LabelCopies": 1,
+                    "LabelLeftMargin": 0,
+                    "LabelTopMargin": 0,
+                    "LabelFileSP": "",
+                    "LabelFileName": "",
+                    "IsWriteToPort": false,
+                    "PortNumber": "LPT1:",
+                    "UIStyle": null,
+                    "IsPreview": false,
+                    "IsShowDataSetWindow": false,
+                    "ButtonPicture": "",
+                    "CreateDate": "2016-09-12T09:49:06.090000",
+                    "UDialogParameter": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectMethodName",
+                      "text": "事务方法名称"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsResetWhenDone",
+                      "text": "执行成功后是否复位界面?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "LabelCopies",
+                      "text": "标签打印份数"
+                    },
+                    {
+                      "name": "LabelLeftMargin",
+                      "text": "标签左边距"
+                    },
+                    {
+                      "name": "LabelTopMargin",
+                      "text": "标签上边距"
+                    },
+                    {
+                      "name": "LabelFileSP",
+                      "text": "动态标签文件存储过程"
+                    },
+                    {
+                      "name": "LabelFileName",
+                      "text": "标签/报表文件名(*.LAB,*.RPT, *.MRZ)"
+                    },
+                    {
+                      "name": "IsWriteToPort",
+                      "text": "是否直接从端口输出?"
+                    },
+                    {
+                      "name": "PortNumber",
+                      "text": "端口号"
+                    },
+                    {
+                      "name": "UIStyle",
+                      "text": "布局参数"
+                    },
+                    {
+                      "name": "IsPreview",
+                      "text": "打印前是否预览?"
+                    },
+                    {
+                      "name": "IsShowDataSetWindow",
+                      "text": "是否显示数据集窗体"
+                    },
+                    {
+                      "name": "ButtonPicture",
+                      "text": "按钮图片"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "UDialogParameter",
+                      "text": ""
+                    }
+                  ],
+                  "file": "Txn_DCMoreBarcodeCollect.sql",
+                  "missing": false
+                },
+                {
+                  "id": "MOM1000000LN",
+                  "sequence": "03",
+                  "name": "AssemblyScanShow",
+                  "text": "",
+                  "sql": "Txn_DCMoreBarcodeCollectShow",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "OrderName,MOId,Operator,LotSN,CollectStr",
+                  "accessCode": "",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MESTxnObjectMethodId": "MOM1000000LN",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "MESTxnObjectMethodName": "AssemblyScanShow",
+                    "MethodSequence": "03",
+                    "SQLDoTxn": "Txn_DCMoreBarcodeCollectShow",
+                    "TxnParameter": "OrderName,MOId,Operator,LotSN,CollectStr",
+                    "IsHidden": true,
+                    "RefreshGridParameter": "LotInfo",
+                    "IsBeforeRunningConfirm": false,
+                    "IsResetWhenDone": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "IsPlaySound": false,
+                    "PromptMessage": "",
+                    "AccessCode": "",
+                    "LabelCopies": 1,
+                    "LabelLeftMargin": 0,
+                    "LabelTopMargin": 0,
+                    "LabelFileSP": "",
+                    "LabelFileName": "",
+                    "IsWriteToPort": false,
+                    "PortNumber": "LPT1:",
+                    "UIStyle": null,
+                    "IsPreview": false,
+                    "IsShowDataSetWindow": false,
+                    "ButtonPicture": "",
+                    "CreateDate": "2016-09-12T09:49:06.097000",
+                    "UDialogParameter": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectMethodName",
+                      "text": "事务方法名称"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsResetWhenDone",
+                      "text": "执行成功后是否复位界面?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "LabelCopies",
+                      "text": "标签打印份数"
+                    },
+                    {
+                      "name": "LabelLeftMargin",
+                      "text": "标签左边距"
+                    },
+                    {
+                      "name": "LabelTopMargin",
+                      "text": "标签上边距"
+                    },
+                    {
+                      "name": "LabelFileSP",
+                      "text": "动态标签文件存储过程"
+                    },
+                    {
+                      "name": "LabelFileName",
+                      "text": "标签/报表文件名(*.LAB,*.RPT, *.MRZ)"
+                    },
+                    {
+                      "name": "IsWriteToPort",
+                      "text": "是否直接从端口输出?"
+                    },
+                    {
+                      "name": "PortNumber",
+                      "text": "端口号"
+                    },
+                    {
+                      "name": "UIStyle",
+                      "text": "布局参数"
+                    },
+                    {
+                      "name": "IsPreview",
+                      "text": "打印前是否预览?"
+                    },
+                    {
+                      "name": "IsShowDataSetWindow",
+                      "text": "是否显示数据集窗体"
+                    },
+                    {
+                      "name": "ButtonPicture",
+                      "text": "按钮图片"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "UDialogParameter",
+                      "text": ""
+                    }
+                  ],
+                  "file": "Txn_DCMoreBarcodeCollectShow.sql",
+                  "missing": false
+                },
+                {
+                  "id": "MOM1000000LO",
+                  "sequence": "04",
+                  "name": "LockData",
+                  "text": "锁定",
+                  "sql": "",
+                  "hidden": false,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "",
+                  "accessCode": "",
+                  "print": false,
+                  "uiStyle": {
+                    "ImageSizeWidth": 16,
+                    "ImageSizeHeight": 16,
+                    "Font": "微软雅黑, 9pt",
+                    "LocationX": 445,
+                    "LocationY": 67,
+                    "SizeHeight": 23,
+                    "SizeWidth": 198,
+                    "ForeColor": "ControlText"
+                  },
+                  "columns": [],
+                  "config": {
+                    "MESTxnObjectMethodId": "MOM1000000LO",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "MESTxnObjectMethodName": "LockData",
+                    "MethodSequence": "04",
+                    "SQLDoTxn": "",
+                    "TxnParameter": "",
+                    "IsHidden": false,
+                    "RefreshGridParameter": "",
+                    "IsBeforeRunningConfirm": false,
+                    "IsResetWhenDone": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "IsPlaySound": false,
+                    "PromptMessage": "",
+                    "AccessCode": "",
+                    "LabelCopies": 1,
+                    "LabelLeftMargin": 0,
+                    "LabelTopMargin": 0,
+                    "LabelFileSP": null,
+                    "LabelFileName": "",
+                    "IsWriteToPort": false,
+                    "PortNumber": "LPT1:",
+                    "UIStyle": "[ImageSizeWidth|16][ImageSizeHeight|16][Font|微软雅黑, 9pt][LocationX|445][LocationY|67][SizeHeight|23][SizeWidth|198][ForeColor|ControlText]",
+                    "IsPreview": false,
+                    "IsShowDataSetWindow": false,
+                    "ButtonPicture": "Lock.ico",
+                    "CreateDate": "2016-09-12T09:49:06.100000",
+                    "UDialogParameter": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectMethodName",
+                      "text": "事务方法名称"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsResetWhenDone",
+                      "text": "执行成功后是否复位界面?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "LabelCopies",
+                      "text": "标签打印份数"
+                    },
+                    {
+                      "name": "LabelLeftMargin",
+                      "text": "标签左边距"
+                    },
+                    {
+                      "name": "LabelTopMargin",
+                      "text": "标签上边距"
+                    },
+                    {
+                      "name": "LabelFileSP",
+                      "text": "动态标签文件存储过程"
+                    },
+                    {
+                      "name": "LabelFileName",
+                      "text": "标签/报表文件名(*.LAB,*.RPT, *.MRZ)"
+                    },
+                    {
+                      "name": "IsWriteToPort",
+                      "text": "是否直接从端口输出?"
+                    },
+                    {
+                      "name": "PortNumber",
+                      "text": "端口号"
+                    },
+                    {
+                      "name": "UIStyle",
+                      "text": "布局参数"
+                    },
+                    {
+                      "name": "IsPreview",
+                      "text": "打印前是否预览?"
+                    },
+                    {
+                      "name": "IsShowDataSetWindow",
+                      "text": "是否显示数据集窗体"
+                    },
+                    {
+                      "name": "ButtonPicture",
+                      "text": "按钮图片"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "UDialogParameter",
+                      "text": ""
+                    }
+                  ],
+                  "file": "",
+                  "missing": false
+                },
+                {
+                  "id": "MOM1000000PJ",
+                  "sequence": "05",
+                  "name": "ShowItemValue",
+                  "text": "",
+                  "sql": "Txn_DCAssemblyShowItemValue",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "MOId",
+                  "accessCode": "",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MESTxnObjectMethodId": "MOM1000000PJ",
+                    "MESTxnObjectId": "MTO10000007A",
+                    "MESTxnObjectMethodName": "ShowItemValue",
+                    "MethodSequence": "05",
+                    "SQLDoTxn": "Txn_DCAssemblyShowItemValue",
+                    "TxnParameter": "MOId",
+                    "IsHidden": true,
+                    "RefreshGridParameter": "LotInfo",
+                    "IsBeforeRunningConfirm": false,
+                    "IsResetWhenDone": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "IsPlaySound": false,
+                    "PromptMessage": "",
+                    "AccessCode": "",
+                    "LabelCopies": 1,
+                    "LabelLeftMargin": 0,
+                    "LabelTopMargin": 0,
+                    "LabelFileSP": "",
+                    "LabelFileName": "",
+                    "IsWriteToPort": false,
+                    "PortNumber": "LPT1:",
+                    "UIStyle": null,
+                    "IsPreview": false,
+                    "IsShowDataSetWindow": false,
+                    "ButtonPicture": "",
+                    "CreateDate": "2016-10-10T14:46:34.113000",
+                    "UDialogParameter": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MESTxnObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MESTxnObjectMethodName",
+                      "text": "事务方法名称"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsResetWhenDone",
+                      "text": "执行成功后是否复位界面?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "LabelCopies",
+                      "text": "标签打印份数"
+                    },
+                    {
+                      "name": "LabelLeftMargin",
+                      "text": "标签左边距"
+                    },
+                    {
+                      "name": "LabelTopMargin",
+                      "text": "标签上边距"
+                    },
+                    {
+                      "name": "LabelFileSP",
+                      "text": "动态标签文件存储过程"
+                    },
+                    {
+                      "name": "LabelFileName",
+                      "text": "标签/报表文件名(*.LAB,*.RPT, *.MRZ)"
+                    },
+                    {
+                      "name": "IsWriteToPort",
+                      "text": "是否直接从端口输出?"
+                    },
+                    {
+                      "name": "PortNumber",
+                      "text": "端口号"
+                    },
+                    {
+                      "name": "UIStyle",
+                      "text": "布局参数"
+                    },
+                    {
+                      "name": "IsPreview",
+                      "text": "打印前是否预览?"
+                    },
+                    {
+                      "name": "IsShowDataSetWindow",
+                      "text": "是否显示数据集窗体"
+                    },
+                    {
+                      "name": "ButtonPicture",
+                      "text": "按钮图片"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "UDialogParameter",
+                      "text": ""
+                    }
+                  ],
+                  "file": "Txn_DCAssemblyShowItemValue.sql",
+                  "missing": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "OrderName_ViewList",
+          "file": "OrderName_ViewList.sql",
+          "missing": false
+        },
+        {
+          "name": "MOByAssyTV_ViewListEx",
+          "file": "MOByAssyTV_ViewListEx.sql",
+          "missing": false
+        }
+      ]
+    }
+  ],
+  "txn": {
+    "objectId": "MTO10000007A",
+    "objectName": "DC MoreBarcodeCollect",
+    "sections": {
+      "object": {
+        "table": "MESTxnObject",
+        "columns": [
+          {
+            "name": "MESTxnObjectId",
+            "text": ""
+          },
+          {
+            "name": "MESTxnObjectName",
+            "text": "事务对象名称"
+          },
+          {
+            "name": "MESTxnObjectDesc",
+            "text": "事务对象描述"
+          },
+          {
+            "name": "IsActivity",
+            "text": "是否激活"
+          },
+          {
+            "name": "MESTxnObjectType",
+            "text": "事务对象类型"
+          },
+          {
+            "name": "ColumnCount",
+            "text": "列数"
+          },
+          {
+            "name": "FieldWidth",
+            "text": "组内字段宽度"
+          },
+          {
+            "name": "FieldSpace",
+            "text": "组内字段间距"
+          },
+          {
+            "name": "IsThirdDllUsage",
+            "text": "是否使用客户化DLL?"
+          },
+          {
+            "name": "ThirdDllFileName",
+            "text": "客户化DLL文件名"
+          },
+          {
+            "name": "DTxnSubmitParameter",
+            "text": "事务提交存储过程参数"
+          },
+          {
+            "name": "DTxnSubmitTxn",
+            "text": "事务提交存储过程"
+          },
+          {
+            "name": "IsDefaultMESTxn",
+            "text": "是否是MES默认事务?"
+          },
+          {
+            "name": "IsStaticRun",
+            "text": "是否作为静态事务执行?"
+          },
+          {
+            "name": "IsUserUI",
+            "text": "启用自定义界面布局？"
+          },
+          {
+            "name": "IsRunObjectScript",
+            "text": "是否执行对象脚本"
+          },
+          {
+            "name": "UIStyle",
+            "text": "布局参数"
+          },
+          {
+            "name": "BackgroundPicture",
+            "text": "控件容器背景图片"
+          },
+          {
+            "name": "AutoRefreshSec",
+            "text": "对象自动刷新秒数"
+          },
+          {
+            "name": "AccessCode",
+            "text": "权限控制码"
+          },
+          {
+            "name": "MessageBoxLine",
+            "text": "消息框行高"
+          },
+          {
+            "name": "ObjectScript",
+            "text": ""
+          },
+          {
+            "name": "ScriptImportDll",
+            "text": "脚本引用的DLL(如有多个用,隔开)"
+          },
+          {
+            "name": "CreateDate",
+            "text": "创建时间"
+          },
+          {
+            "name": "SOPGroupId",
+            "text": ""
+          }
+        ],
+        "rows": [
+          {
+            "MESTxnObjectId": "MTO10000007A",
+            "MESTxnObjectName": "DC MoreBarcodeCollect",
+            "MESTxnObjectDesc": "多码合一采集",
+            "IsActivity": true,
+            "MESTxnObjectType": "50",
+            "ColumnCount": 4,
+            "FieldWidth": 200,
+            "FieldSpace": 20,
+            "IsThirdDllUsage": false,
+            "ThirdDllFileName": "",
+            "DTxnSubmitParameter": "",
+            "DTxnSubmitTxn": "",
+            "IsDefaultMESTxn": false,
+            "IsStaticRun": true,
+            "IsUserUI": true,
+            "IsRunObjectScript": true,
+            "UIStyle": "[BackColor|White]",
+            "BackgroundPicture": "",
+            "AutoRefreshSec": null,
+            "AccessCode": "",
+            "MessageBoxLine": 4,
+            "ObjectScript": "using System;\r\nusing System.Windows.Forms;\r\nusing System.Text;\r\nusing System.Data;\r\nusing System.Drawing;\r\nusing System.Reflection;\r\nusing System.Xml;\r\nusing System.Net;\r\nusing System.Net.Sockets;\r\nusing System.IO;\r\nusing System.IO.Ports;\r\nusing System.Collections;\r\nusing System.CodeDom.Compiler; \r\nusing System.Drawing.Printing;\r\nusing System.Collections.Generic;\r\nusing System.Runtime.InteropServices;\r\nusing System.Data.SqlClient;\r\n\r\n/* OrBit-Script脚本\r\n * 作    者：\r\n * 功能描述：\r\n * 版 本 号：\r\n * 发布日期:\r\n * 最后修改:\r\n */ \r\nnamespace ScriptProj\r\n{\r\n    public class OrBitClass\r\n    {\r\n\r\n        /// <summary>\r\n        /// MES事务插件接口全局对象，它提供了MES事务对象的所有的接口属性与接口方法\r\n        /// </summary>\r\n        public OrBitScript.OrBitAPI Scripter = new OrBitScript.OrBitAPI(); \r\n\t\t\r\n\t\tprivate Infragistics.Win.UltraWinGrid.UltraGrid grid = null;\r\n\t\t\r\n\t\t[DllImport(\"winspool.drv\")]\r\n\t\t\r\n\t\tpublic static extern bool SetDefaultPrinter(string Name);\r\n        private static PrintDocument fPrintDocument = new PrintDocument();\r\n\t\t\r\n\t\tprivate DataSet ds = new DataSet();\r\n\t\t\r\n\t\t//获取本机的打印机列表。列表中的第一项就是默认打印机。 \r\n        public void GetLocalPrinters()\r\n        {\r\n\t\t\tDataTable dt = new DataTable();\r\n            DataRow dr = null;\r\n\r\n            dt.Columns.Add(\"Printer\");\r\n\t\t\t\r\n\t\t\tdr=dt.NewRow();\r\n\t\t\tdr[\"Printer\"] = \"\";\r\n\t\t\tdt.Rows.Add(dr);\r\n\r\n            foreach (String fPrinterName in PrinterSettings.InstalledPrinters)\r\n            {\r\n                dr = dt.NewRow();\r\n\r\n                dr[\"Printer\"] = fPrinterName;\r\n\r\n                dt.Rows.Add(dr);\r\n            }\r\n\r\n            ds.Tables.Add(dt);\r\n        }\r\n\r\n        /// <summary>\r\n        /// 脚本对象实例化时加载时的方法\r\n        /// </summary>\r\n        public void ScriptLoad()\r\n        {\r\n        \t//to do..\r\n\t\t\t\r\n\t\t\t//获取本地打印机\r\n\t\t\tGetLocalPrinters();\r\n\t\t\t\r\n\t\t\t//打印机列表赋值\r\n\t\t\tScripter.SetParameterDataSet(\"CustomerSNPrinter\",ds);\r\n\t\t\t\r\n\t\t\t//实例化网格\r\n\t\t\tgrid=(Infragistics.Win.UltraWinGrid.UltraGrid)Scripter.MESTxnPanel.Controls[\"LotInfo\"] ;\r\n\t\t\t\r\n\t\t\t//采集组只可选\r\n\t\t\tScripter.SetControlStyle(\"CollectGroup\",\"[CombEdit|0]\");\r\n\t\t\tScripter.SetControlStyle(\"CustomerSNPrinter\",\"[CombEdit|0]\");\r\n\t\t\tScripter.SetControlStyle(\"PrintCopies\",\"[CombEdit|0]\");\r\n\t\t\t\r\n\t\t\tScripter.SetControlStyle(\"FinishQty\",\"[BorderStyle|None]\");\r\n\t\t\t\r\n        }\r\n\t    \r\n\t\t\r\n\t\t/// <summary>\r\n\t\t/// 脚本在退出前的询问方法\r\n\t\t/// </summary>\r\n\t\t/// <returns>True则退出，False则取消退出</returns>\r\n        public bool ScriptClosing()\r\n        {\r\n\t\t\t//to do..\r\n\t\t\treturn true;\r\n        }\r\n\t\t\r\n        /// <summary>\r\n        /// MES事务对象在关闭时卸载此脚本对象的方法\r\n        /// </summary>\r\n        public void ScriptUnLoad()\r\n        {\r\n\t\t    //to do..\r\n        }\r\n\r\n\t\t/// <summary>\r\n\t\t/// Winsocket消息接受方法\r\n\t\t/// </summary>\r\n\t\t/// <param name=\"MsgString\">消息的内容</param>\r\n\t\tpublic void WinsocketMessage(string MsgString)\r\n\t\t{\r\n\t\t\t//to do..  \t\r\n\t\t\t\r\n\t\t}\r\n\r\n        /// <summary>\r\n        /// MES事务插件Tab页选中时的脚本对象执行的方法\r\n        /// </summary>\r\n        public void TabActive()\r\n        {\r\n\t\t    //to do..\r\n        }\r\n        \r\n        /// <summary>\r\n        /// 容器中按钮触发时的通用检查事件\r\n        /// </summary>\r\n        /// <param name=\"ButtonName\">按钮名</param>\r\n        /// <returns>True表示继续,False表示退回</returns>\r\n        public bool ButtonClickBefore(string ButtonName)\r\n        {\r\n \t\t    //to do..\r\n\t       \treturn true;         \r\n        }\r\n        \r\n        /// <summary>\r\n        /// 容器中按钮通用触发事件\r\n        /// </summary>\r\n        /// <param name=\"ButtonName\">按钮名</param>\r\n        public void ButtonClick(string ButtonName)\r\n        {\r\n\t\t    //to do..\r\n\t\t\t\t\r\n\t\t\t//设置客户SN默认打印机\r\n\t\t\tif (ButtonName==\"SetSNPrinter\")\r\n\t\t\t{\r\n            \tSetDefaultPrinter(Scripter.GetParameterValue(\"CustomerSNPrinter\"));\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t#region 选中行\r\n\t\t\tif (ButtonName==\"SelRow\")\r\n\t\t\t{\t\r\n\t\t\t\ttry\r\n\t\t\t\t{\t\t\t\t\t\t\t\r\n\t\t\t\t\tstring NextItemName=Scripter.GetParameterValue(\"NextItemName\");\r\n\t\t\t\t\t\r\n\t\t\t\t\tfor(int i=0;i<grid.Rows.Count;i++)\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\tif (Convert.ToString(grid.Rows[i].Cells[\"CollectItemName\"].Value)==NextItemName)\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\tgrid.Rows[i].Selected =true;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\telse\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\tgrid.Rows[i].Selected =false;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t\tcatch{}\r\n\t\t\t}\r\n\t\t\t#endregion\t\r\n\t\t\t\r\n\t\t\tif(ButtonName==\"LockData\")\r\n\t\t\t{\r\n\t\t\t\tif(Scripter.GetParameterValue(\"IsLock\")==\"\")\r\n\t\t\t\t{\r\n\t\t\t\t\tScripter.SetControlStyle(\"OrderName\",\"[Enable|0]\");\r\n\t\t\t\t\tScripter.SetControlStyle(\"MOName\",\"[Enable|0]\");\r\n\t\t\t\t\tScripter.SetControlStyle(\"Operator\",\"[Enable|0]\");\r\n\t\t\t\t\tScripter.SetParameterValue(\"IsLock\",\"Y\");\r\n\t\t\t\t}\r\n\t\t\t\telse\r\n\t\t\t\t{\r\n\t\t\t\t\tScripter.SetControlStyle(\"OrderName\",\"[Enable|1]\");\r\n\t\t\t\t\tScripter.SetControlStyle(\"MOName\",\"[Enable|1]\");\r\n\t\t\t\t\tScripter.SetControlStyle(\"Operator\",\"[Enable|1]\");\r\n\t\t\t\t\tScripter.SetParameterValue(\"IsLock\",\"\");\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\t\r\n        }\r\n\r\n        /// <summary>\r\n        /// 容器中网格或下拉列表选中某行时的触发事件\r\n        /// </summary>\r\n        /// <param name=\"ParameterName\">对象参数名</param>\r\n        /// <param name=\"CellA\">选中行第一列的值</param>\r\n        /// <param name=\"CellB\">选中行第二列的值</param>\r\n\t    public void RowSelected(string ParameterName, string CellA, string CellB)\r\n        { \r\n\t\t    //to do..        \t\r\n        }\r\n\r\n\t\t/// <summary>\r\n\t\t/// 容器中可输入控件获取光标焦点后触发的事件\r\n\t\t/// </summary>\r\n\t\t/// <param name=\"ParameterName\">对象参数名</param>\r\n\t\tpublic void ParameterEnter(string ParameterName)\r\n\t\t{\r\n\t\t\t//MessageBox.Show(ParameterName); \r\n\t\t\r\n\t\t}\r\n\r\n        /// <summary>\r\n        /// 容器中可输入控件按回车后触发的事件\r\n        /// </summary>\r\n        /// <param name=\"ParameterName\">对象参数名</param>\r\n        /// <param name=\"ParameterValue\">输入值</param>\r\n        /// <returns>True跳到下一个控件，False表示留在原控件中</returns>\r\n        public bool EnterPressed(string ParameterName, string ParameterValue)\r\n        {\r\n            //to do..\r\n            return true;\r\n        }\r\n\r\n\t\t/// <summary>\r\n\t\t/// 动态事务批号传送前触发的事件\r\n\t\t/// </summary>\r\n\t\t/// <returns>True允许执行Move，False终止</returns>\r\n\t\tpublic bool LotMoveBefore(string LotId)\r\n\t\t{\r\n\t\t\treturn true;\r\n\t\t}\t\r\n\t\t\r\n\t\t/// <summary>\r\n\t\t/// 动态事务批号传送后触发的事件\r\n\t\t/// </summary>\r\n\t\tpublic void LotMoved(string LotId)\r\n\t\t{\r\n\t\t\treturn;\r\n\t\t}\t\r\n       \r\n    }\r\n}",
+            "ScriptImportDll": "",
+            "CreateDate": "2016-09-12T09:49:06.020000",
+            "SOPGroupId": null
+          }
+        ]
+      },
+      "parameters": {
+        "table": "MESTxnObjectParameter",
+        "columns": [
+          {
+            "name": "MESTxnObjectParameterId",
+            "text": ""
+          },
+          {
+            "name": "MESTxnObjectId",
+            "text": ""
+          },
+          {
+            "name": "TxnParameterName",
+            "text": "事务参数名称"
+          },
+          {
+            "name": "DataType",
+            "text": "数据类型"
+          },
+          {
+            "name": "ParameterSequence",
+            "text": "排列顺序"
+          },
+          {
+            "name": "IsValueListUsage",
+            "text": "是否使用值列表?"
+          },
+          {
+            "name": "ControlLine",
+            "text": "字段占用行数"
+          },
+          {
+            "name": "ValueList",
+            "text": "值列表"
+          },
+          {
+            "name": "LinkToValueListParameter",
+            "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+          },
+          {
+            "name": "IsReadOnly",
+            "text": "只读吗?"
+          },
+          {
+            "name": "IsHidden",
+            "text": "隐藏吗?"
+          },
+          {
+            "name": "HiddenCondition",
+            "text": "是否按条件隐藏?"
+          },
+          {
+            "name": "IsPicture",
+            "text": "是否是一个图片?"
+          },
+          {
+            "name": "IsSplitLine",
+            "text": "是否是一个分隔线?"
+          },
+          {
+            "name": "IsGrid",
+            "text": "是否启用网格?"
+          },
+          {
+            "name": "IsShowTime",
+            "text": "显示时间吗?"
+          },
+          {
+            "name": "IsOpenFile",
+            "text": "是否打开并上传文件？"
+          },
+          {
+            "name": "IsSaveValueToLocal",
+            "text": "将值保存在注册表吗？"
+          },
+          {
+            "name": "IsMustInput",
+            "text": "必须输入吗？"
+          },
+          {
+            "name": "IsMustBeUpper",
+            "text": "转换为大写吗？"
+          },
+          {
+            "name": "IsValidation",
+            "text": "执行规则检查吗？"
+          },
+          {
+            "name": "MustValueMoreThan",
+            "text": "值必须大于等于"
+          },
+          {
+            "name": "MustValueLessThan",
+            "text": "值必须小于等于"
+          },
+          {
+            "name": "MustLengthMoreThan",
+            "text": "长度必须大于等于"
+          },
+          {
+            "name": "MustLengthLessThan",
+            "text": "长度必须小于等于"
+          },
+          {
+            "name": "MustIncludedChar",
+            "text": "值中必须包含字符"
+          },
+          {
+            "name": "RegularExpression",
+            "text": "正则表达式"
+          },
+          {
+            "name": "AccessCode",
+            "text": "权限控制码"
+          },
+          {
+            "name": "UIStyleLabel",
+            "text": "标签布局参数"
+          },
+          {
+            "name": "UIStyleControl",
+            "text": "控件布局参数"
+          },
+          {
+            "name": "DefaultValue",
+            "text": "默认值"
+          },
+          {
+            "name": "DefaultChart",
+            "text": "默认分析图表"
+          },
+          {
+            "name": "CreateDate",
+            "text": "创建时间"
+          }
+        ],
+        "rows": [
+          {
+            "MESTxnObjectParameterId": "MTP1000001SW",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "NextItemName",
+            "DataType": "C",
+            "ParameterSequence": "00",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": false,
+            "IsHidden": true,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": null,
+            "UIStyleControl": null,
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.113000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001SX",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "MOName",
+            "DataType": "C",
+            "ParameterSequence": "02",
+            "IsValueListUsage": true,
+            "ControlLine": null,
+            "ValueList": "MOByAssyTV_ViewListEx",
+            "LinkToValueListParameter": "[ShowItemValue]",
+            "IsReadOnly": false,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": true,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 9pt, style=Bold][LocationX|225][LocationY|5]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|225][LocationY|22][SizeHeight|26][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.120000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001SY",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "ProductName",
+            "DataType": "C",
+            "ParameterSequence": "03",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": true,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|445][LocationY|5]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|445][LocationY|22][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.127000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001SZ",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "MOQtyRequired",
+            "DataType": "C",
+            "ParameterSequence": "04",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": true,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|665][LocationY|5]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|665][LocationY|22][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.133000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T0",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "Operator",
+            "DataType": "C",
+            "ParameterSequence": "07",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": false,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": true,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 9pt, style=Bold][LocationX|225][LocationY|49]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|225][LocationY|66][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.140000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T1",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "LotSN",
+            "DataType": "C",
+            "ParameterSequence": "08",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "[AssemblyScanShow]",
+            "IsReadOnly": false,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": true,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "[^A-Za-z0-9]",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 15pt, style=Bold][LocationX|4][LocationY|96]",
+            "UIStyleControl": "[Font|微软雅黑, 20pt, style=Bold][LocationX|7][LocationY|126][SizeHeight|46][SizeWidth|416][ForeColor|0, 0, 192]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.147000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T2",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "WorkflowStepName",
+            "DataType": "C",
+            "ParameterSequence": "09",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": true,
+            "IsHidden": true,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|665][LocationY|119]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|665][LocationY|136][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.153000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T3",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "ItemValue",
+            "DataType": "C",
+            "ParameterSequence": "10",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "[AssemblyScan][SelRow]",
+            "IsReadOnly": false,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": true,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Green][Font|微软雅黑, 15pt, style=Bold][LocationX|443][LocationY|100]",
+            "UIStyleControl": "[Font|微软雅黑, 20pt, style=Bold][LocationX|444][LocationY|127][SizeHeight|46][SizeWidth|418][ForeColor|Purple]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.160000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T4",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "LotInfo",
+            "DataType": "C",
+            "ParameterSequence": "12",
+            "IsValueListUsage": false,
+            "ControlLine": 10,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": false,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": true,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|13][LocationY|188]",
+            "UIStyleControl": "[Font|微软雅黑, 15pt][LocationX|7][LocationY|205][SizeHeight|282][SizeWidth|855][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.170000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T5",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "WarnImage",
+            "DataType": "C",
+            "ParameterSequence": "13",
+            "IsValueListUsage": false,
+            "ControlLine": 10,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": false,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": true,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|5][LocationY|290]",
+            "UIStyleControl": "[BackColor|White][LocationX|887][LocationY|187][SizeHeight|243][SizeWidth|291][BorderStyle|None]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.177000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T6",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "OrderName",
+            "DataType": "C",
+            "ParameterSequence": "01",
+            "IsValueListUsage": true,
+            "ControlLine": null,
+            "ValueList": "OrderName_ViewList",
+            "LinkToValueListParameter": "MOName",
+            "IsReadOnly": false,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": true,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|0, 0, 192][Font|微软雅黑, 9pt, style=Bold][LocationX|5][LocationY|5]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|5][LocationY|22][SizeHeight|26][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.180000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T7",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "MOId",
+            "DataType": "C",
+            "ParameterSequence": "02",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": false,
+            "IsHidden": true,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": null,
+            "UIStyleControl": null,
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.190000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T8",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "WorkcenterName",
+            "DataType": "C",
+            "ParameterSequence": "05",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": true,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|5][LocationY|49]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|5][LocationY|66][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.193000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001T9",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "FinishQty",
+            "DataType": "C",
+            "ParameterSequence": "11",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": true,
+            "IsHidden": false,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Red][Font|微软雅黑, 15pt, style=Bold][LocationX|891][LocationY|23]",
+            "UIStyleControl": "[Font|微软雅黑, 25pt][LocationX|889][LocationY|51][SizeHeight|56][SizeWidth|289][ForeColor|Red]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.200000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001TA",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "IsLock",
+            "DataType": "C",
+            "ParameterSequence": "00",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": true,
+            "IsHidden": true,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": "[BackColor|White][ForeColor|Gray][Font|微软雅黑, 9pt][LocationX|5][LocationY|5]",
+            "UIStyleControl": "[Font|微软雅黑, 9pt][LocationX|5][LocationY|22][SizeHeight|25][SizeWidth|200][ForeColor|ControlText]",
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.210000"
+          },
+          {
+            "MESTxnObjectParameterId": "MTP1000001TB",
+            "MESTxnObjectId": "MTO10000007A",
+            "TxnParameterName": "CollectStr",
+            "DataType": "C",
+            "ParameterSequence": "00",
+            "IsValueListUsage": false,
+            "ControlLine": null,
+            "ValueList": "",
+            "LinkToValueListParameter": "",
+            "IsReadOnly": false,
+            "IsHidden": true,
+            "HiddenCondition": "",
+            "IsPicture": false,
+            "IsSplitLine": false,
+            "IsGrid": false,
+            "IsShowTime": false,
+            "IsOpenFile": false,
+            "IsSaveValueToLocal": false,
+            "IsMustInput": false,
+            "IsMustBeUpper": false,
+            "IsValidation": false,
+            "MustValueMoreThan": null,
+            "MustValueLessThan": null,
+            "MustLengthMoreThan": null,
+            "MustLengthLessThan": null,
+            "MustIncludedChar": "",
+            "RegularExpression": "",
+            "AccessCode": "",
+            "UIStyleLabel": null,
+            "UIStyleControl": null,
+            "DefaultValue": "",
+            "DefaultChart": "",
+            "CreateDate": "2016-09-12T09:49:06.217000"
+          }
+        ]
+      },
+      "methods": {
+        "table": "MESTxnObjectMethod",
+        "columns": [
+          {
+            "name": "MESTxnObjectMethodId",
+            "text": ""
+          },
+          {
+            "name": "MESTxnObjectId",
+            "text": ""
+          },
+          {
+            "name": "MESTxnObjectMethodName",
+            "text": "事务方法名称"
+          },
+          {
+            "name": "MethodSequence",
+            "text": "排列顺序"
+          },
+          {
+            "name": "SQLDoTxn",
+            "text": "执行事务名"
+          },
+          {
+            "name": "TxnParameter",
+            "text": "事务执行参数"
+          },
+          {
+            "name": "IsHidden",
+            "text": "隐藏吗?"
+          },
+          {
+            "name": "RefreshGridParameter",
+            "text": "执行完成后回刷网格参数名"
+          },
+          {
+            "name": "IsBeforeRunningConfirm",
+            "text": "执行前需要提示吗?"
+          },
+          {
+            "name": "IsResetWhenDone",
+            "text": "执行成功后是否复位界面?"
+          },
+          {
+            "name": "IsAutoRunWhenTabActive",
+            "text": "Tab页显示时是否自动执行?"
+          },
+          {
+            "name": "IsPlaySound",
+            "text": "是否播放声音?"
+          },
+          {
+            "name": "PromptMessage",
+            "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+          },
+          {
+            "name": "AccessCode",
+            "text": "权限控制码"
+          },
+          {
+            "name": "LabelCopies",
+            "text": "标签打印份数"
+          },
+          {
+            "name": "LabelLeftMargin",
+            "text": "标签左边距"
+          },
+          {
+            "name": "LabelTopMargin",
+            "text": "标签上边距"
+          },
+          {
+            "name": "LabelFileSP",
+            "text": "动态标签文件存储过程"
+          },
+          {
+            "name": "LabelFileName",
+            "text": "标签/报表文件名(*.LAB,*.RPT, *.MRZ)"
+          },
+          {
+            "name": "IsWriteToPort",
+            "text": "是否直接从端口输出?"
+          },
+          {
+            "name": "PortNumber",
+            "text": "端口号"
+          },
+          {
+            "name": "UIStyle",
+            "text": "布局参数"
+          },
+          {
+            "name": "IsPreview",
+            "text": "打印前是否预览?"
+          },
+          {
+            "name": "IsShowDataSetWindow",
+            "text": "是否显示数据集窗体"
+          },
+          {
+            "name": "ButtonPicture",
+            "text": "按钮图片"
+          },
+          {
+            "name": "CreateDate",
+            "text": "创建时间"
+          },
+          {
+            "name": "UDialogParameter",
+            "text": ""
+          }
+        ],
+        "rows": [
+          {
+            "MESTxnObjectMethodId": "MOM1000000LL",
+            "MESTxnObjectId": "MTO10000007A",
+            "MESTxnObjectMethodName": "SelRow",
+            "MethodSequence": "01",
+            "SQLDoTxn": "",
+            "TxnParameter": "",
+            "IsHidden": true,
+            "RefreshGridParameter": "",
+            "IsBeforeRunningConfirm": false,
+            "IsResetWhenDone": false,
+            "IsAutoRunWhenTabActive": false,
+            "IsPlaySound": false,
+            "PromptMessage": "",
+            "AccessCode": "",
+            "LabelCopies": 1,
+            "LabelLeftMargin": 0,
+            "LabelTopMargin": 0,
+            "LabelFileSP": null,
+            "LabelFileName": "",
+            "IsWriteToPort": false,
+            "PortNumber": "LPT1:",
+            "UIStyle": null,
+            "IsPreview": false,
+            "IsShowDataSetWindow": false,
+            "ButtonPicture": "",
+            "CreateDate": "2016-09-12T09:49:06.083000",
+            "UDialogParameter": null
+          },
+          {
+            "MESTxnObjectMethodId": "MOM1000000LM",
+            "MESTxnObjectId": "MTO10000007A",
+            "MESTxnObjectMethodName": "AssemblyScan",
+            "MethodSequence": "02",
+            "SQLDoTxn": "Txn_DCMoreBarcodeCollect",
+            "TxnParameter": "OrderName,MOId,Operator,LotSN,ItemValue,CollectStr",
+            "IsHidden": true,
+            "RefreshGridParameter": "LotInfo",
+            "IsBeforeRunningConfirm": false,
+            "IsResetWhenDone": false,
+            "IsAutoRunWhenTabActive": false,
+            "IsPlaySound": false,
+            "PromptMessage": "",
+            "AccessCode": "",
+            "LabelCopies": 1,
+            "LabelLeftMargin": 0,
+            "LabelTopMargin": 0,
+            "LabelFileSP": "",
+            "LabelFileName": "",
+            "IsWriteToPort": false,
+            "PortNumber": "LPT1:",
+            "UIStyle": null,
+            "IsPreview": false,
+            "IsShowDataSetWindow": false,
+            "ButtonPicture": "",
+            "CreateDate": "2016-09-12T09:49:06.090000",
+            "UDialogParameter": null
+          },
+          {
+            "MESTxnObjectMethodId": "MOM1000000LN",
+            "MESTxnObjectId": "MTO10000007A",
+            "MESTxnObjectMethodName": "AssemblyScanShow",
+            "MethodSequence": "03",
+            "SQLDoTxn": "Txn_DCMoreBarcodeCollectShow",
+            "TxnParameter": "OrderName,MOId,Operator,LotSN,CollectStr",
+            "IsHidden": true,
+            "RefreshGridParameter": "LotInfo",
+            "IsBeforeRunningConfirm": false,
+            "IsResetWhenDone": false,
+            "IsAutoRunWhenTabActive": false,
+            "IsPlaySound": false,
+            "PromptMessage": "",
+            "AccessCode": "",
+            "LabelCopies": 1,
+            "LabelLeftMargin": 0,
+            "LabelTopMargin": 0,
+            "LabelFileSP": "",
+            "LabelFileName": "",
+            "IsWriteToPort": false,
+            "PortNumber": "LPT1:",
+            "UIStyle": null,
+            "IsPreview": false,
+            "IsShowDataSetWindow": false,
+            "ButtonPicture": "",
+            "CreateDate": "2016-09-12T09:49:06.097000",
+            "UDialogParameter": null
+          },
+          {
+            "MESTxnObjectMethodId": "MOM1000000LO",
+            "MESTxnObjectId": "MTO10000007A",
+            "MESTxnObjectMethodName": "LockData",
+            "MethodSequence": "04",
+            "SQLDoTxn": "",
+            "TxnParameter": "",
+            "IsHidden": false,
+            "RefreshGridParameter": "",
+            "IsBeforeRunningConfirm": false,
+            "IsResetWhenDone": false,
+            "IsAutoRunWhenTabActive": false,
+            "IsPlaySound": false,
+            "PromptMessage": "",
+            "AccessCode": "",
+            "LabelCopies": 1,
+            "LabelLeftMargin": 0,
+            "LabelTopMargin": 0,
+            "LabelFileSP": null,
+            "LabelFileName": "",
+            "IsWriteToPort": false,
+            "PortNumber": "LPT1:",
+            "UIStyle": "[ImageSizeWidth|16][ImageSizeHeight|16][Font|微软雅黑, 9pt][LocationX|445][LocationY|67][SizeHeight|23][SizeWidth|198][ForeColor|ControlText]",
+            "IsPreview": false,
+            "IsShowDataSetWindow": false,
+            "ButtonPicture": "Lock.ico",
+            "CreateDate": "2016-09-12T09:49:06.100000",
+            "UDialogParameter": null
+          },
+          {
+            "MESTxnObjectMethodId": "MOM1000000PJ",
+            "MESTxnObjectId": "MTO10000007A",
+            "MESTxnObjectMethodName": "ShowItemValue",
+            "MethodSequence": "05",
+            "SQLDoTxn": "Txn_DCAssemblyShowItemValue",
+            "TxnParameter": "MOId",
+            "IsHidden": true,
+            "RefreshGridParameter": "LotInfo",
+            "IsBeforeRunningConfirm": false,
+            "IsResetWhenDone": false,
+            "IsAutoRunWhenTabActive": false,
+            "IsPlaySound": false,
+            "PromptMessage": "",
+            "AccessCode": "",
+            "LabelCopies": 1,
+            "LabelLeftMargin": 0,
+            "LabelTopMargin": 0,
+            "LabelFileSP": "",
+            "LabelFileName": "",
+            "IsWriteToPort": false,
+            "PortNumber": "LPT1:",
+            "UIStyle": null,
+            "IsPreview": false,
+            "IsShowDataSetWindow": false,
+            "ButtonPicture": "",
+            "CreateDate": "2016-10-10T14:46:34.113000",
+            "UDialogParameter": null
+          }
+        ]
+      },
+      "specifications": {
+        "table": "MESTxnObjectSpecification",
+        "columns": [
+          {
+            "name": "MESTxnObjectSpecificationId",
+            "text": ""
+          },
+          {
+            "name": "MESTxnObjectId",
+            "text": ""
+          },
+          {
+            "name": "SpecificationId",
+            "text": "规程ID"
+          },
+          {
+            "name": "ModifyDate",
+            "text": "修改日期"
+          },
+          {
+            "name": "CreateDate",
+            "text": "创建时间"
+          }
+        ],
+        "rows": [
+          {
+            "MESTxnObjectSpecificationId": "MESS0000001Y",
+            "MESTxnObjectId": "MTO10000007A",
+            "SpecificationId": "SPE1000001BH",
+            "ModifyDate": "2016-09-12T22:04:41.070000",
+            "CreateDate": "2016-09-12T22:04:41.070000"
+          }
+        ]
+      }
+    }
+  },
+  "pulled": {
+    "txn": "2026-11-16T14:16:04+08:00"
+  }
+}

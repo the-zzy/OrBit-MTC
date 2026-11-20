@@ -20,8 +20,1351 @@
         "columns": []
       },
       "procedures": [],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-12T11:12:17+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "AssetKeepQuery",
+          "groups": [
+            {
+              "id": "MFG10000011H",
+              "sequence": "02",
+              "name": "AssetKeepQueryGroup",
+              "text": "设备点检报告",
+              "columns": 1,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "SMQ1000001A4",
+                  "sequence": "01",
+                  "name": "YYMM",
+                  "text": "点检年月",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ10000019X",
+                  "sequence": "03",
+                  "name": "Operator",
+                  "text": "操作员",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001A0",
+                  "sequence": "04",
+                  "name": "ObjectType",
+                  "text": "项目类别",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "AssetObjecttype_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001A1",
+                  "sequence": "05",
+                  "name": "AssetTypeName",
+                  "text": "资产类别",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "Assethead_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001A2",
+                  "sequence": "06",
+                  "name": "AssetHeadid",
+                  "text": "",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001A3",
+                  "sequence": "07",
+                  "name": "typecode",
+                  "text": "类别代码",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001AD",
+                  "sequence": "08",
+                  "name": "Workcentername",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "WorkcenterNameTV_ViewListPK",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001AE",
+                  "sequence": "09",
+                  "name": "WorkCenterid",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000000VF",
+                  "sequence": "01",
+                  "name": "AssetKeepQuery",
+                  "text": "设备点检查询",
+                  "sql": "Query_AssetKupQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "YYMM,Operator,ObjectType,AssetTypeName,Assetheadid,typecode,WorkCenterid",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [
+                    {
+                      "name": "ServiceDivisionid",
+                      "text": "附属部门"
+                    },
+                    {
+                      "name": "Divisionid",
+                      "text": "部门"
+                    },
+                    {
+                      "name": "AssetNum",
+                      "text": "设备资产条码"
+                    },
+                    {
+                      "name": "Descriptionx",
+                      "text": "资产描述"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "CheckYYMM",
+                      "text": "保养年月"
+                    },
+                    {
+                      "name": "objectType",
+                      "text": "项目类别"
+                    },
+                    {
+                      "name": "ObjectTypeName",
+                      "text": "项目检查内容"
+                    },
+                    {
+                      "name": "D01",
+                      "text": "1日"
+                    },
+                    {
+                      "name": "D02",
+                      "text": "2日"
+                    },
+                    {
+                      "name": "D03",
+                      "text": "3日"
+                    },
+                    {
+                      "name": "D04",
+                      "text": "4日"
+                    },
+                    {
+                      "name": "D05",
+                      "text": "5日"
+                    },
+                    {
+                      "name": "D06",
+                      "text": "6日"
+                    },
+                    {
+                      "name": "D07",
+                      "text": "7日"
+                    },
+                    {
+                      "name": "D08",
+                      "text": "8日"
+                    },
+                    {
+                      "name": "D09",
+                      "text": "9日"
+                    },
+                    {
+                      "name": "D10",
+                      "text": "10日"
+                    },
+                    {
+                      "name": "D11",
+                      "text": "11日"
+                    },
+                    {
+                      "name": "D12",
+                      "text": "12日"
+                    },
+                    {
+                      "name": "D13",
+                      "text": "13日"
+                    },
+                    {
+                      "name": "D14",
+                      "text": "14日"
+                    },
+                    {
+                      "name": "D15",
+                      "text": "15日"
+                    },
+                    {
+                      "name": "D16",
+                      "text": "16日"
+                    },
+                    {
+                      "name": "D17",
+                      "text": "17日"
+                    },
+                    {
+                      "name": "D18",
+                      "text": "18日"
+                    },
+                    {
+                      "name": "D19",
+                      "text": "19日"
+                    },
+                    {
+                      "name": "D20",
+                      "text": "20日"
+                    },
+                    {
+                      "name": "D21",
+                      "text": "21日"
+                    },
+                    {
+                      "name": "D22",
+                      "text": "22日"
+                    },
+                    {
+                      "name": "D23",
+                      "text": "23日"
+                    },
+                    {
+                      "name": "D24",
+                      "text": "24日"
+                    },
+                    {
+                      "name": "D25",
+                      "text": "25日"
+                    },
+                    {
+                      "name": "D26",
+                      "text": "26日"
+                    },
+                    {
+                      "name": "D27",
+                      "text": "27日"
+                    },
+                    {
+                      "name": "D28",
+                      "text": "28日"
+                    },
+                    {
+                      "name": "D29",
+                      "text": "29日"
+                    },
+                    {
+                      "name": "D30",
+                      "text": "30日"
+                    },
+                    {
+                      "name": "D31",
+                      "text": "31日"
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    },
+                    {
+                      "name": "EquipmentNum",
+                      "text": "设备编号"
+                    },
+                    {
+                      "name": "CheckDate",
+                      "text": "检测日期"
+                    },
+                    {
+                      "name": "DealType",
+                      "text": "处理类别"
+                    },
+                    {
+                      "name": "CheckItem",
+                      "text": "点检项目"
+                    },
+                    {
+                      "name": "CheckItemResult",
+                      "text": "点检结果"
+                    },
+                    {
+                      "name": "AuditUser",
+                      "text": "审核人员"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "T01",
+                      "text": ""
+                    },
+                    {
+                      "name": "T02",
+                      "text": ""
+                    },
+                    {
+                      "name": "T03",
+                      "text": ""
+                    },
+                    {
+                      "name": "T04",
+                      "text": ""
+                    },
+                    {
+                      "name": "T05",
+                      "text": ""
+                    },
+                    {
+                      "name": "T06",
+                      "text": ""
+                    },
+                    {
+                      "name": "T07",
+                      "text": ""
+                    },
+                    {
+                      "name": "T08",
+                      "text": ""
+                    },
+                    {
+                      "name": "T09",
+                      "text": ""
+                    },
+                    {
+                      "name": "T10",
+                      "text": ""
+                    },
+                    {
+                      "name": "T11",
+                      "text": ""
+                    },
+                    {
+                      "name": "T12",
+                      "text": ""
+                    },
+                    {
+                      "name": "T13",
+                      "text": ""
+                    },
+                    {
+                      "name": "T14",
+                      "text": ""
+                    },
+                    {
+                      "name": "T15",
+                      "text": ""
+                    },
+                    {
+                      "name": "T16",
+                      "text": ""
+                    },
+                    {
+                      "name": "T17",
+                      "text": ""
+                    },
+                    {
+                      "name": "T18",
+                      "text": ""
+                    },
+                    {
+                      "name": "T19",
+                      "text": ""
+                    },
+                    {
+                      "name": "T20",
+                      "text": ""
+                    },
+                    {
+                      "name": "T21",
+                      "text": ""
+                    },
+                    {
+                      "name": "T22",
+                      "text": ""
+                    },
+                    {
+                      "name": "T23",
+                      "text": ""
+                    },
+                    {
+                      "name": "T24",
+                      "text": ""
+                    },
+                    {
+                      "name": "T25",
+                      "text": ""
+                    },
+                    {
+                      "name": "T26",
+                      "text": ""
+                    },
+                    {
+                      "name": "T27",
+                      "text": ""
+                    },
+                    {
+                      "name": "T28",
+                      "text": ""
+                    },
+                    {
+                      "name": "T29",
+                      "text": ""
+                    },
+                    {
+                      "name": "T30",
+                      "text": ""
+                    },
+                    {
+                      "name": "T31",
+                      "text": ""
+                    }
+                  ],
+                  "file": "Query_AssetKupQueryDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002W8",
+                  "sequence": "02",
+                  "name": "AssetKeepDayQuery",
+                  "text": "设备点检查询（日报表）",
+                  "sql": "Query_AssetKupQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "YYMM,Operator,ObjectType,AssetTypeName,Assetheadid,typecode,WorkCenterid,Workcentername",
+                  "accessCode": "",
+                  "print": true,
+                  "columns": [
+                    {
+                      "name": "ServiceDivisionid",
+                      "text": "附属部门"
+                    },
+                    {
+                      "name": "Divisionid",
+                      "text": "部门"
+                    },
+                    {
+                      "name": "AssetNum",
+                      "text": "设备资产条码"
+                    },
+                    {
+                      "name": "Descriptionx",
+                      "text": "资产描述"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "CheckYYMM",
+                      "text": "保养年月"
+                    },
+                    {
+                      "name": "objectType",
+                      "text": "项目类别"
+                    },
+                    {
+                      "name": "ObjectTypeName",
+                      "text": "项目检查内容"
+                    },
+                    {
+                      "name": "D01",
+                      "text": "1日"
+                    },
+                    {
+                      "name": "D02",
+                      "text": "2日"
+                    },
+                    {
+                      "name": "D03",
+                      "text": "3日"
+                    },
+                    {
+                      "name": "D04",
+                      "text": "4日"
+                    },
+                    {
+                      "name": "D05",
+                      "text": "5日"
+                    },
+                    {
+                      "name": "D06",
+                      "text": "6日"
+                    },
+                    {
+                      "name": "D07",
+                      "text": "7日"
+                    },
+                    {
+                      "name": "D08",
+                      "text": "8日"
+                    },
+                    {
+                      "name": "D09",
+                      "text": "9日"
+                    },
+                    {
+                      "name": "D10",
+                      "text": "10日"
+                    },
+                    {
+                      "name": "D11",
+                      "text": "11日"
+                    },
+                    {
+                      "name": "D12",
+                      "text": "12日"
+                    },
+                    {
+                      "name": "D13",
+                      "text": "13日"
+                    },
+                    {
+                      "name": "D14",
+                      "text": "14日"
+                    },
+                    {
+                      "name": "D15",
+                      "text": "15日"
+                    },
+                    {
+                      "name": "D16",
+                      "text": "16日"
+                    },
+                    {
+                      "name": "D17",
+                      "text": "17日"
+                    },
+                    {
+                      "name": "D18",
+                      "text": "18日"
+                    },
+                    {
+                      "name": "D19",
+                      "text": "19日"
+                    },
+                    {
+                      "name": "D20",
+                      "text": "20日"
+                    },
+                    {
+                      "name": "D21",
+                      "text": "21日"
+                    },
+                    {
+                      "name": "D22",
+                      "text": "22日"
+                    },
+                    {
+                      "name": "D23",
+                      "text": "23日"
+                    },
+                    {
+                      "name": "D24",
+                      "text": "24日"
+                    },
+                    {
+                      "name": "D25",
+                      "text": "25日"
+                    },
+                    {
+                      "name": "D26",
+                      "text": "26日"
+                    },
+                    {
+                      "name": "D27",
+                      "text": "27日"
+                    },
+                    {
+                      "name": "D28",
+                      "text": "28日"
+                    },
+                    {
+                      "name": "D29",
+                      "text": "29日"
+                    },
+                    {
+                      "name": "D30",
+                      "text": "30日"
+                    },
+                    {
+                      "name": "D31",
+                      "text": "31日"
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    },
+                    {
+                      "name": "EquipmentNum",
+                      "text": "设备编号"
+                    },
+                    {
+                      "name": "CheckDate",
+                      "text": "检测日期"
+                    },
+                    {
+                      "name": "DealType",
+                      "text": "处理类别"
+                    },
+                    {
+                      "name": "CheckItem",
+                      "text": "点检项目"
+                    },
+                    {
+                      "name": "CheckItemResult",
+                      "text": "点检结果"
+                    },
+                    {
+                      "name": "AuditUser",
+                      "text": "审核人员"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "T01",
+                      "text": ""
+                    },
+                    {
+                      "name": "T02",
+                      "text": ""
+                    },
+                    {
+                      "name": "T03",
+                      "text": ""
+                    },
+                    {
+                      "name": "T04",
+                      "text": ""
+                    },
+                    {
+                      "name": "T05",
+                      "text": ""
+                    },
+                    {
+                      "name": "T06",
+                      "text": ""
+                    },
+                    {
+                      "name": "T07",
+                      "text": ""
+                    },
+                    {
+                      "name": "T08",
+                      "text": ""
+                    },
+                    {
+                      "name": "T09",
+                      "text": ""
+                    },
+                    {
+                      "name": "T10",
+                      "text": ""
+                    },
+                    {
+                      "name": "T11",
+                      "text": ""
+                    },
+                    {
+                      "name": "T12",
+                      "text": ""
+                    },
+                    {
+                      "name": "T13",
+                      "text": ""
+                    },
+                    {
+                      "name": "T14",
+                      "text": ""
+                    },
+                    {
+                      "name": "T15",
+                      "text": ""
+                    },
+                    {
+                      "name": "T16",
+                      "text": ""
+                    },
+                    {
+                      "name": "T17",
+                      "text": ""
+                    },
+                    {
+                      "name": "T18",
+                      "text": ""
+                    },
+                    {
+                      "name": "T19",
+                      "text": ""
+                    },
+                    {
+                      "name": "T20",
+                      "text": ""
+                    },
+                    {
+                      "name": "T21",
+                      "text": ""
+                    },
+                    {
+                      "name": "T22",
+                      "text": ""
+                    },
+                    {
+                      "name": "T23",
+                      "text": ""
+                    },
+                    {
+                      "name": "T24",
+                      "text": ""
+                    },
+                    {
+                      "name": "T25",
+                      "text": ""
+                    },
+                    {
+                      "name": "T26",
+                      "text": ""
+                    },
+                    {
+                      "name": "T27",
+                      "text": ""
+                    },
+                    {
+                      "name": "T28",
+                      "text": ""
+                    },
+                    {
+                      "name": "T29",
+                      "text": ""
+                    },
+                    {
+                      "name": "T30",
+                      "text": ""
+                    },
+                    {
+                      "name": "T31",
+                      "text": ""
+                    }
+                  ],
+                  "file": "Query_AssetKupQueryDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000001YE",
+                  "sequence": "05",
+                  "name": "DayCheck",
+                  "text": "SMT日点检",
+                  "sql": "EquCheckQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "YYMM,Operator,ObjectType,AssetTypeName,Assetheadid,typecode,WorkCenterid",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "ServiceDivisionid",
+                      "text": "附属部门"
+                    },
+                    {
+                      "name": "DivisionId",
+                      "text": "部门"
+                    },
+                    {
+                      "name": "AssetNum",
+                      "text": "设备资产条码"
+                    },
+                    {
+                      "name": "Descriptionx",
+                      "text": "资产描述"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "CheckYYMM",
+                      "text": "保养年月"
+                    },
+                    {
+                      "name": "objectType",
+                      "text": "项目类别"
+                    },
+                    {
+                      "name": "D01",
+                      "text": "1日"
+                    },
+                    {
+                      "name": "D02",
+                      "text": "2日"
+                    },
+                    {
+                      "name": "D03",
+                      "text": "3日"
+                    },
+                    {
+                      "name": "D04",
+                      "text": "4日"
+                    },
+                    {
+                      "name": "D05",
+                      "text": "5日"
+                    },
+                    {
+                      "name": "D06",
+                      "text": "6日"
+                    },
+                    {
+                      "name": "D07",
+                      "text": "7日"
+                    },
+                    {
+                      "name": "D08",
+                      "text": "8日"
+                    },
+                    {
+                      "name": "D09",
+                      "text": "9日"
+                    },
+                    {
+                      "name": "D10",
+                      "text": "10日"
+                    },
+                    {
+                      "name": "D11",
+                      "text": "11日"
+                    },
+                    {
+                      "name": "D12",
+                      "text": "12日"
+                    },
+                    {
+                      "name": "D13",
+                      "text": "13日"
+                    },
+                    {
+                      "name": "D14",
+                      "text": "14日"
+                    },
+                    {
+                      "name": "D15",
+                      "text": "15日"
+                    },
+                    {
+                      "name": "D16",
+                      "text": "16日"
+                    },
+                    {
+                      "name": "D17",
+                      "text": "17日"
+                    },
+                    {
+                      "name": "D18",
+                      "text": "18日"
+                    },
+                    {
+                      "name": "D19",
+                      "text": "19日"
+                    },
+                    {
+                      "name": "D20",
+                      "text": "20日"
+                    },
+                    {
+                      "name": "D21",
+                      "text": "21日"
+                    },
+                    {
+                      "name": "D22",
+                      "text": "22日"
+                    },
+                    {
+                      "name": "D23",
+                      "text": "23日"
+                    },
+                    {
+                      "name": "D24",
+                      "text": "24日"
+                    },
+                    {
+                      "name": "D25",
+                      "text": "25日"
+                    },
+                    {
+                      "name": "D26",
+                      "text": "26日"
+                    },
+                    {
+                      "name": "D27",
+                      "text": "27日"
+                    },
+                    {
+                      "name": "D28",
+                      "text": "28日"
+                    },
+                    {
+                      "name": "D29",
+                      "text": "29日"
+                    },
+                    {
+                      "name": "D30",
+                      "text": "30日"
+                    },
+                    {
+                      "name": "D31",
+                      "text": "31日"
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    }
+                  ],
+                  "file": "EquCheckQueryDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000001YF",
+                  "sequence": "10",
+                  "name": "WeekCheck",
+                  "text": "SMT周点检",
+                  "sql": "EquCheckQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "YYMM,Operator,ObjectType,AssetTypeName,Assetheadid,typecode,WorkCenterid",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "ServiceDivisionid",
+                      "text": "附属部门"
+                    },
+                    {
+                      "name": "DivisionId",
+                      "text": "部门"
+                    },
+                    {
+                      "name": "AssetNum",
+                      "text": "设备资产条码"
+                    },
+                    {
+                      "name": "Descriptionx",
+                      "text": "资产描述"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "CheckYYMM",
+                      "text": "保养年月"
+                    },
+                    {
+                      "name": "objectType",
+                      "text": "项目类别"
+                    },
+                    {
+                      "name": "D01",
+                      "text": "1日"
+                    },
+                    {
+                      "name": "D02",
+                      "text": "2日"
+                    },
+                    {
+                      "name": "D03",
+                      "text": "3日"
+                    },
+                    {
+                      "name": "D04",
+                      "text": "4日"
+                    },
+                    {
+                      "name": "D05",
+                      "text": "5日"
+                    },
+                    {
+                      "name": "D06",
+                      "text": "6日"
+                    },
+                    {
+                      "name": "D07",
+                      "text": "7日"
+                    },
+                    {
+                      "name": "D08",
+                      "text": "8日"
+                    },
+                    {
+                      "name": "D09",
+                      "text": "9日"
+                    },
+                    {
+                      "name": "D10",
+                      "text": "10日"
+                    },
+                    {
+                      "name": "D11",
+                      "text": "11日"
+                    },
+                    {
+                      "name": "D12",
+                      "text": "12日"
+                    },
+                    {
+                      "name": "D13",
+                      "text": "13日"
+                    },
+                    {
+                      "name": "D14",
+                      "text": "14日"
+                    },
+                    {
+                      "name": "D15",
+                      "text": "15日"
+                    },
+                    {
+                      "name": "D16",
+                      "text": "16日"
+                    },
+                    {
+                      "name": "D17",
+                      "text": "17日"
+                    },
+                    {
+                      "name": "D18",
+                      "text": "18日"
+                    },
+                    {
+                      "name": "D19",
+                      "text": "19日"
+                    },
+                    {
+                      "name": "D20",
+                      "text": "20日"
+                    },
+                    {
+                      "name": "D21",
+                      "text": "21日"
+                    },
+                    {
+                      "name": "D22",
+                      "text": "22日"
+                    },
+                    {
+                      "name": "D23",
+                      "text": "23日"
+                    },
+                    {
+                      "name": "D24",
+                      "text": "24日"
+                    },
+                    {
+                      "name": "D25",
+                      "text": "25日"
+                    },
+                    {
+                      "name": "D26",
+                      "text": "26日"
+                    },
+                    {
+                      "name": "D27",
+                      "text": "27日"
+                    },
+                    {
+                      "name": "D28",
+                      "text": "28日"
+                    },
+                    {
+                      "name": "D29",
+                      "text": "29日"
+                    },
+                    {
+                      "name": "D30",
+                      "text": "30日"
+                    },
+                    {
+                      "name": "D31",
+                      "text": "31日"
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    }
+                  ],
+                  "file": "EquCheckQueryDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000001YG",
+                  "sequence": "15",
+                  "name": "MonthCheck",
+                  "text": "SMT月点检",
+                  "sql": "EquCheckQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "YYMM,Operator,ObjectType,AssetTypeName,Assetheadid,typecode,WorkCenterid",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "ServiceDivisionid",
+                      "text": "附属部门"
+                    },
+                    {
+                      "name": "DivisionId",
+                      "text": "部门"
+                    },
+                    {
+                      "name": "AssetNum",
+                      "text": "设备资产条码"
+                    },
+                    {
+                      "name": "Descriptionx",
+                      "text": "资产描述"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "CheckYYMM",
+                      "text": "保养年月"
+                    },
+                    {
+                      "name": "objectType",
+                      "text": "项目类别"
+                    },
+                    {
+                      "name": "D01",
+                      "text": "1日"
+                    },
+                    {
+                      "name": "D02",
+                      "text": "2日"
+                    },
+                    {
+                      "name": "D03",
+                      "text": "3日"
+                    },
+                    {
+                      "name": "D04",
+                      "text": "4日"
+                    },
+                    {
+                      "name": "D05",
+                      "text": "5日"
+                    },
+                    {
+                      "name": "D06",
+                      "text": "6日"
+                    },
+                    {
+                      "name": "D07",
+                      "text": "7日"
+                    },
+                    {
+                      "name": "D08",
+                      "text": "8日"
+                    },
+                    {
+                      "name": "D09",
+                      "text": "9日"
+                    },
+                    {
+                      "name": "D10",
+                      "text": "10日"
+                    },
+                    {
+                      "name": "D11",
+                      "text": "11日"
+                    },
+                    {
+                      "name": "D12",
+                      "text": "12日"
+                    },
+                    {
+                      "name": "D13",
+                      "text": "13日"
+                    },
+                    {
+                      "name": "D14",
+                      "text": "14日"
+                    },
+                    {
+                      "name": "D15",
+                      "text": "15日"
+                    },
+                    {
+                      "name": "D16",
+                      "text": "16日"
+                    },
+                    {
+                      "name": "D17",
+                      "text": "17日"
+                    },
+                    {
+                      "name": "D18",
+                      "text": "18日"
+                    },
+                    {
+                      "name": "D19",
+                      "text": "19日"
+                    },
+                    {
+                      "name": "D20",
+                      "text": "20日"
+                    },
+                    {
+                      "name": "D21",
+                      "text": "21日"
+                    },
+                    {
+                      "name": "D22",
+                      "text": "22日"
+                    },
+                    {
+                      "name": "D23",
+                      "text": "23日"
+                    },
+                    {
+                      "name": "D24",
+                      "text": "24日"
+                    },
+                    {
+                      "name": "D25",
+                      "text": "25日"
+                    },
+                    {
+                      "name": "D26",
+                      "text": "26日"
+                    },
+                    {
+                      "name": "D27",
+                      "text": "27日"
+                    },
+                    {
+                      "name": "D28",
+                      "text": "28日"
+                    },
+                    {
+                      "name": "D29",
+                      "text": "29日"
+                    },
+                    {
+                      "name": "D30",
+                      "text": "30日"
+                    },
+                    {
+                      "name": "D31",
+                      "text": "31日"
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    }
+                  ],
+                  "file": "EquCheckQueryDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

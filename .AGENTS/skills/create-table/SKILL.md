@@ -2,10 +2,9 @@
 name: create-table
 description: >-
   创建 SQL Server 2016 业务表，生成标准 {表名}_MTable.sql。
-  Agent 一旦产出或修改 `{表名}_MTable.sql`、或过程 INSERT 新物理表，必须完整 Read 本技能并执行 Step 1～7；
-  日志表跳过 Step 6。
-  仅改已有表对应的过程/元数据、且不碰 MTable 时不要读。
-version: "2.1.3"
+  凡产出或修改 `{表名}_MTable.sql`、或过程中 INSERT 新物理表，必须先完整读本技能并执行 Step 1～7（日志表跳过 Step 6）。
+  仅改已有表的元数据或过程、不碰 MTable 时不要读。
+version: "2.1.4"
 agent_created: true
 ---
 
@@ -145,13 +144,13 @@ GROUP BY c.name ORDER BY UsageCount DESC;
 
 ### Step 5：生成 MTable 脚本（强制）
 
-交付文件是 `{表名}_MTable.sql`，编码 UTF-8。目录名用英文，第一段用当前这套库的 MCP 名：
+交付文件是 `{表名}_MTable.sql`，编码 UTF-8。放在仓库根 `tasks/` 下，目录名用英文，第二段用当前这套库的 MCP 名：
 
 ```text
-{MCP名}/dev/{功能英文名}/{表名}_MTable.sql
+tasks/{MCP名}/dev/{功能英文名}/{表名}_MTable.sql
 ```
 
-`{MCP名}` 是 `jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod` 之一。`{功能英文名}` 没有另给时用表名。例如 `jiban-mes-test/dev/Product/Product_MTable.sql`。先按分支写下主键列，再按本技能 `assets` 里的两份模板拼完整脚本。不要打开其他技能或规则。
+`{MCP名}` 是 `jiban-mes-test`、`jiban-mes-prod`、`zongzhuang-mes-test`、`zongzhuang-mes-prod`、`tongxin-mes-prod`、`guangyuan-mes-prod`、`guangyuan-wms-prod`、`shuma-mes-prod` 之一。`{功能英文名}` 没有另给时用表名。例如 `tasks/jiban-mes-test/dev/Product/Product_MTable.sql`。先按分支写下主键列，再按本技能 `assets` 里的两份模板拼完整脚本。不要打开其他技能或规则。
 
 主键列：
 

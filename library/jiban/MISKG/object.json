@@ -1,0 +1,2159 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "MISKG",
+  "name": "备料下架KG",
+  "application": "MES",
+  "kind": "移动事务对象",
+  "pluginName": "备料下架KG",
+  "metadata": "备料下架KG",
+  "objects": [
+    {
+      "id": "MaterialIssueToStockListKG",
+      "name": "MaterialIssueToStockListKG",
+      "text": "备料下架KG",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {
+        "style": "2026-11-16T15:12:14+08:00",
+        "valueList": "2026-11-16T15:12:14+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "MaterialIssueToStockListKG",
+          "groups": [
+            {
+              "id": "txn-MaterialIssueToStockListKG",
+              "sequence": "1",
+              "name": "MaterialIssueToStockListKG",
+              "text": "备料下架KG",
+              "columns": 3,
+              "fieldWidth": 60,
+              "fieldSpace": 4,
+              "custom": false,
+              "uiStyle": {},
+              "height": null,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MBOP000003BQ",
+                  "sequence": "02",
+                  "name": "StockListId",
+                  "text": "备料单号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BQ",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "StockListId",
+                    "DataType": "C",
+                    "ParameterSequence": "02",
+                    "IsValueListUsage": false,
+                    "ControlLine": 0,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": true,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:17.920000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BV",
+                  "sequence": "03",
+                  "name": "WHPerson",
+                  "text": "仓管员",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BV",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "WHPerson",
+                    "DataType": "C",
+                    "ParameterSequence": "03",
+                    "IsValueListUsage": false,
+                    "ControlLine": 0,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:17.990000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BR",
+                  "sequence": "04",
+                  "name": "BoxOrLotSN",
+                  "text": "箱号/批号",
+                  "type": "nvarchar",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "[StockListScan]",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BR",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "BoxOrLotSN",
+                    "DataType": "C",
+                    "ParameterSequence": "04",
+                    "IsValueListUsage": false,
+                    "ControlLine": 1,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "[StockListScan]",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:17.927000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BW",
+                  "sequence": "05",
+                  "name": "ProductName",
+                  "text": "产品名称",
+                  "type": "nvarchar",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BW",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "ProductName",
+                    "DataType": "C",
+                    "ParameterSequence": "05",
+                    "IsValueListUsage": false,
+                    "ControlLine": 1,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:18.003000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BS",
+                  "sequence": "06",
+                  "name": "RequiredQty",
+                  "text": "需求数量",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BS",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "RequiredQty",
+                    "DataType": "C",
+                    "ParameterSequence": "06",
+                    "IsValueListUsage": false,
+                    "ControlLine": 0,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:17.943000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BT",
+                  "sequence": "07",
+                  "name": "QtyIssued",
+                  "text": "已发数量",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BT",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "QtyIssued",
+                    "DataType": "C",
+                    "ParameterSequence": "07",
+                    "IsValueListUsage": false,
+                    "ControlLine": 0,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:17.963000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BU",
+                  "sequence": "08",
+                  "name": "OweQty",
+                  "text": "欠料数量",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BU",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "OweQty",
+                    "DataType": "C",
+                    "ParameterSequence": "08",
+                    "IsValueListUsage": false,
+                    "ControlLine": 0,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:17.973000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BP",
+                  "sequence": "09",
+                  "name": "StockListName",
+                  "text": "备料单号",
+                  "type": "nvarchar",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": true,
+                  "valueListName": "StockList_ViewList",
+                  "valueListFilter": "[ExeStockList]",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BP",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "StockListName",
+                    "DataType": "C",
+                    "ParameterSequence": "09",
+                    "IsValueListUsage": true,
+                    "ControlLine": 1,
+                    "ValueList": "StockList_ViewList",
+                    "LinkToValueListParameter": "[ExeStockList]",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:17.913000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000003BX",
+                  "sequence": "10",
+                  "name": "HideStockListName",
+                  "text": "",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000003BX",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectParameterName": "HideStockListName",
+                    "DataType": "C",
+                    "ParameterSequence": "10",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": true,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2021-04-06T21:18:18.010000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "methods": [
+                {
+                  "id": "MBOM000001GT",
+                  "sequence": "01",
+                  "name": "StockListScan",
+                  "text": "",
+                  "sql": "PDA_MaterialToStockListLotKG",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "StockListName,StockListId,BoxOrLotSN,WHPerson",
+                  "accessCode": "0",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MobileObjectMethodId": "MBOM000001GT",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectMethodName": "StockListScan",
+                    "MethodSequence": "01",
+                    "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                    "TxnParameter": "StockListName,StockListId,BoxOrLotSN,WHPerson",
+                    "IsHidden": true,
+                    "IsPlaySound": false,
+                    "RefreshGridParameter": "",
+                    "IsBeforeRunningConfirm": false,
+                    "IsAutoRunWhenTabActive": true,
+                    "PromptMessage": "",
+                    "AccessCode": "0",
+                    "CreateDate": "2021-04-06T21:18:17.827000",
+                    "IsGetGPS": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectMethodName",
+                      "text": "移动事务对象方法名"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "IsGetGPS",
+                      "text": ""
+                    }
+                  ],
+                  "file": "PDA_MaterialToStockListLotKG.sql",
+                  "missing": false
+                },
+                {
+                  "id": "MBOM000001GU",
+                  "sequence": "02",
+                  "name": "SubmitSAPUp",
+                  "text": "提交SAP回传",
+                  "sql": "PDA_MaterialToStockListLotKG",
+                  "hidden": false,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "StockListName,WHPerson",
+                  "accessCode": "0",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MobileObjectMethodId": "MBOM000001GU",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectMethodName": "SubmitSAPUp",
+                    "MethodSequence": "02",
+                    "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                    "TxnParameter": "StockListName,WHPerson",
+                    "IsHidden": false,
+                    "IsPlaySound": false,
+                    "RefreshGridParameter": "",
+                    "IsBeforeRunningConfirm": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "PromptMessage": "",
+                    "AccessCode": "0",
+                    "CreateDate": "2021-04-06T21:18:17.850000",
+                    "IsGetGPS": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectMethodName",
+                      "text": "移动事务对象方法名"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "IsGetGPS",
+                      "text": ""
+                    }
+                  ],
+                  "file": "PDA_MaterialToStockListLotKG.sql",
+                  "missing": false
+                },
+                {
+                  "id": "MBOM000001GV",
+                  "sequence": "03",
+                  "name": "CloseAllLight",
+                  "text": "关闭灯",
+                  "sql": "PDA_MaterialToStockListLotKG",
+                  "hidden": false,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "StockListName,WHPerson",
+                  "accessCode": "0",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MobileObjectMethodId": "MBOM000001GV",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectMethodName": "CloseAllLight",
+                    "MethodSequence": "03",
+                    "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                    "TxnParameter": "StockListName,WHPerson",
+                    "IsHidden": false,
+                    "IsPlaySound": false,
+                    "RefreshGridParameter": "",
+                    "IsBeforeRunningConfirm": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "PromptMessage": "",
+                    "AccessCode": "0",
+                    "CreateDate": "2021-04-06T21:18:17.880000",
+                    "IsGetGPS": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectMethodName",
+                      "text": "移动事务对象方法名"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "IsGetGPS",
+                      "text": ""
+                    }
+                  ],
+                  "file": "PDA_MaterialToStockListLotKG.sql",
+                  "missing": false
+                },
+                {
+                  "id": "MBOM000001GW",
+                  "sequence": "04",
+                  "name": "ExeStockList",
+                  "text": "",
+                  "sql": "PDA_MaterialToStockListLotKG",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "StockListName,WHPerson,HideStockListName",
+                  "accessCode": "0",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MobileObjectMethodId": "MBOM000001GW",
+                    "MobileObjectId": "MBO10000014M",
+                    "MobileObjectMethodName": "ExeStockList",
+                    "MethodSequence": "04",
+                    "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                    "TxnParameter": "StockListName,WHPerson,HideStockListName",
+                    "IsHidden": true,
+                    "IsPlaySound": false,
+                    "RefreshGridParameter": "",
+                    "IsBeforeRunningConfirm": false,
+                    "IsAutoRunWhenTabActive": false,
+                    "PromptMessage": "",
+                    "AccessCode": "0",
+                    "CreateDate": "2021-04-06T21:18:17.890000",
+                    "IsGetGPS": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectMethodName",
+                      "text": "移动事务对象方法名"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "IsGetGPS",
+                      "text": ""
+                    }
+                  ],
+                  "file": "PDA_MaterialToStockListLotKG.sql",
+                  "missing": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": [
+        {
+          "name": "StockList_ViewList",
+          "file": "StockList_ViewList.sql",
+          "missing": false
+        }
+      ]
+    }
+  ],
+  "mobile": {
+    "objects": [
+      {
+        "objectId": "MBO10000014M",
+        "objectName": "MaterialIssueToStockListKG",
+        "sections": {
+          "object": {
+            "table": "MobileObject",
+            "columns": [
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectName",
+                "text": "移动事务对象名称"
+              },
+              {
+                "name": "MobileObjectDesc",
+                "text": "移动事务对象描述"
+              },
+              {
+                "name": "IsActivity",
+                "text": "是否激活"
+              },
+              {
+                "name": "ColumnCount",
+                "text": "列数"
+              },
+              {
+                "name": "FieldWidth",
+                "text": "组内字段宽度"
+              },
+              {
+                "name": "FieldSpace",
+                "text": "组内字段间距"
+              },
+              {
+                "name": "MsgCount",
+                "text": "组内消息框行数设定"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectName": "MaterialIssueToStockListKG",
+                "MobileObjectDesc": "备料下架KG",
+                "IsActivity": true,
+                "ColumnCount": 3,
+                "FieldWidth": 60,
+                "FieldSpace": 4,
+                "MsgCount": 3,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.790000"
+              }
+            ]
+          },
+          "parameters": {
+            "table": "MobileObjectParameter",
+            "columns": [
+              {
+                "name": "MobileObjectParameterId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectParameterName",
+                "text": "移动事务对象参数名"
+              },
+              {
+                "name": "DataType",
+                "text": "数据类型"
+              },
+              {
+                "name": "ParameterSequence",
+                "text": "排列顺序"
+              },
+              {
+                "name": "IsValueListUsage",
+                "text": "是否使用值列表?"
+              },
+              {
+                "name": "ControlLine",
+                "text": "字段占用行数"
+              },
+              {
+                "name": "ValueList",
+                "text": "值列表"
+              },
+              {
+                "name": "LinkToValueListParameter",
+                "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+              },
+              {
+                "name": "IsReadOnly",
+                "text": "只读吗?"
+              },
+              {
+                "name": "IsHidden",
+                "text": "隐藏吗?"
+              },
+              {
+                "name": "HiddenCondition",
+                "text": "是否按条件隐藏?"
+              },
+              {
+                "name": "IsPicture",
+                "text": "是否是一个图片?"
+              },
+              {
+                "name": "IsSplitLine",
+                "text": "是否是一个分隔线?"
+              },
+              {
+                "name": "IsGrid",
+                "text": "是否启用网格?"
+              },
+              {
+                "name": "IsShowTime",
+                "text": "显示时间吗?"
+              },
+              {
+                "name": "IsSaveValueToLocal",
+                "text": "将值保存在注册表吗？"
+              },
+              {
+                "name": "IsMustInput",
+                "text": "必须输入吗？"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              },
+              {
+                "name": "DecimalPlace",
+                "text": ""
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectParameterId": "MBOP000003BP",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "StockListName",
+                "DataType": "C",
+                "ParameterSequence": "09",
+                "IsValueListUsage": true,
+                "ControlLine": 1,
+                "ValueList": "StockList_ViewList",
+                "LinkToValueListParameter": "[ExeStockList]",
+                "IsReadOnly": false,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": true,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.913000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BQ",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "StockListId",
+                "DataType": "C",
+                "ParameterSequence": "02",
+                "IsValueListUsage": false,
+                "ControlLine": 0,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": false,
+                "IsHidden": true,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.920000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BR",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "BoxOrLotSN",
+                "DataType": "C",
+                "ParameterSequence": "04",
+                "IsValueListUsage": false,
+                "ControlLine": 1,
+                "ValueList": "",
+                "LinkToValueListParameter": "[StockListScan]",
+                "IsReadOnly": false,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.927000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BS",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "RequiredQty",
+                "DataType": "C",
+                "ParameterSequence": "06",
+                "IsValueListUsage": false,
+                "ControlLine": 0,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": true,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.943000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BT",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "QtyIssued",
+                "DataType": "C",
+                "ParameterSequence": "07",
+                "IsValueListUsage": false,
+                "ControlLine": 0,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": true,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.963000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BU",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "OweQty",
+                "DataType": "C",
+                "ParameterSequence": "08",
+                "IsValueListUsage": false,
+                "ControlLine": 0,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": true,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.973000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BV",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "WHPerson",
+                "DataType": "C",
+                "ParameterSequence": "03",
+                "IsValueListUsage": false,
+                "ControlLine": 0,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": true,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:17.990000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BW",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "ProductName",
+                "DataType": "C",
+                "ParameterSequence": "05",
+                "IsValueListUsage": false,
+                "ControlLine": 1,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": true,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:18.003000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000003BX",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectParameterName": "HideStockListName",
+                "DataType": "C",
+                "ParameterSequence": "10",
+                "IsValueListUsage": false,
+                "ControlLine": null,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": false,
+                "IsHidden": true,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2021-04-06T21:18:18.010000",
+                "DecimalPlace": null
+              }
+            ]
+          },
+          "methods": {
+            "table": "MobileObjectMethod",
+            "columns": [
+              {
+                "name": "MobileObjectMethodId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectMethodName",
+                "text": "移动事务对象方法名"
+              },
+              {
+                "name": "MethodSequence",
+                "text": "排列顺序"
+              },
+              {
+                "name": "SQLDoTxn",
+                "text": "执行事务名"
+              },
+              {
+                "name": "TxnParameter",
+                "text": "事务执行参数"
+              },
+              {
+                "name": "IsHidden",
+                "text": "隐藏吗?"
+              },
+              {
+                "name": "IsPlaySound",
+                "text": "是否播放声音?"
+              },
+              {
+                "name": "RefreshGridParameter",
+                "text": "执行完成后回刷网格参数名"
+              },
+              {
+                "name": "IsBeforeRunningConfirm",
+                "text": "执行前需要提示吗?"
+              },
+              {
+                "name": "IsAutoRunWhenTabActive",
+                "text": "Tab页显示时是否自动执行?"
+              },
+              {
+                "name": "PromptMessage",
+                "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              },
+              {
+                "name": "IsGetGPS",
+                "text": ""
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectMethodId": "MBOM000001GT",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectMethodName": "StockListScan",
+                "MethodSequence": "01",
+                "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                "TxnParameter": "StockListName,StockListId,BoxOrLotSN,WHPerson",
+                "IsHidden": true,
+                "IsPlaySound": false,
+                "RefreshGridParameter": "",
+                "IsBeforeRunningConfirm": false,
+                "IsAutoRunWhenTabActive": true,
+                "PromptMessage": "",
+                "AccessCode": "0",
+                "CreateDate": "2021-04-06T21:18:17.827000",
+                "IsGetGPS": null
+              },
+              {
+                "MobileObjectMethodId": "MBOM000001GU",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectMethodName": "SubmitSAPUp",
+                "MethodSequence": "02",
+                "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                "TxnParameter": "StockListName,WHPerson",
+                "IsHidden": false,
+                "IsPlaySound": false,
+                "RefreshGridParameter": "",
+                "IsBeforeRunningConfirm": false,
+                "IsAutoRunWhenTabActive": false,
+                "PromptMessage": "",
+                "AccessCode": "0",
+                "CreateDate": "2021-04-06T21:18:17.850000",
+                "IsGetGPS": null
+              },
+              {
+                "MobileObjectMethodId": "MBOM000001GV",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectMethodName": "CloseAllLight",
+                "MethodSequence": "03",
+                "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                "TxnParameter": "StockListName,WHPerson",
+                "IsHidden": false,
+                "IsPlaySound": false,
+                "RefreshGridParameter": "",
+                "IsBeforeRunningConfirm": false,
+                "IsAutoRunWhenTabActive": false,
+                "PromptMessage": "",
+                "AccessCode": "0",
+                "CreateDate": "2021-04-06T21:18:17.880000",
+                "IsGetGPS": null
+              },
+              {
+                "MobileObjectMethodId": "MBOM000001GW",
+                "MobileObjectId": "MBO10000014M",
+                "MobileObjectMethodName": "ExeStockList",
+                "MethodSequence": "04",
+                "SQLDoTxn": "PDA_MaterialToStockListLotKG",
+                "TxnParameter": "StockListName,WHPerson,HideStockListName",
+                "IsHidden": true,
+                "IsPlaySound": false,
+                "RefreshGridParameter": "",
+                "IsBeforeRunningConfirm": false,
+                "IsAutoRunWhenTabActive": false,
+                "PromptMessage": "",
+                "AccessCode": "0",
+                "CreateDate": "2021-04-06T21:18:17.890000",
+                "IsGetGPS": null
+              }
+            ]
+          },
+          "specifications": {
+            "table": "MobileObjectSpecification",
+            "columns": [
+              {
+                "name": "MobileObjectSpecificationId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "SpecificationId",
+                "text": "规程ID"
+              },
+              {
+                "name": "ModifyDate",
+                "text": "修改日期"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              }
+            ],
+            "rows": []
+          }
+        }
+      }
+    ]
+  },
+  "channel": "PC",
+  "pulled": {
+    "mobile": "2026-11-16T15:12:14+08:00"
+  }
+}

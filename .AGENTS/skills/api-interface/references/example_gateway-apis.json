@@ -1,0 +1,31 @@
+{
+  "esbDbConnId": "000037",
+  "esbDbConnLabel": "ESB 测试数据源 (000037)；导入 ESB 前人工确认「指定数据源」",
+  "platform": {
+    "esbBaseUrl": "https://szapitest.szmtc.com.cn:8030",
+    "apiBaseUrl": "https://szapitest.szmtc.com.cn:8020"
+  },
+  "procedure": "dbo.APIBP_YourProcedureName",
+  "apis": [
+    {
+      "suffix": "功能中文简称",
+      "method": "YourMethodEnglishName",
+      "configName": "事业部_功能中文名",
+      "remark": "备注",
+      "apiListSeq": "1",
+      "bodySample": "{}",
+      "responseSample": {
+        "state": true,
+        "errcode": 200,
+        "msg": "",
+        "data": []
+      },
+      "outputParams": [
+        { "fieldId": "ExampleField", "fieldName": "示例列", "fieldType": "String", "sample": "" }
+      ],
+      "params": [
+        { "id": "1001", "fieldId": "ExampleParam", "fieldName": "示例入参", "sample": "", "required": false, "sortNum": 1 }
+      ]
+    }
+  ]
+}

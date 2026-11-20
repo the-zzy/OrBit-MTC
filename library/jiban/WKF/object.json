@@ -16,8 +16,97 @@
       "sequence": "",
       "depth": 1,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "Workflow",
+        "columns": [
+          {
+            "name": "WorkflowId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "工作流ID"
+          },
+          {
+            "name": "WorkflowRootId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作流根ID"
+          },
+          {
+            "name": "WorkflowRevision",
+            "type": "nvarchar(20)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作流版本号"
+          },
+          {
+            "name": "WorkflowDescription",
+            "type": "nvarchar(200)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作流描述"
+          },
+          {
+            "name": "IsActivity",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否激活"
+          },
+          {
+            "name": "IsDefaultWorkflow",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否是默认工作流"
+          },
+          {
+            "name": "IsMetadataflow",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否是元对象工作流"
+          },
+          {
+            "name": "WorkflowType",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "工作流类别 如 SMT、DIP、ASS、PACK"
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建用户"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建时间"
+          }
+        ]
       },
       "procedures": [
         {
@@ -41,8 +130,234 @@
           "file": "WorkflowDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-12T14:22:48+08:00",
+        "MainView": "2026-11-12T14:22:53+08:00",
+        "style": "2026-11-12T14:23:15+08:00",
+        "valueList": "2026-11-12T14:23:10+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "WorkflowRootTreeView",
+          "columns": [
+            {
+              "name": "WorkflowId",
+              "text": ""
+            },
+            {
+              "name": "WorkflowRootId",
+              "text": "工作流根Id"
+            },
+            {
+              "name": "WorkflowName",
+              "text": "工作流"
+            },
+            {
+              "name": "IsActivity",
+              "text": "是否激活"
+            }
+          ]
+        },
+        "main": {
+          "name": "Workflow",
+          "groups": [
+            {
+              "id": "MFG100000078",
+              "sequence": "01",
+              "name": "Workflow Default Group",
+              "text": "工作流默认组",
+              "columns": 3,
+              "height": 300,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000000L1",
+                  "sequence": "",
+                  "name": "WorkflowName",
+                  "text": "工作流",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000L3",
+                  "sequence": "",
+                  "name": "WorkflowRootId",
+                  "text": "工作流根Id",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000L2",
+                  "sequence": "",
+                  "name": "WorkflowRevision",
+                  "text": "工作流版本",
+                  "type": "nvarchar(20)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF10000046C",
+                  "sequence": "",
+                  "name": "WorkflowType",
+                  "text": "工作流类型",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000L0",
+                  "sequence": "",
+                  "name": "WorkflowDescription",
+                  "text": "工作流描述",
+                  "type": "nvarchar(200)",
+                  "lines": 5,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000KY",
+                  "sequence": "",
+                  "name": "IsActivity",
+                  "text": "是否激活",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000000KZ",
+                  "sequence": "",
+                  "name": "IsDefaultWorkflow",
+                  "text": "是否是默认工作流?",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000002V7",
+                  "sequence": "",
+                  "name": "IsMetadataFlow",
+                  "text": "是否是元对象工作流",
+                  "type": "bit",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000003WB",
+                  "sequence": "",
+                  "name": "ModifyDate",
+                  "text": "修改日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000250",
+                  "sequence": "",
+                  "name": "CreateDate",
+                  "text": "创建时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000251",
+                  "sequence": "",
+                  "name": "CreateUserId",
+                  "text": "创建人ID",
+                  "type": "char(12)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF100000253",
+                  "sequence": "",
+                  "name": "WorkflowCreateUserName",
+                  "text": "创建人",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      },
+      "valueLists": []
     }
-  ],
-  "missing": true
+  ]
 }

@@ -1,6 +1,6 @@
 ---
 name: frontend-design
-description: Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.
+description: 新建或改造界面时的视觉设计指引：确定色调、字体、版式与风格，避免模板化。用于新建页面、改造版式、确定视觉风格。
 license: Complete terms in LICENSE.txt
 ---
 

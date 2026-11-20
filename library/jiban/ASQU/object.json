@@ -20,8 +20,106 @@
         "columns": []
       },
       "procedures": [],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-11T18:01:26+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "DataChainAssemblyQuery",
+          "groups": [
+            {
+              "id": "MFG1000000MZ",
+              "sequence": "01",
+              "name": "DataChainAssemblyQuery",
+              "text": "采集项查询",
+              "columns": 1,
+              "height": 500,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000BT",
+                  "sequence": "1",
+                  "name": "DataChainAssemblyQuery",
+                  "text": "采集项查询",
+                  "sql": "DataChainAssemblyQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "LotSN,CollectSN",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "DataChainAssemblyQueryDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000000DM",
+                  "sequence": "2",
+                  "name": "OrderAssemblyQuery",
+                  "text": "订单采集查询",
+                  "sql": "OrderAssemblyQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "OrderName",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "OrderAssemblyQueryDoMethod.sql"
+                }
+              ]
+            },
+            {
+              "id": "MFG1000000Z6",
+              "sequence": "02",
+              "name": "DataChainAssemblyVagueQuery",
+              "text": "采集项模糊查询",
+              "columns": 1,
+              "height": 500,
+              "collapsed": true,
+              "hidden": false,
+              "fields": [],
+              "methods": [
+                {
+                  "id": "SMM1000000SM",
+                  "sequence": "01",
+                  "name": "AssemblyVagueQuery",
+                  "text": "采集项模糊查询",
+                  "sql": "AssemblyVagueQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "VagueCollectSN,TotalBits",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "AssemblyVagueQueryDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000001UL",
+                  "sequence": "02",
+                  "name": "AssemblyBySNQuery",
+                  "text": "批号模糊查询",
+                  "sql": "AssemblyVagueQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "VagueCollectSN,TotalBits",
+                  "accessCode": "",
+                  "print": false,
+                  "file": "AssemblyVagueQueryDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

@@ -20,8 +20,667 @@
         "columns": []
       },
       "procedures": [],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-11T18:40:07+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "InspectionKanBanData",
+          "groups": [
+            {
+              "id": "MFG1000002SM",
+              "sequence": "01",
+              "name": "DIPInspectionKanBanDataDoMethod Group",
+              "text": "品质看板数据查询",
+              "columns": 1,
+              "height": 600,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "SMQ1000001UM",
+                  "sequence": "01",
+                  "name": "StartDate",
+                  "text": "开始日期",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001UN",
+                  "sequence": "02",
+                  "name": "EndDate",
+                  "text": "结束日期",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM10000030K",
+                  "sequence": "1",
+                  "name": "DIPInspectionKanBanDataDoMethod",
+                  "text": "抽检数据查询",
+                  "sql": "DIPInspectionKanBanDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": true,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartDate,EndDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "prdname",
+                      "text": "料号"
+                    },
+                    {
+                      "name": "SOName",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "MOName",
+                      "text": "工单号"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "LotQty",
+                      "text": "批次数量"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    },
+                    {
+                      "name": "MOQtyDone",
+                      "text": "完工数量"
+                    },
+                    {
+                      "name": "机型",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单号",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "工单号",
+                      "text": ""
+                    },
+                    {
+                      "name": "线体",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单数量",
+                      "text": ""
+                    },
+                    {
+                      "name": "入库数",
+                      "text": ""
+                    },
+                    {
+                      "name": "需检验数",
+                      "text": ""
+                    },
+                    {
+                      "name": "PASS数",
+                      "text": ""
+                    },
+                    {
+                      "name": "NG数",
+                      "text": ""
+                    },
+                    {
+                      "name": "检验完成比例",
+                      "text": ""
+                    },
+                    {
+                      "name": "入库比例",
+                      "text": ""
+                    },
+                    {
+                      "name": "检验合格率",
+                      "text": ""
+                    },
+                    {
+                      "name": "ColorControlId",
+                      "text": ""
+                    },
+                    {
+                      "name": "检验员",
+                      "text": ""
+                    }
+                  ],
+                  "file": "DIPInspectionKanBanDataDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000030L",
+                  "sequence": "2",
+                  "name": "DIPTestRaceQuery",
+                  "text": "测试直通率查询",
+                  "sql": "DIPTestRaceKanBanDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartDate,EndDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "moid",
+                      "text": "工单号ID"
+                    },
+                    {
+                      "name": "ProductId",
+                      "text": "物料编码"
+                    },
+                    {
+                      "name": "SpecificationDes",
+                      "text": ""
+                    },
+                    {
+                      "name": "lotsn",
+                      "text": "批号"
+                    },
+                    {
+                      "name": "机型编码",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单号",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "工单号",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单数",
+                      "text": ""
+                    },
+                    {
+                      "name": "入库数",
+                      "text": ""
+                    },
+                    {
+                      "name": "记录数",
+                      "text": ""
+                    },
+                    {
+                      "name": "重测数",
+                      "text": ""
+                    },
+                    {
+                      "name": "直通率",
+                      "text": ""
+                    },
+                    {
+                      "name": "测试比例",
+                      "text": ""
+                    },
+                    {
+                      "name": "入库比例",
+                      "text": ""
+                    },
+                    {
+                      "name": "ColorControlId",
+                      "text": ""
+                    }
+                  ],
+                  "file": "DIPTestRaceKanBanDataDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000030N",
+                  "sequence": "3",
+                  "name": "DIPMaintenanceQuery",
+                  "text": "维修数据查询",
+                  "sql": "DIPMaintenanceKanBanDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartDate,EndDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "机型编码",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单号",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "工单号",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单数",
+                      "text": ""
+                    },
+                    {
+                      "name": "不良数",
+                      "text": ""
+                    },
+                    {
+                      "name": "不良率",
+                      "text": ""
+                    },
+                    {
+                      "name": "TOP3不良现象及数量",
+                      "text": ""
+                    },
+                    {
+                      "name": "TOP3不良位号",
+                      "text": ""
+                    },
+                    {
+                      "name": "ColorControlId",
+                      "text": ""
+                    }
+                  ],
+                  "file": "DIPMaintenanceKanBanDataDoMethod.sql"
+                },
+                {
+                  "id": "SMM10000030Z",
+                  "sequence": "5",
+                  "name": "SMTInspectionKanBanDataDoMethod",
+                  "text": "SMT抽检数据查询",
+                  "sql": "SMTInspectionKanBanDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartDate,EndDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "prdname",
+                      "text": "料号"
+                    },
+                    {
+                      "name": "SOName",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "MOName",
+                      "text": "工单号"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "LotQty",
+                      "text": "批次数量"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    },
+                    {
+                      "name": "MOQtyDone",
+                      "text": "完工数量"
+                    },
+                    {
+                      "name": "机型",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单号",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "工单号",
+                      "text": ""
+                    },
+                    {
+                      "name": "线体",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单数量",
+                      "text": ""
+                    },
+                    {
+                      "name": "需检验数",
+                      "text": ""
+                    },
+                    {
+                      "name": "PASS数",
+                      "text": ""
+                    },
+                    {
+                      "name": "NG数",
+                      "text": ""
+                    },
+                    {
+                      "name": "检验完成比例",
+                      "text": ""
+                    },
+                    {
+                      "name": "检验合格率",
+                      "text": ""
+                    },
+                    {
+                      "name": "ColorControlId",
+                      "text": ""
+                    },
+                    {
+                      "name": "检验员",
+                      "text": ""
+                    }
+                  ],
+                  "file": "SMTInspectionKanBanDataDoMethod.sql"
+                },
+                {
+                  "id": "SMM100000310",
+                  "sequence": "6",
+                  "name": "SMTMaintenanceKanBanDataDoMethod",
+                  "text": "SMT维修看板查询",
+                  "sql": "SMTMaintenanceKanBanDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartDate,EndDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "MOName",
+                      "text": "工单号"
+                    },
+                    {
+                      "name": "ProductId",
+                      "text": "物料编码"
+                    },
+                    {
+                      "name": "MOId",
+                      "text": "工单号ID"
+                    },
+                    {
+                      "name": "MOQtyRequired",
+                      "text": "需求数量"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "LotSN",
+                      "text": "批号"
+                    },
+                    {
+                      "name": "WorkcenterId",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "DefectCode",
+                      "text": "缺陷代码"
+                    },
+                    {
+                      "name": "DefectSpecificationId",
+                      "text": ""
+                    },
+                    {
+                      "name": "DefectDescription",
+                      "text": "缺陷描述"
+                    },
+                    {
+                      "name": "DefectLocation",
+                      "text": "缺陷位置"
+                    },
+                    {
+                      "name": "DefectReason",
+                      "text": "不良原因"
+                    },
+                    {
+                      "name": "ReCheckDescription",
+                      "text": ""
+                    },
+                    {
+                      "name": "DcfectProductname",
+                      "text": ""
+                    },
+                    {
+                      "name": "PrdDesCription",
+                      "text": ""
+                    },
+                    {
+                      "name": "RepairMethod",
+                      "text": "维修方法"
+                    },
+                    {
+                      "name": "DefectResponsibility",
+                      "text": "责任归属"
+                    },
+                    {
+                      "name": "RepairUser",
+                      "text": "修理员"
+                    },
+                    {
+                      "name": "DefectDataId",
+                      "text": ""
+                    },
+                    {
+                      "name": "Qty",
+                      "text": "需求数量"
+                    },
+                    {
+                      "name": "DefectRate",
+                      "text": "不良率"
+                    },
+                    {
+                      "name": "SpecificationId",
+                      "text": "规程ID"
+                    },
+                    {
+                      "name": "SOName",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "ProductName",
+                      "text": "产品名称"
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "DefectNumber",
+                      "text": "不良位号"
+                    },
+                    {
+                      "name": "RowNum",
+                      "text": ""
+                    },
+                    {
+                      "name": "线体",
+                      "text": ""
+                    },
+                    {
+                      "name": "机型编码",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单号",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "工单号",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单数",
+                      "text": ""
+                    },
+                    {
+                      "name": "不良数",
+                      "text": ""
+                    },
+                    {
+                      "name": "不良率",
+                      "text": ""
+                    },
+                    {
+                      "name": "TOP3不良现象及数量",
+                      "text": ""
+                    },
+                    {
+                      "name": "TOP3不良位号",
+                      "text": ""
+                    },
+                    {
+                      "name": "ColorControlId",
+                      "text": ""
+                    }
+                  ],
+                  "file": "SMTMaintenanceKanBanDataDoMethod.sql"
+                },
+                {
+                  "id": "SMM100000317",
+                  "sequence": "7",
+                  "name": "DIPCanShaTestKanBanData",
+                  "text": "DIP掺沙测试看板查询",
+                  "sql": "DIPCanShaTestKanBanDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartDate,EndDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "序号",
+                      "text": ""
+                    },
+                    {
+                      "name": "开始时间",
+                      "text": ""
+                    },
+                    {
+                      "name": "线体",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单号",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "批号",
+                      "text": ""
+                    },
+                    {
+                      "name": "测试项",
+                      "text": ""
+                    },
+                    {
+                      "name": "AOI操作员",
+                      "text": ""
+                    },
+                    {
+                      "name": "测试结果",
+                      "text": ""
+                    },
+                    {
+                      "name": "责任拉长",
+                      "text": ""
+                    },
+                    {
+                      "name": "IPQC",
+                      "text": ""
+                    }
+                  ],
+                  "file": "DIPCanShaTestKanBanDataDoMethod.sql"
+                },
+                {
+                  "id": "SMM100000319",
+                  "sequence": "8",
+                  "name": "SMTCanShaTestKanBanData",
+                  "text": "SMT掺沙测试看板查询",
+                  "sql": "SMTCanShaTestKanBanDataDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "StartDate,EndDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "序号",
+                      "text": ""
+                    },
+                    {
+                      "name": "开始时间",
+                      "text": ""
+                    },
+                    {
+                      "name": "线体",
+                      "text": ""
+                    },
+                    {
+                      "name": "订单号",
+                      "text": "订单号"
+                    },
+                    {
+                      "name": "批号",
+                      "text": ""
+                    },
+                    {
+                      "name": "测试项",
+                      "text": ""
+                    },
+                    {
+                      "name": "AOI操作员",
+                      "text": ""
+                    },
+                    {
+                      "name": "测试结果",
+                      "text": ""
+                    },
+                    {
+                      "name": "责任拉长",
+                      "text": ""
+                    },
+                    {
+                      "name": "IPQC",
+                      "text": ""
+                    }
+                  ],
+                  "file": "SMTCanShaTestKanBanDataDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

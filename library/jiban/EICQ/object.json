@@ -20,8 +20,411 @@
         "columns": []
       },
       "procedures": [],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-12T11:13:50+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "ElectronicIronCheckQuery",
+          "groups": [
+            {
+              "id": "MFG1000002F2",
+              "sequence": "01",
+              "name": "ElectronicIronCheckQuery Group",
+              "text": "电烙铁查询组",
+              "columns": 1,
+              "height": 250,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "SMQ1000001KH",
+                  "sequence": "01",
+                  "name": "WorkCenterName",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "WorkcenterNameDIP_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001KI",
+                  "sequence": "02",
+                  "name": "WorkcenterId",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001KF",
+                  "sequence": "03",
+                  "name": "DateFrom",
+                  "text": "开始日期",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001KG",
+                  "sequence": "04",
+                  "name": "DateTo",
+                  "text": "结束日期",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000002ED",
+                  "sequence": "01",
+                  "name": "ElectronicIronTemperatureQuery",
+                  "text": "电烙铁温度测试查询",
+                  "sql": "ElectronicIronCheckQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "WorkcenterId,DateFrom,DateTo",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "ElectricitySN",
+                      "text": "烙铁编号"
+                    },
+                    {
+                      "name": "TestResult",
+                      "text": "测试结果"
+                    },
+                    {
+                      "name": "SolderTip",
+                      "text": ""
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "Row",
+                      "text": ""
+                    },
+                    {
+                      "name": "1次",
+                      "text": ""
+                    },
+                    {
+                      "name": "2次",
+                      "text": ""
+                    },
+                    {
+                      "name": "3次",
+                      "text": ""
+                    },
+                    {
+                      "name": "4次",
+                      "text": ""
+                    },
+                    {
+                      "name": "5次",
+                      "text": ""
+                    },
+                    {
+                      "name": "6次",
+                      "text": ""
+                    }
+                  ],
+                  "file": "ElectronicIronCheckQueryDoMethod.sql"
+                },
+                {
+                  "id": "SMM1000002EE",
+                  "sequence": "02",
+                  "name": "ElectronicIronVoltageQuery",
+                  "text": "电烙铁电压测试查询",
+                  "sql": "ElectronicIronCheckQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "WorkcenterId,DateFrom,DateTo",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "ElectricitySN",
+                      "text": "烙铁编号"
+                    },
+                    {
+                      "name": "TestResult",
+                      "text": "测试结果"
+                    },
+                    {
+                      "name": "SolderTip",
+                      "text": ""
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "Row",
+                      "text": ""
+                    },
+                    {
+                      "name": "1次",
+                      "text": ""
+                    },
+                    {
+                      "name": "2次",
+                      "text": ""
+                    },
+                    {
+                      "name": "3次",
+                      "text": ""
+                    },
+                    {
+                      "name": "4次",
+                      "text": ""
+                    },
+                    {
+                      "name": "5次",
+                      "text": ""
+                    },
+                    {
+                      "name": "6次",
+                      "text": ""
+                    }
+                  ],
+                  "file": "ElectronicIronCheckQueryDoMethod.sql"
+                }
+              ]
+            },
+            {
+              "id": "MFG1000002F5",
+              "sequence": "01",
+              "name": "WaveSolderingCheckQuery Group",
+              "text": "波峰焊参数点检查询组",
+              "columns": 1,
+              "height": 300,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "SMQ1000001KU",
+                  "sequence": "01",
+                  "name": "WorkcenterName",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "WorkcenterDIP_ViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001KV",
+                  "sequence": "02",
+                  "name": "WorkcenterId",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": true,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001KW",
+                  "sequence": "03",
+                  "name": "DateFrom",
+                  "text": "开始日期",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001KX",
+                  "sequence": "04",
+                  "name": "DateTo",
+                  "text": "结束日期",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000002EP",
+                  "sequence": "01",
+                  "name": "WaveSolderingCheckQuery",
+                  "text": "波峰焊参数点检查询",
+                  "sql": "WaveSolderingCheckQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "WorkcenterId,DateFrom,DateTo",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "日期",
+                      "text": ""
+                    },
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "WaveSolderingSN",
+                      "text": "波峰焊编号"
+                    },
+                    {
+                      "name": "Model",
+                      "text": "机型"
+                    },
+                    {
+                      "name": "WorkingGroup",
+                      "text": "班别"
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "PersonName",
+                      "text": "检验员名称"
+                    },
+                    {
+                      "name": "SideCount",
+                      "text": "单/双面"
+                    },
+                    {
+                      "name": "StoveTemperature",
+                      "text": "锡炉温度"
+                    },
+                    {
+                      "name": "PreheatOne",
+                      "text": "预热一"
+                    },
+                    {
+                      "name": "PreheatTwo",
+                      "text": "预热二"
+                    },
+                    {
+                      "name": "PreheatThree",
+                      "text": "预热三"
+                    },
+                    {
+                      "name": "AdmissionPressure",
+                      "text": "进气压力"
+                    },
+                    {
+                      "name": "NozzlePressure",
+                      "text": "喷头压力"
+                    },
+                    {
+                      "name": "SpraySpeed",
+                      "text": "喷雾速度"
+                    },
+                    {
+                      "name": "ChainSpeed",
+                      "text": "链条速度"
+                    },
+                    {
+                      "name": "Angle",
+                      "text": "角度"
+                    },
+                    {
+                      "name": "FluxFlow",
+                      "text": "助焊剂流量"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "ReturnMessage",
+                      "text": ""
+                    }
+                  ],
+                  "file": "WaveSolderingCheckQueryDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

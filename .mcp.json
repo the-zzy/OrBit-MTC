@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "jiban-mes-test": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "jiban-mes-test"]
+    },
+    "jiban-mes-prod": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "jiban-mes-prod"]
+    },
+    "zongzhuang-mes-test": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "zongzhuang-mes-test"]
+    },
+    "zongzhuang-mes-prod": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "zongzhuang-mes-prod"]
+    },
+    "tongxin-mes-prod": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "tongxin-mes-prod"]
+    },
+    "guangyuan-mes-prod": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "guangyuan-mes-prod"]
+    },
+    "guangyuan-wms-prod": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "guangyuan-wms-prod"]
+    },
+    "shuma-mes-prod": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["-I", "db/mcp_server.py", "--source", "shuma-mes-prod"]
+    }
+  }
+}

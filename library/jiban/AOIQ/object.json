@@ -20,8 +20,365 @@
         "columns": []
       },
       "procedures": [],
-      "pulled": {}
+      "pulled": {
+        "style": "2026-11-11T18:53:40+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "AOIDataQuery",
+          "groups": [
+            {
+              "id": "MFG1000001VW",
+              "sequence": "01",
+              "name": "AOIDataQueryGroup",
+              "text": "AOI数据查询",
+              "columns": 2,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "SMQ100000178",
+                  "sequence": "01",
+                  "name": "LineNum",
+                  "text": "SAP订单行号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ100000179",
+                  "sequence": "02",
+                  "name": "MONAME",
+                  "text": "工单号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ10000017A",
+                  "sequence": "03",
+                  "name": "FromDate",
+                  "text": "开始时间",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ10000017B",
+                  "sequence": "04",
+                  "name": "ToDate",
+                  "text": "截止时间",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM1000001RG",
+                  "sequence": "01",
+                  "name": "btnQuey",
+                  "text": "查询",
+                  "sql": "AOIUploadQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "LineNum,MoName,FromDate,ToDate",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [],
+                  "file": "AOIUploadQueryDoMethod.sql"
+                }
+              ]
+            },
+            {
+              "id": "MFG10000026E",
+              "sequence": "02",
+              "name": "CoverDataQuery",
+              "text": "套料查询",
+              "columns": 2,
+              "height": 200,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "SMQ1000001G9",
+                  "sequence": "01",
+                  "name": "CreateDate",
+                  "text": "创建时间",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001GA",
+                  "sequence": "02",
+                  "name": "MONames",
+                  "text": "工单",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001GB",
+                  "sequence": "03",
+                  "name": "WorkingTime",
+                  "text": "班别",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": true,
+                  "valueListName": "SMT_CoverdaynightViewList",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001GC",
+                  "sequence": "04",
+                  "name": "WorkcenterName",
+                  "text": "线体",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM10000023F",
+                  "sequence": "01",
+                  "name": "CovQuey",
+                  "text": "套料查询",
+                  "sql": "SMTCoverQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "CreateDate,MONames,WorkingTime,WorkcenterName",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "WorkcenterName",
+                      "text": "线体"
+                    },
+                    {
+                      "name": "MOName",
+                      "text": "工单号"
+                    },
+                    {
+                      "name": "MOId",
+                      "text": "工单号ID"
+                    },
+                    {
+                      "name": "ProductId",
+                      "text": "物料编码"
+                    },
+                    {
+                      "name": "PCBProductName",
+                      "text": ""
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "LotProductId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MatProductName",
+                      "text": ""
+                    },
+                    {
+                      "name": "OnLineDate",
+                      "text": ""
+                    },
+                    {
+                      "name": "CheckDate",
+                      "text": "检测日期"
+                    },
+                    {
+                      "name": "OnLineFlag",
+                      "text": ""
+                    },
+                    {
+                      "name": "CheckFlag",
+                      "text": "审核标识"
+                    },
+                    {
+                      "name": "日期",
+                      "text": ""
+                    },
+                    {
+                      "name": "详细时间",
+                      "text": ""
+                    },
+                    {
+                      "name": "班别",
+                      "text": ""
+                    },
+                    {
+                      "name": "产品名",
+                      "text": ""
+                    }
+                  ],
+                  "file": "SMTCoverQueryDoMethod.sql"
+                }
+              ]
+            },
+            {
+              "id": "MFG10000026V",
+              "sequence": "03",
+              "name": "HandPasteCoverGroup",
+              "text": "手贴物料查询",
+              "columns": 1,
+              "height": 300,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "SMQ1000001GL",
+                  "sequence": "01",
+                  "name": "CreateDate",
+                  "text": "创建时间",
+                  "type": "date",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001GM",
+                  "sequence": "02",
+                  "name": "MOName",
+                  "text": "工单号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "SMQ1000001GO",
+                  "sequence": "04",
+                  "name": "ScanProductName",
+                  "text": "料号",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": [
+                {
+                  "id": "SMM10000023U",
+                  "sequence": "01",
+                  "name": "HandQuery",
+                  "text": "手贴物料查询",
+                  "sql": "HandPasteQueryDoMethod",
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": true,
+                  "mainViewParameter": "CreateDate,MOName,Side,ScanProductName",
+                  "accessCode": "",
+                  "print": false,
+                  "columns": [
+                    {
+                      "name": "MOName",
+                      "text": "工单号"
+                    },
+                    {
+                      "name": "ProductName",
+                      "text": "产品名称"
+                    },
+                    {
+                      "name": "Side",
+                      "text": "A/B面"
+                    },
+                    {
+                      "name": "LotSN",
+                      "text": "批号"
+                    },
+                    {
+                      "name": "Operator",
+                      "text": "操作员"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    }
+                  ],
+                  "file": "HandPasteQueryDoMethod.sql"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
-  ],
-  "missing": true
+  ]
 }

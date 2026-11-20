@@ -1,0 +1,167 @@
+.function-library {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: #3d342b;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button.on {
+  background: #f4efe4;
+  color: #3d342b;
+}
+
+button:focus-visible {
+  outline: 2px solid #3d342b;
+  outline-offset: 2px;
+}
+
+.fn-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.fn-bar h1 { font-size: 28px; }
+.fn-bar .count { margin-right: auto; }
+
+.source-icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  align-self: center;
+}
+
+.kinds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.kinds button {
+  width: auto;
+  padding: 4px 10px;
+  border: 1px solid #d4c6b4;
+  background: #f4efe4;
+  color: #3d342b;
+}
+
+.kinds button span {
+  color: #8a7b6a;
+  font-variant-numeric: tabular-nums;
+}
+
+.kinds button.on {
+  background: #3d342b;
+  border-color: #3d342b;
+  color: #f4efe4;
+}
+
+.kinds button.on span { color: #e4d9c4; }
+
+.kinds .pull-area {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kinds .pull-note {
+  font-size: 13px;
+  color: #6f6256;
+}
+
+.kinds .pull-note.bad { color: #a24a3f; }
+
+.kinds button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.search {
+  width: min(320px, 100%);
+  padding: 8px 10px;
+  border: 1px solid #d4c6b4;
+  border-radius: 2px;
+  background: #f4efe4;
+  color: #3d342b;
+}
+
+.search:focus-visible {
+  outline: 2px solid #3d342b;
+  outline-offset: 2px;
+}
+
+.ledger {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  background: #f4efe4;
+  border: 1px solid #d4c6b4;
+}
+
+.ledger table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ledger th,
+.ledger td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e4d9c8;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ledger thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #e4d9c4;
+  font-weight: 650;
+}
+
+.ledger tbody tr { cursor: pointer; }
+.ledger .cmd { white-space: nowrap; }
+
+.empty {
+  margin: 16px 12px;
+  color: #6f6256;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: #3d342b;
+}
+
+.count {
+  margin: 0;
+  color: #6f6256;
+}
+
+.count span { margin-left: 12px; }
+
+@media (max-width: 860px) {
+  .fn-bar { flex-wrap: wrap; }
+  .fn-bar .count { margin-right: 0; }
+}

@@ -1,8 +1,7 @@
 ---
 name: utils-toolkit
 description: >-
-  通用工具函数技能索引，提供主键生成、消息推送、邮件发送等常用功能。
-  供其他技能按需调用独立函数，节省token。
+  通用工具函数索引：主键生成、消息推送、邮件发送等。供其他技能按需取单个函数，省 token。
 alwaysApply: false
 agent_created: true
 ---

@@ -16,8 +16,81 @@
       "sequence": "",
       "depth": 1,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "CustomsPlanNo",
+        "columns": [
+          {
+            "name": "CustomsPlanNoId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": ""
+          },
+          {
+            "name": "PLANNO",
+            "type": "nvarchar(50)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "出货计划单号"
+          },
+          {
+            "name": "DELIVERYDATE",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "出货日期"
+          },
+          {
+            "name": "ATA",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "实际到厂日期"
+          },
+          {
+            "name": "ATD",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "离厂时间"
+          },
+          {
+            "name": "IsStatus",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "1=已结束"
+          },
+          {
+            "name": "IsCancel",
+            "type": "int",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "ModfiyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建时间"
+          }
+        ]
       },
       "procedures": [
         {
@@ -41,8 +114,345 @@
           "file": "CustomsPlanNoDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "table": "2026-11-16T15:32:28+08:00",
+        "MainView": "2026-11-16T15:32:33+08:00",
+        "valueList": "2026-11-16T15:32:37+08:00",
+        "style": "2026-11-16T15:32:41+08:00"
+      },
+      "valueLists": [],
+      "style": {
+        "tree": {
+          "name": "CustomsPlanNoTreeView",
+          "columns": [
+            {
+              "name": "CustomsPlanNoId",
+              "text": ""
+            },
+            {
+              "name": "PLANNO",
+              "text": "计划号"
+            },
+            {
+              "name": "DELIVERYDATE",
+              "text": "送检日期"
+            },
+            {
+              "name": "ATA",
+              "text": "实际到厂日期"
+            },
+            {
+              "name": "ATD",
+              "text": "离厂时间"
+            },
+            {
+              "name": "IsStatus",
+              "text": "已使用"
+            },
+            {
+              "name": "IsCancel",
+              "text": "是否失效"
+            },
+            {
+              "name": "ModfiyDate",
+              "text": "修改日期"
+            },
+            {
+              "name": "CreateDate",
+              "text": "创建时间"
+            }
+          ]
+        },
+        "main": {
+          "name": "CustomsPlanNo",
+          "groups": [
+            {
+              "id": "MFG100000244",
+              "sequence": "01",
+              "name": "CustomsPlanNo Default Group",
+              "text": "关务计划号",
+              "columns": 3,
+              "height": 600,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MDF1000009P3",
+                  "sequence": "",
+                  "name": "PLANNO",
+                  "text": "计划号",
+                  "type": "nvarchar(50)",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009P4",
+                  "sequence": "",
+                  "name": "DELIVERYDATE",
+                  "text": "送检日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009P5",
+                  "sequence": "",
+                  "name": "ORDERNO",
+                  "text": "工单号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009P6",
+                  "sequence": "",
+                  "name": "LINENUM",
+                  "text": "SAP订单行号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009P7",
+                  "sequence": "",
+                  "name": "PRODUCTCODE",
+                  "text": "成品编码",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009P8",
+                  "sequence": "",
+                  "name": "BRAND",
+                  "text": "品牌",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009P9",
+                  "sequence": "",
+                  "name": "LOADQTY",
+                  "text": "装板数量",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PA",
+                  "sequence": "",
+                  "name": "ISFLAG",
+                  "text": "备件标识(0.大货,1.备件,2.备机)",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PB",
+                  "sequence": "",
+                  "name": "CONTAINERNO",
+                  "text": "托运单号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PC",
+                  "sequence": "",
+                  "name": "SEALNO",
+                  "text": "封条号",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PD",
+                  "sequence": "",
+                  "name": "CONTAINERWEIGHT",
+                  "text": "空柜重(KG)",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PE",
+                  "sequence": "",
+                  "name": "STACKTYPE",
+                  "text": "粘胶板规格",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PF",
+                  "sequence": "",
+                  "name": "STACKWEIGHT",
+                  "text": "栈板重量(KG)",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PG",
+                  "sequence": "",
+                  "name": "STACKNUM",
+                  "text": "栈板数量",
+                  "type": "",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PH",
+                  "sequence": "",
+                  "name": "ATA",
+                  "text": "实际到厂日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PI",
+                  "sequence": "",
+                  "name": "ModfiyDate",
+                  "text": "修改日期",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PJ",
+                  "sequence": "",
+                  "name": "ATD",
+                  "text": "离厂时间",
+                  "type": "datetime",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                },
+                {
+                  "id": "MDF1000009PK",
+                  "sequence": "",
+                  "name": "IsCancel",
+                  "text": "是否失效",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": ""
+                }
+              ],
+              "methods": []
+            }
+          ]
+        }
+      }
     }
   ],
-  "missing": true
+  "channel": "PC"
 }

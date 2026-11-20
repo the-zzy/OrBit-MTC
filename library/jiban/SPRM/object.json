@@ -1,0 +1,1607 @@
+{
+  "plant": "jiban",
+  "source": "jiban-mes-prod",
+  "command": "SPRM",
+  "name": "外箱移除栈板",
+  "application": "MES",
+  "kind": "移动事务对象",
+  "pluginName": "外箱移除栈板",
+  "metadata": "外箱移除栈板",
+  "objects": [
+    {
+      "id": "ShipPalletRemove",
+      "name": "ShipPalletRemove",
+      "text": "外箱移除栈板",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {
+        "style": "2026-11-16T15:04:07+08:00",
+        "valueList": "2026-11-16T15:04:07+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "ShipPalletRemove",
+          "groups": [
+            {
+              "id": "txn-ShipPalletRemove",
+              "sequence": "1",
+              "name": "ShipPalletRemove",
+              "text": "外箱移除栈板",
+              "columns": 2,
+              "fieldWidth": 100,
+              "fieldSpace": 4,
+              "custom": false,
+              "uiStyle": {},
+              "height": null,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MBOP000000BK",
+                  "sequence": "00",
+                  "name": "Operator",
+                  "text": "操作员",
+                  "type": "nvarchar",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000000BK",
+                    "MobileObjectId": "MBO100000032",
+                    "MobileObjectParameterName": "Operator",
+                    "DataType": "C",
+                    "ParameterSequence": "00",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2016-08-31T15:44:22.457000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000000BL",
+                  "sequence": "00",
+                  "name": "ScanQty",
+                  "text": "已扫数量",
+                  "type": "int",
+                  "lines": 0,
+                  "multiline": false,
+                  "hidden": false,
+                  "readonly": true,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000000BL",
+                    "MobileObjectId": "MBO100000032",
+                    "MobileObjectParameterName": "ScanQty",
+                    "DataType": "I",
+                    "ParameterSequence": "00",
+                    "IsValueListUsage": false,
+                    "ControlLine": null,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": true,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2016-08-31T15:44:22.490000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000000BI",
+                  "sequence": "01",
+                  "name": "ScanPalletSN",
+                  "text": "栈板号(扫描栈板底部)",
+                  "type": "nvarchar",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000000BI",
+                    "MobileObjectId": "MBO100000032",
+                    "MobileObjectParameterName": "ScanPalletSN",
+                    "DataType": "C",
+                    "ParameterSequence": "01",
+                    "IsValueListUsage": false,
+                    "ControlLine": 1,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "AccessCode": "",
+                    "CreateDate": "2016-08-31T15:44:22.390000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "MBOP000000BJ",
+                  "sequence": "02",
+                  "name": "BoxSN",
+                  "text": "箱号",
+                  "type": "nvarchar",
+                  "lines": 1,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": true,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "[BoxSNDoMethod]",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": false,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000000BJ",
+                    "MobileObjectId": "MBO100000032",
+                    "MobileObjectParameterName": "BoxSN",
+                    "DataType": "C",
+                    "ParameterSequence": "02",
+                    "IsValueListUsage": false,
+                    "ControlLine": 1,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "[BoxSNDoMethod]",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": false,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": true,
+                    "AccessCode": "",
+                    "CreateDate": "2016-08-31T15:44:22.423000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "methods": [
+                {
+                  "id": "MBOM0000004N",
+                  "sequence": "01",
+                  "name": "BoxSNDoMethod",
+                  "text": "",
+                  "sql": "PDA_ShipPalletRemoveDoMethod",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "Operator,ScanPalletSN,BoxSN",
+                  "accessCode": "0",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MobileObjectMethodId": "MBOM0000004N",
+                    "MobileObjectId": "MBO100000032",
+                    "MobileObjectMethodName": "BoxSNDoMethod",
+                    "MethodSequence": "01",
+                    "SQLDoTxn": "PDA_ShipPalletRemoveDoMethod",
+                    "TxnParameter": "Operator,ScanPalletSN,BoxSN",
+                    "IsHidden": true,
+                    "IsPlaySound": false,
+                    "RefreshGridParameter": "",
+                    "IsBeforeRunningConfirm": false,
+                    "IsAutoRunWhenTabActive": true,
+                    "PromptMessage": "",
+                    "AccessCode": "0",
+                    "CreateDate": "2016-08-31T15:44:22.357000",
+                    "IsGetGPS": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectMethodName",
+                      "text": "移动事务对象方法名"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "IsGetGPS",
+                      "text": ""
+                    }
+                  ],
+                  "file": "PDA_ShipPalletRemoveDoMethod.sql",
+                  "missing": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": []
+    },
+    {
+      "id": "ShipPalletRemoveQuery",
+      "name": "ShipPalletRemoveQuery",
+      "text": "外箱移除栈板查询",
+      "parentId": "",
+      "sequence": "1",
+      "depth": 1,
+      "table": {
+        "name": "",
+        "columns": []
+      },
+      "procedures": [],
+      "pulled": {
+        "style": "2026-11-16T15:04:07+08:00",
+        "valueList": "2026-11-16T15:04:07+08:00"
+      },
+      "style": {
+        "tree": {
+          "name": "",
+          "columns": []
+        },
+        "main": {
+          "name": "ShipPalletRemoveQuery",
+          "groups": [
+            {
+              "id": "txn-ShipPalletRemoveQuery",
+              "sequence": "1",
+              "name": "ShipPalletRemoveQuery",
+              "text": "外箱移除栈板查询",
+              "columns": 2,
+              "fieldWidth": 100,
+              "fieldSpace": 4,
+              "custom": false,
+              "uiStyle": {},
+              "height": null,
+              "collapsed": false,
+              "hidden": false,
+              "fields": [
+                {
+                  "id": "MBOP000000BM",
+                  "sequence": "03",
+                  "name": "LotInfo",
+                  "text": "列表信息",
+                  "type": "nvarchar",
+                  "lines": 6,
+                  "multiline": true,
+                  "hidden": false,
+                  "readonly": false,
+                  "required": false,
+                  "valueList": false,
+                  "valueListName": "",
+                  "valueListFilter": "",
+                  "default": "",
+                  "splitLine": false,
+                  "grid": true,
+                  "picture": false,
+                  "labelStyle": {},
+                  "controlStyle": {},
+                  "config": {
+                    "MobileObjectParameterId": "MBOP000000BM",
+                    "MobileObjectId": "MBO100000033",
+                    "MobileObjectParameterName": "LotInfo",
+                    "DataType": "C",
+                    "ParameterSequence": "03",
+                    "IsValueListUsage": false,
+                    "ControlLine": 6,
+                    "ValueList": "",
+                    "LinkToValueListParameter": "",
+                    "IsReadOnly": false,
+                    "IsHidden": false,
+                    "HiddenCondition": "",
+                    "IsPicture": false,
+                    "IsSplitLine": false,
+                    "IsGrid": true,
+                    "IsShowTime": false,
+                    "IsSaveValueToLocal": false,
+                    "IsMustInput": false,
+                    "AccessCode": "",
+                    "CreateDate": "2016-08-31T15:44:57.100000",
+                    "DecimalPlace": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectParameterId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectParameterName",
+                      "text": "移动事务对象参数名"
+                    },
+                    {
+                      "name": "DataType",
+                      "text": "数据类型"
+                    },
+                    {
+                      "name": "ParameterSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "IsValueListUsage",
+                      "text": "是否使用值列表?"
+                    },
+                    {
+                      "name": "ControlLine",
+                      "text": "字段占用行数"
+                    },
+                    {
+                      "name": "ValueList",
+                      "text": "值列表"
+                    },
+                    {
+                      "name": "LinkToValueListParameter",
+                      "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+                    },
+                    {
+                      "name": "IsReadOnly",
+                      "text": "只读吗?"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "HiddenCondition",
+                      "text": "是否按条件隐藏?"
+                    },
+                    {
+                      "name": "IsPicture",
+                      "text": "是否是一个图片?"
+                    },
+                    {
+                      "name": "IsSplitLine",
+                      "text": "是否是一个分隔线?"
+                    },
+                    {
+                      "name": "IsGrid",
+                      "text": "是否启用网格?"
+                    },
+                    {
+                      "name": "IsShowTime",
+                      "text": "显示时间吗?"
+                    },
+                    {
+                      "name": "IsSaveValueToLocal",
+                      "text": "将值保存在注册表吗？"
+                    },
+                    {
+                      "name": "IsMustInput",
+                      "text": "必须输入吗？"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "DecimalPlace",
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "methods": [
+                {
+                  "id": "MBOM0000004O",
+                  "sequence": "01",
+                  "name": "ScanPalletSNDoMethod",
+                  "text": "",
+                  "sql": "PDA_ShipPalletCombineQueryDoMethod",
+                  "hidden": true,
+                  "confirm": false,
+                  "prompt": "",
+                  "refreshTree": false,
+                  "acceptMainView": false,
+                  "mainViewParameter": "Operator,ShipPalletRemove.ScanPalletSN,BoxSN",
+                  "accessCode": "0",
+                  "print": false,
+                  "uiStyle": {},
+                  "columns": [],
+                  "config": {
+                    "MobileObjectMethodId": "MBOM0000004O",
+                    "MobileObjectId": "MBO100000033",
+                    "MobileObjectMethodName": "ScanPalletSNDoMethod",
+                    "MethodSequence": "01",
+                    "SQLDoTxn": "PDA_ShipPalletCombineQueryDoMethod",
+                    "TxnParameter": "Operator,ShipPalletRemove.ScanPalletSN,BoxSN",
+                    "IsHidden": true,
+                    "IsPlaySound": false,
+                    "RefreshGridParameter": "LotInfo",
+                    "IsBeforeRunningConfirm": false,
+                    "IsAutoRunWhenTabActive": true,
+                    "PromptMessage": "",
+                    "AccessCode": "0",
+                    "CreateDate": "2016-08-31T15:44:57.067000",
+                    "IsGetGPS": null
+                  },
+                  "configColumns": [
+                    {
+                      "name": "MobileObjectMethodId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectId",
+                      "text": ""
+                    },
+                    {
+                      "name": "MobileObjectMethodName",
+                      "text": "移动事务对象方法名"
+                    },
+                    {
+                      "name": "MethodSequence",
+                      "text": "排列顺序"
+                    },
+                    {
+                      "name": "SQLDoTxn",
+                      "text": "执行事务名"
+                    },
+                    {
+                      "name": "TxnParameter",
+                      "text": "事务执行参数"
+                    },
+                    {
+                      "name": "IsHidden",
+                      "text": "隐藏吗?"
+                    },
+                    {
+                      "name": "IsPlaySound",
+                      "text": "是否播放声音?"
+                    },
+                    {
+                      "name": "RefreshGridParameter",
+                      "text": "执行完成后回刷网格参数名"
+                    },
+                    {
+                      "name": "IsBeforeRunningConfirm",
+                      "text": "执行前需要提示吗?"
+                    },
+                    {
+                      "name": "IsAutoRunWhenTabActive",
+                      "text": "Tab页显示时是否自动执行?"
+                    },
+                    {
+                      "name": "PromptMessage",
+                      "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+                    },
+                    {
+                      "name": "AccessCode",
+                      "text": "权限控制码"
+                    },
+                    {
+                      "name": "CreateDate",
+                      "text": "创建时间"
+                    },
+                    {
+                      "name": "IsGetGPS",
+                      "text": ""
+                    }
+                  ],
+                  "file": "PDA_ShipPalletCombineQueryDoMethod.sql",
+                  "missing": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "valueLists": []
+    }
+  ],
+  "mobile": {
+    "objects": [
+      {
+        "objectId": "MBO100000032",
+        "objectName": "ShipPalletRemove",
+        "sections": {
+          "object": {
+            "table": "MobileObject",
+            "columns": [
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectName",
+                "text": "移动事务对象名称"
+              },
+              {
+                "name": "MobileObjectDesc",
+                "text": "移动事务对象描述"
+              },
+              {
+                "name": "IsActivity",
+                "text": "是否激活"
+              },
+              {
+                "name": "ColumnCount",
+                "text": "列数"
+              },
+              {
+                "name": "FieldWidth",
+                "text": "组内字段宽度"
+              },
+              {
+                "name": "FieldSpace",
+                "text": "组内字段间距"
+              },
+              {
+                "name": "MsgCount",
+                "text": "组内消息框行数设定"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectId": "MBO100000032",
+                "MobileObjectName": "ShipPalletRemove",
+                "MobileObjectDesc": "外箱移除栈板",
+                "IsActivity": true,
+                "ColumnCount": 2,
+                "FieldWidth": 100,
+                "FieldSpace": 4,
+                "MsgCount": 4,
+                "AccessCode": "",
+                "CreateDate": "2016-08-31T15:44:22.320000"
+              }
+            ]
+          },
+          "parameters": {
+            "table": "MobileObjectParameter",
+            "columns": [
+              {
+                "name": "MobileObjectParameterId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectParameterName",
+                "text": "移动事务对象参数名"
+              },
+              {
+                "name": "DataType",
+                "text": "数据类型"
+              },
+              {
+                "name": "ParameterSequence",
+                "text": "排列顺序"
+              },
+              {
+                "name": "IsValueListUsage",
+                "text": "是否使用值列表?"
+              },
+              {
+                "name": "ControlLine",
+                "text": "字段占用行数"
+              },
+              {
+                "name": "ValueList",
+                "text": "值列表"
+              },
+              {
+                "name": "LinkToValueListParameter",
+                "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+              },
+              {
+                "name": "IsReadOnly",
+                "text": "只读吗?"
+              },
+              {
+                "name": "IsHidden",
+                "text": "隐藏吗?"
+              },
+              {
+                "name": "HiddenCondition",
+                "text": "是否按条件隐藏?"
+              },
+              {
+                "name": "IsPicture",
+                "text": "是否是一个图片?"
+              },
+              {
+                "name": "IsSplitLine",
+                "text": "是否是一个分隔线?"
+              },
+              {
+                "name": "IsGrid",
+                "text": "是否启用网格?"
+              },
+              {
+                "name": "IsShowTime",
+                "text": "显示时间吗?"
+              },
+              {
+                "name": "IsSaveValueToLocal",
+                "text": "将值保存在注册表吗？"
+              },
+              {
+                "name": "IsMustInput",
+                "text": "必须输入吗？"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              },
+              {
+                "name": "DecimalPlace",
+                "text": ""
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectParameterId": "MBOP000000BI",
+                "MobileObjectId": "MBO100000032",
+                "MobileObjectParameterName": "ScanPalletSN",
+                "DataType": "C",
+                "ParameterSequence": "01",
+                "IsValueListUsage": false,
+                "ControlLine": 1,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": false,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": true,
+                "AccessCode": "",
+                "CreateDate": "2016-08-31T15:44:22.390000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000000BJ",
+                "MobileObjectId": "MBO100000032",
+                "MobileObjectParameterName": "BoxSN",
+                "DataType": "C",
+                "ParameterSequence": "02",
+                "IsValueListUsage": false,
+                "ControlLine": 1,
+                "ValueList": "",
+                "LinkToValueListParameter": "[BoxSNDoMethod]",
+                "IsReadOnly": false,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": true,
+                "AccessCode": "",
+                "CreateDate": "2016-08-31T15:44:22.423000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000000BK",
+                "MobileObjectId": "MBO100000032",
+                "MobileObjectParameterName": "Operator",
+                "DataType": "C",
+                "ParameterSequence": "00",
+                "IsValueListUsage": false,
+                "ControlLine": null,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": false,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2016-08-31T15:44:22.457000",
+                "DecimalPlace": null
+              },
+              {
+                "MobileObjectParameterId": "MBOP000000BL",
+                "MobileObjectId": "MBO100000032",
+                "MobileObjectParameterName": "ScanQty",
+                "DataType": "I",
+                "ParameterSequence": "00",
+                "IsValueListUsage": false,
+                "ControlLine": null,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": true,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": false,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2016-08-31T15:44:22.490000",
+                "DecimalPlace": null
+              }
+            ]
+          },
+          "methods": {
+            "table": "MobileObjectMethod",
+            "columns": [
+              {
+                "name": "MobileObjectMethodId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectMethodName",
+                "text": "移动事务对象方法名"
+              },
+              {
+                "name": "MethodSequence",
+                "text": "排列顺序"
+              },
+              {
+                "name": "SQLDoTxn",
+                "text": "执行事务名"
+              },
+              {
+                "name": "TxnParameter",
+                "text": "事务执行参数"
+              },
+              {
+                "name": "IsHidden",
+                "text": "隐藏吗?"
+              },
+              {
+                "name": "IsPlaySound",
+                "text": "是否播放声音?"
+              },
+              {
+                "name": "RefreshGridParameter",
+                "text": "执行完成后回刷网格参数名"
+              },
+              {
+                "name": "IsBeforeRunningConfirm",
+                "text": "执行前需要提示吗?"
+              },
+              {
+                "name": "IsAutoRunWhenTabActive",
+                "text": "Tab页显示时是否自动执行?"
+              },
+              {
+                "name": "PromptMessage",
+                "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              },
+              {
+                "name": "IsGetGPS",
+                "text": ""
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectMethodId": "MBOM0000004N",
+                "MobileObjectId": "MBO100000032",
+                "MobileObjectMethodName": "BoxSNDoMethod",
+                "MethodSequence": "01",
+                "SQLDoTxn": "PDA_ShipPalletRemoveDoMethod",
+                "TxnParameter": "Operator,ScanPalletSN,BoxSN",
+                "IsHidden": true,
+                "IsPlaySound": false,
+                "RefreshGridParameter": "",
+                "IsBeforeRunningConfirm": false,
+                "IsAutoRunWhenTabActive": true,
+                "PromptMessage": "",
+                "AccessCode": "0",
+                "CreateDate": "2016-08-31T15:44:22.357000",
+                "IsGetGPS": null
+              }
+            ]
+          },
+          "specifications": {
+            "table": "MobileObjectSpecification",
+            "columns": [
+              {
+                "name": "MobileObjectSpecificationId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "SpecificationId",
+                "text": "规程ID"
+              },
+              {
+                "name": "ModifyDate",
+                "text": "修改日期"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              }
+            ],
+            "rows": []
+          }
+        }
+      },
+      {
+        "objectId": "MBO100000033",
+        "objectName": "ShipPalletRemoveQuery",
+        "sections": {
+          "object": {
+            "table": "MobileObject",
+            "columns": [
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectName",
+                "text": "移动事务对象名称"
+              },
+              {
+                "name": "MobileObjectDesc",
+                "text": "移动事务对象描述"
+              },
+              {
+                "name": "IsActivity",
+                "text": "是否激活"
+              },
+              {
+                "name": "ColumnCount",
+                "text": "列数"
+              },
+              {
+                "name": "FieldWidth",
+                "text": "组内字段宽度"
+              },
+              {
+                "name": "FieldSpace",
+                "text": "组内字段间距"
+              },
+              {
+                "name": "MsgCount",
+                "text": "组内消息框行数设定"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectId": "MBO100000033",
+                "MobileObjectName": "ShipPalletRemoveQuery",
+                "MobileObjectDesc": "外箱移除栈板查询",
+                "IsActivity": true,
+                "ColumnCount": 2,
+                "FieldWidth": 100,
+                "FieldSpace": 4,
+                "MsgCount": 4,
+                "AccessCode": "",
+                "CreateDate": "2016-08-31T15:44:57.033000"
+              }
+            ]
+          },
+          "parameters": {
+            "table": "MobileObjectParameter",
+            "columns": [
+              {
+                "name": "MobileObjectParameterId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectParameterName",
+                "text": "移动事务对象参数名"
+              },
+              {
+                "name": "DataType",
+                "text": "数据类型"
+              },
+              {
+                "name": "ParameterSequence",
+                "text": "排列顺序"
+              },
+              {
+                "name": "IsValueListUsage",
+                "text": "是否使用值列表?"
+              },
+              {
+                "name": "ControlLine",
+                "text": "字段占用行数"
+              },
+              {
+                "name": "ValueList",
+                "text": "值列表"
+              },
+              {
+                "name": "LinkToValueListParameter",
+                "text": "值列表级联参数(多个参数请用,隔开),或是指定一个自动触发的按钮(用\"[]\"来标识)"
+              },
+              {
+                "name": "IsReadOnly",
+                "text": "只读吗?"
+              },
+              {
+                "name": "IsHidden",
+                "text": "隐藏吗?"
+              },
+              {
+                "name": "HiddenCondition",
+                "text": "是否按条件隐藏?"
+              },
+              {
+                "name": "IsPicture",
+                "text": "是否是一个图片?"
+              },
+              {
+                "name": "IsSplitLine",
+                "text": "是否是一个分隔线?"
+              },
+              {
+                "name": "IsGrid",
+                "text": "是否启用网格?"
+              },
+              {
+                "name": "IsShowTime",
+                "text": "显示时间吗?"
+              },
+              {
+                "name": "IsSaveValueToLocal",
+                "text": "将值保存在注册表吗？"
+              },
+              {
+                "name": "IsMustInput",
+                "text": "必须输入吗？"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              },
+              {
+                "name": "DecimalPlace",
+                "text": ""
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectParameterId": "MBOP000000BM",
+                "MobileObjectId": "MBO100000033",
+                "MobileObjectParameterName": "LotInfo",
+                "DataType": "C",
+                "ParameterSequence": "03",
+                "IsValueListUsage": false,
+                "ControlLine": 6,
+                "ValueList": "",
+                "LinkToValueListParameter": "",
+                "IsReadOnly": false,
+                "IsHidden": false,
+                "HiddenCondition": "",
+                "IsPicture": false,
+                "IsSplitLine": false,
+                "IsGrid": true,
+                "IsShowTime": false,
+                "IsSaveValueToLocal": false,
+                "IsMustInput": false,
+                "AccessCode": "",
+                "CreateDate": "2016-08-31T15:44:57.100000",
+                "DecimalPlace": null
+              }
+            ]
+          },
+          "methods": {
+            "table": "MobileObjectMethod",
+            "columns": [
+              {
+                "name": "MobileObjectMethodId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectMethodName",
+                "text": "移动事务对象方法名"
+              },
+              {
+                "name": "MethodSequence",
+                "text": "排列顺序"
+              },
+              {
+                "name": "SQLDoTxn",
+                "text": "执行事务名"
+              },
+              {
+                "name": "TxnParameter",
+                "text": "事务执行参数"
+              },
+              {
+                "name": "IsHidden",
+                "text": "隐藏吗?"
+              },
+              {
+                "name": "IsPlaySound",
+                "text": "是否播放声音?"
+              },
+              {
+                "name": "RefreshGridParameter",
+                "text": "执行完成后回刷网格参数名"
+              },
+              {
+                "name": "IsBeforeRunningConfirm",
+                "text": "执行前需要提示吗?"
+              },
+              {
+                "name": "IsAutoRunWhenTabActive",
+                "text": "Tab页显示时是否自动执行?"
+              },
+              {
+                "name": "PromptMessage",
+                "text": "用户自定义的提示信息,如果是后台存储过程请用\"[]\"标识"
+              },
+              {
+                "name": "AccessCode",
+                "text": "权限控制码"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              },
+              {
+                "name": "IsGetGPS",
+                "text": ""
+              }
+            ],
+            "rows": [
+              {
+                "MobileObjectMethodId": "MBOM0000004O",
+                "MobileObjectId": "MBO100000033",
+                "MobileObjectMethodName": "ScanPalletSNDoMethod",
+                "MethodSequence": "01",
+                "SQLDoTxn": "PDA_ShipPalletCombineQueryDoMethod",
+                "TxnParameter": "Operator,ShipPalletRemove.ScanPalletSN,BoxSN",
+                "IsHidden": true,
+                "IsPlaySound": false,
+                "RefreshGridParameter": "LotInfo",
+                "IsBeforeRunningConfirm": false,
+                "IsAutoRunWhenTabActive": true,
+                "PromptMessage": "",
+                "AccessCode": "0",
+                "CreateDate": "2016-08-31T15:44:57.067000",
+                "IsGetGPS": null
+              }
+            ]
+          },
+          "specifications": {
+            "table": "MobileObjectSpecification",
+            "columns": [
+              {
+                "name": "MobileObjectSpecificationId",
+                "text": ""
+              },
+              {
+                "name": "MobileObjectId",
+                "text": ""
+              },
+              {
+                "name": "SpecificationId",
+                "text": "规程ID"
+              },
+              {
+                "name": "ModifyDate",
+                "text": "修改日期"
+              },
+              {
+                "name": "CreateDate",
+                "text": "创建时间"
+              }
+            ],
+            "rows": []
+          }
+        }
+      }
+    ]
+  },
+  "channel": "PC",
+  "pulled": {
+    "mobile": "2026-11-16T15:04:07+08:00"
+  }
+}

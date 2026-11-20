@@ -51,8 +51,97 @@
       "sequence": "02",
       "depth": 2,
       "table": {
-        "name": "",
-        "columns": []
+        "name": "ContainerItem",
+        "columns": [
+          {
+            "name": "ContainerItemId",
+            "type": "char(12)",
+            "nullable": false,
+            "identity": false,
+            "primaryKey": true,
+            "description": "货柜明细表ID"
+          },
+          {
+            "name": "ContainerInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "主信息ID"
+          },
+          {
+            "name": "KDOrderInfoId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "订单ID"
+          },
+          {
+            "name": "ProductId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "产品ID"
+          },
+          {
+            "name": "RealQty",
+            "type": "decimal(18,3)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "箱内数量"
+          },
+          {
+            "name": "Status",
+            "type": "char(1)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "0:默认 1:出库"
+          },
+          {
+            "name": "IsCancel",
+            "type": "bit",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "是否失效"
+          },
+          {
+            "name": "ModifyUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改人员"
+          },
+          {
+            "name": "ModifyDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "修改日期"
+          },
+          {
+            "name": "CreateUserId",
+            "type": "char(12)",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "绑定人员ID"
+          },
+          {
+            "name": "CreateDate",
+            "type": "datetime",
+            "nullable": true,
+            "identity": false,
+            "primaryKey": false,
+            "description": "创建日期"
+          }
+        ]
       },
       "procedures": [
         {
@@ -76,7 +165,11 @@
           "file": "ContainerItemDeleteData.sql"
         }
       ],
-      "pulled": {}
+      "pulled": {
+        "MainView": "2026-11-18T15:43:21+08:00",
+        "table": "2026-11-18T15:43:24+08:00",
+        "TreeView": "2026-11-18T15:43:42+08:00"
+      }
     },
     {
       "id": "MTD10000024V",
@@ -174,5 +267,5 @@
       "pulled": {}
     }
   ],
-  "missing": true
+  "channel": "PC"
 }
