@@ -2,11 +2,16 @@
 
 from __future__ import annotations
 
+import importlib.metadata
 import json
+import platform
 import re
+import shutil
+import subprocess
 import sys
 from datetime import date, datetime, time
 from decimal import Decimal
+from functools import lru_cache
 from pathlib import Path
 from typing import Literal
 
@@ -106,6 +111,85 @@ def environment(env_id: str, values: dict[str, str]) -> dict:
         "kind": values.get("STAGE", "prod"),
         "caution": values.get("CAUTION", ""),
         "tools": tools,
+    }
+
+
+RUNTIME_PACKAGES = (
+    ("fastapi", "FastAPI"),
+    ("uvicorn", "Uvicorn"),
+    ("pymssql", "pymssql"),
+    ("mcp", "MCP"),
+    ("pydantic", "Pydantic"),
+)
+
+
+@lru_cache(maxsize=1)
+def runtime_info() -> dict:
+    """工作台实际跑在哪个解释器、Node 和依赖版本上，换机或重装后能一眼看出漂移。"""
+    packages = []
+    for name, label in RUNTIME_PACKAGES:
+        try:
+            packages.append({"name": label, "version": importlib.metadata.version(name)})
+        except importlib.metadata.PackageNotFoundError:
+            packages.append({"name": label, "version": ""})
+
+    executable = Path(sys.executable)
+    venv = ".venv" in executable.parts or sys.prefix != sys.base_prefix
+
+    node_path = shutil.which("node")
+    if not node_path and Path("E:/soft/node/node.exe").is_file():
+        node_path = "E:/soft/node/node.exe"
+    node_version = ""
+    if node_path:
+        try:
+            result = subprocess.run([node_path, "--version"], capture_output=True, text=True, timeout=5)
+            node_version = result.stdout.strip().lstrip("v")
+        except (OSError, subprocess.SubprocessError):
+            node_version = ""
+
+    unlocked = []
+    requirements = ROOT / "server" / "requirements.txt"
+    if requirements.is_file():
+        for line in requirements.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "==" not in line:
+                unlocked.append(line)
+
+    engines = {}
+    package_json = ROOT / "web" / "package.json"
+    if package_json.is_file():
+        try:
+            engines = json.loads(package_json.read_text(encoding="utf-8")).get("engines") or {}
+        except ValueError:
+            engines = {}
+
+    checks = [
+        {
+            "level": "ok" if venv else "warn",
+            "text": f".venv 解释器 · {executable.name}" if venv else f"未用 .venv 运行 · {executable}",
+        },
+        {
+            "level": "ok" if node_version else "warn",
+            "text": f"Node {node_version}" if node_version else "找不到 node.exe",
+        },
+        {
+            "level": "ok" if not unlocked else "warn",
+            "text": "requirements.txt 已锁版本"
+            if not unlocked
+            else "requirements.txt 未锁版本：" + "、".join(unlocked),
+        },
+        {
+            "level": "ok" if engines.get("node") else "warn",
+            "text": f"engines.node {engines['node']}" if engines.get("node") else "package.json 未声明 engines.node",
+        },
+    ]
+
+    return {
+        "python": {"version": platform.python_version(), "executable": str(executable), "venv": venv},
+        "node": {"version": node_version, "path": node_path or ""},
+        "packages": packages,
+        "platform": f"{platform.system()} {platform.release()}",
+        "checks": checks,
     }
 
 
@@ -2320,6 +2404,7 @@ def workbench() -> dict:
         "name": "OrBit",
         "readonly": True,
         "agent": {**describe(), "guide": guide()},
+        "runtime": runtime_info(),
         "layout": layout(),
         "skills": skills(),
         "counts": {"all": len(environments), "test": len(test), "prod": len(prod)},

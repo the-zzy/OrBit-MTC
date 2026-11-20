@@ -1,17 +1,16 @@
 ---
 name: kanban-echart
 description: >-
-  OrBit 看板 ECharts 全流程（自用）：图位反查 → 数据口径 → 明文 / 14bit 装载 → WebAPI_ 过程
-  → 六关验收 → 受控部署。含版式细则、压缩装载、坑速查与本地脚本。
-  关键词：看板、echat看板。
-version: "4.0.0"
+  OrBit 看板 ECharts 全流程：图位反查 → 数据口径 → 明文/14bit 装载 → WebAPI_ 过程 → 六关验收 → 受控部署。
+  用于做看板、改看板、图表取数。含版式细则、压缩装载、常见坑与本地脚本。
+version: "4.0.1"
 agent_created: true
 source: custom
 ---
 
 # ECharts 看板（自用版）
 
-> **触发关键词**：`看板`、`echat看板`。命中即进入本技能。
+> **触发关键词**：`看板`、`ECharts`、`echart看板`（含错拼 `echat`）。命中即进入本技能。
 
 **对象**：`dbo.KanBanITEM_Echart` 图位。数据源 = 图位绑定的存储过程，返回一列 `value`；
 内容是 `option = {...};`（明文）或自解码 IIFE（14bit 装载），由平台 `eval`。

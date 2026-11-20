@@ -1,9 +1,8 @@
 ---
 name: mobile-txn-survey
 description: >-
-  拿到一个已有的移动事务对象（PDA/OrDroid，PluginMESMobile.dll，MobileObject），说明它用来干什么、从哪打开、每个页面和按钮怎么用。
-  用户给出 PDA 插件命令、MobileObjectName 或 PDA 功能名时使用。
-  新建或修改移动事务对象、静态事务对象、查询元对象、标准元对象、看板不要读。
+  梳理已有移动事务对象（PDA/OrDroid，PluginMESMobile.dll，MobileObject）：干什么、从哪打开、每个页面和按钮怎么用。
+  用户给 PDA 插件命令、MobileObjectName 或功能名时用。只读，不改对象、不改过程。
 ---
 
 # 移动事务对象梳理

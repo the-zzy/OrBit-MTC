@@ -1,9 +1,13 @@
 """Small helper to fetch/replace one stored procedure on a configured MES source.
 
+Always run it with the project venv. The bare `python` on this machine is a
+WindowsApps alias stub: it exits with code 49 and prints nothing, and the system
+interpreter has no pymssql.
+
 Usage:
-    python -I scripts/proc_tool.py get  --source jiban-mes-prod --name PDA_CKDPacking_YN --out var/PDA_CKDPacking_YN.sql
-    python -I scripts/proc_tool.py put  --source jiban-mes-prod --file var/PDA_CKDPacking_YN.sql --dry-run
-    python -I scripts/proc_tool.py put  --source jiban-mes-prod --file var/PDA_CKDPacking_YN.sql
+    .venv/Scripts/python.exe -I scripts/proc_tool.py get  --source jiban-mes-prod --name PDA_CKDPacking_YN --out var/PDA_CKDPacking_YN.sql
+    .venv/Scripts/python.exe -I scripts/proc_tool.py put  --source jiban-mes-prod --file var/PDA_CKDPacking_YN.sql --dry-run
+    .venv/Scripts/python.exe -I scripts/proc_tool.py put  --source jiban-mes-prod --file var/PDA_CKDPacking_YN.sql
 """
 
 from __future__ import annotations
@@ -12,7 +16,15 @@ import argparse
 import sys
 from pathlib import Path
 
-import pymssql
+try:
+    import pymssql
+except ImportError:
+    sys.exit(
+        "pymssql is not installed for this interpreter.\n"
+        "Run with the project venv instead:\n"
+        "  .venv/Scripts/python.exe -I scripts/proc_tool.py ...\n"
+        "Or use scripts/proc_sql.ps1 (PowerShell + System.Data.SqlClient)."
+    )
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "db" / "catalog"

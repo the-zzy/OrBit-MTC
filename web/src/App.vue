@@ -331,6 +331,22 @@ onUnmounted(() => {
       </template>
 
       <template v-else-if="showPlaces">
+        <section v-if="board.runtime" class="runtime">
+          <div class="runtime-title">
+            <strong>Runtime 运行时</strong>
+            <span>{{ board.runtime.platform }}</span>
+          </div>
+          <ul class="stack">
+            <li>Python {{ board.runtime.python.version }}</li>
+            <li>Node {{ board.runtime.node.version || '未找到' }}</li>
+            <li v-for="pkg in board.runtime.packages" :key="pkg.name">
+              {{ pkg.name }} {{ pkg.version || '缺失' }}
+            </li>
+          </ul>
+          <ul class="checks">
+            <li v-for="check in board.runtime.checks" :key="check.text" :class="check.level">{{ check.text }}</li>
+          </ul>
+        </section>
         <div class="places">
           <article v-for="factory in grouped" :key="factory.id" class="card factory" :class="factory.id">
             <header><h3>{{ factory.label }}</h3></header>

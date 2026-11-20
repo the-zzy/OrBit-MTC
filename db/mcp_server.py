@@ -108,6 +108,11 @@ class MesDatabase:
         self.source = source
         self.catalog = read_env(catalog_path)
         self.secrets = read_env(secret_path)
+        # 工具描述里带上真实库和环境，调用前就能核对，不靠记工具名。
+        stage = "测试" if self.catalog.get("STAGE") == "test" else "正式"
+        host = self.secrets.get("DB_HOST") or self.catalog.get("HOST", "")
+        label = self.catalog.get("LABEL", source)
+        self.scope = f"{label}（{self.catalog.get('DB', '')} @ {host}，{stage}库）"
         self.tools = {
             item.strip().rsplit("-", 1)[-1]
             for item in self.catalog.get("TOOLS", "").split(",")
@@ -210,17 +215,17 @@ def create_server(database: MesDatabase) -> FastMCP:
     server = FastMCP(database.source, log_level="WARNING")
 
     if database.allows("query"):
-        @server.tool(description="在当前数据源执行一条只读 SELECT 查询，支持 CTE；默认最多返回 200 行。")
+        @server.tool(description=f"在 {database.scope} 执行一条只读 SELECT 查询，支持 CTE；默认最多返回 200 行。")
         def query(sql: str, limit: int = 200) -> dict:
             return database.query(sql, limit)
 
     if database.allows("procedure"):
-        @server.tool(description="查看当前数据源中一个存储过程的完整定义。name 可写为 名称 或 dbo.名称。")
+        @server.tool(description=f"查看 {database.scope} 中一个存储过程的完整定义。name 可写为 名称 或 dbo.名称。")
         def procedure(name: str) -> dict:
             return database.procedure(name)
 
     if database.allows("execute"):
-        @server.tool(description="执行当前数据源中的一个存储过程。parameters 使用参数名到参数值的 JSON 对象；该操作可能写入业务数据。")
+        @server.tool(description=f"在 {database.scope} 执行一个存储过程。parameters 使用参数名到参数值的 JSON 对象；该操作可能写入业务数据。")
         def execute(name: str, parameters: dict[str, Any] = {}) -> dict:
             return database.execute(name, parameters)
 

@@ -1,9 +1,8 @@
 ---
 name: static-txn-survey
 description: >-
-  拿到一个已有的静态事务对象（MES 事务对象，PluginMESStaticTxn.dll），说明它用来干什么、从哪打开、每个字段和按钮怎么用。
-  用户给出插件命令、MESTxnObjectName 或 PC 采集/扫描界面时使用。
-  新建或修改事务对象、移动事务对象、查询元对象、标准元对象、看板不要读。
+  梳理已有静态事务对象（MES 事务对象，PluginMESStaticTxn.dll）：干什么、从哪打开、每个字段和按钮怎么用。
+  用户给插件命令、MESTxnObjectName 或 PC 采集/扫描界面时用。只读，不改事务对象、不改过程。
 ---
 
 # 静态事务对象梳理

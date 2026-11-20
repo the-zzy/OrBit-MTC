@@ -1,9 +1,8 @@
 ---
 name: mes-meta-query
 description: >-
-  用本地只读脚本快速查询 MES 架构表：插件、元对象、静态事务、移动事务、查询元的字段和按钮。
-  用户要查插件命令、SysPlugIn、SysMetadata、MESTxnObject、MobileObject、SysMetadataQuery、SysMetadataMethod 时使用。
-  改表、改过程、写数据不要用。
+  用本地只读脚本查 MES 架构表：插件、元对象、静态事务、移动事务、查询元的字段与按钮。
+  用户要查 SysPlugIn、SysMetadata、MESTxnObject、MobileObject、SysMetadataQuery、SysMetadataMethod 时用。改表、改过程、写数据不用。
 ---
 
 # 架构表快速查询
@@ -11,6 +10,21 @@ description: >-
 架构表在所有 MES 库里结构一致，字段完全一样。表或列查不到就是环境问题，不是要换一套查法。
 
 工具：`scripts/query_meta.ps1`。只读，复用 `db/catalog/{MCP名}` 和 `secrets/{MCP名}.env` 的连接，不输出凭据。
+
+## 先定对象类型
+
+拿到插件命令先看 `SysPlugIn.PluginFileName`，再选查法；不要按命令名的印象猜。
+
+| PluginFileName | 查法 | 例子 |
+|---|---|---|
+| `Plugin Standard.dll` | 元对象：`SysMetadata` / `SysMetadataFieldGroup` / `SysMetadataMethod` | `KDYN` 国外CKD订单（PC） |
+| `Plugin Query.dll` | 查询元：`-Action query` | `TDLQ` 任务清单 |
+| `PluginMESMobile.dll` | 移动事务：`-Action mobile` | `CKDYN` CKD装箱扫描(越南)（PDA） |
+| `PluginMESStaticTxn.dll` | 静态事务：`-Action txn` | `BDPB` 散件外箱打印 |
+
+**`KDYN` 与 `CKDYN` 只差一个字母**：`KDYN` 是 PC 标准元对象「国外CKD订单」，`CKDYN` 是 PDA 移动事务「CKD装箱扫描(越南)」。拿 `KDYN` 调 `-Action mobile` 会返回空，那不是环境问题。
+
+插件命令是定长 `char`，表里常带尾随空格（如 `KDYN `），比较时两边都 `RTRIM`。
 
 ## 调用
 

@@ -1,10 +1,10 @@
 ---
 name: api-interface
 description: >-
-  对外 API（非看板 WebAPI_）：含设备 GET/SUBMIT 与 HTTP 查询，均走 API 网关 BP+WG bson；
-  另含 ESB 定时任务（单 bson）。交付 SQL、gateway-apis.json、执行生成脚本。
-  Use when API、ADC、设备对接、GET/SUBMIT、ESB 编排、API 网关、Thirdparty、sqlCode。
-version: "2.1.0"
+  交付对外 API（非看板 WebAPI_）：设备 GET/SUBMIT、HTTP 查询走 API 网关 BP+WG bson，
+  ESB 定时任务走单 bson。产出 SQL、gateway-apis.json 和执行生成脚本。
+  用于 API、ADC、设备对接、GET/SUBMIT、Thirdparty、sqlCode、ESB 编排。
+version: "2.1.1"
 agent_created: true
 ---
 
